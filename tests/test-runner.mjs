@@ -96,6 +96,19 @@ it('Curriculum contains tracks for all educational tiers with checkpoints', () =
   assert(sampleUnit.checkpoints && sampleUnit.checkpoints.length > 0, 'Checkpoints missing');
 });
 
+
+// 6. Comprehensive Molecules & Atomic Module Verification
+it('Curated molecules contains 49 diverse molecules across 8 categories', () => {
+  assert(curatedMolecules.length >= 45, `Expected >= 45 molecules, got ${curatedMolecules.length}`);
+  const categories = new Set(curatedMolecules.map(m => m.category));
+  assert(categories.size >= 8, `Expected >= 8 categories, got ${categories.size}`);
+  
+  // Verify essential categories exist
+  ['atmosphere', 'life', 'food', 'household', 'medicine', 'energy', 'industrial', 'material'].forEach(cat => {
+    assert(categories.has(cat), `Category missing: ${cat}`);
+  });
+});
+
 console.log(`\nResults: ${passed} / ${total} tests passed.\n`);
 if (passed === total) {
   console.log('🎉 All automated tests passed successfully!\n');

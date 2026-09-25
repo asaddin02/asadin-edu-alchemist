@@ -8,6 +8,7 @@ const routes = {
   learn: () => import('../pages/learn.js'),
   lab: () => import('../pages/lab.js'),
   table: () => import('../pages/table.js'),
+  atom: () => import('../pages/atom.js'),
   compare: () => import('../pages/compare.js'),
   quiz: () => import('../pages/quiz.js'),
   glossary: () => import('../pages/glossary.js'),

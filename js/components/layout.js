@@ -43,6 +43,9 @@ export function renderHeader(activePage = 'home') {
         <a href="#/table" class="nav-item ${activePage === 'table' ? 'active' : ''}">
           ${getIcon('table', 16)} <span>${ui.navTable}</span>
         </a>
+        <a href="#/atom" class="nav-item ${activePage === 'atom' ? 'active' : ''}">
+          ${getIcon('atom', 16)} <span>${ui.navAtom}</span>
+        </a>
         <a href="#/compare" class="nav-item ${activePage === 'compare' ? 'active' : ''}">
           ${getIcon('scale', 16)} <span>${ui.navCompare}</span>
         </a>

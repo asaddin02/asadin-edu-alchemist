@@ -164,6 +164,7 @@ export async function render({ main, on, cleanup }) {
             </p>
             <div style="display: flex; gap: 12px; flex-wrap: wrap;">
               <a href="#/lab" class="btn-search">Buka Lab Virtual</a>
+              <a href="#/atom" class="btn-action">⚛️ Struktur Atom & Orbital 3D</a>
               <a href="#/table" class="btn-action">Tabel Periodik 118 Unsur</a>
               <a href="#/quiz" class="btn-action">Uji di Kuis</a>
             </div>
