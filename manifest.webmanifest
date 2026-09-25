@@ -1,0 +1,17 @@
+{
+  "name": "ChemTaxa · Atlas Molekul & Pembelajaran Kimia Semesta",
+  "short_name": "ChemTaxa",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#070a13",
+  "theme_color": "#070a13",
+  "description": "Atlas struktur molekul kimia terbuka dan platform lab virtual untuk SD sampai Kuliah.",
+  "icons": [
+    {
+      "src": "assets/brand/mark.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "asadin-edu-chemtaxa",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "ChemTaxa · Asadin Edu — Atlas Molekul & Pembelajaran Kimia Terbuka dari SD sampai Kuliah",
+  "scripts": {
+    "start": "node server/server.mjs",
+    "dev": "PORT=8086 HOST=127.0.0.1 LOG=1 node server/server.mjs",
+    "test": "node tests/test-runner.mjs"
+  },
+  "license": "MIT"
+}
