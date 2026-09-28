@@ -1,0 +1,8 @@
+node_modules/
+test-results/
+playwright-report/
+*.log
+# Generated: site bundle (npm run build:site), local Cloudflare runtime, scratch output of the sync scripts
+dist/
+.wrangler/
+data/.sync-cache/

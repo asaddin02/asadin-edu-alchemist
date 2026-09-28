@@ -1,0 +1,67 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Lint, content, unit and browser tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - name: Content integrity (links, quizzes, synced PubChem records, reactions)
+        run: npm run data:check
+      - name: Service worker precache is current
+        run: npm run build:check
+      - name: Site bundle for static hosting builds
+        run: npm run build:site
+      - name: Unit tests and production-server security checks
+        run: npm run test:unit
+      - name: Browser for Playwright
+        # The tests use the runner's Google Chrome when present; otherwise install Playwright's Chromium.
+        run: |
+          if [ ! -x /usr/bin/google-chrome ]; then npx playwright install --with-deps chromium; fi
+      - name: Browser tests (network stubbed, axe accessibility, PWA)
+        run: npm run test:e2e
+      - name: Upload Playwright report
+        if: failure()
+        uses: actions/upload-artifact@v7
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 7
+
+  docker:
+    name: Docker image
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - run: docker build -t moleculium .
+      - name: Container serves the app, blocks private files and survives bad URLs
+        run: |
+          docker run -d --name moleculium -p 8080:8080 moleculium
+          for _ in $(seq 1 30); do curl -sf http://127.0.0.1:8080/api/health && break; sleep 1; done
+          curl -sf http://127.0.0.1:8080/ | grep -q '<title>'
+          curl -sf http://127.0.0.1:8080/data/molecules/water.json | grep -q '"cid":962'
+          test "$(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:8080/package.json)" = 404
+          test "$(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:8080/server/server.mjs)" = 404
+          test "$(curl -s -o /dev/null -w '%{http_code}' 'http://127.0.0.1:8080/%E0%A4%A')" = 400
+          curl -sf http://127.0.0.1:8080/api/health
+          docker stop moleculium

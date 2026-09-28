@@ -1,265 +1,300 @@
-// ChemTaxa · Gamified Molecule Quiz Arena
-import { $, $$, toast } from '../core/dom.js';
-import { getPrefs } from '../core/prefs.js';
-import { getUi } from '../i18n/ui.js';
-import { getIcon } from '../components/icons.js';
-import { recordQuizResult, getQuizStats } from '../core/userdata.js';
+// Quizzes: every lesson quiz plus quizzes generated fresh from the data each time.
+import { $, esc, shuffle } from '../core/dom.js';
+import { S, pick, fmt, getPrefs, rank } from '../core/prefs.js';
+import { icon } from '../components/icons.js';
+import { pageHead, breadcrumbs } from '../components/common.js';
+import { mountQuiz } from '../components/quiz.js';
+import { TOPICS, findTopic, quizFor, bodyLevel } from '../data/topics/index.js';
+import { MOLECULES, atLevel } from '../data/curatedMolecules.js';
+import { ELEMENTS, CATEGORIES } from '../data/periodicTable.js';
+import { getClass } from '../data/classes.js';
+import { PLACES } from '../data/curriculum.js';
+import { moleculeIndex, depiction } from '../services/data.js';
+import { depictSVG } from '../components/depict.js';
+import { formulaUnicode } from '../services/formula.js';
+import { quizResults, earnedBadges, BADGES, progressStats } from '../core/userdata.js';
 
-export function title() {
-  return 'Kuis Molekul';
-}
+const s = S({
+  title: ['Kuis', 'Quizzes'],
+  lead: [
+    'Kuis materi mengikuti jenjangmu. Kuis tantangan dibuat acak dari data Moleculium setiap kali dimainkan, jadi selalu ada soal baru.',
+    'Lesson quizzes follow your level. Challenge quizzes are generated at random from Moleculium data every time, so there are always new questions.',
+  ],
+  challenges: ['Kuis tantangan', 'Challenge quizzes'],
+  lessons: ['Kuis per materi', 'Lesson quizzes'],
+  badges: ['Lencana', 'Badges'],
+  best: ['Terbaik {best}/{total}', 'Best {best}/{total}'],
+  notFound: ['Kuis tidak ditemukan.', 'Quiz not found.'],
+  play: ['Mainkan', 'Play'],
+  locked: ['Belum terbuka', 'Locked'],
+  // generated
+  structure: ['Tebak dari struktur', 'Name that structure'],
+  structureLead: [
+    'Lihat gambar struktur 2D dari PubChem, lalu tebak molekulnya.',
+    'Look at a PubChem 2D structure and guess the molecule.',
+  ],
+  structureQ: ['Molekul apakah yang strukturnya seperti ini?', 'Which molecule has this structure?'],
+  formula: ['Rumus kimia', 'Chemical formulas'],
+  formulaLead: ['Cocokkan nama molekul dengan rumusnya.', 'Match molecules to their formulas.'],
+  formulaQ: ['Apa rumus molekul {name}?', 'What is the molecular formula of {name}?'],
+  symbols: ['Lambang unsur', 'Element symbols'],
+  symbolsLead: [
+    'Dari H sampai Og: kenali lambang dan nama unsur.',
+    'From H to Og: know element symbols and names.',
+  ],
+  symbolQ: ['Unsur apakah yang berlambang {s}?', 'Which element has the symbol {s}?'],
+  category: ['Golongan unsur', 'Element categories'],
+  categoryLead: [
+    'Logam alkali, halogen, gas mulia, atau lantanida?',
+    'Alkali metal, halogen, noble gas or lanthanide?',
+  ],
+  categoryQ: ['{name} ({s}) termasuk kategori…', '{name} ({s}) belongs to…'],
+  classes: ['Golongan molekul', 'Molecule classes'],
+  classesLead: [
+    'Alkohol, ester, garam, atau vitamin? Tentukan golongannya.',
+    'Alcohol, ester, salt or vitamin? Name the class.',
+  ],
+  classQ: ['{name} termasuk golongan…', '{name} belongs to the class…'],
+  places: ['Kimia di sekitarku', 'Chemistry around me'],
+  placesLead: ['Di mana kita biasa menemukan zat ini?', 'Where do we usually find this substance?'],
+  placeQ: ['Di mana {name} paling mungkin kamu temukan?', 'Where are you most likely to find {name}?'],
+  mixed: ['Campuran semua materi', 'Mixed lessons'],
+  mixedLead: [
+    'Sepuluh soal acak dari seluruh materi jenjangmu.',
+    'Ten random questions from all lessons at your level.',
+  ],
+});
 
-const quizBank = {
-  sd: [
-    {
-      q: 'Molekul apakah yang tersusun dari 2 atom Hidrogen dan 1 atom Oksigen?',
-      options: ['Air (H₂O)', 'Garam (NaCl)', 'Gula (Glukosa)', 'Kapur (CaCO₃)'],
-      correct: 0,
-      exp: 'Tepat sekali! Air memiliki rumus molekul H₂O (2 atom H dan 1 atom O).'
-    },
-    {
-      q: 'Gas apa yang kita hirup dari udara segar saat bernapas?',
-      options: ['Oksigen (O₂)', 'Karbon Dioksida (CO₂)', 'Amonia (NH₃)', 'Metana (CH₄)'],
-      correct: 0,
-      exp: 'Benar! Paru-paru kita menyerap gas oksigen (O₂) untuk memberi energi pada seluruh tubuh.'
-    },
-    {
-      q: 'Es batu yang mencair menjadi air minum adalah contoh perubahan...',
-      options: ['Wujud Zat (Fisika)', 'Warna Benda', 'Rasa Makanan', 'Molekul Meledak'],
-      correct: 0,
-      exp: 'Hebat! Es mencair adalah perubahan wujud zat dari padat menjadi cair, molekulnya tetaplah H₂O!'
-    },
-    {
-      q: 'Bumbu dapur berwarna putih asin yang tersusun dari logam Natrium dan gas Klorin adalah...',
-      options: ['Garam Dapur (NaCl)', 'Gula Pasir', 'Merica', 'Tepung'],
-      correct: 0,
-      exp: 'Tepat! Natrium Klorida (NaCl) adalah nama ilmiah dari garam dapur.'
-    }
-  ],
-  smp: [
-    {
-      q: 'Ikatan kimia yang terbentuk akibat serah terima (transfer) elektron disebut ikatan...',
-      options: ['Ikatan Ionik', 'Ikatan Kovalen Nonpolar', 'Ikatan Hidrogen', 'Ikatan Logam'],
-      correct: 0,
-      exp: 'Benar! Ikatan ionik terjadi saat atom logam melepas elektron (kation) ke atom nonlogam (anion).'
-    },
-    {
-      q: 'Larutan dengan nilai pH = 2.5 memiliki sifat...',
-      options: ['Asam Kuat', 'Basa Kuat', 'Netral', 'Garam Elektrolit Lemah'],
-      correct: 0,
-      exp: 'Tepat! Larutan dengan pH < 7 bersifat asam, dan pH 2.5 tergolong asam kuat (mirip jus lemon/asam cuka).'
-    },
-    {
-      q: 'Berapakah massa molekul relatif (Mr) dari molekul gas metana (CH₄)? (Ar C=12, H=1)',
-      options: ['16 g/mol', '12 g/mol', '20 g/mol', '14 g/mol'],
-      correct: 0,
-      exp: 'Benar! Mr CH₄ = (1 × 12) + (4 × 1) = 16 g/mol.'
-    },
-    {
-      q: 'Alkaloid alami yang ditemukan dalam kopi dan teh yang bekerja menstimulasi sistem saraf adalah...',
-      options: ['Kafein', 'Etanol', 'Aspirin', 'Glukosa'],
-      correct: 0,
-      exp: 'Tepat! Kafein (C₈H₁₀N₄O₂) adalah stimulan saraf alami terpopuler di dunia.'
-    }
-  ],
-  sma: [
-    {
-      q: 'Berdasarkan teori VSEPR, bentuk geometri molekul air (H₂O) adalah...',
-      options: ['Bengkok / Bent (V-shape)', 'Linear', 'Tetrahedral', 'Trigonal Planar'],
-      correct: 0,
-      exp: 'Tepat! Rumus domain AX₂E₂ memiliki 2 PEI dan 2 PEB sehingga bentuknya bengkok dengan sudut 104.5°.'
-    },
-    {
-      q: 'Senyawa organik berikut yang memiliki gugus fungsi ester (-COO-) adalah...',
-      options: ['Aspirin (Asam Asetilsalisilat)', 'Etanol', 'Metana', 'Amonia'],
-      correct: 0,
-      exp: 'Benar! Aspirin memiliki gugus asetoksi ester (-OCOCH₃) dan asam karboksilat (-COOH).'
-    },
-    {
-      q: 'Mengapa benzena (C₆H₆) lebih mudah mengalami reaksi substitusi daripada reaksi adisi?',
-      options: [
-        'Karena memiliki kestabilan resonansi aromatik elektron-π yang tinggi',
-        'Karena tidak memiliki ikatan rangkap sama sekali',
-        'Karena berwujud cairan pada suhu ruang',
-        'Karena bersifat sangat asam'
-      ],
-      correct: 0,
-      exp: 'Tepat! Delokalisasi 6 elektron-π cincin benzena memberikan energi resonansi tinggi (~150 kJ/mol).'
-    }
-  ],
-  kuliah: [
-    {
-      q: 'Berdasarkan Teori Orbital Molekul (MOT), orde ikatan (bond order) pada molekul O₂ adalah...',
-      options: ['2', '1', '2.5', '3'],
-      correct: 0,
-      exp: 'Tepat! Orde ikatan = 1/2 (10 elektron ikatan - 6 elektron anti-ikatan) = 2. Paramagnetik dengan 2 elektron di π*2p.'
-    },
-    {
-      q: 'Dua molekul stereoisomer yang merupakan bayangan cermin yang tidak dapat saling dihimpitkan dinamakan...',
-      options: ['Enantiomer', 'Diastereomer', 'Meso', 'Konformer'],
-      correct: 0,
-      exp: 'Benar! Enantiomer adalah pasangan bayangan cermin non-superimposable dengan sifat optik berlawanan.'
-    }
-  ]
+export const title = route =>
+  route.id
+    ? pick(GEN[route.id]?.title || findTopic(route.id.replace('topic-', ''))?.title || ['Kuis', 'Quiz'])
+    : s.title;
+
+const GEN = {
+  structure: {
+    icon: 'molecule',
+    title: ['Tebak dari struktur', 'Name that structure'],
+    lead: 'structureLead',
+    build: buildStructure,
+  },
+  formula: {
+    icon: 'flask',
+    title: ['Rumus kimia', 'Chemical formulas'],
+    lead: 'formulaLead',
+    build: buildFormula,
+  },
+  symbols: {
+    icon: 'table',
+    title: ['Lambang unsur', 'Element symbols'],
+    lead: 'symbolsLead',
+    build: buildSymbols,
+  },
+  category: {
+    icon: 'atom',
+    title: ['Golongan unsur', 'Element categories'],
+    lead: 'categoryLead',
+    build: buildCategory,
+  },
+  classes: {
+    icon: 'layers',
+    title: ['Golongan molekul', 'Molecule classes'],
+    lead: 'classesLead',
+    build: buildClasses,
+  },
+  places: {
+    icon: 'pin',
+    title: ['Kimia di sekitarku', 'Chemistry around me'],
+    lead: 'placesLead',
+    build: buildPlaces,
+  },
+  mixed: {
+    icon: 'sparkles',
+    title: ['Campuran semua materi', 'Mixed lessons'],
+    lead: 'mixedLead',
+    build: buildMixed,
+  },
 };
 
-export async function render({ main }) {
-  const prefs = getPrefs();
-  const ui = getUi(prefs.lang);
-
-  const initialLvl = prefs.level || 'sma';
-  let activeLvl = initialLvl;
-  let questions = quizBank[activeLvl] || quizBank.sma;
-  let currentQIdx = 0;
-  let sessionScore = 0;
-
-  function renderQuizUI() {
-    const stats = getQuizStats();
-    const q = questions[currentQIdx];
-
-    if (!q) {
-      // Quiz Finished Summary
-      main.innerHTML = `
-        <div class="container" style="padding: 60px 20px; max-width: 650px; text-align: center;">
-          <div class="lab-card" style="padding: 40px;">
-            <div style="font-size: 4rem; margin-bottom: 12px;">🏆</div>
-            <h2 style="font-size: 2rem; margin-bottom: 8px;">Kuis Selesai!</h2>
-            <p style="color: var(--text-muted); margin-bottom: 24px;">
-              Selamat! Kamu telah menyelesaikan tantangan kimia jenjang ${activeLvl.toUpperCase()}.
-            </p>
-
-            <div class="prop-card" style="margin-bottom: 24px;">
-              <div class="prop-label">${ui.quizScore}</div>
-              <div class="prop-value" style="font-size: 2.8rem; color: var(--neon-cyan);">
-                +${sessionScore} Poin
-              </div>
-            </div>
-
-            <div style="display: flex; gap: 12px; justify-content: center;">
-              <button id="btn-quiz-retry" class="btn-search">Ulangi Kuis</button>
-              <a href="#/explore" class="btn-action">Jelajahi Molekul Lain</a>
-            </div>
-          </div>
-        </div>
-      `;
-
-      $('#btn-quiz-retry')?.addEventListener('click', () => {
-        currentQIdx = 0;
-        sessionScore = 0;
-        renderQuizUI();
-      });
-      return;
-    }
-
-    main.innerHTML = `
-      <div class="container" style="padding-top: 40px; padding-bottom: 60px; max-width: 760px;">
-        <div class="section-header">
-          <div>
-            <h2>${ui.quizTitle}</h2>
-            <p>Uji ketajaman pemahaman struktur molekul dan ikatan kimia semesta.</p>
-          </div>
-        </div>
-
-        <!-- Level Selector for Quiz -->
-        <div class="lab-nav-tabs" style="margin-bottom: 24px;">
-          ${['sd', 'smp', 'sma', 'kuliah'].map(lvl => `
-            <button class="lab-tab-pill ${activeLvl === lvl ? 'active' : ''}" data-quiz-lvl="${lvl}">
-              ${lvl.toUpperCase()}
-            </button>
-          `).join('')}
-        </div>
-
-        <!-- Quiz Stage Card -->
-        <div class="lab-card" style="padding: 32px;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-            <span class="badge badge-lvl" style="--badge-col: var(--neon-cyan)">
-              Soal ${currentQIdx + 1} dari ${questions.length}
-            </span>
-            <span style="font-size: 0.9rem; font-weight: 700; color: var(--electron-amber);">
-              Skor Sesi: +${sessionScore}
-            </span>
-          </div>
-
-          <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 24px; line-height: 1.4;">
-            ${q.q}
-          </h3>
-
-          <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px;">
-            ${q.options.map((opt, i) => `
-              <button class="btn-action btn-quiz-opt" data-opt-idx="${i}" style="padding: 14px 18px; text-align: left; justify-content: flex-start; font-size: 1rem;">
-                <span style="font-family: var(--font-mono); font-weight: 700; margin-right: 12px; color: var(--neon-cyan);">${['A', 'B', 'C', 'D'][i]}.</span>
-                <span>${opt}</span>
-              </button>
-            `).join('')}
-          </div>
-
-          <div id="quiz-feedback-box" style="display: none; padding: 16px 20px; border-radius: var(--radius-sm); margin-bottom: 20px; font-size: 0.95rem; line-height: 1.6;"></div>
-
-          <button id="btn-next-question" class="btn-search" style="display: none; width: 100%; justify-content: center; padding: 14px;">
-            <span>${ui.quizNext}</span> →
-          </button>
-        </div>
-      </div>
-    `;
-
-    // Bind Level Switches
-    $$('[data-quiz-lvl]').forEach(btn => {
-      btn.addEventListener('click', () => {
-        activeLvl = btn.dataset.quizLvl;
-        questions = quizBank[activeLvl] || quizBank.sma;
-        currentQIdx = 0;
-        sessionScore = 0;
-        renderQuizUI();
-      });
-    });
-
-    // Option Clicks
-    const optButtons = $$('.btn-quiz-opt');
-    const feedbackBox = $('#quiz-feedback-box');
-    const nextBtn = $('#btn-next-question');
-
-    optButtons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const chosen = parseInt(btn.dataset.optIdx, 10);
-        optButtons.forEach(b => b.disabled = true);
-
-        if (chosen === q.correct) {
-          btn.style.background = 'rgba(16, 185, 129, 0.25)';
-          btn.style.borderColor = 'var(--quantum-emerald)';
-          btn.style.color = 'var(--quantum-emerald)';
-          sessionScore += 25;
-          recordQuizResult(25, `Juara Kimia ${activeLvl.toUpperCase()}`);
-          feedbackBox.innerHTML = `🎉 <strong>Benar!</strong> ${q.exp}`;
-          feedbackBox.style.background = 'rgba(16, 185, 129, 0.15)';
-          feedbackBox.style.color = '#10b981';
-          feedbackBox.style.border = '1px solid var(--quantum-emerald)';
-          feedbackBox.style.display = 'block';
-          toast('Jawaban tepat! +25 Poin', 'success');
-        } else {
-          btn.style.background = 'rgba(239, 68, 68, 0.25)';
-          btn.style.borderColor = 'var(--crimson-fire)';
-          btn.style.color = 'var(--crimson-fire)';
-          const correctBtn = optButtons[q.correct];
-          if (correctBtn) {
-            correctBtn.style.background = 'rgba(16, 185, 129, 0.25)';
-            correctBtn.style.borderColor = 'var(--quantum-emerald)';
-          }
-          feedbackBox.innerHTML = `💡 <strong>Kurang tepat.</strong> ${q.exp}`;
-          feedbackBox.style.background = 'rgba(239, 68, 68, 0.15)';
-          feedbackBox.style.color = '#ef4444';
-          feedbackBox.style.border = '1px solid var(--crimson-fire)';
-          feedbackBox.style.display = 'block';
-        }
-
-        nextBtn.style.display = 'inline-flex';
-      });
-    });
-
-    nextBtn.addEventListener('click', () => {
-      currentQIdx++;
-      renderQuizUI();
-    });
+export async function render({ id, main }) {
+  if (!id) return renderList(main);
+  const gen = GEN[id];
+  const topic = !gen && findTopic(id.replace(/^topic-/, ''));
+  if (!gen && !topic) {
+    main.innerHTML = `<section class="container page-state"><h1>${esc(s.notFound)}</h1><a class="btn" href="#/quiz">${esc(s.title)}</a></section>`;
+    return;
   }
+  const level = getPrefs().level;
+  const name = gen ? pick(gen.title) : pick(topic.title);
+  main.innerHTML = `<div class="container narrow">
+    ${breadcrumbs([
+      [s.title, '#/quiz'],
+      [name, ''],
+    ])}
+    ${pageHead({ title: esc(name), lead: esc(gen ? s[gen.lead] : pick(topic.summary)) })}
+    <div class="card quiz-card" data-quiz></div>
+  </div>`;
+  const questions = gen ? await gen.build(level) : quizFor(topic, bodyLevel(topic, level));
+  mountQuiz($('[data-quiz]', main), { id: gen ? `gen-${id}` : `topic-${topic.id}`, title: name, questions });
+}
 
-  renderQuizUI();
+function renderList(main) {
+  const results = quizResults();
+  const earned = new Set(earnedBadges());
+  const stats = progressStats();
+  main.innerHTML = `<div class="container">
+    ${pageHead({ title: esc(s.title), lead: esc(s.lead) })}
+    <section><h2>${esc(s.challenges)}</h2><div class="grid grid-4">
+      ${Object.entries(GEN)
+        .map(([k, g]) => {
+          const r = results[`gen-${k}`];
+          return `<a class="card lab-card" href="#/quiz/${k}"><span class="topic-icon">${icon(g.icon, { size: 24 })}</span><span class="card-title">${esc(pick(g.title))}</span><span class="card-text">${esc(s[g.lead])}</span>${
+            r ? `<span class="topic-meta">★ ${esc(fmt(s.best, r))}</span>` : ''
+          }</a>`;
+        })
+        .join('')}
+    </div></section>
+    <section><h2>${esc(s.lessons)}</h2><div class="grid grid-3">
+      ${TOPICS.map(t => {
+        const r = results[`topic-${t.id}`];
+        return `<a class="card topic-card" href="#/quiz/topic-${t.id}"><span class="topic-icon">${icon(t.icon, { size: 22 })}</span><span class="card-title">${esc(pick(t.title))}</span>${
+          r ? `<span class="topic-meta">★ ${esc(fmt(s.best, r))}</span>` : ''
+        }</a>`;
+      }).join('')}
+    </div></section>
+    <section><h2>${esc(s.badges)}</h2><div class="badges">
+      ${BADGES.map(
+        b =>
+          `<div class="badge-card ${earned.has(b.id) ? 'is-earned' : ''}">${icon(b.icon, { size: 28 })}<strong>${esc(pick(b.name))}</strong><span>${esc(pick(b.goal))}</span>${
+            earned.has(b.id) ? '' : `<span class="muted small">${esc(s.locked)}</span>`
+          }</div>`
+      ).join('')}
+    </div><p class="muted small">${esc(pick(['Kemajuan', 'Progress']))}: ${stats.visited} ${esc(pick(['dikunjungi', 'visited']))} · ${stats.lessons} ${esc(pick(['materi', 'lessons']))} · ${stats.perfect} ${esc(pick(['kuis sempurna', 'perfect quizzes']))} · ${stats.labs} lab</p></section>
+  </div>`;
+}
+
+// ---------- Generated quizzes ----------
+const levelPool = level => atLevel(level === 'guru' ? 'kuliah' : level);
+const pickN = (list, n) => shuffle(list).slice(0, n);
+
+async function buildStructure(level) {
+  const idx = await moleculeIndex();
+  const pool = levelPool(level).filter(
+    m => idx.get(m.id)?.s !== 'lattice' && !m.poly && !m.lattice && depiction(m.id)?.a.length > 1
+  );
+  return pickN(pool, 8).map(m => {
+    const wrong = pickN(
+      pool.filter(x => x.id !== m.id),
+      3
+    );
+    const options = [m, ...wrong].map(x => x.name);
+    return {
+      q: [s.structureQ, s.structureQ],
+      svg: depictSVG(depiction(m.id), {
+        title: pick(['Struktur 2D molekul yang harus ditebak', '2D structure of the molecule to guess']),
+        size: 260,
+      }),
+      options,
+      answer: 0,
+      explain: m.about,
+    };
+  });
+}
+
+async function buildFormula(level) {
+  const idx = await moleculeIndex();
+  const pool = levelPool(level).filter(m => idx.get(m.id)?.formula && !m.poly);
+  const f = m => formulaUnicode(idx.get(m.id).formula);
+  return pickN(pool, 8).map(m => {
+    const wrong = pickN(
+      pool.filter(x => f(x) !== f(m)),
+      3
+    );
+    return {
+      q: [fmt(s.formulaQ, { name: m.name[0] }), fmt(s.formulaQ, { name: m.name[1] })].map(x => x),
+      options: [f(m), ...wrong.map(f)],
+      answer: 0,
+      explain: m.about,
+    };
+  });
+}
+
+function elementPool(level) {
+  const max = { sd: 20, smp: 36, sma: 56, kuliah: 118, guru: 118 }[level] || 36;
+  return ELEMENTS.filter(e => e.z <= max || [79, 80, 82, 47, 50, 78, 92].includes(e.z));
+}
+
+async function buildSymbols(level) {
+  const pool = elementPool(level);
+  return pickN(pool, 10).map(e => {
+    const wrong = pickN(
+      pool.filter(x => x.z !== e.z),
+      3
+    );
+    return {
+      q: [fmt(s.symbolQ, { s: e.s }), fmt(s.symbolQ, { s: e.s })],
+      options: [e, ...wrong].map(x => [x.id, x.en]),
+      answer: 0,
+      explain: [`${e.id} (${e.s}), nomor atom ${e.z}.`, `${e.en} (${e.s}), atomic number ${e.z}.`],
+    };
+  });
+}
+
+async function buildCategory(level) {
+  const pool = elementPool(level).filter(e => e.cat !== 'unknown');
+  const cats = Object.keys(CATEGORIES).filter(c => c !== 'unknown');
+  return pickN(pool, 8).map(e => {
+    const wrong = pickN(
+      cats.filter(c => c !== e.cat),
+      3
+    );
+    return {
+      q: [fmt(s.categoryQ, { name: e.id, s: e.s }), fmt(s.categoryQ, { name: e.en, s: e.s })],
+      options: [e.cat, ...wrong].map(c => CATEGORIES[c].name),
+      answer: 0,
+      explain: [
+        `${e.id}: golongan ${e.group ?? e.block}, periode ${e.period}.`,
+        `${e.en}: group ${e.group ?? e.block}, period ${e.period}.`,
+      ],
+    };
+  });
+}
+
+async function buildClasses(level) {
+  const pool = levelPool(level).filter(m => getClass(m.cls[0])?.parent);
+  const allClasses = [...new Set(MOLECULES.map(m => m.cls[0]))].filter(c => getClass(c)?.parent);
+  return pickN(pool, 8).map(m => {
+    const wrong = pickN(
+      allClasses.filter(c => !m.cls.includes(c)),
+      3
+    );
+    return {
+      q: [fmt(s.classQ, { name: m.name[0] }), fmt(s.classQ, { name: m.name[1] })],
+      options: [m.cls[0], ...wrong].map(c => getClass(c).name),
+      answer: 0,
+      explain: getClass(m.cls[0]).def,
+    };
+  });
+}
+
+async function buildPlaces(level) {
+  const pool = levelPool(level).filter(m => m.ctx.length);
+  return pickN(pool, 8).map(m => {
+    const right = PLACES.find(p => p.id === m.ctx[0]);
+    const wrong = pickN(
+      PLACES.filter(p => !m.ctx.includes(p.id)),
+      3
+    );
+    return {
+      q: [fmt(s.placeQ, { name: m.name[0] }), fmt(s.placeQ, { name: m.name[1] })],
+      options: [right, ...wrong].map(p => p.name),
+      answer: 0,
+      explain: m.uses,
+    };
+  });
+}
+
+async function buildMixed(level) {
+  const lv = level === 'guru' ? 'kuliah' : level;
+  const all = TOPICS.flatMap(t => t.quiz.filter(q => rank(q.lv) <= rank(lv) && rank(q.lv) >= rank(lv) - 1));
+  return pickN(all, 10);
 }

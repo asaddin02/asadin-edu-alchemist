@@ -1,0 +1,26 @@
+{
+ "z": 68,
+ "qid": "Q1849",
+ "wiki": {
+  "id": {
+   "title": "Erbium",
+   "extract": "Erbium adalah sebuah unsur kimia dengan lambang Er dan nomor atom 68. Ia merupakan sebuah logam padat berwarna putih keperakan ketika diisolasi secara artifisial. Erbium alami selalu ditemukan dalam kombinasi kimia dengan unsur lain. Ia adalah anggota deret lantanida, sebuah unsur tanah jarang, yang awalnya ditemukan di tambang gadolinit di Ytterby, Swedia, yang merupakan sumber nama unsur ini.\nPenggunaan erbium yang utama melibatkan ion Er3+ berwarna merah muda, yang memiliki sifat fluoresen optik yang sangat berguna dalam aplikasi laser tertentu. Kaca atau kristal yang didoping erbium dapat digunakan sebagai media amplifikasi optik, di mana ion Er3+ dipompa secara optik pada panjang gelombang sekitar 980 atau 1480 nm dan kemudian memancarkan cahaya pada 1530 nm dalam emisi terstimulasi. Proses ini akan menghasilkan penguat optik laser sederhana yang luar biasa mekanis untuk sinyal yang ditransmisikan oleh serat optik. Panjang gelombang 1550 nm sangat penting untuk komunikasi optik karena serat optik mode tunggal standar memiliki kerugian minimal pada panjang gelombang khusus ini.\nSelain laser penguat serat optik, berbagai macam aplikasi medis (misalnya dermatologi dan kedokteran gigi) bergantung pada emisi ion erbium 2940 nm (lihat laser Er:YAG) ketika dinyalakan pada panjang gelombang lain, yang sangat terabsorpsi dalam air di dalam jaringan, membuat efeknya sangat dangkal. Deposisi energi laser jaringan yang dangkal seperti itu sangat membantu dalam bedah laser, dan untuk produksi uap yang efisien yang menghasilkan ablasi enamel dengan jenis laser gigi yang umum.",
+   "url": "https://id.wikipedia.org/wiki/Erbium"
+  },
+  "en": {
+   "title": "Erbium",
+   "extract": "Erbium is a chemical element; it has symbol Er and atomic number 68. A silvery-white solid metal when artificially isolated, natural erbium is always found in chemical combination with other elements. It is a lanthanide, a rare-earth element, originally found in the gadolinite mine in Ytterby, Sweden, which is the source of the element's name.\nErbium's principal uses involve its pink-colored Er3+ ions, which have optical fluorescent properties particularly useful in certain laser applications. Erbium-doped glasses or crystals can be used as optical amplification media, where Er3+ ions are optically pumped at around 980 or 1480 nm and then radiate light at 1530 nm in stimulated emission. This process results in an unusually mechanically simple laser optical amplifier for signals transmitted by fiber optics. The 1550 nm wavelength is especially important for optical communications because standard single mode optical fibers have minimal loss at this particular wavelength.\nIn addition to optical fiber amplifier-lasers, a large variety of medical applications (e.g. dermatology, dentistry) rely on the erbium ion's 2940 nm emission (see Er:YAG laser) when lit at another wavelength, which is highly absorbed in water in tissues, making its effect very superficial. Such shallow tissue deposition of laser energy is helpful in laser surgery, and for the efficient production of steam which produces enamel ablation by common types of dental laser.",
+   "url": "https://en.wikipedia.org/wiki/Erbium"
+  }
+ },
+ "photo": {
+  "file": "Erbium.jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Erbium.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "width": 640,
+  "height": 912,
+  "page": "https://commons.wikimedia.org/wiki/File:Erbium.jpg",
+  "author": "Tomihahndorf",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+ }
+}

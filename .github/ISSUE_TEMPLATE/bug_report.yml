@@ -1,0 +1,21 @@
+name: Laporan masalah / Bug report
+description: Sesuatu tidak berjalan semestinya. / Something does not work as expected.
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: Apa yang terjadi? / What happened?
+      description: Langkah untuk mengulang, apa yang diharapkan, dan apa yang terjadi. / Steps, expected and actual result.
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Alamat halaman / Page address
+      placeholder: https://…/#/molecule/water
+  - type: input
+    id: device
+    attributes:
+      label: Perangkat & browser / Device & browser
+      placeholder: Android 14, Chrome 140

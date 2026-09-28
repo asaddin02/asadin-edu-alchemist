@@ -1,0 +1,17 @@
+name: Koreksi atau usulan konten / Content fix or suggestion
+description: Kesalahan kimia, terjemahan, atau molekul yang ingin ditambahkan. / A chemistry or translation error, or a molecule to add.
+labels: [content]
+body:
+  - type: input
+    id: where
+    attributes:
+      label: Halaman atau molekul / Page or molecule
+    validations:
+      required: true
+  - type: textarea
+    id: fix
+    attributes:
+      label: Usulan / Suggestion
+      description: Sertakan sumber tepercaya (PubChem, buku teks, jurnal). / Please cite a reliable source.
+    validations:
+      required: true

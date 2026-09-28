@@ -1,202 +1,193 @@
-// ChemTaxa · Global Layout Components (Header, Nav, Footer, Mode Selectors)
-import { $, $$ } from '../core/dom.js';
-import { getPrefs, setPref } from '../core/prefs.js';
-import { getUi } from '../i18n/ui.js';
-import { getIcon } from './icons.js';
-import { getBookmarks } from '../core/userdata.js';
+// Learning shell: grouped navigation, search, learner level and language.
+import { $, $$, esc } from '../core/dom.js';
+import { getPrefs, setPref, LEVELS, pick } from '../core/prefs.js';
+import { ui, levelName, levelLong } from '../i18n/ui.js';
+import { icon } from './icons.js';
+import { bookmarks } from '../core/userdata.js';
+import { CONFIG } from '../config.js';
 
-export function renderHeader(activePage = 'home') {
-  const header = $('#header');
-  if (!header) return;
+const PRIMARY = [
+  ['explore', 'explore', 'search'],
+  ['classes', 'classes', 'layers'],
+  ['table', 'table', 'table'],
+  ['learn', 'learn', 'book'],
+  ['lab', 'lab', 'flask'],
+  ['quiz', 'quiz', 'quiz'],
+];
+const MORE = [
+  ['atom', 'atom', 'atom'],
+  ['compare', 'compare', 'compare'],
+  ['around', 'around', 'pin'],
+  ['glossary', 'glossary', 'book'],
+  ['saved', 'saved', 'bookmark'],
+  ['teacher', 'teacher', 'teacher'],
+  ['about', 'about', 'info'],
+];
 
+export function renderHeader() {
   const prefs = getPrefs();
-  const ui = getUi(prefs.lang);
-  const bookmarkCount = getBookmarks().length;
-
-  header.innerHTML = `
-    <div class="nav-container container">
-      <div class="nav-brand-wrap">
-        <a href="#/home" class="brand-link" aria-label="ChemTaxa Beranda">
-          <div class="brand-logo" aria-hidden="true">
-            ${getIcon('atom', 28, 'spin-glow')}
-          </div>
-          <div class="brand-text">
-            <span class="brand-title">ChemTaxa</span>
-            <span class="brand-sub">Asadin Edu</span>
-          </div>
-        </a>
-      </div>
-
-      <nav class="nav-links" id="main-nav" aria-label="Navigasi Utama">
-        <a href="#/home" class="nav-item ${activePage === 'home' ? 'active' : ''}">
-          ${getIcon('home', 16)} <span>${ui.navHome}</span>
-        </a>
-        <a href="#/explore" class="nav-item ${activePage === 'explore' ? 'active' : ''}">
-          ${getIcon('search', 16)} <span>${ui.navExplore}</span>
-        </a>
-        <a href="#/learn" class="nav-item ${activePage === 'learn' ? 'active' : ''}">
-          ${getIcon('graduate', 16)} <span>${ui.navLearn}</span>
-        </a>
-        <a href="#/lab" class="nav-item ${activePage === 'lab' ? 'active' : ''}">
-          ${getIcon('flask', 16)} <span>${ui.navLab}</span>
-        </a>
-        <a href="#/table" class="nav-item ${activePage === 'table' ? 'active' : ''}">
-          ${getIcon('table', 16)} <span>${ui.navTable}</span>
-        </a>
-        <a href="#/atom" class="nav-item ${activePage === 'atom' ? 'active' : ''}">
-          ${getIcon('atom', 16)} <span>${ui.navAtom}</span>
-        </a>
-        <a href="#/compare" class="nav-item ${activePage === 'compare' ? 'active' : ''}">
-          ${getIcon('scale', 16)} <span>${ui.navCompare}</span>
-        </a>
-        <a href="#/quiz" class="nav-item ${activePage === 'quiz' ? 'active' : ''}">
-          ${getIcon('quiz', 16)} <span>${ui.navQuiz}</span>
-        </a>
-        <a href="#/teacher" class="nav-item ${activePage === 'teacher' ? 'active' : ''}">
-          ${getIcon('teacher', 16)} <span>${ui.navTeacher}</span>
-        </a>
-        <a href="#/saved" class="nav-item ${activePage === 'saved' ? 'active' : ''}">
-          ${getIcon('bookmark', 16)} 
-          <span>${ui.navSaved}</span>
-          ${bookmarkCount > 0 ? `<span class="badge-count">${bookmarkCount}</span>` : ''}
-        </a>
+  const count = bookmarks().length;
+  const link = ([page, key, ic]) =>
+    `<a class="nav-link" href="#/${page === 'home' ? '' : page}" data-nav="${page}">${icon(ic, { size: 20 })}<span>${esc(ui[key])}</span>${
+      page === 'saved' ? `<span class="count" aria-label="${count}">${count}</span>` : ''
+    }</a>`;
+  const home = ['home', 'home', 'home'];
+  const brand = `<a class="brand" href="#/" aria-label="Moleculium, ${esc(ui.home)}">
+    <img src="assets/brand/logo.png" alt="" width="44" height="44" />
+    <span class="brand-text"><strong>Moleculium<span class="brand-dot">.</span></strong><small>BY ASADIN EDU</small></span>
+  </a>`;
+  $('#header').innerHTML = `
+    <aside class="learning-sidebar" aria-label="${esc(pick(['Ruang belajar', 'Learning space']))}">
+      ${brand}
+      <nav aria-label="${esc(pick(['Navigasi utama', 'Main navigation']))}">
+        <p class="nav-caption">${esc(pick(['RUANG EKSPLORASI', 'EXPLORATION SPACE']))}</p>
+        ${[home, PRIMARY[0], PRIMARY[2], PRIMARY[1], MORE[0]].map(link).join('')}
+        <p class="nav-caption">${esc(pick(['AYO BELAJAR', 'LET’S LEARN']))}</p>
+        ${[PRIMARY[3], PRIMARY[4], PRIMARY[5], MORE[2]].map(link).join('')}
+        <p class="nav-caption">${esc(pick(['PERLENGKAPANMU', 'YOUR TOOLKIT']))}</p>
+        ${[MORE[4], MORE[1], MORE[3]].map(link).join('')}
       </nav>
-
-      <div class="nav-actions">
-        <!-- Level Selector Dropdown -->
-        <div class="level-select-wrap">
-          <label for="level-select" class="sr-only">${ui.levelLabel}</label>
-          <select id="level-select" class="select-level" aria-label="${ui.levelLabel}">
-            <option value="sd" ${prefs.level === 'sd' ? 'selected' : ''}>🎓 SD</option>
-            <option value="smp" ${prefs.level === 'smp' ? 'selected' : ''}>🎓 SMP</option>
-            <option value="sma" ${prefs.level === 'sma' ? 'selected' : ''}>🎓 SMA</option>
-            <option value="kuliah" ${prefs.level === 'kuliah' ? 'selected' : ''}>🎓 Kuliah</option>
+      <a class="sidebar-teacher" href="#/teacher" data-nav="teacher">${icon('teacher', { size: 22 })}<span><strong>${esc(ui.teacher)}</strong><small>${esc(pick(['Teman mengajar yang seru', 'Make learning come alive']))}</small></span>${icon('arrowRight', { size: 16 })}</a>
+      <a class="sidebar-about" href="#/about" data-nav="about">${icon('info', { size: 16 })} ${esc(ui.about)}</a>
+    </aside>
+    <div class="header-bar container">
+      <div class="mobile-brand">${brand}</div>
+      <p class="shell-location"><span>Moleculium</span>${icon('chevronRight', { size: 14 })}<strong data-current-page>${esc(ui.home)}</strong></p>
+      <div class="header-tools">
+        <form class="header-search" role="search" data-search>
+          <label class="sr-only" for="site-search">${esc(ui.searchLabel)}</label>
+          <input id="site-search" name="q" type="search" autocomplete="off" placeholder="${esc(pick(['Cari sesuatu yang menarik…', 'Find something fascinating…']))}" />
+          <button class="icon-btn" type="submit" aria-label="${esc(ui.search)}">${icon('search', { size: 19 })}</button>
+        </form>
+        <div class="learner-select">${icon('school', { size: 19 })}<label class="sr-only" for="mode-select">${esc(ui.modeLabel)}</label>
+          <select id="mode-select" class="mode-select" data-pref="level" title="${esc(ui.modeLabel)}">
+            ${LEVELS.map(l => `<option value="${l}" ${prefs.level === l ? 'selected' : ''}>${esc(levelName(l))}</option>`).join('')}
           </select>
         </div>
-
-        <!-- Language Switcher -->
-        <button class="btn-tool" id="btn-toggle-lang" title="Ganti Bahasa (ID / EN)" aria-label="Ganti Bahasa">
-          <span class="lang-tag">${prefs.lang.toUpperCase()}</span>
-        </button>
-
-        <!-- Theme Toggle -->
-        <button class="btn-tool" id="btn-toggle-theme" title="Ganti Tema Gelap/Terang" aria-label="Ganti Tema">
-          ${getIcon(prefs.theme === 'dark' ? 'sun' : 'moon', 18)}
-        </button>
-
-        <!-- Mobile Menu Toggle Button -->
-        <button class="btn-tool btn-mobile-menu" id="btn-menu-toggle" aria-label="Buka Menu" aria-expanded="false">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </button>
+        <button class="icon-btn lang-btn" type="button" data-toggle="lang" aria-label="${esc(ui.switchLang)}" title="${esc(ui.switchLang)}"><span aria-hidden="true">${prefs.lang === 'id' ? 'EN' : 'ID'}</span></button>
+        <button class="icon-btn menu-btn" type="button" aria-expanded="false" aria-controls="drawer" data-toggle="drawer" aria-label="${esc(ui.menu)}">${icon('menu')}</button>
       </div>
     </div>
-  `;
-
-  bindHeaderEvents();
+    <div class="offline-bar" data-offline hidden>${icon('wifiOff', { size: 16 })} ${esc(ui.offline)}</div>
+    <div class="drawer" id="drawer" hidden>
+      <nav aria-label="${esc(ui.menu)}">${[home, ...PRIMARY, ...MORE].map(link).join('')}</nav>
+      <p class="drawer-mode">${esc(levelLong(prefs.level))}</p>
+    </div>
+    <nav class="mobile-dock" aria-label="${esc(pick(['Pintasan belajar', 'Learning shortcuts']))}">${[home, PRIMARY[0], PRIMARY[4], MORE[4]].map(link).join('')}</nav>`;
+  markActive(location.hash.replace(/^#\/?/, '').split(/[/?]/)[0] || 'home');
+  updateOffline();
 }
 
-function bindHeaderEvents() {
-  const levelSelect = $('#level-select');
-  if (levelSelect) {
-    levelSelect.addEventListener('change', e => {
-      setPref('level', e.target.value);
-    });
+export function markActive(page) {
+  const section = { molecule: 'explore', assignment: 'teacher' }[page] || page;
+  const label = $('[data-current-page]');
+  if (label) label.textContent = ui[section] || ui.home;
+  for (const a of $$('[data-nav]')) {
+    if (a.dataset.nav === section) a.setAttribute('aria-current', 'page');
+    else a.removeAttribute('aria-current');
   }
+  const moreBtn = $('[data-toggle="more"]');
+  if (moreBtn)
+    moreBtn.classList.toggle(
+      'is-active',
+      MORE.some(m => m[0] === page)
+    );
+  closeMenus();
+}
 
-  const langBtn = $('#btn-toggle-lang');
-  if (langBtn) {
-    langBtn.addEventListener('click', () => {
-      const current = getPrefs().lang;
-      setPref('lang', current === 'id' ? 'en' : 'id');
-    });
+function closeMenus() {
+  for (const btn of $$('[data-toggle="more"], [data-toggle="drawer"]')) {
+    btn.setAttribute('aria-expanded', 'false');
+    const target = $(`#${btn.getAttribute('aria-controls')}`);
+    if (target) target.hidden = true;
   }
+  document.body.classList.remove('drawer-open');
+}
 
-  const themeBtn = $('#btn-toggle-theme');
-  if (themeBtn) {
-    themeBtn.addEventListener('click', () => {
-      const current = getPrefs().theme;
-      setPref('theme', current === 'dark' ? 'light' : 'dark');
-      renderHeader();
-    });
-  }
+function toggle(btn) {
+  const target = $(`#${btn.getAttribute('aria-controls')}`);
+  const open = btn.getAttribute('aria-expanded') !== 'true';
+  closeMenus();
+  btn.setAttribute('aria-expanded', String(open));
+  target.hidden = !open;
+  if (btn.dataset.toggle === 'drawer') document.body.classList.toggle('drawer-open', open);
+  if (open) target.querySelector('a, button')?.focus();
+}
 
-  const menuToggle = $('#btn-menu-toggle');
-  const mainNav = $('#main-nav');
-  if (menuToggle && mainNav) {
-    menuToggle.addEventListener('click', () => {
-      const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
-      menuToggle.setAttribute('aria-expanded', String(!expanded));
-      mainNav.classList.toggle('open', !expanded);
-    });
-  }
+function updateOffline() {
+  const bar = $('[data-offline]');
+  if (bar) bar.hidden = navigator.onLine;
+}
+
+export function bindShell(onSearch) {
+  document.addEventListener('click', e => {
+    const t = e.target.closest('[data-toggle]');
+    if (t?.dataset.toggle === 'more' || t?.dataset.toggle === 'drawer') return toggle(t);
+    if (t?.dataset.toggle === 'lang') return setPref('lang', getPrefs().lang === 'id' ? 'en' : 'id');
+    if (!e.target.closest('.nav-more, .drawer, [data-toggle]')) closeMenus();
+  });
+  document.addEventListener('change', e => {
+    if (e.target.matches('[data-pref="level"]')) setPref('level', e.target.value);
+  });
+  document.addEventListener('submit', e => {
+    const form = e.target.closest('[data-search]');
+    if (!form) return;
+    e.preventDefault();
+    const q = new FormData(form).get('q')?.toString().trim();
+    if (q) onSearch(q);
+    else location.hash = '#/explore';
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key !== 'Escape') return;
+    const open = $('[data-toggle][aria-expanded="true"]');
+    if (open) {
+      closeMenus();
+      open.focus();
+    }
+  });
+  window.addEventListener('online', updateOffline);
+  window.addEventListener('offline', updateOffline);
 }
 
 export function renderFooter() {
-  const footer = $('#footer');
-  if (!footer) return;
-
-  const prefs = getPrefs();
-  const ui = getUi(prefs.lang);
-
-  footer.innerHTML = `
-    <div class="footer-wrap container">
-      <div class="footer-grid">
-        <div class="footer-col brand-col">
-          <div class="footer-brand">
-            ${getIcon('atom', 24)}
-            <h3>ChemTaxa</h3>
-          </div>
-          <p class="footer-desc">
-            ${ui.tagline}. Platform pembelajaran dan penjelajahan kimia molekul terbuka yang menghubungkan konsep sekolah dengan sains mutakhir.
-          </p>
-          <div class="footer-badge-pill">
-            <span>🔬 Asadin Edu Ecosystem</span>
-          </div>
-        </div>
-
-        <div class="footer-col">
-          <h4>${ui.navExplore}</h4>
-          <ul>
-            <li><a href="#/explore?cat=life">Molekul Kehidupan & Sel</a></li>
-            <li><a href="#/explore?cat=atmosphere">Atmosfer & Gas Bumi</a></li>
-            <li><a href="#/explore?cat=medicine">Obat & Farmakologi</a></li>
-            <li><a href="#/explore?cat=household">Bahan Rumah Tangga</a></li>
-            <li><a href="#/explore?cat=energy">Energi & Bahan Bakar</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Fitur Unggulan</h4>
-          <ul>
-            <li><a href="#/lab">Lab Virtual 3D & Reaksi</a></li>
-            <li><a href="#/table">Tabel Periodik 118 Unsur</a></li>
-            <li><a href="#/compare">Bandingkan Molekul</a></li>
-            <li><a href="#/quiz">Kuis & Lencana Juara</a></li>
-            <li><a href="#/glossary">Kamus & Glosarium Kimia</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Pendidikan & Guru</h4>
-          <ul>
-            <li><a href="#/learn">Kurikulum SD, SMP, SMA, Kuliah</a></li>
-            <li><a href="#/teacher">Ruang Guru & Modul Ajar</a></li>
-            <li><a href="#/saved">Koleksi Molekul & Catatan</a></li>
-            <li><a href="#/about">PubChem API & Transparansi Data</a></li>
-          </ul>
-        </div>
+  $('#footer').innerHTML = `
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand"><img src="assets/brand/logo.png" alt="" width="28" height="28" /> <strong>Moleculium</strong></p>
+        <p>${esc(
+          pick([
+            'Atlas terbuka molekul, unsur, dan material untuk pelajar SD sampai mahasiswa, serta guru. Bagian dari Asadin Edu, bersama BioTaxa.',
+            'An open atlas of molecules, elements and materials for primary pupils to university students, and teachers. Part of Asadin Edu, alongside BioTaxa.',
+          ])
+        )}</p>
+        <p class="muted">${esc(ui.eduNote)}</p>
       </div>
-
-      <div class="footer-bottom">
-        <p class="source-credit">
-          ${ui.officialSource}. Data struktur 2D/3D & deskripsi diambil secara resmi dari National Center for Biotechnology Information (NCBI / NLM / NIH).
-        </p>
-        <p class="copyright">
-          © 2026 <strong>ChemTaxa</strong> · Dibuat untuk Pelajar, Mahasiswa & Pengajar Kimia Seluruh Dunia.
-        </p>
+      <div>
+        <h2 class="footer-title">${esc(pick(['Sumber data resmi', 'Official data sources']))}</h2>
+        <ul class="footer-links">
+          <li><a href="https://pubchem.ncbi.nlm.nih.gov/" rel="noopener" target="_blank">PubChem · NIH/NLM</a></li>
+          <li><a href="https://www.wikidata.org/" rel="noopener" target="_blank">Wikidata</a></li>
+          <li><a href="https://id.wikipedia.org/" rel="noopener" target="_blank">Wikipedia</a></li>
+          <li><a href="https://commons.wikimedia.org/" rel="noopener" target="_blank">Wikimedia Commons</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer-title">Moleculium</h2>
+        <ul class="footer-links">
+          <li><a href="#/about">${esc(ui.about)}</a></li>
+          <li><a href="#/teacher">${esc(ui.teacher)}</a></li>
+          <li><a href="#/glossary">${esc(ui.glossary)}</a></li>
+          <li><a href="${esc(CONFIG.repository)}" rel="noopener" target="_blank">${esc(pick(['Kode sumber (MIT)', 'Source code (MIT)']))}</a></li>
+        </ul>
       </div>
     </div>
-  `;
+    <div class="container footer-bottom">
+      <p>${esc(
+        pick([
+          'Kode: MIT · Materi belajar: CC BY-SA 4.0 · Foto dan teks ensiklopedia mengikuti lisensi sumbernya.',
+          'Code: MIT · Learning content: CC BY-SA 4.0 · Photos and encyclopedia text keep their source licenses.',
+        ])
+      )}</p>
+      <p>${esc(pick(['Tanpa akun, tanpa iklan, tanpa pelacakan.', 'No accounts, no ads, no tracking.']))}</p>
+    </div>`;
 }

@@ -1,245 +1,265 @@
-// ChemTaxa · Home Landing Page
-import { $, $$ } from '../core/dom.js';
-import { getPrefs } from '../core/prefs.js';
-import { getUi } from '../i18n/ui.js';
-import { getIcon } from '../components/icons.js';
-import { curatedMolecules } from '../data/curatedMolecules.js';
-import { renderMoleculeCard } from '../components/common.js';
-import { MoleculeViewer3D } from '../components/moleculeViewer3D.js';
-import { searchMolecules } from '../services/pubchem.js';
+// Home: search, learning mode, today's picks, families of matter and learning paths.
+import { esc } from '../core/dom.js';
+import { S, pick, getPrefs, setPref, LEVELS } from '../core/prefs.js';
+import { levelName, levelLong } from '../i18n/ui.js';
+import { icon } from '../components/icons.js';
+import { sectionHead } from '../components/common.js';
+import { moleculeCard, classCard } from '../components/cards.js';
+import { MOLECULES, atLevel, moleculesInClass } from '../data/curatedMolecules.js';
+import { CLASSES, rootClasses, childClasses } from '../data/classes.js';
+import { ELEMENTS, CATEGORIES } from '../data/periodicTable.js';
+import { TOPICS, findTopic } from '../data/topics/index.js';
+import { LABS, PLACES, PATHS } from '../data/curriculum.js';
+import { moleculeIndex } from '../services/data.js';
+import { lessonsRead, quizResults, progressStats } from '../core/userdata.js';
 
-export function title() {
-  return 'Beranda';
+const s = S({
+  title: ['Jelajahi molekul seluruh dunia', 'Explore the molecules of the world'],
+  lead: [
+    'Putar molekul dalam 3D, kenali 118 unsur, dan pelajari kimia dari SD sampai kuliah. Data resmi dari PubChem (NIH), Wikipedia, dan Wikimedia Commons.',
+    'Spin molecules in 3D, meet all 118 elements and learn chemistry from primary school to university. Official data from PubChem (NIH), Wikipedia and Wikimedia Commons.',
+  ],
+  search: ['Cari molekul, rumus, atau unsur', 'Search molecules, formulas or elements'],
+  go: ['Cari', 'Search'],
+  try: ['Coba:', 'Try:'],
+  stat1: ['molekul & material kurasi', 'curated molecules & materials'],
+  stat2: ['unsur tabel periodik', 'elements in the table'],
+  stat3: ['senyawa di PubChem', 'compounds in PubChem'],
+  stat4: ['materi & 13 lab', 'lessons & 13 labs'],
+  chooseTitle: ['Kamu belajar di jenjang apa?', 'What level are you learning at?'],
+  chooseLead: [
+    'Isi, kuis, dan kedalaman data menyesuaikan pilihanmu. Bisa diganti kapan saja lewat menu Mode.',
+    'Content, quizzes and data depth adapt to your choice. Change it any time from the Mode menu.',
+  ],
+  modeNow: ['Mode belajar', 'Learning mode'],
+  change: ['Ganti mode', 'Change mode'],
+  path: ['Jalur belajarmu', 'Your learning path'],
+  pathLead: [
+    'Mulai dari materi ini, lalu uji dirimu di kuis dan laboratorium.',
+    'Start with these lessons, then test yourself in quizzes and labs.',
+  ],
+  done: ['Selesai dibaca', 'Read'],
+  featured: ['Molekul pilihan hari ini', 'Today’s molecules'],
+  families: ['Golongan materi', 'Families of matter'],
+  familiesLead: [
+    'Dari unsur hingga material maju: setiap molekul punya "keluarga".',
+    'From elements to advanced materials: every molecule has a family.',
+  ],
+  element: ['Unsur hari ini', 'Element of the day'],
+  openElement: ['Buka profil unsur', 'Open element profile'],
+  around: ['Kimia di sekitarku', 'Chemistry around me'],
+  labs: ['Laboratorium virtual', 'Virtual laboratory'],
+  teacherTitle: ['Untuk guru', 'For teachers'],
+  teacherLead: [
+    'Modul ajar per topik, lembar kerja, kartu flash, dan tautan tugas yang bisa dibagikan ke siswa, tanpa akun.',
+    'Lesson plans per topic, worksheets, flashcards and shareable assignment links — no accounts needed.',
+  ],
+  teacherGo: ['Buka ruang guru', 'Open the teacher room'],
+});
+
+export const title = () => pick(['Beranda', 'Home']);
+
+/** Deterministic daily choice so everyone sees the same picks on the same day. */
+function daily(list, n, salt = '') {
+  const day = new Date().toISOString().slice(0, 10) + salt;
+  const hash = str => [...str].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7);
+  return [...list].sort((a, b) => hash(day + (a.id || a.s)) - hash(day + (b.id || b.s))).slice(0, n);
 }
 
-export async function render({ main, on, cleanup }) {
+export async function render({ main }) {
   const prefs = getPrefs();
-  const ui = getUi(prefs.lang);
+  const level = prefs.level;
+  const idx = await moleculeIndex();
+  const pool = atLevel(level === 'guru' ? 'kuliah' : level);
+  const picks = daily(pool, 4);
+  const el = daily(
+    ELEMENTS.filter(e => e.z <= 103),
+    1,
+    'el'
+  )[0];
+  const read = lessonsRead();
+  const quiz = quizResults();
+  const pathLevel = level === 'guru' ? 'sma' : level;
+  const path = (PATHS[pathLevel] || PATHS.smp).slice(0, 4).map(findTopic).filter(Boolean);
+  const labs = LABS.filter(l => l.levels.includes(pathLevel === 'kuliah' ? 'kuliah' : pathLevel)).slice(0, 4);
 
-  // Molecule of the Day: Caffeine or Water
-  const heroMol = curatedMolecules.find(m => m.id === 'caffeine') || curatedMolecules[0];
-
-  // Group curated by level
-  const sdMols = curatedMolecules.filter(m => m.level === 'sd');
-  const smpMols = curatedMolecules.filter(m => m.level === 'smp');
-  const smaMols = curatedMolecules.filter(m => m.level === 'sma');
-  const univMols = curatedMolecules.filter(m => m.level === 'kuliah');
-
+  const progress = progressStats();
+  const next = path.find(t => !read[t.id]) || path[0];
+  const complete = path.filter(t => read[t.id]).length;
+  const quick = [
+    [
+      'explore',
+      'molecule',
+      ['Jelajah molekul', 'Explore molecules'],
+      ['Kenali dunia yang tak terlihat', 'Meet an invisible world'],
+      'blue',
+    ],
+    [
+      'table',
+      'table',
+      ['Tabel periodik', 'Periodic table'],
+      ['118 unsur, banyak cerita', '118 elements, endless stories'],
+      'yellow',
+    ],
+    [
+      'lab',
+      'flask',
+      ['Lab virtual', 'Virtual lab'],
+      ['Coba, amati, temukan!', 'Try, observe, discover!'],
+      'purple',
+    ],
+    [
+      'quiz',
+      'puzzle',
+      ['Tantangan kuis', 'Quiz challenges'],
+      ['Seberapa jauh kamu tahu?', 'What will you discover?'],
+      'peach',
+    ],
+  ];
   main.innerHTML = `
-    <!-- Hero Section -->
-    <section class="hero-section container">
-      <div class="hero-grid">
-        <div class="hero-content">
-          <div class="hero-badge">
-            ${getIcon('atom', 16)}
-            <span>ATLAS MOLEKUL KIMIA TERBUKA</span>
-          </div>
-
-          <h1 class="hero-title">
-            Jelajahi Rahasia <br/>
-            <span class="gradient-text">Struktur Molekul</span> Alam Semesta
-          </h1>
-
-          <p class="hero-desc">
-            Dari segelas air hingga DNA kehidupan. Pelajari geometri 3D, ikatan atom, dan reaksi kimia dengan data resmi langsung dari PubChem NIH untuk SD, SMP, SMA, hingga Kuliah.
-          </p>
-
-          <!-- Search Bar -->
-          <div class="search-box-wrap" id="hero-search-wrap">
-            <form id="hero-search-form" class="search-input-group" role="search">
-              <span class="search-icon-lead">${getIcon('search', 20)}</span>
-              <input type="text" 
-                     id="hero-search-input" 
-                     class="search-input" 
-                     placeholder="${ui.searchPlaceholder}" 
-                     autocomplete="off" 
-                     aria-label="Cari molekul" />
-              <button type="submit" class="btn-search">
-                ${getIcon('search', 16)}
-                <span>${ui.searchBtn}</span>
-              </button>
-            </form>
-            <div id="hero-suggest-box" class="suggest-dropdown" hidden></div>
-          </div>
-
-          <!-- Quick Tags -->
-          <div class="quick-tags">
-            <span>Rekomendasi Cepat:</span>
-            <a href="#/molecule/water" class="quick-tag-pill">💧 Air (H₂O)</a>
-            <a href="#/molecule/oxygen" class="quick-tag-pill">💨 Oksigen (O₂)</a>
-            <a href="#/molecule/salt-nacl" class="quick-tag-pill">🧂 Garam (NaCl)</a>
-            <a href="#/molecule/caffeine" class="quick-tag-pill">☕ Kafein</a>
-            <a href="#/molecule/aspirin" class="quick-tag-pill">💊 Aspirin</a>
-            <a href="#/molecule/graphene" class="quick-tag-pill">🔬 Grafena</a>
-          </div>
-        </div>
-
-        <!-- Hero 3D Interactive Card -->
-        <div class="hero-3d-card">
-          <div class="hero-3d-header">
-            <span class="hero-3d-title">
-              ${getIcon('molecule', 18)}
-              <span>Molekul Pilihan Hari Ini</span>
-            </span>
-            <span class="badge-lvl" style="--badge-col: var(--neon-cyan)">3D Interaktif</span>
-          </div>
-
-          <div class="hero-3d-viewer-box" id="hero-viewer-container"></div>
-
-          <div class="hero-3d-footer">
-            <div class="hero-mol-info">
-              <h4>${prefs.lang === 'en' ? heroMol.nameEn : heroMol.nameId} (${heroMol.formula})</h4>
-              <span>Putar dengan mouse atau sentuhan jari</span>
-            </div>
-            <a href="#/molecule/${heroMol.id}" class="btn-action">
-              <span>Rincian Lengkap</span> →
-            </a>
-          </div>
-        </div>
+  <div class="container home-welcome">
+    <div><p class="eyebrow">${icon('sparkles', { size: 16 })} ${esc(pick(['RASA INGIN TAHU DIMULAI DI SINI', 'CURIOSITY STARTS HERE']))}</p>
+    <h1>${esc(pick(level === 'sd' || level === 'smp' ? ['Halo, penjelajah kecil!', 'Hello, curious explorer!'] : level === 'guru' ? ['Halo, pendidik hebat!', 'Hello, inspiring educator!'] : ['Halo, penjelajah sains!', 'Hello, science explorer!']))} <span class="hello-star" aria-hidden="true">✳</span></h1>
+    <p>${esc(pick(['Siap menemukan hal menakjubkan hari ini?', 'Ready to discover something wonderful today?']))}</p></div>
+    <span class="welcome-level">${icon('school', { size: 18 })} ${esc(levelLong(level))}</span>
+  </div>
+  <div class="container">
+    <section class="discovery-hero" aria-labelledby="discovery-title">
+      <div class="discovery-copy">
+        <p class="hero-label">${icon('atom', { size: 16 })} ${esc(pick(['DUNIA KECIL, PENEMUAN BESAR', 'SMALL WORLD, BIG DISCOVERIES']))}</p>
+        <h2 id="discovery-title">${pick(['Hal besar dimulai<br>dari <span>molekul kecil.</span>', 'Big discoveries start<br>with <span>tiny molecules.</span>'])}</h2>
+        <p>${esc(pick(['Dari air yang kamu minum hingga bintang di langit. Yuk, kenali sains di balik dunia kita!', 'From the water you drink to the stars above. Discover the science behind our world!']))}</p>
+        <div class="hero-actions"><a class="btn btn-yellow" href="#/learn/${next?.id || 'zat'}">${icon('play', { size: 18 })} ${esc(pick(['Mulai petualangan', 'Start exploring']))}</a><a class="hero-secondary" href="#/molecule/water">${esc(pick(['Lihat molekul 3D', 'Meet a 3D molecule']))} ${icon('arrowRight', { size: 17 })}</a></div>
+        <p class="hero-footnote">${icon('check', { size: 15 })} ${esc(pick(['Bebas bereksplorasi. Belajar sesuai jenjangmu.', 'Explore freely. Learn at your own level.']))}</p>
+      </div>
+      <div class="molecule-scene" aria-hidden="true">
+        <span class="scene-orbit orbit-one"></span><span class="scene-orbit orbit-two"></span>
+        <span class="scene-spark spark-one">✦</span><span class="scene-spark spark-two">✧</span>
+        <span class="floating-element"><small>6</small><strong>C</strong><span>Carbon</span></span>
+        <div class="water-model"><span class="model-bond bond-left"></span><span class="model-bond bond-right"></span><span class="model-atom atom-o">O</span><span class="model-atom atom-h atom-h-left">H</span><span class="model-atom atom-h atom-h-right">H</span></div>
+        <span class="molecule-caption"><strong>H₂O</strong><span>${esc(pick(['Kecil, tapi luar biasa.', 'Tiny, yet extraordinary.']))}</span>${icon('sparkles', { size: 22 })}</span>
+        <span class="scene-dot dot-one"></span><span class="scene-dot dot-two"></span>
+      </div>
+    </section>
+    <section class="quick-discover" aria-label="${esc(pick(['Mau mulai dari mana?', 'Where would you like to start?']))}">
+      ${quick.map(([route, ic, name, desc, color]) => `<a href="#/${route}" class="quick-card quick-${color}"><span class="quick-icon">${icon(ic, { size: 25 })}</span><span><strong>${esc(pick(name))}</strong><small>${esc(pick(desc))}</small></span>${icon('arrowRight', { size: 18 })}</a>`).join('')}
+    </section>
+    <form class="discovery-search" role="search" data-search>
+      ${icon('search', { size: 22 })}<label class="sr-only" for="hero-q">${esc(s.search)}</label><input id="hero-q" name="q" type="search" autocomplete="off" placeholder="${esc(s.search)}" /><button class="btn btn-primary" type="submit">${esc(s.go)} ${icon('arrowRight', { size: 17 })}</button>
+    </form>
+    <p class="discovery-suggestions">${esc(pick(['Penasaran tentang:', 'Curious about:']))} ${['air', 'kafeina', 'C6H12O6', 'grafena'].map(q => `<a href="#/explore?q=${encodeURIComponent(q)}">${esc(q)}</a>`).join('')}</p>
+  </div>
+  <div class="container home-sections">
+    ${
+      prefs.chosen
+        ? `<p class="mode-line">${icon('school', { size: 18 })} <strong>${esc(s.modeNow)}:</strong> ${esc(levelLong(level))} · <a href="#mode-choose" data-show-modes>${esc(s.change)}</a></p>`
+        : ''
+    }
+    <section class="mode-choose" id="mode-choose" ${prefs.chosen ? 'hidden' : ''} aria-labelledby="mode-title">
+      <h2 id="mode-title">${esc(s.chooseTitle)}</h2>
+      <p>${esc(s.chooseLead)}</p>
+      <div class="mode-grid">
+        ${LEVELS.map(
+          l => `<button type="button" class="mode-card ${l === level ? 'is-active' : ''}" data-level="${l}" aria-pressed="${l === level}">
+            <strong>${esc(levelName(l))}</strong><span>${esc(levelLong(l))}</span></button>`
+        ).join('')}
       </div>
     </section>
 
-    <!-- Level Track Pathway Showcase -->
-    <section class="container" style="margin-top: 40px; margin-bottom: 50px;">
-      <div class="section-header">
-        <div>
-          <h2>Pilih Jenjang Belajarmu</h2>
-          <p>Materi, visual 3D, dan kedalaman penjelasan otomatis disesuaikan dengan tingkat pemahamanmu.</p>
+    <div class="learning-overview">
+      <section class="learning-path" aria-labelledby="path-title">
+        ${sectionHead(esc(s.path), '#/learn', undefined, 'path-title')}
+        <p class="muted">${esc(pick(['Sedikit demi sedikit, jadi makin mengerti.', 'One small step. A little more understanding.']))}</p>
+        <div class="path-steps">
+          ${path.map((t, i) => `<a class="path-step ${read[t.id] ? 'is-complete' : ''}" href="#/learn/${t.id}"><span class="step-number">${read[t.id] ? icon('check', { size: 18 }) : String(i + 1).padStart(2, '0')}</span><span class="step-content"><strong>${esc(pick(t.title))}</strong><small>${esc(pick(t.summary))}</small></span><span class="step-status">${read[t.id] ? esc(s.done) : icon('arrowRight', { size: 17 })}${quiz['topic-' + t.id] ? ` · ★ ${quiz['topic-' + t.id].best}/${quiz['topic-' + t.id].total}` : ''}</span></a>`).join('')}
         </div>
-      </div>
+      </section>
+      <aside class="progress-card" aria-labelledby="progress-title">
+        <span class="progress-art" aria-hidden="true">${icon('award', { size: 38 })}<span>✦</span></span>
+        <h2 id="progress-title">${esc(pick(['Setiap langkah berarti!', 'Every step counts!']))}</h2>
+        <p>${esc(pick(['Terus penasaran, terus mencoba. Penemuan berikutnya menantimu.', 'Stay curious. Keep trying. Your next discovery is waiting.']))}</p>
+        <div class="progress-caption"><span>${esc(pick(['Jalur belajarmu', 'Your learning path']))}</span><strong>${complete}/${path.length}</strong></div>
+        <progress max="${path.length || 1}" value="${complete}" aria-label="${esc(s.path)}"></progress>
+        <div class="progress-stats"><span><strong>${progress.lessons}</strong>${esc(pick(['Materi dibaca', 'Lessons read']))}</span><span><strong>${progress.labs}</strong>${esc(pick(['Lab dicoba', 'Labs tried']))}</span></div>
+        <a class="btn btn-primary" href="#/learn/${next?.id || 'zat'}">${esc(pick(['Lanjut belajar', 'Keep learning']))} ${icon('arrowRight', { size: 18 })}</a>
+      </aside>
+    </div>
 
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px;">
-        <div class="mol-card" style="cursor: pointer;" onclick="document.querySelector('#level-select').value='sd'; document.querySelector('#level-select').dispatchEvent(new Event('change'));">
-          <div style="font-size: 2rem; margin-bottom: 8px;">🌱</div>
-          <h3 style="font-size: 1.15rem; color: #10b981; margin-bottom: 6px;">Sekolah Dasar (SD)</h3>
-          <p style="font-size: 0.88rem; color: var(--text-muted);">${ui.levelDescSD}</p>
-        </div>
+    <section aria-labelledby="featured-title">
+      ${sectionHead(esc(s.featured), '#/explore', undefined, 'featured-title')}
+      <div class="grid grid-cards">${picks.map(m => moleculeCard(m, idx.get(m.id))).join('')}</div>
+    </section>
 
-        <div class="mol-card" style="cursor: pointer;" onclick="document.querySelector('#level-select').value='smp'; document.querySelector('#level-select').dispatchEvent(new Event('change'));">
-          <div style="font-size: 2rem; margin-bottom: 8px;">⚡</div>
-          <h3 style="font-size: 1.15rem; color: #06b6d4; margin-bottom: 6px;">SMP (Menengah Pertama)</h3>
-          <p style="font-size: 0.88rem; color: var(--text-muted);">${ui.levelDescSMP}</p>
-        </div>
-
-        <div class="mol-card" style="cursor: pointer;" onclick="document.querySelector('#level-select').value='sma'; document.querySelector('#level-select').dispatchEvent(new Event('change'));">
-          <div style="font-size: 2rem; margin-bottom: 8px;">🔬</div>
-          <h3 style="font-size: 1.15rem; color: #8b5cf6; margin-bottom: 6px;">SMA (Menengah Atas)</h3>
-          <p style="font-size: 0.88rem; color: var(--text-muted);">${ui.levelDescSMA}</p>
-        </div>
-
-        <div class="mol-card" style="cursor: pointer;" onclick="document.querySelector('#level-select').value='kuliah'; document.querySelector('#level-select').dispatchEvent(new Event('change'));">
-          <div style="font-size: 2rem; margin-bottom: 8px;">🌌</div>
-          <h3 style="font-size: 1.15rem; color: #ec4899; margin-bottom: 6px;">Kuliah & Pengajar</h3>
-          <p style="font-size: 0.88rem; color: var(--text-muted);">${ui.levelDescUniv}</p>
-        </div>
+    <section aria-labelledby="families-title">
+      ${sectionHead(esc(s.families), '#/classes', undefined, 'families-title')}
+      <p class="muted">${esc(s.familiesLead)}</p>
+      <div class="grid grid-classes">
+        ${rootClasses()
+          .map(c => {
+            const ids = new Set([c.id, ...childClasses(c.id).map(k => k.id)]);
+            const count = MOLECULES.filter(m => m.cls.some(k => ids.has(k))).length;
+            return classCard(c, count);
+          })
+          .join('')}
       </div>
     </section>
 
-    <!-- Curated Molecular Rails -->
-    <section class="container" style="margin-bottom: 60px;">
-      <div class="section-header">
-        <div>
-          <h2>Molekul Esensial Terpopuler</h2>
-          <p>Koleksi molekul fundamental pembentuk kehidupan, atmosfer bumi, dan teknologi modern.</p>
-        </div>
-        <a href="#/explore" class="btn-action">
-          <span>${ui.exploreAll}</span> →
+    <section class="split" aria-label="${esc(s.element)} · ${esc(s.around)}">
+      <article class="card element-day" style="--accent:${CATEGORIES[el.cat].color}">
+        <h2>${esc(s.element)}</h2>
+        <a class="element-big" href="#/atom/${el.s}">
+          <span class="z">${el.z}</span><span class="sym">${esc(el.s)}</span><span class="nm">${esc(pick([el.id, el.en]))}</span>
         </a>
-      </div>
-
-      <div class="mol-grid">
-        ${curatedMolecules.slice(0, 8).map(m => renderMoleculeCard(m)).join('')}
-      </div>
-    </section>
-
-    <!-- Quick Tools Callout -->
-    <section class="container" style="margin-bottom: 60px;">
-      <div class="hero-3d-card" style="background: linear-gradient(135deg, rgba(14,21,37,0.9) 0%, rgba(139,92,246,0.15) 100%);">
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; align-items: center;">
-          <div>
-            <span class="hero-badge">${getIcon('flask', 16)} FITUR INTERAKTIF</span>
-            <h2 style="font-size: 2rem; margin-bottom: 12px;">Laboratorium Virtual 3D & Kalkulator Stoikiometri</h2>
-            <p style="color: var(--text-muted); margin-bottom: 20px;">
-              Rakit molekulmu sendiri, amati simulasi reaksi kimia pengikatan elektron, hitung massa molar rumus senyawa, dan uji keasaman larutan dengan simulasi pH interaktif!
-            </p>
-            <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-              <a href="#/lab" class="btn-search">Buka Lab Virtual</a>
-              <a href="#/atom" class="btn-action">⚛️ Struktur Atom & Orbital 3D</a>
-              <a href="#/table" class="btn-action">Tabel Periodik 118 Unsur</a>
-              <a href="#/quiz" class="btn-action">Uji di Kuis</a>
-            </div>
-          </div>
-          <div style="text-align: center; font-size: 5rem;" aria-hidden="true">
-            🧪 ⚗️ ⚛️
-          </div>
+        <p>${esc(pick(CATEGORIES[el.cat].name))} · ${esc(el.conf)} · ${el.m ?? '–'} u</p>
+        <a class="link-more" href="#/atom/${el.s}">${esc(s.openElement)} ${icon('arrowRight', { size: 16 })}</a>
+      </article>
+      <article class="card">
+        <h2>${esc(s.around)}</h2>
+        <div class="place-chips">
+          ${PLACES.map(p => `<a class="chip chip-lg" href="#/around/${p.id}">${icon(p.icon, { size: 18 })} ${esc(pick(p.name))}</a>`).join('')}
         </div>
+      </article>
+    </section>
+
+    <section aria-labelledby="labs-title">
+      ${sectionHead(esc(s.labs), '#/lab', undefined, 'labs-title')}
+      <div class="grid grid-4">
+        ${labs
+          .map(
+            l => `<a class="card lab-card" href="#/lab/${l.id}"><span class="topic-icon">${icon(l.icon, { size: 24 })}</span>
+            <span class="card-title">${esc(pick(l.title))}</span><span class="card-text">${esc(pick(l.summary))}</span></a>`
+          )
+          .join('')}
       </div>
     </section>
-  `;
 
-  // Initialize 3D Hero Viewer
-  const viewerContainer = $('#hero-viewer-container');
-  let viewerInstance = null;
-  if (viewerContainer) {
-    viewerInstance = new MoleculeViewer3D(viewerContainer, { autoRotate: true, showLabels: true });
-    viewerInstance.setData(heroMol.atoms3D, heroMol.bonds3D);
-    cleanup(() => viewerInstance.destroy());
-  }
+    <dl class="catalog-stats">
+      <div><dt>${MOLECULES.length}+</dt><dd>${esc(s.stat1)}</dd></div>
+      <div><dt>118</dt><dd>${esc(s.stat2)}</dd></div>
+      <div><dt>${TOPICS.length}</dt><dd>${esc(pick(['materi belajar', 'learning topics']))}</dd></div>
+      <div><dt>${LABS.length}</dt><dd>${esc(pick(['laboratorium virtual', 'virtual laboratories']))}</dd></div>
+    </dl>
+    <section class="card teacher-cta">
+      <div><h2>${icon('teacher', { size: 22 })} ${esc(s.teacherTitle)}</h2><p>${esc(s.teacherLead)}</p></div>
+      <a class="btn btn-primary" href="#/teacher">${esc(s.teacherGo)}</a>
+    </section>
+  </div>`;
 
-  // Handle Search Input & Suggestions
-  const searchForm = $('#hero-search-form');
-  const searchInput = $('#hero-search-input');
-  const suggestBox = $('#hero-suggest-box');
-
-  if (searchForm && searchInput && suggestBox) {
-    let debounceTimer = null;
-
-    searchInput.addEventListener('input', () => {
-      clearTimeout(debounceTimer);
-      const val = searchInput.value.trim();
-      if (!val) {
-        suggestBox.hidden = true;
-        return;
-      }
-
-      debounceTimer = setTimeout(async () => {
-        const results = await searchMolecules(val);
-        if (results && results.length > 0) {
-          suggestBox.innerHTML = results.map(r => `
-            <div class="suggest-item" data-goto="${r.isRemote ? r.remoteQuery : r.id}">
-              <div class="suggest-main">
-                <span class="suggest-title">${r.nameId || r.nameEn}</span>
-                <span class="suggest-sub">${r.nameEn || ''}</span>
-              </div>
-              <span class="suggest-pill">${r.formula || 'Molekul'}</span>
-            </div>
-          `).join('');
-          suggestBox.hidden = false;
-        } else {
-          suggestBox.hidden = true;
-        }
-      }, 250);
-    });
-
-    searchForm.addEventListener('submit', e => {
-      e.preventDefault();
-      const val = searchInput.value.trim();
-      if (val) {
-        location.hash = `#/explore?q=${encodeURIComponent(val)}`;
-      }
-    });
-
-    suggestBox.addEventListener('click', e => {
-      const item = e.target.closest('.suggest-item');
-      if (item && item.dataset.goto) {
-        location.hash = `#/molecule/${encodeURIComponent(item.dataset.goto)}`;
-      }
-    });
-
-    document.addEventListener('click', e => {
-      if (!e.target.closest('#hero-search-wrap')) {
-        suggestBox.hidden = true;
-      }
-    });
-  }
+  main.querySelector('.mode-grid').addEventListener('click', e => {
+    const b = e.target.closest('[data-level]');
+    if (b) setPref('level', b.dataset.level);
+  });
+  main.querySelector('[data-show-modes]')?.addEventListener('click', e => {
+    e.preventDefault();
+    const box = main.querySelector('#mode-choose');
+    box.hidden = false;
+    box.querySelector('.mode-card.is-active, .mode-card')?.focus();
+  });
 }
+
+// Used by the classes page too.
+export const familyCount = id => {
+  const ids = new Set([id, ...CLASSES.filter(c => c.parent === id).map(c => c.id)]);
+  return MOLECULES.filter(m => m.cls.some(k => ids.has(k))).length;
+};
+export { moleculesInClass };

@@ -1,109 +1,84 @@
-// ChemTaxa · Interactive Ambient Atomic Particle Background
-export function initBackgroundCanvas(canvas) {
-  if (!canvas) return;
+// Decorative, slowly drifting molecule network for the home page hero.
+// Paused when off-screen or hidden, and static when the user prefers reduced motion.
+import { reducedMotion } from '../core/dom.js';
+
+export function heroCanvas(canvas) {
   const ctx = canvas.getContext('2d');
-  let width, height;
-  let particles = [];
-  const PARTICLE_COUNT = 36;
+  const colors = ['#3fb5a3', '#4a9fe0', '#e9a23b', '#e06fa8', '#7c7fe8'];
+  let nodes = [];
+  let w = 0;
+  let h = 0;
+  let frame = 0;
+  let visible = true;
 
   function resize() {
-    width = canvas.width = window.innerWidth;
-    height = canvas.height = window.innerHeight;
+    const r = canvas.getBoundingClientRect();
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    w = r.width;
+    h = r.height;
+    canvas.width = w * dpr;
+    canvas.height = h * dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    const count = Math.round(Math.min(46, (w * h) / 16000));
+    nodes = Array.from({ length: count }, (_, i) => ({
+      x: Math.random() * w,
+      y: Math.random() * h,
+      vx: (Math.random() - 0.5) * 0.25,
+      vy: (Math.random() - 0.5) * 0.25,
+      r: 3 + Math.random() * 5,
+      c: colors[i % colors.length],
+    }));
+    draw();
   }
-  window.addEventListener('resize', resize);
-  resize();
-
-  // Create initial nodes with valence orbits
-  for (let i = 0; i < PARTICLE_COUNT; i++) {
-    particles.push({
-      x: Math.random() * width,
-      y: Math.random() * height,
-      vx: (Math.random() - 0.5) * 0.4,
-      vy: (Math.random() - 0.5) * 0.4,
-      radius: Math.random() * 2.5 + 1.5,
-      orbitR: Math.random() * 18 + 12,
-      orbitAngle: Math.random() * Math.PI * 2,
-      orbitSpeed: (Math.random() - 0.5) * 0.04,
-      color: ['#00f2fe', '#8a2be2', '#10b981', '#f59e0b'][Math.floor(Math.random() * 4)]
-    });
-  }
-
-  let mouseX = -1000;
-  let mouseY = -1000;
-  window.addEventListener('mousemove', e => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-  });
 
   function draw() {
-    ctx.clearRect(0, 0, width, height);
-
-    // Update & draw nodes
-    for (let i = 0; i < particles.length; i++) {
-      const p = particles[i];
-      p.x += p.vx;
-      p.y += p.vy;
-      p.orbitAngle += p.orbitSpeed;
-
-      if (p.x < 0) p.x = width;
-      if (p.x > width) p.x = 0;
-      if (p.y < 0) p.y = height;
-      if (p.y > height) p.y = 0;
-
-      // Draw subtle orbital ring
-      ctx.strokeStyle = p.color;
-      ctx.globalAlpha = 0.08;
-      ctx.lineWidth = 1;
-      ctx.beginPath();
-      ctx.arc(p.x, p.y, p.orbitR, 0, Math.PI * 2);
-      ctx.stroke();
-
-      // Draw central nucleus
-      ctx.fillStyle = p.color;
-      ctx.globalAlpha = 0.35;
-      ctx.beginPath();
-      ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-      ctx.fill();
-
-      // Draw orbiting valence electron
-      const ex = p.x + Math.cos(p.orbitAngle) * p.orbitR;
-      const ey = p.y + Math.sin(p.orbitAngle) * p.orbitR;
-      ctx.fillStyle = '#ffffff';
-      ctx.globalAlpha = 0.6;
-      ctx.beginPath();
-      ctx.arc(ex, ey, 1.2, 0, Math.PI * 2);
-      ctx.fill();
-
-      // Connect near neighbors with faint bonds
-      for (let j = i + 1; j < particles.length; j++) {
-        const p2 = particles[j];
-        const dist = Math.hypot(p.x - p2.x, p.y - p2.y);
-        if (dist < 110) {
-          ctx.strokeStyle = p.color;
-          ctx.globalAlpha = (1 - dist / 110) * 0.12;
-          ctx.lineWidth = 0.8;
+    ctx.clearRect(0, 0, w, h);
+    for (let i = 0; i < nodes.length; i++)
+      for (let j = i + 1; j < nodes.length; j++) {
+        const a = nodes[i];
+        const b = nodes[j];
+        const d = Math.hypot(a.x - b.x, a.y - b.y);
+        if (d < 110) {
+          ctx.globalAlpha = (1 - d / 110) * 0.35;
+          ctx.strokeStyle = a.c;
+          ctx.lineWidth = 1.5;
           ctx.beginPath();
-          ctx.moveTo(p.x, p.y);
-          ctx.lineTo(p2.x, p2.y);
+          ctx.moveTo(a.x, a.y);
+          ctx.lineTo(b.x, b.y);
           ctx.stroke();
         }
       }
-
-      // Mouse proximity interaction
-      const mouseDist = Math.hypot(p.x - mouseX, p.y - mouseY);
-      if (mouseDist < 140) {
-        ctx.strokeStyle = '#00f2fe';
-        ctx.globalAlpha = (1 - mouseDist / 140) * 0.25;
-        ctx.beginPath();
-        ctx.moveTo(p.x, p.y);
-        ctx.lineTo(mouseX, mouseY);
-        ctx.stroke();
-      }
+    ctx.globalAlpha = 0.55;
+    for (const n of nodes) {
+      ctx.fillStyle = n.c;
+      ctx.beginPath();
+      ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
+      ctx.fill();
     }
-
-    ctx.globalAlpha = 1.0;
-    requestAnimationFrame(draw);
+    ctx.globalAlpha = 1;
   }
 
-  requestAnimationFrame(draw);
+  function step() {
+    frame = requestAnimationFrame(step);
+    if (!visible || document.hidden) return;
+    for (const n of nodes) {
+      n.x += n.vx;
+      n.y += n.vy;
+      if (n.x < 0 || n.x > w) n.vx *= -1;
+      if (n.y < 0 || n.y > h) n.vy *= -1;
+    }
+    draw();
+  }
+
+  const ro = new ResizeObserver(resize);
+  ro.observe(canvas);
+  const io = new IntersectionObserver(([e]) => (visible = e.isIntersecting));
+  io.observe(canvas);
+  resize();
+  if (!reducedMotion()) step();
+  return () => {
+    cancelAnimationFrame(frame);
+    ro.disconnect();
+    io.disconnect();
+  };
 }

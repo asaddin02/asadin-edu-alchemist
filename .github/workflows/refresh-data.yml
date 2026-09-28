@@ -1,0 +1,42 @@
+# Monthly refresh of the reference data from PubChem, Wikidata, Wikipedia and Commons.
+# Opens a pull request so a person reviews the changes (and CI runs) before they are published.
+name: Refresh data
+
+on:
+  schedule:
+    - cron: '0 20 1 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: 'Sync elements and molecules (polite, at most 4 requests per second to PubChem)'
+        run: npm run sync
+        env:
+          SYNC_CACHE_DAYS: '0'
+      - run: npm run data:check && npm run build
+      - name: Open a pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet; then echo "No changes."; exit 0; fi
+          branch="data/refresh-$(date +%Y-%m-%d)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add js/data/periodicTable.js data sw.js
+          git commit -m "chore(data): refresh PubChem, Wikidata and Wikipedia data"
+          git push origin "$branch"
+          gh pr create --title "Refresh reference data ($(date +%Y-%m-%d))" --body "Automated monthly sync (npm run sync). Review the diff before merging."

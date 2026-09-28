@@ -1,158 +1,163 @@
-// ChemTaxa · Molecule Comparison Tool
-import { $, $$ } from '../core/dom.js';
-import { getPrefs } from '../core/prefs.js';
-import { getUi } from '../i18n/ui.js';
-import { curatedMolecules } from '../data/curatedMolecules.js';
-import { MoleculeViewer3D } from '../components/moleculeViewer3D.js';
+// Compare two molecules side by side: 3D models and key PubChem properties.
+import { $, esc } from '../core/dom.js';
+import { S, pick, num } from '../core/prefs.js';
+import { replaceQuery } from '../core/router.js';
+import { pageHead, loading, notice } from '../components/common.js';
+import { Viewer3D } from '../components/moleculeViewer3D.js';
+import { pictogram } from '../components/ghs.js';
+import { MOLECULES, getMolecule, normalize } from '../data/curatedMolecules.js';
+import { moleculeRecord } from '../services/data.js';
+import { compound } from '../services/pubchem.js';
+import { buildLattice } from '../services/lattice.js';
+import { formulaHTML } from '../services/formula.js';
 
-export function title() {
-  return 'Bandingkan Molekul';
+const s = S({
+  title: ['Bandingkan molekul', 'Compare molecules'],
+  lead: [
+    'Pilih dua molekul untuk membandingkan bentuk 3D, rumus, dan sifatnya dari PubChem.',
+    'Pick two molecules to compare their 3D shapes, formulas and PubChem properties.',
+  ],
+  a: ['Molekul pertama', 'First molecule'],
+  b: ['Molekul kedua', 'Second molecule'],
+  choose: ['Pilih molekul', 'Choose a molecule'],
+  property: ['Sifat', 'Property'],
+  suggest: ['Pasangan menarik', 'Interesting pairs'],
+  empty: ['Pilih dua molekul di atas.', 'Choose two molecules above.'],
+  error: ['Data salah satu molekul tidak dapat dimuat.', 'One of the molecules could not be loaded.'],
+});
+const PAIRS = [
+  ['water', 'hydrogen-sulfide'],
+  ['ethanol', 'dimethyl-ether'],
+  ['diamond', 'graphite'],
+  ['butane', 'isobutane'],
+  ['glucose', 'fructose'],
+  ['stearic-acid', 'oleic-acid'],
+  ['caffeine', 'theobromine'],
+  ['carbon-dioxide', 'sulfur-dioxide'],
+  ['testosterone', 'estradiol'],
+  ['heme', 'chlorophyll-a'],
+];
+
+export const title = () => s.title;
+
+async function load(key) {
+  if (!key) return null;
+  if (key.startsWith('cid/')) {
+    const rec = await compound(Number(key.slice(4)));
+    return rec ? { name: rec.props.title, rec, structure: rec.structure } : null;
+  }
+  const m = getMolecule(key);
+  if (!m) return null;
+  const rec = await moleculeRecord(m.id).catch(() => null);
+  return {
+    m,
+    name: pick(m.name),
+    rec,
+    structure: m.lattice ? buildLattice(m.lattice.type, m.lattice.el) : rec?.structure,
+  };
 }
 
-export async function render({ main, cleanup }) {
-  const prefs = getPrefs();
-  const ui = getUi(prefs.lang);
+const first = (rec, key) => rec?.experimental?.find(e => e.key === key)?.values?.[0] || '–';
 
-  let mol1 = curatedMolecules.find(m => m.id === 'water') || curatedMolecules[0];
-  let mol2 = curatedMolecules.find(m => m.id === 'ethanol') || curatedMolecules[1];
+export async function render({ main, params, cleanup, isCurrent }) {
+  const sorted = [...MOLECULES].sort((x, y) =>
+    normalize(pick(x.name)).localeCompare(normalize(pick(y.name)))
+  );
+  const options = sel =>
+    sorted
+      .map(m => `<option value="${m.id}" ${sel === m.id ? 'selected' : ''}>${esc(pick(m.name))}</option>`)
+      .join('');
+  let a = params.get('a') || '';
+  let b = params.get('b') || '';
+  const liveOpt = key =>
+    key.startsWith('cid/')
+      ? `<option value="${esc(key)}" selected>PubChem ${esc(key.slice(4))}</option>`
+      : '';
 
-  main.innerHTML = `
-    <div class="container" style="padding-top: 40px; padding-bottom: 60px;">
-      <div class="section-header">
-        <div>
-          <h2>${ui.navCompare}</h2>
-          <p>Bandingkan dua struktur molekul secara berdampingan: amati perbedaan sudut ikatan, massa molar, kepolaran, dan sifat fisikanya.</p>
-        </div>
-      </div>
-
-      <!-- Selectors Row -->
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 30px;">
-        <div class="lab-card" style="padding: 16px 20px;">
-          <label style="display:block; font-weight:700; margin-bottom:8px; color: var(--neon-cyan);">Pilih Molekul A:</label>
-          <select id="compare-select-1" class="select-level" style="width:100%;">
-            ${curatedMolecules.map(m => `
-              <option value="${m.id}" ${m.id === mol1.id ? 'selected' : ''}>${m.formula} - ${prefs.lang === 'en' ? m.nameEn : m.nameId}</option>
-            `).join('')}
-          </select>
-        </div>
-
-        <div class="lab-card" style="padding: 16px 20px;">
-          <label style="display:block; font-weight:700; margin-bottom:8px; color: var(--electric-azure);">Pilih Molekul B:</label>
-          <select id="compare-select-2" class="select-level" style="width:100%;">
-            ${curatedMolecules.map(m => `
-              <option value="${m.id}" ${m.id === mol2.id ? 'selected' : ''}>${m.formula} - ${prefs.lang === 'en' ? m.nameEn : m.nameId}</option>
-            `).join('')}
-          </select>
-        </div>
-      </div>
-
-      <!-- Dual 3D Viewers Stage -->
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 30px;">
-        <div class="lab-card" style="padding: 20px;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
-            <h3 id="comp-title-1" style="font-size: 1.2rem; color: var(--neon-cyan);">${mol1.nameId} (${mol1.formula})</h3>
-            <span class="badge badge-lvl" style="--badge-col: var(--neon-cyan)">Molekul A</span>
-          </div>
-          <div class="viewer-canvas-wrap" id="comp-canvas-1" style="min-height: 320px;"></div>
-        </div>
-
-        <div class="lab-card" style="padding: 20px;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
-            <h3 id="comp-title-2" style="font-size: 1.2rem; color: var(--electric-azure);">${mol2.nameId} (${mol2.formula})</h3>
-            <span class="badge badge-lvl" style="--badge-col: var(--electric-azure)">Molekul B</span>
-          </div>
-          <div class="viewer-canvas-wrap" id="comp-canvas-2" style="min-height: 320px;"></div>
-        </div>
-      </div>
-
-      <!-- Comparison Matrix Table -->
-      <div class="lab-card" style="overflow-x: auto;">
-        <h3 style="font-size: 1.3rem; margin-bottom: 16px;">Tabel Matriks Perbandingan Sifat Kimia</h3>
-        <table style="width: 100%; border-collapse: collapse; font-size: 0.92rem;">
-          <thead>
-            <tr style="border-bottom: 2px solid var(--border); text-align: left;">
-              <th style="padding: 12px; color: var(--text-dim); width: 25%;">Parameter</th>
-              <th id="th-name-1" style="padding: 12px; color: var(--neon-cyan); width: 37.5%;">${mol1.nameId}</th>
-              <th id="th-name-2" style="padding: 12px; color: var(--electric-azure); width: 37.5%;">${mol2.nameId}</th>
-            </tr>
-          </thead>
-          <tbody id="comp-matrix-body"></tbody>
-        </table>
-      </div>
+  main.innerHTML = `<div class="container">
+    ${pageHead({ title: esc(s.title), lead: esc(s.lead) })}
+    <div class="filters">
+      <div class="field field-grow"><label for="c-a">${esc(s.a)}</label><select id="c-a"><option value="">${esc(s.choose)}</option>${liveOpt(a)}${options(a)}</select></div>
+      <div class="field field-grow"><label for="c-b">${esc(s.b)}</label><select id="c-b"><option value="">${esc(s.choose)}</option>${liveOpt(b)}${options(b)}</select></div>
     </div>
-  `;
+    <p class="hero-try">${esc(s.suggest)}: ${PAIRS.map(([x, y]) => `<a class="chip" href="#/compare?a=${x}&b=${y}">${esc(pick(getMolecule(x).name))} · ${esc(pick(getMolecule(y).name))}</a>`).join(' ')}</p>
+    <div data-compare></div>
+  </div>`;
 
-  let v1 = null, v2 = null;
-  const c1 = $('#comp-canvas-1');
-  const c2 = $('#comp-canvas-2');
+  const viewers = [];
+  cleanup(() => viewers.forEach(v => v.destroy()));
 
-  function initViewers() {
-    if (v1) v1.destroy();
-    if (v2) v2.destroy();
-
-    if (c1) {
-      v1 = new MoleculeViewer3D(c1, { autoRotate: true, showLabels: true });
-      v1.setData(mol1.atoms3D, mol1.bonds3D);
+  async function draw() {
+    viewers.splice(0).forEach(v => v.destroy());
+    const box = $('[data-compare]', main);
+    if (!a || !b) {
+      box.innerHTML = `<p class="muted">${esc(s.empty)}</p>`;
+      return;
     }
-    if (c2) {
-      v2 = new MoleculeViewer3D(c2, { autoRotate: true, showLabels: true });
-      v2.setData(mol2.atoms3D, mol2.bonds3D);
+    box.innerHTML = loading();
+    let A;
+    let B;
+    try {
+      [A, B] = await Promise.all([load(a), load(b)]);
+    } catch {}
+    if (!isCurrent()) return;
+    if (!A || !B) {
+      box.innerHTML = notice(esc(s.error), 'warn');
+      return;
     }
-  }
-
-  cleanup(() => {
-    if (v1) v1.destroy();
-    if (v2) v2.destroy();
-  });
-
-  function updateMatrix() {
-    $('#comp-title-1').textContent = `${prefs.lang === 'en' ? mol1.nameEn : mol1.nameId} (${mol1.formula})`;
-    $('#comp-title-2').textContent = `${prefs.lang === 'en' ? mol2.nameEn : mol2.nameId} (${mol2.formula})`;
-    $('#th-name-1').textContent = prefs.lang === 'en' ? mol1.nameEn : mol1.nameId;
-    $('#th-name-2').textContent = prefs.lang === 'en' ? mol2.nameEn : mol2.nameId;
-
     const rows = [
-      { label: 'Rumus Kimia', v1: mol1.formula, v2: mol2.formula },
-      { label: 'Massa Molar (Mr)', v1: `${mol1.mass} g/mol`, v2: `${mol2.mass} g/mol` },
-      { label: 'Nama IUPAC Resmi', v1: mol1.iupac, v2: mol2.iupac },
-      { label: 'Wujud pada STP', v1: mol1.stateAtSTP, v2: mol2.stateAtSTP },
-      { label: 'Geometri Molekul', v1: mol1.geometry || 'N/A', v2: mol2.geometry || 'N/A' },
-      { label: 'Kepolaran & Ikatan', v1: mol1.polarity, v2: mol2.polarity },
-      { label: 'Tingkat Bahaya Kesehatan (NFPA)', v1: `Skala ${mol1.safety?.health ?? 0}/4`, v2: `Skala ${mol2.safety?.health ?? 0}/4` },
-      { label: 'PubChem CID Resmi', v1: mol1.cid || '-', v2: mol2.cid || '-' }
+      [
+        pick(['Rumus', 'Formula']),
+        x => (x.rec?.props?.formula ? formulaHTML(x.rec.props.formula) : '–'),
+        true,
+      ],
+      [
+        pick(['Massa molar', 'Molar mass']),
+        x => (x.rec?.props?.mw ? `${num(x.rec.props.mw, 2)} g/mol` : '–'),
+      ],
+      [pick(['Titik leleh', 'Melting point']), x => first(x.rec, 'Melting Point')],
+      [pick(['Titik didih', 'Boiling point']), x => first(x.rec, 'Boiling Point')],
+      [pick(['Massa jenis', 'Density']), x => first(x.rec, 'Density')],
+      [pick(['Kelarutan', 'Solubility']), x => first(x.rec, 'Solubility')],
+      ['XLogP', x => x.rec?.props?.xlogp ?? '–'],
+      [
+        pick(['Donor/akseptor ikatan H', 'H-bond donors/acceptors']),
+        x => `${x.rec?.props?.hbd ?? '–'} / ${x.rec?.props?.hba ?? '–'}`,
+      ],
+      ['TPSA (Å²)', x => (x.rec?.props?.tpsa != null ? num(x.rec.props.tpsa, 1) : '–')],
+      [
+        'GHS',
+        x =>
+          x.rec?.ghs?.pictograms?.length
+            ? x.rec.ghs.pictograms.map(p => pictogram(p.code, 40)).join('')
+            : x.rec?.ghs?.notClassified
+              ? pick(['Tidak diklasifikasikan', 'Not classified'])
+              : '–',
+        true,
+      ],
     ];
-
-    const body = $('#comp-matrix-body');
-    if (body) {
-      body.innerHTML = rows.map(r => `
-        <tr style="border-bottom: 1px solid var(--border);">
-          <td style="padding: 12px; font-weight: 600; color: var(--text-muted);">${r.label}</td>
-          <td style="padding: 12px; font-family: var(--font-mono);">${r.v1}</td>
-          <td style="padding: 12px; font-family: var(--font-mono);">${r.v2}</td>
-        </tr>
-      `).join('');
-    }
-  }
-
-  const s1 = $('#compare-select-1');
-  const s2 = $('#compare-select-2');
-
-  if (s1) {
-    s1.addEventListener('change', () => {
-      mol1 = curatedMolecules.find(m => m.id === s1.value) || curatedMolecules[0];
-      initViewers();
-      updateMatrix();
+    box.innerHTML = `<div class="compare-grid">
+      ${[A, B].map((x, i) => `<div class="card"><h2 class="h-small"><a href="#/molecule/${esc(i ? b : a)}">${esc(x.name)}</a></h2><div class="viewer viewer-sm" data-v="${i}"></div></div>`).join('')}
+    </div>
+    <div class="table-wrap"><table class="data-table compare-table"><thead><tr><th scope="col">${esc(s.property)}</th><th scope="col">${esc(A.name)}</th><th scope="col">${esc(B.name)}</th></tr></thead>
+      <tbody>${rows.map(([k, f, html]) => `<tr><th scope="row">${esc(k)}</th>${[A, B].map(x => `<td lang="${html ? '' : 'en'}">${html ? f(x) : esc(f(x))}</td>`).join('')}</tr>`).join('')}</tbody></table></div>
+    <p class="source-line">PubChem · ${esc(pick(['nilai eksperimen dalam bahasa aslinya', 'experimental values as published']))}</p>`;
+    [A, B].forEach((x, i) => {
+      const host = box.querySelector(`[data-v="${i}"]`);
+      if (!x.structure?.atoms?.length) return;
+      const v = new Viewer3D(host, { label: x.name });
+      v.setData(x.structure);
+      viewers.push(v);
     });
   }
 
-  if (s2) {
-    s2.addEventListener('change', () => {
-      mol2 = curatedMolecules.find(m => m.id === s2.value) || curatedMolecules[1];
-      initViewers();
-      updateMatrix();
-    });
-  }
-
-  initViewers();
-  updateMatrix();
+  const onChange = () => {
+    a = $('#c-a', main).value;
+    b = $('#c-b', main).value;
+    replaceQuery({ a, b });
+    draw();
+  };
+  $('#c-a', main).addEventListener('change', onChange);
+  $('#c-b', main).addEventListener('change', onChange);
+  draw();
 }

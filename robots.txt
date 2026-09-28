@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+# The PubChem proxy and data files are for the app, not for search engines (and count against quotas).
+Disallow: /api/
+Disallow: /data/

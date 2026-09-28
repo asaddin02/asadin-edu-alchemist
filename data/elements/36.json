@@ -1,0 +1,26 @@
+{
+ "z": 36,
+ "qid": "Q888",
+ "wiki": {
+  "id": {
+   "title": "Kripton",
+   "extract": "Kripton (dari bahasa Yunani Kuno: κρυπτός, translit. kryptos 'yang tersembunyi') adalah sebuah unsur kimia dengan lambang Kr dan nomor atom 36. Ia adalah sebuah gas mulia yang tidak berwarna, tidak berbau, dan tidak berasa yang terjadi dalam jumlah kecil di atmosfer dan sering digunakan dengan gas langka lainnya dalam lampu fluoresen. Kripton bersifat lengai secara kimiawi.\nKripton, seperti gas mulia lainnya, digunakan dalam pencahayaan dan fotografi. Cahaya kripton memiliki banyak garis spektrum, dan plasma kripton berguna dalam laser gas bertenaga tinggi yang terang (laser ion dan eksimer kripton), yang masing-masing beresonansi dan memperkuat satu garis spektrum. Kripton fluorida juga membuat media laser yang berguna. Dari tahun 1960 hingga 1983, definisi resmi dari meter didasarkan pada panjang gelombang satu garis spektrum kripton-86, karena dayanya yang tinggi dan pengoperasian tabung lucutan kripton yang relatif mudah.",
+   "url": "https://id.wikipedia.org/wiki/Kripton"
+  },
+  "en": {
+   "title": "Krypton",
+   "extract": "Krypton (from Ancient Greek: κρυπτός, romanized: kryptos 'the hidden one') is a chemical element; it has symbol Kr and atomic number 36. It is a colorless, odorless noble gas that occurs in trace amounts in the atmosphere and is often used with other rare gases in fluorescent lamps. Krypton is chemically inert.\nKrypton, like the other noble gases, is used in lighting and photography. Krypton light has many spectral lines, and krypton plasma is useful in bright, high-powered gas lasers (krypton ion and excimer lasers), each of which resonates and amplifies a single spectral line. Krypton fluoride also makes a useful laser medium. From 1960 to 1983, the official definition of the metre was based on the wavelength of one spectral line of krypton-86, because of the high power and relative ease of operation of krypton discharge tubes.",
+   "url": "https://en.wikipedia.org/wiki/Krypton"
+  }
+ },
+ "photo": {
+  "file": "KrTube.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/KrTube.jpg/960px-KrTube.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "width": 640,
+  "height": 640,
+  "page": "https://commons.wikimedia.org/wiki/File:KrTube.jpg",
+  "author": "User:Pslawinski",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+ }
+}

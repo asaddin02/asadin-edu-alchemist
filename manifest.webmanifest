@@ -1,17 +1,41 @@
 {
-  "name": "ChemTaxa · Atlas Molekul & Pembelajaran Kimia Semesta",
-  "short_name": "ChemTaxa",
+  "name": "Moleculium · Atlas molekul, unsur, dan material dunia",
+  "short_name": "Moleculium",
+  "description": "Atlas terbuka molekul, unsur, dan material untuk SD sampai kuliah dan guru, dengan data resmi PubChem.",
+  "lang": "id",
+  "dir": "ltr",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#070a13",
-  "theme_color": "#070a13",
-  "description": "Atlas struktur molekul kimia terbuka dan platform lab virtual untuk SD sampai Kuliah.",
+  "orientation": "any",
+  "background_color": "#f7f9fd",
+  "theme_color": "#2563eb",
+  "categories": ["education", "science"],
   "icons": [
+    { "src": "assets/brand/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/brand/icon-512.png", "sizes": "512x512", "type": "image/png" },
     {
-      "src": "assets/brand/mark.svg",
-      "sizes": "any",
-      "type": "image/svg+xml"
+      "src": "assets/brand/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Tabel periodik",
+      "url": "./#/table",
+      "icons": [{ "src": "assets/brand/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Laboratorium",
+      "url": "./#/lab",
+      "icons": [{ "src": "assets/brand/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Kuis",
+      "url": "./#/quiz",
+      "icons": [{ "src": "assets/brand/icon-192.png", "sizes": "192x192" }]
     }
   ]
 }

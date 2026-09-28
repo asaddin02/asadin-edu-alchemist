@@ -1,0 +1,14 @@
+.git
+.github
+node_modules
+docs
+tests
+test-results
+playwright-report
+scripts
+functions
+dist
+data/.sync-cache
+*.log
+Dockerfile
+.dockerignore

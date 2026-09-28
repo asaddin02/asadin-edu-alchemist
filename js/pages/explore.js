@@ -1,213 +1,225 @@
-// ChemTaxa · Explore & Molecular Search Page
-import { $, $$ } from '../core/dom.js';
-import { getPrefs } from '../core/prefs.js';
-import { getUi } from '../i18n/ui.js';
-import { getIcon } from '../components/icons.js';
-import { curatedMolecules, moleculeCategories } from '../data/curatedMolecules.js';
-import { renderMoleculeCard } from '../components/common.js';
-import { searchMolecules } from '../services/pubchem.js';
+// Explore: search the catalogue and all of PubChem; filter by family, level and place.
+import { $, esc, debounce } from '../core/dom.js';
+import { S, pick, fmt } from '../core/prefs.js';
+import { replaceQuery } from '../core/router.js';
+import { levelName } from '../i18n/ui.js';
+import { icon } from '../components/icons.js';
+import { pageHead, loading, emptyState, notice } from '../components/common.js';
+import { moleculeCard, liveCard, nameResult } from '../components/cards.js';
+import { MOLECULES, LEVEL_ORDER, searchCatalog, normalize } from '../data/curatedMolecules.js';
+import { CLASSES } from '../data/classes.js';
+import { PLACES } from '../data/curriculum.js';
+import { getElement } from '../data/periodicTable.js';
+import { moleculeIndex, formulas } from '../services/data.js';
+import { autocomplete, cidByName, cidsByFormula, summaries } from '../services/pubchem.js';
+import { searchByLabel } from '../services/wiki.js';
+import { parseFormula } from '../services/formula.js';
 
-export function title() {
-  return 'Jelajah Molekul';
-}
+const s = S({
+  title: ['Jelajah molekul', 'Explore molecules'],
+  lead: [
+    'Cari di katalog Moleculium dan di lebih dari 100 juta senyawa PubChem. Ketik nama (Indonesia atau Inggris), rumus kimia, atau nomor CID.',
+    'Search the Moleculium catalogue and over 100 million PubChem compounds. Type a name (Indonesian or English), a formula or a CID number.',
+  ],
+  q: ['Kata kunci', 'Search term'],
+  placeholder: ['Contoh: cuka, glukosa, C2H5OH, 2244', 'e.g. vinegar, glucose, C2H5OH, 2244'],
+  family: ['Golongan', 'Class'],
+  all: ['Semua', 'All'],
+  level: ['Jenjang', 'Level'],
+  place: ['Di sekitarku', 'Around me'],
+  sort: ['Urutkan', 'Sort'],
+  byName: ['Nama', 'Name'],
+  byMass: ['Massa molar', 'Molar mass'],
+  byLevel: ['Jenjang', 'Level'],
+  catalog: ['Katalog Moleculium', 'Moleculium catalogue'],
+  count: ['{n} molekul', '{n} molecules'],
+  more: ['Tampilkan lebih banyak', 'Show more'],
+  live: ['Hasil langsung dari PubChem', 'Live results from PubChem'],
+  liveLead: [
+    'Senyawa di luar katalog. Datanya diambil saat halaman dibuka.',
+    'Compounds outside the catalogue, fetched when you open them.',
+  ],
+  suggestions: ['Nama yang mirip di PubChem', 'Similar names in PubChem'],
+  none: ['Tidak ada molekul di katalog yang cocok.', 'No catalogue molecules match.'],
+  noneLive: ['PubChem tidak menemukan senyawa yang cocok.', 'PubChem found no matching compound.'],
+  liveError: [
+    'PubChem tidak dapat dihubungi. Periksa koneksi internet.',
+    'PubChem could not be reached. Check your connection.',
+  ],
+  elementHit: ['Unsur {name} ({s})', 'Element {name} ({s})'],
+  reset: ['Hapus filter', 'Clear filters'],
+});
 
-export async function render({ main, params }) {
-  const prefs = getPrefs();
-  const ui = getUi(prefs.lang);
+export const title = () => s.title;
+const PAGE = 24;
 
-  const initialQuery = params.get('q') || '';
-  const initialCategory = params.get('cat') || 'all';
-  const initialLevel = params.get('level') || 'all';
-  const initialState = params.get('state') || 'all';
+export async function render({ main, params, isCurrent }) {
+  const idx = await moleculeIndex();
+  const formulaMap = await formulas();
+  const state = {
+    q: params.get('q') || '',
+    cls: params.get('cls') || '',
+    lv: params.get('lv') || '',
+    ctx: params.get('ctx') || '',
+    sort: params.get('sort') || '',
+  };
 
-  main.innerHTML = `
-    <div class="container" style="padding-top: 40px; padding-bottom: 60px;">
-      <div class="section-header">
-        <div>
-          <h2>${ui.navExplore}</h2>
-          <p>Cari dan telusuri ribuan molekul kimia semesta berdasarkan rumus, kategori, dan jenjang sekolah.</p>
-        </div>
+  const classOptions = CLASSES.map(c => {
+    const depth = c.parent ? '— ' : '';
+    return `<option value="${c.id}" ${state.cls === c.id ? 'selected' : ''}>${depth}${esc(pick(c.name))}</option>`;
+  }).join('');
+
+  main.innerHTML = `<div class="container">
+    ${pageHead({ title: esc(s.title), lead: esc(s.lead) })}
+    <form class="filters" data-filters role="search">
+      <div class="field field-grow">
+        <label for="f-q">${esc(s.q)}</label>
+        <input id="f-q" name="q" type="search" value="${esc(state.q)}" placeholder="${esc(s.placeholder)}" autocomplete="off" />
       </div>
-
-      <!-- Filter Controls Bar -->
-      <div class="lab-card" style="margin-bottom: 30px; padding: 24px;">
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; align-items: end;">
-          <!-- Keyword Search -->
-          <div style="grid-column: 1 / -1;">
-            <label style="display:block; font-size: 0.85rem; font-weight:700; margin-bottom: 6px; color: var(--text-muted);">
-              Kata Kunci / Rumus Kimia
-            </label>
-            <div class="search-input-group">
-              <span class="search-icon-lead">${getIcon('search', 18)}</span>
-              <input type="text" id="explore-query" class="search-input" 
-                     placeholder="Contoh: H2O, Kafein, C6H12O6, Asam Sulfat, Garam…" 
-                     value="${initialQuery}" />
-              <button id="btn-clear-query" class="btn-tool" style="display: ${initialQuery ? 'inline-flex' : 'none'};">✕</button>
-            </div>
-          </div>
-
-          <!-- Category Filter -->
-          <div>
-            <label style="display:block; font-size: 0.85rem; font-weight:700; margin-bottom: 6px; color: var(--text-muted);">
-              ${ui.filterCategory}
-            </label>
-            <select id="filter-cat" class="select-level" style="width:100%;">
-              <option value="all">${ui.allCategories}</option>
-              ${Object.entries(moleculeCategories).map(([key, cat]) => `
-                <option value="${key}" ${initialCategory === key ? 'selected' : ''}>${cat.id}</option>
-              `).join('')}
-            </select>
-          </div>
-
-          <!-- Level Filter -->
-          <div>
-            <label style="display:block; font-size: 0.85rem; font-weight:700; margin-bottom: 6px; color: var(--text-muted);">
-              ${ui.filterLevel}
-            </label>
-            <select id="filter-lvl" class="select-level" style="width:100%;">
-              <option value="all">${ui.allLevels}</option>
-              <option value="sd" ${initialLevel === 'sd' ? 'selected' : ''}>SD (Mengenal Molekul)</option>
-              <option value="smp" ${initialLevel === 'smp' ? 'selected' : ''}>SMP (Atom & Senyawa)</option>
-              <option value="sma" ${initialLevel === 'sma' ? 'selected' : ''}>SMA (Geometri & Reaksi)</option>
-              <option value="kuliah" ${initialLevel === 'kuliah' ? 'selected' : ''}>Kuliah & Pengajar</option>
-            </select>
-          </div>
-
-          <!-- State of Matter Filter -->
-          <div>
-            <label style="display:block; font-size: 0.85rem; font-weight:700; margin-bottom: 6px; color: var(--text-muted);">
-              ${ui.filterState}
-            </label>
-            <select id="filter-state" class="select-level" style="width:100%;">
-              <option value="all">${ui.allStates}</option>
-              <option value="gas" ${initialState === 'gas' ? 'selected' : ''}>Gas</option>
-              <option value="liquid" ${initialState === 'liquid' ? 'selected' : ''}>Cair (Liquid)</option>
-              <option value="solid" ${initialState === 'solid' ? 'selected' : ''}>Padat (Solid)</option>
-            </select>
-          </div>
-        </div>
+      <div class="field">
+        <label for="f-cls">${esc(s.family)}</label>
+        <select id="f-cls" name="cls"><option value="">${esc(s.all)}</option>${classOptions}</select>
       </div>
-
-      <!-- Results Count Bar -->
-      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
-        <span id="results-count" style="font-size: 0.95rem; font-weight: 600; color: var(--text-muted);">
-          Memuat daftar molekul...
-        </span>
-        <button id="btn-pubchem-live" class="btn-action" style="display: none;">
-          ${getIcon('globe', 16)} <span>Cari di Database Global PubChem NIH</span>
-        </button>
+      <div class="field">
+        <label for="f-lv">${esc(s.level)}</label>
+        <select id="f-lv" name="lv"><option value="">${esc(s.all)}</option>${LEVEL_ORDER.map(
+          l => `<option value="${l}" ${state.lv === l ? 'selected' : ''}>${esc(levelName(l))}</option>`
+        ).join('')}</select>
       </div>
-
-      <!-- Molecules Results Grid -->
-      <div id="explore-results-grid" class="mol-grid"></div>
-
-      <!-- Empty State Container -->
-      <div id="explore-empty-state" class="empty-state" style="display: none; padding: 60px 20px; text-align: center;">
-        <div style="font-size: 4rem; margin-bottom: 16px;">⚗️</div>
-        <h3>${ui.noResults}</h3>
-        <p style="color: var(--text-muted); max-width: 480px; margin: 8px auto 20px;">
-          ${ui.noResultsDesc}
-        </p>
-        <button id="btn-trigger-pubchem-search" class="btn-search">
-          ${getIcon('globe', 18)} <span>Cari Langsung di Jutaan Molekul PubChem Resmi</span>
-        </button>
+      <div class="field">
+        <label for="f-ctx">${esc(s.place)}</label>
+        <select id="f-ctx" name="ctx"><option value="">${esc(s.all)}</option>${PLACES.map(
+          p => `<option value="${p.id}" ${state.ctx === p.id ? 'selected' : ''}>${esc(pick(p.name))}</option>`
+        ).join('')}</select>
       </div>
-    </div>
-  `;
+      <div class="field">
+        <label for="f-sort">${esc(s.sort)}</label>
+        <select id="f-sort" name="sort">
+          <option value="">${esc(s.byName)}</option>
+          <option value="mw" ${state.sort === 'mw' ? 'selected' : ''}>${esc(s.byMass)}</option>
+          <option value="lv" ${state.sort === 'lv' ? 'selected' : ''}>${esc(s.byLevel)}</option>
+        </select>
+      </div>
+      <button class="btn" type="reset" data-reset>${esc(s.reset)}</button>
+    </form>
+    <div data-element-hit></div>
+    <section aria-labelledby="cat-title">
+      <div class="section-head"><h2 id="cat-title">${esc(s.catalog)}</h2><p class="muted" data-count aria-live="polite"></p></div>
+      <div class="grid grid-cards" data-results></div>
+      <div class="center"><button class="btn" type="button" data-more hidden>${esc(s.more)}</button></div>
+    </section>
+    <section data-live aria-live="polite"></section>
+  </div>`;
 
-  const queryInput = $('#explore-query');
-  const clearBtn = $('#btn-clear-query');
-  const catSelect = $('#filter-cat');
-  const lvlSelect = $('#filter-lvl');
-  const stateSelect = $('#filter-state');
-  const grid = $('#explore-results-grid');
-  const countLabel = $('#results-count');
-  const emptyState = $('#explore-empty-state');
-  const liveBtn = $('#btn-pubchem-live');
-  const triggerPubChem = $('#btn-trigger-pubchem-search');
+  const form = $('[data-filters]', main);
+  let shown = PAGE;
+  let liveToken = 0;
 
-  function updateList(customList = null) {
-    const q = queryInput.value.trim().toLowerCase();
-    const cat = catSelect.value;
-    const lvl = lvlSelect.value;
-    const state = stateSelect.value;
+  function filtered() {
+    let list = state.q ? searchCatalog(state.q, formulaMap) : [...MOLECULES];
+    if (state.cls) {
+      const ids = new Set([state.cls, ...CLASSES.filter(c => c.parent === state.cls).map(c => c.id)]);
+      list = list.filter(m => m.cls.some(c => ids.has(c)));
+    }
+    if (state.lv) list = list.filter(m => m.lv === state.lv);
+    if (state.ctx) list = list.filter(m => m.ctx.includes(state.ctx));
+    if (!state.q) {
+      const name = m => normalize(pick(m.name));
+      if (state.sort === 'mw') list.sort((a, b) => (idx.get(a.id)?.mw || 0) - (idx.get(b.id)?.mw || 0));
+      else if (state.sort === 'lv')
+        list.sort(
+          (a, b) => LEVEL_ORDER.indexOf(a.lv) - LEVEL_ORDER.indexOf(b.lv) || name(a).localeCompare(name(b))
+        );
+      else list.sort((a, b) => name(a).localeCompare(name(b)));
+    }
+    return list;
+  }
 
-    let items = customList || curatedMolecules;
+  function drawCatalog() {
+    const list = filtered();
+    $('[data-count]', main).textContent = fmt(s.count, { n: list.length });
+    $('[data-results]', main).innerHTML = list.length
+      ? list
+          .slice(0, shown)
+          .map(m => moleculeCard(m, idx.get(m.id)))
+          .join('')
+      : emptyState(s.none);
+    $('[data-more]', main).hidden = list.length <= shown;
+    const el = state.q && getElement(state.q.trim());
+    $('[data-element-hit]', main).innerHTML = el
+      ? notice(
+          `${icon('atom', { size: 16 })} <a href="#/atom/${el.s}">${esc(fmt(s.elementHit, { name: pick([el.id, el.en]), s: el.s }))}</a>`
+        )
+      : '';
+  }
 
-    items = items.filter(m => {
-      // Keyword match
-      if (q) {
-        const matchesName = (m.nameId && m.nameId.toLowerCase().includes(q)) ||
-                            (m.nameEn && m.nameEn.toLowerCase().includes(q)) ||
-                            (m.formula && m.formula.toLowerCase().includes(q)) ||
-                            (m.iupac && m.iupac.toLowerCase().includes(q)) ||
-                            (m.cid && String(m.cid) === q);
-        if (!matchesName) return false;
+  async function drawLive() {
+    const box = $('[data-live]', main);
+    const q = state.q.trim();
+    const mine = ++liveToken;
+    if (q.length < 2) {
+      box.innerHTML = '';
+      return;
+    }
+    box.innerHTML = `<div class="section-head"><h2>${icon('globe', { size: 20 })} ${esc(s.live)}</h2></div>${loading()}`;
+    const known = new Set(MOLECULES.map(m => m.cid));
+    try {
+      let cids = [];
+      let names = [];
+      const labels = new Map();
+      const counts = parseFormula(q);
+      const looksFormula = /^[A-Z][A-Za-z0-9()[\]·.]*$/.test(q) && !counts.error && /\d|[A-Z].*[A-Z]/.test(q);
+      if (/^\d{1,10}$/.test(q)) cids = [Number(q)];
+      else if (looksFormula) cids = await cidsByFormula(q.replace(/[·.]/g, ''), 16);
+      else {
+        const [byLabelId, byLabelEn, auto, exact] = await Promise.all([
+          searchByLabel(q, 'id').catch(() => []),
+          searchByLabel(q, 'en').catch(() => []),
+          autocomplete(q, 8).catch(() => []),
+          cidByName(q).catch(() => null),
+        ]);
+        for (const hit of [...byLabelId, ...byLabelEn]) {
+          if (!labels.has(hit.cid)) labels.set(hit.cid, hit.label);
+        }
+        cids = [...(exact ? [exact] : []), ...labels.keys()];
+        names = auto;
       }
-
-      // Category match
-      if (cat !== 'all' && m.category !== cat) return false;
-
-      // Level match
-      if (lvl !== 'all' && m.level !== lvl) return false;
-
-      // State match
-      if (state !== 'all' && m.stateAtSTP !== state) return false;
-
-      return true;
-    });
-
-    countLabel.textContent = `Menampilkan ${items.length} molekul`;
-
-    if (items.length > 0) {
-      grid.innerHTML = items.map(m => renderMoleculeCard(m)).join('');
-      grid.style.display = 'grid';
-      emptyState.style.display = 'none';
-      liveBtn.style.display = q ? 'inline-flex' : 'none';
-    } else {
-      grid.innerHTML = '';
-      grid.style.display = 'none';
-      emptyState.style.display = 'block';
-      liveBtn.style.display = 'none';
+      if (mine !== liveToken || !isCurrent()) return;
+      const fresh = [...new Set(cids)].filter(c => !known.has(c)).slice(0, 16);
+      const rows = await summaries(fresh);
+      if (mine !== liveToken || !isCurrent()) return;
+      const nameList = names.filter(n => !rows.some(r => r.title.toLowerCase() === n.toLowerCase()));
+      box.innerHTML = `<div class="section-head"><h2>${icon('globe', { size: 20 })} ${esc(s.live)}</h2></div>
+        <p class="muted">${esc(s.liveLead)}</p>
+        ${rows.length ? `<div class="grid grid-cards">${rows.map(r => liveCard({ ...r, label: labels.get(r.cid) })).join('')}</div>` : ''}
+        ${nameList.length ? `<h3 class="h-small">${esc(s.suggestions)}</h3><ul class="suggest-list">${nameList.map(nameResult).join('')}</ul>` : ''}
+        ${!rows.length && !nameList.length ? `<p>${esc(s.noneLive)}</p>` : ''}`;
+    } catch {
+      if (mine === liveToken) box.innerHTML = notice(esc(s.liveError), 'warn');
     }
   }
 
-  // Handle PubChem Live Deep Query
-  async function performPubChemQuery() {
-    const q = queryInput.value.trim();
-    if (!q) return;
+  const liveLater = debounce(drawLive, 500);
+  const update = debounce(() => {
+    for (const key of Object.keys(state)) state[key] = form.elements[key]?.value ?? '';
+    shown = PAGE;
+    replaceQuery(state);
+    drawCatalog();
+    liveLater();
+  }, 200);
 
-    countLabel.textContent = `Mencari '${q}' di PubChem NIH…`;
-    const results = await searchMolecules(q);
-    if (results && results.length > 0) {
-      updateList(results);
-    } else {
-      updateList([]);
-    }
-  }
-
-  if (queryInput) {
-    queryInput.addEventListener('input', () => {
-      clearBtn.style.display = queryInput.value.trim() ? 'inline-flex' : 'none';
-      updateList();
-    });
-  }
-
-  if (clearBtn) {
-    clearBtn.addEventListener('click', () => {
-      queryInput.value = '';
-      clearBtn.style.display = 'none';
-      updateList();
-    });
-  }
-
-  [catSelect, lvlSelect, stateSelect].forEach(sel => {
-    if (sel) sel.addEventListener('change', () => updateList());
+  form.addEventListener('input', update);
+  form.addEventListener('change', update);
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    update();
+  });
+  form.addEventListener('reset', () => setTimeout(update, 0));
+  $('[data-more]', main).addEventListener('click', () => {
+    shown += PAGE;
+    drawCatalog();
   });
 
-  if (liveBtn) liveBtn.addEventListener('click', performPubChemQuery);
-  if (triggerPubChem) triggerPubChem.addEventListener('click', performPubChemQuery);
-
-  // Initial update
-  updateList();
+  drawCatalog();
+  if (state.q) drawLive();
 }

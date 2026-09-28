@@ -1,0 +1,26 @@
+{
+ "z": 100,
+ "qid": "Q1896",
+ "wiki": {
+  "id": {
+   "title": "Fermium",
+   "extract": "Fermium adalah sebuah unsur kimia sintetis dengan lambang Fm dan nomor atom 100. Ia adalah salah satu anggota deret aktinida dan merupakan unsur terberat yang dapat dibentuk oleh pemborbardiran neutron terhadap unsur-unsur yang lebih ringan, dan karenanya ia merupakan unsur terakhir yang dapat dibuat dalam jumlah makroskopis, meskipun logam fermium murni belum pernah dibuat. Sebanyak 19 isotop fermium telah diketahui, dengan 257Fm menjadi yang berumur paling panjang dengan waktu paruh 100,5 hari.\nUnsur ini ditemukan pada puing-puing ledakan bom hidrogen pertama pada tahun 1952, dan dinamai dari Enrico Fermi, salah satu pelopor fisika nuklir. Sifat kimianya khas untuk aktinida akhir, dengan keadaan oksidasi +3 yang lebih besar tetapi juga keadaan oksidasi +2 yang dapat diakses. Karena fermium yang pernah diproduksi berjumlah sedikit dan semua isotopnya memiliki waktu paruh yang relatif pendek, saat ini ia tidak memiliki kegunaan di luar penelitian ilmiah dasar.",
+   "url": "https://id.wikipedia.org/wiki/Fermium"
+  },
+  "en": {
+   "title": "Fermium",
+   "extract": "Fermium is a synthetic chemical element; it has symbol Fm and atomic number 100. It is an actinide and the heaviest element that can be formed by neutron bombardment of lighter elements, and hence the last element that can be prepared in macroscopic quantities, although pure fermium metal has not been prepared yet. A total of 20 isotopes are known, with 257Fm being the longest-lived with a half-life of 100.5 days.\nFermium was discovered in 1952 in the debris of the first detonation test of a hydrogen bomb, and named after Enrico Fermi, one of the pioneers of nuclear physics. Its chemistry is typical for the late actinides, with a preponderance of the +3 oxidation state but also an accessible +2 oxidation state. Owing to the small amounts of produced fermium and all of its isotopes having relatively short half-lives, there are currently no uses for it outside basic scientific research.",
+   "url": "https://en.wikipedia.org/wiki/Fermium"
+  }
+ },
+ "photo": {
+  "file": "Fermium-Ytterbium Alloy.jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Fermium-Ytterbium_Alloy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "width": 640,
+  "height": 593,
+  "page": "https://commons.wikimedia.org/wiki/File:Fermium-Ytterbium_Alloy.jpg",
+  "author": "Ben E. Lewis.",
+  "license": "Public domain",
+  "licenseUrl": ""
+ }
+}

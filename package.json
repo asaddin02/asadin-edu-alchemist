@@ -1,12 +1,47 @@
 {
-  "name": "asadin-edu-chemtaxa",
-  "version": "1.0.0",
+  "name": "asadin-edu-alchemist",
+  "version": "2.0.0",
+  "private": true,
   "type": "module",
-  "description": "ChemTaxa · Asadin Edu — Atlas Molekul & Pembelajaran Kimia Terbuka dari SD sampai Kuliah",
+  "description": "Moleculium · Asadin Edu — open, bilingual atlas of molecules, elements and materials for primary school to university learners and teachers.",
   "scripts": {
     "start": "node server/server.mjs",
     "dev": "PORT=8086 HOST=127.0.0.1 LOG=1 node server/server.mjs",
-    "test": "node tests/test-runner.mjs"
+    "start:static": "python3 -m http.server 8086 --bind 127.0.0.1",
+    "sync": "node scripts/sync-elements.mjs && node scripts/sync-molecules.mjs",
+    "sync:elements": "node scripts/sync-elements.mjs",
+    "sync:molecules": "node scripts/sync-molecules.mjs",
+    "icons": "node scripts/make-icons.mjs",
+    "build": "node scripts/build-sw.mjs",
+    "build:check": "node scripts/build-sw.mjs --check",
+    "build:site": "node scripts/build-sw.mjs && node scripts/build-site.mjs",
+    "preview:cloudflare": "npm run build:site && npx --yes wrangler@4 pages dev dist --port 8788 --compatibility-date=2026-09-21",
+    "lint": "eslint . && prettier --check .",
+    "format": "prettier --write .",
+    "data:check": "node scripts/check-data.mjs",
+    "test": "npm run test:unit && npm run test:e2e",
+    "test:unit": "node tests/test-runner.mjs",
+    "test:e2e": "playwright test",
+    "check": "npm run lint && npm run data:check && npm run build:check && npm test"
   },
-  "license": "MIT"
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "1.63.0",
+    "eslint": "^10.11.0",
+    "globals": "^17.12.0",
+    "prettier": "^3.9.9"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asaddin02/asadin-edu-alchemist.git"
+  },
+  "bugs": {
+    "url": "https://github.com/asaddin02/asadin-edu-alchemist/issues"
+  },
+  "homepage": "https://github.com/asaddin02/asadin-edu-alchemist#readme"
 }

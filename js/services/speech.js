@@ -1,48 +1,29 @@
-// ChemTaxa · Speech Synthesis Service (Audio narration for young learners and accessibility)
-let synth = typeof window !== 'undefined' ? window.speechSynthesis : null;
-let currentUtterance = null;
+// Read-aloud with the browser's own speech synthesis (works offline where voices are installed).
+import { lang } from '../core/prefs.js';
 
-export function canSpeak() {
-  return typeof window !== 'undefined' && 'speechSynthesis' in window;
+export const canSpeak = () => 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
+export const speaking = () => canSpeak() && speechSynthesis.speaking;
+
+function voiceFor(code) {
+  const voices = speechSynthesis.getVoices();
+  return voices.find(v => v.lang?.toLowerCase().startsWith(code)) || null;
 }
 
-export function isSpeaking() {
-  return synth ? synth.speaking : false;
+/** Speaks text in the current language. `onend` runs when finished or stopped. */
+export function speak(text, onend) {
+  if (!canSpeak() || !text) return false;
+  speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text.replace(/\s+/g, ' ').slice(0, 4000));
+  const code = lang() === 'en' ? 'en' : 'id';
+  u.lang = code === 'en' ? 'en-GB' : 'id-ID';
+  const v = voiceFor(code);
+  if (v) u.voice = v;
+  u.rate = 0.95;
+  u.onend = u.onerror = () => onend?.();
+  speechSynthesis.speak(u);
+  return true;
 }
 
 export function stopSpeaking() {
-  if (synth) {
-    synth.cancel();
-    currentUtterance = null;
-  }
-}
-
-export function speak(text, lang = 'id', onEnd = () => {}) {
-  if (!canSpeak()) return false;
-  stopSpeaking();
-
-  const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = lang === 'en' ? 'en-US' : 'id-ID';
-  utterance.rate = 0.95;
-  utterance.pitch = 1.0;
-
-  // Attempt to select an Indonesian or English voice
-  const voices = synth.getVoices();
-  const targetPrefix = lang === 'en' ? 'en' : 'id';
-  const voice = voices.find(v => v.lang.startsWith(targetPrefix));
-  if (voice) utterance.voice = voice;
-
-  utterance.onend = () => {
-    currentUtterance = null;
-    onEnd();
-  };
-
-  utterance.onerror = () => {
-    currentUtterance = null;
-    onEnd();
-  };
-
-  currentUtterance = utterance;
-  synth.speak(utterance);
-  return true;
+  if (canSpeak()) speechSynthesis.cancel();
 }

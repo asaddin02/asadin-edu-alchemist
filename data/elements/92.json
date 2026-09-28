@@ -1,0 +1,26 @@
+{
+ "z": 92,
+ "qid": "Q1098",
+ "wiki": {
+  "id": {
+   "title": "Uranium",
+   "extract": "Uranium adalah sebuah unsur kimia dengan lambang U dan nomor atom 92. Ia merupakan logam berwarna abu-abu keperakan dalam deret aktinida tabel periodik. Sebuah atom uranium memiliki 92 proton dan 92 elektron, dimana 6 di antaranya adalah elektron valensi. Uranium meluruh secara radioaktif dengan memancarkan sebuah partikel alfa. Waktu paruh peluruhan ini bervariasi antara 159.200 dan 4,5 miliar tahun untuk isotop yang berbeda, menjadikannya berguna untuk menentukan usia Bumi. Isotop paling umum dalam uranium alami adalah uranium-238 (yang memiliki 146 neutron dan menyumbang lebih dari 99% uranium di Bumi) dan uranium-235 (yang memiliki 143 neutron). Uranium memiliki berat atom tertinggi dari unsur-unsur yang terjadi secara primordial. Kepadatannya sekitar 70% lebih tinggi dari timbal, dan sedikit lebih rendah dari emas atau wolfram. Ia terjadi secara alami dalam konsentrasi rendah, yaitu beberapa bagian per juta di tanah, batu dan air, dan ia diekstraksi secara komersial dari mineral yang mengandung uranium seperti uraninit.\nBanyak penggunaan uranium kontemporer mengeksploitasi sifat nuklirnya yang unik. Uranium-235 adalah satu-satunya isotop fisil alami, yang membuatnya banyak digunakan pada pembangkit listrik tenaga nuklir dan senjata nuklir. Namun, karena konsentrasi kecil yang ditemukan di alam, uranium perlu mengalami pengayaan agar uranium-235 dapat cukup. Uranium-238 dapat difisi oleh neutron cepat, dan ia bersifat subur, artinya ia dapat ditransmutasikan menjadi plutonium-239 yang fisil dalam reaktor nuklir. Isotop fisil lainnya, uranium-233, dapat diproduksi dari torium alami dan dipelajari untuk penggunaan industri di masa depan dalam teknologi nuklir. Uranium-238 memiliki kemungkinan kecil untuk mengalami fisi spontan atau bahkan fisi terinduksi dengan neutron cepat; uranium-235, dan pada tingkat yang lebih rendah uranium-233, memiliki penampang lintang fisi yang jauh lebih tinggi untuk neutron lambat. Dalam konsentrasi yang cukup, isotop-isotop ini mempertahankan reaksi rantai nuklir yang berkelanjutan. Hal ini menghasilkan panas dalam reaktor tenaga nuklir, dan menghasilkan bahan fisil untuk senjata nuklir.",
+   "url": "https://id.wikipedia.org/wiki/Uranium"
+  },
+  "en": {
+   "title": "Uranium",
+   "extract": "Uranium is a chemical element; it has symbol U and atomic number 92. It is a silvery-grey metal in the actinide series of the periodic table. A uranium atom has 92 protons and 92 electrons, of which 6 are valence electrons. Uranium radioactively decays, usually by emitting an alpha particle. The half-life of this decay varies between 159,200 and 4.5 billion years for different isotopes, making them useful for dating the age of the Earth. The most common isotopes in natural uranium are uranium-238 (which has 146 neutrons and accounts for over 99% of uranium on Earth) and uranium-235 (which has 143 neutrons). Uranium has the highest atomic weight of the primordially occurring elements. Its density is about 70% higher than that of lead and slightly lower than that of gold or tungsten. It occurs naturally in low concentrations of a few parts per million in soil, rock and water, and is commercially extracted from uranium-bearing minerals such as uraninite.\nMany contemporary uses of uranium exploit its unique nuclear properties. Uranium is used in nuclear power plants and nuclear weapons because it is the only naturally occurring element with a fissile isotope – uranium-235 – present in non-trace amounts. However, because of the low abundance of uranium-235 in natural uranium (which is overwhelmingly uranium-238), uranium needs to undergo enrichment so that enough uranium-235 is present. Uranium-238 is fissionable by fast neutrons and is fertile, meaning it can be transmuted to fissile plutonium-239 in a nuclear reactor. Another fissile isotope, uranium-233, can be produced from natural thorium and is studied for future industrial use in nuclear technology. Uranium-238 has a small probability for spontaneous fission or even induced fission with fast neutrons; uranium-235, and to a lesser degree uranium-233, have a much higher fission cross-section for slow neutrons. In sufficient concentration, these isotopes maintain a sustained nuclear chain reaction. This generates the heat in nuclear power reactors and produces the fissile material for nuclear weapons. The primary civilian use for uranium harnesses the heat energy to produce electricity.",
+   "url": "https://en.wikipedia.org/wiki/Uranium"
+  }
+ },
+ "photo": {
+  "file": "Uranium2.jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Uranium2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "width": 640,
+  "height": 428,
+  "page": "https://commons.wikimedia.org/wiki/File:Uranium2.jpg",
+  "author": "Wikimedia Commons",
+  "license": "Public domain",
+  "licenseUrl": ""
+ }
+}

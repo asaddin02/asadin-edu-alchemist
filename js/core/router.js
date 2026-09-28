@@ -1,152 +1,156 @@
-// ChemTaxa · Asynchronous Client-Side Hash Router
-import { $ } from './dom.js';
+// Hash router: #/page/id?key=value. Pages are ES modules loaded on demand; each exports
+// render(ctx) and optionally title(route). ctx.cleanup(fn) registers work to undo when leaving the page.
+import { $, esc } from './dom.js';
+import { pick } from './prefs.js';
 
-const routes = {
-  home: () => import('../pages/home.js'),
-  explore: () => import('../pages/explore.js'),
-  molecule: () => import('../pages/molecule.js'),
-  learn: () => import('../pages/learn.js'),
-  lab: () => import('../pages/lab.js'),
-  table: () => import('../pages/table.js'),
-  atom: () => import('../pages/atom.js'),
-  compare: () => import('../pages/compare.js'),
-  quiz: () => import('../pages/quiz.js'),
-  glossary: () => import('../pages/glossary.js'),
-  saved: () => import('../pages/saved.js'),
-  teacher: () => import('../pages/teacher.js'),
-  about: () => import('../pages/about.js'),
-};
+// Page modules, loaded on demand.
+const PAGES = Object.fromEntries(
+  [
+    'home',
+    'explore',
+    'molecule',
+    'classes',
+    'table',
+    'atom',
+    'learn',
+    'lab',
+    'quiz',
+    'compare',
+    'around',
+    'glossary',
+    'saved',
+    'teacher',
+    'assignment',
+    'about',
+  ].map(p => [p, `../pages/${p}.js`])
+);
+/** Imports a page module; a failed request is retried with a fresh URL because browsers cache import failures. */
+const loadPage = path =>
+  import(path).catch(() =>
+    new Promise(r => setTimeout(r, 500)).then(() => import(`${path}?retry=${Date.now()}`))
+  );
+export const PAGE_NAMES = Object.keys(PAGES);
 
-let currentToken = 0;
-let scopedCleanups = [];
-const scopedHandlers = [];
-let routeHooks = { before: () => {}, after: () => {}, error: () => {} };
-
-export function configureRouter(hooks) {
-  routeHooks = { ...routeHooks, ...hooks };
-}
+let token = 0;
+const cleanups = [];
+let hooks = { before() {}, after() {} };
+export const configureRouter = h => (hooks = { ...hooks, ...h });
 
 export function parseRoute(hash = location.hash) {
-  const clean = hash.replace(/^#\/?/, '') || 'home';
-  const [pathWithAnchor, queryStr = ''] = clean.split('?');
-  const [path, anchor = ''] = pathWithAnchor.split('#');
-  const parts = path.split('/');
-  const page = parts[0] || 'home';
-  const id = parts.slice(1).join('/') || undefined;
-  const params = new URLSearchParams(queryStr);
-
-  return { page, id, params, anchor };
+  const raw = hash.replace(/^#\/?/, '');
+  const [path, query = ''] = raw.split('?');
+  const parts = path
+    .split('/')
+    .filter(Boolean)
+    .map(p => {
+      try {
+        return decodeURIComponent(p);
+      } catch {
+        return p;
+      }
+    });
+  return {
+    page: parts[0] || 'home',
+    id: parts.slice(1).join('/') || null,
+    params: new URLSearchParams(query),
+  };
 }
 
-export function onScoped(type, selector, handler) {
-  scopedHandlers.push({ type, selector, handler });
+/** Builds "#/page/id?x=1" with encoded parts; empty params are dropped. */
+export function routeURL(page, id = null, params = {}) {
+  const q = new URLSearchParams();
+  for (const [k, v] of Object.entries(params)) if (v != null && v !== '' && v !== false) q.set(k, v);
+  const path = [page, ...(id == null ? [] : String(id).split('/'))].map(encodeURIComponent).join('/');
+  return `#/${path}${q.toString() ? `?${q}` : ''}`;
 }
 
-function handleScopedEvent(e) {
-  for (const h of [...scopedHandlers]) {
-    if (h.type !== e.type) continue;
-    const target = e.target instanceof Element ? e.target.closest(h.selector) : null;
-    if (target) h.handler(e, target);
-  }
+/** Changes the query string without re-rendering (filters, tabs). */
+export function replaceQuery(params) {
+  const { page, id } = parseRoute();
+  history.replaceState(history.state, '', routeURL(page, id, params));
 }
 
-['click', 'input', 'change', 'submit', 'keydown'].forEach(evt =>
-  document.addEventListener(evt, handleScopedEvent)
-);
+export const go = hash => {
+  if (location.hash === hash) render();
+  else location.hash = hash;
+};
 
-export async function navigate(hash) {
-  if (location.hash === hash) {
-    await renderCurrentRoute();
-  } else {
-    location.hash = hash;
-  }
-}
-
-export async function renderCurrentRoute() {
-  const token = ++currentToken;
-
-  // Run cleanups
-  scopedCleanups.forEach(fn => {
-    try { fn(); } catch (_) {}
-  });
-  scopedCleanups = [];
-  scopedHandlers.length = 0;
-
+/** Renders the current route. `navigated` is true when the user moved to another page (not the first load). */
+export async function render(navigated = false) {
+  const mine = ++token;
+  for (const fn of cleanups.splice(0))
+    try {
+      fn();
+    } catch {}
   const route = parseRoute();
+  // Recorded when rendering starts: pages may later rewrite the query (filters, tabs).
+  const startHash = location.hash;
   const main = $('#main');
-  if (!main) return;
-
-  routeHooks.before(route);
-
-  const loader = routes[route.page];
+  hooks.before(route);
+  const loader = Object.hasOwn(PAGES, route.page) ? PAGES[route.page] : null;
   if (!loader) {
-    main.innerHTML = `
-      <section class="not-found-section container">
-        <div class="empty-state">
-          <div class="empty-icon">⚛️</div>
-          <h2>Halaman Tidak Ditemukan</h2>
-          <p>Halaman atau molekul kimia yang Anda cari tidak tersedia di ChemTaxa.</p>
-          <a href="#/home" class="btn btn-primary">Kembali ke Beranda</a>
-        </div>
-      </section>
-    `;
-    routeHooks.error(route, new Error('Route not found'));
+    main.innerHTML = notFound();
+    document.title = 'Moleculium';
+    document.body.dataset.route = startHash;
     return;
   }
-
-  main.innerHTML = `
-    <div class="status-loading">
-      <div class="orbital-spinner" aria-hidden="true">
-        <div class="orbit"></div>
-        <div class="orbit-2"></div>
-        <div class="nucleus"></div>
-      </div>
-      <p class="loading-text">Memuat materi ChemTaxa…</p>
-    </div>
-  `;
-
+  main.setAttribute('aria-busy', 'true');
   try {
-    const module = await loader();
-    if (token !== currentToken) return; // Stale navigation
-
+    // One retry covers a module request that failed on a flaky connection.
+    const mod = await loadPage(loader);
+    if (mine !== token) return;
     main.dataset.page = route.page;
-    window.scrollTo({ top: 0, behavior: 'instant' });
-
-    await module.render({
+    const ctx = {
       ...route,
       main,
-      token,
-      isCurrent: () => token === currentToken,
-      on: onScoped,
-      cleanup: fn => scopedCleanups.push(fn),
-    });
-
-    if (token !== currentToken) return;
-
-    const baseTitle = 'ChemTaxa · Atlas Molekul Kimia Semesta';
-    document.title = module.title ? `${module.title(route)} · ChemTaxa` : baseTitle;
-
-    routeHooks.after(route, main);
-
-    if (route.anchor) {
-      const el = document.getElementById(route.anchor);
-      if (el) el.scrollIntoView({ behavior: 'smooth' });
+      isCurrent: () => mine === token,
+      cleanup: fn => cleanups.push(fn),
+    };
+    await mod.render(ctx);
+    if (mine !== token) return;
+    const title = mod.title?.(route);
+    document.title = title
+      ? `${title} · Moleculium`
+      : pick(['Moleculium · Atlas molekul dunia', 'Moleculium · World atlas of molecules']);
+    window.scrollTo(0, 0);
+    // After navigation, move focus to the page heading so screen-reader users hear where they are,
+    // unless the user has already moved focus elsewhere (for example into the open menu).
+    const h1 = main.querySelector('h1');
+    const active = document.activeElement;
+    if (navigated && h1 && !active?.closest('.drawer, .menu, [role="dialog"]')) {
+      h1.setAttribute('tabindex', '-1');
+      h1.focus({ preventScroll: true });
     }
-  } catch (err) {
-    if (token !== currentToken) return;
-    console.error('Error rendering route:', err);
-    main.innerHTML = `
-      <section class="error-section container">
-        <div class="empty-state">
-          <div class="empty-icon">⚠️</div>
-          <h2>Terjadi Gangguan</h2>
-          <p>Gagal memuat materi kimia. Silakan periksa koneksi internet Anda atau coba lagi.</p>
-          <button class="btn btn-outline" onclick="location.reload()">Muat Ulang</button>
-        </div>
-      </section>
-    `;
-    routeHooks.error(route, err);
+    hooks.after(route);
+    document.body.dataset.route = startHash;
+  } catch (error) {
+    if (mine !== token) return;
+    console.error(error);
+    main.innerHTML = `<section class="container page-state" role="alert">
+      <h1>${esc(pick(['Halaman gagal dimuat', 'The page failed to load']))}</h1>
+      <p>${esc(pick(['Periksa koneksi internet, lalu coba lagi.', 'Check your internet connection and try again.']))}</p>
+      <button class="btn btn-primary" type="button" data-action="reload">${esc(pick(['Coba lagi', 'Try again']))}</button>
+      <details class="muted small"><summary>${esc(pick(['Detail teknis', 'Technical details']))}</summary><code>${esc(String(error?.message || error).slice(0, 300))}</code></details>
+    </section>`;
+    document.body.dataset.route = startHash;
+  } finally {
+    if (mine === token) main.removeAttribute('aria-busy');
   }
 }
 
-window.addEventListener('hashchange', () => renderCurrentRoute());
+/** Only "#/…" hashes are routes; in-page anchors such as the skip link (#main) are left alone. */
+const isRoute = () => !location.hash || location.hash.startsWith('#/');
+
+function notFound() {
+  return `<section class="container page-state">
+    <h1>${esc(pick(['Halaman tidak ditemukan', 'Page not found']))}</h1>
+    <p>${esc(pick(['Alamat ini tidak ada di Moleculium.', 'This address does not exist in Moleculium.']))}</p>
+    <a class="btn btn-primary" href="#/">${esc(pick(['Ke beranda', 'Go home']))}</a>
+  </section>`;
+}
+
+window.addEventListener('hashchange', () => isRoute() && render(true));
+document.addEventListener('click', e => {
+  // A full reload also clears module requests the browser has cached as failed.
+  if (e.target.closest('[data-action="reload"]')) location.reload();
+});

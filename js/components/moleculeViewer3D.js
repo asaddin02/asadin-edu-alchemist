@@ -1,431 +1,512 @@
-// ChemTaxa · Interactive Pure-Canvas 3D Molecular Engine
+// Moleculium 3D viewer: a dependency-free Canvas 2D renderer for molecules and crystal models.
+// Drag / touch to rotate, wheel / pinch / +− to zoom, arrow keys to turn, Home to reset.
+// Styles: ball-and-stick, space-filling (van der Waals radii) and wireframe. Atoms use CPK colours from PubChem.
 import { getElement } from '../data/periodicTable.js';
+import { reducedMotion } from '../core/dom.js';
 
-export const CPK_COLORS = {
-  H: '#f8fafc',
-  C: '#334155',
-  N: '#3b82f6',
-  O: '#ef4444',
-  F: '#22c55e',
-  Cl: '#10b981',
-  Br: '#991b1b',
-  I: '#7e22ce',
-  P: '#f97316',
-  S: '#eab308',
-  Na: '#a855f7',
-  K: '#8b5cf6',
-  Ca: '#64748b',
-  Fe: '#ea580c',
-  DEFAULT: '#94a3b8'
-};
-
-const VDW_RADII = {
+// Van der Waals radii (Å, Bondi/Alvarez) for common elements; other elements fall back to 1.8 Å.
+const VDW = {
   H: 1.2,
+  He: 1.4,
   C: 1.7,
   N: 1.55,
   O: 1.52,
   F: 1.47,
-  Cl: 1.75,
-  Br: 1.85,
-  I: 1.98,
+  Ne: 1.54,
+  Na: 2.27,
+  Mg: 1.73,
+  Al: 1.84,
+  Si: 2.1,
   P: 1.8,
   S: 1.8,
-  Na: 2.27,
+  Cl: 1.75,
+  Ar: 1.88,
   K: 2.75,
-  DEFAULT: 1.6
+  Ca: 2.31,
+  Ti: 2.11,
+  Fe: 2.04,
+  Co: 2.0,
+  Ni: 1.63,
+  Cu: 1.4,
+  Zn: 1.39,
+  Ga: 1.87,
+  As: 1.85,
+  Br: 1.85,
+  Ag: 1.72,
+  Sn: 2.17,
+  I: 1.98,
+  Xe: 2.16,
+  W: 2.1,
+  Pt: 1.75,
+  Au: 1.66,
+  Hg: 1.55,
+  Pb: 2.02,
+  Li: 1.82,
+  B: 1.92,
+  Be: 1.53,
+  Cs: 3.43,
+  A: 1.9,
+  X: 1.6,
+  E: 1.3,
 };
+const DARK_TEXT = new Set([
+  'E',
+  'H',
+  'He',
+  'F',
+  'Cl',
+  'S',
+  'Ne',
+  'Ar',
+  'Li',
+  'Na',
+  'Mg',
+  'Al',
+  'Si',
+  'Ca',
+  'Zn',
+  'Ag',
+  'Pt',
+  'Au',
+  'Sn',
+  'Ni',
+  'B',
+  'Be',
+  'Ga',
+  'Ti',
+]);
 
-export class MoleculeViewer3D {
-  constructor(container, options = {}) {
-    this.container = container;
-    this.options = {
-      mode: 'ball-and-stick', // 'ball-and-stick' | 'space-filling' | 'wireframe'
-      autoRotate: true,
-      showLabels: true,
-      zoom: 1.0,
-      ...options
-    };
+// Pseudo-atoms for teaching models: A = central atom, X = bonded atom, E = lone pair.
+const PSEUDO = { A: '#5b7bd5', X: '#3fb58c', E: '#c4b5fd' };
 
+export function atomColor(symbol) {
+  if (PSEUDO[symbol]) return PSEUDO[symbol];
+  const e = getElement(symbol);
+  if (!e?.cpk) return '#b0b7c3';
+  // PubChem gives carbon as #909090 and hydrogen as white; both read well on light and dark stages.
+  return e.cpk === '#ffffff' ? '#f4f6f8' : e.cpk;
+}
+
+export class Viewer3D {
+  /**
+   * @param {HTMLElement} host
+   * @param {{mode?: string, labels?: boolean, spin?: boolean, label?: string, onPick?: Function}} options
+   */
+  constructor(host, options = {}) {
+    this.host = host;
+    this.opts = { mode: 'ball', labels: true, spin: !reducedMotion(), onPick: null, ...options };
     this.canvas = document.createElement('canvas');
-    this.canvas.className = 'mol-3d-canvas';
+    this.canvas.className = 'viewer-canvas';
+    this.canvas.tabIndex = 0;
     this.canvas.setAttribute('role', 'img');
-    this.canvas.setAttribute('aria-label', '3D Interactive Molecular Structure View');
-    this.container.innerHTML = '';
-    this.container.appendChild(this.canvas);
+    this.canvas.setAttribute('aria-label', options.label || '3D model');
+    host.replaceChildren(this.canvas);
     this.ctx = this.canvas.getContext('2d');
-
     this.atoms = [];
     this.bonds = [];
-    this.rotX = 0.3;
-    this.rotY = 0.4;
-    this.rotZ = 0;
-    this.scale = 45;
-    this.isDragging = false;
-    this.lastMouseX = 0;
-    this.lastMouseY = 0;
-    this.hoveredAtom = null;
-    this.animId = null;
+    this.cell = null;
+    this.rot = this.baseRot();
+    this.zoom = 1;
+    this.fit = 40;
+    this.hover = -1;
+    this.picked = -1;
+    this.pointers = new Map();
+    this.frame = 0;
+    this.listeners = [];
+    this.bind();
+    this.ro = new ResizeObserver(() => this.resize());
+    this.ro.observe(host);
+    this.resize();
+    this.loop();
+  }
 
-    this.initEvents();
+  baseRot() {
+    return this.rotation(-0.35, 0.55);
+  }
+
+  /** Rotation matrix from two Euler angles (x then y). */
+  rotation(ax, ay) {
+    const [cx, sx, cy, sy] = [Math.cos(ax), Math.sin(ax), Math.cos(ay), Math.sin(ay)];
+    return [
+      [cy, 0, sy],
+      [sx * sy, cx, -sx * cy],
+      [-cx * sy, sx, cx * cy],
+    ];
+  }
+
+  turn(dx, dy) {
+    const r = this.rotation(dy, dx);
+    this.rot = r.map(row =>
+      [0, 1, 2].map(j => row[0] * this.rot[0][j] + row[1] * this.rot[1][j] + row[2] * this.rot[2][j])
+    );
+    this.dirty = true;
+  }
+
+  /** atoms: [[symbol, x, y, z, charge?]], bonds: [[a, b, order]], cell: lattice vectors or null. */
+  setData({ atoms = [], bonds = [], cell = null } = {}) {
+    const n = atoms.length || 1;
+    const c = atoms.reduce((acc, a) => [acc[0] + a[1] / n, acc[1] + a[2] / n, acc[2] + a[3] / n], [0, 0, 0]);
+    this.center = c;
+    this.atoms = atoms.map(a => ({ el: a[0], p: [a[1] - c[0], a[2] - c[1], a[3] - c[2]], q: a[4] || 0 }));
+    this.bonds = bonds;
+    this.cell = cell;
+    const radius = Math.max(1.5, ...this.atoms.map(a => Math.hypot(...a.p) + (VDW[a.el] || 1.8) * 0.5));
+    this.radius = radius;
+    this.picked = -1;
+    this.rot = this.baseRot();
+    this.zoom = 1;
     this.resize();
   }
 
-  setData(atoms = [], bonds = []) {
-    this.atoms = atoms.map((a, i) => ({ ...a, id: i }));
-    this.bonds = bonds || [];
+  setMode(mode) {
+    this.opts.mode = mode;
+    this.dirty = true;
+  }
+  setLabels(on) {
+    this.opts.labels = on;
+    this.dirty = true;
+  }
+  setSpin(on) {
+    this.opts.spin = on;
+  }
+  reset() {
+    this.rot = this.baseRot();
+    this.zoom = 1;
+    this.dirty = true;
+  }
+  zoomBy(f) {
+    this.zoom = Math.min(6, Math.max(0.3, this.zoom * f));
+    this.dirty = true;
+  }
 
-    // Center molecule around center of mass
-    if (this.atoms.length > 0) {
-      let cx = 0, cy = 0, cz = 0;
-      this.atoms.forEach(a => { cx += a.x; cy += a.y; cz += a.z; });
-      cx /= this.atoms.length;
-      cy /= this.atoms.length;
-      cz /= this.atoms.length;
+  on(target, type, fn, opts) {
+    target.addEventListener(type, fn, opts);
+    this.listeners.push(() => target.removeEventListener(type, fn, opts));
+  }
 
-      this.atoms = this.atoms.map(a => ({
-        ...a,
-        x: a.x - cx,
-        y: a.y - cy,
-        z: a.z - cz
-      }));
-
-      // Calculate bounding box for auto scale
-      let maxDist = 1;
-      this.atoms.forEach(a => {
-        const d = Math.sqrt(a.x * a.x + a.y * a.y + a.z * a.z);
-        if (d > maxDist) maxDist = d;
-      });
-
-      const minDim = Math.min(this.canvas.width, this.canvas.height);
-      this.scale = (minDim * 0.32) / (maxDist || 1);
-    }
-
-    this.draw();
+  bind() {
+    const cv = this.canvas;
+    this.on(cv, 'pointerdown', e => {
+      cv.setPointerCapture(e.pointerId);
+      this.pointers.set(e.pointerId, { x: e.clientX, y: e.clientY, sx: e.clientX, sy: e.clientY });
+      this.opts.spin = false;
+    });
+    this.on(cv, 'pointermove', e => {
+      const prev = this.pointers.get(e.pointerId);
+      if (!prev) return this.hoverAt(e);
+      if (this.pointers.size === 2) {
+        const [a, b] = [...this.pointers.values()];
+        const before = Math.hypot(a.x - b.x, a.y - b.y);
+        prev.x = e.clientX;
+        prev.y = e.clientY;
+        const [c, d] = [...this.pointers.values()];
+        const after = Math.hypot(c.x - d.x, c.y - d.y);
+        if (before > 0) this.zoomBy(after / before);
+        return;
+      }
+      this.turn((e.clientX - prev.x) * 0.01, (e.clientY - prev.y) * 0.01);
+      prev.x = e.clientX;
+      prev.y = e.clientY;
+    });
+    const end = e => {
+      const p = this.pointers.get(e.pointerId);
+      this.pointers.delete(e.pointerId);
+      if (p && Math.hypot(e.clientX - p.sx, e.clientY - p.sy) < 5) this.pick(e);
+    };
+    this.on(cv, 'pointerup', end);
+    this.on(cv, 'pointercancel', e => this.pointers.delete(e.pointerId));
+    this.on(cv, 'pointerleave', () => {
+      this.hover = -1;
+      this.dirty = true;
+    });
+    this.on(
+      cv,
+      'wheel',
+      e => {
+        e.preventDefault();
+        this.zoomBy(e.deltaY < 0 ? 1.1 : 0.9);
+      },
+      { passive: false }
+    );
+    this.on(cv, 'keydown', e => {
+      const step = 0.12;
+      const keys = {
+        ArrowLeft: () => this.turn(-step, 0),
+        ArrowRight: () => this.turn(step, 0),
+        ArrowUp: () => this.turn(0, -step),
+        ArrowDown: () => this.turn(0, step),
+        '+': () => this.zoomBy(1.15),
+        '=': () => this.zoomBy(1.15),
+        '-': () => this.zoomBy(0.87),
+        Home: () => this.reset(),
+      };
+      if (keys[e.key]) {
+        e.preventDefault();
+        this.opts.spin = false;
+        keys[e.key]();
+      }
+    });
   }
 
   resize() {
-    const rect = this.container.getBoundingClientRect();
-    const dpr = window.devicePixelRatio || 1;
-    this.width = rect.width || 400;
-    this.height = rect.height || 340;
-    this.canvas.width = this.width * dpr;
-    this.canvas.height = this.height * dpr;
-    this.canvas.style.width = this.width + 'px';
-    this.canvas.style.height = this.height + 'px';
-    this.ctx.scale(dpr, dpr);
-    this.draw();
+    const rect = this.host.getBoundingClientRect();
+    const w = Math.max(200, rect.width);
+    const h = Math.max(200, rect.height || w * 0.75);
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    this.w = w;
+    this.h = h;
+    this.canvas.width = Math.round(w * dpr);
+    this.canvas.height = Math.round(h * dpr);
+    this.canvas.style.width = `${w}px`;
+    this.canvas.style.height = `${h}px`;
+    this.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    this.fit = (Math.min(w, h) * 0.44) / (this.radius || 3);
+    this.dirty = true;
   }
 
-  initEvents() {
-    window.addEventListener('resize', () => this.resize());
-
-    this.canvas.addEventListener('mousedown', e => {
-      this.isDragging = true;
-      this.lastMouseX = e.clientX;
-      this.lastMouseY = e.clientY;
-    });
-
-    window.addEventListener('mousemove', e => {
-      if (this.isDragging) {
-        const dx = e.clientX - this.lastMouseX;
-        const dy = e.clientY - this.lastMouseY;
-        this.rotY += dx * 0.01;
-        this.rotX += dy * 0.01;
-        this.lastMouseX = e.clientX;
-        this.lastMouseY = e.clientY;
-        this.options.autoRotate = false;
-        this.draw();
-      } else {
-        this.checkHover(e);
-      }
-    });
-
-    window.addEventListener('mouseup', () => {
-      this.isDragging = false;
-    });
-
-    // Touch support for mobile & tablet students
-    this.canvas.addEventListener('touchstart', e => {
-      if (e.touches.length === 1) {
-        this.isDragging = true;
-        this.lastMouseX = e.touches[0].clientX;
-        this.lastMouseY = e.touches[0].clientY;
-      }
-    }, { passive: true });
-
-    this.canvas.addEventListener('touchmove', e => {
-      if (this.isDragging && e.touches.length === 1) {
-        const dx = e.touches[0].clientX - this.lastMouseX;
-        const dy = e.touches[0].clientY - this.lastMouseY;
-        this.rotY += dx * 0.01;
-        this.rotX += dy * 0.01;
-        this.lastMouseX = e.touches[0].clientX;
-        this.lastMouseY = e.touches[0].clientY;
-        this.options.autoRotate = false;
-        this.draw();
-      }
-    }, { passive: true });
-
-    this.canvas.addEventListener('touchend', () => {
-      this.isDragging = false;
-    });
-
-    // Zoom
-    this.canvas.addEventListener('wheel', e => {
-      e.preventDefault();
-      const delta = e.deltaY < 0 ? 1.1 : 0.9;
-      this.scale = Math.max(10, Math.min(this.scale * delta, 250));
-      this.draw();
-    }, { passive: false });
-
-    this.startLoop();
+  project(p) {
+    const r = this.rot;
+    const x = r[0][0] * p[0] + r[0][1] * p[1] + r[0][2] * p[2];
+    const y = r[1][0] * p[0] + r[1][1] * p[1] + r[1][2] * p[2];
+    const z = r[2][0] * p[0] + r[2][1] * p[1] + r[2][2] * p[2];
+    const s = this.fit * this.zoom;
+    const persp = 1 / (1 - z / ((this.radius || 3) * 8));
+    return { x: this.w / 2 + x * s * persp, y: this.h / 2 - y * s * persp, z, s: s * persp };
   }
 
-  checkHover(e) {
+  radiusOf(a, s) {
+    const vdw = VDW[a.el] || 1.8;
+    if (this.opts.mode === 'space') return vdw * s;
+    if (this.opts.mode === 'wire') return Math.max(2, 0.12 * s);
+    return (a.el === 'H' ? 0.22 : 0.3) * vdw * s * 0.95;
+  }
+
+  hoverAt(e) {
+    const i = this.hitTest(e);
+    if (i !== this.hover) {
+      this.hover = i;
+      this.canvas.style.cursor = i >= 0 ? 'pointer' : 'grab';
+      this.dirty = true;
+    }
+  }
+
+  hitTest(e) {
     const rect = this.canvas.getBoundingClientRect();
     const mx = e.clientX - rect.left;
     const my = e.clientY - rect.top;
-
-    let found = null;
-    if (this.projectedAtoms) {
-      for (const pa of this.projectedAtoms) {
-        const d = Math.hypot(pa.px - mx, pa.py - my);
-        if (d <= pa.r + 2) {
-          found = pa;
-          break;
-        }
+    let best = -1;
+    let bestZ = -Infinity;
+    (this.projected || []).forEach((p, i) => {
+      if (Math.hypot(p.x - mx, p.y - my) <= Math.max(p.r, 6) && p.z > bestZ) {
+        best = i;
+        bestZ = p.z;
       }
-    }
+    });
+    return best;
+  }
 
-    if (found !== this.hoveredAtom) {
-      this.hoveredAtom = found;
-      this.canvas.style.cursor = found ? 'pointer' : 'grab';
+  pick(e) {
+    const i = this.hitTest(e);
+    this.picked = i;
+    this.dirty = true;
+    if (i >= 0 && this.opts.onPick) {
+      const a = this.atoms[i];
+      const neighbours = this.bonds.filter(b => b[0] === i || b[1] === i).length;
+      this.opts.onPick({ index: i, symbol: a.el, charge: a.q, neighbours, element: getElement(a.el) });
+    }
+  }
+
+  loop() {
+    this.frame = requestAnimationFrame(() => this.loop());
+    if (this.opts.spin && !this.pointers.size && !document.hidden) this.turn(0.006, 0);
+    if (this.dirty) {
+      this.dirty = false;
       this.draw();
     }
   }
 
-  startLoop() {
-    const loop = () => {
-      if (this.options.autoRotate && !this.isDragging) {
-        this.rotY += 0.008;
-        this.rotX += 0.003;
-        this.draw();
+  draw() {
+    const { ctx, w, h } = this;
+    ctx.clearRect(0, 0, w, h);
+    if (!this.atoms.length) return;
+    const pts = this.atoms.map(a => {
+      const p = this.project(a.p);
+      return { ...p, r: this.radiusOf(a, p.s) };
+    });
+    this.projected = pts;
+    const style = getComputedStyle(this.host);
+    const bondColor = style.getPropertyValue('--bond').trim() || '#8b93a3';
+    const labelOn = this.opts.labels && this.opts.mode !== 'wire';
+
+    if (this.cell) this.drawCell(bondColor);
+
+    const items = [];
+    if (this.opts.mode !== 'space')
+      for (const b of this.bonds) {
+        const p = pts[b[0]];
+        const q = pts[b[1]];
+        if (p && q) items.push({ z: (p.z + q.z) / 2 - 0.01, bond: b, p, q });
       }
-      this.animId = requestAnimationFrame(loop);
-    };
-    this.animId = requestAnimationFrame(loop);
+    pts.forEach((p, i) => items.push({ z: p.z, atom: i }));
+    items.sort((a, b) => a.z - b.z);
+
+    for (const it of items) {
+      if (it.bond) this.drawBond(it, bondColor);
+      else this.drawAtom(it.atom, pts[it.atom], labelOn);
+    }
+  }
+
+  drawCell(color) {
+    const { ctx } = this;
+    const [a, b, c] = this.cell;
+    const o = this.center.map(v => -v);
+    const corner = (i, j, k) => [0, 1, 2].map(d => o[d] + i * a[d] + j * b[d] + k * c[d]);
+    const edges = [
+      [
+        [0, 0, 0],
+        [1, 0, 0],
+      ],
+      [
+        [0, 0, 0],
+        [0, 1, 0],
+      ],
+      [
+        [0, 0, 0],
+        [0, 0, 1],
+      ],
+      [
+        [1, 1, 0],
+        [1, 0, 0],
+      ],
+      [
+        [1, 1, 0],
+        [0, 1, 0],
+      ],
+      [
+        [1, 1, 0],
+        [1, 1, 1],
+      ],
+      [
+        [1, 0, 1],
+        [1, 0, 0],
+      ],
+      [
+        [1, 0, 1],
+        [0, 0, 1],
+      ],
+      [
+        [1, 0, 1],
+        [1, 1, 1],
+      ],
+      [
+        [0, 1, 1],
+        [0, 1, 0],
+      ],
+      [
+        [0, 1, 1],
+        [0, 0, 1],
+      ],
+      [
+        [0, 1, 1],
+        [1, 1, 1],
+      ],
+    ];
+    ctx.save();
+    ctx.setLineDash([5, 4]);
+    ctx.strokeStyle = color;
+    ctx.globalAlpha = 0.7;
+    ctx.lineWidth = 1.2;
+    for (const [p, q] of edges) {
+      const P = this.project(corner(...p));
+      const Q = this.project(corner(...q));
+      ctx.beginPath();
+      ctx.moveTo(P.x, P.y);
+      ctx.lineTo(Q.x, Q.y);
+      ctx.stroke();
+    }
+    ctx.restore();
+  }
+
+  drawBond({ bond, p, q }, color) {
+    const { ctx } = this;
+    const order = bond[2] || 1;
+    const wire = this.opts.mode === 'wire';
+    const width = wire ? 2 : Math.max(1.5, 0.16 * ((p.s + q.s) / 2));
+    const dx = q.x - p.x;
+    const dy = q.y - p.y;
+    const len = Math.hypot(dx, dy) || 1;
+    const nx = -dy / len;
+    const ny = dx / len;
+    const offsets = order === 2 ? [-1, 1] : order === 3 ? [-1.6, 0, 1.6] : [0];
+    ctx.save();
+    ctx.lineCap = 'round';
+    for (const o of offsets) {
+      const ox = nx * o * width * 0.9;
+      const oy = ny * o * width * 0.9;
+      if (wire) {
+        const mx = (p.x + q.x) / 2;
+        const my = (p.y + q.y) / 2;
+        ctx.lineWidth = width;
+        ctx.strokeStyle = atomColor(this.atoms[bond[0]].el);
+        ctx.beginPath();
+        ctx.moveTo(p.x + ox, p.y + oy);
+        ctx.lineTo(mx + ox, my + oy);
+        ctx.stroke();
+        ctx.strokeStyle = atomColor(this.atoms[bond[1]].el);
+        ctx.beginPath();
+        ctx.moveTo(mx + ox, my + oy);
+        ctx.lineTo(q.x + ox, q.y + oy);
+        ctx.stroke();
+      } else {
+        ctx.lineWidth = order > 1 ? width * 0.6 : width;
+        ctx.strokeStyle = color;
+        ctx.beginPath();
+        ctx.moveTo(p.x + ox, p.y + oy);
+        ctx.lineTo(q.x + ox, q.y + oy);
+        ctx.stroke();
+      }
+    }
+    ctx.restore();
+  }
+
+  drawAtom(i, p, labelOn) {
+    if (this.opts.mode === 'wire' && this.bonds.some(b => b[0] === i || b[1] === i)) return;
+    const { ctx } = this;
+    const a = this.atoms[i];
+    const color = atomColor(a.el);
+    const g = ctx.createRadialGradient(p.x - p.r * 0.35, p.y - p.r * 0.35, p.r * 0.1, p.x, p.y, p.r);
+    g.addColorStop(0, '#ffffff');
+    g.addColorStop(0.3, color);
+    g.addColorStop(1, shade(color, -0.45));
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+    ctx.fillStyle = g;
+    ctx.fill();
+    if (i === this.hover || i === this.picked) {
+      ctx.lineWidth = 3;
+      ctx.strokeStyle = i === this.picked ? '#f59e0b' : '#38bdf8';
+      ctx.stroke();
+    }
+    if (labelOn && p.r >= 9) {
+      ctx.fillStyle = DARK_TEXT.has(a.el) ? '#1f2430' : '#ffffff';
+      ctx.font = `600 ${Math.min(16, Math.max(9, p.r * 0.75))}px system-ui, sans-serif`;
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      const charge = a.q ? (a.q > 0 ? '+' : '−') : '';
+      ctx.fillText(a.el + charge, p.x, p.y + 0.5);
+    }
   }
 
   destroy() {
-    if (this.animId) cancelAnimationFrame(this.animId);
+    cancelAnimationFrame(this.frame);
+    this.ro.disconnect();
+    for (const off of this.listeners) off();
+    this.listeners = [];
   }
+}
 
-  project(x, y, z) {
-    // Rotation around Y
-    const cosY = Math.cos(this.rotY), sinY = Math.sin(this.rotY);
-    const x1 = x * cosY - z * sinY;
-    const z1 = z * cosY + x * sinY;
-
-    // Rotation around X
-    const cosX = Math.cos(this.rotX), sinX = Math.sin(this.rotX);
-    const y2 = y * cosX - z1 * sinX;
-    const z2 = z1 * cosX + y * sinX;
-
-    const fov = 400;
-    const depth = fov / (fov + z2 * 15);
-    const px = this.width / 2 + x1 * this.scale * depth;
-    const py = this.height / 2 + y2 * this.scale * depth;
-
-    return { px, py, pz: z2, depth };
-  }
-
-  draw() {
-    const ctx = this.ctx;
-    ctx.clearRect(0, 0, this.width, this.height);
-
-    if (this.atoms.length === 0) {
-      ctx.fillStyle = '#94a3b8';
-      ctx.font = '14px sans-serif';
-      ctx.textAlign = 'center';
-      ctx.fillText('Memuat data 3D molekul...', this.width / 2, this.height / 2);
-      return;
-    }
-
-    // Project all atoms
-    const projectedAtoms = this.atoms.map(a => {
-      const p = this.project(a.x, a.y, a.z);
-      const elem = a.element.toUpperCase();
-      const baseR = this.options.mode === 'space-filling'
-        ? (VDW_RADII[elem] || VDW_RADII.DEFAULT) * 16
-        : (VDW_RADII[elem] || VDW_RADII.DEFAULT) * 9;
-
-      const r = Math.max(3, baseR * (this.scale / 45) * p.depth * (this.options.mode === 'wireframe' ? 0.3 : 1));
-      return { ...a, px: p.px, py: p.py, pz: p.pz, r, depth: p.depth };
-    });
-    this.projectedAtoms = projectedAtoms;
-
-    // Collect render items for depth sorting
-    const renderItems = [];
-
-    // Add bonds
-    if (this.options.mode !== 'space-filling') {
-      this.bonds.forEach(b => {
-        const a1 = projectedAtoms[b.from];
-        const a2 = projectedAtoms[b.to];
-        if (a1 && a2) {
-          const zAvg = (a1.pz + a2.pz) / 2;
-          renderItems.push({ type: 'bond', a1, a2, order: b.order || 1, z: zAvg });
-        }
-      });
-    }
-
-    // Add atoms
-    projectedAtoms.forEach(a => {
-      renderItems.push({ type: 'atom', atom: a, z: a.pz });
-    });
-
-    // Painter's algorithm: sort back to front (ascending z)
-    renderItems.sort((a, b) => a.z - b.z);
-
-    // Render sorted items
-    renderItems.forEach(item => {
-      if (item.type === 'bond') {
-        this.renderBond(ctx, item.a1, item.a2, item.order);
-      } else {
-        this.renderAtom(ctx, item.atom);
-      }
-    });
-
-    // Render tooltip for hovered atom
-    if (this.hoveredAtom) {
-      this.renderTooltip(ctx, this.hoveredAtom);
-    }
-  }
-
-  renderBond(ctx, a1, a2, order = 1) {
-    const dx = a2.px - a1.px;
-    const dy = a2.py - a1.py;
-    const len = Math.hypot(dx, dy);
-    if (len === 0) return;
-
-    ctx.save();
-    ctx.lineCap = 'round';
-
-    const width = this.options.mode === 'wireframe' ? 2 : Math.max(2, 6 * (this.scale / 45) * ((a1.depth + a2.depth) / 2));
-
-    if (order === 1) {
-      // Gradient along bond from atom 1 color to atom 2 color
-      const c1 = CPK_COLORS[a1.element.toUpperCase()] || CPK_COLORS.DEFAULT;
-      const c2 = CPK_COLORS[a2.element.toUpperCase()] || CPK_COLORS.DEFAULT;
-      const grad = ctx.createLinearGradient(a1.px, a1.py, a2.px, a2.py);
-      grad.addColorStop(0, c1);
-      grad.addColorStop(1, c2);
-
-      ctx.strokeStyle = grad;
-      ctx.lineWidth = width;
-      ctx.beginPath();
-      ctx.moveTo(a1.px, a1.py);
-      ctx.lineTo(a2.px, a2.py);
-      ctx.stroke();
-    } else {
-      // Double or triple bond: draw parallel offset lines
-      const offX = (-dy / len) * (width * 0.9);
-      const offY = (dx / len) * (width * 0.9);
-
-      [-1, 1].forEach(sign => {
-        ctx.strokeStyle = 'rgba(203, 213, 225, 0.7)';
-        ctx.lineWidth = width * 0.6;
-        ctx.beginPath();
-        ctx.moveTo(a1.px + offX * sign, a1.py + offY * sign);
-        ctx.lineTo(a2.px + offX * sign, a2.py + offY * sign);
-        ctx.stroke();
-      });
-    }
-
-    ctx.restore();
-  }
-
-  renderAtom(ctx, a) {
-    const color = CPK_COLORS[a.element.toUpperCase()] || CPK_COLORS.DEFAULT;
-    const isHovered = this.hoveredAtom && this.hoveredAtom.id === a.id;
-
-    ctx.save();
-    ctx.beginPath();
-    ctx.arc(a.px, a.py, a.r, 0, Math.PI * 2);
-
-    if (this.options.mode === 'wireframe') {
-      ctx.fillStyle = color;
-      ctx.fill();
-    } else {
-      // 3D Sphere Radial Gradient with specular light
-      const lightX = a.px - a.r * 0.35;
-      const lightY = a.py - a.r * 0.35;
-      const grad = ctx.createRadialGradient(lightX, lightY, a.r * 0.08, a.px, a.py, a.r);
-      grad.addColorStop(0, '#ffffff');
-      grad.addColorStop(0.25, color);
-      grad.addColorStop(1, '#050b14');
-
-      ctx.fillStyle = grad;
-      ctx.fill();
-
-      // Outer glow or border
-      if (isHovered) {
-        ctx.strokeStyle = '#00f2fe';
-        ctx.lineWidth = 3;
-        ctx.stroke();
-      } else {
-        ctx.strokeStyle = 'rgba(255,255,255,0.15)';
-        ctx.lineWidth = 1;
-        ctx.stroke();
-      }
-    }
-
-    // Element symbol label
-    if (this.options.showLabels && a.r > 10) {
-      ctx.fillStyle = (a.element === 'H' || a.element === 'C') ? '#0f172a' : '#ffffff';
-      ctx.font = `bold ${Math.max(10, Math.round(a.r * 0.75))}px sans-serif`;
-      ctx.textAlign = 'center';
-      ctx.textBaseline = 'middle';
-      ctx.fillText(a.element, a.px, a.py);
-    }
-
-    ctx.restore();
-  }
-
-  renderTooltip(ctx, a) {
-    const el = getElement(a.element);
-    const title = el ? `${el.nameId} (${a.element})` : a.element;
-    const subtitle = el ? `No. Atom ${el.n} • Massa ${el.mass}` : '';
-
-    ctx.save();
-    ctx.font = 'bold 12px sans-serif';
-    const textWidth = Math.max(ctx.measureText(title).width, ctx.measureText(subtitle).width);
-    const boxW = textWidth + 24;
-    const boxH = subtitle ? 44 : 26;
-    const boxX = Math.min(this.width - boxW - 10, Math.max(10, a.px - boxW / 2));
-    const boxY = Math.max(10, a.py - a.r - boxH - 8);
-
-    // Glass backdrop
-    ctx.fillStyle = 'rgba(15, 23, 42, 0.92)';
-    ctx.strokeStyle = '#00f2fe';
-    ctx.lineWidth = 1.5;
-    ctx.beginPath();
-    ctx.roundRect(boxX, boxY, boxW, boxH, 8);
-    ctx.fill();
-    ctx.stroke();
-
-    // Text
-    ctx.fillStyle = '#00f2fe';
-    ctx.textAlign = 'left';
-    ctx.textBaseline = 'top';
-    ctx.fillText(title, boxX + 12, boxY + 8);
-
-    if (subtitle) {
-      ctx.font = '10px sans-serif';
-      ctx.fillStyle = '#94a3b8';
-      ctx.fillText(subtitle, boxX + 12, boxY + 24);
-    }
-
-    ctx.restore();
-  }
+function shade(hex, amount) {
+  const n = parseInt(hex.slice(1), 16);
+  const f = v => Math.max(0, Math.min(255, Math.round(v + v * amount)));
+  return `rgb(${f(n >> 16)}, ${f((n >> 8) & 255)}, ${f(n & 255)})`;
 }

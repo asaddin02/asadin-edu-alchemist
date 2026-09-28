@@ -1,78 +1,96 @@
-// ChemTaxa · Chemical Glossary & Terminology Dictionary
-import { $, $$ } from '../core/dom.js';
-import { getPrefs } from '../core/prefs.js';
-import { getUi } from '../i18n/ui.js';
-import { getIcon } from '../components/icons.js';
-import { glossary } from '../data/glossary.js';
+// Glossary: bilingual terms with a simple and a scientific definition, examples and related terms.
+import { $, $$, esc, debounce } from '../core/dom.js';
+import { S, pick, atLeast } from '../core/prefs.js';
+import { replaceQuery } from '../core/router.js';
+import { pageHead, breadcrumbs, emptyState } from '../components/common.js';
+import { GLOSSARY, GLOSSARY_CATS, findTerm } from '../data/glossary.js';
+import { getMolecule, normalize } from '../data/curatedMolecules.js';
 
-export function title() {
-  return 'Kamus Kimia';
-}
+const s = S({
+  title: ['Kamus kimia', 'Chemistry glossary'],
+  lead: [
+    '{n} istilah kimia dalam dua bahasa, dengan penjelasan sederhana dan ilmiah.',
+    '{n} chemistry terms in two languages, with simple and scientific explanations.',
+  ],
+  find: ['Cari istilah', 'Find a term'],
+  cat: ['Kelompok', 'Group'],
+  all: ['Semua', 'All'],
+  simple: ['Sederhananya', 'In simple words'],
+  sci: ['Secara ilmiah', 'Scientifically'],
+  examples: ['Contoh molekul', 'Example molecules'],
+  see: ['Lihat juga', 'See also'],
+  none: ['Istilah tidak ditemukan.', 'No matching terms.'],
+  back: ['Semua istilah', 'All terms'],
+});
 
-export async function render({ main }) {
-  const prefs = getPrefs();
-  const ui = getUi(prefs.lang);
+export const title = route => (route.id ? pick(findTerm(route.id)?.term || ['Istilah', 'Term']) : s.title);
 
-  main.innerHTML = `
-    <div class="container" style="padding-top: 40px; padding-bottom: 60px;">
-      <div class="section-header">
-        <div>
-          <h2>${ui.navGlossary}</h2>
-          <p>Kamus lengkap istilah kimia dan struktur molekul: disajikan dengan penjelasan sederhana untuk pemula serta rincian ilmiah formal untuk mahasiswa dan pengajar.</p>
-        </div>
-      </div>
+const termHTML = (g, open = false) => {
+  const simpleFirst = !atLeast('sma');
+  const simple = `<p><strong>${esc(s.simple)}:</strong> ${esc(pick(g.simple))}</p>`;
+  const sci = `<p><strong>${esc(s.sci)}:</strong> ${esc(pick(g.sci))}</p>`;
+  const examples = (g.m || []).map(getMolecule).filter(Boolean);
+  return `<article class="card term-card ${open ? 'is-open' : ''}" id="term-${g.key}">
+    <h2 class="h-small"><a href="#/glossary/${g.key}">${esc(pick(g.term))}</a> <span class="muted small" lang="${pick(['en', 'id'])}">${esc(pick([g.term[1], g.term[0]]))}</span></h2>
+    ${simpleFirst ? simple + sci : sci + simple}
+    ${examples.length ? `<p class="small"><strong>${esc(s.examples)}:</strong> ${examples.map(m => `<a class="chip" href="#/molecule/${m.id}">${esc(pick(m.name))}</a>`).join(' ')}</p>` : ''}
+    ${
+      g.see?.length
+        ? `<p class="small"><strong>${esc(s.see)}:</strong> ${g.see
+            .map(findTerm)
+            .filter(Boolean)
+            .map(t => `<a href="#/glossary/${t.key}">${esc(pick(t.term))}</a>`)
+            .join(', ')}</p>`
+        : ''
+    }
+  </article>`;
+};
 
-      <!-- Search Input -->
-      <div class="lab-card" style="padding: 20px; margin-bottom: 24px;">
-        <div class="search-input-group">
-          <span class="search-icon-lead">${getIcon('search', 18)}</span>
-          <input type="text" id="glossary-search" class="search-input" 
-                 placeholder="Cari istilah kimia (cth: Kovalen, VSEPR, Kiralitas, pH, Elektronegativitas)…" />
-        </div>
-      </div>
-
-      <!-- Terms Grid -->
-      <div id="glossary-list" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px;">
-        ${glossary.map(item => `
-          <div class="lab-card glossary-card" data-term="${item.term.toLowerCase()} ${item.id.toLowerCase()} ${item.en.toLowerCase()}" style="padding: 24px;">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
-              <h3 style="font-size: 1.3rem; color: var(--neon-cyan);">${prefs.lang === 'en' ? item.en : item.id}</h3>
-              <span class="meta-tag" style="text-transform: capitalize;">${item.cat}</span>
-            </div>
-
-            <div style="margin-bottom: 14px;">
-              <span style="font-size: 0.78rem; text-transform: uppercase; font-weight: 700; color: var(--quantum-emerald);">
-                🌱 Penjelasan Sederhana (SD / SMP):
-              </span>
-              <p style="font-size: 0.95rem; color: var(--text-main); margin-top: 4px; line-height: 1.5;">
-                ${prefs.lang === 'en' ? item.simpleEn : item.simpleId}
-              </p>
-            </div>
-
-            <div>
-              <span style="font-size: 0.78rem; text-transform: uppercase; font-weight: 700; color: var(--photon-purple);">
-                🔬 Penjelasan Ilmiah (SMA / Kuliah):
-              </span>
-              <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 4px; line-height: 1.5;">
-                ${prefs.lang === 'en' ? item.scientificEn : item.scientificId}
-              </p>
-            </div>
-          </div>
-        `).join('')}
-      </div>
-    </div>
-  `;
-
-  const searchInput = $('#glossary-search');
-  const cards = $$('.glossary-card');
-
-  if (searchInput) {
-    searchInput.addEventListener('input', () => {
-      const q = searchInput.value.trim().toLowerCase();
-      cards.forEach(card => {
-        const text = card.dataset.term;
-        card.style.display = text.includes(q) ? 'block' : 'none';
-      });
-    });
+export function render({ id, main, params }) {
+  if (id) {
+    const g = findTerm(id);
+    main.innerHTML = `<div class="container narrow">
+      ${breadcrumbs([
+        [s.title, '#/glossary'],
+        [g ? pick(g.term) : id, ''],
+      ])}
+      ${g ? `<h1>${esc(pick(g.term))}</h1>${termHTML(g, true)}` : emptyState(s.none)}
+      <p><a class="btn" href="#/glossary">${esc(s.back)}</a></p>
+    </div>`;
+    return;
   }
+  let q = params.get('q') || '';
+  let cat = params.get('cat') || '';
+  main.innerHTML = `<div class="container">
+    ${pageHead({ title: esc(s.title), lead: esc(s.lead.replace('{n}', GLOSSARY.length)) })}
+    <div class="filters">
+      <div class="field field-grow"><label for="g-q">${esc(s.find)}</label><input id="g-q" type="search" value="${esc(q)}" autocomplete="off" /></div>
+      <div class="field"><label for="g-cat">${esc(s.cat)}</label><select id="g-cat"><option value="">${esc(s.all)}</option>${Object.entries(
+        GLOSSARY_CATS
+      )
+        .map(([k, v]) => `<option value="${k}" ${cat === k ? 'selected' : ''}>${esc(pick(v))}</option>`)
+        .join('')}</select></div>
+    </div>
+    <p class="alpha" aria-hidden="true"></p>
+    <div class="grid grid-2" data-terms aria-live="polite"></div>
+  </div>`;
+  const draw = () => {
+    const nq = normalize(q);
+    const list = GLOSSARY.filter(
+      g =>
+        (!cat || g.cat === cat) &&
+        (!nq || normalize(`${g.term.join(' ')} ${g.simple.join(' ')}`).includes(nq))
+    ).sort((a, b) => normalize(pick(a.term)).localeCompare(normalize(pick(b.term))));
+    $('[data-terms]', main).innerHTML = list.length
+      ? list.map(g => termHTML(g)).join('')
+      : emptyState(s.none);
+  };
+  const update = debounce(() => {
+    q = $('#g-q', main).value;
+    cat = $('#g-cat', main).value;
+    replaceQuery({ q, cat });
+    draw();
+  }, 150);
+  for (const el of $$('#g-q, #g-cat', main)) el.addEventListener('input', update);
+  draw();
 }
