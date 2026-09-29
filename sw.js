@@ -160,6 +160,8 @@ const LIVE_HOSTS = [
   'commons.wikimedia.org',
 ];
 const IMAGE_HOSTS = ['upload.wikimedia.org', 'thumb.wikimedia.org'];
+// "/" or, when the app is published in a subdirectory, "/that/directory/".
+const SCOPE_PATH = new URL(self.registration.scope).pathname;
 
 self.addEventListener('install', event => {
   event.waitUntil(
@@ -245,9 +247,11 @@ self.addEventListener('fetch', event => {
       event.respondWith(networkFirst(request, APP_CACHE, 5000).catch(() => caches.match('index.html')));
       return;
     }
-    // Reference data and the PubChem proxy: fresh when online, cached for offline use.
-    if (url.pathname.includes('/data/') || url.pathname.includes('/api/')) {
-      event.respondWith(networkFirst(request, url.pathname.includes('/api/') ? LIVE_CACHE : DATA_CACHE));
+    // Reference data and the PubChem proxy: fresh when online, cached for offline use. Paths are matched
+    // relative to the app, so the precached js/data/ modules are not mistaken for reference data.
+    const path = url.pathname.startsWith(SCOPE_PATH) ? url.pathname.slice(SCOPE_PATH.length) : url.pathname;
+    if (path.startsWith('data/') || path.startsWith('api/')) {
+      event.respondWith(networkFirst(request, path.startsWith('api/') ? LIVE_CACHE : DATA_CACHE));
       return;
     }
     event.respondWith(
