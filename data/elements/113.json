@@ -13,5 +13,330 @@
    "url": "https://en.wikipedia.org/wiki/Nihonium"
   }
  },
- "photo": null
+ "photo": null,
+ "weight": {
+  "value": "284.17873(62#)",
+  "kind": "isotope-mass",
+  "A": 284,
+  "estimated": true,
+  "source": "nist"
+ },
+ "natural": [],
+ "naturalSource": null,
+ "nuclides": [
+  {
+   "A": 278,
+   "iso": "",
+   "mass": "278.170725 ± 0.00024",
+   "half": "2.3 ms ± 1.3",
+   "seconds": 0.0023,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    }
+   ],
+   "year": 2004,
+   "est": true
+  },
+  {
+   "A": 279,
+   "iso": "",
+   "mass": "279.171187 ± 0.000644",
+   "half": "1 ms",
+   "seconds": 0.001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 280,
+   "iso": "",
+   "mass": "280.173098 ± 0.000429",
+   "half": "10 ms",
+   "seconds": 0.01,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 281,
+   "iso": "",
+   "mass": "281.173710 ± 0.000322",
+   "half": "100 ms",
+   "seconds": 0.1,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 282,
+   "iso": "",
+   "mass": "282.175770 ± 0.00043",
+   "half": "140 ms ± 90",
+   "seconds": 0.14,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2007,
+   "est": true
+  },
+  {
+   "A": 283,
+   "iso": "",
+   "mass": "283.176666 ± 0.000469",
+   "half": "140 ms ± 90",
+   "seconds": 0.14,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2004,
+   "est": true
+  },
+  {
+   "A": 284,
+   "iso": "",
+   "mass": "284.178843 ± 0.000573",
+   "half": "0.97 s ± 0.11",
+   "seconds": 0.97,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2004,
+   "est": true
+  },
+  {
+   "A": 285,
+   "iso": "",
+   "mass": "285.180106 ± 0.000832",
+   "half": "4.6 s ± 1.1",
+   "seconds": 4.6,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2010,
+   "est": true
+  },
+  {
+   "A": 286,
+   "iso": "",
+   "mass": "286.182456 ± 0.000634",
+   "half": "12 s ± 5",
+   "seconds": 12,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2010,
+   "est": true
+  },
+  {
+   "A": 287,
+   "iso": "",
+   "mass": "287.184064 ± 0.000759",
+   "half": "20 s",
+   "seconds": 20,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 288,
+   "iso": "",
+   "mass": "288.186764 ± 0.000751",
+   "half": "20 s",
+   "seconds": 20,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 289,
+   "iso": "",
+   "mass": "289.188461 ± 0.000537",
+   "half": "30 s",
+   "seconds": 30,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 290,
+   "iso": "",
+   "mass": "290.191429 ± 0.000503",
+   "half": "8 s ± 6",
+   "seconds": 8,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "SF",
+     "op": "<",
+     "pct": 50
+    }
+   ],
+   "year": 2016,
+   "est": true
+  }
+ ],
+ "stableCount": 0,
+ "texts": {
+  "history": [
+   {
+    "text": "On July 23, 2004, scientists working at the RIKEN Nishina Center for Accelerator-based Science in Wako, Japan, created the first two atoms of the element nihonium by accelerating zinc ions to 10 percent the speed of light and then impacting them onto a thin bismuth target. Both atoms quickly underwent a series of four alpha decays, forming dubnium-262, which then decayed by spontaneous fission. Nihonium's most stable isotope, nihonium-286, has a half-life of about 20 seconds. It decays into roentgenium-282 through alpha decay.",
+    "source": "jlab"
+   },
+   {
+    "text": "On November 28th, 2016 element 113 was named “nihonium” with the symbol Nh. The name was proposed by the discoverers at RIKEN Nishina Center for Accelerator-Based Science in Japan. The name means mean “the Land of Rising Sun” and comes from the word “Nihon,” which means “Japan” in Japanese.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Since only a few atoms of nihonium have ever been produced, it currently has no uses outside of basic scientific research.",
+    "source": "jlab"
+   }
+  ],
+  "description": [
+   {
+    "text": "Nihonium does not occur naturally in the Earth’s crust. The name nihonium and the symbol Nh are the accepted ones for element 113. Nihon is one of the two ways to say “Japan” in Japanese and means “the land of the Rising Sun.” It is the first element to have been discovered in an Asian country [665], [666], [667]. The synthesis of nihonium was first announced in 2004. The Joint Institute for Nuclear Research (JINR) and the Lawrence Livermore National Laboratory were able to produce two super-heavy elements by bombarding a rotating 243Am disc with an ion beam of 48Ca in a U-400 cyclotron. During the reaction, isotopes of moscovium, previously known as ununpentium, were synthesized and decayed in a tenth of a second to nihonium, which then decayed to roentgenium. Because the atoms of moscovium only existed for a tenth of a second, radiochemical proof was needed to support its syntheses. A Swiss scientist at the Paul Scherrer Institute (PSI) performed the radiochemical experiment by analyzing a copper plate that had been placed behind the 243Am disc in the cyclotron. This copper plate collected all moscovium atoms that were synthesized and was processed through liquid chromatography techniques that yielded five times more moscovium atoms than produced by fusion alone. The direct synthesis of nihonium was announced later that year by a team of Japanese scientists from the Cyclotron Center of the RIKEN Research Institute. These scientists bombarded atoms of 209Bi with a beam of 70Zn in a RIKEN heavy-ion linear accelerator (RILAC), shown in Fig. IUPAC.113.1, and gas-filled recoil ion separator (GARIS), shown in Fig. IUPAC.113.2. Nihonium has no known isotopic applications aside from scientific research.",
+    "source": "iptei"
+   }
+  ]
+ },
+ "isotopeUses": [],
+ "abundance": {
+  "crust": "Not Applicable",
+  "ocean": "Not Applicable",
+  "source": "jlab"
+ },
+ "physical": "Expected to be a Solid",
+ "forms": [],
+ "refs": {
+  "nist": {
+   "name": "NIST Physical Measurement Laboratory",
+   "url": "https://physics.nist.gov/cgi-bin/Elements/elInfo.pl?element=113"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele113.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/113.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": null,
+ "ghs": null,
+ "ghsCid": null
 }

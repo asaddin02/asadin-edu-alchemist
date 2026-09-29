@@ -22,5 +22,485 @@
   "author": "Jurii",
   "license": "CC BY 3.0",
   "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
- }
+ },
+ "weight": {
+  "value": "[10.806, 10.821]",
+  "kind": "interval",
+  "source": "ciaaw"
+ },
+ "natural": [
+  {
+   "A": 10,
+   "iso": "",
+   "mass": "10.012 9369(1)",
+   "abundance": "[0.189, 0.204]"
+  },
+  {
+   "A": 11,
+   "iso": "",
+   "mass": "11.009 305 17(8)",
+   "abundance": "[0.796, 0.811]"
+  }
+ ],
+ "naturalSource": "ciaaw",
+ "nuclides": [
+  {
+   "A": 6,
+   "iso": "",
+   "mass": "6.050800 ± 0.00215",
+   "half": "p-Unstable",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "2p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 7,
+   "iso": "",
+   "mass": "7.029712000 ± 0.000027",
+   "half": "570 ys ± 14",
+   "seconds": 5.7e-22,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "p",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1967,
+   "est": false
+  },
+  {
+   "A": 8,
+   "iso": "",
+   "mass": "8.024607315 ± 0.000001073",
+   "half": "771.9 ms ± 0.9",
+   "seconds": 0.7719,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1950,
+   "est": false
+  },
+  {
+   "A": 9,
+   "iso": "",
+   "mass": "9.013329645 ± 0.000000969",
+   "half": "800 zs ± 300",
+   "seconds": 7.999999999999999e-19,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "p",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1940,
+   "est": false
+  },
+  {
+   "A": 10,
+   "iso": "",
+   "mass": "10.012936862 ± 0.000000016",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1920,
+   "est": false
+  },
+  {
+   "A": 11,
+   "iso": "",
+   "mass": "11.009305166 ± 0.000000013",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1920,
+   "est": false
+  },
+  {
+   "A": 12,
+   "iso": "",
+   "mass": "12.014352638 ± 0.000001418",
+   "half": "20.20 ms ± 0.02",
+   "seconds": 0.0202,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-α",
+     "op": "=",
+     "pct": 0.6
+    }
+   ],
+   "year": 1935,
+   "est": false
+  },
+  {
+   "A": 13,
+   "iso": "",
+   "mass": "13.017779981 ± 0.000001073",
+   "half": "17.16 ms ± 0.18",
+   "seconds": 0.01716,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 0.266
+    }
+   ],
+   "year": 1956,
+   "est": false
+  },
+  {
+   "A": 14,
+   "iso": "",
+   "mass": "14.025404010 ± 0.000022773",
+   "half": "12.36 ms ± 0.29",
+   "seconds": 0.01236,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 6.04
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1966,
+   "est": false
+  },
+  {
+   "A": 15,
+   "iso": "",
+   "mass": "15.031087023 ± 0.000022575",
+   "half": "10.18 ms ± 0.35",
+   "seconds": 0.01018,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 98.7
+    },
+    {
+     "mode": "β-2n",
+     "op": "<",
+     "pct": 1.5
+    }
+   ],
+   "year": 1966,
+   "est": false
+  },
+  {
+   "A": 16,
+   "iso": "",
+   "mass": "16.039841045 ± 0.000026373",
+   "half": ">4.6 zs",
+   "seconds": 4.599999999999999e-21,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2000,
+   "est": false
+  },
+  {
+   "A": 17,
+   "iso": "",
+   "mass": "17.046931399 ± 0.000219114",
+   "half": "5.08 ms ± 0.05",
+   "seconds": 0.00508,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 63
+    },
+    {
+     "mode": "β-2n",
+     "op": "=",
+     "pct": 12
+    },
+    {
+     "mode": "β-3n",
+     "op": "=",
+     "pct": 3.5
+    },
+    {
+     "mode": "β-4n",
+     "op": "=",
+     "pct": 0.4
+    }
+   ],
+   "year": 1973,
+   "est": false
+  },
+  {
+   "A": 18,
+   "iso": "",
+   "mass": "18.055601683 ± 0.00021918",
+   "half": "Not-specified <26 ns",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "n",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2010,
+   "est": false
+  },
+  {
+   "A": 19,
+   "iso": "",
+   "mass": "19.064166000 ± 0.000564",
+   "half": "2.92 ms ± 0.13",
+   "seconds": 0.00292,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 71
+    },
+    {
+     "mode": "β-2n",
+     "op": "=",
+     "pct": 17
+    },
+    {
+     "mode": "β-3n",
+     "op": "<",
+     "pct": 9.1
+    }
+   ],
+   "year": 1984,
+   "est": false
+  },
+  {
+   "A": 20,
+   "iso": "",
+   "mass": "20.074505644 ± 0.000586538",
+   "half": ">912.4 ys",
+   "seconds": 9.123999999999998e-22,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "n",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2018,
+   "est": false
+  },
+  {
+   "A": 21,
+   "iso": "",
+   "mass": "21.084147485 ± 0.00059975",
+   "half": ">760 ys",
+   "seconds": 7.5999999999999995e-22,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "2n",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2018,
+   "est": false
+  }
+ ],
+ "stableCount": 2,
+ "texts": {
+  "history": [
+   {
+    "text": "The name derives from the Arabic buraq for \"white\". Although its compounds were known for thousands of years, it was not isolated until 1808 by the French chemists Louis-Joseph Gay-Lussac and Louis-Jacques Thenard.",
+    "source": "ciaaw"
+   },
+   {
+    "text": "Boron was discovered by Joseph-Louis Gay-Lussac and Louis-Jaques Thénard, French chemists, and independently by Sir Humphry Davy, an English chemist, in 1808. They all isolated boron by combining boric acid (H3BO3) with potassium. Today, boron is obtained by heating borax (Na2B4O7·10H2O) with carbon, although other methods are used if high-purity boron is required.",
+    "source": "jlab"
+   },
+   {
+    "text": "From the Arabic word Buraq, Persian Burah. Boron compounds have been known for thousands of years, but the element was not discovered until 1808 by Sir Humphry Davy and by Gay-Lussac and Thenard.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Boron is used in pyrotechnics and flares to produce a green color. Boron has also been used in some rockets as an ignition source. Boron-10, one of the naturally occurring isotopes of boron, is a good absorber of neutrons and is used in the control rods of nuclear reactors, as a radiation shield and as a neutron detector. Boron filaments are used in the aerospace industry because of their high-strength and lightweight. Boron forms several commercially important compounds. The most important boron compound is sodium borate pentahydrate (Na2B4O7·5H2O). Large amounts of this compound are used in the manufacture of fiberglass insulation and sodium perborate bleach. The second most important compound is boric acid (H3BO3), which is used to manufacture textile fiberglass and is used in cellulose insulation as a flame retardant. Sodium borate decahydrate (Na2B4O7·10H2O), better known as borax, is the third most important boron compound. Borax is used in laundry products and as a mild antiseptic. Borax is also a key ingredient in a substance known as Oobleck, a strange material 6th grade students experiment with while participating in Jefferson Lab's BEAMS program. Other boron compounds are used to make borosilicate glasses, enamels for covering steel and as a potential medicine for treating arthritis.",
+    "source": "jlab"
+   },
+   {
+    "text": "Amorphous boron is used in pyrotechnic flares to provide a distinctive green color, and in rockets as an igniter. By far the most commercially important boron compound in terms of dollar sales is Na2B4O7 &#8226; 5H2O. This pentahydrate is used in very large quantities in the manufacture of insulation fiberglass and sodium perborate bleach. Boric acid is also an important boron compound with major markets in textile products. Use of borax as a mild antiseptic is minor in economical terms. Boron compounds are also extensively used in the manufacture of borosilicate glasses. Other boron compounds show promise in treating arthritis. The isotope boron-10 is used as a control for nuclear reactors, as a shield for nuclear radiation, and in instruments used for detecting neutrons. Boron nitride has remarkable properties and can be used to make a material as hard as diamond. The nitride also behaves like an electrical insulator but conducts heat like a metal. Boron also has lubricating properties similar to graphite. The hydrides are easily oxidized with considerable energy liberation, and have been studied for use as rocket fuels. Demand is increasing for boron filaments, a high-strength, lightweight material chiefly employed for advanced aerospace structures. Boron is similar to carbon in that it has a capacity to form stable covalently bonded molecular networks. Carbonates, metalloboranes, phosphacarboranes, and other families comprise thousands of compounds.",
+    "source": "lanl"
+   }
+  ],
+  "sources": [
+   {
+    "text": "The element is not found free in nature, but occurs as orthoboric acid usually found in certain volcanic spring waters and as borates in boron and colemantie. Important sources of boron are ore rasorite (kernite) and tincal (borax ore). Both of these ores are found in the Mojave Desert. Tincal is the most important source of boron from the Mojave. Extensive borax deposits are also found in Turkey. Boron exists naturally as 19.78% 10B isotope and 80.22% 11B isotope. High-purity crystalline boron may be prepared by the vapor phase reduction of boron trichloride or tribromide with hydrogen on electrically heated filaments. The impure or amorphous, boron, a brownish-black powder, can be obtained by heating the trioxide with magnesium powder. Boron of 99.9999% purity has been produced and is available commercially. Elemental boron has an energy band gap of 1.50 to 1.56 eV, which is higher than that of either silicon or germanium.",
+    "source": "lanl"
+   }
+  ],
+  "handling": [
+   {
+    "text": "Elemental boron and the borates are not considered to be toxic, and they do not require special care in handling. However, some of the more exotic boron hydrogen compounds are definitely toxic and do require care.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Earth/Planetary Science",
+   "text": "Molecules, atoms, and ions of the stable isotopes of boron possess slightly different physical and chemical properties, and they commonly will be fractionated during physical, chemical, and biological processes, giving rise to variations in isotopic abundances and in atomic weights. Natural terrestrial materials show a substantial variation in boron isotopic abundance (Fig. IUPAC.5.1). The relative abundances of 10B and 11B have been used in a variety of environmental tracer applications,. The isotope-amount ratio n(11B)/n(10B) of boron in a water sample depends on the source of the water and region through which the water flows, and it may also be affected by some types of contamination, such as dissolved borate in domestic wastewater. Different water sources may have their own distinct boron isotopic composition, e.g. seawater versus water from continental sources (Fig. IUPAC.5.1). ",
+   "source": "iptei"
+  },
+  {
+   "topic": "Industry",
+   "text": "The large value of the absorption cross section of 10B for thermal neutrons makes this isotope useful for counting neutrons. 10B is being studied as a potential replacement for 3He in radiation detectors,,. The large thermal absorption cross section of 10B makes the isotope useful in control rods (Fig. IUPAC.5.2). ",
+   "source": "iptei"
+  },
+  {
+   "topic": "Medicine",
+   "text": "10B has a high thermal neutron absorption cross section and can readily absorb neutrons via the reaction 10B+n→ 7Li+α. The alpha particles resulting from this reaction carry away a relatively large kinetic energy and are useful for the treatment of malignant tumors in cancer patients,,.",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "1.0×10^1 milligrams per kilogram",
+  "ocean": "4.44 milligrams per liter",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 5462311,
+   "name": "boron",
+   "formula": "B",
+   "charge": 0,
+   "smiles": "[B]"
+  },
+  {
+   "cid": 6328187,
+   "name": "boron(1-)",
+   "formula": "B-",
+   "charge": -1,
+   "smiles": "[B-]"
+  }
+ ],
+ "refs": {
+  "ciaaw": {
+   "name": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+   "url": "https://www.ciaaw.org/boron.htm"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele005.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/5.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": null,
+ "ghs": {
+  "signal": "Warning",
+  "pictograms": [
+   {
+    "code": "GHS07",
+    "label": "Irritant"
+   }
+  ],
+  "hazards": [
+   "H302 (46.4%): Harmful if swallowed"
+  ],
+  "reports": 485,
+  "notMet": 52.2,
+  "notClassified": false,
+  "source": "European Chemicals Agency (ECHA)"
+ },
+ "ghsCid": 5462311
 }

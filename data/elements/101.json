@@ -22,5 +22,860 @@
   "author": "Albedo-ukr",
   "license": "CC BY-SA 2.5",
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
- }
+ },
+ "weight": {
+  "value": "258.0984315(50)",
+  "kind": "isotope-mass",
+  "A": 258,
+  "estimated": false,
+  "source": "nist"
+ },
+ "natural": [],
+ "naturalSource": "nist",
+ "nuclides": [
+  {
+   "A": 244,
+   "iso": "",
+   "mass": "244.081157 ± 0.000402",
+   "half": "0.36 s ± 0.14",
+   "seconds": 0.36,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β+SF",
+     "op": "<",
+     "pct": 14
+    }
+   ],
+   "year": 2020,
+   "est": true
+  },
+  {
+   "A": 244,
+   "iso": "m",
+   "mass": "244.081157 ± 0.000402",
+   "half": "~9 us",
+   "seconds": 0.000009,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": null
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2020,
+   "est": true
+  },
+  {
+   "A": 245,
+   "iso": "",
+   "mass": "245.080864 ± 0.000279",
+   "half": "0.38 s ± 0.10",
+   "seconds": 0.38,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1996,
+   "est": true
+  },
+  {
+   "A": 245,
+   "iso": "m",
+   "mass": "245.080864 ± 0.000279",
+   "half": "0.90 ms ± 0.25",
+   "seconds": 0.0009000000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1996,
+   "est": true
+  },
+  {
+   "A": 246,
+   "iso": "",
+   "mass": "246.081713 ± 0.000279",
+   "half": "0.92 s ± 0.18",
+   "seconds": 0.92,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1996,
+   "est": true
+  },
+  {
+   "A": 246,
+   "iso": "m",
+   "mass": "246.081713 ± 0.000279",
+   "half": "4.4 s ± 0.8",
+   "seconds": 4.4,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 57
+    },
+    {
+     "mode": "β+",
+     "op": ">",
+     "pct": 77
+    },
+    {
+     "mode": "β+SF",
+     "op": ">",
+     "pct": 10
+    },
+    {
+     "mode": "α",
+     "op": "<",
+     "pct": 23
+    }
+   ],
+   "year": 2010,
+   "est": true
+  },
+  {
+   "A": 247,
+   "iso": "",
+   "mass": "247.081520 ± 0.000223",
+   "half": "1.19 s ± 0.09",
+   "seconds": 1.19,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "SF",
+     "op": "<",
+     "pct": 0.1
+    }
+   ],
+   "year": 1981,
+   "est": true
+  },
+  {
+   "A": 247,
+   "iso": "m",
+   "mass": "247.081520 ± 0.000223",
+   "half": "250 ms ± 40",
+   "seconds": 0.25,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 79
+    },
+    {
+     "mode": "SF",
+     "op": "=",
+     "pct": 21
+    }
+   ],
+   "year": 1993,
+   "est": true
+  },
+  {
+   "A": 248,
+   "iso": "",
+   "mass": "248.082607 ± 0.000198",
+   "half": "7 s ± 3",
+   "seconds": 7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 80
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 20
+    },
+    {
+     "mode": "β+SF",
+     "op": "<",
+     "pct": 0.05
+    }
+   ],
+   "year": 1973,
+   "est": true
+  },
+  {
+   "A": 249,
+   "iso": "",
+   "mass": "249.082857155 ± 0.000176516",
+   "half": "25.6 s ± 0.9",
+   "seconds": 25.6,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 75
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1973,
+   "est": false
+  },
+  {
+   "A": 249,
+   "iso": "m",
+   "mass": "249.082857155 ± 0.000176516",
+   "half": "1.9 s ± 0.9",
+   "seconds": 1.9,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2001,
+   "est": false
+  },
+  {
+   "A": 250,
+   "iso": "",
+   "mass": "250.084164934 ± 0.000097606",
+   "half": "54 s ± 4",
+   "seconds": 54,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 93
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 7
+    },
+    {
+     "mode": "β+SF",
+     "op": "=",
+     "pct": 0.026
+    }
+   ],
+   "year": 1973,
+   "est": false
+  },
+  {
+   "A": 250,
+   "iso": "m",
+   "mass": "250.084164934 ± 0.000097606",
+   "half": "42.4 s ± 4.5",
+   "seconds": 42.4,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": null
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2019,
+   "est": false
+  },
+  {
+   "A": 251,
+   "iso": "",
+   "mass": "251.084774287 ± 0.00002031",
+   "half": "4.21 m ± 0.23",
+   "seconds": 252.6,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 10
+    }
+   ],
+   "year": 1973,
+   "est": false
+  },
+  {
+   "A": 251,
+   "iso": "p",
+   "mass": "251.084774287 ± 0.00002031",
+   "half": "20 s",
+   "seconds": 20,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2006,
+   "est": true
+  },
+  {
+   "A": 252,
+   "iso": "",
+   "mass": "252.086385000 ± 0.000098",
+   "half": "2.3 m ± 0.8",
+   "seconds": 138,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1973,
+   "est": false
+  },
+  {
+   "A": 252,
+   "iso": "p",
+   "mass": "252.086385000 ± 0.000098",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [],
+   "year": null,
+   "est": false
+  },
+  {
+   "A": 253,
+   "iso": "",
+   "mass": "253.087143 ± 0.000034",
+   "half": "12 m ± 8",
+   "seconds": 720,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 0.7
+    }
+   ],
+   "year": 1992,
+   "est": true
+  },
+  {
+   "A": 253,
+   "iso": "p",
+   "mass": "253.087143 ± 0.000034",
+   "half": "1 m",
+   "seconds": 60,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1971,
+   "est": true
+  },
+  {
+   "A": 254,
+   "iso": "",
+   "mass": "254.089590 ± 0.000107",
+   "half": "10 m ± 3",
+   "seconds": 600,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1970,
+   "est": true
+  },
+  {
+   "A": 254,
+   "iso": "m",
+   "mass": "254.089590 ± 0.000107",
+   "half": "28 m ± 8",
+   "seconds": 1680,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1970,
+   "est": true
+  },
+  {
+   "A": 255,
+   "iso": "",
+   "mass": "255.091081702 ± 0.000005976",
+   "half": "27 m ± 2",
+   "seconds": 1620,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 93
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 7
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1958,
+   "est": false
+  },
+  {
+   "A": 255,
+   "iso": "p",
+   "mass": "255.091081702 ± 0.000005976",
+   "half": "2 m",
+   "seconds": 120,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 256,
+   "iso": "",
+   "mass": "256.093888 ± 0.000133",
+   "half": "77.7 m ± 1.8",
+   "seconds": 4662,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 90.8
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 9.2
+    },
+    {
+     "mode": "SF",
+     "op": "<",
+     "pct": 3
+    }
+   ],
+   "year": 1955,
+   "est": true
+  },
+  {
+   "A": 256,
+   "iso": "m",
+   "mass": "256.093888 ± 0.000133",
+   "half": "100 m",
+   "seconds": 6000,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 256,
+   "iso": "p",
+   "mass": "256.093888 ± 0.000133",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 257,
+   "iso": "",
+   "mass": "257.095537343 ± 0.000001683",
+   "half": "5.52 h ± 0.05",
+   "seconds": 19872,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": 85
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 15
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1965,
+   "est": false
+  },
+  {
+   "A": 258,
+   "iso": "",
+   "mass": "258.098433634 ± 0.000003729",
+   "half": "51.59 d ± 0.29",
+   "seconds": 4457376,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "<",
+     "pct": 0.0015
+    },
+    {
+     "mode": "β-",
+     "op": "<",
+     "pct": 0.0015
+    }
+   ],
+   "year": 1970,
+   "est": false
+  },
+  {
+   "A": 258,
+   "iso": "m",
+   "mass": "258.098433634 ± 0.000003729",
+   "half": "57.0 m ± 0.9",
+   "seconds": 3420,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": 85
+    },
+    {
+     "mode": "SF",
+     "op": "<",
+     "pct": 15
+    },
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "α",
+     "op": "<",
+     "pct": 1.2
+    }
+   ],
+   "year": 1980,
+   "est": false
+  },
+  {
+   "A": 259,
+   "iso": "",
+   "mass": "259.100445 ± 0.000108",
+   "half": "1.60 h ± 0.06",
+   "seconds": 5760,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1982,
+   "est": true
+  },
+  {
+   "A": 260,
+   "iso": "",
+   "mass": "260.103650 ± 0.000339",
+   "half": "27.8 d ± 0.8",
+   "seconds": 2401920,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "<",
+     "pct": 5
+    },
+    {
+     "mode": "ε",
+     "op": "<",
+     "pct": 5
+    },
+    {
+     "mode": "β-",
+     "op": "<",
+     "pct": 3.5
+    }
+   ],
+   "year": 1989,
+   "est": true
+  },
+  {
+   "A": 261,
+   "iso": "",
+   "mass": "261.105828 ± 0.000546",
+   "half": "40 m",
+   "seconds": 2400,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 262,
+   "iso": "",
+   "mass": "262.109144 ± 0.000481",
+   "half": "3 m",
+   "seconds": 180,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  }
+ ],
+ "stableCount": 0,
+ "texts": {
+  "history": [
+   {
+    "text": "Mendelevium was first produced by Stanley G. Thompson, Glenn T. Seaborg, Bernard G. Harvey, Gregory R. Choppin and Albert Ghiorso working at the University of California, Berkeley, in 1955. They bombarded atoms of einsteinium-253 with helium ions using a device known as a cyclotron. This produced atoms of mendelevium-256, an isotope with a half-life of about 77 minutes, and a free neutron. Mendelevium's most stable isotope, mendelevium-258, has a half-life of about 51.5 days. It decays into einsteinium-254 through alpha decay or decays through spontaneous fission.",
+    "source": "jlab"
+   },
+   {
+    "text": "Mendelevium is named after Dmitri Mendeleev. It is the ninth transuranium element of the actinide series discovered. It was first identified by Ghiorso, Harvey, Choppin, Thompson, and Seaborg in early in 1955 during the bombardment of the isotope 253Es with helium ions in the Berkeley 60-inch cyclotron. The isotope produced was 256Md, which has a half-life of 76 min. This first identification was notable in that 256Md was synthesized on a one-atom-at-a-time basis.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Since only small amounts of mendelevium have ever been produced, it currently has no uses outside of basic scientific research.",
+    "source": "jlab"
+   },
+   {
+    "text": "256Md has been used to elucidate some of the chemical properties of mendelevium in aqueous solution.",
+    "source": "lanl"
+   }
+  ],
+  "description": [
+   {
+    "text": "Mendelevium does not occur naturally in the Earth’s crust. It was first synthesized in 1955 by Glenn T. Seaborg and his team at the University of California using the reactions 253Es (4He, n) 256Md and 253Es (4He, 2n) 255Md. Mendelevium is named for the Russian scientist, Dmitri Mendeleev (Fig. IUPAC.101.1), who developed the Periodic Table of the chemical elements [636], [637]. There are no applications for isotopes of mendelevium aside from scientific research.",
+    "source": "iptei"
+   },
+   {
+    "text": "Experiments seem to show that the element possesses a moderately stable dipositive (II) oxidation state in addition to the tripositive (III) oxidation state, which is characteristic of the actinide elements.",
+    "source": "lanl"
+   }
+  ],
+  "isotopes": [
+   {
+    "text": "Fourteen isotopes are now recognized. 258Md has a half-life of 2 months. This isotope has been produced by the bombardment of an isotope of einsteinium with ions of helium. Eventually enough 258Md should be made to determine its physical properties.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [],
+ "abundance": {
+  "crust": "Not Applicable",
+  "ocean": "Not Applicable",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 23943,
+   "name": "mendelevium",
+   "formula": "Md",
+   "charge": 0,
+   "smiles": "[Md]"
+  }
+ ],
+ "refs": {
+  "nist": {
+   "name": "NIST Physical Measurement Laboratory",
+   "url": "https://physics.nist.gov/cgi-bin/Elements/elInfo.pl?element=101"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele101.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/101.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": null,
+ "ghs": null,
+ "ghsCid": null
 }

@@ -13,5 +13,507 @@
    "url": "https://en.wikipedia.org/wiki/Bohrium"
   }
  },
- "photo": null
+ "photo": null,
+ "weight": {
+  "value": "272.13826(58#)",
+  "kind": "isotope-mass",
+  "A": 272,
+  "estimated": true,
+  "source": "nist"
+ },
+ "natural": [],
+ "naturalSource": "nist",
+ "nuclides": [
+  {
+   "A": 260,
+   "iso": "",
+   "mass": "260.121443 ± 0.000211",
+   "half": "41 ms ± 14",
+   "seconds": 0.041,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2008,
+   "est": true
+  },
+  {
+   "A": 261,
+   "iso": "",
+   "mass": "261.121395733 ± 0.000193026",
+   "half": "12.8 ms ± 3.2",
+   "seconds": 0.0128,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1989,
+   "est": false
+  },
+  {
+   "A": 262,
+   "iso": "",
+   "mass": "262.122654688 ± 0.000099919",
+   "half": "84 ms ± 11",
+   "seconds": 0.084,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "SF",
+     "op": "<",
+     "pct": 20
+    }
+   ],
+   "year": 1981,
+   "est": false
+  },
+  {
+   "A": 262,
+   "iso": "m",
+   "mass": "262.122654688 ± 0.000099919",
+   "half": "9.5 ms ± 1.6",
+   "seconds": 0.0095,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1981,
+   "est": false
+  },
+  {
+   "A": 263,
+   "iso": "",
+   "mass": "263.122916 ± 0.000328",
+   "half": "200 ms",
+   "seconds": 0.2,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 264,
+   "iso": "",
+   "mass": "264.124486 ± 0.00019",
+   "half": "1.07 s ± 0.21",
+   "seconds": 1.07,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 86
+    },
+    {
+     "mode": "SF",
+     "op": "≈",
+     "pct": 14
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1995,
+   "est": true
+  },
+  {
+   "A": 264,
+   "iso": "p",
+   "mass": "264.124486 ± 0.00019",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 265,
+   "iso": "",
+   "mass": "265.124955 ± 0.000257",
+   "half": "1.19 s ± 0.52",
+   "seconds": 1.19,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": null
+    }
+   ],
+   "year": 2004,
+   "est": true
+  },
+  {
+   "A": 266,
+   "iso": "",
+   "mass": "266.126790 ± 0.000175",
+   "half": "10.6 s ± 2.2",
+   "seconds": 10.6,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2000,
+   "est": true
+  },
+  {
+   "A": 267,
+   "iso": "",
+   "mass": "267.127499 ± 0.000282",
+   "half": "22 s ± 10",
+   "seconds": 22,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2000,
+   "est": true
+  },
+  {
+   "A": 268,
+   "iso": "",
+   "mass": "268.129584 ± 0.00041",
+   "half": "190 s",
+   "seconds": 190,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 269,
+   "iso": "",
+   "mass": "269.130411 ± 0.000402",
+   "half": "1 m",
+   "seconds": 60,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 270,
+   "iso": "",
+   "mass": "270.133366 ± 0.00032",
+   "half": "3.8 m ± 3.0",
+   "seconds": 228,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2007,
+   "est": true
+  },
+  {
+   "A": 271,
+   "iso": "",
+   "mass": "271.135115 ± 0.000412",
+   "half": "2.9 s ± 1.9",
+   "seconds": 2.9,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2013,
+   "est": true
+  },
+  {
+   "A": 272,
+   "iso": "",
+   "mass": "272.138259 ± 0.000571",
+   "half": "11.3 s ± 1.8",
+   "seconds": 11.3,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    }
+   ],
+   "year": 2004,
+   "est": true
+  },
+  {
+   "A": 273,
+   "iso": "",
+   "mass": "273.140294 ± 0.000703",
+   "half": "1 m",
+   "seconds": 60,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 274,
+   "iso": "",
+   "mass": "274.143599 ± 0.00062",
+   "half": "57 s ± 27",
+   "seconds": 57,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2010,
+   "est": true
+  },
+  {
+   "A": 275,
+   "iso": "",
+   "mass": "275.145766 ± 0.000644",
+   "half": "1 m",
+   "seconds": 60,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 276,
+   "iso": "",
+   "mass": "276.149169 ± 0.000644",
+   "half": "60 s",
+   "seconds": 60,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 277,
+   "iso": "",
+   "mass": "277.151477 ± 0.000644",
+   "half": "10 s",
+   "seconds": 10,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 278,
+   "iso": "",
+   "mass": "278.154988 ± 0.000429",
+   "half": "2 s",
+   "seconds": 2,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2016,
+   "est": true
+  }
+ ],
+ "stableCount": 0,
+ "texts": {
+  "history": [
+   {
+    "text": "First produced in 1976 by scientists working at the Joint Institute for Nuclear Research in Dubna, Russia, and later confirmed in 1981 by Peter Armbruster, Gottfried Münzenber and their team working at the Gesellschaft für Schwerionenforschung in Darmstadt, Germany, bohrium was produced by bombarding a target of bismuth-209 with ions of chromium-54. Bohrium's most stable isotope, bohrium-270, has a half-life of about 1 minute. It decays into dubnium-266 through alpha decay.",
+    "source": "jlab"
+   },
+   {
+    "text": "Formally known as Ns, Nielsbohrium In 1976 Soviet scientists at Dubna announced they had synthesized element 107 by bombarding 204Bi with heavy nuclei of 54Cr. Reports say that experiments in 1975 had allowed scientists \"to glimpse\" the new element for 2/1000 s. A rapidly rotating cylinder, coated with a thin layer of bismuth metal, was used as a target. This was bombarded by a stream of 54Cr ions fired tangentially. The existence of element 107 was confirmed by a team of West German physicists at the Heavy Ion Research Laboratory at Darmstadt, who created and identified six nuclei of element 107.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Since only a few atoms of bohrium have ever been made, there are currently no uses for bohrium outside of basic scientific research.",
+    "source": "jlab"
+   }
+  ],
+  "description": [
+   {
+    "text": "Bohrium does not occur naturally in the Earth’s crust. Bohrium was first synthesized by German scientists at the GSI Center for Heavy Ion Research in Darmstadt, Germany in 1981 using the nuclear reaction 209Bi (54Cr, n) 262Bh. The element is named for Niels Bohr (Fig. IUPAC.107.1), the Nobel Prize winning physicist [649], [650]. Bohrium has no known isotopic applications aside from scientific research.",
+    "source": "iptei"
+   },
+   {
+    "text": "Bohrium is named after Niels Bohr.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [],
+ "abundance": {
+  "crust": "Not Applicable",
+  "ocean": "Not Applicable",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 56951713,
+   "name": "bohrium",
+   "formula": "Bh",
+   "charge": 0,
+   "smiles": "[Bh]"
+  }
+ ],
+ "refs": {
+  "nist": {
+   "name": "NIST Physical Measurement Laboratory",
+   "url": "https://physics.nist.gov/cgi-bin/Elements/elInfo.pl?element=107"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele107.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/107.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": null,
+ "ghs": null,
+ "ghsCid": null
 }

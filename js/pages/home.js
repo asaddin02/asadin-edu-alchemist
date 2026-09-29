@@ -12,20 +12,30 @@ import { TOPICS, findTopic } from '../data/topics/index.js';
 import { LABS, PLACES, PATHS } from '../data/curriculum.js';
 import { moleculeIndex } from '../services/data.js';
 import { lessonsRead, quizResults, progressStats } from '../core/userdata.js';
+import { chainHTML } from './peta.js';
 
 const s = S({
-  title: ['Jelajahi molekul seluruh dunia', 'Explore the molecules of the world'],
+  title: ['Jelajahi kimia dan dunia materi', 'Explore chemistry and the world of matter'],
   lead: [
-    'Putar molekul dalam 3D, kenali 118 unsur, dan pelajari kimia dari SD sampai kuliah. Data resmi dari PubChem (NIH), Wikipedia, dan Wikimedia Commons.',
-    'Spin molecules in 3D, meet all 118 elements and learn chemistry from primary school to university. Official data from PubChem (NIH), Wikipedia and Wikimedia Commons.',
+    'Jelajahi unsur, isotop, ion, molekul 3D, material, dan reaksi. Belajar kimia dari SD sampai kuliah melalui materi berjenjang, kuis, dan laboratorium virtual.',
+    'Explore elements, isotopes, ions, 3D molecules, materials and reactions. Learn chemistry from primary school to university through level-based lessons, quizzes and virtual labs.',
   ],
-  search: ['Cari molekul, rumus, atau unsur', 'Search molecules, formulas or elements'],
+  search: [
+    'Cari unsur, isotop, ion, molekul, reaksi, atau konsep',
+    'Search elements, isotopes, ions, molecules, reactions or concepts',
+  ],
   go: ['Cari', 'Search'],
   try: ['Coba:', 'Try:'],
   stat1: ['molekul & material kurasi', 'curated molecules & materials'],
   stat2: ['unsur tabel periodik', 'elements in the table'],
-  stat3: ['senyawa di PubChem', 'compounds in PubChem'],
-  stat4: ['materi & 13 lab', 'lessons & 13 labs'],
+  chain: [
+    'Peta ilmu kimia: dari materi sampai transformasi',
+    'The chemistry map: from matter to transformation',
+  ],
+  chainLead: [
+    'Semua yang ada di sekitarmu adalah materi. Ikuti langkahnya: partikel, atom, unsur, isotop, ion, molekul, senyawa, material, sampai reaksi dan perubahannya.',
+    'Everything around you is matter. Follow the steps: particles, atoms, elements, isotopes, ions, molecules, compounds, materials, all the way to reactions and change.',
+  ],
   chooseTitle: ['Kamu belajar di jenjang apa?', 'What level are you learning at?'],
   chooseLead: [
     'Isi, kuis, dan kedalaman data menyesuaikan pilihanmu. Bisa diganti kapan saja lewat menu Mode.',
@@ -126,9 +136,9 @@ export async function render({ main }) {
   <div class="container">
     <section class="discovery-hero" aria-labelledby="discovery-title">
       <div class="discovery-copy">
-        <p class="hero-label">${icon('atom', { size: 16 })} ${esc(pick(['DUNIA KECIL, PENEMUAN BESAR', 'SMALL WORLD, BIG DISCOVERIES']))}</p>
-        <h2 id="discovery-title">${pick(['Hal besar dimulai<br>dari <span>molekul kecil.</span>', 'Big discoveries start<br>with <span>tiny molecules.</span>'])}</h2>
-        <p>${esc(pick(['Dari air yang kamu minum hingga bintang di langit. Yuk, kenali sains di balik dunia kita!', 'From the water you drink to the stars above. Discover the science behind our world!']))}</p>
+        <p class="hero-label">${icon('atom', { size: 16 })} ${esc(pick(['ALCHEMIST · ENSIKLOPEDIA KIMIA', 'ALCHEMIST · CHEMISTRY ENCYCLOPEDIA']))}</p>
+        <h2 id="discovery-title">${pick(['Kenali materi.<br>Jelajahi <span>perubahannya.</span>', 'Discover matter.<br>Explore <span>how it changes.</span>'])}</h2>
+        <p>${esc(s.lead)}</p>
         <div class="hero-actions"><a class="btn btn-yellow" href="#/learn/${next?.id || 'zat'}">${icon('play', { size: 18 })} ${esc(pick(['Mulai petualangan', 'Start exploring']))}</a><a class="hero-secondary" href="#/molecule/water">${esc(pick(['Lihat molekul 3D', 'Meet a 3D molecule']))} ${icon('arrowRight', { size: 17 })}</a></div>
         <p class="hero-footnote">${icon('check', { size: 15 })} ${esc(pick(['Bebas bereksplorasi. Belajar sesuai jenjangmu.', 'Explore freely. Learn at your own level.']))}</p>
       </div>
@@ -147,7 +157,12 @@ export async function render({ main }) {
     <form class="discovery-search" role="search" data-search>
       ${icon('search', { size: 22 })}<label class="sr-only" for="hero-q">${esc(s.search)}</label><input id="hero-q" name="q" type="search" autocomplete="off" placeholder="${esc(s.search)}" /><button class="btn btn-primary" type="submit">${esc(s.go)} ${icon('arrowRight', { size: 17 })}</button>
     </form>
-    <p class="discovery-suggestions">${esc(pick(['Penasaran tentang:', 'Curious about:']))} ${['air', 'kafeina', 'C6H12O6', 'grafena'].map(q => `<a href="#/explore?q=${encodeURIComponent(q)}">${esc(q)}</a>`).join('')}</p>
+    <p class="discovery-suggestions">${esc(pick(['Penasaran tentang:', 'Curious about:']))} ${['air', 'besi', 'C-14', 'sulfat', 'C6H12O6', 'baja'].map(q => `<a href="#/search?q=${encodeURIComponent(q)}">${esc(q)}</a>`).join('')}</p>
+    <section class="home-chain" aria-labelledby="chain-title">
+      ${sectionHead(esc(s.chain), '#/peta', undefined, 'chain-title')}
+      <p class="muted">${esc(s.chainLead)}</p>
+      ${chainHTML()}
+    </section>
   </div>
   <div class="container home-sections">
     ${

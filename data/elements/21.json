@@ -22,5 +22,1093 @@
   "author": "Alchemist-hp (talk) (www.pse-mendelejew.de)",
   "license": "FAL",
   "licenseUrl": "http://artlibre.org/licence/lal/en"
- }
+ },
+ "weight": {
+  "value": "44.955 907(4)",
+  "kind": "standard",
+  "source": "ciaaw"
+ },
+ "natural": [
+  {
+   "A": 45,
+   "iso": "",
+   "mass": "44.955 907(4)",
+   "abundance": "1"
+  }
+ ],
+ "naturalSource": "ciaaw",
+ "nuclides": [
+  {
+   "A": 35,
+   "iso": "",
+   "mass": "35.029093 ± 0.000429",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 36,
+   "iso": "",
+   "mass": "36.017338 ± 0.000322",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 37,
+   "iso": "",
+   "mass": "37.004058 ± 0.000322",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 38,
+   "iso": "",
+   "mass": "37.995438 ± 0.000215",
+   "half": "Not-specified <300ns",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 38,
+   "iso": "m",
+   "mass": "37.995438 ± 0.000215",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 39,
+   "iso": "",
+   "mass": "38.984784953 ± 0.000025765",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "p",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1988,
+   "est": false
+  },
+  {
+   "A": 40,
+   "iso": "",
+   "mass": "39.977967275 ± 0.000003036",
+   "half": "182.3 ms ± 0.7",
+   "seconds": 0.18230000000000002,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 0.44
+    },
+    {
+     "mode": "β+α",
+     "op": "=",
+     "pct": 0.017
+    }
+   ],
+   "year": 1955,
+   "est": false
+  },
+  {
+   "A": 41,
+   "iso": "",
+   "mass": "40.969251163 ± 0.000000083",
+   "half": "596.3 ms ± 1.7",
+   "seconds": 0.5962999999999999,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1941,
+   "est": false
+  },
+  {
+   "A": 41,
+   "iso": "r",
+   "mass": "40.969251163 ± 0.000000083",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "p",
+     "op": "=",
+     "pct": 59
+    },
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 41
+    }
+   ],
+   "year": null,
+   "est": false
+  },
+  {
+   "A": 42,
+   "iso": "",
+   "mass": "41.965516686 ± 0.000000165",
+   "half": "680.72 ms ± 0.26",
+   "seconds": 0.68072,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1955,
+   "est": false
+  },
+  {
+   "A": 42,
+   "iso": "m",
+   "mass": "41.965516686 ± 0.000000165",
+   "half": "61.7 s ± 0.4",
+   "seconds": 61.7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1963,
+   "est": false
+  },
+  {
+   "A": 42,
+   "iso": "r",
+   "mass": "41.965516686 ± 0.000000165",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": null,
+   "est": false
+  },
+  {
+   "A": 43,
+   "iso": "",
+   "mass": "42.961150425 ± 0.000001999",
+   "half": "3.891 h ± 0.012",
+   "seconds": 14007.6,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1935,
+   "est": false
+  },
+  {
+   "A": 43,
+   "iso": "m",
+   "mass": "42.961150425 ± 0.000001999",
+   "half": "438 us ± 5",
+   "seconds": 0.00043799999999999997,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1964,
+   "est": false
+  },
+  {
+   "A": 43,
+   "iso": "n",
+   "mass": "42.961150425 ± 0.000001999",
+   "half": "472 ns ± 3",
+   "seconds": 4.7200000000000004e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1978,
+   "est": false
+  },
+  {
+   "A": 44,
+   "iso": "",
+   "mass": "43.959402818 ± 0.000001884",
+   "half": "4.0421 h ± 0.0025",
+   "seconds": 14551.559999999998,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1937,
+   "est": false
+  },
+  {
+   "A": 44,
+   "iso": "m",
+   "mass": "43.959402818 ± 0.000001884",
+   "half": "154.8 ns ± 0.8",
+   "seconds": 1.548e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1967,
+   "est": false
+  },
+  {
+   "A": 44,
+   "iso": "n",
+   "mass": "43.959402818 ± 0.000001884",
+   "half": "51.0 us ± 0.3",
+   "seconds": 0.000051,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1963,
+   "est": false
+  },
+  {
+   "A": 44,
+   "iso": "p",
+   "mass": "43.959402818 ± 0.000001884",
+   "half": "58.61 h ± 0.10",
+   "seconds": 210996,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 98.8
+    },
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 1.2
+    }
+   ],
+   "year": 1940,
+   "est": false
+  },
+  {
+   "A": 45,
+   "iso": "",
+   "mass": "44.955907051 ± 0.000000712",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1923,
+   "est": false
+  },
+  {
+   "A": 45,
+   "iso": "m",
+   "mass": "44.955907051 ± 0.000000712",
+   "half": "318 ms ± 7",
+   "seconds": 0.318,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1964,
+   "est": false
+  },
+  {
+   "A": 46,
+   "iso": "",
+   "mass": "45.955167034 ± 0.00000072",
+   "half": "83.757 d ± 0.014",
+   "seconds": 7236604.800000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1936,
+   "est": false
+  },
+  {
+   "A": 46,
+   "iso": "m",
+   "mass": "45.955167034 ± 0.00000072",
+   "half": "9.4 us ± 0.8",
+   "seconds": 0.0000094,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1966,
+   "est": false
+  },
+  {
+   "A": 46,
+   "iso": "n",
+   "mass": "45.955167034 ± 0.00000072",
+   "half": "18.75 s ± 0.04",
+   "seconds": 18.75,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1948,
+   "est": false
+  },
+  {
+   "A": 47,
+   "iso": "",
+   "mass": "46.952402444 ± 0.000002072",
+   "half": "3.3492 d ± 0.0006",
+   "seconds": 289370.88,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1945,
+   "est": false
+  },
+  {
+   "A": 47,
+   "iso": "m",
+   "mass": "46.952402444 ± 0.000002072",
+   "half": "272 ns ± 8",
+   "seconds": 2.72e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1968,
+   "est": false
+  },
+  {
+   "A": 48,
+   "iso": "",
+   "mass": "47.952222903 ± 0.000005313",
+   "half": "43.67 h ± 0.09",
+   "seconds": 157212,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1937,
+   "est": false
+  },
+  {
+   "A": 49,
+   "iso": "",
+   "mass": "48.950013159 ± 0.000002434",
+   "half": "57.18 m ± 0.13",
+   "seconds": 3430.8,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1940,
+   "est": false
+  },
+  {
+   "A": 50,
+   "iso": "",
+   "mass": "49.952187437 ± 0.0000027",
+   "half": "102.5 s ± 0.5",
+   "seconds": 102.5,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1959,
+   "est": false
+  },
+  {
+   "A": 50,
+   "iso": "m",
+   "mass": "49.952187437 ± 0.0000027",
+   "half": "350 ms ± 40",
+   "seconds": 0.35000000000000003,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": ">",
+     "pct": 99
+    },
+    {
+     "mode": "β-",
+     "op": "<",
+     "pct": 1
+    }
+   ],
+   "year": 1963,
+   "est": false
+  },
+  {
+   "A": 51,
+   "iso": "",
+   "mass": "50.953568838 ± 0.0000027",
+   "half": "12.4 s ± 0.1",
+   "seconds": 12.4,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1966,
+   "est": false
+  },
+  {
+   "A": 52,
+   "iso": "",
+   "mass": "51.956496170 ± 0.0000033",
+   "half": "8.2 s ± 0.2",
+   "seconds": 8.2,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1980,
+   "est": false
+  },
+  {
+   "A": 53,
+   "iso": "",
+   "mass": "52.958379173 ± 0.000019",
+   "half": "2.4 s ± 0.6",
+   "seconds": 2.4,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1980,
+   "est": false
+  },
+  {
+   "A": 54,
+   "iso": "",
+   "mass": "53.963029359 ± 0.000015",
+   "half": "526 ms ± 15",
+   "seconds": 0.526,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 16
+    }
+   ],
+   "year": 1990,
+   "est": false
+  },
+  {
+   "A": 54,
+   "iso": "m",
+   "mass": "53.963029359 ± 0.000015",
+   "half": "2.77 us ± 0.02",
+   "seconds": 0.0000027699999999999997,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1998,
+   "est": false
+  },
+  {
+   "A": 55,
+   "iso": "",
+   "mass": "54.966889637 ± 0.000067",
+   "half": "96 ms ± 2",
+   "seconds": 0.096,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 17
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1990,
+   "est": false
+  },
+  {
+   "A": 56,
+   "iso": "",
+   "mass": "55.972607611 ± 0.000278761",
+   "half": "26 ms ± 6",
+   "seconds": 0.026000000000000002,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1997,
+   "est": false
+  },
+  {
+   "A": 56,
+   "iso": "m",
+   "mass": "55.972607611 ± 0.000278761",
+   "half": "75 ms ± 6",
+   "seconds": 0.075,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": ">",
+     "pct": 12
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2004,
+   "est": false
+  },
+  {
+   "A": 56,
+   "iso": "n",
+   "mass": "55.972607611 ± 0.000278761",
+   "half": "290 ns ± 17",
+   "seconds": 2.9000000000000003e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2004,
+   "est": false
+  },
+  {
+   "A": 57,
+   "iso": "",
+   "mass": "56.977048000 ± 0.000193",
+   "half": "22 ms ± 2",
+   "seconds": 0.022,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1997,
+   "est": false
+  },
+  {
+   "A": 58,
+   "iso": "",
+   "mass": "57.983382000 ± 0.000204",
+   "half": "12 ms ± 5",
+   "seconds": 0.012,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1997,
+   "est": false
+  },
+  {
+   "A": 58,
+   "iso": "m",
+   "mass": "57.983382000 ± 0.000204",
+   "half": "0.60 us ± 0.13",
+   "seconds": 6e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2020,
+   "est": false
+  },
+  {
+   "A": 59,
+   "iso": "",
+   "mass": "58.988374000 ± 0.000268",
+   "half": "12 ms >620ns",
+   "seconds": 0.012,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2009,
+   "est": true
+  },
+  {
+   "A": 60,
+   "iso": "",
+   "mass": "59.995115 ± 0.000537",
+   "half": "10 ms >620ns",
+   "seconds": 0.01,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2009,
+   "est": true
+  },
+  {
+   "A": 61,
+   "iso": "",
+   "mass": "61.000537 ± 0.000644",
+   "half": "7 ms >620ns",
+   "seconds": 0.007,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2009,
+   "est": true
+  },
+  {
+   "A": 62,
+   "iso": "",
+   "mass": "62.007848 ± 0.000644",
+   "half": "2 ms >400ns",
+   "seconds": 0.002,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2018,
+   "est": true
+  },
+  {
+   "A": 63,
+   "iso": "",
+   "mass": "63.014031 ± 0.000751",
+   "half": "1 ms",
+   "seconds": 0.001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  }
+ ],
+ "stableCount": 1,
+ "texts": {
+  "history": [
+   {
+    "text": "The name derives from the Latin scandia for Scandinavia, where the mineral was found. It was discovered by the Swedish chemist Lars-Fredrik Nilson in 1879 in an ytterbium sample. In the same year, the Swedish chemist Per Theodore Cleve proved that scandium was Mendeleev's predicted \"eka-boron\".",
+    "source": "ciaaw"
+   },
+   {
+    "text": "Scandium was discovered by Lars Fredrik Nilson, a Swedish chemist, in 1879 while attempting to produce a sample of pure ytterbia from 10 kilograms of the mineral euxenite ((Y, Ca, Er, La, Ce, U, Th)(Nb, Ta, Ti)2O6). Scandium can be obtained from the minerals thortveitite ((Sc, Y)2Si2O7), bazzite (Be3(Sc, Al)2Si6O18) and wiikite, but is usually obtained as a byproduct of refining uranium. Metallic scandium was first produced in 1937 and the first pound (0.45 kilograms) of pure scandium was produced in 1960. Scandium is a soft, light metal that might have applications in the aerospace industry. With a cost of $270 per gram ($122,500 per pound), scandium is too expensive for widespread use.",
+    "source": "jlab"
+   },
+   {
+    "text": "From the Latin word Scandia, Scandinavia. On the basis of the Periodic System, Mendeleev predicted the existence of ekaboron, which would have an atomic weight between 40 of calcium and 48 of titanium. The element was discovered by Nilson in 1878 in the minerals euxenite and gadolinite, which had not yet been found anywhere except in Scandinavia. By processing 10 kg of euxenite and other residues of rare-earth minerals, Nilson was able to prepare about 2g of highly pure scandium oxide. Later scientists pointed out that Nilson's scandium was identical with Mendeleev's ekaboron.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Alloys of scandium and aluminum are used in some kinds of athletic equipment, such as aluminum baseball bats, bicycle frames and lacrosse sticks. It is expected that scandium-aluminum alloys will be important in the manufacture of fuel cells. Scientists have only studied a few compounds of scandium. About 20 kilograms (44 pounds) of scandium oxide (Sc2O3), also known as scandia, are used each year in the United States in the production of high intensity lights. Scandium iodide (ScI3) is added to mercury vapor lamps so that they will emit light that closely resembles sunlight.",
+    "source": "jlab"
+   },
+   {
+    "text": "About 20 kg of scandium (as Sc2O3) are used yearly in the U.S. to produce high-intensity lights. The radioactive isotope 46Sc is used as a tracing agent in refinery crackers for crude oil, etc. Scandium iodide added to mercury vapor lamps produces a highly efficient light source resembling sunlight, which is important for indoor or night-time color TV.",
+    "source": "lanl"
+   }
+  ],
+  "sources": [
+   {
+    "text": "Scandium is apparently much more abundant (the 23rd most) in the sun and certain stars than on earth (the 50th most abundant). It is widely distributed on earth, occurring in very minute quantities in over 800 mineral species. The blue color of beryl (aquamarine variety) is said to be due to scandium. It occurs as a principal component in the rare mineral thortveitite, found in Scandinavia and Malagasy. It is also found in the residues remaining after the extraction of tungsten from Zinnwald wolframite, and in wiikite and bazzite. Most scandium is presently being recovered from thortveitite or is extracted as a by-product from uranium mill tailings. Metallic scandium was first prepared in 1937 by Fischer, Brunger, and Grienelaus who electrolyzed a eutectic melt of potassium, lithium, and scandium chlorides at 700 to 800°C. Tungsten wire and a pool of molten zinc served as the electrodes in a graphite crucible. Pure scandium is now produced by reducing scandium fluoride with calcium metal. The production of the first pound of 99% pure scandium metal was announced in 1960.",
+    "source": "lanl"
+   }
+  ],
+  "description": [
+   {
+    "text": "Scandium is a silver-white metal which develops a slightly yellowish or pinkish cast upon exposure to air. A relatively soft element, scandium resembles yttrium and the rare-earth metals more than it resembles aluminum or titanium. It is a very light metal and has a much higher melting point than aluminum, making it of interest to designers of spacecraft. Scandium is not attacked by a 1:1 mixture of HNO3 and 48% HF. Chemically it is one of the alkaline earth elements; it readily forms a white coating of nitride in air, reacts with water, burns with a yellow-red flame.",
+    "source": "lanl"
+   }
+  ],
+  "handling": [
+   {
+    "text": "Little is yet known about the toxicity of scandium; therefore it should be handled with care.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Biology",
+   "text": "Radioactive 46Sc is used as a non-absorbed isotopic reference material for determining digestibility, absorption in the gut, and secretion sites for nutrients associated with feed residues in ruminating animals (animals that chew their food repeatedly for an extended period of time).",
+   "source": "iptei"
+  },
+  {
+   "topic": "Earth/Planetary Science",
+   "text": "The radioactive isotope 46Sc has been used for sediment labeling to determine the transportation of sediments by water flow in rivers, estuaries, harbors, and seas. The half-life of 46Sc is about 84 days and when released into an estuary with similar grain density and grain size, a gamma spectrometer (instrument for measuring the intensity of gamma radiation versus the energy of each photon) can be used to measure the intensities of 46Sc in the sediments and the movement of the sediments can be determined,,.",
+   "source": "iptei"
+  },
+  {
+   "topic": "Industry",
+   "text": "46Sc is a beta emitter and has been used as a tracer in oil refinery crackers for crude oil (converting crude oil into gasoline and other lower-molecular weight hydrocarbon fractions). Its beta radiation enables the substance to be tracked as the oil travels. Due to its easily traceable properties, coastal engineers use 46Sc to develop dredging strategies and to design navigation channels based on silt movement.",
+   "source": "iptei"
+  },
+  {
+   "topic": "Medicine",
+   "text": "46Sc is used in isotope-carrying antibodies for bonding with tumor-associated cell surface antigens (substances that causes the production of an antibody when introduced into the body, e.g. toxins, bacteria, and viruses). 46Sc is added to DTPA-derivatized (process by which a compound is chemically changed, producing a new compound that has properties more amenable to a particular analytical method) monoclonal antibodies and has been shown to target tumor cells, specifically in vivo, where it accumulates to high levels in the tumor (Fig. IUPAC.21.1),. ",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "2.2×10^1 milligrams per kilogram",
+  "ocean": "6×10^-7 milligrams per liter",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 23952,
+   "name": "scandium",
+   "formula": "Sc",
+   "charge": 0,
+   "smiles": "[Sc]"
+  },
+  {
+   "cid": 4534583,
+   "name": "scandium(3+)",
+   "formula": "Sc+3",
+   "charge": 3,
+   "smiles": "[Sc+3]"
+  }
+ ],
+ "refs": {
+  "ciaaw": {
+   "name": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+   "url": "https://www.ciaaw.org/scandium.htm"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele021.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/21.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": null,
+ "ghs": {
+  "signal": "Danger",
+  "pictograms": [
+   {
+    "code": "GHS02",
+    "label": "Flammable"
+   }
+  ],
+  "hazards": [
+   "H228 (93.3%): Flammable solid"
+  ],
+  "reports": 105,
+  "notMet": 4.8,
+  "notClassified": false,
+  "source": "European Chemicals Agency (ECHA)"
+ },
+ "ghsCid": 23952
 }

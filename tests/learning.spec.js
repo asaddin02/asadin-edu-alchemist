@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { stubNetwork, prefs, watchErrors, open } from './helpers.js';
-import { findTopic, quizFor } from '../js/data/topics/index.js';
+import { loadTopic, quizFor } from '../js/data/topics/index.js';
 
 test.beforeEach(async ({ page }) => {
   await stubNetwork(page);
@@ -29,7 +29,7 @@ test('lesson: level versions, glossary links and a perfect quiz', async ({ page 
   await expect(page.locator('.lesson-body')).toContainText('kol ungu');
   await expect(page).toHaveURL(/lv=sd/);
 
-  const topic = findTopic('asam-basa');
+  const topic = await loadTopic('asam-basa');
   await finishQuiz(page, quizFor(topic, 'sd'));
   await expect(page.locator('.quiz-score')).toContainText(
     `${quizFor(topic, 'sd').length} dari ${quizFor(topic, 'sd').length}`
@@ -47,7 +47,17 @@ test('teacher mode shows lesson-plan notes on topic pages', async ({ page }) => 
 
 test('generated quizzes are built from the data', async ({ page }) => {
   await prefs(page, { level: 'sma' });
-  for (const id of ['structure', 'formula', 'symbols', 'category', 'classes', 'places', 'mixed']) {
+  for (const id of [
+    'structure',
+    'formula',
+    'symbols',
+    'category',
+    'classes',
+    'places',
+    'ions',
+    'reactions',
+    'mixed',
+  ]) {
     await open(page, `quiz/${id}`);
     await expect(page.locator('.quiz-option')).not.toHaveCount(0);
   }

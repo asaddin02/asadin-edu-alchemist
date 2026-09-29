@@ -13,5 +13,152 @@
    "url": "https://en.wikipedia.org/wiki/Tennessine"
   }
  },
- "photo": null
+ "photo": null,
+ "weight": {
+  "value": "292.20746(75#)",
+  "kind": "isotope-mass",
+  "A": 292,
+  "estimated": true,
+  "source": "nist"
+ },
+ "natural": [],
+ "naturalSource": null,
+ "nuclides": [
+  {
+   "A": 291,
+   "iso": "",
+   "mass": "291.205748 ± 0.00064",
+   "half": "2 ms",
+   "seconds": 0.002,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 292,
+   "iso": "",
+   "mass": "292.207861 ± 0.000718",
+   "half": "10 ms",
+   "seconds": 0.01,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 293,
+   "iso": "",
+   "mass": "293.208727 ± 0.000835",
+   "half": "25 ms ± 6",
+   "seconds": 0.025,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2010,
+   "est": true
+  },
+  {
+   "A": 294,
+   "iso": "",
+   "mass": "294.210840 ± 0.000637",
+   "half": "70 ms ± 30",
+   "seconds": 0.07,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2010,
+   "est": true
+  }
+ ],
+ "stableCount": 0,
+ "texts": {
+  "history": [
+   {
+    "text": "On April 5, 2010, scientists working at the Joint Institute for Nuclear Research in Dubna, Russia, along with scientists from the U.S. Department of Energy's Lawrence Livermore National Laboratory and Oak Ridge National Laboratory, announced the creation of tennessine. They produced tennessine by bombarding atoms of berkelium-249 with ions of calcium-48. Tennessine's most stable isotope, tennessine-294, has a half-life of about 80 milliseconds. It decays into moscovium-290 through alpha decay.",
+    "source": "jlab"
+   },
+   {
+    "text": "On Novemer 28th, 2016 element 117 was named Tennessine with the symbol (Ts). The Tennessee region of the United States is home to Oak Ridge National Laboratory, Vanderbilt University, and the University of Tennessee at Knoxville, all of which contributed to superheavy element research.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Since only a few atoms of tennessine have ever been produced, it currently has no uses outside of basic scientific research.",
+    "source": "jlab"
+   }
+  ],
+  "description": [
+   {
+    "text": "Tennessine does not occur naturally in the Earth’s crust. The name tennessine and the symbol Ts, are the accepted ones for element 117. The name is in recognition of the contribution of the Tennessee region, including Oak Ridge National Laboratory (ORNL), Vanderbilt University, and the University of Tennessee at Knoxville, to super-heavy element research, including the production and chemical separation of unique actinide target materials for super-heavy element synthesis at ORNL’s High Flux Isotope Reactor (HFIR) and Radiochemical Engineering Development Center (REDC) [676], [677], [678], [679]. In 2009, two isotopes, 293Ts and 294Ts were synthesized from the bombardment of 48Ca ions with 249Bk nuclei (Fig. IUPAC.117.1) in the Dubna gas filled recoil separator and the heavy ion cyclotron U-400. Tennessine has no known isotopic applications aside from scientific research.",
+    "source": "iptei"
+   }
+  ]
+ },
+ "isotopeUses": [],
+ "abundance": {
+  "crust": "Not Applicable",
+  "ocean": "Not Applicable",
+  "source": "jlab"
+ },
+ "physical": "Expected to be a Solid",
+ "forms": [],
+ "refs": {
+  "nist": {
+   "name": "NIST Physical Measurement Laboratory",
+   "url": "https://physics.nist.gov/cgi-bin/Elements/elInfo.pl?element=117"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele117.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/117.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": null,
+ "ghs": null,
+ "ghsCid": null
 }

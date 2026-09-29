@@ -98,6 +98,7 @@ Superacids such as HSbF₆ are more acidic than 100% sulfuric acid and can proto
     kuliah: ['Susun diagram spesiasi H₃PO₄ (α vs pH) dan tentukan pH penyangga fosfat 1 : 1 untuk media kultur.', 'Build the H₃PO₄ speciation diagram (α vs pH) and find the pH of a 1 : 1 phosphate buffer for culture media.'],
   },
   quiz: [
+    { lv: 'kuliah', q: ["Larutan penyangga paling efektif menahan perubahan pH ketika…", "A buffer resists pH change best when…"], options: [["pH = pKa ([A⁻] = [HA])", "pH = pKa ([A⁻] = [HA])"], ["pH = 7 selalu", "pH is always 7"], ["[HA] = 0", "[HA] = 0"], ["Asamnya kuat", "The acid is strong"]], answer: 0, explain: ["Kapasitas penyangga maksimum saat perbandingan asam dan basa konjugat 1:1.", "Buffer capacity peaks when acid and conjugate base are 1:1."] },
     { lv: 'sd', q: ['Air jeruk nipis terasa masam karena bersifat…', 'Lime juice tastes sour because it is…'], options: [['Asam', 'Acidic'], ['Basa', 'Basic'], ['Netral', 'Neutral'], ['Garam', 'A salt']], answer: 0, explain: ['Jeruk nipis mengandung asam sitrat.', 'Limes contain citric acid.'] },
     { lv: 'sd', q: ['Air murni memiliki pH…', 'Pure water has a pH of…'], options: [['0', '0'], ['5', '5'], ['7', '7'], ['14', '14']], answer: 2, explain: ['pH 7 berarti netral, tidak asam dan tidak basa.', 'pH 7 means neutral, neither acidic nor basic.'] },
     { lv: 'sd', q: ['Air rebusan kol ungu berubah hijau kebiruan saat diberi…', 'Red-cabbage water turns blue-green when mixed with…'], options: [['Cuka', 'Vinegar'], ['Air jeruk', 'Lime juice'], ['Air sabun', 'Soapy water'], ['Air murni', 'Pure water']], answer: 2, explain: ['Sabun bersifat basa; antosianin kol ungu menjadi hijau kebiruan dalam basa.', 'Soap is basic; red-cabbage anthocyanin turns blue-green in base.'] },
@@ -125,6 +126,7 @@ Superacids such as HSbF₆ are more acidic than 100% sulfuric acid and can proto
       ['"Semua asam berbahaya dan korosif." Banyak asam lemah aman dimakan (sitrat, askorbat).', '"All acids are dangerous." Many weak acids are edible (citric, ascorbic).'],
       ['"pH 0 berarti tidak ada asam." Justru sangat asam.', '"pH 0 means no acid." It means very acidic.'],
     ],
-    assessment: ['Kuis Moleculium dan laporan titrasi cuka.', 'Moleculium quiz and a vinegar titration report.'],
+    assessment: ['Kuis Alchemist dan laporan titrasi cuka.', 'Alchemist quiz and a vinegar titration report.'],
   },
+  refs: ["14-1-bronsted-lowry-acids-and-bases", "14-2-ph-and-poh", "14-3-relative-strengths-of-acids-and-bases", "14-6-buffers", "14-7-acid-base-titrations", "15-2-lewis-acids-and-bases"],
 };

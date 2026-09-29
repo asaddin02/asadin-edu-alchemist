@@ -1,4 +1,4 @@
-# Moleculium — Curiosity Studio
+# Alchemist — Curiosity Studio
 
 ## Design direction
 
@@ -8,23 +8,25 @@ The home page provides a starting lesson, 3D molecule link, catalogue search, da
 
 ## Shared system
 
-- `css/moleculium.css`: visual tokens, responsive shell, home composition, shared cards, headers, reading layouts, laboratories, quizzes, print, and reduced motion.
+- `css/alchemist.css`: visual tokens, responsive shell, home composition, shared cards, headers, reading layouts, laboratories, quizzes, print, and reduced motion.
+- `css/explorer.css`: the encyclopedia layer — knowledge-map chain and domain cards, unified search results, nuclear notation and reaction equations, the chart of nuclides, ion cards, PDB figures and reference lists. Mobile-first with 44 px touch targets.
+- The chart of nuclides and the half-life lab use one ordinal blue ramp for half-life bands (sub-second `#86b6ef` → stable `#0d366b`), with an outline for unknown half-lives, so colour is never the only cue. The half-life lab draws parent atoms as filled squares and decay products as orange outlines.
 - Primary blue: `#2563eb`; strong blue: `#194dc5`; yellow: `#ffda66`; page: `#f7f9fd`; ink: `#192c4b`.
 - Plus Jakarta Sans is served locally from `assets/fonts/` under the included SIL Open Font License. No font service is contacted by the app.
 - Light mode is fixed in HTML, preferences, CSS, and the web manifest. Previous dark preferences are ignored. The theme switch is removed.
 - Animations use opacity and transforms. Decorative motion stops after four seconds and is disabled for reduced-motion preferences.
 - Chemistry-specific category and hazard colours retain their scientific meaning.
 
-## Generated brand assets
+## Brand assets
 
-The new logo was generated using the built-in image generation tool. The selected original is `assets/brand/logo.png`. Header and footer use this asset. `npm run icons` creates favicon, Apple/PWA icons, a maskable icon, and the sharing image from it. The previous SVG is retained as an unused historical asset.
+Alchemist uses a cobalt-blue tile with a white flask silhouette shaped like an A, yellow liquid, and a yellow particle. The flask connects the name to chemistry and transformation; its simple geometry stays legible at navigation and favicon sizes.
 
-Final generation prompt:
+`assets/brand/mark.svg` is the editable vector source. `npm run icons` renders `logo.png`, the favicon, Apple/PWA icons, the maskable icon, and the sharing image from this one source. Header and footer use `logo.png`. The maskable version keeps the mark within the safe zone.
 
-> Use case: logo-brand. Create a single polished brand symbol for Moleculium, a friendly professional chemistry learning platform for children. A bold rounded lowercase m made from three blue spherical molecule nodes connected by thick smooth blue curved bonds, with one small sunny yellow satellite node at the upper right. Compact memorable silhouette, clever scientific identity, cobalt blue #2563EB, deep blue #173B8F, sunny yellow #FFD34E. Clean flat vector-like design with very subtle dimensional highlights, approachable geometric curves. Symbol only, no text, no letters other than the abstract m implied by the molecule, no watermark, no presentation mockup. Centered generously filling a square canvas with a pure white background. Must read clearly at favicon and navigation icon sizes. One mark only.
+The public identity is **Alchemist · Asadin Edu**, an interactive chemistry encyclopedia and learning platform from primary school to university, including teacher resources. Home copy covers elements, isotopes, ions, molecules, materials and reactions, with level-based lessons, quizzes and virtual labs. Indonesian and English describe the same scope.
 
 ## Maintenance and verification
 
-Run `npm run icons` after updating the source logo, then `npm run build` to refresh offline assets. `npm run build:site` assembles the deployable site. Both logo and local font are precached.
+Run `npm run icons` after updating `assets/brand/mark.svg`, then `npm run build` to refresh offline assets. `npm run build:site` assembles the deployable site. Both logo and local font are precached.
 
 Regression coverage includes routing, stored preferences, catalogue searches, molecular views, periodic table, every virtual lab, quiz scoring, teacher worksheets, saved content, PWA installation/offline use, narrow-screen overflow, and automated WCAG 2.1 AA checks. Remote chemistry APIs are stubbed in the browser tests, so those tests verify app behaviour without asserting external API availability.

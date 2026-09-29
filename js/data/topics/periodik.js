@@ -8,6 +8,30 @@ export default {
     'How the 118 elements are arranged, what groups and periods mean, and how properties change in regular patterns.',
   ],
   body: {
+    sd: [
+      `Semua benda di alam tersusun dari 118 jenis atom yang disebut [[unsur]]. Para ilmuwan menyusun semua unsur dalam satu tabel besar, mirip kalender, yang disebut [[tabel-periodik|tabel periodik]].
+
+Setiap kotak berisi satu unsur dengan lambangnya: O untuk {{e:O|oksigen}}, C untuk {{e:C|karbon}}, Fe untuk {{e:Fe|besi}} (dari bahasa Latin *ferrum*), dan Au untuk {{e:Au|emas}} (dari *aurum*).
+
+Unsur yang berada dalam satu kolom sifatnya mirip, seperti saudara:
+
+- Di sebelah kiri dan tengah ada [[logam|logam]] yang mengilap, seperti besi, tembaga, dan emas.
+- Di kanan atas ada nonlogam, seperti oksigen dan belerang.
+- Di kolom paling kanan ada [[gas-mulia|gas mulia]], seperti helium dan neon, yang hampir tidak pernah bereaksi. Helium dipakai mengisi balon, neon untuk lampu reklame.
+
+Buka {{page:table|tabel periodik Alchemist}} dan ketuk unsur mana pun untuk melihat fotonya.`,
+      `Everything in nature is made of 118 kinds of atom called [[unsur|elements]]. Scientists arrange them all in one big chart, a bit like a calendar, called the [[tabel-periodik|periodic table]].
+
+Each box holds one element and its symbol: O for {{e:O|oxygen}}, C for {{e:C|carbon}}, Fe for {{e:Fe|iron}} (from the Latin *ferrum*) and Au for {{e:Au|gold}} (from *aurum*).
+
+Elements in the same column behave alike, like siblings:
+
+- On the left and in the middle are shiny [[logam|metals]], such as iron, copper and gold.
+- At the top right are nonmetals, such as oxygen and sulfur.
+- In the far-right column are the [[gas-mulia|noble gases]], such as helium and neon, which hardly ever react. Helium fills balloons; neon lights up signs.
+
+Open the {{page:table|Alchemist periodic table}} and tap any element to see its photo.`,
+    ],
     smp: [
       `[[tabel-periodik|Tabel periodik]] menyusun unsur menurut kenaikan [[nomor-atom]]. Baris mendatar disebut [[periode]] (7 periode) dan kolom tegak disebut [[golongan]] (18 golongan).
 
@@ -18,7 +42,7 @@ Unsur dalam satu golongan memiliki jumlah [[elektron-valensi]] yang sama sehingg
 - Golongan 17, halogen ({{e:F}}, {{e:Cl}}, Br, I): nonlogam reaktif pembentuk garam.
 - Golongan 18, [[gas-mulia]] ({{e:He}}, {{e:Ne}}, {{e:Ar}}): hampir tidak bereaksi.
 
-Sebagian besar unsur adalah logam (kiri dan tengah), nonlogam di kanan atas, dan [[metaloid]] seperti {{e:Si}} di perbatasan keduanya. Buka {{page:table|tabel periodik Moleculium}} untuk melihat foto dan data tiap unsur.`,
+Sebagian besar unsur adalah logam (kiri dan tengah), nonlogam di kanan atas, dan [[metaloid]] seperti {{e:Si}} di perbatasan keduanya. Buka {{page:table|tabel periodik Alchemist}} untuk melihat foto dan data tiap unsur.`,
       `The [[tabel-periodik|periodic table]] orders elements by increasing [[nomor-atom|atomic number]]. Rows are [[periode|periods]] (7) and columns are [[golongan|groups]] (18).
 
 Elements in a group share the same number of [[elektron-valensi|valence electrons]], so they behave alike:
@@ -28,7 +52,7 @@ Elements in a group share the same number of [[elektron-valensi|valence electron
 - Group 17, halogens ({{e:F}}, {{e:Cl}}, Br, I): reactive nonmetals that form salts.
 - Group 18, [[gas-mulia|noble gases]] ({{e:He}}, {{e:Ne}}, {{e:Ar}}): barely react.
 
-Most elements are metals (left and middle), nonmetals are at the top right, and [[metaloid|metalloids]] such as {{e:Si}} sit on the border. Open the {{page:table|Moleculium periodic table}} to see photos and data for every element.`,
+Most elements are metals (left and middle), nonmetals are at the top right, and [[metaloid|metalloids]] such as {{e:Si}} sit on the border. Open the {{page:table|Alchemist periodic table}} to see photos and data for every element.`,
     ],
     sma: [
       `Dmitri Mendeleev (1869) menyusun unsur berdasarkan massa atom dan sifatnya, bahkan menyisakan tempat kosong untuk unsur yang belum ditemukan (galium, germanium) lengkap dengan ramalan sifatnya. Henry Moseley (1913) menunjukkan bahwa dasar yang benar adalah nomor atom.
@@ -59,16 +83,16 @@ These patterns explain why {{e:Cs}} is so reactive, {{e:F}} is the most electron
 
 Kontraksi lantanida (pengisian 4f yang perisainya buruk) membuat unsur periode 6 blok d hampir seukuran periode 5: Hf dan Zr sangat mirip sehingga sulit dipisahkan. Efek pasangan inert membuat unsur berat golongan 13–15 (Tl, Pb, Bi) lebih stabil pada biloks rendah (+1, +2, +3).
 
-Hubungan diagonal (Li–Mg, Be–Al, B–Si) muncul karena kepadatan muatan yang mirip. Unsur superberat (Z > 103) dibuat di akselerator dengan umur paruh milidetik; sifat kimianya diteliti atom demi atom dan dipengaruhi efek relativistik yang kuat.
+Hubungan diagonal (Li–Mg, Be–Al, B–Si) muncul karena kepadatan muatan yang mirip. Unsur superberat (Z > 103) dibuat di akselerator; sebagian besar isotopnya hanya bertahan beberapa detik atau kurang, sehingga sifat kimianya diteliti atom demi atom dan dipengaruhi efek relativistik yang kuat.
 
-Data periodik di Moleculium diambil langsung dari tabel periodik PubChem (NIH); gunakan halaman unsur untuk membandingkan tren secara kuantitatif.`,
+Data periodik di Alchemist diambil langsung dari tabel periodik PubChem (NIH); gunakan halaman unsur untuk membandingkan tren secara kuantitatif.`,
       `First-ionisation anomalies confirm subshell structure: B < Be (a 2p electron leaves more easily than 2s) and O < N (pairing repulsion in a doubly occupied 2p orbital). F has a smaller electron affinity than Cl because the compact n = 2 shell is crowded.
 
 The lanthanide contraction (poorly shielding 4f electrons) makes period-6 d-block elements nearly as small as period 5: Hf and Zr are so alike they are hard to separate. The inert-pair effect makes heavy group 13–15 elements (Tl, Pb, Bi) prefer lower oxidation states (+1, +2, +3).
 
-Diagonal relationships (Li–Mg, Be–Al, B–Si) arise from similar charge densities. Superheavy elements (Z > 103) are made in accelerators with millisecond half-lives; their chemistry is studied atom by atom and shaped by strong relativistic effects.
+Diagonal relationships (Li–Mg, Be–Al, B–Si) arise from similar charge densities. Superheavy elements (Z > 103) are made in accelerators; most of their isotopes last seconds or less, so their chemistry is studied atom by atom and shaped by strong relativistic effects.
 
-Moleculium’s periodic data come straight from the PubChem (NIH) periodic table; use the element pages to compare trends quantitatively.`,
+Alchemist’s periodic data come straight from the PubChem (NIH) periodic table; use the element pages to compare trends quantitatively.`,
     ],
   },
   points: [
@@ -79,11 +103,15 @@ Moleculium’s periodic data come straight from the PubChem (NIH) periodic table
   molecules: ['sodium', 'chlorine', 'helium', 'silicon', 'gold'],
   labs: ['orbital', 'nyala'],
   activity: {
-    smp: ['Mainkan "tebak unsur": satu siswa menyebut petunjuk (golongan, wujud, kegunaan), siswa lain mencarinya di tabel periodik Moleculium.', 'Play "guess the element": one learner gives clues (group, state, use), others find it in the Moleculium periodic table.'],
-    sma: ['Buat grafik energi ionisasi pertama unsur Z = 1–36 dari data tabel periodik Moleculium dan jelaskan puncak serta lembahnya.', 'Plot first ionisation energies for Z = 1–36 from the Moleculium table and explain the peaks and dips.'],
+    sd: ["Buat kartu 20 unsur pertama berisi lambang dan namanya, lalu kelompokkan menjadi logam, nonlogam, dan gas mulia dengan bantuan tabel periodik Alchemist.", "Make cards for the first 20 elements with symbol and name, then sort them into metals, nonmetals and noble gases using the Alchemist periodic table."],
+    smp: ['Mainkan "tebak unsur": satu siswa menyebut petunjuk (golongan, wujud, kegunaan), siswa lain mencarinya di tabel periodik Alchemist.', 'Play "guess the element": one learner gives clues (group, state, use), others find it in the Alchemist periodic table.'],
+    sma: ['Buat grafik energi ionisasi pertama unsur Z = 1–36 dari data tabel periodik Alchemist dan jelaskan puncak serta lembahnya.', 'Plot first ionisation energies for Z = 1–36 from the Alchemist table and explain the peaks and dips.'],
     kuliah: ['Bandingkan jari-jari atom Zr–Hf dan Nb–Ta; jelaskan dengan kontraksi lantanida.', 'Compare atomic radii of Zr–Hf and Nb–Ta and explain with the lanthanide contraction.'],
   },
   quiz: [
+    { lv: 'sd', q: ["Lambang unsur besi adalah…", "The symbol for iron is…"], options: [["Ir", "Ir"], ["Fe", "Fe"], ["B", "B"], ["Be", "Be"]], answer: 1, explain: ["Fe berasal dari nama Latin besi, ferrum.", "Fe comes from the Latin name for iron, ferrum."] },
+    { lv: 'sd', q: ["Helium dan neon hampir tidak bereaksi. Keduanya termasuk…", "Helium and neon hardly react. They are…"], options: [["Logam", "Metals"], ["Gas mulia", "Noble gases"], ["Garam", "Salts"], ["Minyak", "Oils"]], answer: 1, explain: ["Gas mulia berada di kolom paling kanan tabel periodik.", "Noble gases sit in the far-right column of the table."] },
+    { lv: 'kuliah', q: ["Hf dan Zr sangat mirip dan sulit dipisahkan karena…", "Hf and Zr are so alike they are hard to separate because of…"], options: [["Kontraksi lantanida", "The lanthanide contraction"], ["Efek pasangan inert", "The inert-pair effect"], ["Hubungan diagonal", "A diagonal relationship"], ["Ikatan hidrogen", "Hydrogen bonding"]], answer: 0, explain: ["Elektron 4f yang lemah perisainya membuat Hf hampir sekecil Zr.", "Poorly shielding 4f electrons make Hf almost as small as Zr."] },
     { lv: 'smp', q: ['Kolom tegak pada tabel periodik disebut…', 'A vertical column of the periodic table is a…'], options: [['Periode', 'Period'], ['Golongan', 'Group'], ['Blok', 'Block'], ['Deret', 'Series']], answer: 1, explain: ['Golongan adalah kolom; periode adalah baris.', 'Groups are columns; periods are rows.'] },
     { lv: 'smp', q: ['Unsur yang hampir tidak bereaksi berada di golongan…', 'Elements that barely react are in group…'], options: [['1', '1'], ['2', '2'], ['17', '17'], ['18', '18']], answer: 3, explain: ['Golongan 18 adalah gas mulia dengan kulit terluar penuh.', 'Group 18 are noble gases with full outer shells.'] },
     { lv: 'smp', q: ['Silikon termasuk…', 'Silicon is a…'], options: [['Logam', 'Metal'], ['Nonlogam', 'Nonmetal'], ['Metaloid', 'Metalloid'], ['Gas mulia', 'Noble gas']], answer: 2, explain: ['Silikon bersifat di antara logam dan nonlogam dan merupakan semikonduktor.', 'Silicon is between metals and nonmetals and is a semiconductor.'] },
@@ -102,10 +130,11 @@ Moleculium’s periodic data come straight from the PubChem (NIH) periodic table
     duration: ['3 × 45 menit', '3 × 45 min'],
     steps: [
       ['Kisah Mendeleev dan kartu unsur: siswa menyusun kartu berdasarkan sifat.', 'Mendeleev’s story and element cards: learners sort cards by properties.'],
-      ['Eksplorasi tabel periodik Moleculium (warna kategori, foto unsur).', 'Explore the Moleculium periodic table (category colours, photos).'],
+      ['Eksplorasi tabel periodik Alchemist (warna kategori, foto unsur).', 'Explore the Alchemist periodic table (category colours, photos).'],
       ['Analisis data tren dan presentasi kelompok.', 'Trend data analysis and group presentations.'],
     ],
     misconceptions: [['"Unsur disusun menurut massa atom." Dasar modern adalah nomor atom.', '"Elements are ordered by mass." The modern basis is atomic number.']],
-    assessment: ['Kuis Moleculium dan grafik tren sifat periodik.', 'Moleculium quiz and a periodic-trend graph.'],
+    assessment: ['Kuis Alchemist dan grafik tren sifat periodik.', 'Alchemist quiz and a periodic-trend graph.'],
   },
+  refs: ["2-5-the-periodic-table", "6-5-periodic-variations-in-element-properties", "18-1-periodicity"],
 };

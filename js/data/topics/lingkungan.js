@@ -87,6 +87,7 @@ In Indonesia key issues include peatland fires (CO₂ and particulates), mercury
     kuliah: ['Bandingkan log Kow dan waktu paruh 5 pestisida dari PubChem; tentukan mana yang paling berpotensi bioakumulasi.', 'Compare log Kow and half-lives of 5 pesticides from PubChem and decide which is most likely to bioaccumulate.'],
   },
   quiz: [
+    { lv: 'kuliah', q: ["Singkatan PBT pada zat pencemar berarti…", "For pollutants, PBT stands for…"], options: [["Persisten, bioakumulatif, toksik", "Persistent, bioaccumulative, toxic"], ["Polimer, basa, tiol", "Polymer, base, thiol"], ["Padat, beku, tekanan", "Solid, frozen, pressure"], ["Pestisida, bahan, tanah", "Pesticide, material, soil"]], answer: 0, explain: ["Zat PBT tahan lama, menumpuk di jaringan, dan beracun; diatur Konvensi Stockholm.", "PBT substances persist, build up in tissue and are toxic; they are regulated by the Stockholm Convention."] },
     { lv: 'sd', q: ['Gas yang membuat Bumi makin panas bila terlalu banyak adalah…', 'Which gas warms the Earth when there is too much of it?'], options: [['Oksigen', 'Oxygen'], ['Karbon dioksida', 'Carbon dioxide'], ['Nitrogen', 'Nitrogen'], ['Helium', 'Helium']], answer: 1, explain: ['CO₂ menahan panas seperti selimut (efek rumah kaca).', 'CO₂ traps heat like a blanket (greenhouse effect).'] },
     { lv: 'sd', q: ['Cara terbaik mengurangi sampah plastik adalah…', 'The best way to reduce plastic waste is to…'], options: [['Membakarnya', 'Burn it'], ['Membuang ke sungai', 'Throw it in the river'], ['Membawa tas dan botol sendiri', 'Bring your own bag and bottle'], ['Menguburnya', 'Bury it']], answer: 2, explain: ['Mengurangi pemakaian lebih baik daripada membuang atau membakar.', 'Using less is better than dumping or burning.'] },
     { lv: 'smp', q: ['Hujan asam terutama disebabkan oleh gas…', 'Acid rain is mainly caused by…'], options: [['O₂ dan N₂', 'O₂ and N₂'], ['SO₂ dan NO₂', 'SO₂ and NO₂'], ['He dan Ar', 'He and Ar'], ['H₂ dan O₂', 'H₂ and O₂']], answer: 1, explain: ['SO₂ dan NO₂ bereaksi dengan air membentuk H₂SO₄ dan HNO₃.', 'SO₂ and NO₂ react with water to form H₂SO₄ and HNO₃.'] },
@@ -109,6 +110,7 @@ In Indonesia key issues include peatland fires (CO₂ and particulates), mercury
       ['Rancang solusi: bank sampah, kompos, atau penjernih air.', 'Design a solution: waste bank, compost or water filter.'],
     ],
     misconceptions: [['"Lubang ozon penyebab utama pemanasan global." Keduanya masalah berbeda; pemanasan global terutama akibat gas rumah kaca.', '"The ozone hole causes global warming." They are different problems; warming is mainly from greenhouse gases.']],
-    assessment: ['Kuis Moleculium dan presentasi proyek solusi lingkungan.', 'Moleculium quiz and an environmental-solution project presentation.'],
+    assessment: ['Kuis Alchemist dan presentasi proyek solusi lingkungan.', 'Alchemist quiz and an environmental-solution project presentation.'],
   },
+  refs: ["18-9-occurrence-preparation-and-compounds-of-oxygen", "18-10-occurrence-preparation-and-properties-of-sulfur", "11-5-colloids"],
 };

@@ -22,5 +22,691 @@
   "author": "User:Pslawinski",
   "license": "CC BY-SA 2.5",
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
- }
+ },
+ "weight": {
+  "value": "[39.792, 39.963]",
+  "kind": "interval",
+  "source": "ciaaw"
+ },
+ "natural": [
+  {
+   "A": 36,
+   "iso": "",
+   "mass": "35.967 5451(2)",
+   "abundance": "[0.0000, 0.0207]"
+  },
+  {
+   "A": 38,
+   "iso": "",
+   "mass": "37.962 732(2)",
+   "abundance": "[0.000, 0.043]"
+  },
+  {
+   "A": 40,
+   "iso": "",
+   "mass": "39.962 383 12(2)",
+   "abundance": "[0.936, 1.000]"
+  }
+ ],
+ "naturalSource": "ciaaw",
+ "nuclides": [
+  {
+   "A": 29,
+   "iso": "",
+   "mass": "29.040761 ± 0.000471",
+   "half": "Not-specified >100ns",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "2p",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2018,
+   "est": true
+  },
+  {
+   "A": 30,
+   "iso": "",
+   "mass": "30.023694 ± 0.000192",
+   "half": "<10 ps",
+   "seconds": 1e-11,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "2p",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2015,
+   "est": true
+  },
+  {
+   "A": 31,
+   "iso": "",
+   "mass": "31.012158 ± 0.000215",
+   "half": "15.0 ms ± 0.3",
+   "seconds": 0.015,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 68.3
+    },
+    {
+     "mode": "β+2p",
+     "op": "=",
+     "pct": 9
+    },
+    {
+     "mode": "β+pα",
+     "op": "<",
+     "pct": 0.38
+    },
+    {
+     "mode": "β+3p",
+     "op": "=",
+     "pct": 0.07
+    },
+    {
+     "mode": "β+α",
+     "op": "<",
+     "pct": 0.03
+    },
+    {
+     "mode": "2p",
+     "op": "<",
+     "pct": 0.0006
+    }
+   ],
+   "year": 1986,
+   "est": true
+  },
+  {
+   "A": 32,
+   "iso": "",
+   "mass": "31.997637824 ± 0.0000019",
+   "half": "98 ms ± 2",
+   "seconds": 0.098,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 35.58
+    }
+   ],
+   "year": 1977,
+   "est": false
+  },
+  {
+   "A": 33,
+   "iso": "",
+   "mass": "32.989925545 ± 0.00000043",
+   "half": "173.0 ms ± 2.0",
+   "seconds": 0.17300000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 38.7
+    }
+   ],
+   "year": 1964,
+   "est": false
+  },
+  {
+   "A": 34,
+   "iso": "",
+   "mass": "33.980270092 ± 0.000000083",
+   "half": "846.46 ms ± 0.35",
+   "seconds": 0.8464600000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1966,
+   "est": false
+  },
+  {
+   "A": 35,
+   "iso": "",
+   "mass": "34.975257719 ± 0.00000073",
+   "half": "1.7756 s ± 0.0010",
+   "seconds": 1.7756,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1940,
+   "est": false
+  },
+  {
+   "A": 36,
+   "iso": "",
+   "mass": "35.967545106 ± 0.000000028",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [
+    {
+     "mode": "2β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1920,
+   "est": false
+  },
+  {
+   "A": 37,
+   "iso": "",
+   "mass": "36.966776301 ± 0.000000221",
+   "half": "35.011 d ± 0.019",
+   "seconds": 3024950.4000000004,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1941,
+   "est": false
+  },
+  {
+   "A": 38,
+   "iso": "",
+   "mass": "37.962732102 ± 0.000000209",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1934,
+   "est": false
+  },
+  {
+   "A": 39,
+   "iso": "",
+   "mass": "38.964313037 ± 0.000005367",
+   "half": "268 y ± 8",
+   "seconds": 8457256189.440001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1950,
+   "est": false
+  },
+  {
+   "A": 40,
+   "iso": "",
+   "mass": "39.96238312204 ± 0.00000000234",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1920,
+   "est": false
+  },
+  {
+   "A": 41,
+   "iso": "",
+   "mass": "40.964500570 ± 0.000000372",
+   "half": "109.61 m ± 0.04",
+   "seconds": 6576.6,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1936,
+   "est": false
+  },
+  {
+   "A": 42,
+   "iso": "",
+   "mass": "41.963045737 ± 0.0000062",
+   "half": "32.9 y ± 1.1",
+   "seconds": 1038222868.0320001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1952,
+   "est": false
+  },
+  {
+   "A": 43,
+   "iso": "",
+   "mass": "42.965636056 ± 0.0000057",
+   "half": "5.37 m ± 0.06",
+   "seconds": 322.2,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1969,
+   "est": false
+  },
+  {
+   "A": 44,
+   "iso": "",
+   "mass": "43.964923814 ± 0.0000017",
+   "half": "11.87 m ± 0.05",
+   "seconds": 712.1999999999999,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1969,
+   "est": false
+  },
+  {
+   "A": 45,
+   "iso": "",
+   "mass": "44.968039731 ± 0.00000055",
+   "half": "21.48 s ± 0.15",
+   "seconds": 21.48,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1974,
+   "est": false
+  },
+  {
+   "A": 46,
+   "iso": "",
+   "mass": "45.968039244 ± 0.0000025",
+   "half": "8.4 s ± 0.6",
+   "seconds": 8.4,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1974,
+   "est": false
+  },
+  {
+   "A": 47,
+   "iso": "",
+   "mass": "46.972767112 ± 0.0000013",
+   "half": "1.23 s ± 0.03",
+   "seconds": 1.23,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "<",
+     "pct": 0.2
+    }
+   ],
+   "year": 1985,
+   "est": false
+  },
+  {
+   "A": 48,
+   "iso": "",
+   "mass": "47.976001000 ± 0.000018",
+   "half": "415 ms ± 15",
+   "seconds": 0.41500000000000004,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 38
+    }
+   ],
+   "year": 2004,
+   "est": false
+  },
+  {
+   "A": 49,
+   "iso": "",
+   "mass": "48.981685 ± 0.000429",
+   "half": "236 ms ± 8",
+   "seconds": 0.23600000000000002,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 29
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1989,
+   "est": true
+  },
+  {
+   "A": 50,
+   "iso": "",
+   "mass": "49.985797 ± 0.000537",
+   "half": "106 ms ± 6",
+   "seconds": 0.106,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 37
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1989,
+   "est": true
+  },
+  {
+   "A": 51,
+   "iso": "",
+   "mass": "50.993033 ± 0.000429",
+   "half": "30 ms >200ns",
+   "seconds": 0.03,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1989,
+   "est": true
+  },
+  {
+   "A": 52,
+   "iso": "",
+   "mass": "51.998519 ± 0.000644",
+   "half": "40 ms >620ns",
+   "seconds": 0.04,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2009,
+   "est": true
+  },
+  {
+   "A": 53,
+   "iso": "",
+   "mass": "53.007290 ± 0.00075",
+   "half": "20 ms >620ns",
+   "seconds": 0.02,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2009,
+   "est": true
+  },
+  {
+   "A": 54,
+   "iso": "",
+   "mass": "54.013484 ± 0.000859",
+   "half": "5 ms >400ns",
+   "seconds": 0.005,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2018,
+   "est": true
+  }
+ ],
+ "stableCount": 3,
+ "texts": {
+  "history": [
+   {
+    "text": "The name derives from the Greek argos for \"lazy\" or \"inactive\" because it does not combine with other elements. It was discovered in 1894 by the Scottish chemist William Ramsay and the English physicist Robert John Strutt (Lord Rayleigh) in liquefied air. Rayleigh's initial interest derived from a problem posed by the English physicist Henry Cavendish in 1785, i.e., when oxygen and nitrogen were removed from air, there was an unknown residual gas remaining.",
+    "source": "ciaaw"
+   },
+   {
+    "text": "Argon was discovered by Sir William Ramsay, a Scottish chemist, and Lord Rayleigh, an English chemist, in 1894. Argon makes up 0.93% of the earth's atmosphere, making it the third most abundant gas. Argon is obtained from the air as a byproduct of the production of oxygen and nitrogen.",
+    "source": "jlab"
+   },
+   {
+    "text": "From the Greek argos, inactive. Its presence in air was suspected by Cavendish in 1785, discovered by Lord Raleigh and Sir William Ramsay in 1894.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Argon is frequently used when an inert atmosphere is needed. It is used to fill incandescent and fluorescent light bulbs to prevent oxygen from corroding the hot filament. Argon is also used to form inert atmospheres for arc welding, growing semiconductor crystals and processes that require shielding from other atmospheric gases. Once thought to be completely inert, argon is known to form at least one compound. The synthesis of argon fluorohydride (HArF) was reported by Leonid Khriachtchev, Mika Pettersson, Nino Runeberg, Jan Lundell and Markku Räsänen in August of 2000. Stable only at very low temperatures, argon fluorohydride begins to decompose once it warms above -246°C (-411°F). Because of this limitation, argon fluorohydride has no uses outside of basic scientific research.",
+    "source": "jlab"
+   },
+   {
+    "text": "It is used in electric light bulbs and in fluorescent tubes at a pressure of about 400 Pa. and in filling photo tubes, glow tubes, etc. Argon is also used as an inert gas shield for arc welding and cutting, as blanket for the production of titanium and other reactive elements, and as a protective atmosphere for growing silicon and germanium crystals.",
+    "source": "lanl"
+   }
+  ],
+  "sources": [
+   {
+    "text": "The gas is prepared by fractionation of liquid air because the atmosphere contains 0.94% argon. The atmosphere of Mars contains 1.6% of 40Ar and 5 ppm of 36Ar.",
+    "source": "lanl"
+   }
+  ],
+  "description": [
+   {
+    "text": "Argon is two and one half times as soluble in water as nitrogen, having about the same solubility as oxygen. Argon is colorless and odorless, both as a gas and liquid. Argon is considered to be a very inert gas and is not known to form true chemical compounds, as do krypton, xenon, and radon.",
+    "source": "lanl"
+   }
+  ],
+  "isotopes": [
+   {
+    "text": "Naturally occurring argon is a mixture of three isotopes. Twelve other radioactive isotopes are known to exist.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Earth/Planetary Science",
+   "text": "Argon’s chemically inert properties and three stable isotopes make it an ideal tracer of Earth processes,,,,,,,,,,,. Measurements and models of the isotope-amount ratio n(40Ar)/n(36Ar) can provide insights about the evolution of the atmosphere and orogenic (mountain-building) history of the Earth. The comparison of results from potassium-argon and n(40Ar)/n(39Ar) isotope-amount-ratio dating methods with results from other dating methods has been used to study temperature histories of rocks through differences in apparent ages caused by excess argon or partial argon gas loss. The isotope-amount ratio n(40Ar)/n(36Ar) of dissolved argon in groundwater can provide hydrologic information, such as rates of crustal degassing and relative groundwater age. 38Ar produced by cosmic-ray bombardment of rocks and soils at Earth’s surface can provide information about surface exposure history and erosion rate.",
+   "source": "iptei"
+  },
+  {
+   "topic": "Geochronology",
+   "text": "Argon isotopes are used to date rock samples, especially volcanic rocks, using two related techniques (Fig. IUPAC.18.1),,,. –The first technique is potassium-argon dating (K-Ar), which is based on the decay of radioactive 40K to stable 40Ar. By comparing the concentrations of potassium and 40Ar in a sample, it is possible to determine how long the sample has been accumulating radiogenic 40Ar to determine the “age” of the sample. The half-life of 40K is approximately 1.25×109 years, making this a useful tool for dating rocks range in age from about 106 to 109 years. –A modification of the potassium-argon dating technique is the n(40Ar)/n(39Ar) isotope-amount-ratio technique, in which a sample is irradiated in a nuclear reactor to produce 39Ar from 39K. The isotope-amount ratio n(40Ar)/n(39Ar) is then determined, and from this, the approximate age of the rock can be calculated (Fig. IUPAC.18.2). The study of 37Ar (half-life of 35 days), 39Ar (half-life of 268 years), and 40Ar concentrations in groundwater can provide information about the production and release of these isotopes from rocks and other sources into groundwater and the relative ages of different groundwaters,,,,,.  ",
+   "source": "iptei"
+  },
+  {
+   "topic": "Industry",
+   "text": "38K (half-life of 7.6 min), which is produced by the reactions 38Ar (p, n) 38K and 40Ar (n, 3n) 38K, is a widely used blood-flow tracer. Because 38Ar is more expensive, 40Ar, which also offers many additional advantages as a target, is more commonly used to produce 38K for medical purposes,. 41Ar (half-life of 1.82 h) is used as an industrial gas-flow tracer to help track the movement of gases because its inert properties, half-life, and gamma radiation make it well suited for this purpose.",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "3.5 milligrams per kilogram",
+  "ocean": "4.5×10^-1 milligrams per liter",
+  "source": "jlab"
+ },
+ "physical": "Gas",
+ "forms": [
+  {
+   "cid": 23968,
+   "name": "argon",
+   "formula": "Ar",
+   "charge": 0,
+   "smiles": "[Ar]"
+  }
+ ],
+ "refs": {
+  "ciaaw": {
+   "name": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+   "url": "https://www.ciaaw.org/argon.htm"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele018.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/18.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": "argon",
+ "ghs": {
+  "signal": "Warning",
+  "pictograms": [
+   {
+    "code": "GHS04",
+    "label": "Compressed Gas"
+   }
+  ],
+  "hazards": [
+   "H280 (68%): Contains gas under pressure; may explode if heated",
+   "H281 (33.3%): Contains refrigerated gas; may cause cryogenic burns or injury"
+  ],
+  "reports": 643,
+  "notMet": 0.6,
+  "notClassified": false,
+  "source": "European Chemicals Agency (ECHA)"
+ },
+ "ghsCid": 23968
 }

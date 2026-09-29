@@ -13,5 +13,376 @@
    "url": "https://en.wikipedia.org/wiki/Roentgenium"
   }
  },
- "photo": null
+ "photo": null,
+ "weight": {
+  "value": "280.16514(61#)",
+  "kind": "isotope-mass",
+  "A": 280,
+  "estimated": true,
+  "source": "nist"
+ },
+ "natural": [],
+ "naturalSource": null,
+ "nuclides": [
+  {
+   "A": 272,
+   "iso": "",
+   "mass": "272.153273 ± 0.000251",
+   "half": "4.2 ms ± 1.1",
+   "seconds": 0.004200000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1995,
+   "est": true
+  },
+  {
+   "A": 273,
+   "iso": "",
+   "mass": "273.153393 ± 0.000429",
+   "half": "2 ms",
+   "seconds": 0.002,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 274,
+   "iso": "",
+   "mass": "274.155247 ± 0.000225",
+   "half": "20 ms ± 11",
+   "seconds": 0.02,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    }
+   ],
+   "year": 2004,
+   "est": true
+  },
+  {
+   "A": 275,
+   "iso": "",
+   "mass": "275.156088 ± 0.000479",
+   "half": "5 ms",
+   "seconds": 0.005,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 276,
+   "iso": "",
+   "mass": "276.158226 ± 0.000675",
+   "half": "10 ms",
+   "seconds": 0.01,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 277,
+   "iso": "",
+   "mass": "277.159322 ± 0.000504",
+   "half": "4 ms",
+   "seconds": 0.004,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 278,
+   "iso": "",
+   "mass": "278.161590 ± 0.000417",
+   "half": "8 ms ± 5",
+   "seconds": 0.008,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2007,
+   "est": true
+  },
+  {
+   "A": 279,
+   "iso": "",
+   "mass": "279.162880 ± 0.000453",
+   "half": "170 ms ± 110",
+   "seconds": 0.17,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2004,
+   "est": true
+  },
+  {
+   "A": 280,
+   "iso": "",
+   "mass": "280.165204 ± 0.000571",
+   "half": "4.3 s ± 0.5",
+   "seconds": 4.3,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2004,
+   "est": true
+  },
+  {
+   "A": 281,
+   "iso": "",
+   "mass": "281.166757 ± 0.000831",
+   "half": "19 s ± 5",
+   "seconds": 19,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": "=",
+     "pct": 87
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 13
+    }
+   ],
+   "year": 2010,
+   "est": true
+  },
+  {
+   "A": 282,
+   "iso": "",
+   "mass": "282.169343 ± 0.000631",
+   "half": "130 s ± 50",
+   "seconds": 130,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2010,
+   "est": true
+  },
+  {
+   "A": 283,
+   "iso": "",
+   "mass": "283.171101 ± 0.000728",
+   "half": "2 m",
+   "seconds": 120,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 284,
+   "iso": "",
+   "mass": "284.173882 ± 0.000537",
+   "half": "1 m",
+   "seconds": 60,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 285,
+   "iso": "",
+   "mass": "285.175771 ± 0.000644",
+   "half": "30 s",
+   "seconds": 30,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 286,
+   "iso": "",
+   "mass": "286.178756 ± 0.000492",
+   "half": "10 s",
+   "seconds": 10,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2016,
+   "est": true
+  }
+ ],
+ "stableCount": 0,
+ "texts": {
+  "history": [
+   {
+    "text": "Roentgenium was first produced by Peter Armbruster, Gottfried Münzenber and their team working at the Gesellschaft für Schwerionenforschung in Darmstadt, Germany in late 1994. They bombarded atoms of bismuth-209 with ions of nickel-64 with a device known as a linear accelerator. This produced three atoms of roentgenium-272, an isotope with a half-life of about 1.5 milliseconds (0.0015 seconds), and a free neutron. Roentgenium's most stable isotope, roentgenium-281, has a half-life of about 26 seconds and decays through spontaneous fission.",
+    "source": "jlab"
+   },
+   {
+    "text": "Discovered by Gesellschaft Schwerionenforschung (GSI) in Darmstadt, in 1994. Reasearch group of S. Hofmann, V. Ninov, F.P. Hessberger, P. Armbruster, H. Folger, G. Munzenberg, H.J. Schott, and others.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Since only a few atoms of roentgenium have ever been produced, it currently has no uses outside of basic scientific research.",
+    "source": "jlab"
+   }
+  ],
+  "description": [
+   {
+    "text": "Roentgenium does not occur naturally in the Earth’s crust. Roentgenium was first synthesized by an international team of scientists from the GSI in Darmstadt, Germany, the Joint Institute for Nuclear Research (JINR) in Dubna, Russia, the Comenius University in Bratislava, Slovakia, and the University of Jyväskylä, Finland at the GSI Helmholtz Center for Heavy Ion Research in Darmstadt, Germany in 1994, using the nuclear reaction 209Bi (64Ni, n) 272Rg. The credit for the first synthesis was confirmed in 2003. The element was named after Wilhelm Conrad Roentgen (Fig. IUPAC.111.1), who discovered X-rays in 1895 [660], [661], [662]. Roentgenium has no known isotopic applications aside from scientific research.",
+    "source": "iptei"
+   },
+   {
+    "text": "Roentgenium is named after Wilhelm Conrad Röntgen.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [],
+ "abundance": {
+  "crust": "Not Applicable",
+  "ocean": "Not Applicable",
+  "source": "jlab"
+ },
+ "physical": "Expected to be a Solid",
+ "forms": [
+  {
+   "cid": 135476786,
+   "name": "",
+   "formula": "Rg",
+   "charge": 0,
+   "smiles": "*"
+  }
+ ],
+ "refs": {
+  "nist": {
+   "name": "NIST Physical Measurement Laboratory",
+   "url": "https://physics.nist.gov/cgi-bin/Elements/elInfo.pl?element=111"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele111.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/111.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": null,
+ "ghs": null,
+ "ghsCid": null
 }

@@ -37,7 +37,9 @@ Try the {{lab:wujud|Particles & states}} simulation to see how particles "dance"
 
 Saat dipanaskan, partikel mendapat energi kinetik lebih besar. Selama zat [[mencair]] atau mendidih, suhunya tetap karena kalor dipakai untuk melawan gaya tarik antarpartikel. Perubahan wujud adalah **perubahan fisika**: zatnya tetap sama.
 
-Zat dibedakan menjadi [[zat-tunggal]] ([[unsur]] dan [[senyawa]]) serta [[campuran]]. Campuran homogen (larutan gula, udara) tampak menyatu, campuran heterogen (pasir dalam air) tidak. Campuran dipisahkan secara fisika: penyaringan, penguapan, distilasi (penyulingan minyak atsiri seperti {{m:eugenol|minyak cengkeh}}), kromatografi, dan sublimasi.`,
+Zat dibedakan menjadi [[zat-tunggal]] ([[unsur]] dan [[senyawa]]) serta [[campuran]]. Campuran homogen (larutan gula, udara) tampak menyatu, campuran heterogen (pasir dalam air) tidak. Campuran dipisahkan secara fisika: penyaringan, penguapan, distilasi (penyulingan minyak atsiri seperti {{m:eugenol|minyak cengkeh}}), kromatografi, dan sublimasi.
+
+Jenis campuran, konsentrasi, dan koloid dibahas di {{learn:larutan|Larutan, koloid & suspensi}}.`,
       `According to **particle theory**, matter is made of particles (atoms, ions or molecules) that are always moving and attract each other.
 
 - In solids particles are packed tightly and only vibrate in place.
@@ -46,7 +48,9 @@ Zat dibedakan menjadi [[zat-tunggal]] ([[unsur]] dan [[senyawa]]) serta [[campur
 
 Heating gives particles more kinetic energy. While a substance [[mencair|melts]] or boils its temperature stays constant, because the heat is used to overcome attractions between particles. Changes of state are **physical changes**: the substance stays the same.
 
-Matter is either a [[zat-tunggal|pure substance]] ([[unsur|elements]] and [[senyawa|compounds]]) or a [[campuran|mixture]]. Homogeneous mixtures (sugar solution, air) look uniform; heterogeneous ones (sand in water) do not. Mixtures are separated physically: filtration, evaporation, distillation (as in extracting essential oils like {{m:eugenol|clove oil}}), chromatography and sublimation.`,
+Matter is either a [[zat-tunggal|pure substance]] ([[unsur|elements]] and [[senyawa|compounds]]) or a [[campuran|mixture]]. Homogeneous mixtures (sugar solution, air) look uniform; heterogeneous ones (sand in water) do not. Mixtures are separated physically: filtration, evaporation, distillation (as in extracting essential oils like {{m:eugenol|clove oil}}), chromatography and sublimation.
+
+Types of mixture, concentration and colloids are covered in {{learn:larutan|Solutions, colloids & suspensions}}.`,
     ],
     sma: [
       `Wujud zat ditentukan oleh persaingan antara energi kinetik partikel dan [[gaya-antarmolekul]]. Zat dengan gaya tarik kuat, seperti air dengan [[ikatan-hidrogen]], memiliki [[titik-didih]] tinggi dibanding molekul seukuran seperti {{m:hydrogen-sulfide|H₂S}}.
@@ -64,6 +68,18 @@ Water’s heating curve has two plateaus: melting (heat of fusion 6.01 kJ/mol) a
 
 Colligative properties (vapour-pressure lowering, boiling-point elevation, freezing-point depression, osmotic pressure) depend only on the number of dissolved particles, not their identity.`,
     ],
+    kuliah: [
+      `Diagram fase merangkum keadaan setimbang zat murni. Aturan fase Gibbs, F = C − P + 2, memberi derajat kebebasan: di titik tripel air (273,16 K; 611,657 Pa) tiga fase hidup berdampingan dan F = 0. Garis padat–cair air miring ke kiri karena es lebih renggang daripada air cair, sehingga tekanan tinggi menurunkan titik leleh; hampir semua zat lain miring ke kanan. Di atas titik kritis air (sekitar 647 K dan 22,1 MPa) cair dan gas tidak dapat dibedakan lagi: fluida superkritis, pelarut hijau untuk ekstraksi.
+
+Kemiringan setiap garis fase diberikan persamaan Clapeyron, dP/dT = ΔH/(TΔV). Keadaan metastabil juga penting: cairan dapat didinginkan di bawah titik bekunya (pendinginan super) atau dipanaskan di atas titik didihnya tanpa berubah fase, sampai ada inti kristal atau gelembung.
+
+Selain padat, cair, gas, dan [[plasma]] ada fase antara seperti kristal cair ({{m:liquid-crystal-5cb|5CB}} pada layar LCD) yang molekulnya searah tetapi dapat mengalir, serta [[padatan-amorf|padatan amorf]] yang melunak pada suhu transisi gelas. Kemurnian zat diuji dengan titik leleh tajam; campuran meleleh dalam rentang suhu dan dapat membentuk eutektik.`,
+      `A phase diagram summarises the equilibrium states of a pure substance. Gibbs’ phase rule, F = C − P + 2, gives the degrees of freedom: at water’s triple point (273.16 K; 611.657 Pa) three phases coexist and F = 0. Water’s solid–liquid line slopes left because ice is more open than liquid water, so high pressure lowers its melting point; almost every other substance slopes right. Above water’s critical point (about 647 K and 22.1 MPa) liquid and gas can no longer be told apart: a supercritical fluid, a green solvent for extraction.
+
+The slope of each phase line is given by the Clapeyron equation, dP/dT = ΔH/(TΔV). Metastable states matter too: a liquid can be cooled below its freezing point (supercooling) or heated above its boiling point without changing phase, until a crystal seed or bubble appears.
+
+Besides solid, liquid, gas and [[plasma]] there are intermediate phases such as liquid crystals ({{m:liquid-crystal-5cb|5CB}} in LCD screens), whose molecules line up yet can flow, and [[padatan-amorf|amorphous solids]] that soften at a glass-transition temperature. Purity is tested by a sharp melting point; mixtures melt over a range and can form eutectics.`,
+    ],
   },
   points: [
     ['Tiga wujud utama: padat, cair, gas; plasma adalah wujud keempat di bintang dan petir.', 'Three main states: solid, liquid, gas; plasma is a fourth state in stars and lightning.'],
@@ -79,6 +95,8 @@ Colligative properties (vapour-pressure lowering, boiling-point elevation, freez
     sma: ['Ukur suhu air yang dipanaskan setiap 30 detik hingga mendidih 3 menit. Buat grafik suhu–waktu dan jelaskan dataran pada kurva.', 'Measure the temperature of heated water every 30 s until it has boiled for 3 minutes. Plot temperature vs time and explain the plateau.'],
   },
   quiz: [
+    { lv: 'kuliah', q: ["Di titik tripel air murni, derajat kebebasan menurut aturan fase Gibbs adalah…", "At the triple point of pure water, the degrees of freedom by Gibbs’ phase rule are…"], options: [["0", "0"], ["1", "1"], ["2", "2"], ["3", "3"]], answer: 0, explain: ["F = C − P + 2 = 1 − 3 + 2 = 0: suhu dan tekanan tertentu.", "F = C − P + 2 = 1 − 3 + 2 = 0: a fixed temperature and pressure."] },
+    { lv: 'kuliah', q: ["Garis padat–cair air miring negatif karena…", "Water’s solid–liquid line slopes negatively because…"], options: [["Es lebih rapat daripada air", "Ice is denser than water"], ["Es kurang rapat daripada air cair", "Ice is less dense than liquid water"], ["Air tidak punya titik tripel", "Water has no triple point"], ["Kalor lebur air negatif", "Water’s heat of fusion is negative"]], answer: 1, explain: ["ΔV leleh negatif sehingga dP/dT = ΔH/(TΔV) negatif.", "ΔV of melting is negative, so dP/dT = ΔH/(TΔV) is negative."] },
     { lv: 'sd', q: ['Wujud zat apa yang bentuknya mengikuti wadahnya?', 'Which state takes the shape of its container?'], options: [['Padat', 'Solid'], ['Cair', 'Liquid'], ['Batu', 'Stone'], ['Kayu', 'Wood']], answer: 1, explain: ['Zat cair mengalir dan mengikuti bentuk wadah, tetapi volumenya tetap.', 'Liquids flow and take their container’s shape but keep their volume.'] },
     { lv: 'sd', q: ['Kapur barus di lemari lama-lama mengecil. Peristiwa ini disebut…', 'Mothballs in a wardrobe slowly shrink. This is called…'], options: [['Mencair', 'Melting'], ['Membeku', 'Freezing'], ['Menyublim', 'Sublimation'], ['Mengembun', 'Condensation']], answer: 2, explain: ['Kapur barus berubah langsung dari padat menjadi gas: menyublim.', 'Mothballs go straight from solid to gas: sublimation.'] },
     { lv: 'sd', q: ['Titik-titik air di luar gelas berisi es terjadi karena…', 'Droplets outside a glass of ice form because…'], options: [['Air merembes dari gelas', 'Water leaks through the glass'], ['Uap air di udara mengembun', 'Water vapour in the air condenses'], ['Es mencair ke luar', 'Ice melts outwards'], ['Gelas berkeringat', 'The glass sweats']], answer: 1, explain: ['Uap air di udara bersentuhan dengan permukaan dingin lalu berubah menjadi cair (mengembun).', 'Water vapour touches the cold surface and turns liquid (condenses).'] },
@@ -100,12 +118,13 @@ Colligative properties (vapour-pressure lowering, boiling-point elevation, freez
       ['Pemantik: tunjukkan es batu, air, dan uap dari teko. Tanyakan: "Apakah ketiganya zat yang sama?"', 'Hook: show ice, water and steam from a kettle. Ask: "Are they the same substance?"'],
       ['Eksplorasi simulasi Partikel & wujud zat; siswa menggambar susunan partikel.', 'Explore the Particles & states simulation; learners draw particle arrangements.'],
       ['Praktikum pemisahan campuran dalam kelompok.', 'Group practical on separating mixtures.'],
-      ['Refleksi dan kuis singkat Moleculium.', 'Reflection and a short Moleculium quiz.'],
+      ['Refleksi dan kuis singkat Alchemist.', 'Reflection and a short Alchemist quiz.'],
     ],
     misconceptions: [
       ['"Gelembung air mendidih berisi udara." Sebenarnya berisi uap air.', '"Bubbles in boiling water are air." They are water vapour.'],
       ['"Gas tidak punya massa." Gas punya massa; balon berisi udara lebih berat daripada balon kempis.', '"Gases have no mass." They do; an inflated balloon weighs more than a flat one.'],
     ],
-    assessment: ['Kuis Moleculium + laporan praktikum pemisahan campuran (rubrik: prosedur, data, kesimpulan).', 'Moleculium quiz + separation practical report (rubric: method, data, conclusion).'],
+    assessment: ['Kuis Alchemist + laporan praktikum pemisahan campuran (rubrik: prosedur, data, kesimpulan).', 'Alchemist quiz + separation practical report (rubric: method, data, conclusion).'],
   },
+  refs: ["1-2-phases-and-classification-of-matter", "1-3-physical-and-chemical-properties", "10-3-phase-transitions", "10-4-phase-diagrams"],
 };

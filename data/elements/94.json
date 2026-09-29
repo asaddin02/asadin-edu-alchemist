@@ -22,5 +22,870 @@
   "author": "Los Alamos National Laboratory",
   "license": "Attribution",
   "licenseUrl": ""
- }
+ },
+ "weight": {
+  "value": "[244]",
+  "kind": "mass-number",
+  "A": 244,
+  "source": "nist"
+ },
+ "natural": [],
+ "naturalSource": "nist",
+ "nuclides": [
+  {
+   "A": 221,
+   "iso": "",
+   "mass": "221.038572 ± 0.000322",
+   "half": "100 us",
+   "seconds": 0.00009999999999999999,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 222,
+   "iso": "",
+   "mass": "222.037638 ± 0.000322",
+   "half": "10 us",
+   "seconds": 0.000009999999999999999,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 223,
+   "iso": "",
+   "mass": "223.038777 ± 0.000322",
+   "half": "10 us",
+   "seconds": 0.000009999999999999999,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 224,
+   "iso": "",
+   "mass": "224.037875 ± 0.000322",
+   "half": "10 us",
+   "seconds": 0.000009999999999999999,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 225,
+   "iso": "",
+   "mass": "225.038970 ± 0.000322",
+   "half": "100 us",
+   "seconds": 0.00009999999999999999,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 226,
+   "iso": "",
+   "mass": "226.038250 ± 0.000215",
+   "half": "10 ms",
+   "seconds": 0.01,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 227,
+   "iso": "",
+   "mass": "227.039474 ± 0.000107",
+   "half": "2 s",
+   "seconds": 2,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 228,
+   "iso": "",
+   "mass": "228.038763325 ± 0.000025069",
+   "half": "2.1 s ± 1.3",
+   "seconds": 2.1,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1994,
+   "est": false
+  },
+  {
+   "A": 229,
+   "iso": "",
+   "mass": "229.040145099 ± 0.000065092",
+   "half": "91 s ± 26",
+   "seconds": 91,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 50
+    },
+    {
+     "mode": "β+",
+     "op": "≈",
+     "pct": 50
+    },
+    {
+     "mode": "SF",
+     "op": "<",
+     "pct": 7
+    }
+   ],
+   "year": 1994,
+   "est": false
+  },
+  {
+   "A": 230,
+   "iso": "",
+   "mass": "230.039648313 ± 0.000015514",
+   "half": "105 s ± 10",
+   "seconds": 105,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1990,
+   "est": false
+  },
+  {
+   "A": 231,
+   "iso": "",
+   "mass": "231.041125946 ± 0.000023683",
+   "half": "8.6 m ± 0.5",
+   "seconds": 516,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 13
+    }
+   ],
+   "year": 1999,
+   "est": false
+  },
+  {
+   "A": 232,
+   "iso": "",
+   "mass": "232.041182133 ± 0.000018126",
+   "half": "33.7 m ± 0.5",
+   "seconds": 2022.0000000000002,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": null
+    },
+    {
+     "mode": "α",
+     "op": "<",
+     "pct": 20
+    }
+   ],
+   "year": 1973,
+   "est": false
+  },
+  {
+   "A": 233,
+   "iso": "",
+   "mass": "233.042997411 ± 0.000058162",
+   "half": "20.9 m ± 0.4",
+   "seconds": 1254,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 0.12
+    }
+   ],
+   "year": 1957,
+   "est": false
+  },
+  {
+   "A": 234,
+   "iso": "",
+   "mass": "234.043317489 ± 0.000007298",
+   "half": "8.8 h ± 0.1",
+   "seconds": 31680.000000000004,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "ε",
+     "op": "≈",
+     "pct": 94
+    },
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 6
+    }
+   ],
+   "year": 1949,
+   "est": false
+  },
+  {
+   "A": 235,
+   "iso": "",
+   "mass": "235.045284609 ± 0.00002203",
+   "half": "25.3 m ± 0.5",
+   "seconds": 1518,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 99.9972
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 0.0028
+    }
+   ],
+   "year": 1957,
+   "est": false
+  },
+  {
+   "A": 236,
+   "iso": "",
+   "mass": "236.046056661 ± 0.000001942",
+   "half": "2.858 y ± 0.008",
+   "seconds": 90189694.73664,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "2β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1949,
+   "est": false
+  },
+  {
+   "A": 236,
+   "iso": "m",
+   "mass": "236.046056661 ± 0.000001942",
+   "half": "1.2 us ± 0.3",
+   "seconds": 0.0000012,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2005,
+   "est": false
+  },
+  {
+   "A": 237,
+   "iso": "",
+   "mass": "237.048407888 ± 0.000001821",
+   "half": "45.64 d ± 0.04",
+   "seconds": 3943296,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": 99.9958
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 0.0042
+    }
+   ],
+   "year": 1949,
+   "est": false
+  },
+  {
+   "A": 237,
+   "iso": "m",
+   "mass": "237.048407888 ± 0.000001821",
+   "half": "180 ms ± 20",
+   "seconds": 0.18,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1972,
+   "est": false
+  },
+  {
+   "A": 237,
+   "iso": "n",
+   "mass": "237.048407888 ± 0.000001821",
+   "half": "1.1 us ± 0.1",
+   "seconds": 0.0000011,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1970,
+   "est": false
+  },
+  {
+   "A": 238,
+   "iso": "",
+   "mass": "238.049558175 ± 0.000001221",
+   "half": "87.7 y ± 0.1",
+   "seconds": 2767542417.216,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1949,
+   "est": false
+  },
+  {
+   "A": 239,
+   "iso": "",
+   "mass": "239.052161596 ± 0.000001194",
+   "half": "24.11 ky ± 0.03",
+   "seconds": 760837487788.8,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1946,
+   "est": false
+  },
+  {
+   "A": 239,
+   "iso": "m",
+   "mass": "239.052161596 ± 0.000001194",
+   "half": "193 ns ± 4",
+   "seconds": 1.9300000000000002e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1955,
+   "est": false
+  },
+  {
+   "A": 239,
+   "iso": "n",
+   "mass": "239.052161596 ± 0.000001194",
+   "half": "7.5 us ± 1.0",
+   "seconds": 0.000007499999999999999,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1970,
+   "est": false
+  },
+  {
+   "A": 240,
+   "iso": "",
+   "mass": "240.053811740 ± 0.000001186",
+   "half": "6.561 ky ± 0.007",
+   "seconds": 207044992010.88004,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1949,
+   "est": false
+  },
+  {
+   "A": 240,
+   "iso": "m",
+   "mass": "240.053811740 ± 0.000001186",
+   "half": "165 ns ± 10",
+   "seconds": 1.65e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1967,
+   "est": false
+  },
+  {
+   "A": 241,
+   "iso": "",
+   "mass": "241.056849651 ± 0.000001186",
+   "half": "14.329 y ± 0.029",
+   "seconds": 452179193.80032,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 0.00245
+    }
+   ],
+   "year": 1949,
+   "est": false
+  },
+  {
+   "A": 241,
+   "iso": "m",
+   "mass": "241.056849651 ± 0.000001186",
+   "half": "880 ns ± 50",
+   "seconds": 8.8e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1975,
+   "est": false
+  },
+  {
+   "A": 241,
+   "iso": "n",
+   "mass": "241.056849651 ± 0.000001186",
+   "half": "20.5 us ± 2.2",
+   "seconds": 0.0000205,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1970,
+   "est": false
+  },
+  {
+   "A": 242,
+   "iso": "",
+   "mass": "242.058740979 ± 0.000001336",
+   "half": "375 ky ± 2",
+   "seconds": 11833847280000.002,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1950,
+   "est": false
+  },
+  {
+   "A": 243,
+   "iso": "",
+   "mass": "243.062002068 ± 0.000002728",
+   "half": "4.9553 h ± 0.0025",
+   "seconds": 17839.08,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1951,
+   "est": false
+  },
+  {
+   "A": 243,
+   "iso": "m",
+   "mass": "243.062002068 ± 0.000002728",
+   "half": "330 ns ± 30",
+   "seconds": 3.3e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1975,
+   "est": false
+  },
+  {
+   "A": 244,
+   "iso": "",
+   "mass": "244.064204401 ± 0.000002518",
+   "half": "81.3 My ± 0.3",
+   "seconds": 2565578090304000,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 99.877
+    },
+    {
+     "mode": "SF",
+     "op": "=",
+     "pct": 0.123
+    }
+   ],
+   "year": 1954,
+   "est": false
+  },
+  {
+   "A": 244,
+   "iso": "m",
+   "mass": "244.064204401 ± 0.000002518",
+   "half": "1.75 s ± 0.12",
+   "seconds": 1.75,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2016,
+   "est": false
+  },
+  {
+   "A": 245,
+   "iso": "",
+   "mass": "245.067824554 ± 0.000014621",
+   "half": "10.5 h ± 0.1",
+   "seconds": 37800,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1955,
+   "est": false
+  },
+  {
+   "A": 245,
+   "iso": "m",
+   "mass": "245.067824554 ± 0.000014621",
+   "half": "330 ns ± 20",
+   "seconds": 3.3e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2007,
+   "est": false
+  },
+  {
+   "A": 245,
+   "iso": "n",
+   "mass": "245.067824554 ± 0.000014621",
+   "half": "90 ns ± 30",
+   "seconds": 9.000000000000001e-8,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1971,
+   "est": false
+  },
+  {
+   "A": 246,
+   "iso": "",
+   "mass": "246.070204172 ± 0.000016087",
+   "half": "10.84 d ± 0.02",
+   "seconds": 936576,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1955,
+   "est": false
+  },
+  {
+   "A": 247,
+   "iso": "",
+   "mass": "247.074300 ± 0.000215",
+   "half": "2.27 d ± 0.23",
+   "seconds": 196128,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1983,
+   "est": true
+  }
+ ],
+ "stableCount": 0,
+ "texts": {
+  "history": [
+   {
+    "text": "Plutonium was first produced by Glenn T. Seaborg, Joseph W. Kennedy, Edward M. McMillan and Arthur C. Wohl by bombarding an isotope of uranium, uranium-238, with deuterons that had been accelerated in a device called a cyclotron. This created neptunium-238 and two free neutrons. Neptunium-238 has a half-life of 2.1 days and decays into plutonium-238 through beta decay. Although they conducted their work at the University of California in 1941, their discovery was not revealed to the rest of the scientific community until 1946 because of wartime security concerns. Plutonium's most stable isotope, plutonium-244, has a half-life of about 82,000,000 years. It decays into uranium-240 through alpha decay. Plutonium-244 will also decay through spontaneous fission.",
+    "source": "jlab"
+   },
+   {
+    "text": "Plutonium is the second transuranium element of the actinide series. Element 93 was discovered in 1940/41 by Glenn T. Seaborg, Edwin M. McMillan, J. W. Kennedy, and A. C. Wahl by deuteron bombardment of uranium-238 in the 60-inch cyclotron at the University of California, Berkeley Lab. They first synthesized neptunium-238 (half-life 2.1 days) which subsequently beta-decayed to form a new heavier element with atomic number 94 and atomic weight 238 (half-life 87.7 years). It was fitting that element 94 be named after the next planetoid, Pluto following the precedence that uranium was named after the planet Uranus and neptunium after the planet Neptune. Seaborg submitted a paper to the journal Physical Review in March 1941 documenting the discovery, but the paper was quickly withdrawn when it was found that an isotope of plutonium, Pu-239 could undergo nuclear fission making it useful in developing an atomic bomb. Pu-239 had a fission cross-section 50% greater than that of 235U, the best fissioning element known at that time. Seaborg was called away from Berkeley to lead the Plutonium Production Lab or \"Met Lab\" at the University of Chicago. The Met Lab was to produce useful quantities of plutonium as part of the secret Manhattan Project during World War II to develop an atomic bomb. On August 18, 1942, a trace quantity of plutonium was isolated and measured at the Met Lab for the first time. About 50 micrograms of Pu-239 combined with uranium and fission products was produced and only about 1 microgram was isolated. This was enough material for chemists to determine the new element's atomic weight. In November 1943 a few milligrams of PuF3 was reduced to create the first sample of plutonium metal. Enough plutonium was produced to make it the first man-made element to be visible to the unaided eye. The nuclear properties of plutonium-239 were also being studied and researchers found that when hit with a neutron it fissions by releasing energy and more neutrons. These neutrons can hit neighboring atoms of Pu-239 and so on, in an exponentially fast chain-reaction, releasing a tremendous amount of energy. This energy could result in an explosion large enough to destroy a city or fuel a nuclear reactor. During WW II the three primary research and production sites of the Manhattan Project were the Plutonium Production Facility at what is now the Hanford Site, Washington, the Uranium Enrichment facilities at Oak Ridge, Tennessee, and the weapons research and design laboratory, now known as Los Alamos National Laboratory. In 1943, the first production reactor that made Pu-239 was the X-10 Graphite Reactor built at a facility in Oak Ridge, Tennessee that later became the Oak Ridge National Laboratory. The Manhattan Project produced the plutonium for the \"Trinity Test\" conducted in New Mexico by Los Alamos Laboratory Director Robert Oppenheimer and Army General Leslie Groves. The world’s first atomic bomb (\"The Gadget\") was exploded near Socorro, New Mexico on July 16, 1945, resulting in an explosion with an energy equivalent of approximately 20,000 tons of TNT. The first atomic bomb used in war had a uranium core and was dropped on Hiroshima, Japan on August 6, 1945. The second atomic bomb used had a plutonium core and was nicknamed \"Fat Man\" because of its round shape. It was used to destroy Nagasaki, Japan in August 9, 1945, which put an end to WW II. Publication of the discovery and the naming of the new element plutonium was delayed until a year after the end of World War II. Seaborg originally considered the name \"plutium\", but later thought that it did not sound as good as \"plutonium.\" Later, during the Cold-War era, large stockpiles of weapons-grade plutonium were built up by both the Soviet Union and the United States. Each year about 20 tons of plutonium is still produced as a by-product of the nuclear power industry. As of 2007 it was estimated that the plutonium stockpile was about 500 tons, world-wide. Since the end of the Cold War these stockpiles have become a focus of nuclear proliferation concerns. In 2000, the United States and the Russian Federation mutually agreed to each dispose of 34 tons of weapon grade plutonium before the end of 2019 by converting it to a mixed uranium-plutonium oxide (MOX) fuel to be used in commercial nuclear power reactors. Today plutonium-239 remains an important component of nuclear weapons, and the United States maintains plutonium-related capabilities in support of national defense and global nuclear deterrence. Pu-239 for civilian nuclear power plants provides energy for many nations. Plutonium-238 continues to be vital to space exploration pushing the limits beyond which manned space exploration is possible and satisfying our quest for knowledge.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Only two of plutonium's isotopes, plutonium-238 and plutonium-239, have found uses outside of basic research. Plutonium-238 is used in radioisotope thermoelectric generators to provide electricity for space probes that venture too far from the sun to use solar power, such as the Cassini and Galileo probes. Plutonium-239 will undergo a fission chain reaction if enough of it is concentrated in one place, so it is used at the heart of modern day nuclear weapons and in some nuclear reactors.",
+    "source": "jlab"
+   },
+   {
+    "text": "Plutonium has assumed the position of dominant importance among the transuranium elements because of its use as an explosive ingredient in nuclear weapons and the place which it holds as a key material in the development of industrial use of nuclear power. During fission, a fraction of the binding energy, which holds a nucleus together, is released as a large amount of electromagnetic and kinetic energy which is quickly converted to thermal energy. Fission of a kilogram of plutonium-239 can produce an explosion equivalent to 21,000 tons of TNT which is equivalent to about 22 million kilowatt hours of heat energy. In 1982 it was estimated that about 300,000 kg had accumulated. The most common chemical process, PUREX (Plutonium–URanium EXtraction) reprocesses spent nuclear fuel to extract plutonium and uranium which can be used to form a mixed U/Pu oxide or \"MOX\" fuel for reuse in nuclear power reactors. MOX fuel production is also a good mechanism to reduce excessive defense plutonium stockpiles for peaceful purposes, which in effect is forging \"swords into plowshares.\" Plutonium isotopes undergo radioactive decay, which produces decay heat. Different isotopes produce different amounts of heat per mass. Pu-238 with a half-life of 88 years has a relatively high heat production rate which makes it useful as a power source with a long service life. The decay heat is usually listed as watt/kilogram, or milliwatt/gram. Pu-238 is a heat source in radioisotope thermoelectric generators, which are used to power spacecraft and extra-terrestrial rovers. As a power and heat source, Pu-238 has also been used to power instruments left on the Moon by Apollo astronauts, weather satellites and interplanetary probes and powers the Cassini Saturn mission and the Mars rovers. Plutonium-238 was at one time used successfully to power artificial heart pacemakers but has been replaced by lithium-based primary cells. Plutonium-238 was studied as a way to provide supplemental heat to scuba divers. Pu-238 mixed with beryllium is a convenient method to generate neutrons.",
+    "source": "lanl"
+   }
+  ],
+  "description": [
+   {
+    "text": "Plutonium is unique among the elements in its physicochemical complexities by virtue of its position at a transitional location in the periodic table where the 5f electrons are at the border between delocalized (not associated with a single atom) and localized (associated with a single atom) behavior and it is considered one of the most complex of the elements. Plutonium also sits near the juncture where the actinide series transitions from main d-block element chemistry to rare earth like behavior as a result of the actinide contraction. Because of its defense and commercial importance, plutonium is one of the most intensely investigated of elements. Plutonium metal has a bright silvery appearance at first and takes on a dull gray, yellow or olive green tarnish when oxidized in air. A relatively large piece of plutonium is warm to the touch because of the energy given off by alpha decay. Larger pieces will produce enough heat to boil water. The metal readily dissolves in concentrated mineral acids. Plutonium metal normally has six allotropes or crystal structures; alpha (α), beta (β), gamma (γ), delta (δ), delta prime (δ') and epsilon (ε). It forms a seventh phase (zeta, ζ) under high temperature and a limited pressure range. These allotropes have very similar energy levels but significantly varying densities (from 16.00 to 19.86 grams/cm3) and crystal structures. This makes plutonium very sensitive to changes in temperature, pressure, or chemistry, and allows for dramatic volume changes following phase transitions. At room temperature plutonium is in its alpha (α) form, the most common structural form of the element. It is as hard and brittle as cast iron unless alloyed with other metals to form the room-temperature stabilized delta (δ) phase which makes it soft and ductile. Unlike most metals, it is not a good conductor of heat or electricity. It has a low melting point (640 °C) and an unusually high boiling point (3,228 °C). Plutonium can form alloys and intermediate compounds with most other metals. Gallium, aluminum, americium, scandium and cerium can stabilize the δ phase of plutonium metal. Nuclear fuel pellets can be formed by alloying plutonium with various metals such as: aluminum; zirconium; cerium; cerium-cobalt; uranium-titanium, uranium-zirconium and uranium-molybdenum. Thorium-plutonium-uranium alloys were investigated as a nuclear fuel for fast breeder reactors. A plutonium-gallium-cobalt alloy (PuCoGa5) was found to be an unconventional superconductor, showing superconductivity below 18.5 Kelvin, an order of magnitude higher than the highest between heavy fermion systems known. Plutonium forms compounds with a variety of other elements. Plutonium reacts with pure hydrogen, forming plutonium hydrides. It also reacts readily with oxygen, forming PuO and PuO2 as well as intermediate and sub-stoichiometric oxides. The metal reacts with the halogens, giving rise to trivalent Pu compounds with the general formula PuX3 where X can be F, Cl, Br or I and tetravalent plutonium compounds such as PuF4. The following oxyhalides are observed: PuOCl, PuOBr and PuOI. Plutonium reacts with carbon to form PuC, nitrogen to form PuN and silicon to form PuSi2. Pu3+ and Pu4+ oxalates are important intermediates that are calcined to form oxides as a step in plutonium processing. Other important compounds in reprocessing are fluoride, peroxide, acetylacetone, carbonate and hydroxide. The color displayed by plutonium solutions depends on both the oxidation state and the extent of complexation by various ligands. In aqueous solution plutonium exhibits five ionic valence states: Pu+3 (blue lavender), Pu+4 (salmon-colored, when uncomplexed), PuO+ (lavender), PuO+2 (orange-brown) and PuOxOHy (dark green in basic solution). The pentavalent ion, PuO+ is unstable in aqueous solutions and it disproportionates into Pu+4 and PuO+2. However, PuO2+ can be stabilized in aqueous solution in a narrow pH range around 4.5. By virtue of the close proximity of the electrode potentials of the various plutonium redox couples (~ 1 Volt/NHE), four oxidation states can co-exist in solution simultaneously: Pu3+, Pu4+, PuO2+ and PuO22+. Pu4+ is a \"hard\" (ionic) cation with the largest electronic charge of plutonium ions and it forms complexes with a variety of inorganic and organic ligands. In dilute perchloric acid, Pu4+ is un-complexed and is salmon-colored. However in concentrated acids, Pu4+ forms anionic complexes such as: Pu(NO3)62- (dark green) and Pu(Cl)62- (brick red). Pu4+, having a high ionic charge readily hydrolyzes (combines with hydroxide ion) at near-neutral pH values forming a green colloidal suspension that behaves like a solution but is actually a solid precipitate that can be separated by ultra-centrifugation. Plutonium-organic complexes are very important for separation, reprocessing, and purification and include: Tributyl phosphate (TBP); Di-(2-ethylhexyl)phosphoric acid (DEHPA or HDEHP); octyl(phenyl)-N,N-diisobutyl-carbamoylmethylphosphine oxide (CMPO); crown-ethers; and many others.",
+    "source": "lanl"
+   }
+  ],
+  "isotopes": [
+   {
+    "text": "Twenty-three radioactive isotopes of plutonium have been characterized from mass numbers 228 to 247. Nine of these exhibit metastable states, though these all have half-lives less than one second. The longest-lived isotopes are plutonium-244, with a half-life of 80.8 million years, plutonium-242, with a half-life of 373,300 years, and plutonium-239, with a half-life of 24,110 years. All of the remaining radioactive isotopes have half-lives less than 7,000 years. The primary decay modes of isotopes with mass numbers lower than plutonium-244, are spontaneous fission and α emission, mostly forming uranium and neptunium isotopes as decay products along with a variety of daughter fission products. The primary decay mode for isotopes with mass numbers higher than plutonium-244 is by β emission, mostly forming americium isotopes as daughter decay products. Plutonium-241 is the parent isotope of the neptunium decay series, decaying to americium-241 via β decay. By far of greatest importance is the isotope 239Pu produced in extensive quantities in nuclear reactors from natural uranium: 238U (n, gamma) → 239U (beta) → 239Np (beta) → 239Pu Plutonium-238 with a half-life of 87.7 years is another important isotope. Both Pu-239 and Pu-238 have many practical applications as discussed below.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Industry",
+   "text": "238Pu (with a half-life of 87.7 years) is used in radiothermal generators as a heat source to produce electricity. These radiothermal generators are used to power unmanned spacecraft and interplanetary probes that venture too far from the Sun to use solar power, such as the Cassini Orbiter, the Galileo spacecraft, and the Huygens and Galileo probes,,,. 238Pu has been used in the Apollo lunar missions as part of a nuclear battery. The SNAP-27 (systems nuclear auxiliary power) system produced approximately 75 W of electrical power at 30 VDC per unit (Fig. IUPAC.94.1). The energy source was a 2.5-kg rod of 238Pu providing thermal power of approximately 1250 W. 238Pu is used in pacemakers (Fig. IUPAC.94.2). 239Pu (with a half-life of 2.41×104 years) is used in nuclear weapons. 239Pu is easily made in nuclear reactors by bombarding 238U with neutronsvia the reaction 238U (n, γ) 239U and 239U→ 239Pu+β −. The 239Pu made by this reaction can itself be split by neutrons to release energy and is used for energy generation in nuclear reactors,,.  ",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "Not Applicable",
+  "ocean": "Not Applicable",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 23940,
+   "name": "plutonium",
+   "formula": "Pu",
+   "charge": 0,
+   "smiles": "[Pu]"
+  }
+ ],
+ "refs": {
+  "nist": {
+   "name": "NIST Physical Measurement Laboratory",
+   "url": "https://physics.nist.gov/cgi-bin/Elements/elInfo.pl?element=94"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele094.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/94.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": null,
+ "ghs": null,
+ "ghsCid": null
 }

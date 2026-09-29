@@ -13,5 +13,585 @@
    "url": "https://en.wikipedia.org/wiki/Hassium"
   }
  },
- "photo": null
+ "photo": null,
+ "weight": {
+  "value": "270.13429(27#)",
+  "kind": "isotope-mass",
+  "A": 270,
+  "estimated": true,
+  "source": "nist"
+ },
+ "natural": [],
+ "naturalSource": "nist",
+ "nuclides": [
+  {
+   "A": 263,
+   "iso": "",
+   "mass": "263.128479 ± 0.000212",
+   "half": "0.9 ms ± 0.4",
+   "seconds": 0.0009000000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2009,
+   "est": true
+  },
+  {
+   "A": 263,
+   "iso": "m",
+   "mass": "263.128479 ± 0.000212",
+   "half": "1 ms",
+   "seconds": 0.001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 264,
+   "iso": "",
+   "mass": "264.128356330 ± 0.000031005",
+   "half": "0.7 s ± 0.3",
+   "seconds": 0.7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 70
+    },
+    {
+     "mode": "SF",
+     "op": "=",
+     "pct": 30
+    }
+   ],
+   "year": 1986,
+   "est": false
+  },
+  {
+   "A": 265,
+   "iso": "",
+   "mass": "265.129791744 ± 0.000025719",
+   "half": "1.96 ms ± 0.16",
+   "seconds": 0.00196,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1984,
+   "est": false
+  },
+  {
+   "A": 265,
+   "iso": "m",
+   "mass": "265.129791744 ± 0.000025719",
+   "half": "360 us ± 150",
+   "seconds": 0.00035999999999999997,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1995,
+   "est": false
+  },
+  {
+   "A": 266,
+   "iso": "",
+   "mass": "266.130048783 ± 0.000029099",
+   "half": "3.0 ms ± 0.6",
+   "seconds": 0.003,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 76
+    },
+    {
+     "mode": "SF",
+     "op": "=",
+     "pct": 24
+    }
+   ],
+   "year": 2001,
+   "est": false
+  },
+  {
+   "A": 266,
+   "iso": "m",
+   "mass": "266.130048783 ± 0.000029099",
+   "half": "280 ms ± 220",
+   "seconds": 0.28,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    }
+   ],
+   "year": 2011,
+   "est": false
+  },
+  {
+   "A": 267,
+   "iso": "",
+   "mass": "267.131678 ± 0.000102",
+   "half": "55 ms ± 11",
+   "seconds": 0.055,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": ">",
+     "pct": 80
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1995,
+   "est": true
+  },
+  {
+   "A": 267,
+   "iso": "m",
+   "mass": "267.131678 ± 0.000102",
+   "half": "990 us ± 90",
+   "seconds": 0.00099,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": null
+    },
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2004,
+   "est": true
+  },
+  {
+   "A": 268,
+   "iso": "",
+   "mass": "268.132011 ± 0.000322",
+   "half": "1.4 s ± 1.1",
+   "seconds": 1.4,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    }
+   ],
+   "year": 2010,
+   "est": true
+  },
+  {
+   "A": 269,
+   "iso": "",
+   "mass": "269.133649 ± 0.000141",
+   "half": "15 s ± 7",
+   "seconds": 15,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1996,
+   "est": true
+  },
+  {
+   "A": 270,
+   "iso": "",
+   "mass": "270.134313 ± 0.000266",
+   "half": "9 s ± 4",
+   "seconds": 9,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2003,
+   "est": true
+  },
+  {
+   "A": 271,
+   "iso": "",
+   "mass": "271.137082 ± 0.000296",
+   "half": "10 s",
+   "seconds": 10,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2008,
+   "est": true
+  },
+  {
+   "A": 272,
+   "iso": "",
+   "mass": "272.138492 ± 0.000547",
+   "half": "10 s",
+   "seconds": 10,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 273,
+   "iso": "",
+   "mass": "273.141458 ± 0.000401",
+   "half": "1060 ms ± 500",
+   "seconds": 1.06,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2010,
+   "est": true
+  },
+  {
+   "A": 273,
+   "iso": "p",
+   "mass": "273.141458 ± 0.000401",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 274,
+   "iso": "",
+   "mass": "274.143217 ± 0.000504",
+   "half": "500 ms",
+   "seconds": 0.5,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 275,
+   "iso": "",
+   "mass": "275.146530 ± 0.000637",
+   "half": "280 ms ± 130",
+   "seconds": 0.28,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2004,
+   "est": true
+  },
+  {
+   "A": 276,
+   "iso": "",
+   "mass": "276.148348 ± 0.000773",
+   "half": "100 ms",
+   "seconds": 0.1,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 277,
+   "iso": "",
+   "mass": "277.151772 ± 0.00048",
+   "half": "12 ms ± 9",
+   "seconds": 0.012,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2010,
+   "est": true
+  },
+  {
+   "A": 277,
+   "iso": "m",
+   "mass": "277.151772 ± 0.00048",
+   "half": "130 s ± 100",
+   "seconds": 130,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2012,
+   "est": true
+  },
+  {
+   "A": 278,
+   "iso": "",
+   "mass": "278.153753 ± 0.000322",
+   "half": "2 s",
+   "seconds": 2,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2016,
+   "est": true
+  },
+  {
+   "A": 279,
+   "iso": "",
+   "mass": "279.157274 ± 0.000644",
+   "half": "1 s",
+   "seconds": 1,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 280,
+   "iso": "",
+   "mass": "280.159335 ± 0.000644",
+   "half": "100 ms",
+   "seconds": 0.1,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  }
+ ],
+ "stableCount": 0,
+ "texts": {
+  "history": [
+   {
+    "text": "Hassium was first produced by Peter Armbruster, Gottfried Münzenber and their team working at the Gesellschaft für Schwerionenforschung in Darmstadt, Germany in 1984. They bombarded atoms of lead-208 with ions of iron-58 with a device known as a linear accelerator. This produced atoms of hassium-265, an isotope with a half-life of about 2 milliseconds (0.002 seconds), and a free neutron. Hassium's most stable isotope, hassium-270, has a half-life of about 22 seconds. It decays into seaborgium-266 through alpha decay.",
+    "source": "jlab"
+   },
+   {
+    "text": "Its name is Latin \"Hassias\" meaning \"Hess,\" from the German state. Discovered by Peter Armbruster, Gottfried Munzenber and co-workers at GSI in Darmstadt, Germany in 1984.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Since only small amounts of hassium have ever been produced, it currently has no uses outside of basic scientific research.",
+    "source": "jlab"
+   }
+  ],
+  "description": [
+   {
+    "text": "Hassium does not occur naturally in the Earth’s crust. Hassium was first synthesized by German scientists at the GSI Center for Heavy Ion Research in Darmstadt, Germany in 1984 using the nuclear reaction 208Pb (58Fe, n) 265Hs (Fig. IUPAC.108.1). The element is named for Hassia (the Latin name for the German state of Hesse), whose former capital was Darmstadt [651], [652], [653]. Hassium is used in chemical and heavy element research.",
+    "source": "iptei"
+   }
+  ]
+ },
+ "isotopeUses": [],
+ "abundance": {
+  "crust": "Not Applicable",
+  "ocean": "Not Applicable",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 56951714,
+   "name": "hassium",
+   "formula": "Hs",
+   "charge": 0,
+   "smiles": "[Hs]"
+  }
+ ],
+ "refs": {
+  "nist": {
+   "name": "NIST Physical Measurement Laboratory",
+   "url": "https://physics.nist.gov/cgi-bin/Elements/elInfo.pl?element=108"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele108.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/108.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": null,
+ "ghs": null,
+ "ghsCid": null
 }

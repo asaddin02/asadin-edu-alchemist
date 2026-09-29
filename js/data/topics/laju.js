@@ -8,6 +8,26 @@ export default {
     'Collision theory, what speeds reactions up, catalysts and enzymes, and dynamic equilibrium with Le Chatelier’s principle.',
   ],
   body: {
+    sd: [
+      `Ada reaksi yang sangat cepat dan ada yang lambat sekali. Soda kue dan cuka langsung berbuih, kembang api menyala dalam sekejap, sedangkan besi berkarat dan buah membusuk perlahan-lahan selama berhari-hari.
+
+Kita bisa membuat reaksi lebih cepat atau lebih lambat:
+
+- **Suhu**: makanan di kulkas lebih awet karena dingin memperlambat pembusukan. Teh manis lebih cepat larut gulanya di air panas.
+- **Ukuran butiran**: gula halus lebih cepat larut daripada gula batu.
+- **Bantuan khusus**: air liur mengandung [[enzim]] yang mempercepat pencernaan nasi menjadi gula. Kunyah nasi lama-lama, rasanya jadi agak manis!
+
+Seberapa cepat reaksi berlangsung disebut [[laju-reaksi|laju reaksi]].`,
+      `Some reactions are very fast and some are very slow. Baking soda and vinegar fizz at once and fireworks flash in an instant, while iron rusts and fruit rots slowly over days.
+
+We can make reactions faster or slower:
+
+- **Temperature**: food keeps longer in the fridge because cold slows spoiling. Sugar dissolves faster in hot tea.
+- **Grain size**: caster sugar dissolves faster than sugar cubes.
+- **Special helpers**: saliva contains an [[enzim|enzyme]] that speeds up turning rice into sugar. Chew rice for a long time and it starts to taste a little sweet!
+
+How fast a reaction goes is its [[laju-reaksi|reaction rate]].`,
+    ],
     smp: [
       `Mengapa makanan di kulkas lebih awet? Karena [[laju-reaksi|laju reaksi]] pembusukan melambat pada suhu rendah. Reaksi terjadi saat partikel bertumbukan dengan energi cukup. Empat hal mempercepat reaksi:
 
@@ -37,7 +57,9 @@ Banyak reaksi dapat balik. Saat laju maju sama dengan laju balik tercapai [[kese
 - Tekanan naik → bergeser ke sisi dengan mol gas lebih sedikit.
 - Suhu naik → bergeser ke arah endoterm.
 
-Proses Haber–Bosch pembuatan {{m:ammonia|amonia}} (N₂ + 3H₂ ⇌ 2NH₃, ΔH = −92 kJ) memakai tekanan tinggi (~200 atm), suhu kompromi (~450 °C), dan katalis besi.`,
+Proses Haber–Bosch pembuatan {{m:ammonia|amonia}} (N₂ + 3H₂ ⇌ 2NH₃, ΔH = −92 kJ) memakai tekanan tinggi (~200 atm), suhu kompromi (~450 °C), dan katalis besi.
+
+Kesetimbangan dibahas lengkap di {{learn:kesetimbangan|Kesetimbangan kimia}}.`,
       `By collision theory, only collisions with the right orientation and energy ≥ the [[energi-aktivasi|activation energy]] (Eₐ) react. A 10 °C rise often doubles the rate because the fraction of energetic particles grows sharply (Maxwell–Boltzmann distribution). Catalysts offer a lower-Eₐ pathway.
 
 The rate law v = k[A]ᵐ[B]ⁿ has orders m and n found by experiment, not from coefficients. A classic example: {{m:sodium-thiosulfate|sodium thiosulfate}} + HCl forms a sulfur precipitate; the time for a cross to vanish measures the rate.
@@ -48,7 +70,9 @@ Many reactions are reversible. When forward and reverse rates are equal, [[keset
 - Raise pressure → shifts to the side with fewer gas moles.
 - Raise temperature → shifts in the endothermic direction.
 
-The Haber–Bosch process for {{m:ammonia|ammonia}} (N₂ + 3H₂ ⇌ 2NH₃, ΔH = −92 kJ) uses high pressure (~200 atm), a compromise temperature (~450 °C) and an iron catalyst.`,
+The Haber–Bosch process for {{m:ammonia|ammonia}} (N₂ + 3H₂ ⇌ 2NH₃, ΔH = −92 kJ) uses high pressure (~200 atm), a compromise temperature (~450 °C) and an iron catalyst.
+
+Equilibrium is treated fully in {{learn:kesetimbangan|Chemical equilibrium}}.`,
     ],
     kuliah: [
       `Persamaan Arrhenius k = A·e^(−Eₐ/RT) menghubungkan tetapan laju dengan suhu; plot ln k terhadap 1/T memberi Eₐ. Teori keadaan transisi (Eyring) menafsirkan A melalui entalpi dan entropi aktivasi.
@@ -75,11 +99,14 @@ K relates to ΔG° (ΔG° = −RT ln K) and the van ’t Hoff equation (d ln K/d
   molecules: ['sodium-thiosulfate', 'hydrogen-peroxide', 'ammonia', 'nitrogen-dioxide'],
   labs: ['laju', 'gas'],
   activity: {
+    sd: ["Larutkan gula batu dan gula pasir dalam air dingin dan air hangat. Catat mana yang paling cepat habis larut.", "Dissolve a sugar cube and granulated sugar in cold and warm water. Note which disappears fastest."],
     smp: ['Larutkan tablet vitamin C effervescent dalam air dingin, air suhu ruang, dan air hangat. Catat waktunya sampai buih berhenti.', 'Dissolve effervescent vitamin C tablets in cold, room-temperature and warm water. Time how long the fizzing lasts.'],
     sma: ['Percobaan tanda silang: tiosulfat + HCl pada lima konsentrasi. Buat grafik 1/waktu terhadap konsentrasi untuk menentukan orde reaksi.', 'Disappearing-cross experiment: thiosulfate + HCl at five concentrations. Plot 1/time vs concentration to find the order.'],
     kuliah: ['Tentukan Eₐ dekomposisi H₂O₂ berkatalis KI dari laju pada 4 suhu (plot Arrhenius).', 'Find Eₐ for KI-catalysed H₂O₂ decomposition from rates at 4 temperatures (Arrhenius plot).'],
   },
   quiz: [
+    { lv: 'sd', q: ["Makanan lebih awet di kulkas karena…", "Food keeps longer in the fridge because…"], options: [["Dingin memperlambat pembusukan", "Cold slows spoiling"], ["Kulkas gelap", "The fridge is dark"], ["Kulkas berbau", "The fridge smells"], ["Makanan menjadi keras", "The food gets hard"]], answer: 0, explain: ["Suhu rendah memperlambat reaksi, termasuk kerja kuman.", "Low temperature slows reactions, including germs’ activity."] },
+    { lv: 'sd', q: ["Gula pasir lebih cepat larut daripada gula batu karena…", "Granulated sugar dissolves faster than a sugar cube because…"], options: [["Butirannya kecil sehingga permukaannya luas", "Its small grains have a larger surface"], ["Lebih manis", "It is sweeter"], ["Lebih berat", "It is heavier"], ["Berwarna putih", "It is white"]], answer: 0, explain: ["Permukaan yang luas mempercepat pelarutan.", "A larger surface speeds up dissolving."] },
     { lv: 'smp', q: ['Mengapa makanan lebih awet di kulkas?', 'Why does food last longer in the fridge?'], options: [['Kulkas membunuh kuman', 'The fridge kills germs'], ['Suhu rendah memperlambat reaksi pembusukan', 'Low temperature slows spoiling reactions'], ['Kulkas menambah oksigen', 'The fridge adds oxygen'], ['Makanan menjadi kering', 'Food dries out']], answer: 1, explain: ['Partikel bergerak lebih lambat sehingga tumbukan efektif lebih jarang.', 'Particles move slower, so effective collisions are rarer.'] },
     { lv: 'smp', q: ['Enzim di dalam tubuh berfungsi sebagai…', 'Enzymes in the body act as…'], options: [['Bahan bakar', 'Fuel'], ['Katalis', 'Catalysts'], ['Pelarut', 'Solvents'], ['Indikator', 'Indicators']], answer: 1, explain: ['Enzim adalah katalis hayati yang mempercepat reaksi tanpa habis.', 'Enzymes are biological catalysts that speed reactions without being used up.'] },
     { lv: 'smp', q: ['Gula halus lebih cepat larut daripada gula batu karena…', 'Caster sugar dissolves faster than sugar cubes because…'], options: [['Lebih manis', 'It is sweeter'], ['Luas permukaannya lebih besar', 'It has a larger surface area'], ['Lebih berat', 'It is heavier'], ['Lebih dingin', 'It is colder']], answer: 1, explain: ['Butiran kecil memberi lebih banyak permukaan untuk bertumbukan dengan air.', 'Small grains give more surface for water to hit.'] },
@@ -102,6 +129,7 @@ K relates to ΔG° (ΔG° = −RT ln K) and the van ’t Hoff equation (d ln K/d
       ['Diskusi industri: proses Haber–Bosch dan pabrik pupuk di Indonesia.', 'Industry discussion: Haber–Bosch and Indonesian fertiliser plants.'],
     ],
     misconceptions: [['"Saat setimbang reaksi berhenti." Reaksi terus berjalan ke dua arah dengan laju sama.', '"At equilibrium the reaction stops." Both directions continue at equal rates.']],
-    assessment: ['Kuis Moleculium dan laporan percobaan laju.', 'Moleculium quiz and a rate experiment report.'],
+    assessment: ['Kuis Alchemist dan laporan percobaan laju.', 'Alchemist quiz and a rate experiment report.'],
   },
+  refs: ["12-1-chemical-reaction-rates", "12-2-factors-affecting-reaction-rates", "12-3-rate-laws", "12-5-collision-theory", "12-7-catalysis"],
 };

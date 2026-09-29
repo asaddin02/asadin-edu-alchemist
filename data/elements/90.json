@@ -22,5 +22,987 @@
   "author": "Alchemist-hp (talk) (www.pse-mendelejew.de)",
   "license": "FAL",
   "licenseUrl": "http://artlibre.org/licence/lal/en"
- }
+ },
+ "weight": {
+  "value": "232.0377(4)",
+  "kind": "standard",
+  "source": "ciaaw"
+ },
+ "natural": [
+  {
+   "A": 230,
+   "iso": "",
+   "mass": "230.033 132(8)",
+   "abundance": "0.0002(2)"
+  },
+  {
+   "A": 232,
+   "iso": "",
+   "mass": "232.038 05(1)",
+   "abundance": "0.9998(2)"
+  }
+ ],
+ "naturalSource": "ciaaw",
+ "nuclides": [
+  {
+   "A": 208,
+   "iso": "",
+   "mass": "208.017915348 ± 0.000034208",
+   "half": "2.4 ms ± 1.2",
+   "seconds": 0.0024,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    }
+   ],
+   "year": 2010,
+   "est": false
+  },
+  {
+   "A": 209,
+   "iso": "",
+   "mass": "209.017601 ± 0.000111",
+   "half": "60 ms",
+   "seconds": 0.06,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 209,
+   "iso": "m",
+   "mass": "209.017601 ± 0.000111",
+   "half": "3.1 ms ± 1.2",
+   "seconds": 0.0031000000000000003,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1996,
+   "est": true
+  },
+  {
+   "A": 210,
+   "iso": "",
+   "mass": "210.015093515 ± 0.000020299",
+   "half": "16.0 ms ± 3.6",
+   "seconds": 0.016,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1995,
+   "est": false
+  },
+  {
+   "A": 211,
+   "iso": "",
+   "mass": "211.014896923 ± 0.000092399",
+   "half": "48 ms ± 20",
+   "seconds": 0.048,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1995,
+   "est": false
+  },
+  {
+   "A": 212,
+   "iso": "",
+   "mass": "212.013001570 ± 0.000010852",
+   "half": "31.7 ms ± 1.3",
+   "seconds": 0.0317,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1980,
+   "est": false
+  },
+  {
+   "A": 213,
+   "iso": "",
+   "mass": "213.013011470 ± 0.000009895",
+   "half": "144 ms ± 21",
+   "seconds": 0.14400000000000002,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1968,
+   "est": false
+  },
+  {
+   "A": 213,
+   "iso": "m",
+   "mass": "213.013011470 ± 0.000009895",
+   "half": "1.4 us ± 0.4",
+   "seconds": 0.0000014,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2007,
+   "est": false
+  },
+  {
+   "A": 214,
+   "iso": "",
+   "mass": "214.011481480 ± 0.000011445",
+   "half": "87 ms ± 10",
+   "seconds": 0.08700000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1968,
+   "est": false
+  },
+  {
+   "A": 214,
+   "iso": "m",
+   "mass": "214.011481480 ± 0.000011445",
+   "half": "1.24 us ± 0.12",
+   "seconds": 0.00000124,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2007,
+   "est": false
+  },
+  {
+   "A": 215,
+   "iso": "",
+   "mass": "215.011724640 ± 0.0000068",
+   "half": "1.35 s ± 0.14",
+   "seconds": 1.35,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1968,
+   "est": false
+  },
+  {
+   "A": 215,
+   "iso": "m",
+   "mass": "215.011724640 ± 0.0000068",
+   "half": "770 ns ± 60",
+   "seconds": 7.7e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2005,
+   "est": false
+  },
+  {
+   "A": 216,
+   "iso": "",
+   "mass": "216.011055933 ± 0.00001192",
+   "half": "26.28 ms ± 0.16",
+   "seconds": 0.02628,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1968,
+   "est": false
+  },
+  {
+   "A": 216,
+   "iso": "m",
+   "mass": "216.011055933 ± 0.00001192",
+   "half": "135.4 us ± 2.9",
+   "seconds": 0.0001354,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 97.2
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 2.8
+    }
+   ],
+   "year": 1983,
+   "est": false
+  },
+  {
+   "A": 216,
+   "iso": "n",
+   "mass": "216.011055933 ± 0.00001192",
+   "half": "580 ns ± 26",
+   "seconds": 5.800000000000001e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1983,
+   "est": false
+  },
+  {
+   "A": 216,
+   "iso": "p",
+   "mass": "216.011055933 ± 0.00001192",
+   "half": "740 ns ± 70",
+   "seconds": 7.4e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2001,
+   "est": false
+  },
+  {
+   "A": 217,
+   "iso": "",
+   "mass": "217.013103443 ± 0.000011394",
+   "half": "248 us ± 4",
+   "seconds": 0.000248,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1968,
+   "est": false
+  },
+  {
+   "A": 217,
+   "iso": "m",
+   "mass": "217.013103443 ± 0.000011394",
+   "half": "141 ns ± 50",
+   "seconds": 1.41e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1989,
+   "est": false
+  },
+  {
+   "A": 217,
+   "iso": "n",
+   "mass": "217.013103443 ± 0.000011394",
+   "half": "71 us ± 14",
+   "seconds": 0.00007099999999999999,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2002,
+   "est": false
+  },
+  {
+   "A": 218,
+   "iso": "",
+   "mass": "218.013276248 ± 0.000011289",
+   "half": "122 ns ± 5",
+   "seconds": 1.22e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1973,
+   "est": false
+  },
+  {
+   "A": 219,
+   "iso": "",
+   "mass": "219.015526432 ± 0.000060611",
+   "half": "1.023 us ± 0.018",
+   "seconds": 0.0000010229999999999998,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1973,
+   "est": false
+  },
+  {
+   "A": 220,
+   "iso": "",
+   "mass": "220.015769866 ± 0.000014693",
+   "half": "10.2 us ± 0.3",
+   "seconds": 0.000010199999999999999,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "ε",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1973,
+   "est": false
+  },
+  {
+   "A": 221,
+   "iso": "",
+   "mass": "221.018185757 ± 0.000008582",
+   "half": "1.75 ms ± 0.02",
+   "seconds": 0.00175,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1970,
+   "est": false
+  },
+  {
+   "A": 222,
+   "iso": "",
+   "mass": "222.018468220 ± 0.000010966",
+   "half": "2.24 ms ± 0.03",
+   "seconds": 0.0022400000000000002,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "ε",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1970,
+   "est": false
+  },
+  {
+   "A": 223,
+   "iso": "",
+   "mass": "223.020811083 ± 0.000008527",
+   "half": "600 ms ± 20",
+   "seconds": 0.6,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1952,
+   "est": false
+  },
+  {
+   "A": 224,
+   "iso": "",
+   "mass": "224.021466137 ± 0.00001031",
+   "half": "1.04 s ± 0.02",
+   "seconds": 1.04,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "2β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1949,
+   "est": false
+  },
+  {
+   "A": 225,
+   "iso": "",
+   "mass": "225.023950975 ± 0.000005467",
+   "half": "8.75 m ± 0.04",
+   "seconds": 525,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 90
+    },
+    {
+     "mode": "ε",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1949,
+   "est": false
+  },
+  {
+   "A": 226,
+   "iso": "",
+   "mass": "226.024903699 ± 0.00000481",
+   "half": "30.70 m ± 0.03",
+   "seconds": 1842,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1948,
+   "est": false
+  },
+  {
+   "A": 227,
+   "iso": "",
+   "mass": "227.027702546 ± 0.000002241",
+   "half": "18.693 d ± 0.004",
+   "seconds": 1615075.2000000002,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1906,
+   "est": false
+  },
+  {
+   "A": 228,
+   "iso": "",
+   "mass": "228.028739741 ± 0.000001938",
+   "half": "1.9125 y ± 0.0007",
+   "seconds": 60352621.128000006,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1905,
+   "est": false
+  },
+  {
+   "A": 229,
+   "iso": "",
+   "mass": "229.031761357 ± 0.000002581",
+   "half": "7.916 ky ± 0.017",
+   "seconds": 249804626849.28003,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1947,
+   "est": false
+  },
+  {
+   "A": 229,
+   "iso": "m",
+   "mass": "229.031761357 ± 0.000002581",
+   "half": "7 us ± 1",
+   "seconds": 0.000007,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1994,
+   "est": false
+  },
+  {
+   "A": 230,
+   "iso": "",
+   "mass": "230.033132267 ± 0.000001297",
+   "half": "75.4 ky ± 0.3",
+   "seconds": 2379392226432.0005,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1907,
+   "est": false
+  },
+  {
+   "A": 231,
+   "iso": "",
+   "mass": "231.036302764 ± 0.000001306",
+   "half": "25.52 h ± 0.01",
+   "seconds": 91872,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1911,
+   "est": false
+  },
+  {
+   "A": 232,
+   "iso": "",
+   "mass": "232.038053606 ± 0.000001525",
+   "half": "14.0 Gy ± 0.1",
+   "seconds": 441796965120000000,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "2β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1898,
+   "est": false
+  },
+  {
+   "A": 233,
+   "iso": "",
+   "mass": "233.041580126 ± 0.000001528",
+   "half": "21.83 m ± 0.04",
+   "seconds": 1309.8,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1935,
+   "est": false
+  },
+  {
+   "A": 233,
+   "iso": "m",
+   "mass": "233.041580126 ± 0.000001528",
+   "half": "2 s",
+   "seconds": 2,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 234,
+   "iso": "",
+   "mass": "234.043599801 ± 0.000002779",
+   "half": "24.107 d ± 0.024",
+   "seconds": 2082844.8,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1900,
+   "est": false
+  },
+  {
+   "A": 235,
+   "iso": "",
+   "mass": "235.047255000 ± 0.000014",
+   "half": "7.2 m ± 0.1",
+   "seconds": 432,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1969,
+   "est": false
+  },
+  {
+   "A": 236,
+   "iso": "",
+   "mass": "236.049657000 ± 0.000015",
+   "half": "37.3 m ± 1.5",
+   "seconds": 2238,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1973,
+   "est": false
+  },
+  {
+   "A": 237,
+   "iso": "",
+   "mass": "237.053629000 ± 0.000017",
+   "half": "4.8 m ± 0.5",
+   "seconds": 288,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1993,
+   "est": false
+  },
+  {
+   "A": 238,
+   "iso": "",
+   "mass": "238.056388 ± 0.000304",
+   "half": "9.4 m ± 2.0",
+   "seconds": 564,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1999,
+   "est": true
+  },
+  {
+   "A": 239,
+   "iso": "",
+   "mass": "239.060655 ± 0.000429",
+   "half": "1 m",
+   "seconds": 60,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  }
+ ],
+ "stableCount": 0,
+ "texts": {
+  "history": [
+   {
+    "text": "The name derives from Thor, the Scandinavian god of thunder. It was discovered in the mineral thorite (ThSiO4) by the Swedish chemist Jöns Jacob Berzelius in 1828. Thorium was first isolated by the chemists D. Lely, Jr. and L. Hamburger in 1914.",
+    "source": "ciaaw"
+   },
+   {
+    "text": "Thorium was discovered by Jöns Jacob Berzelius, a Swedish chemist, in 1828. He discovered it in a sample of a mineral that was given to him by the Reverend Has Morten Thrane Esmark, who suspected that it contained an unknown substance. Esmark's mineral is now known as thorite (ThSiO4). Thorium makes up about 0.0007% of the earth's crust and is primarily obtained from thorite, thorianite (ThO2) and monazite ((Ce, La, Th, Nd, Y)PO4).",
+    "source": "jlab"
+   },
+   {
+    "text": "Morten Esmark found a black mineral on Løvøya island, Norway and gave a sample to his father Jens Esmark, a noted mineralogist. The elder Esmark was not able to identify it and sent a sample to Swedish chemist Jöns Jakob Berzelius for examination in 1828. In 1829 Berzelius determined that it contained a new element, which he named thorium after Thor, the Norse god of thunder. The metal had no practical uses until 1885 when Carl Auer von Welsbach invented the gas mantle. Thorium was first observed to be radioactive in 1898, independently, by Polish-French physicist Marie Curie and German chemist Gerhard Carl Schmidt. Between 1900 and 1903, Ernest Rutherford and Frederick Soddy showed how thorium decayed at a fixed rate over time into a series of other elements. This observation led to the identification of half-life as one of the outcomes of the alpha particle experiments that led to their disintegration theory of radioactivity. The crystal bar process (or \"iodide process\") was discovered by Anton Eduard van Arkel and Jan Hendrik de Boer in 1925 to produce high-purity metallic thorium. Because of health concerns, the thorium in classic lantern mantles has been replaced by rare-earth elements that also produce intense light without the radioactivity.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Thorium is used as an alloying agent to improve magnesium's strength at high temperatures. Thorium is also used to coat tungsten filaments used in electronic devices, such at television sets. When bombarded with neutrons, thorium-232 becomes thorium-233, which eventually decays into uranium-233 through a series of beta decays. Uranium-233 is a fissionable material and can be used as a nuclear fuel. Thorium oxide (ThO2), one of thorium's compounds, has many uses. It is primarily used in a type of lantern mantel known as a Welsbach mantle. This mantle, which also contains about 1% cerium oxide, glows with a bright white light when it is heated in a gas flame. Thorium oxide has a very high melting point, about 3300°C, and is used to make high temperature crucibles. Thorium oxide is also used to make glass with a high index of refraction that is used to make high quality camera lenses. Thorium oxide is used as a catalyst in the production of sulfuric acid (H2SO4), in the cracking of petroleum products and in the conversion of ammonia (NH3) to nitric acid (HNO3). Thorium's most stable isotope, thorium-232, has a half-life of about 14,050,000,000 years. It decays into radium-228 through alpha decay or decays through spontaneous fission.",
+    "source": "jlab"
+   },
+   {
+    "text": "The principal historic use of thorium has been in the preparation of the Welsbach mantle, used for portable gaslights. These mantles, consisting of thorium oxide with about 1% cerium oxide and other ingredients, glow with a dazzling light when heated in a gas flame. Thorium is an important alloying element in magnesium, imparting high strength and creep resistance at elevated temperatures. Because thorium has a low work-function and high electron emission, it is used to coat tungsten wire used in electronic equipment. The oxide is also used to control the grain size of tungsten used for electric lamps; it is also used for high-temperature laboratory crucibles. Glasses containing thorium oxide have a high refractive index and low dispersion. Consequently, they find application in high quality lenses for cameras and scientific instruments. Thorium oxide has also found use as a catalyst in the conversion of ammonia to nitric acid, in petroleum cracking, and in producing sulfuric acid. Thorium metal is a source of nuclear power. There is probably more energy available for use from thorium in the minerals of the earth's crust than from both uranium and fossil fuels. Any sizable demand from thorium as a nuclear fuel is still several years in the future. Work has been done in developing thorium cycle converter-reactor systems. Several prototypes, including the HTGR (high-temperature gas-cooled reactor) and MSRE (molten salt converter reactor experiment), have operated. While the HTGR reactors are efficient, they are not expected to become important commercially for many years because of certain operating difficulties.",
+    "source": "lanl"
+   }
+  ],
+  "sources": [
+   {
+    "text": "Thorium-232 is a primordial nuclide, having existed in its current form for over 4.5 billion years, a half-life is comparable to the age of the Universe and thus predating the formation of the Earth. Thorium was forged in the cores of dying stars through the r-process and scattered across the galaxy by supernovas. Thorium is found in small amounts in most rocks and soils. Soil commonly contains an average of around 6 parts per million (ppm) of thorium. Thorium occurs in several minerals including thorite (ThSiO4), thorianite (ThO2 + UO2) and monazite. Thorianite is a rare mineral and may contain up to about 12% thorium oxide. Monazite contains 2.5% thorium, allanite has 0.1 to 2% thorium and zircon can have up to 0.4% thorium.[66] Thorium-containing minerals occur on all continents. Thorium is now thought to be about three times as abundant as uranium and about as abundant as lead or molybdenum. Thorium is recovered commercially from the mineral monazite, which contains from 3 to 9% ThO2 along with rare-earth minerals.",
+    "source": "lanl"
+   }
+  ],
+  "description": [
+   {
+    "text": "When pure, thorium is a silvery-white metal that is air-stable and retains its luster for several months. When contaminated with the oxide, thorium slowly tarnishes in air, becoming gray and finally black. The physical properties of thorium are greatly influenced by the degree of contamination with the oxide. The purest specimens often contain several tenths of a percent of the oxide. High-purity thorium has been made. Pure thorium is soft, very ductile, and can be cold-rolled, swaged, and drawn. Thorium is dimorphic, changing at 1400°C from a cubic to a body-centered cubic structure. Thorium oxide has a melting point of 3300°C, which is the highest of all oxides. Only a few elements, such as tungsten, and a few compounds, such as tantalum carbide, have higher melting points. Thorium is slowly attacked by water, but does not dissolve readily in most common acids, except hydrochloric. Powdered thorium metal is often pyrophoric and should be handled carefully. When heated in air, thorium turnings ignite and burn brilliantly with a white light.",
+    "source": "lanl"
+   }
+  ],
+  "isotopes": [
+   {
+    "text": "Twenty-seven thorium radioisotopes have been characterized, with a range in atomic weight from 210 to 236. All are unstable with the most stable being 232Th with a half-life of 14.05 billion years. Thorium-232 represents all but a trace of naturally occurring thorium. It is an alpha emitter and goes through six alpha and four beta decay steps before becoming the stable isotope 208Pb. 232Th is sufficiently radioactive to expose a photographic plate in a few hours. Other isotopes of thorium are short-lived intermediates in the decay chains of higher elements, and only found in trace amounts. The longer-lived of these trace isotopes include: 230Th with a half-life of 75,380 years which is a daughter product of 238U decay; 229Th with a half-life of 7340 years and 228Th with a half-life of 1.92 years. All of the remaining radioactive isotopes have half-lives that are less than thirty days and the majority of these have half-lives less than ten minutes. Much of the internal heat the earth produces has been attributed to thorium and uranium.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Earth/Planetary Science",
+   "text": "234Th (with a half-life of 24 days) has been used as a tracer for estimating the flux of organic carbon in the ocean (Fig. IUPAC.90.1),. 234Th has been used for estimating the residence time of suspended particulate matter (SPM) in water columns. ",
+   "source": "iptei"
+  },
+  {
+   "topic": "Geochronology",
+   "text": "The decay of 232Th (with a half-life of 1.40×1010 years) to 208Pb is used to date rocks based on the accumulation of the stable daughter product 208Pb. The half-lives of the isotopes between the parent radionuclide 232Th and stable endpoint 208Pb all have much shorter half-lives than thorium. Therefore, the amount of 208Pb that accumulates in a sample is determined primarily by the amount of 232Th parent radionuclide present when the mineral was formed and the time that has elapsed since the mineral solidified. Another dating method, the 230Th/ 234U method, is based on the hypothesis that the sample contains uranium, but no 230Th at the time of its formation. Then, the age of the specimen is determined mainly by the amount of 230Th in the specimen. Reliable ages with this method range from several thousand to approximately 350 thousand years.",
+   "source": "iptei"
+  },
+  {
+   "topic": "Industry",
+   "text": "The most precise time and frequency measurements are performed with optical atomic clocks that use as a frequency standard the optical frequency generated as electrons change energy levels. It has been proposed that a nuclear clock, using a nuclear transition could outperform an electron transition. 229mTh, with a half-life of 13.9 h, has been confirmed as a possible candidate for a nuclear clock. The m in 229mTh indicates a metastable state of the isotope. The further development of a nuclear frequency standard will require more precise determinations of the energy and half-life of the isomer.",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "9.6 milligrams per kilogram",
+  "ocean": "1×10^-6 milligrams per liter",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 23960,
+   "name": "thorium",
+   "formula": "Th",
+   "charge": 0,
+   "smiles": "[Th]"
+  },
+  {
+   "cid": 105150,
+   "name": "thorium(4+)",
+   "formula": "Th+4",
+   "charge": 4,
+   "smiles": "[Th+4]"
+  },
+  {
+   "cid": 21225641,
+   "name": "thorium(2+)",
+   "formula": "Th+2",
+   "charge": 2,
+   "smiles": "[Th+2]"
+  }
+ ],
+ "refs": {
+  "ciaaw": {
+   "name": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+   "url": "https://www.ciaaw.org/thorium.htm"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele090.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/90.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": null,
+ "ghs": {
+  "signal": "Danger",
+  "pictograms": [
+   {
+    "code": "GHS03",
+    "label": "Oxidizer"
+   },
+   {
+    "code": "GHS07",
+    "label": "Irritant"
+   },
+   {
+    "code": "GHS08",
+    "label": "Health Hazard"
+   }
+  ],
+  "hazards": [
+   "H272 (11.1%): May intensify fire; oxidizer",
+   "H302 (88.9%): Harmful if swallowed",
+   "H315 (83.3%): Causes skin irritation",
+   "H319 (83.3%): Causes serious eye irritation",
+   "H335 (83.3%): May cause respiratory irritation",
+   "H373 (83.3%): May causes damage to organs through prolonged or repeated exposure"
+  ],
+  "reports": 18,
+  "notMet": 11.1,
+  "notClassified": false,
+  "source": "European Chemicals Agency (ECHA)"
+ },
+ "ghsCid": 23960
 }

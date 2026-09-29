@@ -1,0 +1,566 @@
+/* Alchemist explorers: the knowledge map, unified search, isotopes, ions, reactions, materials and the richer
+   element and lesson pages. Mobile-first; every control and link row is at least 44px tall. */
+
+/* ---------- Shared bits ---------- */
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.75rem 0;
+}
+.chip-row .chip,
+.chip-grid .chip {
+  min-height: 44px;
+}
+.btn-link {
+  min-height: 44px;
+  padding: 0 0.25rem;
+  border: 0;
+  background: none;
+  color: var(--link);
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  cursor: pointer;
+}
+.big-value {
+  font-size: 1.6rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0.2rem 0 0.6rem;
+  overflow-wrap: anywhere;
+}
+.seg-btn .seg-sub {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 500;
+  opacity: 0.8;
+  line-height: 1.2;
+}
+.refs {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+.ref-list {
+  margin: 0 0 0.75rem;
+  padding-left: 1.2rem;
+  font-size: 0.85rem;
+}
+.ref-list li {
+  margin: 0.35rem 0;
+  overflow-wrap: anywhere;
+}
+.ref-list a {
+  display: inline-block;
+  min-height: 1.75rem;
+}
+.lesson-body .table-wrap {
+  margin: 1.2em 0;
+  overflow-x: auto;
+}
+.lesson-table th,
+.lesson-table td {
+  vertical-align: top;
+}
+.el-link,
+.ion-link,
+.rx-link,
+.mat-link,
+.mol-link {
+  font-weight: 600;
+}
+blockquote footer a {
+  overflow-wrap: anywhere;
+}
+
+/* ---------- Knowledge map (#/peta) and the home chain ---------- */
+.home-chain {
+  margin-top: 2rem;
+}
+.matter-chain {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 210px), 1fr));
+}
+.chain-step {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 64px;
+  height: 100%;
+  padding: 0.75rem 0.9rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: inherit;
+  text-decoration: none;
+  box-shadow: var(--shadow);
+  transition:
+    border-color 0.15s,
+    transform 0.15s;
+}
+.chain-step:hover {
+  border-color: var(--brand);
+  transform: translateY(-2px);
+}
+.chain-step svg {
+  flex: none;
+  color: var(--brand);
+}
+.chain-step .step-number {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 50%;
+  background: var(--brand-soft);
+  color: var(--brand-strong);
+  font-weight: 800;
+  font-size: 0.8rem;
+}
+.chain-step .step-content {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.chain-step small {
+  color: var(--muted);
+  font-size: 0.75rem;
+  line-height: 1.35;
+}
+.domain-card {
+  display: flex;
+  flex-direction: column;
+}
+.domain-card .topic-icon {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: var(--brand-soft);
+  color: var(--brand-strong);
+  margin-bottom: 0.75rem;
+}
+.domain-card .topic-meta {
+  margin-top: auto;
+  padding-top: 0.75rem;
+  color: var(--muted);
+}
+.coverage-grid {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 150px), 1fr));
+  margin: 1rem 0 0;
+}
+.coverage-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  height: 100%;
+}
+.coverage-item strong {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--brand-strong);
+  line-height: 1.1;
+}
+.coverage-item span {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.concept-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr));
+}
+.concept-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  height: 100%;
+}
+.concept-card span {
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+/* ---------- Unified search (#/search) ---------- */
+.search-form {
+  align-items: end;
+}
+.search-form .btn {
+  min-height: 46px;
+}
+.result-top {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin: 1rem 0;
+  border-left: 5px solid var(--brand);
+}
+.result-top .eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0;
+}
+.result-group {
+  margin-top: 1.75rem;
+}
+.result-group > h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+.result-list {
+  list-style: none;
+  margin: 0 0 0.75rem;
+  padding: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+.result-list li + li {
+  border-top: 1px solid var(--border);
+}
+.result-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  min-height: 52px;
+  padding: 0.6rem 0.9rem;
+  color: inherit;
+  text-decoration: none;
+}
+.result-row:hover,
+.result-row:focus-visible {
+  background: var(--surface-2);
+}
+.result-body {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.result-title {
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+.result-sub {
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+.result-formula {
+  font-weight: 500;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.result-row .badge {
+  flex: none;
+}
+.search-start .grid {
+  margin-top: 0.5rem;
+}
+.browse-card {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 64px;
+}
+.browse-card svg {
+  color: var(--brand);
+  flex: none;
+}
+.browse-card .card-title {
+  margin: 0;
+}
+
+/* ---------- Nuclear notation and equations ---------- */
+.nuc {
+  white-space: nowrap;
+}
+.nuc-idx {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  vertical-align: -0.35em;
+  margin-right: 0.08em;
+  font-size: 0.62em;
+  line-height: 1.05;
+}
+.nuc-idx sup,
+.nuc-idx sub {
+  font-size: 1em;
+  line-height: 1.05;
+  vertical-align: baseline;
+  position: static;
+}
+.rx-eq {
+  margin: 0;
+  line-height: 2.1;
+  font-weight: 600;
+}
+.rx-eq .sp,
+.rx-eq .nuc {
+  white-space: nowrap;
+}
+.rx-eq sub {
+  font-size: 0.72em;
+}
+.rx-eq .op {
+  color: var(--muted);
+  padding: 0 0.1rem;
+}
+.rx-eq .coef {
+  font-weight: 800;
+  margin-right: 0.1rem;
+}
+.rx-eq sub.state {
+  color: var(--muted);
+  font-size: 0.72em;
+  vertical-align: -0.25em;
+  margin-left: 0.05em;
+}
+.rx-eq-sm {
+  font-size: 0.95rem;
+}
+.rx-eq-lg {
+  font-size: clamp(1.15rem, 2.4vw, 1.6rem);
+  text-align: center;
+}
+.equation-inline {
+  white-space: normal;
+}
+.rx-equation {
+  overflow-x: auto;
+  padding: 1.25rem;
+}
+.rx-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+}
+.rx-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.rx-card .card-title {
+  margin: 0;
+}
+.rx-card .card-title a {
+  display: inline-block;
+  min-height: 1.75rem;
+}
+.rx-card .rx-eq {
+  overflow-x: auto;
+  padding: 0.4rem 0;
+}
+.rx-flow {
+  list-style: none;
+  margin: 1.25rem 0;
+  padding: 0;
+  display: grid;
+  gap: 1.5rem;
+  counter-reset: rx;
+}
+.rx-flow > li {
+  position: relative;
+  counter-increment: rx;
+}
+.rx-flow > li::before {
+  content: counter(rx);
+  position: absolute;
+  top: -0.7rem;
+  left: 1rem;
+  display: grid;
+  place-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: var(--brand);
+  color: var(--on-brand);
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+.rx-flow > li:not(:last-child)::after {
+  content: '↓';
+  position: absolute;
+  left: 50%;
+  bottom: -1.45rem;
+  transform: translateX(-50%);
+  color: var(--muted);
+  font-weight: 800;
+}
+.rx-list {
+  columns: 2 16rem;
+  column-gap: 1.5rem;
+  padding-left: 1.2rem;
+}
+.rx-list li {
+  break-inside: avoid;
+  margin: 0.3rem 0;
+}
+.tally caption {
+  text-align: left;
+  font-weight: 700;
+  padding-bottom: 0.4rem;
+}
+.tally tr.no td {
+  color: var(--danger);
+  font-weight: 700;
+}
+.ok {
+  color: var(--ok);
+}
+@media (min-width: 980px) {
+  .rx-flow {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .rx-flow > li:not(:last-child)::after {
+    content: '→';
+    left: auto;
+    right: -1.15rem;
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+  }
+}
+
+/* ---------- Ions ---------- */
+.ion-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  border-top: 4px solid var(--ion, var(--border));
+}
+.ion-cation {
+  --ion: #2a78d6;
+}
+.ion-anion {
+  --ion: #c2571a;
+}
+.ion-formula {
+  font-size: 1.35rem;
+  font-weight: 800;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+.result-title .ion-formula {
+  font-size: 1em;
+  margin-right: 0.25rem;
+}
+.ion-card .topic-meta {
+  margin-top: auto;
+  color: var(--muted);
+}
+
+/* ---------- Isotopes ---------- */
+.nuclide-chart {
+  position: relative;
+  overflow-x: auto;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.5rem;
+  -webkit-overflow-scrolling: touch;
+}
+.nuclide-chart svg {
+  display: block;
+  width: 100%;
+  min-width: 640px;
+  height: auto;
+}
+.nuclide-chart rect[data-z] {
+  cursor: pointer;
+}
+.nuclide-chart .tick {
+  fill: var(--muted);
+  font-size: 10px;
+}
+.nuclide-chart .axis {
+  stroke: var(--muted);
+  stroke-width: 1;
+}
+.nuclide-chart .axis-label {
+  fill: var(--text);
+  font-size: 11px;
+  font-weight: 700;
+}
+.nuclide-chart .row-highlight {
+  fill: #ffda66;
+  fill-opacity: 0.55;
+  stroke: #b47708;
+  stroke-width: 0.8;
+}
+.chart-tip {
+  position: absolute;
+  z-index: 3;
+  max-width: 180px;
+  padding: 0.45rem 0.6rem;
+  border-radius: 8px;
+  background: var(--text);
+  color: #fff;
+  font-size: 0.75rem;
+  line-height: 1.45;
+  pointer-events: none;
+  box-shadow: var(--shadow-lg);
+}
+.dot-outline {
+  background: transparent;
+  border: 1.5px solid #8b93a3;
+}
+.iso-table td,
+.iso-table th {
+  white-space: nowrap;
+}
+.iso-table th a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+}
+
+/* ---------- Materials ---------- */
+.pdb-figure {
+  margin: 0;
+  text-align: center;
+}
+.pdb-figure img {
+  max-width: min(100%, 360px);
+  border-radius: var(--radius-sm);
+  background: #fff;
+}
+.pdb-figure figcaption {
+  margin-top: 0.4rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+/* ---------- Half-life lab ---------- */
+.chart .series-theory {
+  stroke: var(--muted);
+  stroke-width: 2;
+  stroke-dasharray: 6 5;
+}
+
+@media print {
+  .nuclide-chart,
+  .chart-tip,
+  .search-form {
+    display: none;
+  }
+}

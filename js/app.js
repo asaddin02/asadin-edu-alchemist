@@ -1,4 +1,4 @@
-// Moleculium entry point: shell, routing, global event delegation and the service worker.
+// Alchemist entry point: shell, routing, global event delegation and the service worker.
 import { $, $$, esc, toast } from './core/dom.js';
 import { applyPrefs, pick } from './core/prefs.js';
 import { configureRouter, render, go, routeURL } from './core/router.js';
@@ -11,10 +11,10 @@ import { ui } from './i18n/ui.js';
 applyPrefs();
 renderHeader();
 renderFooter();
-bindShell(q => go(routeURL('explore', null, { q })));
+bindShell(q => go(routeURL('search', null, { q })));
 configureRouter({ before: route => markActive(route.page) });
 
-window.addEventListener('moleculium:prefs', () => {
+window.addEventListener('alchemist:prefs', () => {
   renderHeader();
   renderFooter();
   // The skip link moves focus without touching the hash route.
@@ -114,7 +114,7 @@ if (
 
 function showUpdate(worker) {
   const box = $('#toast');
-  box.innerHTML = `<div class="toast toast-info">${esc(pick(['Versi baru Moleculium tersedia.', 'A new version of Moleculium is available.']))}
+  box.innerHTML = `<div class="toast toast-info">${esc(pick(['Versi baru Alchemist tersedia.', 'A new version of Alchemist is available.']))}
     <button class="btn btn-small" type="button" data-update>${esc(pick(['Perbarui', 'Update']))}</button></div>`;
   box
     .querySelector('[data-update]')

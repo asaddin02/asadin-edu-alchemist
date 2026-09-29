@@ -2,7 +2,7 @@
 // Assembles dist/: the files a static host (Cloudflare Pages, Netlify, GitHub Pages) should publish,
 // plus a _headers file with the same security policy as server/server.mjs.
 //   npm run build:site                                   (also refreshes the sw.js precache list)
-//   SITE_URL=https://moleculium.example npm run build:site  absolute link-preview URLs for that address
+//   SITE_URL=https://alchemist.example npm run build:site  absolute link-preview URLs for that address
 // The Pages Function in functions/ is deployed from the project root by `wrangler pages deploy dist`.
 import { cp, mkdir, readdir, readFile, rm, stat, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';

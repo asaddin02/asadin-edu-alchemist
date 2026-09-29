@@ -22,5 +22,759 @@
   "author": "de:Benutzer:Tomihahndorf",
   "license": "CC BY-SA 3.0",
   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
- }
+ },
+ "weight": {
+  "value": "40.078(4)",
+  "kind": "standard",
+  "source": "ciaaw"
+ },
+ "natural": [
+  {
+   "A": 40,
+   "iso": "",
+   "mass": "39.962 5909(2)",
+   "abundance": "0.969 41(156)"
+  },
+  {
+   "A": 42,
+   "iso": "",
+   "mass": "41.958 618(1)",
+   "abundance": "0.006 47(23)"
+  },
+  {
+   "A": 43,
+   "iso": "",
+   "mass": "42.958 766(2)",
+   "abundance": "0.001 35(10)"
+  },
+  {
+   "A": 44,
+   "iso": "",
+   "mass": "43.955 482(2)",
+   "abundance": "0.020 86(110)"
+  },
+  {
+   "A": 46,
+   "iso": "",
+   "mass": "45.953 69(2)",
+   "abundance": "0.000 04(3)"
+  },
+  {
+   "A": 48,
+   "iso": "",
+   "mass": "47.952 5229(6)",
+   "abundance": "0.001 87(21)"
+  }
+ ],
+ "naturalSource": "ciaaw",
+ "nuclides": [
+  {
+   "A": 33,
+   "iso": "",
+   "mass": "33.033312 ± 0.000429",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 34,
+   "iso": "",
+   "mass": "34.015985 ± 0.000322",
+   "half": "Not-specified <35ns",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "2p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 35,
+   "iso": "",
+   "mass": "35.005572 ± 0.000215",
+   "half": "25.7 ms ± 0.2",
+   "seconds": 0.0257,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 95.8
+    },
+    {
+     "mode": "β+2p",
+     "op": "=",
+     "pct": 4.2
+    }
+   ],
+   "year": 1985,
+   "est": true
+  },
+  {
+   "A": 36,
+   "iso": "",
+   "mass": "35.993074388 ± 0.000042941",
+   "half": "100.9 ms ± 1.3",
+   "seconds": 0.1009,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 51.2
+    }
+   ],
+   "year": 1977,
+   "est": false
+  },
+  {
+   "A": 37,
+   "iso": "",
+   "mass": "36.985897849 ± 0.00000068",
+   "half": "181.0 ms ± 0.9",
+   "seconds": 0.181,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 76.8
+    }
+   ],
+   "year": 1964,
+   "est": false
+  },
+  {
+   "A": 38,
+   "iso": "",
+   "mass": "37.976319223 ± 0.000000208",
+   "half": "443.70 ms ± 0.25",
+   "seconds": 0.4437,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1966,
+   "est": false
+  },
+  {
+   "A": 39,
+   "iso": "",
+   "mass": "38.970710811 ± 0.00000064",
+   "half": "860.3 ms ± 0.8",
+   "seconds": 0.8603,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1943,
+   "est": false
+  },
+  {
+   "A": 40,
+   "iso": "",
+   "mass": "39.962590850 ± 0.000000022",
+   "half": "Stable >9.9Zy",
+   "seconds": null,
+   "stable": true,
+   "decay": [
+    {
+     "mode": "2β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1922,
+   "est": false
+  },
+  {
+   "A": 41,
+   "iso": "",
+   "mass": "40.962277905 ± 0.000000147",
+   "half": "99.4 ky ± 1.5",
+   "seconds": 3136758452352.0005,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1939,
+   "est": false
+  },
+  {
+   "A": 42,
+   "iso": "",
+   "mass": "41.958617780 ± 0.000000159",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1934,
+   "est": false
+  },
+  {
+   "A": 43,
+   "iso": "",
+   "mass": "42.958766381 ± 0.000000244",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1934,
+   "est": false
+  },
+  {
+   "A": 44,
+   "iso": "",
+   "mass": "43.955481489 ± 0.000000348",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1922,
+   "est": false
+  },
+  {
+   "A": 45,
+   "iso": "",
+   "mass": "44.956186270 ± 0.000000392",
+   "half": "162.61 d ± 0.09",
+   "seconds": 14049504.000000002,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1940,
+   "est": false
+  },
+  {
+   "A": 46,
+   "iso": "",
+   "mass": "45.953687726 ± 0.000002398",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [
+    {
+     "mode": "2β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1938,
+   "est": false
+  },
+  {
+   "A": 47,
+   "iso": "",
+   "mass": "46.954541134 ± 0.000002384",
+   "half": "4.536 d ± 0.003",
+   "seconds": 391910.39999999997,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1951,
+   "est": false
+  },
+  {
+   "A": 48,
+   "iso": "",
+   "mass": "47.952522654 ± 0.000000018",
+   "half": "56 Ey ± 10",
+   "seconds": 1.76718786048e+27,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "2β-",
+     "op": "=",
+     "pct": null
+    },
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1938,
+   "est": false
+  },
+  {
+   "A": 49,
+   "iso": "",
+   "mass": "48.955662625 ± 0.00000019",
+   "half": "8.718 m ± 0.006",
+   "seconds": 523.08,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1950,
+   "est": false
+  },
+  {
+   "A": 50,
+   "iso": "",
+   "mass": "49.957499215 ± 0.0000017",
+   "half": "13.45 s ± 0.05",
+   "seconds": 13.45,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1964,
+   "est": false
+  },
+  {
+   "A": 51,
+   "iso": "",
+   "mass": "50.960995663 ± 0.00000056",
+   "half": "10.0 s ± 0.8",
+   "seconds": 10,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1980,
+   "est": false
+  },
+  {
+   "A": 52,
+   "iso": "",
+   "mass": "51.963213646 ± 0.00000072",
+   "half": "4.6 s ± 0.3",
+   "seconds": 4.6,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "<",
+     "pct": 2
+    }
+   ],
+   "year": 1985,
+   "est": false
+  },
+  {
+   "A": 53,
+   "iso": "",
+   "mass": "52.968451000 ± 0.000047",
+   "half": "461 ms ± 90",
+   "seconds": 0.461,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 40
+    }
+   ],
+   "year": 1983,
+   "est": false
+  },
+  {
+   "A": 54,
+   "iso": "",
+   "mass": "53.972989000 ± 0.000052",
+   "half": "90 ms ± 6",
+   "seconds": 0.09,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1997,
+   "est": false
+  },
+  {
+   "A": 55,
+   "iso": "",
+   "mass": "54.979978000 ± 0.000172",
+   "half": "22 ms ± 2",
+   "seconds": 0.022,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1997,
+   "est": false
+  },
+  {
+   "A": 56,
+   "iso": "",
+   "mass": "55.985496000 ± 0.000268",
+   "half": "11 ms ± 2",
+   "seconds": 0.011,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1997,
+   "est": false
+  },
+  {
+   "A": 57,
+   "iso": "",
+   "mass": "56.992958 ± 0.000429",
+   "half": "8 ms >620ns",
+   "seconds": 0.008,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2009,
+   "est": true
+  },
+  {
+   "A": 58,
+   "iso": "",
+   "mass": "57.998357 ± 0.000537",
+   "half": "4 ms >620ns",
+   "seconds": 0.004,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2009,
+   "est": true
+  },
+  {
+   "A": 59,
+   "iso": "",
+   "mass": "59.006237 ± 0.000644",
+   "half": "5 ms >400ns",
+   "seconds": 0.005,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2018,
+   "est": true
+  },
+  {
+   "A": 60,
+   "iso": "",
+   "mass": "60.011809 ± 0.000751",
+   "half": "2 ms >400ns",
+   "seconds": 0.002,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2018,
+   "est": true
+  },
+  {
+   "A": 61,
+   "iso": "",
+   "mass": "61.020408 ± 0.000859",
+   "half": "1 ms",
+   "seconds": 0.001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  }
+ ],
+ "stableCount": 3,
+ "texts": {
+  "history": [
+   {
+    "text": "The name derives from the Latin calx for \"lime\" (CaO) or \"limestone\" (CaCO3) in which it was found. It was first isolated by British chemist Humphry Davy in 1808 with help from the Swedish chemist Jöns Jacob Berzelius and the Swedish court physician M. M. af Pontin.",
+    "source": "ciaaw"
+   },
+   {
+    "text": "Although calcium is the fifth most abundant element in the earth's crust, it is never found free in nature since it easily forms compounds by reacting with oxygen and water. Metallic calcium was first isolated by Sir Humphry Davy in 1808 through the electrolysis of a mixture of lime (CaO) and mercuric oxide (HgO). Today, metallic calcium is obtained by displacing calcium atoms in lime with atoms of aluminum in hot, low-pressure containers. About 4.2% of the earth's crust is composed of calcium.",
+    "source": "jlab"
+   },
+   {
+    "text": "From the Latin word calx, lime. Though lime was prepared by the Romans in the first century under the name calx, the metal was not discovered until 1808. After learning that Berzelius and Pontin prepared calcium amalgam by electrolyzing lime in mercury, Davy was able to isolate the impure metal.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Due to its high reactivity with common materials, there is very little demand for metallic calcium. It is used in some chemical processes to refine thorium, uranium and zirconium. Calcium is also used to remove oxygen, sulfur and carbon from certain alloys. Calcium can be alloyed with aluminum, beryllium, copper, lead and magnesium. Calcium is also used in vacuum tubes as a getter, a material that combines with and removes trace gases from vacuum tubes. Calcium carbonate (CaCO3) is one of the common compounds of calcium. It is heated to form quicklime (CaO) which is then added to water (H2O). This forms another material known as slaked lime (Ca(OH)2) which is an inexpensive base material used throughout the chemical industry. Chalk, marble and limestone are all forms of calcium carbonate. Calcium carbonate is used to make white paint, cleaning powder, toothpaste and stomach antacids, among other things. Other common compounds of calcium include: calcium sulfate (CaSO4), also known as gypsum, which is used to make dry wall and plaster of Paris, calcium nitrate (Ca(NO3)2), a naturally occurring fertilizer and calcium phosphate (Ca3(PO4)2), the main material found in bones and teeth.",
+    "source": "jlab"
+   },
+   {
+    "text": "The metal is used as a reducing agent in preparing other metals such as thorium, uranium, zirconium, etc., and is used as a deoxidizer, desulfurizer, or decarburizer for various ferrous and nonferrous alloys. It is also used as an alloying agent for aluminum, beryllium, copper, lead, and magnesium alloys, and serves as a \"getter\" for residual gases in vacuum tubes, etc.",
+    "source": "lanl"
+   }
+  ],
+  "sources": [
+   {
+    "text": "Calcium, a metallic element, is fifth in abundance in the earth's crust, of which it forms more than 3%. It is an essential constituent of leaves, bones, teeth, and shells. Never found in nature uncombined, it occurs abundantly as limestone, gypsum, and fluorite. Apatite is the fluorophosphate or chlorophosphate of calcium.",
+    "source": "lanl"
+   }
+  ],
+  "description": [
+   {
+    "text": "The metal has a silvery color, is rather hard, and is prepared by electrolysis of fused chloride and calcium fluoride (to lower the melting point). Chemically it is one of the alkaline earth elements; it readily forms a white coating of nitride in air, reacts with water, burns with a yellow-red flame.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Earth/Planetary Science",
+   "text": "Molecules, atoms, and ions of the stable isotopes of calcium possess slightly different physical and chemical properties, and they commonly will be fractionated during physical, chemical, and biological processes, giving rise to variations in isotopic abundances and in atomic weights (Fig. IUPAC.20.1). The isotope-amount ratio n(44Ca)/n(40Ca) is used to quantify the calcium cycle (sources and sinks of calcium) in the ocean. Calcium isotopes fractionate (separate) in terrestrial and marine environments owing to biological and inorganic processes, which discriminate against heavy calcium isotopes. The calcification process controls the removal of calcium from the ocean, which is mostly balanced by hydrothermal and riverine calcium input. Calcium has a long residence time, symbol τ, in seawater (τCa about 1 to 2 million years) relative to the short mixing time of the global ocean (about 1000 years), which has allowed the calcium isotopic composition of modern seawater to homogenize globally. This was likely the case in the geological past as well, which makes the n(44Ca)/n(40Ca) ratio useful when quantifying the oceanic calcium cycle,. The isotope-amount ratio n(44Ca)/n(40Ca) has been used to trace sources of calcium in soil and river water. The isotope-amount ratio n(44Ca)/n(40Ca) ratio of calcium carbonate may serve as a paleothermometer to determine seawater temperatures in the past, making use of the temperature-dependent isotopic fractionation between 40Ca and 44Ca,. The radioactive isotope 45Ca (half-life of 163 days) is used to study calcium behavior in soils, detergents, water-purification systems, and glassy materials. 45Ca is introduced into a system and monitored to measure various types of calcium responses within the system and to investigate how calcium of one matrix may interact with another (i.e. calcium of soil mixing with that of fertilizers). 45Ca has been used to investigate the transport of contaminants in groundwater through the unsaturated zone. ",
+   "source": "iptei"
+  },
+  {
+   "topic": "Medicine",
+   "text": "Stable isotopes of calcium (42Ca, 44Ca, 46Ca, and 48Ca) and radioisotopes of calcium (45Ca and 47Ca, with a half-life of 109 h) can be used for tracing calcium uptake, utilization, and excretion in the body. For example, most of our knowledge on the efficiency by which calcium is absorbed in the intestine (bioavailability) comes from studies in which calcium in the diet was labeled with stable or radioactive isotopes. In such studies, the isotope-labeled food is ingested and fecal matter tested for the presence and quantity of unabsorbed isotope. When coupling oral ingestion of food labeled with one calcium isotope with an intravenous injection of a second calcium isotope, this technique can be used as a means to measure calcium absorption within the body by measuring excretion of both tracers in the urine. In a similar fashion, dietary absorption of magnesium and zinc can be studied,. Stable and radioactive isotopes are used in biomedical research and clinical practice to study disorders associated with calcium metabolism, in particular in relation to bone health and calcium accumulation in body tissues (vascular calcification, kidney stone formation). Stable isotope tracers have been used successfully to study bone calcium balance during space-flight and in-bed-rest studies. A long-living calcium radioisotope (41Ca), with a half-life of 9.9×104 years, has been used successfully for labeling of bone calcium to measure bone calcium turnover via urinary excretion of the tracer.",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "4.15×10^4 milligrams per kilogram",
+  "ocean": "4.12×10^2 milligrams per liter",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 271,
+   "name": "calcium(2+)",
+   "formula": "Ca+2",
+   "charge": 2,
+   "smiles": "[Ca+2]"
+  },
+  {
+   "cid": 5460341,
+   "name": "calcium",
+   "formula": "Ca",
+   "charge": 0,
+   "smiles": "[Ca]"
+  }
+ ],
+ "refs": {
+  "ciaaw": {
+   "name": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+   "url": "https://www.ciaaw.org/calcium.htm"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele020.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/20.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": null,
+ "ghs": {
+  "signal": "Danger",
+  "pictograms": [
+   {
+    "code": "GHS02",
+    "label": "Flammable"
+   }
+  ],
+  "hazards": [
+   "H261 (98.7%): In contact with water releases flammable gas"
+  ],
+  "reports": 823,
+  "notMet": 1.3,
+  "notClassified": false,
+  "source": "European Chemicals Agency (ECHA)"
+ },
+ "ghsCid": 5460341
 }

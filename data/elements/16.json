@@ -22,5 +22,660 @@
   "author": "Ivar Leidus",
   "license": "CC BY-SA 4.0",
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
- }
+ },
+ "weight": {
+  "value": "[32.059, 32.076]",
+  "kind": "interval",
+  "source": "ciaaw"
+ },
+ "natural": [
+  {
+   "A": 32,
+   "iso": "",
+   "mass": "31.972 071 174(9)",
+   "abundance": "[0.9441, 0.9529]"
+  },
+  {
+   "A": 33,
+   "iso": "",
+   "mass": "32.971 458 91(1)",
+   "abundance": "[0.007 29, 0.007 97]"
+  },
+  {
+   "A": 34,
+   "iso": "",
+   "mass": "33.967 8670(3)",
+   "abundance": "[0.0396, 0.0477]"
+  },
+  {
+   "A": 36,
+   "iso": "",
+   "mass": "35.967 081(2)",
+   "abundance": "[0.000 129, 0.000 187]"
+  }
+ ],
+ "naturalSource": "ciaaw",
+ "nuclides": [
+  {
+   "A": 26,
+   "iso": "",
+   "mass": "26.029716 ± 0.000644",
+   "half": "Not-specified <79ns",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "2p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 27,
+   "iso": "",
+   "mass": "27.018777 ± 0.00043",
+   "half": "16.3 ms ± 0.2",
+   "seconds": 0.016300000000000002,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 61
+    },
+    {
+     "mode": "β+2p",
+     "op": "=",
+     "pct": 3
+    }
+   ],
+   "year": 1986,
+   "est": true
+  },
+  {
+   "A": 28,
+   "iso": "",
+   "mass": "28.004372762 ± 0.000171767",
+   "half": "125 ms ± 10",
+   "seconds": 0.125,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 20.7
+    }
+   ],
+   "year": 1982,
+   "est": false
+  },
+  {
+   "A": 29,
+   "iso": "",
+   "mass": "28.996678000 ± 0.000014",
+   "half": "188 ms ± 4",
+   "seconds": 0.188,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 46.4
+    }
+   ],
+   "year": 1964,
+   "est": false
+  },
+  {
+   "A": 30,
+   "iso": "",
+   "mass": "29.984906770 ± 0.000000221",
+   "half": "1.1798 s ± 0.0003",
+   "seconds": 1.1798,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1961,
+   "est": false
+  },
+  {
+   "A": 31,
+   "iso": "",
+   "mass": "30.979557002 ± 0.000000246",
+   "half": "2.5534 s ± 0.0018",
+   "seconds": 2.5534,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1940,
+   "est": false
+  },
+  {
+   "A": 32,
+   "iso": "",
+   "mass": "31.97207117354 ± 0.00000000141",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1920,
+   "est": false
+  },
+  {
+   "A": 33,
+   "iso": "",
+   "mass": "32.97145890862 ± 0.00000000144",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1926,
+   "est": false
+  },
+  {
+   "A": 34,
+   "iso": "",
+   "mass": "33.967867011 ± 0.000000047",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1926,
+   "est": false
+  },
+  {
+   "A": 35,
+   "iso": "",
+   "mass": "34.969032321 ± 0.000000043",
+   "half": "87.37 d ± 0.04",
+   "seconds": 7548768,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1936,
+   "est": false
+  },
+  {
+   "A": 36,
+   "iso": "",
+   "mass": "35.967080692 ± 0.000000201",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1938,
+   "est": false
+  },
+  {
+   "A": 37,
+   "iso": "",
+   "mass": "36.971125500 ± 0.000000212",
+   "half": "5.05 m ± 0.02",
+   "seconds": 303,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1945,
+   "est": false
+  },
+  {
+   "A": 38,
+   "iso": "",
+   "mass": "37.971163300 ± 0.000007699",
+   "half": "170.3 m ± 0.7",
+   "seconds": 10218,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1958,
+   "est": false
+  },
+  {
+   "A": 39,
+   "iso": "",
+   "mass": "38.975133850 ± 0.000053677",
+   "half": "11.5 s ± 0.5",
+   "seconds": 11.5,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1971,
+   "est": false
+  },
+  {
+   "A": 40,
+   "iso": "",
+   "mass": "39.975482561 ± 0.000004274",
+   "half": "8.8 s ± 2.2",
+   "seconds": 8.8,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1971,
+   "est": false
+  },
+  {
+   "A": 41,
+   "iso": "",
+   "mass": "40.979593451 ± 0.0000044",
+   "half": "1.99 s ± 0.05",
+   "seconds": 1.99,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1979,
+   "est": false
+  },
+  {
+   "A": 42,
+   "iso": "",
+   "mass": "41.981065100 ± 0.000003",
+   "half": "1.016 s ± 0.015",
+   "seconds": 1.016,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "<",
+     "pct": 1
+    }
+   ],
+   "year": 1979,
+   "est": false
+  },
+  {
+   "A": 43,
+   "iso": "",
+   "mass": "42.986907635 ± 0.000005335",
+   "half": "265 ms ± 13",
+   "seconds": 0.265,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 40
+    }
+   ],
+   "year": 1979,
+   "est": false
+  },
+  {
+   "A": 44,
+   "iso": "",
+   "mass": "43.990118846 ± 0.0000056",
+   "half": "100 ms ± 1",
+   "seconds": 0.1,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 18
+    }
+   ],
+   "year": 1979,
+   "est": false
+  },
+  {
+   "A": 45,
+   "iso": "",
+   "mass": "44.996414 ± 0.000322",
+   "half": "68 ms ± 2",
+   "seconds": 0.068,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "≈",
+     "pct": 54
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1989,
+   "est": true
+  },
+  {
+   "A": 46,
+   "iso": "",
+   "mass": "46.000687 ± 0.000429",
+   "half": "50 ms ± 8",
+   "seconds": 0.05,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1989,
+   "est": true
+  },
+  {
+   "A": 47,
+   "iso": "",
+   "mass": "47.007730 ± 0.000429",
+   "half": "24 ms >200ns",
+   "seconds": 0.024,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1989,
+   "est": true
+  },
+  {
+   "A": 48,
+   "iso": "",
+   "mass": "48.013301 ± 0.000537",
+   "half": "10 ms >200ns",
+   "seconds": 0.01,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1990,
+   "est": true
+  },
+  {
+   "A": 49,
+   "iso": "",
+   "mass": "49.021891 ± 0.000626",
+   "half": "4 ms >400ns",
+   "seconds": 0.004,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2018,
+   "est": true
+  }
+ ],
+ "stableCount": 4,
+ "texts": {
+  "history": [
+   {
+    "text": "The name derives from the Latin sulphurium and the Sanskrit sulveri. Sulfur was known as brenne stone for \"combustible stone\" from which brim-stone is derived. It was known from prehistoric times and thought to contain hydrogen and oxygen. In 1809, the French chemists Louis-Joseph Gay-Lussac and Louis-Jacques Thenard proved the elemental nature of sulfur.",
+    "source": "ciaaw"
+   },
+   {
+    "text": "Sulfur, the tenth most abundant element in the universe, has been known since ancient times. Sometime around 1777, Antoine Lavoisier convinced the rest of the scientific community that sulfur was an element. Sulfur is a component of many common minerals, such as galena (PbS), gypsum (CaSO4·2(H2O), pyrite (FeS2), sphalerite (ZnS or FeS), cinnabar (HgS), stibnite (Sb2S3), epsomite (MgSO4·7(H2O)), celestite (SrSO4) and barite (BaSO4). Nearly 25% of the sulfur produced today is recovered from petroleum refining operations and as a byproduct of extracting other materials from sulfur containing ores. The majority of the sulfur produced today is obtained from underground deposits, usually found in conjunction with salt deposits, with a process known as the Frasch process. Sulfur is a pale yellow, odorless and brittle material. It displays three allotropic forms: orthorhombic, monoclinic and amorphous. The orthorhombic form is the most stable form of sulfur. Monoclinic sulfur exists between the temperatures of 96°C and 119°C and reverts back to the orthorhombic form when cooled. Amorphous sulfur is formed when molten sulfur is quickly cooled. Amorphous sulfur is soft and elastic and eventually reverts back to the orthorhombic form.",
+    "source": "jlab"
+   },
+   {
+    "text": "Known to the ancients; referred to in Genesis as brimstone.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Most of the sulfur that is produced is used in the manufacture of sulfuric acid (H2SO4). Large amounts of sulfuric acid, nearly 40 million tons, are used each year to make fertilizers, lead-acid batteries, and in many industrial processes. Smaller amounts of sulfur are used to vulcanize natural rubbers, as an insecticide (the Greek poet Homer mentioned \"pest-averting sulphur\" nearly 2,800 years ago!), in the manufacture of gunpowder and as a dying agent. In addition to sulfuric acid, sulfur forms other interesting compounds. Hydrogen sulfide (H2S) is a gas that smells like rotten eggs. Sulfur dioxide (SO2), formed by burning sulfur in air, is used as a bleaching agent, solvent, disinfectant and as a refrigerant. When combined with water (H2O), sulfur dioxide forms sulfurous acid (H2SO3), a weak acid that is a major component of acid rain.",
+    "source": "jlab"
+   },
+   {
+    "text": "Sulfur is a component of black gunpowder, and is used in the vulcanization of natural rubber and a fungicide. It is also used extensively in making phosphatic fertilizers. A tremendous tonnage is used to produce sulfuric acid, the most important manufactured chemical. It is used to make sulfite paper and other papers, to fumigate, and to bleach dried fruits. The element is a good insulator. Sulfur is essential to life. It is a minor constituent of fats, body fluids, and skeletal minerals.",
+    "source": "lanl"
+   }
+  ],
+  "sources": [
+   {
+    "text": "Sulfur is found in meteorites. R.W. Wood suggests that the dark area near the crater Aristarchus is a sulfur deposit. Sulfur occurs native in the vicinity of volcanos and hot springs. It is widely distributed in nature as iron pyrites, galena, sphalerite, cinnabar, stibnite, gypsum, epsom salts, celestite, barite, etc.",
+    "source": "lanl"
+   }
+  ],
+  "description": [
+   {
+    "text": "Sulfur is pale yellow, odorless, brittle solid, which is insoluble in water but soluble in carbon disulfide. In every state, whether gas, liquid or solid, elemental sulfur occurs in more than one allotropic form or modification; these present a confusing multitude of forms whose relations are not yet fully understood. In 1975, University of Pennsylvania scientists reported synthesis of polymeric sulfur nitride, which has the properties of a metal, although it contains no metal atoms. The material has unusual optical and electrical properties. High-purity sulfur is commercially available in purities of 99.999+%. Amorphous or \"plastic\" sulfur is obtained by fast cooling of the crystalline form. X-ray studies indicate that amorphous sulfur may have a helical structure with eight atoms per spiral. Crystalline sulfur seems to be made of rings, each containing eight sulfur atoms, which fit together to give a normal X-ray pattern.",
+    "source": "lanl"
+   }
+  ],
+  "handling": [
+   {
+    "text": "Carbon disulfide, hydrogen sulfide, and sulfur dioxide should be handled carefully. Hydrogen sulfide in small concentrations can be metabolized, but in higher concentrations it quickly can cause death by respiratory paralysis. It quickly deadens the sense of smell. Sulfur dioxide is a dangerous component in atmospheric air pollution.",
+    "source": "lanl"
+   }
+  ],
+  "isotopes": [
+   {
+    "text": "Eleven isotopes of sulfur exist. None of the four isotopes that are found in nature are radioactive. A finely divided form of sulfur, known as flowers of sulfur, is obtained by sublimation.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Biology",
+   "text": "The stable sulfur isotope-amount ratio n(34S)/n(32S) has been used to distinguish whether animal tissues grew in freshwater or in marine ecosystems. The isotopes do not fractionate (separate) substantially with trophic influences (the movement of sulfur through and into plant and animal systems), and the isotope-amount ratio n(34S)/n(32S) is usually substantially different between freshwater and marine environments. As an example, by analyzing sulfur isotope-amount ratios in bird feathers, the environment in which the bird was living when these feathers developed can be determined. This enables one to track bird habitats and migration patterns throughout the year (Fig. IUPAC.16.1). ",
+   "source": "iptei"
+  },
+  {
+   "topic": "Earth/Planetary Science",
+   "text": "Molecules, atoms, and ions of the stable isotopes of sulfur possess slightly different physical and chemical properties, and they commonly will be fractionated during physical, chemical, and biological processes, giving rise to variations in isotopic abundances and in atomic weights. There are substantial variations in the isotopic abundances of sulfur in natural terrestrial materials (Fig. IUPAC.16.2). These variations are useful in investigating the origin of substances and studying environmental, hydrological, and geological processes,. The isotope-amount ratio n(34S)/n(32S) can be used to trace natural and anthropogenic sources of sulfur. Examples include studies of acid mine drainage, the cycling of sulfur in agricultural watersheds, groundwater contamination from landfills, and sources of salinity in coastal aquifers,,. ",
+   "source": "iptei"
+  },
+  {
+   "topic": "Forensic Science and Anthropology",
+   "text": "The isotope-amount ratio n(34S)/n(32S) can be used to authenticate the dietary source of cattle. First, stable isotopes are measured to infer the dietary source of the cattle. Once the source of the diet is found, the isotopic compositions can be traced in certain muscle groups of the cattle and can be used to determine if the diet of the animal has been changed or if the feed is consistent with what the animal has been claimed to have been fed.",
+   "source": "iptei"
+  },
+  {
+   "topic": "Geochronology",
+   "text": "35S has a half-life of 87 days, which is an ideal duration for use as a conservative tracer in atmospheric processes. 35SO2 gas is produced as a natural product of argon exposure to cosmic rays in the atmosphere. Because 35SO2 gas is present in the atmosphere and then precipitates and falls as moisture in the form of 35SO4 2-, 35S can act as a tracer to study air mass transport dynamics and atmospheric oxidation capacity. Analyses of 35S in lake water and precipitation can also be used as a tracer to monitor contributions of sulfur that originated in precipitation to surface waters. If a water tests positive for the isotope 35S, it provides evidence that the water had been affected by recent (<~1 year) precipitation,,. 35S is used in direct labeling of elemental sulfur or sulfate sources to trace the fate of sulfur in fertilizers.",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "3.50×10^2 milligrams per kilogram",
+  "ocean": "9.05×10^2 milligrams per liter",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 5362487,
+   "name": "sulfur",
+   "formula": "S",
+   "charge": 0,
+   "smiles": "[S]"
+  },
+  {
+   "cid": 29109,
+   "name": "sulfide",
+   "formula": "S-2",
+   "charge": -2,
+   "smiles": "[S-2]"
+  },
+  {
+   "cid": 5460611,
+   "name": "sulfur(1-)",
+   "formula": "S-",
+   "charge": -1,
+   "smiles": "[S-]"
+  }
+ ],
+ "refs": {
+  "ciaaw": {
+   "name": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+   "url": "https://www.ciaaw.org/sulfur.htm"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele016.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/16.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": "sulfur",
+ "ghs": {
+  "signal": "Warning",
+  "pictograms": [
+   {
+    "code": "GHS02",
+    "label": "Flammable"
+   },
+   {
+    "code": "GHS07",
+    "label": "Irritant"
+   }
+  ],
+  "hazards": [
+   "H228 (100%): Flammable solid",
+   "H315 (100%): Causes skin irritation"
+  ],
+  "reports": null,
+  "notMet": null,
+  "notClassified": false,
+  "source": "European Chemicals Agency (ECHA)"
+ },
+ "ghsCid": 66348
 }

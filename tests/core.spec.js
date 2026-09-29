@@ -24,6 +24,18 @@ const PAGES = [
   'molecule/water',
   'molecule/diamond',
   'molecule/polyethylene',
+  'search?q=besi',
+  'peta',
+  'peta/inti',
+  'isotope',
+  'isotope/C-14',
+  'ion',
+  'ion/sulfat',
+  'reaction',
+  'reaction/haber-bosch',
+  'material',
+  'material/baja',
+  'lab/paruh',
 ];
 
 test.beforeEach(async ({ page }) => {
@@ -35,7 +47,7 @@ test('every main page renders a heading without script errors', async ({ page })
   const errors = watchErrors(page);
   for (const hash of PAGES) {
     await open(page, hash);
-    await expect(page).toHaveTitle(/Moleculium/);
+    await expect(page).toHaveTitle(/Alchemist/);
   }
   expect(errors).toEqual([]);
 });
@@ -75,14 +87,14 @@ test('unknown routes show a friendly not-found page', async ({ page }) => {
   await expect(page.locator('h1')).toHaveText('Molekul tidak ditemukan');
 });
 
-test('header search opens Explore with the query', async ({ page }) => {
+test('header search opens the unified search with the query', async ({ page }) => {
   await prefs(page);
   await page.setViewportSize({ width: 1500, height: 900 });
   await page.goto('/');
   await page.locator('#site-search').fill('kafeina');
   await page.locator('#site-search').press('Enter');
-  await expect(page).toHaveURL(/#\/explore\?q=kafeina/);
-  await expect(page.locator('[data-results] .mol-card').first()).toContainText('Kafeina');
+  await expect(page).toHaveURL(/#\/search\?q=kafeina/);
+  await expect(page.locator('.result-top')).toContainText('Kafeina');
 });
 
 test('mobile menu opens, lists every section and closes with Escape', async ({ page }) => {
@@ -92,7 +104,7 @@ test('mobile menu opens, lists every section and closes with Escape', async ({ p
   const button = page.locator('[data-toggle="drawer"]');
   await button.click();
   await expect(page.locator('#drawer')).toBeVisible();
-  await expect(page.locator('#drawer a')).toHaveCount(14);
+  await expect(page.locator('#drawer a')).toHaveCount(20);
   await page.keyboard.press('Escape');
   await expect(page.locator('#drawer')).toBeHidden();
   await expect(button).toBeFocused();

@@ -2,8 +2,8 @@
 import { S } from '../core/prefs.js';
 
 export const ui = S({
-  appName: ['Moleculium', 'Moleculium'],
-  tagline: ['Atlas molekul, unsur, dan material dunia', 'World atlas of molecules, elements and materials'],
+  appName: ['Alchemist', 'Alchemist'],
+  tagline: ['Ensiklopedia kimia interaktif', 'Interactive chemistry encyclopedia'],
   skip: ['Lewati ke konten utama', 'Skip to main content'],
   home: ['Beranda', 'Home'],
   explore: ['Jelajah', 'Explore'],
@@ -16,6 +16,11 @@ export const ui = S({
   compare: ['Bandingkan', 'Compare'],
   around: ['Di sekitarku', 'Around me'],
   glossary: ['Kamus', 'Glossary'],
+  peta: ['Peta ilmu kimia', 'Chemistry map'],
+  isotope: ['Isotop', 'Isotopes'],
+  ion: ['Ion', 'Ions'],
+  reaction: ['Reaksi', 'Reactions'],
+  material: ['Material & campuran', 'Materials & mixtures'],
   saved: ['Tersimpan', 'Saved'],
   teacher: ['Ruang guru', 'Teacher room'],
   about: ['Tentang & sumber', 'About & sources'],
@@ -23,7 +28,10 @@ export const ui = S({
   menu: ['Menu', 'Menu'],
   close: ['Tutup', 'Close'],
   search: ['Cari', 'Search'],
-  searchLabel: ['Cari molekul, unsur, atau rumus', 'Search molecules, elements or formulas'],
+  searchLabel: [
+    'Cari unsur, isotop, ion, molekul, reaksi, atau konsep',
+    'Search elements, isotopes, ions, molecules, reactions or concepts',
+  ],
   searchPlaceholder: ['Cari: air, kafeina, NaCl, Fe…', 'Search: water, caffeine, NaCl, Fe…'],
   mode: ['Mode', 'Mode'],
   modeLabel: ['Pilih mode belajar', 'Choose learning mode'],

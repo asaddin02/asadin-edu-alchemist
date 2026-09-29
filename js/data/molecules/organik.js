@@ -162,7 +162,7 @@ export default [
     geo: 'linear',
     name: ['Asetilena (etuna)', 'Acetylene (ethyne)'],
     about: ['Alkuna paling sederhana (H–C≡C–H) yang lurus 180°.', 'The simplest alkyne (H–C≡C–H), perfectly straight at 180°.'],
-    uses: ['Las oksiasetilena bersuhu sekitar 3000 °C dan bahan baku kimia.', 'Oxy-acetylene welding at about 3000 °C and a chemical feedstock.'],
+    uses: ['Las oksiasetilena dengan nyala di atas 3000 °C dan bahan baku kimia.', 'Oxy-acetylene welding with a flame above 3000 °C and a chemical feedstock.'],
     fun: [
       'Karbit (kalsium karbida) yang terkena air menghasilkan asetilena; dulu dipakai untuk lampu dan memeram buah.',
       'Calcium carbide ("karbit") plus water gives acetylene, once used for lamps and to ripen fruit.',

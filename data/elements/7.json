@@ -22,5 +22,498 @@
   "author": "Robin Müller",
   "license": "CC BY-SA 3.0",
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
- }
+ },
+ "weight": {
+  "value": "[14.006 43, 14.007 28]",
+  "kind": "interval",
+  "source": "ciaaw"
+ },
+ "natural": [
+  {
+   "A": 14,
+   "iso": "",
+   "mass": "14.003 074 004(2)",
+   "abundance": "[0.995 78, 0.996 63]"
+  },
+  {
+   "A": 15,
+   "iso": "",
+   "mass": "15.000 108 899(4)",
+   "abundance": "[0.003 37, 0.004 22]"
+  }
+ ],
+ "naturalSource": "ciaaw",
+ "nuclides": [
+  {
+   "A": 10,
+   "iso": "",
+   "mass": "10.041653540 ± 0.000429417",
+   "half": "143 ys ± 36",
+   "seconds": 1.43e-22,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2002,
+   "est": false
+  },
+  {
+   "A": 11,
+   "iso": "",
+   "mass": "11.026157593 ± 0.000005368",
+   "half": "585 ys ± 7",
+   "seconds": 5.85e-22,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "p",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1974,
+   "est": false
+  },
+  {
+   "A": 12,
+   "iso": "",
+   "mass": "12.018613180 ± 0.000001073",
+   "half": "11.000 ms ± 0.016",
+   "seconds": 0.011,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+α",
+     "op": "=",
+     "pct": 1.93
+    }
+   ],
+   "year": 1949,
+   "est": false
+  },
+  {
+   "A": 13,
+   "iso": "",
+   "mass": "13.005738609 ± 0.000000289",
+   "half": "9.965 m ± 0.004",
+   "seconds": 597.9,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1934,
+   "est": false
+  },
+  {
+   "A": 14,
+   "iso": "",
+   "mass": "14.00307400425 ± 0.00000000024",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1920,
+   "est": false
+  },
+  {
+   "A": 15,
+   "iso": "",
+   "mass": "15.00010889827 ± 0.00000000062",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1929,
+   "est": false
+  },
+  {
+   "A": 16,
+   "iso": "",
+   "mass": "16.006101925 ± 0.00000247",
+   "half": "7.13 s ± 0.02",
+   "seconds": 7.13,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-α",
+     "op": "=",
+     "pct": 0.00154
+    }
+   ],
+   "year": 1933,
+   "est": false
+  },
+  {
+   "A": 17,
+   "iso": "",
+   "mass": "17.008448876 ± 0.000016103",
+   "half": "4.173 s ± 0.004",
+   "seconds": 4.173,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 95.1
+    },
+    {
+     "mode": "β-α",
+     "op": "=",
+     "pct": 0.0025
+    }
+   ],
+   "year": 1949,
+   "est": false
+  },
+  {
+   "A": 18,
+   "iso": "",
+   "mass": "18.014077563 ± 0.000019935",
+   "half": "619.2 ms ± 1.9",
+   "seconds": 0.6192000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 7
+    },
+    {
+     "mode": "β-α",
+     "op": "=",
+     "pct": 12.2
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1964,
+   "est": false
+  },
+  {
+   "A": 19,
+   "iso": "",
+   "mass": "19.017022389 ± 0.00001761",
+   "half": "336 ms ± 3",
+   "seconds": 0.336,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 41.8
+    }
+   ],
+   "year": 1968,
+   "est": false
+  },
+  {
+   "A": 20,
+   "iso": "",
+   "mass": "20.023367295 ± 0.000084696",
+   "half": "136 ms ± 3",
+   "seconds": 0.136,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 42.9
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1969,
+   "est": false
+  },
+  {
+   "A": 21,
+   "iso": "",
+   "mass": "21.027087573 ± 0.000143906",
+   "half": "85 ms ± 5",
+   "seconds": 0.085,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 87
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1970,
+   "est": false
+  },
+  {
+   "A": 22,
+   "iso": "",
+   "mass": "22.034100918 ± 0.00022306",
+   "half": "23 ms ± 3",
+   "seconds": 0.023,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 34
+    },
+    {
+     "mode": "β-2n",
+     "op": "=",
+     "pct": 12
+    }
+   ],
+   "year": 1979,
+   "est": false
+  },
+  {
+   "A": 23,
+   "iso": "",
+   "mass": "23.039421000 ± 0.0004515",
+   "half": "13.9 ms ± 1.4",
+   "seconds": 0.013900000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 42
+    },
+    {
+     "mode": "β-2n",
+     "op": "=",
+     "pct": 8
+    },
+    {
+     "mode": "β-3n",
+     "op": "<",
+     "pct": 3.4
+    }
+   ],
+   "year": 1985,
+   "est": false
+  },
+  {
+   "A": 24,
+   "iso": "",
+   "mass": "24.050390 ± 0.00043",
+   "half": "Not-specified <52ns",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 25,
+   "iso": "",
+   "mass": "25.060100 ± 0.00054",
+   "half": "Not-specified <260ns",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "2n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  }
+ ],
+ "stableCount": 2,
+ "texts": {
+  "history": [
+   {
+    "text": "The name derives from the Latin nitrum and Greek nitron for \"native soda\" and genes for \"forming\". Nitrogen was discovered by the Scottish physician and chemist Daniel Rutherford in 1772.",
+    "source": "ciaaw"
+   },
+   {
+    "text": "Nitrogen was discovered by the Scottish physician Daniel Rutherford in 1772. It is the fifth most abundant element in the universe and makes up about 78% of the earth's atmosphere, which contains an estimated 4,000 trillion tons of the gas. Nitrogen is obtained from liquefied air through a process known as fractional distillation.",
+    "source": "jlab"
+   },
+   {
+    "text": "From the Latin word nitrum, Greek Nitron, native soda; and genes, forming. Nitrogen was discovered by chemist and physician Daniel Rutherford in 1772. He removed oxygen and carbon dioxide from air and showed that the residual gas would not support combustion or living organisms. At the same time there were other noted scientists working on the problem of nitrogen. These included Scheele, Cavendish, Priestley, and others. They called it \"burnt\" or\" dephlogisticated air,\" which meant air without oxygen.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "The largest use of nitrogen is for the production of ammonia (NH3). Large amounts of nitrogen are combined with hydrogen to produce ammonia in a method known as the Haber process. Large amounts of ammonia are then used to create fertilizers, explosives and, through a process known as the Ostwald process, nitric acid (HNO3). Nitrogen gas is largely inert and is used as a protective shield in the semiconductor industry and during certain types of welding and soldering operations. Oil companies use high pressure nitrogen to help force crude oil to the surface. Liquid nitrogen is an inexpensive cryogenic liquid used for refrigeration, preservation of biological samples and for low temperature scientific experimentation. Jefferson Lab's Frostbite Theater features videos of many basic liquid nitrogen experiments.",
+    "source": "jlab"
+   }
+  ],
+  "sources": [
+   {
+    "text": "Nitrogen gas (N2) makes up 78.1% of the Earth’s air, by volume. The atmosphere of Mars, by comparison, is only 2.6% nitrogen. From an exhaustible source in our atmosphere, nitrogen gas can be obtained by liquefaction and fractional distillation. Nitrogen is found in all living systems as part of the makeup of biological compounds.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Biology",
+   "text": "Isotopic fractionation can cause the isotope-amount ratio n(15N)/n(14N) to increase systematically through food chains through assimilation of nitrogen compounds in biomolecules such as proteins. When lower-order organisms are ingested by higher-order organisms, 15N may be selectively retained and 14N may be selectively excreted such that higher-order organisms tend to have higher n(15N)/n(14N) ratios than their food sources. Isotopic fractionation occurs as a result of assimilation, storage, and excretion of proteins and other nitrogen compounds. Biologists can use isotope-amount ratio n(15N)/n(14N) measurements to test hypotheses about predator-prey relations and detect disruptions to trophic structure of ecosystems that might be caused by toxic contaminants, invasive species, or harvesting of organisms. Similar principles are used to detect differences in diets among animals, including humans, both today and in the distant past,,. Artificially enriched 15N tracers are used to study movement and transformation of nitrogen in biological and environmental systems, such as the uptake and loss of nitrogen fertilizers by crops (Fig. IUPAC.7.1). A common experiment involves introducing an isotopically labeled compound into the environment and then analyzing various samples taken from the environment for the presence of the enriched isotope to determine where the labeled compound moved and whether it transformed into other compounds (Fig. IUPAC.7.2). Artificially enriched 15N is used to study uptake and dispersal of nitrogen in feed supplies used in food production industries such as aquaculture.  ",
+   "source": "iptei"
+  },
+  {
+   "topic": "Earth/Planetary Science",
+   "text": "The stable isotopes of nitrogen are subject to isotopic fractionation by physical, chemical, and biological processes. Variations in the isotope-amount ratio n(15N)/n(14N) are substantial (Fig. IUPAC.7.3) and commonly are used to study Earth-system processes, especially those related to biology because nitrogen is a major nutrient for growth. For example, isotope fractionation occurs when dissolved solutes, such as nitrate (NO3 -), are transformed to more reduced compounds (i.e. nitrogen gas) because nitrate with higher 14N abundances tends to be more readily broken down. This leaves the residual unreacted nitrate with a higher n(15N)/n(14N) ratio than the initial ratio prior to reaction. Changes in the isotopic composition of biologically reactive compounds can be used to detect such reactions in aquatic environments, which are important mechanisms for removing reactive contaminants like nitrate,. Variations in the isotope-amount ratio n(15N)/n(14N) are used to determine sources of nitrogen contamination in the atmosphere, oceans, groundwater, and rivers, where the isotopic composition of a contaminant molecule preserves evidence of the nitrogen sources and processes involved in its creation. An example is nitrate derived from artificial fertilizer, manure, power-plant emissions, or natural sources,,. Artificially enriched 15N tracers have been used to determine rates of movement and natural remediation of nitrogen-bearing contaminants in aquifers and rivers,. ",
+   "source": "iptei"
+  },
+  {
+   "topic": "Forensic Science and Anthropology",
+   "text": "Stable hydrogen, carbon, and nitrogen isotopic compositions are used to determine the origin of pseudoephedrine from seized methyl-amphetamine made from the pseudoephedrine (drug used as a nasal decongestant or as a stimulant).",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "1.9×10^1 milligrams per kilogram",
+  "ocean": "5×10^-1 milligrams per liter",
+  "source": "jlab"
+ },
+ "physical": "Gas",
+ "forms": [
+  {
+   "cid": 57370662,
+   "name": "nitrogen",
+   "formula": "N",
+   "charge": 0,
+   "smiles": "[N]"
+  },
+  {
+   "cid": 57347672,
+   "name": "nitrogen(1+)",
+   "formula": "N+",
+   "charge": 1,
+   "smiles": "[N+]"
+  },
+  {
+   "cid": 59197653,
+   "name": "nitrogen(1-)",
+   "formula": "N-",
+   "charge": -1,
+   "smiles": "[N-]"
+  }
+ ],
+ "refs": {
+  "ciaaw": {
+   "name": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+   "url": "https://www.ciaaw.org/nitrogen.htm"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele007.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/7.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": "nitrogen",
+ "ghs": {
+  "signal": "Warning",
+  "pictograms": [
+   {
+    "code": "GHS04",
+    "label": "Compressed Gas"
+   }
+  ],
+  "hazards": [
+   "H280 (70.2%): Contains gas under pressure; may explode if heated",
+   "H281 (26%): Contains refrigerated gas; may cause cryogenic burns or injury"
+  ],
+  "reports": 1001,
+  "notMet": 4.7,
+  "notClassified": false,
+  "source": "European Chemicals Agency (ECHA)"
+ },
+ "ghsCid": 947
 }

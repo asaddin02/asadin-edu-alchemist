@@ -1,11 +1,20 @@
 #!/usr/bin/env node
 // Builds the periodic table from official open sources:
 //   PubChem periodic table (NIH)       → js/data/periodicTable.js  (all 118 elements, bundled with the app)
+//   PubChem element records (PUG View) → data/elements/<Z>.json: standard atomic weight and isotopic abundances
+//                                        (IUPAC CIAAW), every nuclide's mass, half-life and decay (IAEA AMDC),
+//                                        history, uses and occurrence (LANL, Jefferson Lab), isotope uses (IUPAC),
+//                                        element forms and ions; GHS hazards of the elemental substance
 //   Wikidata + Wikipedia (id, en) + Commons → data/elements/<Z>.json (lead text and a licensed photo)
+//   → data/isotopes.json: a compact index of every nuclide's ground state, for search and the isotope explorer
 // Usage: npm run sync:elements
+import { existsSync, readFileSync } from 'node:fs';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { ROOT, get, sparql, commonsInfo, wikiIntro, mapLimit, fileFromCommonsURL } from './lib/net.mjs';
+import { parseElementRecord } from '../js/services/elementview.js';
+import { parseGHS } from '../js/services/pugview.js';
+import { MOLECULES } from '../js/data/curatedMolecules.js';
 
 // Indonesian names following Kamus Besar Bahasa Indonesia and Indonesian school textbooks.
 const NAMES_ID = `Hidrogen Helium Litium Berilium Boron Karbon Nitrogen Oksigen Fluorin Neon Natrium Magnesium
@@ -111,7 +120,10 @@ const elements = rows.map(r => {
     en: r.Name,
     id: NAMES_ID[z - 1],
     m: num(r.AtomicMass),
-    cpk: r.CPKHexColor ? `#${r.CPKHexColor.toLowerCase()}` : null,
+    // PubChem drops leading zeros ("6985" for palladium's #006985).
+    cpk: /^[0-9a-f]{1,6}$/i.test(r.CPKHexColor || '')
+      ? `#${r.CPKHexColor.toLowerCase().padStart(6, '0')}`
+      : null,
     conf: r.ElectronConfiguration || '',
     shells: shells(z, r.ElectronConfiguration),
     eneg: num(r.Electronegativity),
@@ -154,22 +166,94 @@ for (const b of wd.results.bindings) {
 }
 const photos = await commonsInfo([...byZ.values()].map(v => v.image));
 
+// The catalogue card for each element's own substance (H₂, O₂, Fe, …): its synced GHS block is reused.
+const substanceOf = new Map();
+for (const m of MOLECULES) {
+  const file = join(ROOT, 'data', 'molecules', `${m.id}.json`);
+  if (!existsSync(file)) continue;
+  const rec = JSON.parse(readFileSync(file, 'utf8'));
+  const f = rec.props?.formula || '';
+  const sym = f.match(/^([A-Z][a-z]?)\d*$/)?.[1];
+  if (sym && !substanceOf.has(sym) && rec.subject !== 'monomer') substanceOf.set(sym, { id: m.id, rec });
+}
+
+console.log('PubChem element records (CIAAW, IAEA AMDC, NIST, LANL, Jefferson Lab, IUPAC)…');
 const outDir = join(ROOT, 'data', 'elements');
 await mkdir(outDir, { recursive: true });
 let withPhoto = 0;
-await mapLimit(elements, 4, async el => {
+let withGhs = 0;
+const isotopeIndex = [];
+await mapLimit(elements, 3, async el => {
   const w = byZ.get(el.z) || {};
-  const [wid, wen] = await Promise.all([
+  const [wid, wen, view] = await Promise.all([
     wikiIntro('id', w.idwiki || el.id),
     wikiIntro('en', w.enwiki || el.en),
+    get(`https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/element/${el.z}/JSON`),
   ]);
   const photo = w.image ? photos.get(w.image) || null : null;
   if (photo) withPhoto++;
+  const detail = parseElementRecord(view, el.s) || {};
+
+  // Hazards of the elemental substance: the catalogue card's GHS, else PubChem's record for the element form.
+  let ghs = null;
+  let ghsCid = null;
+  const card = substanceOf.get(el.s);
+  if (card?.rec.ghs) {
+    ghs = card.rec.ghs;
+    ghsCid = card.rec.cid;
+  } else {
+    const neutral = (detail.forms || []).find(f => f.charge === 0);
+    if (neutral) {
+      ghs = parseGHS(
+        await get(
+          `https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/${neutral.cid}/JSON?heading=GHS+Classification`
+        )
+      );
+      if (ghs) ghsCid = neutral.cid;
+    }
+  }
+  if (ghs) withGhs++;
+
+  const natural = new Map((detail.natural || []).map(n => [n.A, n.abundance]));
+  for (const n of detail.nuclides || [])
+    if (!n.iso)
+      isotopeIndex.push([
+        el.z,
+        n.A,
+        n.half,
+        n.stable ? -1 : n.seconds,
+        n.decay[0]?.mode || '',
+        natural.get(n.A) || '',
+      ]);
+
   await writeFile(
     join(outDir, `${el.z}.json`),
-    JSON.stringify({ z: el.z, qid: w.qid || null, wiki: { id: wid, en: wen }, photo }, null, 1) + '\n'
+    JSON.stringify(
+      {
+        z: el.z,
+        qid: w.qid || null,
+        wiki: { id: wid, en: wen },
+        photo,
+        ...detail,
+        substance: card?.id || null,
+        ghs,
+        ghsCid,
+      },
+      null,
+      1
+    ) + '\n'
   );
 });
+isotopeIndex.sort((a, b) => a[0] - b[0] || a[1] - b[1]);
+await writeFile(
+  join(ROOT, 'data', 'isotopes.json'),
+  `${JSON.stringify({
+    fields: ['z', 'A', 'halfLife', 'seconds (-1 = stable)', 'mainDecay', 'naturalAbundance'],
+    source: 'IAEA Atomic Mass Data Center (NUBASE) and IUPAC CIAAW, via PubChem',
+    rows: isotopeIndex,
+  })}\n`
+);
+console.log(`isotopes.json: ${isotopeIndex.length} nuclides (ground states) · ${withGhs} elements with GHS`);
 
 const header = `// GENERATED by scripts/sync-elements.mjs from the PubChem periodic table (NIH). Do not edit by hand:
 // run \`npm run sync:elements\`. Units: mass u · radius pm · ionisation & affinity eV · mp/bp K · density g/cm³.

@@ -15,6 +15,7 @@ export const LABS = [
   { id: 'titrasi', icon: 'beaker', levels: ['sma', 'kuliah'], topic: 'asam-basa', title: ['Titrasi asam–basa', 'Acid–base titration'], summary: ['Teteskan basa ke asam, lihat kurva pH terbentuk, dan temukan titik ekuivalen.', 'Add base to acid, watch the pH curve build and find the equivalence point.'] },
   { id: 'gas', icon: 'bubble', levels: ['smp', 'sma', 'kuliah'], topic: 'laju', title: ['Hukum gas', 'Gas laws'], summary: ['Ubah suhu, volume, dan jumlah partikel; lihat tekanan berubah sesuai PV = nRT.', 'Change temperature, volume and particle count; watch pressure follow PV = nRT.'] },
   { id: 'laju', icon: 'clock', levels: ['smp', 'sma', 'kuliah'], topic: 'laju', title: ['Laju reaksi & tumbukan', 'Reaction rate & collisions'], summary: ['Atur suhu, konsentrasi, dan katalis; hitung tumbukan efektif dan lihat grafik produk.', 'Tune temperature, concentration and catalyst; count effective collisions and watch the product curve.'] },
+  { id: 'paruh', icon: 'nucleus', levels: ['smp', 'sma', 'kuliah'], topic: 'nuklir', title: ['Waktu paruh & peluruhan', 'Half-life & decay'], summary: ['Amati ratusan atom radioaktif meluruh secara acak, bandingkan dengan rumus N₀(½)ⁿ, dan hitung umur sampel seperti penanggalan karbon-14.', 'Watch hundreds of radioactive atoms decay at random, compare with N₀(½)ⁿ and work out a sample’s age as in carbon-14 dating.'] },
   { id: 'volta', icon: 'battery', levels: ['sma', 'kuliah'], topic: 'redoks', title: ['Sel volta', 'Voltaic cells'], summary: ['Pasangkan dua logam, tentukan anode dan katode, arah elektron, dan potensial sel.', 'Pair two metals, find the anode and cathode, electron flow and cell potential.'] },
 ];
 export const findLab = id => LABS.find(l => l.id === id) || null;
@@ -36,8 +37,22 @@ export const findPlace = id => PLACES.find(p => p.id === id) || null;
 
 /** Suggested order of topics for each level. */
 export const PATHS = {
-  sd: ['zat', 'atom', 'asam-basa', 'reaksi', 'biomolekul', 'material', 'lingkungan'],
-  smp: ['zat', 'atom', 'periodik', 'ikatan', 'asam-basa', 'reaksi', 'stoikiometri', 'laju', 'redoks', 'karbon', 'biomolekul', 'material', 'lingkungan'],
-  sma: ['atom', 'periodik', 'ikatan', 'bentuk', 'stoikiometri', 'reaksi', 'laju', 'asam-basa', 'redoks', 'karbon', 'biomolekul', 'material', 'lingkungan', 'zat'],
-  kuliah: ['atom', 'periodik', 'ikatan', 'bentuk', 'reaksi', 'laju', 'asam-basa', 'redoks', 'stoikiometri', 'karbon', 'biomolekul', 'material', 'lingkungan', 'zat'],
+  sd: ['zat', 'larutan', 'partikel', 'atom', 'reaksi', 'asam-basa', 'termokimia', 'antarmolekul', 'ion', 'biomolekul', 'material', 'analitik', 'lingkungan', 'nuklir'],
+  smp: [
+    'zat', 'larutan', 'partikel', 'atom', 'periodik', 'ion', 'ikatan', 'antarmolekul', 'reaksi', 'stoikiometri',
+    'termokimia', 'laju', 'asam-basa', 'redoks', 'elektrokimia', 'karbon', 'gugus-fungsi', 'biomolekul', 'material',
+    'nuklir', 'analitik', 'lingkungan', 'kesetimbangan', 'termodinamika', 'reaksi-organik', 'anorganik',
+  ],
+  sma: [
+    'atom', 'periodik', 'nuklir', 'ikatan', 'bentuk', 'antarmolekul', 'ion', 'stoikiometri', 'reaksi', 'larutan',
+    'termokimia', 'laju', 'kesetimbangan', 'asam-basa', 'redoks', 'elektrokimia', 'karbon', 'gugus-fungsi',
+    'reaksi-organik', 'biomolekul', 'anorganik', 'material', 'analitik', 'spektroskopi', 'termodinamika', 'kuantum',
+    'lingkungan', 'partikel', 'zat',
+  ],
+  kuliah: [
+    'atom', 'kuantum', 'periodik', 'ikatan', 'bentuk', 'antarmolekul', 'stoikiometri', 'reaksi', 'termodinamika',
+    'termokimia', 'kesetimbangan', 'laju', 'asam-basa', 'redoks', 'elektrokimia', 'ion', 'anorganik', 'karbon',
+    'gugus-fungsi', 'reaksi-organik', 'biomolekul', 'material', 'analitik', 'spektroskopi', 'nuklir', 'larutan',
+    'lingkungan', 'partikel',
+  ],
 };

@@ -6,23 +6,47 @@ import { icon } from './icons.js';
 import { bookmarks } from '../core/userdata.js';
 import { CONFIG } from '../config.js';
 
-const PRIMARY = [
-  ['explore', 'explore', 'search'],
-  ['classes', 'classes', 'layers'],
-  ['table', 'table', 'table'],
-  ['learn', 'learn', 'book'],
-  ['lab', 'lab', 'flask'],
-  ['quiz', 'quiz', 'quiz'],
+/** Every navigable section: [page, ui key, icon]. The sidebar, drawer and phone dock pick from here by name. */
+const NAV = Object.fromEntries(
+  [
+    ['home', 'home', 'home'],
+    ['search', 'search', 'search'],
+    ['peta', 'peta', 'map'],
+    ['explore', 'explore', 'molecule'],
+    ['table', 'table', 'table'],
+    ['isotope', 'isotope', 'nucleus'],
+    ['ion', 'ion', 'charge'],
+    ['classes', 'classes', 'layers'],
+    ['reaction', 'reaction', 'swap'],
+    ['material', 'material', 'gem'],
+    ['atom', 'atom', 'atom'],
+    ['learn', 'learn', 'book'],
+    ['lab', 'lab', 'flask'],
+    ['quiz', 'quiz', 'quiz'],
+    ['around', 'around', 'pin'],
+    ['saved', 'saved', 'bookmark'],
+    ['compare', 'compare', 'compare'],
+    ['glossary', 'glossary', 'book'],
+    ['teacher', 'teacher', 'teacher'],
+    ['about', 'about', 'info'],
+  ].map(entry => [entry[0], entry])
+);
+const SIDEBAR = [
+  [
+    ['RUANG EKSPLORASI', 'EXPLORATION SPACE'],
+    ['home', 'peta', 'explore', 'table', 'isotope', 'ion', 'classes', 'reaction', 'material', 'atom'],
+  ],
+  [
+    ['AYO BELAJAR', 'LET’S LEARN'],
+    ['learn', 'lab', 'quiz', 'around'],
+  ],
+  [
+    ['PERLENGKAPANMU', 'YOUR TOOLKIT'],
+    ['saved', 'compare', 'glossary'],
+  ],
 ];
-const MORE = [
-  ['atom', 'atom', 'atom'],
-  ['compare', 'compare', 'compare'],
-  ['around', 'around', 'pin'],
-  ['glossary', 'glossary', 'book'],
-  ['saved', 'saved', 'bookmark'],
-  ['teacher', 'teacher', 'teacher'],
-  ['about', 'about', 'info'],
-];
+const DRAWER = Object.keys(NAV);
+const DOCK = ['home', 'search', 'lab', 'saved'];
 
 export function renderHeader() {
   const prefs = getPrefs();
@@ -31,28 +55,22 @@ export function renderHeader() {
     `<a class="nav-link" href="#/${page === 'home' ? '' : page}" data-nav="${page}">${icon(ic, { size: 20 })}<span>${esc(ui[key])}</span>${
       page === 'saved' ? `<span class="count" aria-label="${count}">${count}</span>` : ''
     }</a>`;
-  const home = ['home', 'home', 'home'];
-  const brand = `<a class="brand" href="#/" aria-label="Moleculium, ${esc(ui.home)}">
+  const brand = `<a class="brand" href="#/" aria-label="Alchemist, ${esc(ui.home)}">
     <img src="assets/brand/logo.png" alt="" width="44" height="44" />
-    <span class="brand-text"><strong>Moleculium<span class="brand-dot">.</span></strong><small>BY ASADIN EDU</small></span>
+    <span class="brand-text"><strong>Alchemist<span class="brand-dot">.</span></strong><small>BY ASADIN EDU</small></span>
   </a>`;
   $('#header').innerHTML = `
     <aside class="learning-sidebar" aria-label="${esc(pick(['Ruang belajar', 'Learning space']))}">
       ${brand}
       <nav aria-label="${esc(pick(['Navigasi utama', 'Main navigation']))}">
-        <p class="nav-caption">${esc(pick(['RUANG EKSPLORASI', 'EXPLORATION SPACE']))}</p>
-        ${[home, PRIMARY[0], PRIMARY[2], PRIMARY[1], MORE[0]].map(link).join('')}
-        <p class="nav-caption">${esc(pick(['AYO BELAJAR', 'LET’S LEARN']))}</p>
-        ${[PRIMARY[3], PRIMARY[4], PRIMARY[5], MORE[2]].map(link).join('')}
-        <p class="nav-caption">${esc(pick(['PERLENGKAPANMU', 'YOUR TOOLKIT']))}</p>
-        ${[MORE[4], MORE[1], MORE[3]].map(link).join('')}
+        ${SIDEBAR.map(([caption, pages]) => `<p class="nav-caption">${esc(pick(caption))}</p>${pages.map(p => link(NAV[p])).join('')}`).join('')}
       </nav>
       <a class="sidebar-teacher" href="#/teacher" data-nav="teacher">${icon('teacher', { size: 22 })}<span><strong>${esc(ui.teacher)}</strong><small>${esc(pick(['Teman mengajar yang seru', 'Make learning come alive']))}</small></span>${icon('arrowRight', { size: 16 })}</a>
       <a class="sidebar-about" href="#/about" data-nav="about">${icon('info', { size: 16 })} ${esc(ui.about)}</a>
     </aside>
     <div class="header-bar container">
       <div class="mobile-brand">${brand}</div>
-      <p class="shell-location"><span>Moleculium</span>${icon('chevronRight', { size: 14 })}<strong data-current-page>${esc(ui.home)}</strong></p>
+      <p class="shell-location"><span>Alchemist</span>${icon('chevronRight', { size: 14 })}<strong data-current-page>${esc(ui.home)}</strong></p>
       <div class="header-tools">
         <form class="header-search" role="search" data-search>
           <label class="sr-only" for="site-search">${esc(ui.searchLabel)}</label>
@@ -70,10 +88,10 @@ export function renderHeader() {
     </div>
     <div class="offline-bar" data-offline hidden>${icon('wifiOff', { size: 16 })} ${esc(ui.offline)}</div>
     <div class="drawer" id="drawer" hidden>
-      <nav aria-label="${esc(ui.menu)}">${[home, ...PRIMARY, ...MORE].map(link).join('')}</nav>
+      <nav aria-label="${esc(ui.menu)}">${DRAWER.map(p => link(NAV[p])).join('')}</nav>
       <p class="drawer-mode">${esc(levelLong(prefs.level))}</p>
     </div>
-    <nav class="mobile-dock" aria-label="${esc(pick(['Pintasan belajar', 'Learning shortcuts']))}">${[home, PRIMARY[0], PRIMARY[4], MORE[4]].map(link).join('')}</nav>`;
+    <nav class="mobile-dock" aria-label="${esc(pick(['Pintasan belajar', 'Learning shortcuts']))}">${DOCK.map(p => link(NAV[p])).join('')}</nav>`;
   markActive(location.hash.replace(/^#\/?/, '').split(/[/?]/)[0] || 'home');
   updateOffline();
 }
@@ -86,12 +104,6 @@ export function markActive(page) {
     if (a.dataset.nav === section) a.setAttribute('aria-current', 'page');
     else a.removeAttribute('aria-current');
   }
-  const moreBtn = $('[data-toggle="more"]');
-  if (moreBtn)
-    moreBtn.classList.toggle(
-      'is-active',
-      MORE.some(m => m[0] === page)
-    );
   closeMenus();
 }
 
@@ -135,7 +147,7 @@ export function bindShell(onSearch) {
     e.preventDefault();
     const q = new FormData(form).get('q')?.toString().trim();
     if (q) onSearch(q);
-    else location.hash = '#/explore';
+    else location.hash = '#/search';
   });
   document.addEventListener('keydown', e => {
     if (e.key !== 'Escape') return;
@@ -153,11 +165,11 @@ export function renderFooter() {
   $('#footer').innerHTML = `
     <div class="container footer-grid">
       <div>
-        <p class="footer-brand"><img src="assets/brand/logo.png" alt="" width="28" height="28" /> <strong>Moleculium</strong></p>
+        <p class="footer-brand"><img src="assets/brand/logo.png" alt="" width="28" height="28" /> <strong>Alchemist</strong></p>
         <p>${esc(
           pick([
-            'Atlas terbuka molekul, unsur, dan material untuk pelajar SD sampai mahasiswa, serta guru. Bagian dari Asadin Edu, bersama BioTaxa.',
-            'An open atlas of molecules, elements and materials for primary pupils to university students, and teachers. Part of Asadin Edu, alongside BioTaxa.',
+            'Ensiklopedia kimia interaktif yang terbuka untuk pelajar SD sampai mahasiswa, serta guru. Bagian dari Asadin Edu, bersama BioTaxa.',
+            'An open interactive chemistry encyclopedia for primary pupils to university students, and teachers. Part of Asadin Edu, alongside BioTaxa.',
           ])
         )}</p>
         <p class="muted">${esc(ui.eduNote)}</p>
@@ -169,10 +181,13 @@ export function renderFooter() {
           <li><a href="https://www.wikidata.org/" rel="noopener" target="_blank">Wikidata</a></li>
           <li><a href="https://id.wikipedia.org/" rel="noopener" target="_blank">Wikipedia</a></li>
           <li><a href="https://commons.wikimedia.org/" rel="noopener" target="_blank">Wikimedia Commons</a></li>
+          <li><a href="https://www.ciaaw.org/" rel="noopener" target="_blank">IUPAC CIAAW</a></li>
+          <li><a href="https://www-nds.iaea.org/amdc/" rel="noopener" target="_blank">IAEA Atomic Mass Data Center</a></li>
+          <li><a href="https://openstax.org/subjects/science" rel="noopener" target="_blank">OpenStax</a></li>
         </ul>
       </div>
       <div>
-        <h2 class="footer-title">Moleculium</h2>
+        <h2 class="footer-title">Alchemist</h2>
         <ul class="footer-links">
           <li><a href="#/about">${esc(ui.about)}</a></li>
           <li><a href="#/teacher">${esc(ui.teacher)}</a></li>

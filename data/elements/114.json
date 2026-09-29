@@ -13,5 +13,272 @@
    "url": "https://en.wikipedia.org/wiki/Flerovium"
   }
  },
- "photo": null
+ "photo": null,
+ "weight": {
+  "value": "289.19042(60#)",
+  "kind": "isotope-mass",
+  "A": 289,
+  "estimated": true,
+  "source": "nist"
+ },
+ "natural": [],
+ "naturalSource": null,
+ "nuclides": [
+  {
+   "A": 284,
+   "iso": "",
+   "mass": "284.181192 ± 0.000704",
+   "half": "3.1 ms ± 1.3",
+   "seconds": 0.0031000000000000003,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2015,
+   "est": true
+  },
+  {
+   "A": 285,
+   "iso": "",
+   "mass": "285.183503 ± 0.000433",
+   "half": "210 ms ± 100",
+   "seconds": 0.21,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "SF",
+     "op": "<",
+     "pct": 20
+    }
+   ],
+   "year": 2010,
+   "est": true
+  },
+  {
+   "A": 286,
+   "iso": "",
+   "mass": "286.184226 ± 0.00059",
+   "half": "130 ms ± 30",
+   "seconds": 0.13,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 59
+    },
+    {
+     "mode": "SF",
+     "op": "=",
+     "pct": 41
+    }
+   ],
+   "year": 2004,
+   "est": true
+  },
+  {
+   "A": 287,
+   "iso": "",
+   "mass": "287.186720 ± 0.000663",
+   "half": "510 ms ± 120",
+   "seconds": 0.51,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2004,
+   "est": true
+  },
+  {
+   "A": 288,
+   "iso": "",
+   "mass": "288.187781 ± 0.000819",
+   "half": "653 ms ± 113",
+   "seconds": 0.653,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2004,
+   "est": true
+  },
+  {
+   "A": 289,
+   "iso": "",
+   "mass": "289.190517 ± 0.000548",
+   "half": "2.1 s ± 0.6",
+   "seconds": 2.1,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2004,
+   "est": true
+  },
+  {
+   "A": 289,
+   "iso": "m",
+   "mass": "289.190517 ± 0.000548",
+   "half": "1.1 s ± 0.8",
+   "seconds": 1.1,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2012,
+   "est": true
+  },
+  {
+   "A": 290,
+   "iso": "",
+   "mass": "290.191875 ± 0.000752",
+   "half": "80 s ± 60",
+   "seconds": 80,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β+",
+     "op": "<",
+     "pct": 50
+    }
+   ],
+   "year": 2016,
+   "est": true
+  },
+  {
+   "A": 291,
+   "iso": "",
+   "mass": "291.194848 ± 0.000751",
+   "half": "10 s",
+   "seconds": 10,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  }
+ ],
+ "stableCount": 0,
+ "texts": {
+  "history": [
+   {
+    "text": "Flerovium was first produced by scientists working at the Joint Institute for Nuclear Research in Dubna, Russia in 1998. They bombarded atoms of plutonium with ions of calcium. This produced a single atom of flerovium-289, an isotope with a half-life of about 21 seconds. Flerovium's most stable isotope, flerovium-289, has a half-life of about 0.97 seconds. It decays into copernicium-285 through alpha decay.",
+    "source": "jlab"
+   },
+   {
+    "text": "Flerovium is radioactive and has the symbol Fl and the atomic number 114. The element is named after Russian physicist Georgy Flyorov, who founded the Joint Institute for Nuclear Research in Dubna, Russia, where the element was first discovered in 1999. Element 114 has a 30-second half-life, which is much longer than element 112's. This is evidence of the \"island of stability\" that was predicted to occur around element 114 (where the combination of protons and neutrons would combine to make a stable structure). A beam containing 48Ca was aimed into a244Pu target to make this atom. The name Flerovium was adopted by IUPAC on May 31, 2012.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Since only a few atoms of flerovium have ever been produced, it currently has no uses outside of basic scientific research.",
+    "source": "jlab"
+   }
+  ],
+  "description": [
+   {
+    "text": "Flerovium does not occur naturally in the Earth’s crust. Flerovium was named for the Flerov Laboratory for Nuclear Reactions of the Joint Institute for Nuclear Research (JIRN). In 1999, a collaboration of scientists from the Joint Institute for Nuclear Research in Dubna, Russia (Figs. 4.114.1 and 4.114.2) and the Lawrence Livermore Laboratory in the USA synthesized flerovium. They used nuclear reaction experiments to eventually produce 287Fl by cross-bombardments of 48Ca with both (even-A) 242Pu and (odd-A) 245Cm. The intermediate nuclide 283Cn was observed with known decay characteristics that established the synthesis of flerovium [668], [669]. Flerovium has no known isotopic applications aside from scientific research.",
+    "source": "iptei"
+   }
+  ]
+ },
+ "isotopeUses": [],
+ "abundance": {
+  "crust": "Not Applicable",
+  "ocean": "Not Applicable",
+  "source": "jlab"
+ },
+ "physical": "Expected to be a Solid",
+ "forms": [],
+ "refs": {
+  "nist": {
+   "name": "NIST Physical Measurement Laboratory",
+   "url": "https://physics.nist.gov/cgi-bin/Elements/elInfo.pl?element=114"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele114.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/114.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": null,
+ "ghs": null,
+ "ghsCid": null
 }

@@ -22,5 +22,915 @@
   "author": "Alchemist-hp (talk) (www.pse-mendelejew.de)",
   "license": "FAL",
   "licenseUrl": "http://artlibre.org/licence/lal/en"
- }
+ },
+ "weight": {
+  "value": "183.84(1)",
+  "kind": "standard",
+  "source": "ciaaw"
+ },
+ "natural": [
+  {
+   "A": 180,
+   "iso": "",
+   "mass": "179.946 71(1)",
+   "abundance": "0.0012(1)"
+  },
+  {
+   "A": 182,
+   "iso": "",
+   "mass": "181.948 206(5)",
+   "abundance": "0.2650(16)"
+  },
+  {
+   "A": 183,
+   "iso": "",
+   "mass": "182.950 224(5)",
+   "abundance": "0.1431(4)"
+  },
+  {
+   "A": 184,
+   "iso": "",
+   "mass": "183.950 933(5)",
+   "abundance": "0.3064(2)"
+  },
+  {
+   "A": 186,
+   "iso": "",
+   "mass": "185.954 365(8)",
+   "abundance": "0.2843(19)"
+  }
+ ],
+ "naturalSource": "ciaaw",
+ "nuclides": [
+  {
+   "A": 157,
+   "iso": "",
+   "mass": "156.978862 ± 0.000429",
+   "half": "275 ms ± 40",
+   "seconds": 0.275,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 0
+    }
+   ],
+   "year": 2010,
+   "est": true
+  },
+  {
+   "A": 158,
+   "iso": "",
+   "mass": "157.974565 ± 0.000322",
+   "half": "1.43 ms ± 0.18",
+   "seconds": 0.00143,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1981,
+   "est": true
+  },
+  {
+   "A": 159,
+   "iso": "",
+   "mass": "158.972696 ± 0.000322",
+   "half": "8.2 ms ± 0.7",
+   "seconds": 0.008199999999999999,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1981,
+   "est": true
+  },
+  {
+   "A": 160,
+   "iso": "",
+   "mass": "159.968513946 ± 0.000160828",
+   "half": "90 ms ± 5",
+   "seconds": 0.09,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 87
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1979,
+   "est": false
+  },
+  {
+   "A": 161,
+   "iso": "",
+   "mass": "160.967249 ± 0.000215",
+   "half": "409 ms ± 16",
+   "seconds": 0.40900000000000003,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 73
+    },
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 27
+    }
+   ],
+   "year": 1973,
+   "est": true
+  },
+  {
+   "A": 162,
+   "iso": "",
+   "mass": "161.963500341 ± 0.000018955",
+   "half": "1.19 s ± 0.12",
+   "seconds": 1.19,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 45.2
+    }
+   ],
+   "year": 1973,
+   "est": false
+  },
+  {
+   "A": 163,
+   "iso": "",
+   "mass": "162.962524251 ± 0.000062722",
+   "half": "2.63 s ± 0.09",
+   "seconds": 2.63,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 14
+    }
+   ],
+   "year": 1973,
+   "est": false
+  },
+  {
+   "A": 164,
+   "iso": "",
+   "mass": "163.958952445 ± 0.000010384",
+   "half": "6.3 s ± 0.2",
+   "seconds": 6.3,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 96.2
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 3.8
+    }
+   ],
+   "year": 1973,
+   "est": false
+  },
+  {
+   "A": 165,
+   "iso": "",
+   "mass": "164.958280663 ± 0.000027649",
+   "half": "5.1 s ± 0.5",
+   "seconds": 5.1,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1975,
+   "est": false
+  },
+  {
+   "A": 166,
+   "iso": "",
+   "mass": "165.955031952 ± 0.000010159",
+   "half": "19.2 s ± 0.6",
+   "seconds": 19.2,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 99.965
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 0.035
+    }
+   ],
+   "year": 1975,
+   "est": false
+  },
+  {
+   "A": 167,
+   "iso": "",
+   "mass": "166.954811080 ± 0.000020078",
+   "half": "19.9 s ± 0.5",
+   "seconds": 19.9,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 99.96
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 0.04
+    }
+   ],
+   "year": 1985,
+   "est": false
+  },
+  {
+   "A": 168,
+   "iso": "",
+   "mass": "167.951805459 ± 0.000014233",
+   "half": "50.9 s ± 1.9",
+   "seconds": 50.9,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 0.0032
+    }
+   ],
+   "year": 1971,
+   "est": false
+  },
+  {
+   "A": 169,
+   "iso": "",
+   "mass": "168.951778689 ± 0.000016571",
+   "half": "74 s ± 6",
+   "seconds": 74,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1985,
+   "est": false
+  },
+  {
+   "A": 170,
+   "iso": "",
+   "mass": "169.949231235 ± 0.000014165",
+   "half": "2.42 m ± 0.04",
+   "seconds": 145.2,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1971,
+   "est": false
+  },
+  {
+   "A": 171,
+   "iso": "",
+   "mass": "170.949451000 ± 0.00003",
+   "half": "2.38 m ± 0.04",
+   "seconds": 142.79999999999998,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1983,
+   "est": false
+  },
+  {
+   "A": 172,
+   "iso": "",
+   "mass": "171.947292000 ± 0.00003",
+   "half": "6.6 m ± 0.9",
+   "seconds": 396,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1964,
+   "est": false
+  },
+  {
+   "A": 173,
+   "iso": "",
+   "mass": "172.947689000 ± 0.00003",
+   "half": "7.6 m ± 0.2",
+   "seconds": 456,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1963,
+   "est": false
+  },
+  {
+   "A": 174,
+   "iso": "",
+   "mass": "173.946079000 ± 0.00003",
+   "half": "33.2 m ± 2.1",
+   "seconds": 1992.0000000000002,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1964,
+   "est": false
+  },
+  {
+   "A": 175,
+   "iso": "",
+   "mass": "174.946717000 ± 0.00003",
+   "half": "35.2 m ± 0.6",
+   "seconds": 2112,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1963,
+   "est": false
+  },
+  {
+   "A": 176,
+   "iso": "",
+   "mass": "175.945634000 ± 0.00003",
+   "half": "2.5 h ± 0.1",
+   "seconds": 9000,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1950,
+   "est": false
+  },
+  {
+   "A": 177,
+   "iso": "",
+   "mass": "176.946643000 ± 0.00003",
+   "half": "132.4 m ± 2.0",
+   "seconds": 7944,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1950,
+   "est": false
+  },
+  {
+   "A": 178,
+   "iso": "",
+   "mass": "177.945885791 ± 0.000016316",
+   "half": "21.6 d ± 0.3",
+   "seconds": 1866240.0000000002,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1950,
+   "est": false
+  },
+  {
+   "A": 179,
+   "iso": "",
+   "mass": "178.947079378 ± 0.000015644",
+   "half": "37.05 m ± 0.16",
+   "seconds": 2223,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1950,
+   "est": false
+  },
+  {
+   "A": 180,
+   "iso": "",
+   "mass": "179.946713304 ± 0.000001545",
+   "half": "1.59 Ey ± 0.5",
+   "seconds": 5.01755124672e+25,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "2β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1937,
+   "est": false
+  },
+  {
+   "A": 181,
+   "iso": "",
+   "mass": "180.948218733 ± 0.000001554",
+   "half": "120.956 d ± 0.019",
+   "seconds": 10450598.4,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1947,
+   "est": false
+  },
+  {
+   "A": 182,
+   "iso": "",
+   "mass": "181.948205636 ± 0.000000799",
+   "half": "Stable >7.7Zy",
+   "seconds": null,
+   "stable": true,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1930,
+   "est": false
+  },
+  {
+   "A": 183,
+   "iso": "",
+   "mass": "182.950224416 ± 0.000000798",
+   "half": "Stable >670Ey",
+   "seconds": null,
+   "stable": true,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1930,
+   "est": false
+  },
+  {
+   "A": 184,
+   "iso": "",
+   "mass": "183.950933180 ± 0.000000792",
+   "half": "Stable >8.9Zy",
+   "seconds": null,
+   "stable": true,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1930,
+   "est": false
+  },
+  {
+   "A": 185,
+   "iso": "",
+   "mass": "184.953421206 ± 0.000000793",
+   "half": "75.1 d ± 0.3",
+   "seconds": 6488639.999999999,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1940,
+   "est": false
+  },
+  {
+   "A": 186,
+   "iso": "",
+   "mass": "185.954365140 ± 0.000001302",
+   "half": "Stable >4.1Ey",
+   "seconds": null,
+   "stable": true,
+   "decay": [
+    {
+     "mode": "2β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1930,
+   "est": false
+  },
+  {
+   "A": 187,
+   "iso": "",
+   "mass": "186.957161249 ± 0.000001302",
+   "half": "23.809 h ± 0.025",
+   "seconds": 85712.40000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1940,
+   "est": false
+  },
+  {
+   "A": 188,
+   "iso": "",
+   "mass": "187.958488325 ± 0.000003316",
+   "half": "69.77 d ± 0.05",
+   "seconds": 6028128,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1951,
+   "est": false
+  },
+  {
+   "A": 189,
+   "iso": "",
+   "mass": "188.961557 ± 0.000215",
+   "half": "11.6 m ± 0.2",
+   "seconds": 696,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1963,
+   "est": true
+  },
+  {
+   "A": 190,
+   "iso": "",
+   "mass": "189.963103542 ± 0.000037993",
+   "half": "30.0 m ± 1.5",
+   "seconds": 1800,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1976,
+   "est": false
+  },
+  {
+   "A": 191,
+   "iso": "",
+   "mass": "190.966531000 ± 0.000045",
+   "half": "14 s >300ns",
+   "seconds": 14,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1999,
+   "est": true
+  },
+  {
+   "A": 192,
+   "iso": "",
+   "mass": "191.968202 ± 0.000215",
+   "half": "40 s >300ns",
+   "seconds": 40,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1999,
+   "est": true
+  },
+  {
+   "A": 193,
+   "iso": "",
+   "mass": "192.971884 ± 0.000215",
+   "half": "30 s >300ns",
+   "seconds": 30,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2009,
+   "est": true
+  },
+  {
+   "A": 194,
+   "iso": "",
+   "mass": "193.973795 ± 0.000322",
+   "half": "20 s >300ns",
+   "seconds": 20,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2008,
+   "est": true
+  },
+  {
+   "A": 195,
+   "iso": "",
+   "mass": "194.977735 ± 0.000322",
+   "half": "30 s >160ns",
+   "seconds": 30,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2012,
+   "est": true
+  },
+  {
+   "A": 196,
+   "iso": "",
+   "mass": "195.979882 ± 0.000429",
+   "half": "25 s >300ns",
+   "seconds": 25,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2012,
+   "est": true
+  },
+  {
+   "A": 197,
+   "iso": "",
+   "mass": "196.984036 ± 0.000429",
+   "half": "1 s >300ns",
+   "seconds": 1,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2012,
+   "est": true
+  }
+ ],
+ "stableCount": 2,
+ "texts": {
+  "history": [
+   {
+    "text": "The name derives from the Swedish tungsten for \"heavy stone\". The symbol W derives from the German wolfram, which was found with tin and interfered with the smelting of tin. It was said to eat up tin like a wolf eats up sheep. The element was discovered by the Swedish pharmacist and chemist Carl-Wilhelm Scheele in 1781. Tungsten metal was first isolated by the Spanish chemists Fausto Elhuyar and his brother Juan José in 1783.",
+    "source": "ciaaw"
+   },
+   {
+    "text": "Tungsten was discovered by Juan José and Fausto Elhuyar, Spanish chemists and brothers, in 1783 in samples of the mineral wolframite ((Fe, Mn)WO4). Today, tungsten is primarily obtained from wolframite and scheelite (CaWO4) using the same basic method developed by José and Elhuyar. Tungsten ores are crushed, cleaned and treated with alkalis to form tungsten trioxide (WO3). Tungsten trioxide is then heated with carbon or hydrogen gas (H2), forming tungsten metal and carbon dioxide (CO2) or tungsten metal and water vapor (H2O).",
+    "source": "jlab"
+   },
+   {
+    "text": "From Swedish, tung sten meanig heavy stone. In 1779 Peter Woulfe examined the mineral now known as wolframite and concluded it must contain a new substance. Scheele, in 1781, found that a new acid could be made from tungsten (a name first applied about 1758 to a mineral now known as scheelite). Scheele and Berman suggested the possibility of obtaining a new metal by reducing this acid. The de Elhuyar brothers found acid in wolframite in 1783 that was identical to the acid of tungsten (tungstic acid) of Scheele, and in that year they succeeded in obtaining the element by reduction of this acid with charcoal. Tungsten occurs in wolframite, scheelite, huebnertie, and ferberite. Important deposits of tungsten occur in California, Colorado, South Korea, Bolivia, Russia, and Portugal. China is reported to have about 75% of the world's tungsten resources. Natural tungsten contains five stable isotopes. Twenty one other unstable isotopes are recognized. The metal is obtained commercially be reducing tungsten oxide with hydrogen or carbon.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Pure tungsten is a light gray or whitish metal that is soft enough to be cut with a hacksaw and ductile enough to be drawn into wire or extruded into various shapes. If contaminated with other materials, tungsten becomes brittle and difficult to work with. Tungsten has the highest melting point of all metallic elements and is used to make filaments for incandescent light bulbs, fluorescent light bulbs and television tubes. Tungsten expands at nearly the same rate as borosilicate glass and is used to make metal to glass seals. Tungsten is also used as a target for X-ray production, as heating elements in electric furnaces and for parts of spacecraft and missiles which must withstand high temperatures. Tungsten is alloyed with steel to form tough metals that are stable at high temperatures. Tungsten-steel alloys are used to make such things as high speed cutting tools and rocket engine nozzles. Tungsten carbide (WC) is an extremely hard tungsten compound. It is used in the tips of drill bits, high speed cutting tools and in mining machinery. Tungsten disulfide (WS2) is a dry lubricant that can be used to temperatures as high as 500°C. Tungsten forms compounds with calcium and magnesium that have phosphorescent properties and are used in fluorescent light bulbs.",
+    "source": "jlab"
+   },
+   {
+    "text": "Tungsten and its alloys are used extensively for filaments for electric lamps, electron and television tubes, and for metal evaporation work; for electrical contact points for automobile distributors; X-ray targets; windings and heating elements for electrical furnaces; and for numerous spacecraft and high-temperature applications. High-speed tool steels, Hastelloy(R), Stellite(R), and many other alloys contain tungsten. Tungsten carbide is of great importance to the metal-working, mining, and petroleum industries. Calcium and magnesium tungstates are widely used in fluorescent lighting; other salts of tungsten are used in the chemical and tanning industries. Tungsten disulfide is a dry, high-temperature lubricant, stable to 500C. Tungsten bronzes and other tungsten compounds are used in paints.",
+    "source": "lanl"
+   }
+  ],
+  "description": [
+   {
+    "text": "Pure tungsten is a steel-gray to tin-white metal. Very pure tungsten can be cut with a hacksaw, forged, spun, drawn, and extruded. The impure metal is brittle and can be worked only with difficulty. Tungsten has the highest melting point of all metals, and at temperatures over 1650°C has the highest tensile strength. The metal oxidizes in air and must be protected at elevated temperatures. It has excellent corrosion resistance and is attacked only slightly by most mineral acids. The thermal expansion is about the same as borosilicate glass, which makes the metal useful for glass-to-metal seals.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Earth/Planetary Science",
+   "text": "182W is the stable product of the decay of 182Hf, which has a half-life of 8.9×106 years. Although 182Hf was present at the dawn of the Solar System, this isotope has long since decayed. During the formation of the planets, including Earth, the elements hafnium and tungsten were partitioned into silicate minerals (rock forming minerals with silicon-oxygen bonds that constitute more than 90 percent of the Earth’s crust) and metal phases, respectively. The measurement of excessive amounts of 182W, arising from the decay of 182Hf that accumulated in silicate minerals, has been used to estimate the time that elapsed between the formation of the Solar System and accretion of the planets (Fig. IUPAC.74.1),. ",
+   "source": "iptei"
+  },
+  {
+   "topic": "a Source of Radioactive Isotope(s)",
+   "text": "Tungsten-rhenium generators use 188W, which is produced from 186W, via the following double neutron capture reaction 186W (n, γ) 187W (n, γ) 188W.",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "1.25 milligrams per kilogram",
+  "ocean": "1×10^-4 milligrams per liter",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 23964,
+   "name": "tungsten",
+   "formula": "W",
+   "charge": 0,
+   "smiles": "[W]"
+  },
+  {
+   "cid": 20070202,
+   "name": "tungsten(2+)",
+   "formula": "W+2",
+   "charge": 2,
+   "smiles": "[W+2]"
+  }
+ ],
+ "refs": {
+  "ciaaw": {
+   "name": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+   "url": "https://www.ciaaw.org/tungsten.htm"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele074.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/74.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": "tungsten",
+ "ghs": {
+  "signal": "Danger",
+  "pictograms": [
+   {
+    "code": "GHS02",
+    "label": "Flammable"
+   }
+  ],
+  "hazards": [
+   "H228 (73.4%): Flammable solid",
+   "H252 (47.8%): Self-heating in large quantities; may catch fire"
+  ],
+  "reports": 741,
+  "notMet": 26.5,
+  "notClassified": false,
+  "source": "European Chemicals Agency (ECHA)"
+ },
+ "ghsCid": 23964
 }

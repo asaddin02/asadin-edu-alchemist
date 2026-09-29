@@ -22,5 +22,1015 @@
   "author": "Alchemist-hp (talk) (www.pse-mendelejew.de)",
   "license": "FAL",
   "licenseUrl": "http://artlibre.org/licence/lal/en"
- }
+ },
+ "weight": {
+  "value": "65.38(2)",
+  "kind": "standard",
+  "source": "ciaaw"
+ },
+ "natural": [
+  {
+   "A": 64,
+   "iso": "",
+   "mass": "63.929 142(5)",
+   "abundance": "0.4917(75)"
+  },
+  {
+   "A": 66,
+   "iso": "",
+   "mass": "65.926 034(5)",
+   "abundance": "0.2773(98)"
+  },
+  {
+   "A": 67,
+   "iso": "",
+   "mass": "66.927 127(5)",
+   "abundance": "0.0404(16)"
+  },
+  {
+   "A": 68,
+   "iso": "",
+   "mass": "67.924 844(5)",
+   "abundance": "0.1845(63)"
+  },
+  {
+   "A": 70,
+   "iso": "",
+   "mass": "69.925 32(2)",
+   "abundance": "0.0061(10)"
+  }
+ ],
+ "naturalSource": "ciaaw",
+ "nuclides": [
+  {
+   "A": 54,
+   "iso": "",
+   "mass": "53.993879 ± 0.000232",
+   "half": "1.8 ms ± 0.5",
+   "seconds": 0.0018000000000000002,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "2p",
+     "op": "=",
+     "pct": 87
+    }
+   ],
+   "year": 2005,
+   "est": true
+  },
+  {
+   "A": 55,
+   "iso": "",
+   "mass": "54.984681 ± 0.000429",
+   "half": "19.8 ms ± 1.3",
+   "seconds": 0.0198,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 91
+    }
+   ],
+   "year": 2001,
+   "est": true
+  },
+  {
+   "A": 56,
+   "iso": "",
+   "mass": "55.972743 ± 0.000429",
+   "half": "32.4 ms ± 0.7",
+   "seconds": 0.0324,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 88
+    }
+   ],
+   "year": 2001,
+   "est": true
+  },
+  {
+   "A": 57,
+   "iso": "",
+   "mass": "56.965056 ± 0.000215",
+   "half": "45.7 ms ± 0.6",
+   "seconds": 0.045700000000000005,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 87
+    }
+   ],
+   "year": 1976,
+   "est": true
+  },
+  {
+   "A": 58,
+   "iso": "",
+   "mass": "57.954590296 ± 0.000053678",
+   "half": "86.0 ms ± 1.9",
+   "seconds": 0.08600000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 0.7
+    }
+   ],
+   "year": 1986,
+   "est": false
+  },
+  {
+   "A": 59,
+   "iso": "",
+   "mass": "58.949311886 ± 0.000000814",
+   "half": "178.7 ms ± 1.3",
+   "seconds": 0.1787,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 0.1
+    }
+   ],
+   "year": 1981,
+   "est": false
+  },
+  {
+   "A": 60,
+   "iso": "",
+   "mass": "59.941841317 ± 0.000000588",
+   "half": "2.38 m ± 0.05",
+   "seconds": 142.79999999999998,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1955,
+   "est": false
+  },
+  {
+   "A": 61,
+   "iso": "",
+   "mass": "60.939506964 ± 0.000017068",
+   "half": "89.1 s ± 0.2",
+   "seconds": 89.1,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1955,
+   "est": false
+  },
+  {
+   "A": 62,
+   "iso": "",
+   "mass": "61.934333359 ± 0.00000066",
+   "half": "9.193 h ± 0.015",
+   "seconds": 33094.799999999996,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1948,
+   "est": false
+  },
+  {
+   "A": 63,
+   "iso": "",
+   "mass": "62.933211140 ± 0.000001674",
+   "half": "38.47 m ± 0.05",
+   "seconds": 2308.2,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1937,
+   "est": false
+  },
+  {
+   "A": 64,
+   "iso": "",
+   "mass": "63.929141776 ± 0.00000069",
+   "half": "Stable >60Py",
+   "seconds": null,
+   "stable": true,
+   "decay": [
+    {
+     "mode": "2β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1922,
+   "est": false
+  },
+  {
+   "A": 65,
+   "iso": "",
+   "mass": "64.929240534 ± 0.000000693",
+   "half": "243.94 d ± 0.04",
+   "seconds": 21076416,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1939,
+   "est": false
+  },
+  {
+   "A": 65,
+   "iso": "m",
+   "mass": "64.929240534 ± 0.000000693",
+   "half": "1.6 us ± 0.6",
+   "seconds": 0.0000016,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1960,
+   "est": false
+  },
+  {
+   "A": 66,
+   "iso": "",
+   "mass": "65.926033639 ± 0.000000798",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1922,
+   "est": false
+  },
+  {
+   "A": 67,
+   "iso": "",
+   "mass": "66.927127422 ± 0.00000081",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1928,
+   "est": false
+  },
+  {
+   "A": 67,
+   "iso": "m",
+   "mass": "66.927127422 ± 0.00000081",
+   "half": "9.15 us ± 0.07",
+   "seconds": 0.00000915,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1953,
+   "est": false
+  },
+  {
+   "A": 67,
+   "iso": "n",
+   "mass": "66.927127422 ± 0.00000081",
+   "half": "333 ns ± 14",
+   "seconds": 3.3300000000000003e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1973,
+   "est": false
+  },
+  {
+   "A": 68,
+   "iso": "",
+   "mass": "67.924844232 ± 0.000000835",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1922,
+   "est": false
+  },
+  {
+   "A": 69,
+   "iso": "",
+   "mass": "68.926550360 ± 0.000000853",
+   "half": "56.4 m ± 0.9",
+   "seconds": 3384,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1937,
+   "est": false
+  },
+  {
+   "A": 69,
+   "iso": "m",
+   "mass": "68.926550360 ± 0.000000853",
+   "half": "13.747 h ± 0.011",
+   "seconds": 49489.2,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 99.967
+    },
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 0.033
+    }
+   ],
+   "year": 1970,
+   "est": false
+  },
+  {
+   "A": 70,
+   "iso": "",
+   "mass": "69.925319175 ± 0.000002058",
+   "half": "Stable >3.8Ey",
+   "seconds": null,
+   "stable": true,
+   "decay": [
+    {
+     "mode": "2β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1922,
+   "est": false
+  },
+  {
+   "A": 71,
+   "iso": "",
+   "mass": "70.927719578 ± 0.000002849",
+   "half": "2.40 m ± 0.05",
+   "seconds": 144,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1955,
+   "est": false
+  },
+  {
+   "A": 71,
+   "iso": "m",
+   "mass": "70.927719578 ± 0.000002849",
+   "half": "4.148 h ± 0.012",
+   "seconds": 14932.8,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1958,
+   "est": false
+  },
+  {
+   "A": 72,
+   "iso": "",
+   "mass": "71.926842806 ± 0.0000023",
+   "half": "46.5 h ± 0.1",
+   "seconds": 167400,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1951,
+   "est": false
+  },
+  {
+   "A": 73,
+   "iso": "",
+   "mass": "72.929582580 ± 0.000002",
+   "half": "24.5 s ± 0.2",
+   "seconds": 24.5,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1972,
+   "est": false
+  },
+  {
+   "A": 73,
+   "iso": "m",
+   "mass": "72.929582580 ± 0.000002",
+   "half": "13.0 ms ± 0.2",
+   "seconds": 0.013000000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1985,
+   "est": false
+  },
+  {
+   "A": 74,
+   "iso": "",
+   "mass": "73.929407260 ± 0.0000027",
+   "half": "95.6 s ± 1.2",
+   "seconds": 95.6,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1972,
+   "est": false
+  },
+  {
+   "A": 75,
+   "iso": "",
+   "mass": "74.932840244 ± 0.0000021",
+   "half": "10.2 s ± 0.2",
+   "seconds": 10.2,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1974,
+   "est": false
+  },
+  {
+   "A": 75,
+   "iso": "m",
+   "mass": "74.932840244 ± 0.0000021",
+   "half": "5 s",
+   "seconds": 5,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2011,
+   "est": true
+  },
+  {
+   "A": 76,
+   "iso": "",
+   "mass": "75.933114956 ± 0.000001562",
+   "half": "5.7 s ± 0.3",
+   "seconds": 5.7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1974,
+   "est": false
+  },
+  {
+   "A": 77,
+   "iso": "",
+   "mass": "76.936887197 ± 0.000002117",
+   "half": "2.08 s ± 0.05",
+   "seconds": 2.08,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1977,
+   "est": false
+  },
+  {
+   "A": 77,
+   "iso": "m",
+   "mass": "76.936887197 ± 0.000002117",
+   "half": "1.05 s ± 0.10",
+   "seconds": 1.05,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 66
+    },
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 34
+    }
+   ],
+   "year": 1986,
+   "est": false
+  },
+  {
+   "A": 78,
+   "iso": "",
+   "mass": "77.938289204 ± 0.000002086",
+   "half": "1.47 s ± 0.15",
+   "seconds": 1.47,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1977,
+   "est": false
+  },
+  {
+   "A": 78,
+   "iso": "m",
+   "mass": "77.938289204 ± 0.000002086",
+   "half": "320 ns ± 6",
+   "seconds": 3.2e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1998,
+   "est": false
+  },
+  {
+   "A": 79,
+   "iso": "",
+   "mass": "78.942638067 ± 0.000002388",
+   "half": "746 ms ± 42",
+   "seconds": 0.746,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 1.7
+    }
+   ],
+   "year": 1981,
+   "est": false
+  },
+  {
+   "A": 79,
+   "iso": "m",
+   "mass": "78.942638067 ± 0.000002388",
+   "half": ">200 ms",
+   "seconds": 0.2,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2015,
+   "est": false
+  },
+  {
+   "A": 80,
+   "iso": "",
+   "mass": "79.944552929 ± 0.000002774",
+   "half": "562.2 ms ± 3.0",
+   "seconds": 0.5622,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 1.36
+    }
+   ],
+   "year": 1981,
+   "est": false
+  },
+  {
+   "A": 81,
+   "iso": "",
+   "mass": "80.950402617 ± 0.0000054",
+   "half": "299.4 ms ± 2.1",
+   "seconds": 0.2994,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 23
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1991,
+   "est": false
+  },
+  {
+   "A": 82,
+   "iso": "",
+   "mass": "81.954574097 ± 0.0000033",
+   "half": "177.9 ms ± 2.5",
+   "seconds": 0.1779,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 69
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1997,
+   "est": false
+  },
+  {
+   "A": 83,
+   "iso": "",
+   "mass": "82.961041 ± 0.000322",
+   "half": "100 ms ± 3",
+   "seconds": 0.1,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "≈",
+     "pct": 71
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1997,
+   "est": true
+  },
+  {
+   "A": 84,
+   "iso": "",
+   "mass": "83.965829 ± 0.000429",
+   "half": "54 ms ± 8",
+   "seconds": 0.054,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 73
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2010,
+   "est": true
+  },
+  {
+   "A": 85,
+   "iso": "",
+   "mass": "84.973054 ± 0.000537",
+   "half": "40 ms >400ns",
+   "seconds": 0.04,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2010,
+   "est": true
+  },
+  {
+   "A": 86,
+   "iso": "",
+   "mass": "85.978463 ± 0.000537",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  }
+ ],
+ "stableCount": 3,
+ "texts": {
+  "history": [
+   {
+    "text": "The name derives from the German zink of unknown origin. It was first used in prehistoric times, where its compounds were used for healing wounds and sore eyes and for making brass. Zinc was recognized as a metal as early as 1374.",
+    "source": "ciaaw"
+   },
+   {
+    "text": "Although zinc compounds have been used for at least 2,500 years in the production of brass, zinc wasn't recognized as a distinct element until much later. Metallic zinc was first produced in India sometime in the 1400s by heating the mineral calamine (ZnCO3) with wool. Zinc was rediscovered by Andreas Sigismund Marggraf in 1746 by heating calamine with charcoal. Today, most zinc is produced through the electrolysis of aqueous zinc sulfate (ZnSO4).",
+    "source": "jlab"
+   },
+   {
+    "text": "From the German word Zink, of obscure origin. Centuries before zinc was recognized as a distinct element, zinc ores were used for making brass. An alloy containing 87 percent zinc has been found in prehistoric ruins in Transylvania. Metallic zinc was produced in the 13th century A.D. India by reducing calamine with organic substances such as wool. The metal was rediscovered in Europe by Marggraf in 1746. He demonstrated that zinc could be obtained by reducing calamine with charcoal.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Roughly one third of all metallic zinc produced today is used in a process known as galvanization. During galvanization, an object that is subject to corrosion, such as an iron nail, is given a protective coating of zinc. The zinc can be applied to an object by dipping it in a pool of molten zinc, but it is most often applied through an electroplating process. Sacrificial zinc anodes are used in cathodic protection systems to protect exposed iron from corrosion. Metallic zinc is also used to make dry cell batteries, roof cladding and die castings. Zinc is used to make many useful alloys. Brass, an alloy of zinc that contains between 55% and 95% copper, is probably the best known zinc alloy. Brass was first used about 2,500 years ago and was widely used by the ancient Romans, who used it to make such things as coins, kettles and decorative items. Brass is still used today, particularly in musical instruments, screws and other hardware that must resist corrosion. Zinc is alloyed with lead and tin to make solder, a metal with a relatively low melting point used to join electrical components, pipes and other metallic items. Prestal®, an alloy containing 78% zinc and 22% aluminum, is a strange material that is nearly as strong as steel but is molded as easily as plastic. Nickel silver, typewriter metal, spring brass and German silver are other common zinc alloys. Zinc oxide (ZnO), a common zinc compound, forms when metallic zinc is exposed to the air and forms a protective coating that protects the rest of the metal. Zinc oxide is used in paints, some rubber products, cosmetics, pharmaceuticals, plastics, printing inks, soap and batteries, among other things. Zinc sulfide (ZnS), another zinc compound, glows when it is exposed to ultraviolet light, X-rays or electrons and is used to make luminous watch dials, television screens and fluorescent light bulbs. Zinc chloride (ZnCl2) is another zinc compound that is used to protect wood from decay and insects.",
+    "source": "jlab"
+   },
+   {
+    "text": "The metal is employed to form numerous alloys with other metals. Brass, nickel silver, typewriter metal, commercial bronze, spring bronze, German silver, soft solder, and aluminum solder are some of the more important alloys. Large quantities of zinc are used to produce die castings, which are used extensively by the automotive, electrical, and hardware industries. An alloy called Prestal(R), consisting of 78 percent zinc and 22 percent aluminum, is reported to be almost as strong as steel and as easy to mold as plastic. The alloy said to be so moldable that it can be molded into form using inexpensive ceramics or cement die casts. Zinc is also used extensively to galvanize other metals such as iron to prevent corrosion. Zinc oxide is a unique and very useful material for modern civilization. It is widely used in the manufacture of paints, rubber products, cosmetics, pharmaceuticals, floor coverings, plastics, printing inks, soap, storage batteries, textiles, electrical equipment, and other products. Lithopone, a mixture of zinc sulfide and barium sulfate, is an important pigment. Zinc sulfide is used in making luminous dials, X-ray and TV screens, and fluorescent lights. The chloride and chromate are also important compounds. Zinc is an essential element in the growth of human beings and animals. Tests show that zinc-deficient animals require 50 percent more food to gain the same weight as an animal supplied with sufficient zinc.",
+    "source": "lanl"
+   }
+  ],
+  "sources": [
+   {
+    "text": "The principal ores of zinc are sphalerite (sulfide), smithsonite (carbonate), calamine (silicate), and franklinite (zinc, manganese, iron oxide). One method of zinc extraction involves roasting its ores to form the oxide and reducing the oxide with coal or carbon, with subsequent distillation of the metal.",
+    "source": "lanl"
+   }
+  ],
+  "description": [
+   {
+    "text": "Zinc is a bluish-white, lustrous metal. It is brittle at ordinary temperatures but malleable at 100 to 150°C. It is a fair conductor of electricity, and burns in air at high red heat with evolution of white clouds of the oxide. It exhibits superplasticity. Neither zinc nor zirconium is ferromagnetic; but ZrZn2 exhibits ferromagnetism at temperatures below 35°K. It has unusual electrical, thermal, optical, and solid-state properties that have not been fully investigated.",
+    "source": "lanl"
+   }
+  ],
+  "handling": [
+   {
+    "text": "Zinc is not considered to be toxic, but when freshly formed ZnO is inhaled a disorder known as oxide shakes or zinc chills sometimes occurs. Where zinc oxide is encountered, recommendations include providing good ventilation to avoid concentration exceeding 5 mg/m3, (time-weighted over an 8-hour exposure, 40-hour work week).",
+    "source": "lanl"
+   }
+  ],
+  "isotopes": [
+   {
+    "text": "Naturally occurring zinc contains five stable isotopes. Sixteen other unstable isotopes are recognized.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Earth/Planetary Science",
+   "text": "Molecules, atoms, and ions of the stable isotopes of zinc possess slightly different physical and chemical properties, and they commonly will be fractionated during physical, chemical, and biological processes, giving rise to variations in isotopic abundances and in atomic weights. There are measureable variations in the isotopic abundances of zinc in natural terrestrial materials (Fig. IUPAC.30.1). Stable zinc isotopes have been used as tracers to investigate biogeochemical and chemical processes in environmental contamination sites. The isotope-amount ratio n(66Zn)/n(64Zn) can be used as an environmental tracer for detecting the pathways of anthropogenic zinc,,. ",
+   "source": "iptei"
+  },
+  {
+   "topic": "Medicine",
+   "text": "Oral tracers of enriched 67Zn and intravenously injected stable isotopic tracers with enriched 70Zn are used simultaneously to determine the fraction of dietary zinc absorbed in humans, maintaining the amount or concentration of a nutrient or biomolecule in organs and body fluids. For example, zinc-isotope tracers can be administered to humans to determine if zinc absorption in their bodies may be impaired by ingestion of certain foods, food components, or dietary supplements. One such study conducted with Peruvian women showed that prenatal iron supplements affected the absorption of zinc during pregnancy. Another isotope tracer study investigated zinc deficiency in children with Crohn’s disease (an inflammatory disease of the intestines, especially the colon and ileum),. Zinc radioisotopes (e.g. 65Zn, with a half-life of 244 days) can also be used for determining zinc absorption in humans, but they are now used rarely because of radiation hazards,. ZnO nanoparticles enriched with 67Zn have been used as biological/environmental nanotoxicity tracers.",
+   "source": "iptei"
+  },
+  {
+   "topic": "a Source of Radioactive Isotope(s)",
+   "text": "The 68Zn (p, 2p) 67Cu (with a half-life of 62 h) reaction in which targets with zinc enriched in 68Zn are irradiated and the neutron induced reaction 67Zn (n, p) 67Cu are both processes for producing 67Cu for radiotherapy. Irradiation of 64Zn with a deuteron (the nucleus of 2H, consisting of a proton and a neutron) in a cyclotron will produce the radioisotope 64Cu (with a half-life of 12.7 h), which can be used for therapeutic applications and diagnosis with positron emission tomography (PET) via the 64Zn (d, 2p) 64Cu reaction.",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "7.0×10^1 milligrams per kilogram",
+  "ocean": "4.9×10^-3 milligrams per liter",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 23994,
+   "name": "zinc",
+   "formula": "Zn",
+   "charge": 0,
+   "smiles": "[Zn]"
+  },
+  {
+   "cid": 32051,
+   "name": "zinc(2+)",
+   "formula": "Zn+2",
+   "charge": 2,
+   "smiles": "[Zn+2]"
+  }
+ ],
+ "refs": {
+  "ciaaw": {
+   "name": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+   "url": "https://www.ciaaw.org/zinc.htm"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele030.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/30.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": null,
+ "ghs": {
+  "signal": "Danger",
+  "pictograms": [
+   {
+    "code": "GHS02",
+    "label": "Flammable"
+   },
+   {
+    "code": "GHS09",
+    "label": "Environmental Hazard"
+   }
+  ],
+  "hazards": [
+   "H250 (26.7%): Catches fire spontaneously if exposed to air",
+   "H260 (26.7%): In contact with water releases flammable gases which may ignite spontaneously",
+   "H400 (84.9%): Very toxic to aquatic life",
+   "H410 (79%): Very toxic to aquatic life with long lasting effects"
+  ],
+  "reports": 2624,
+  "notMet": 14.7,
+  "notClassified": false,
+  "source": "European Chemicals Agency (ECHA)"
+ },
+ "ghsCid": 23994
 }

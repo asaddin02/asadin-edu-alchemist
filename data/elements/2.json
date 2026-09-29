@@ -22,5 +22,284 @@
   "author": "Alchemist-hp (talk) (www.pse-mendelejew.de)",
   "license": "GFDL 1.2",
   "licenseUrl": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html"
- }
+ },
+ "weight": {
+  "value": "4.002 602(2)",
+  "kind": "standard",
+  "source": "ciaaw"
+ },
+ "natural": [
+  {
+   "A": 3,
+   "iso": "",
+   "mass": "3.016 029 322(2)",
+   "abundance": "0.000 002(2)"
+  },
+  {
+   "A": 4,
+   "iso": "",
+   "mass": "4.002 603 2545(4)",
+   "abundance": "0.999 998(2)"
+  }
+ ],
+ "naturalSource": "ciaaw",
+ "nuclides": [
+  {
+   "A": 3,
+   "iso": "",
+   "mass": "3.01602932197 ± 0.00000000006",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1934,
+   "est": false
+  },
+  {
+   "A": 4,
+   "iso": "",
+   "mass": "4.00260325413 ± 0.00000000016",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1908,
+   "est": false
+  },
+  {
+   "A": 5,
+   "iso": "",
+   "mass": "5.012057224 ± 0.00002147",
+   "half": "602 ys ± 22",
+   "seconds": 6.019999999999999e-22,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "n",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1937,
+   "est": false
+  },
+  {
+   "A": 6,
+   "iso": "",
+   "mass": "6.018885889 ± 0.000000057",
+   "half": "806.92 ms ± 0.24",
+   "seconds": 0.80692,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-d",
+     "op": "=",
+     "pct": 0.000278
+    }
+   ],
+   "year": 1936,
+   "est": false
+  },
+  {
+   "A": 7,
+   "iso": "",
+   "mass": "7.027990652 ± 0.000008115",
+   "half": "2.51 zs ± 0.07",
+   "seconds": 2.5099999999999994e-21,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "n",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1967,
+   "est": false
+  },
+  {
+   "A": 8,
+   "iso": "",
+   "mass": "8.033934388 ± 0.000000095",
+   "half": "119.5 ms ± 1.5",
+   "seconds": 0.11950000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 16
+    },
+    {
+     "mode": "β-t",
+     "op": "=",
+     "pct": 0.9
+    }
+   ],
+   "year": 1965,
+   "est": false
+  },
+  {
+   "A": 9,
+   "iso": "",
+   "mass": "9.043946414 ± 0.000050259",
+   "half": "2.5 zs ± 2.3",
+   "seconds": 2.5e-21,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "n",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1987,
+   "est": false
+  },
+  {
+   "A": 10,
+   "iso": "",
+   "mass": "10.052815306 ± 0.000099676",
+   "half": "260 ys ± 40",
+   "seconds": 2.6e-22,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "2n",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1994,
+   "est": false
+  }
+ ],
+ "stableCount": 2,
+ "texts": {
+  "history": [
+   {
+    "text": "The name derives from the Greek helios for \"sun\". The element was discovered by spectroscopy during a solar eclipse in the sun's chromosphere by the French astronomer Pierre-Jules-Cesar Janssen in 1868. It was independently discovered and named helium by the English astronomer Joseph Norman Lockyer. Helium was thought to be only a solar constituent until it was later found to be identical to the helium in the uranium ore cleveite by the Scottish chemist William Ramsay in 1895. The Swedish chemists Per Theodore Cleve and Nils Abraham Langet independently found helium in cleveite at about the same time.",
+    "source": "ciaaw"
+   },
+   {
+    "text": "Helium, the second most abundant element in the universe, was discovered on the sun before it was found on the earth. Pierre-Jules-César Janssen, a French astronomer, noticed a yellow line in the sun's spectrum while studying a total solar eclipse in 1868. Sir Norman Lockyer, an English astronomer, realized that this line, with a wavelength of 587.49 nanometers, could not be produced by any element known at the time. It was hypothesized that a new element on the sun was responsible for this mysterious yellow emission. This unknown element was named helium by Lockyer. The hunt to find helium on earth ended in 1895. Sir William Ramsay, a Scottish chemist, conducted an experiment with a mineral containing uranium called clevite. He exposed the clevite to mineral acids and collected the gases that were produced. He then sent a sample of these gases to two scientists, Lockyer and Sir William Crookes, who were able to identify the helium within it. Two Swedish chemists, Nils Langlet and Per Theodor Cleve, independently found helium in clevite at about the same time as Ramsay. Helium makes up about 0.0005% of the earth's atmosphere. This trace amount of helium is not gravitationally bound to the earth and is constantly lost to space. The earth's atmospheric helium is replaced by the decay of radioactive elements in the earth's crust. Alpha decay, one type of radioactive decay, produces particles called alpha particles. An alpha particle can become a helium atom once it captures two electrons from its surroundings. This newly formed helium can eventually work its way to the atmosphere through cracks in the crust.",
+    "source": "jlab"
+   },
+   {
+    "text": "From the Greek word helios, the sun. Janssen obtained the first evidence of helium during the solar eclipse of 1868 when he detected a new line in the solar spectrum. Lockyer and Frankland suggested the name helium for the new element. In 1895 Ramsay discovered helium in the uranium mineral cleveite while it was independently discovered in cleveite by the Swedish chemists Cleve and Langlet at about the same time. Rutherford and Royds in 1907 demonstrated that alpha particles are helium nuclei.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Helium is commercially recovered from natural gas deposits, mostly from Texas, Oklahoma and Kansas. Helium gas is used to inflate blimps, scientific balloons and party balloons. It is used as an inert shield for arc welding, to pressurize the fuel tanks of liquid fueled rockets and in supersonic windtunnels. Helium is combined with oxygen to create a nitrogen free atmosphere for deep sea divers so that they will not suffer from a condition known as nitrogen narcosis. Liquid helium is an important cryogenic material and is used to study superconductivity and to create superconductive magnets. The Department of Energy's Jefferson Lab uses large amounts of liquid helium to operate its superconductive electron accelerator. Helium is an inert gas and does not easily combine with other elements. There are no known compounds that contain helium, although attempts are being made to produce helium diflouride (HeF2).",
+    "source": "jlab"
+   },
+   {
+    "text": " as an inert gas shield for arc welding; a protective gas in growing silicon and germanium crystals and producing titanium and zirconium; as a cooling medium for nuclear reactors, and as a gas for supersonic wind tunnels. A mixture of helium and oxygen is used as an artificial atmosphere for divers and others working under pressure. Different ratios of He and O2 are used for different diver operation depths. Helium is extensively used for filling balloons as it is a much safer gas than hydrogen. One of the recent largest uses for helium has been for pressuring liquid fuel rockets. A Saturn booster, like the type used on the Apollo lunar missions, required about 13 million ft3 of helium for a firing, plus more for checkouts. Liquid helium's use in magnetic resonance imaging (MRI) continues to increase as the medical profession accepts and develops new uses for the equipment. This equipment has eliminated some need for exploratory surgery by accurately diagnosing patients. Another medical application uses MRE to determine (by blood analysis) whether a patient has any form of cancer. Helium is also being used to advertise on blimps for various companies, including Goodyear. Other lifting gas applications are being developed by the Navy and Air Force to detect low-flying cruise missiles. Additionally, the Drug Enforcement Agency is using radar-equipped blimps to detect drug smugglers along the United States boarders. In addition, NASA is currently using helium-filled balloons to sample the atmosphere in Antarctica to determine what is depleting the ozone layer.",
+    "source": "lanl"
+   }
+  ],
+  "sources": [
+   {
+    "text": "Except for hydrogen, helium is the most abundant element found in the universe. Helium is extracted from natural gas. In fact, all natural gas contains at least trace quantities of helium. It has been detected spectroscopically in great abundance, especially in the hotter stars, and it is an important component in both the proton-proton reaction and the carbon cycle, which account for the energy of the sun and stars. The helium content of the atmosphere is about 1 part in 200,000. While it is present in various radioactive minerals as a decay product, the bulk of the Free World's supply is obtained from wells in Texas, Oklahoma, and Kansas. Outside the United States, the only known helium extraction plants, in 1984 were in Eastern Europe (Poland), the USSR, and a few in India.",
+    "source": "lanl"
+   }
+  ],
+  "description": [
+   {
+    "text": "Helium has the lowest melting point of any element and is widely used in cryogenic research because its boiling point is close to absolute zero. Also, the element is vital in the study of super conductivity. Using liquid helium, Kurti, co-workers and others have succeeded in obtaining temperatures of a few microkelvins by the adiabatic demagnetization of copper nuclei. Helium has other peculiar properties: It is the only liquid that cannot be solidified by lowering the temperature. It remains liquid down to absolute zero at ordinary pressures, but will readily solidify by increasing the pressure. Solid 3He and 4He are unusual in that both can be changed in volume by more than 30% by applying pressure. The specific heat of helium gas is unusually high. The density of helium vapor at the normal boiling point is also very high, with the vapor expanding greatly when heated to room temperature. Containers filled with helium gas at 5 to 10 K should be treated as though they contained liquid helium due to the large increase in pressure resulting from warming the gas to room temperature. While helium normally has a 0 valence, it seems to have a weak tendency to combine with certain other elements. Means of preparing helium difluoride have been studied, and species such as HeNe and the molecular ions He+ and He++ have been investigated.",
+    "source": "lanl"
+   }
+  ],
+  "isotopes": [
+   {
+    "text": "Seven isotopes of helium are known: Liquid helium (He-4) exists in two forms: He-4I and He-4II, with a sharp transition point at 2.174K. He-4I (above this temperature) is a normal liquid, but He-4II (below it) is unlike any other known substance. It expands on cooling, its conductivity for heat is enormous, and neither its heat conduction nor viscosity obeys normal rules.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Geochronology",
+   "text": "3He is a product of the radioactive decay of 3H (half-life of 12.31 years). The relative variations in the amount ratio n(3He)/n(3H) can be interpreted in terms of elapsed time. This has been especially useful in aquatic systems, including oceans, lakes, and aquifers, that received large inputs of 3H from precipitation following thermonuclear bomb test periods. 3H- 3He dating provides the elapsed time since a water mass became isolated from the atmosphere in the time range from the mid-1950s to the present. Such studies are important for establishing the sustainability of groundwater resources in shallow aquifers,. 4He is a product of radioactive decay in the uranium and thorium decay series. As a result, 4He concentration is used to estimate the relative ages of minerals and groundwater. In closed systems (systems that do not exchange matter with their surroundings), relative variations in the amount ratio n(4He)/n(U) can be interpreted in terms of elapsed time, although other processes can alter the distribution of helium, which is highly mobile in terrestrial environments,. 4He concentrations commonly increase along groundwater flow paths through a cumulative release from aquifer materials. This rate of accumulation is used to estimate the time since the groundwater was recharged at the surface. The 4He accumulation method of groundwater dating is typically used in deeper aquifers, where groundwater is relatively old and the 3H- 3He method cannot be used because of the relatively short half-life of 12.31 years for 3H.",
+   "source": "iptei"
+  },
+  {
+   "topic": "Industry",
+   "text": "3He has a large absorption cross section for neutrons, which makes it especially useful for radioactivity detection,. In this application, neutrons produced by the radioactive decay of elements, such as uranium and plutonium, enter the detector, where the reaction 3He (n, p) 3H produces 1H and 3H atoms. This induces further collisions and the release of electrons, which interact with charged surfaces to generate an electric current. Large amounts of 3He are used to produce neutron detectors in portal monitors for detecting illicit radioactive materials at ports, border crossings, and airports (Fig. IUPAC.2.1). Unfortunately, the isotope 3He is rare and there is a need to incorporate alternative gases for use in neutron detectors. 3He neutron detectors are also used in devices that determine the proportions of water, oil, and gas in wells drilled for energy production. Other important uses of 3He include lasers, gyroscopes used for missile stability and guidance, and cryogenic research (ultra-low temperature, less than 1 K). The global supply of 3He available for research and practical applications has become severely limited in recent years, such that prices have increased substantially and some uses have been curtailed,. A major source of 3He is from nuclear weapons containing 3H, recovered when the warheads are reconditioned or dismantled. 3He accumulates in such devices as a radiogenic product of 3H decay. The annual supply of new 3He has decreased with reductions in nuclear arsenals. ",
+   "source": "iptei"
+  },
+  {
+   "topic": "Medicine",
+   "text": "3He is used as an inhalant to improve magnetic resonance imaging (MRI) of the lungs.",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "8×10^-3 milligrams per kilogram",
+  "ocean": "7×10^-6 milligrams per liter",
+  "source": "jlab"
+ },
+ "physical": "Gas",
+ "forms": [
+  {
+   "cid": 23987,
+   "name": "helium",
+   "formula": "He",
+   "charge": 0,
+   "smiles": "[He]"
+  }
+ ],
+ "refs": {
+  "ciaaw": {
+   "name": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+   "url": "https://www.ciaaw.org/helium.htm"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele002.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/2.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": "helium",
+ "ghs": {
+  "signal": "Warning",
+  "pictograms": [
+   {
+    "code": "GHS04",
+    "label": "Compressed Gas"
+   }
+  ],
+  "hazards": [
+   "H280 (65.6%): Contains gas under pressure; may explode if heated",
+   "H281 (35.4%): Contains refrigerated gas; may cause cryogenic burns or injury"
+  ],
+  "reports": 491,
+  "notMet": 0.4,
+  "notClassified": false,
+  "source": "European Chemicals Agency (ECHA)"
+ },
+ "ghsCid": 23987
 }

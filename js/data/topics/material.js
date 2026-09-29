@@ -32,6 +32,7 @@ Carbon can be soft {{m:graphite|graphite}} in pencils or super-hard {{m:diamond|
 - **Logam**: [[ikatan-logam]] dengan lautan elektron. Atom tersusun dalam kisi kristal ([[kristal]]) sehingga logam dapat ditempa. Paduan (campuran logam) lebih kuat: baja (Fe + C), kuningan (Cu + Zn), perunggu (Cu + Sn).
 - **Keramik**: senyawa ion atau jaringan kovalen seperti {{m:aluminium-oxide|alumina}} dan {{m:silicon-carbide|silikon karbida}}; keras, tahan panas, tetapi rapuh.
 - **Polimer**: rantai panjang [[monomer]]. Termoplastik ({{m:polyethylene|PE}}, {{m:pet|PET}}) dapat dilelehkan ulang; termoset (bakelit, melamin) tidak.
+- **[[komposit|Komposit]]**: gabungan dua bahan atau lebih yang saling melengkapi, misalnya beton bertulang (beton + baja), fiberglass (serat kaca + resin), dan serat karbon.
 - **[[alotrop|Alotrop]] karbon**: {{m:diamond|intan}} (jaringan 3D), {{m:graphite|grafit}} (lembaran), {{m:graphene|grafena}}, dan {{m:fullerene-c60|fulerena}}.
 
 Lihat susunan atomnya di {{lab:kristal|lab Kristal & material}}.`,
@@ -40,6 +41,7 @@ Lihat susunan atomnya di {{lab:kristal|lab Kristal & material}}.`,
 - **Metals**: [[ikatan-logam|metallic bonding]] with an electron sea. Atoms sit in a crystal lattice ([[kristal|crystal]]), so metals can be hammered. Alloys are stronger: steel (Fe + C), brass (Cu + Zn), bronze (Cu + Sn).
 - **Ceramics**: ionic or covalent-network compounds such as {{m:aluminium-oxide|alumina}} and {{m:silicon-carbide|silicon carbide}}; hard and heat-proof but brittle.
 - **Polymers**: long chains of [[monomer|monomers]]. Thermoplastics ({{m:polyethylene|PE}}, {{m:pet|PET}}) can be re-melted; thermosets (Bakelite, melamine) cannot.
+- **[[komposit|Composites]]**: two or more materials combined so each makes up for the other, such as reinforced concrete (concrete + steel), fibreglass (glass fibre + resin) and carbon fibre.
 - **Carbon [[alotrop|allotropes]]**: {{m:diamond|diamond}} (3D network), {{m:graphite|graphite}} (sheets), {{m:graphene|graphene}} and {{m:fullerene-c60|fullerene}}.
 
 See their atomic arrangements in the {{lab:kristal|Crystals & materials lab}}.`,
@@ -92,11 +94,12 @@ Polymers are characterised by molar-mass distribution, crystallinity and glass-t
   labs: ['kristal'],
   activity: {
     sd: ['Kumpulkan 10 benda di kelas dan kelompokkan menurut materialnya (logam, kaca, plastik, kayu, karet). Uji mana yang ditarik magnet.', 'Collect 10 classroom objects and sort them by material (metal, glass, plastic, wood, rubber). Test which a magnet attracts.'],
-    smp: ['Kumpulkan kemasan plastik di rumah dan kelompokkan berdasarkan kode daur ulang 1–7. Cari polimernya di Moleculium.', 'Collect plastic packaging at home and sort by recycling code 1–7. Look up each polymer in Moleculium.'],
+    smp: ['Kumpulkan kemasan plastik di rumah dan kelompokkan berdasarkan kode daur ulang 1–7. Cari polimernya di Alchemist.', 'Collect plastic packaging at home and sort by recycling code 1–7. Look up each polymer in Alchemist.'],
     sma: ['Hitung jumlah atom per sel satuan fcc dan bcc serta efisiensi pengepakannya; bandingkan dengan model di lab Kristal.', 'Count atoms per fcc and bcc unit cell and their packing efficiency; compare with the Crystals lab models.'],
     kuliah: ['Presentasikan rantai pasok nikel Indonesia dari bijih laterit hingga katode NMC, termasuk dampak lingkungannya.', 'Present Indonesia’s nickel supply chain from laterite ore to NMC cathode, including its environmental impact.'],
   },
   quiz: [
+    { lv: 'kuliah', q: ["GaN memancarkan cahaya biru karena celah pitanya sekitar…", "GaN emits blue light because its band gap is about…"], options: [["0,7 eV", "0.7 eV"], ["1,1 eV", "1.1 eV"], ["3,4 eV", "3.4 eV"], ["10 eV", "10 eV"]], answer: 2, explain: ["Celah 3,4 eV setara foton di ujung biru–UV spektrum tampak.", "A 3.4 eV gap matches photons at the blue–UV end of the visible spectrum."] },
     { lv: 'sd', q: ['Kabel listrik dibuat dari tembaga karena…', 'Electric wires are made of copper because it…'], options: [['Mudah pecah', 'Breaks easily'], ['Menghantarkan listrik dengan baik', 'Conducts electricity well'], ['Ringan sekali', 'Is very light'], ['Tembus pandang', 'Is transparent']], answer: 1, explain: ['Tembaga adalah penghantar listrik yang sangat baik dan murah.', 'Copper is an excellent, affordable conductor.'] },
     { lv: 'sd', q: ['Intan dan grafit sama-sama tersusun atas atom…', 'Diamond and graphite are both made of…'], options: [['Besi', 'Iron'], ['Karbon', 'Carbon'], ['Oksigen', 'Oxygen'], ['Emas', 'Gold']], answer: 1, explain: ['Keduanya karbon murni dengan susunan atom berbeda.', 'Both are pure carbon with different arrangements.'] },
     { lv: 'smp', q: ['Baja adalah paduan besi dengan…', 'Steel is an alloy of iron with…'], options: [['Karbon', 'Carbon'], ['Emas', 'Gold'], ['Plastik', 'Plastic'], ['Raksa', 'Mercury']], answer: 0, explain: ['Sedikit karbon membuat besi jauh lebih kuat.', 'A little carbon makes iron much stronger.'] },
@@ -119,6 +122,7 @@ Polymers are characterised by molar-mass distribution, crystallinity and glass-t
       ['Proyek pilah plastik dan audit sampah sekolah.', 'Plastic-sorting project and school waste audit.'],
     ],
     misconceptions: [['"Kaca adalah padatan kristal." Kaca adalah padatan amorf tanpa keteraturan jangka panjang.', '"Glass is a crystalline solid." Glass is amorphous, with no long-range order.']],
-    assessment: ['Kuis Moleculium dan laporan audit plastik.', 'Moleculium quiz and a plastic-audit report.'],
+    assessment: ['Kuis Alchemist dan laporan audit plastik.', 'Alchemist quiz and a plastic-audit report.'],
   },
+  refs: ["10-5-the-solid-state-of-matter", "10-6-lattice-structures-in-crystalline-solids", "oc:31-7-polymer-structure-and-physical-properties"],
 };

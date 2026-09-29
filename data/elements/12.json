@@ -22,5 +22,644 @@
   "author": "Warut Roonguthai",
   "license": "CC BY-SA 3.0",
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
- }
+ },
+ "weight": {
+  "value": "[24.304, 24.307]",
+  "kind": "interval",
+  "source": "ciaaw"
+ },
+ "natural": [
+  {
+   "A": 24,
+   "iso": "",
+   "mass": "23.985 041 70(9)",
+   "abundance": "[0.7888, 0.7905]"
+  },
+  {
+   "A": 25,
+   "iso": "",
+   "mass": "24.985 8370(3)",
+   "abundance": "[0.099 88, 0.100 34]"
+  },
+  {
+   "A": 26,
+   "iso": "",
+   "mass": "25.982 5930(2)",
+   "abundance": "[0.1096, 0.1109]"
+  }
+ ],
+ "naturalSource": "ciaaw",
+ "nuclides": [
+  {
+   "A": 19,
+   "iso": "",
+   "mass": "19.034179920 ± 0.000064413",
+   "half": "5 ps ± 3",
+   "seconds": 5e-12,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "2p",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2007,
+   "est": false
+  },
+  {
+   "A": 20,
+   "iso": "",
+   "mass": "20.018763075 ± 0.000002",
+   "half": "90.4 ms ± 0.5",
+   "seconds": 0.09040000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 30.3
+    }
+   ],
+   "year": 1974,
+   "est": false
+  },
+  {
+   "A": 21,
+   "iso": "",
+   "mass": "21.011705764 ± 0.00000081",
+   "half": "120.0 ms ± 0.4",
+   "seconds": 0.12,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 20.1
+    },
+    {
+     "mode": "β+α",
+     "op": "=",
+     "pct": 0.116
+    },
+    {
+     "mode": "β+pα",
+     "op": "=",
+     "pct": 0.016
+    }
+   ],
+   "year": 1963,
+   "est": false
+  },
+  {
+   "A": 22,
+   "iso": "",
+   "mass": "21.999570597 ± 0.00000017",
+   "half": "3.8745 s ± 0.0007",
+   "seconds": 3.8745,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1961,
+   "est": false
+  },
+  {
+   "A": 23,
+   "iso": "",
+   "mass": "22.994123768 ± 0.000000034",
+   "half": "11.3039 s ± 0.0032",
+   "seconds": 11.3039,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1939,
+   "est": false
+  },
+  {
+   "A": 24,
+   "iso": "",
+   "mass": "23.985041689 ± 0.000000013",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1920,
+   "est": false
+  },
+  {
+   "A": 25,
+   "iso": "",
+   "mass": "24.985836966 ± 0.00000005",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1920,
+   "est": false
+  },
+  {
+   "A": 26,
+   "iso": "",
+   "mass": "25.982592972 ± 0.000000031",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1920,
+   "est": false
+  },
+  {
+   "A": 27,
+   "iso": "",
+   "mass": "26.984340647 ± 0.00000005",
+   "half": "9.435 m ± 0.027",
+   "seconds": 566.1,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1934,
+   "est": false
+  },
+  {
+   "A": 28,
+   "iso": "",
+   "mass": "27.983875426 ± 0.00000028",
+   "half": "20.915 h ± 0.009",
+   "seconds": 75294,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1953,
+   "est": false
+  },
+  {
+   "A": 29,
+   "iso": "",
+   "mass": "28.988607163 ± 0.000000369",
+   "half": "1.30 s ± 0.12",
+   "seconds": 1.3,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1971,
+   "est": false
+  },
+  {
+   "A": 30,
+   "iso": "",
+   "mass": "29.990465454 ± 0.00000139",
+   "half": "317 ms ± 4",
+   "seconds": 0.317,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "<",
+     "pct": 0.06
+    }
+   ],
+   "year": 1971,
+   "est": false
+  },
+  {
+   "A": 31,
+   "iso": "",
+   "mass": "30.996648232 ± 0.0000033",
+   "half": "270 ms ± 2",
+   "seconds": 0.27,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 6.2
+    }
+   ],
+   "year": 1977,
+   "est": false
+  },
+  {
+   "A": 32,
+   "iso": "",
+   "mass": "31.999110138 ± 0.0000035",
+   "half": "80.4 ms ± 0.4",
+   "seconds": 0.08040000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 5.5
+    }
+   ],
+   "year": 1977,
+   "est": false
+  },
+  {
+   "A": 33,
+   "iso": "",
+   "mass": "33.005327862 ± 0.000002859",
+   "half": "92.0 ms ± 1.2",
+   "seconds": 0.092,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 14
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1979,
+   "est": false
+  },
+  {
+   "A": 34,
+   "iso": "",
+   "mass": "34.008935455 ± 0.0000074",
+   "half": "44.9 ms ± 0.4",
+   "seconds": 0.0449,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 21
+    },
+    {
+     "mode": "β-2n",
+     "op": "<",
+     "pct": 0.1
+    }
+   ],
+   "year": 1979,
+   "est": false
+  },
+  {
+   "A": 35,
+   "iso": "",
+   "mass": "35.016790000 ± 0.0002895",
+   "half": "11.3 ms ± 0.6",
+   "seconds": 0.011300000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 52
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1989,
+   "est": false
+  },
+  {
+   "A": 36,
+   "iso": "",
+   "mass": "36.021879000 ± 0.000741",
+   "half": "3.9 ms ± 1.3",
+   "seconds": 0.0039,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 48
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1989,
+   "est": false
+  },
+  {
+   "A": 37,
+   "iso": "",
+   "mass": "37.030286265 ± 0.00075035",
+   "half": "8 ms ± 4",
+   "seconds": 0.008,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1996,
+   "est": false
+  },
+  {
+   "A": 38,
+   "iso": "",
+   "mass": "38.036580 ± 0.00054",
+   "half": "2 ms >260ns",
+   "seconds": 0.002,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1997,
+   "est": true
+  },
+  {
+   "A": 39,
+   "iso": "",
+   "mass": "39.045921 ± 0.000551",
+   "half": "Not-specified <180ns",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 40,
+   "iso": "",
+   "mass": "40.053194 ± 0.000537",
+   "half": "1 ms >170ns",
+   "seconds": 0.001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2007,
+   "est": true
+  },
+  {
+   "A": 41,
+   "iso": "",
+   "mass": "41.062373 ± 0.000537",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  }
+ ],
+ "stableCount": 3,
+ "texts": {
+  "history": [
+   {
+    "text": "The name derives from Magnesia, a district in the north-eastern region of Greece called Thessalia. The Scottish chemist Joseph Black recognized it as a separate element in 1755. In 1808, the English chemist Humphry Davy obtained the impure metal, and in 1831 the French pharmacist and chemist Antoine- Alexandre Brutus Bussy isolated the metal in the pure state.",
+    "source": "ciaaw"
+   },
+   {
+    "text": "Although it is the eighth most abundant element in the universe and the seventh most abundant element in the earth's crust, magnesium is never found free in nature. Magnesium was first isolated by Sir Humphry Davy, an English chemist, through the electrolysis of a mixture of magnesium oxide (MgO) and mercuric oxide (HgO) in 1808. Today, magnesium can be extracted from the minerals dolomite (CaCO3·MgCO3) and carnallite (KCl·MgCl2·6H2O), but is most often obtained from seawater. Every cubic kilometer of seawater contains about 1.3 billion kilograms of magnesium (12 billion pounds per cubic mile).",
+    "source": "jlab"
+   },
+   {
+    "text": "From Magnesia, district in Thessaly. Compounds of magnesium have long been known. Black recognized magnesium as an element in 1755. Davy isolated it in 1808 and Bussy prepared it in coherent form in 1831. Magnesium is the eighth most abundant element in the earth's crust. It does not occur uncombined, but is found in large deposits in the form of magnesite, dolomite, and other minerals.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Magnesium burns with a brilliant white light and is used in pyrotechnics, flares and photographic flashbulbs. Magnesium is the lightest metal that can be used to build things, although its use as a structural material is limited since it burns at relatively low temperatures. Magnesium is frequently alloyed with aluminum, which makes aluminum easier to roll, extrude and weld. Magnesium-aluminum alloys are used where strong, lightweight materials are required, such as in airplanes, missiles and rockets. Cameras, horseshoes, baseball catchers' masks and snowshoes are other items that are made from magnesium alloys. Magnesium oxide (MgO), also known as magnesia, is the second most abundant compound in the earth's crust. Magnesium oxide is used in some antacids, in making crucibles and insulating materials, in refining some metals from their ores and in some types of cements. When combined with water (H2O), magnesia forms magnesium hydroxide (Mg(OH)2), better known as milk of magnesia, which is commonly used as an antacid and as a laxative. Hydrated magnesium sulphate (MgSO4·7H2O), better known as Epsom salt, was discovered in 1618 by a farmer in Epsom, England, when his cows refused to drink the water from a certain mineral well. He tasted the water and found that it tasted very bitter. He also noticed that it helped heal scratches and rashes on his skin. Epsom salt is still used today to treat minor skin abrasions. Other magnesium compounds include magnesium carbonate (MgCO3) and magnesium fluoride (MgF2). Magnesium carbonate is used to make some types of paints and inks and is added to table salt to prevent caking. A thin film of magnesium fluoride is applied to optical lenses to help reduce glare and reflections.",
+    "source": "jlab"
+   },
+   {
+    "text": "Uses include flashlight photography, flares, and pyrotechnics, including incendiary bombs. It is one third lighter than aluminum, and in alloys is essential for airplane and missile construction. The metal improves the mechanical, fabrication, and welding characteristics of aluminum when used as an alloying agent. Magnesium is used in producing nodular graphite in cast iron, and is used as an additive to conventional propellants. It is also used as a reducing agent in the production of pure uranium and other metals from their salts. The hydroxide (milk of magnesia), chloride, sulfate (Epsom salts), and citrate are used in medicine. Dead-burned magnesite is employed for refractory purposes such as brick and liners in furnaces and converters.",
+    "source": "lanl"
+   }
+  ],
+  "sources": [
+   {
+    "text": "The metal is now principally obtained in the U.S. by electrolysis of fused magnesium chloride derived from brines, wells, and sea water.",
+    "source": "lanl"
+   }
+  ],
+  "description": [
+   {
+    "text": "Magnesium is a light, silvery-white, and fairly tough metal. It tarnishes slightly in air, and finely divided magnesium readily ignites upon heating in air and burns with a dazzling white flame.",
+    "source": "lanl"
+   }
+  ],
+  "handling": [
+   {
+    "text": "Because serious fires can occur, great care should be taken in handling magnesium metal, especially when finely divided. Water should not be used on burning magnesium or on magnesium fires.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Biology",
+   "text": "Natural magnesium enriched in the stable isotopes 25Mg and 26Mg has been used as tracers in human studies to assess absorption, excretion, distribution, and utilization of magnesium in basic and applied research,,.",
+   "source": "iptei"
+  },
+  {
+   "topic": "Earth/Planetary Science",
+   "text": "Molecules, atoms, and ions of the stable isotopes of magnesium possess slightly different physical and chemical properties, and they commonly will be fractionated during physical, chemical, and biological processes, giving rise to variations in isotopic abundances and in atomic weights. There are substantial variations in the isotopic abundances of magnesium in natural terrestrial materials (Fig. IUPAC.12.1). These variations are useful in investigating the origin of substances and studying environmental, hydrological, and geological processes,,. ",
+   "source": "iptei"
+  },
+  {
+   "topic": "Geochronology",
+   "text": "26Mg is a stable isotope and is the radiogenic product of 26Al decay. 26Al is produced by cosmic rays in space and in the atmosphere, and it was present in the primordial solar nebula. The anomalous abundance of 26Mg in meteorite inclusions indicate that this material must have been formed early in the development of the Solar System before all primordial 26Al (with half-life of 7.1×105 years) had decayed.",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "2.33×10^4 milligrams per kilogram",
+  "ocean": "1.29×10^3 milligrams per liter",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 5462224,
+   "name": "magnesium",
+   "formula": "Mg",
+   "charge": 0,
+   "smiles": "[Mg]"
+  },
+  {
+   "cid": 888,
+   "name": "magnesium(2+)",
+   "formula": "Mg+2",
+   "charge": 2,
+   "smiles": "[Mg+2]"
+  }
+ ],
+ "refs": {
+  "ciaaw": {
+   "name": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+   "url": "https://www.ciaaw.org/magnesium.htm"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele012.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/12.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": null,
+ "ghs": {
+  "signal": "Danger",
+  "pictograms": [
+   {
+    "code": "GHS02",
+    "label": "Flammable"
+   }
+  ],
+  "hazards": [
+   "H228 (44.9%): Flammable solid",
+   "H250 (36.5%): Catches fire spontaneously if exposed to air",
+   "H252 (18%): Self-heating in large quantities; may catch fire",
+   "H260 (36.7%): In contact with water releases flammable gases which may ignite spontaneously",
+   "H261 (44.8%): In contact with water releases flammable gas"
+  ],
+  "reports": 2205,
+  "notMet": 18.4,
+  "notClassified": false,
+  "source": "European Chemicals Agency (ECHA)"
+ },
+ "ghsCid": 5462224
 }

@@ -22,5 +22,851 @@
   "author": "Alchemist-hp (pse-mendelejew.de)",
   "license": "CC BY-SA 3.0",
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
- }
+ },
+ "weight": {
+  "value": "47.867(1)",
+  "kind": "standard",
+  "source": "ciaaw"
+ },
+ "natural": [
+  {
+   "A": 46,
+   "iso": "",
+   "mass": "45.952 627(1)",
+   "abundance": "0.0825(3)"
+  },
+  {
+   "A": 47,
+   "iso": "",
+   "mass": "46.951 7577(8)",
+   "abundance": "0.0744(2)"
+  },
+  {
+   "A": 48,
+   "iso": "",
+   "mass": "47.947 9409(8)",
+   "abundance": "0.7372(3)"
+  },
+  {
+   "A": 49,
+   "iso": "",
+   "mass": "48.947 8646(8)",
+   "abundance": "0.0541(2)"
+  },
+  {
+   "A": 50,
+   "iso": "",
+   "mass": "49.944 7858(8)",
+   "abundance": "0.0518(2)"
+  }
+ ],
+ "naturalSource": "ciaaw",
+ "nuclides": [
+  {
+   "A": 37,
+   "iso": "",
+   "mass": "37.027021 ± 0.000429",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 38,
+   "iso": "",
+   "mass": "38.012206 ± 0.000322",
+   "half": "Not-specified <120ns",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "2p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 39,
+   "iso": "",
+   "mass": "39.002684 ± 0.000215",
+   "half": "28.5 ms ± 0.9",
+   "seconds": 0.0285,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 93.7
+    },
+    {
+     "mode": "β+2p",
+     "op": "=",
+     "pct": null
+    }
+   ],
+   "year": 1990,
+   "est": true
+  },
+  {
+   "A": 40,
+   "iso": "",
+   "mass": "39.990345146 ± 0.000073262",
+   "half": "52.4 ms ± 0.3",
+   "seconds": 0.0524,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 95.8
+    }
+   ],
+   "year": 1982,
+   "est": false
+  },
+  {
+   "A": 41,
+   "iso": "",
+   "mass": "40.983148000 ± 0.00003",
+   "half": "81.9 ms ± 0.5",
+   "seconds": 0.0819,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 91.1
+    }
+   ],
+   "year": 1964,
+   "est": false
+  },
+  {
+   "A": 42,
+   "iso": "",
+   "mass": "41.973049369 ± 0.000000289",
+   "half": "208.3 ms ± 0.4",
+   "seconds": 0.2083,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1964,
+   "est": false
+  },
+  {
+   "A": 43,
+   "iso": "",
+   "mass": "42.968528420 ± 0.000006139",
+   "half": "509 ms ± 5",
+   "seconds": 0.509,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1948,
+   "est": false
+  },
+  {
+   "A": 43,
+   "iso": "m",
+   "mass": "42.968528420 ± 0.000006139",
+   "half": "11.9 us ± 0.3",
+   "seconds": 0.0000119,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1978,
+   "est": false
+  },
+  {
+   "A": 43,
+   "iso": "n",
+   "mass": "42.968528420 ± 0.000006139",
+   "half": "556 ns ± 6",
+   "seconds": 5.560000000000001e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1978,
+   "est": false
+  },
+  {
+   "A": 44,
+   "iso": "",
+   "mass": "43.959689936 ± 0.000000751",
+   "half": "59.1 y ± 0.3",
+   "seconds": 1865014331.328,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1954,
+   "est": false
+  },
+  {
+   "A": 45,
+   "iso": "",
+   "mass": "44.958120758 ± 0.000000897",
+   "half": "184.8 m ± 0.5",
+   "seconds": 11088,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1941,
+   "est": false
+  },
+  {
+   "A": 45,
+   "iso": "m",
+   "mass": "44.958120758 ± 0.000000897",
+   "half": "3.0 us ± 0.2",
+   "seconds": 0.000003,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2006,
+   "est": false
+  },
+  {
+   "A": 46,
+   "iso": "",
+   "mass": "45.952626356 ± 0.000000097",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1934,
+   "est": false
+  },
+  {
+   "A": 47,
+   "iso": "",
+   "mass": "46.951757491 ± 0.000000085",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1934,
+   "est": false
+  },
+  {
+   "A": 48,
+   "iso": "",
+   "mass": "47.947940677 ± 0.000000079",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1923,
+   "est": false
+  },
+  {
+   "A": 49,
+   "iso": "",
+   "mass": "48.947864391 ± 0.000000084",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1934,
+   "est": false
+  },
+  {
+   "A": 50,
+   "iso": "",
+   "mass": "49.944785622 ± 0.000000088",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1934,
+   "est": false
+  },
+  {
+   "A": 51,
+   "iso": "",
+   "mass": "50.946609468 ± 0.000000519",
+   "half": "5.76 m ± 0.01",
+   "seconds": 345.59999999999997,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1947,
+   "est": false
+  },
+  {
+   "A": 52,
+   "iso": "",
+   "mass": "51.946883509 ± 0.000002948",
+   "half": "1.7 m ± 0.1",
+   "seconds": 102,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1966,
+   "est": false
+  },
+  {
+   "A": 53,
+   "iso": "",
+   "mass": "52.949670714 ± 0.0000031",
+   "half": "32.7 s ± 0.9",
+   "seconds": 32.7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1977,
+   "est": false
+  },
+  {
+   "A": 54,
+   "iso": "",
+   "mass": "53.950892000 ± 0.000017",
+   "half": "2.1 s ± 1.0",
+   "seconds": 2.1,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1980,
+   "est": false
+  },
+  {
+   "A": 55,
+   "iso": "",
+   "mass": "54.955091000 ± 0.000031",
+   "half": "1.3 s ± 0.1",
+   "seconds": 1.3,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1980,
+   "est": false
+  },
+  {
+   "A": 56,
+   "iso": "",
+   "mass": "55.957677675 ± 0.000107569",
+   "half": "200 ms ± 5",
+   "seconds": 0.2,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1980,
+   "est": false
+  },
+  {
+   "A": 57,
+   "iso": "",
+   "mass": "56.963068098 ± 0.00022102",
+   "half": "95 ms ± 8",
+   "seconds": 0.095,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1985,
+   "est": false
+  },
+  {
+   "A": 58,
+   "iso": "",
+   "mass": "57.966808519 ± 0.000196823",
+   "half": "55 ms ± 6",
+   "seconds": 0.055,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1992,
+   "est": false
+  },
+  {
+   "A": 59,
+   "iso": "",
+   "mass": "58.972217 ± 0.000322",
+   "half": "28.5 ms ± 1.9",
+   "seconds": 0.0285,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1997,
+   "est": true
+  },
+  {
+   "A": 59,
+   "iso": "m",
+   "mass": "58.972217 ± 0.000322",
+   "half": "615 ns ± 11",
+   "seconds": 6.15e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2012,
+   "est": true
+  },
+  {
+   "A": 60,
+   "iso": "",
+   "mass": "59.976275000 ± 0.000258",
+   "half": "22.2 ms ± 1.6",
+   "seconds": 0.0222,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1997,
+   "est": false
+  },
+  {
+   "A": 61,
+   "iso": "",
+   "mass": "60.982426 ± 0.000322",
+   "half": "15 ms ± 4",
+   "seconds": 0.015,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1997,
+   "est": true
+  },
+  {
+   "A": 61,
+   "iso": "m",
+   "mass": "60.982426 ± 0.000322",
+   "half": "200 ns ± 28",
+   "seconds": 2.0000000000000002e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2019,
+   "est": true
+  },
+  {
+   "A": 61,
+   "iso": "n",
+   "mass": "60.982426 ± 0.000322",
+   "half": "354 ns ± 69",
+   "seconds": 3.54e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2019,
+   "est": true
+  },
+  {
+   "A": 62,
+   "iso": "",
+   "mass": "61.986903 ± 0.000429",
+   "half": "9 ms >620ns",
+   "seconds": 0.009000000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2009,
+   "est": true
+  },
+  {
+   "A": 63,
+   "iso": "",
+   "mass": "62.993709 ± 0.000537",
+   "half": "10 ms >620ns",
+   "seconds": 0.01,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2009,
+   "est": true
+  },
+  {
+   "A": 64,
+   "iso": "",
+   "mass": "63.998411 ± 0.000644",
+   "half": "5 ms >620ns",
+   "seconds": 0.005,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2013,
+   "est": true
+  },
+  {
+   "A": 65,
+   "iso": "",
+   "mass": "65.005593 ± 0.000751",
+   "half": "1 ms",
+   "seconds": 0.001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  }
+ ],
+ "stableCount": 5,
+ "texts": {
+  "history": [
+   {
+    "text": "The name derives from the Latin titans, who were the mythological \"first sons of the earth\". It was originally discovered by the English clergyman William Gregor in the mineral ilmenite (FeTiO3) in 1791. He called this mineral menachanite and the element menachin, for the Menachan parish where it was found. It was rediscovered in 1795 by the German chemist Martin Heinrich Klaproth, who called it titanium because it had no characteristic properties to use as a name. Titanium metal was first isolated by the Swedish chemists Sven Otto Pettersson and Lars Fredrik Nilson.",
+    "source": "ciaaw"
+   },
+   {
+    "text": "Titanium was discovered in 1791 by the Reverend William Gregor, an English pastor. Pure titanium was first produced by Matthew A. Hunter, an American metallurgist, in 1910. Titanium is the ninth most abundant element in the earth's crust and is primarily found in the minerals rutile (TiO2), ilmenite (FeTiO3) and sphene (CaTiSiO5). Titanium makes up about 0.57% of the earth's crust.",
+    "source": "jlab"
+   },
+   {
+    "text": "From the Latin titans, the first sons of the Earth, Greek mythology. Discovered by Gregor in 1791; named by Klaproth in 1795. Impure titanium was prepared by Nilson and Pettersson in 1887; however, the pure metal (99.9%) was not made until 1910 when Hunter heated TiCl4 with sodium in a steel bomb.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Titanium is a strong, light metal. It is as strong as steel and twice as strong as aluminum, but is 45% lighter than steel and only 60% heavier than aluminum. Titanium is not easily corroded by sea water and is used in propeller shafts, rigging and other parts of boats that are exposed to sea water. Titanium and titanium alloys are used in airplanes, missiles and rockets where strength, low weight and resistance to high temperatures are important. Since titanium does not react within the human body, it is used to create artificial hips, pins for setting bones and for other biological implants. Unfortunately, the high cost of titanium has limited its widespread use. Titanium oxide (TiO2) is used as a pigment to create white paint and accounts for the largest use of the element. Pure titanium oxide is relatively clear and is used to create titania, an artificial gemstone. Titanium tetrachloride (TiCl4), another titanium compound, has been used to make smoke screens. A final bit of titanium trivia titanium is one of the few elements that will burn in an atmosphere of pure nitrogen.",
+    "source": "jlab"
+   },
+   {
+    "text": "Titanium is important as an alloying agent with aluminum, molybdenum, manganese, iron, and other metals. Alloys of titanium are principally used for aircraft and missiles where lightweight strength and ability to withstand extremes of temperature are important. Titanium is as strong as steel, but 45% lighter. It is 60% heavier than aluminum, but twice as strong. Titanium has potential use in desalination plants for converting sea water into fresh water. The metal has excellent resistance to sea water and is used for propeller shafts, rigging, and other parts of ships exposed to salt water. A titanium anode coated with platinum has been used to provide cathodic protection from corrosion by salt water. It is produced artificially for use as a gemstone, but it is relatively soft. Star sapphires and rubies exhibit their asterism as a result of the presence of TiO2. Titanium dioxide is extensively used for both house paint and artist's paint, because it is permanent and has good covering power. Titanium oxide pigment accounts for the largest use of the element. Titanium paint is an excellent reflector of infrared, and is extensively used in solar observatories where heat causes poor viewing conditions. Titanium tetrachloride is used to iridize glass. This compound fumes strongly in air and has been used to produce smoke screens.",
+    "source": "lanl"
+   }
+  ],
+  "sources": [
+   {
+    "text": "Titanium is present in meteorites and the sun. Rocks obtained during the Apollo 17 lunar mission showed presence of 12.1% TiO2; rocks obtained during earlier Apollo missions show lower percentages. Titanium oxide bands are prominent in the spectra of M-type stars. The element is the ninth most abundant in the crust of the earth. Titanium is almost always present in igneous rocks and in the sediments derived from them. It occurs in the minerals rutile, ilmenite, and sphene, and is present in titanates and in many iron ores. Titanium is present in ash of coal, in plants, and in human body. The metal was a laboratory curiosity until Kroll, in 1946, showed that titanium could be produced commercially by reducing titanium tetrachloride with magnesium. This method is still largely used for producing the metal. The metal can be purified by decomposing the iodide.",
+    "source": "lanl"
+   }
+  ],
+  "description": [
+   {
+    "text": "Titanium, when pure, is a lustrous, white metal. It has a low density, good strength, is easily fabricated, and has excellent corrosion resistance. It is ductile only when it is free of oxygen. The metal, which burns in air, is the only element that burns in nitrogen. Titanium is resistant to dilute sulfuric and hydrochloric acid, most organic acids, most chlorine gas, and chloride solutions. Natural titanium is reported to become very radioactive after bombardment with deuterons. The emitted radiations are mostly positrons and hard gamma rays. The metal is dimorphic. The hexagonal alpha form changes to the cubic beta form very slowly at about 880°C. The metal combines with oxygen at red heat, and with chlorine at 550°C. Titanium metal is considered to be physiologically inert. When pure, titanium dioxide is relatively clear and has an extremely high index of refraction with an optical dispersion higher than diamond.",
+    "source": "lanl"
+   }
+  ],
+  "isotopes": [
+   {
+    "text": "Natural titanium consists of five isotopes with atomic masses from 46 to 50. All are stable. Eight other unstable isotopes are known.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Earth/Planetary Science",
+   "text": "The isotope-amount ratio n(50Ti)/n(46Ti) is used to study the early history of the Solar System. The value of the ratio can help determine whether the Solar System was created from a well-homogenized source,. For example, variations in titanium isotopic compositions of various groups of meteorites can be observed (Fig. IUPAC.22.1). ",
+   "source": "iptei"
+  },
+  {
+   "topic": "Industry",
+   "text": "The isotope-amount ratio n(48Ti)/n(49Ti) has been used in Isotope Ratio Method (IRM) analysis (initial titanium ratio/final titanium ratio) to estimate the energy production of nuclear reactors. This ratio can also be used to confirm that a reactor is being used for non-proliferation purposes (purposes other than to assist in the formation of nuclear weapon grade materials).",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "5.65×10^3 milligrams per kilogram",
+  "ocean": "1×10^-3 milligrams per liter",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 23963,
+   "name": "titanium",
+   "formula": "Ti",
+   "charge": 0,
+   "smiles": "[Ti]"
+  },
+  {
+   "cid": 114942,
+   "name": "titanium(4+)",
+   "formula": "Ti+4",
+   "charge": 4,
+   "smiles": "[Ti+4]"
+  },
+  {
+   "cid": 177711,
+   "name": "titanium(2+)",
+   "formula": "Ti+2",
+   "charge": 2,
+   "smiles": "[Ti+2]"
+  },
+  {
+   "cid": 5153393,
+   "name": "titanium(3+)",
+   "formula": "Ti+3",
+   "charge": 3,
+   "smiles": "[Ti+3]"
+  }
+ ],
+ "refs": {
+  "ciaaw": {
+   "name": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+   "url": "https://www.ciaaw.org/titanium.htm"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele022.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/22.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": "titanium",
+ "ghs": {
+  "signal": null,
+  "pictograms": [],
+  "hazards": [],
+  "reports": 808,
+  "notMet": null,
+  "notClassified": true,
+  "source": "European Chemicals Agency (ECHA)"
+ },
+ "ghsCid": 23963
 }

@@ -22,5 +22,428 @@
   "author": "W. Oelen",
   "license": "CC BY-SA 3.0",
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
- }
+ },
+ "weight": {
+  "value": "9.012 1831(5)",
+  "kind": "standard",
+  "source": "ciaaw"
+ },
+ "natural": [
+  {
+   "A": 9,
+   "iso": "",
+   "mass": "9.012 1831(5)",
+   "abundance": "1"
+  }
+ ],
+ "naturalSource": "ciaaw",
+ "nuclides": [
+  {
+   "A": 5,
+   "iso": "",
+   "mass": "5.039870 ± 0.00215",
+   "half": "p-Unstable",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 6,
+   "iso": "",
+   "mass": "6.019726409 ± 0.000005848",
+   "half": "5.0 zs ± 0.3",
+   "seconds": 5e-21,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "2p",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1958,
+   "est": false
+  },
+  {
+   "A": 7,
+   "iso": "",
+   "mass": "7.016928714 ± 0.000000076",
+   "half": "53.22 d ± 0.06",
+   "seconds": 4598208,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1938,
+   "est": false
+  },
+  {
+   "A": 8,
+   "iso": "",
+   "mass": "8.005305102 ± 0.000000037",
+   "half": "81.9 as ± 3.7",
+   "seconds": 8.190000000000001e-17,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1932,
+   "est": false
+  },
+  {
+   "A": 9,
+   "iso": "",
+   "mass": "9.012183062 ± 0.000000082",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1921,
+   "est": false
+  },
+  {
+   "A": 10,
+   "iso": "",
+   "mass": "10.013534692 ± 0.000000086",
+   "half": "1.387 My ± 0.012",
+   "seconds": 43769456472960,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1935,
+   "est": false
+  },
+  {
+   "A": 11,
+   "iso": "",
+   "mass": "11.021661080 ± 0.000000255",
+   "half": "13.76 s ± 0.07",
+   "seconds": 13.76,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-α",
+     "op": "=",
+     "pct": 3.3
+    },
+    {
+     "mode": "β-p",
+     "op": "=",
+     "pct": 0.0013
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1958,
+   "est": false
+  },
+  {
+   "A": 12,
+   "iso": "",
+   "mass": "12.026922082 ± 0.000002048",
+   "half": "21.46 ms ± 0.05",
+   "seconds": 0.02146,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 0.5
+    }
+   ],
+   "year": 1966,
+   "est": false
+  },
+  {
+   "A": 12,
+   "iso": "m",
+   "mass": "12.026922082 ± 0.000002048",
+   "half": "233 ns ± 7",
+   "seconds": 2.33e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2007,
+   "est": false
+  },
+  {
+   "A": 13,
+   "iso": "",
+   "mass": "13.036134506 ± 0.000010929",
+   "half": "1.0 zs ± 0.7",
+   "seconds": 1e-21,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1983,
+   "est": false
+  },
+  {
+   "A": 13,
+   "iso": "p",
+   "mass": "13.036134506 ± 0.000010929",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [],
+   "year": 1992,
+   "est": false
+  },
+  {
+   "A": 14,
+   "iso": "",
+   "mass": "14.042892920 ± 0.00014197",
+   "half": "4.53 ms ± 0.27",
+   "seconds": 0.00453,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 86
+    },
+    {
+     "mode": "β-2n",
+     "op": "=",
+     "pct": 5
+    },
+    {
+     "mode": "β-t",
+     "op": "=",
+     "pct": 0.02
+    },
+    {
+     "mode": "β-α",
+     "op": "<",
+     "pct": 0.004
+    }
+   ],
+   "year": 1973,
+   "est": false
+  },
+  {
+   "A": 14,
+   "iso": "p",
+   "mass": "14.042892920 ± 0.00014197",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [],
+   "year": 1995,
+   "est": false
+  },
+  {
+   "A": 15,
+   "iso": "",
+   "mass": "15.053490215 ± 0.00017799",
+   "half": "790 ys ± 270",
+   "seconds": 7.9e-22,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "n",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2013,
+   "est": false
+  },
+  {
+   "A": 16,
+   "iso": "",
+   "mass": "16.061672036 ± 0.00017799",
+   "half": "650 ys ± 130",
+   "seconds": 6.4999999999999995e-22,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "2n",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2012,
+   "est": false
+  }
+ ],
+ "stableCount": 1,
+ "texts": {
+  "history": [
+   {
+    "text": "The name derives from the Greek word beryllos for \"beryl\", a gemstone in which it is found (3BeO×Al2O3×6SiO2). Beryllium was discovered by the French chemist and pharmacist Nicholas-Louis Vauquelin in beryl and emerald in 1797. The element was first separated in 1828 by the French chemist Antoine-Alexandre-Brutus Bussy and independently by the German chemist Friedrich Wöhler. Because the salts of beryllium have a sweet taste, the element was also known as glucinium from the Greek glykys for \"sweet\", until IUPAC selected the name beryllium in 1949.",
+    "source": "ciaaw"
+   },
+   {
+    "text": "Although emeralds and beryl were known to ancient civilizations, they were first recognized as the same mineral (Be3Al2(SiO3)6) by Abbé Haüy in 1798. Later that year, Louis-Nicholas Vauquelin, a French chemist, discovered that an unknown element was present in emeralds and beryl. Attempts to isolate the new element finally succeeded in 1828 when two chemists, Friedrich Wölhler of Germany and A. Bussy of France, independently produced beryllium by reducing beryllium chloride (BeCl2) with potassium in a platinum crucible. Today, beryllium is primarily obtained from the minerals beryl (Be3Al2(SiO3)6) and bertrandite (4BeO·2SiO2·H2O) through a chemical process or through the electrolysis of a mixture of molten beryllium chloride (BeCl2) and sodium chloride (NaCl).",
+    "source": "jlab"
+   },
+   {
+    "text": "From the Greek word beryllos, beryl; also called glucinium or glucinum, Greek glykys, sweet. Discovered in the oxide form by Vauquelin in both beryl and emeralds in 1798. The metal was isolated in 1828 by Wohler and by Bussy independently by the action of potassium on beryllium chloride.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Beryllium is relatively transparent to X-rays and is used to make windows for X-ray tubes. When exposed to alpha particles, such as those emitted by radium or polonium, beryllium emits neutrons and is used as a neutron source. Beryllium is also used as a moderator in nuclear reactors. Beryllium is alloyed with copper (2% beryllium, 98% copper) to form a wear resistant material, known as beryllium bronze, used in gyroscopes and other devices where wear resistance is important. Beryllium is alloyed with nickel (2% beryllium, 98% nickel) to make springs, spot-welding electrodes and non-sparking tools. Other beryllium alloys are used in the windshield, brake disks and other structural components of the space shuttle. Beryllium oxide (BeO), a compound of beryllium, is used in the nuclear industry and in ceramics. Beryllium was once known as glucinum, which means sweet, since beryllium and many of its compounds have a sugary taste. Unfortunately for the chemists that discovered this particular property, beryllium and many of its compounds are poisonous and should never be tasted or ingested.",
+    "source": "jlab"
+   },
+   {
+    "text": "Beryllium is used as an alloying agent in producing beryllium copper, which is extensively used for springs, electrical contacts, spot-welding electrodes, and non-sparking tools. It is applied as a structural material for high-speed aircraft, missiles, spacecraft, and communication satellites. Other uses include windshield frame, brake discs, support beams, and other structural components of the space shuttle. Because beryllium is relatively transparent to X-rays, ultra-thin Be-foil is finding use in X-ray lithography for reproduction of micro-miniature integrated circuits. Beryllium is used in nuclear reactors as a reflector or moderator for it has a low thermal neutron absorption cross section. It is used in gyroscopes, computer parts, and instruments where lightness, stiffness, and dimensional stability are required. The oxide has a very high melting point and is also used in nuclear work and ceramic applications.",
+    "source": "lanl"
+   }
+  ],
+  "sources": [
+   {
+    "text": "Beryllium is found in some 30 mineral species, the most important of which are bertrandite, beryl, chrysoberyl, and phenacite. Aquamarine and emerald are precious forms of beryl. Beryl and bertrandite are the most important commercial sources of the element and its compounds. Most of the metal is now prepared by reducing beryllium fluoride with magnesium metal. Beryllium metal did not become readily available to industry until 1957.",
+    "source": "lanl"
+   }
+  ],
+  "description": [
+   {
+    "text": "The metal, steel gray in color, has many desirable properties. As one of the lightest of all metals, it has one of the highest melting points of the light metals. Its modulus of elasticity is about one third greater than that of steel. It resists attack by concentrated nitric acid, has excellent thermal conductivity, and is nonmagnetic. It has a high permeability to X-rays and when bombarded by alpha particles, as from radium or polonium, neutrons are produced in the amount of about 30 neutrons/million alpha particles. At ordinary temperatures, beryllium resists oxidation in air, although its ability to scratch glass is probably due to the formation of a thin layer of the oxide.",
+    "source": "lanl"
+   }
+  ],
+  "handling": [
+   {
+    "text": "Beryllium and its salts are toxic and should be handled with the greatest of care. Beryllium and its compounds should not be tasted to verify the sweetish nature of beryllium (as did early experimenters). The metal, its alloys, and its salts can be handled if certain work codes are observed, but no attempt should be made to work with beryllium before becoming familiar with proper safeguards.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Geochronology",
+   "text": "Cosmogenic 10Be and 7Be isotopes are produced in the atmosphere, largely by cosmic-ray spallation of nitrogen and oxygen. Because of its relatively short half-life (7Be, half-life t1/2=53 d, compared to that of 10Be, half-life t1/2=1.39×106 a, where the unit symbol “d” stands for day and “a” stands for year), measurements of cosmogenic 7Be, and especially the isotope-amount ratio n(7Be)/n(10Be), have been used to study rates of atmospheric circulation, mixing, formation of aerosols (fine solids or liquids suspended in a gas; e.g. smoke and mist are aerosols), and particle deposition. Cosmogenic atmospheric beryllium isotopes (7Be and 10Be) are deposited on the Earth’s surface, where they accumulate in soils, sediments, and snow while decaying away. Measurements of cosmogenic beryllium isotopes in such deposits are used to explore rates of soil formation, erosion, sedimentation, and snow accumulation on time scales ranging from months (7Be) to millions of years (10Be),. The minerals in rocks at the Earth’s surface interact with cosmic rays and form substantial quantities of 10Be and 7Be, thus providing a tool to determine the ages of geologic processes. In some situations, it is possible to estimate “exposure ages” for rocks in eroding terrains,,. By comparing measured 10Be concentrations with estimated rates of in situ cosmogenic 10Be production, the rate of rock erosion and formation of canyons and other geologic features can be determined (Fig. IUPAC.4.1). Anthropogenic 10Be was produced by nuclear bomb explosions largely through the reaction of fast neutrons (neutrons produced by nuclear fission having high kinetic energy) with 13C via the 13C (n, alpha) 10Be reaction in atmospheric CO2. Although the quantity of 10Be produced in this way is small, its presence above natural background concentrations in some environmental samples can potentially provide information about bomb-related processes and contamination. ",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "2.8 milligrams per kilogram",
+  "ocean": "5.6×10^-6 milligrams per liter",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 5460467,
+   "name": "beryllium",
+   "formula": "Be",
+   "charge": 0,
+   "smiles": "[Be]"
+  },
+  {
+   "cid": 107649,
+   "name": "beryllium(2+)",
+   "formula": "Be+2",
+   "charge": 2,
+   "smiles": "[Be+2]"
+  }
+ ],
+ "refs": {
+  "ciaaw": {
+   "name": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+   "url": "https://www.ciaaw.org/beryllium.htm"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele004.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/4.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": null,
+ "ghs": {
+  "signal": "Danger",
+  "pictograms": [
+   {
+    "code": "GHS06",
+    "label": "Acute Toxic"
+   },
+   {
+    "code": "GHS07",
+    "label": "Irritant"
+   },
+   {
+    "code": "GHS08",
+    "label": "Health Hazard"
+   }
+  ],
+  "hazards": [
+   "H301 (98%): Toxic if swallowed",
+   "H315 (98%): Causes skin irritation",
+   "H317 (98.2%): May cause an allergic skin reaction",
+   "H319 (98%): Causes serious eye irritation",
+   "H330 (98.2%): Fatal if inhaled",
+   "H335 (98%): May cause respiratory irritation",
+   "H350 (71.8%): May cause cancer",
+   "H350i (26.5%): May cause cancer by inhalation",
+   "H372 (99.8%): Causes damage to organs through prolonged or repeated exposure"
+  ],
+  "reports": 400,
+  "notMet": null,
+  "notClassified": false,
+  "source": "European Chemicals Agency (ECHA)"
+ },
+ "ghsCid": 5460467
 }

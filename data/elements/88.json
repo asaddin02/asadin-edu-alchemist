@@ -22,5 +22,1192 @@
   "author": "grenadier",
   "license": "CC BY 3.0",
   "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
- }
+ },
+ "weight": {
+  "value": "[226]",
+  "kind": "mass-number",
+  "A": 226,
+  "source": "nist"
+ },
+ "natural": [],
+ "naturalSource": "nist",
+ "nuclides": [
+  {
+   "A": 201,
+   "iso": "",
+   "mass": "201.012814699 ± 0.000021794",
+   "half": "20 ms ± 30",
+   "seconds": 0.02,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2005,
+   "est": false
+  },
+  {
+   "A": 201,
+   "iso": "m",
+   "mass": "201.012814699 ± 0.000021794",
+   "half": "6 ms ± 5",
+   "seconds": 0.006,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2005,
+   "est": false
+  },
+  {
+   "A": 202,
+   "iso": "",
+   "mass": "202.009742305 ± 0.000016122",
+   "half": "4.1 ms ± 1.1",
+   "seconds": 0.0040999999999999995,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2005,
+   "est": false
+  },
+  {
+   "A": 203,
+   "iso": "",
+   "mass": "203.009233907 ± 0.0000104",
+   "half": "36 ms ± 13",
+   "seconds": 0.036000000000000004,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1996,
+   "est": false
+  },
+  {
+   "A": 203,
+   "iso": "m",
+   "mass": "203.009233907 ± 0.0000104",
+   "half": "25 ms ± 5",
+   "seconds": 0.025,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1996,
+   "est": false
+  },
+  {
+   "A": 204,
+   "iso": "",
+   "mass": "204.006506855 ± 0.00000958",
+   "half": "60 ms ± 9",
+   "seconds": 0.06,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1995,
+   "est": false
+  },
+  {
+   "A": 205,
+   "iso": "",
+   "mass": "205.006230692 ± 0.000024446",
+   "half": "220 ms ± 50",
+   "seconds": 0.22,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1987,
+   "est": false
+  },
+  {
+   "A": 205,
+   "iso": "m",
+   "mass": "205.006230692 ± 0.000024446",
+   "half": "180 ms ± 50",
+   "seconds": 0.18,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1995,
+   "est": false
+  },
+  {
+   "A": 206,
+   "iso": "",
+   "mass": "206.003827842 ± 0.000019332",
+   "half": "240 ms ± 20",
+   "seconds": 0.24,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1967,
+   "est": false
+  },
+  {
+   "A": 207,
+   "iso": "",
+   "mass": "207.003772420 ± 0.000062572",
+   "half": "1.38 s ± 0.18",
+   "seconds": 1.38,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 86
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1967,
+   "est": false
+  },
+  {
+   "A": 207,
+   "iso": "m",
+   "mass": "207.003772420 ± 0.000062572",
+   "half": "57 ms ± 8",
+   "seconds": 0.057,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": null
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1987,
+   "est": false
+  },
+  {
+   "A": 208,
+   "iso": "",
+   "mass": "208.001855012 ± 0.000009686",
+   "half": "1.110 s ± 0.045",
+   "seconds": 1.11,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 87
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1967,
+   "est": false
+  },
+  {
+   "A": 208,
+   "iso": "m",
+   "mass": "208.001855012 ± 0.000009686",
+   "half": "263 ns ± 17",
+   "seconds": 2.63e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1998,
+   "est": false
+  },
+  {
+   "A": 209,
+   "iso": "",
+   "mass": "209.001994902 ± 0.000006169",
+   "half": "4.71 s ± 0.08",
+   "seconds": 4.71,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1967,
+   "est": false
+  },
+  {
+   "A": 209,
+   "iso": "m",
+   "mass": "209.001994902 ± 0.000006169",
+   "half": "117 us ± 5",
+   "seconds": 0.000117,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 90
+    },
+    {
+     "mode": "β+",
+     "op": "≈",
+     "pct": 10
+    }
+   ],
+   "year": 2008,
+   "est": false
+  },
+  {
+   "A": 210,
+   "iso": "",
+   "mass": "210.000475406 ± 0.000009868",
+   "half": "4.0 s ± 0.1",
+   "seconds": 4,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1967,
+   "est": false
+  },
+  {
+   "A": 210,
+   "iso": "m",
+   "mass": "210.000475406 ± 0.000009868",
+   "half": "2.29 us ± 0.03",
+   "seconds": 0.00000229,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1998,
+   "est": false
+  },
+  {
+   "A": 211,
+   "iso": "",
+   "mass": "211.000893049 ± 0.000005331",
+   "half": "12.6 s ± 1.2",
+   "seconds": 12.6,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1967,
+   "est": false
+  },
+  {
+   "A": 211,
+   "iso": "m",
+   "mass": "211.000893049 ± 0.000005331",
+   "half": "9.5 us ± 0.3",
+   "seconds": 0.000009499999999999999,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2004,
+   "est": false
+  },
+  {
+   "A": 212,
+   "iso": "",
+   "mass": "211.999786619 ± 0.000011007",
+   "half": "13.0 s ± 0.2",
+   "seconds": 13,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": null
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1967,
+   "est": false
+  },
+  {
+   "A": 212,
+   "iso": "m",
+   "mass": "211.999786619 ± 0.000011007",
+   "half": "9.3 us ± 0.9",
+   "seconds": 0.0000093,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1986,
+   "est": false
+  },
+  {
+   "A": 212,
+   "iso": "n",
+   "mass": "211.999786619 ± 0.000011007",
+   "half": "850 ns ± 130",
+   "seconds": 8.5e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1986,
+   "est": false
+  },
+  {
+   "A": 213,
+   "iso": "",
+   "mass": "213.000370971 ± 0.00001054",
+   "half": "2.73 m ± 0.05",
+   "seconds": 163.8,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 87
+    },
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 13
+    }
+   ],
+   "year": 1955,
+   "est": false
+  },
+  {
+   "A": 213,
+   "iso": "m",
+   "mass": "213.000370971 ± 0.00001054",
+   "half": "2.20 ms ± 0.05",
+   "seconds": 0.0022,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "≈",
+     "pct": 99
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 0.6
+    }
+   ],
+   "year": 1976,
+   "est": false
+  },
+  {
+   "A": 214,
+   "iso": "",
+   "mass": "214.000099560 ± 0.000005636",
+   "half": "2.437 s ± 0.016",
+   "seconds": 2.437,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 99.941
+    },
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 0.059
+    }
+   ],
+   "year": 1967,
+   "est": false
+  },
+  {
+   "A": 214,
+   "iso": "m",
+   "mass": "214.000099560 ± 0.000005636",
+   "half": "118 ns ± 7",
+   "seconds": 1.1800000000000001e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2004,
+   "est": false
+  },
+  {
+   "A": 214,
+   "iso": "n",
+   "mass": "214.000099560 ± 0.000005636",
+   "half": "67.3 us ± 1.5",
+   "seconds": 0.0000673,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 99.91
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 0.09
+    }
+   ],
+   "year": 1971,
+   "est": false
+  },
+  {
+   "A": 214,
+   "iso": "p",
+   "mass": "214.000099560 ± 0.000005636",
+   "half": "295 ns ± 7",
+   "seconds": 2.9500000000000003e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1979,
+   "est": false
+  },
+  {
+   "A": 214,
+   "iso": "q",
+   "mass": "214.000099560 ± 0.000005636",
+   "half": "279 ns ± 4",
+   "seconds": 2.79e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1979,
+   "est": false
+  },
+  {
+   "A": 214,
+   "iso": "r",
+   "mass": "214.000099560 ± 0.000005636",
+   "half": "225 ns ± 4",
+   "seconds": 2.2500000000000002e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1979,
+   "est": false
+  },
+  {
+   "A": 214,
+   "iso": "x",
+   "mass": "214.000099560 ± 0.000005636",
+   "half": "128 ns ± 4",
+   "seconds": 1.28e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1992,
+   "est": false
+  },
+  {
+   "A": 215,
+   "iso": "",
+   "mass": "215.002718208 ± 0.00000773",
+   "half": "1.669 ms ± 0.009",
+   "seconds": 0.0016690000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1967,
+   "est": false
+  },
+  {
+   "A": 215,
+   "iso": "m",
+   "mass": "215.002718208 ± 0.00000773",
+   "half": "7.31 us ± 0.13",
+   "seconds": 0.0000073099999999999995,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1983,
+   "est": false
+  },
+  {
+   "A": 215,
+   "iso": "n",
+   "mass": "215.002718208 ± 0.00000773",
+   "half": "1.39 us ± 0.07",
+   "seconds": 0.0000013899999999999998,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1998,
+   "est": false
+  },
+  {
+   "A": 215,
+   "iso": "p",
+   "mass": "215.002718208 ± 0.00000773",
+   "half": "555 ns ± 10",
+   "seconds": 5.550000000000001e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1987,
+   "est": false
+  },
+  {
+   "A": 216,
+   "iso": "",
+   "mass": "216.003533534 ± 0.000008592",
+   "half": "172 ns ± 7",
+   "seconds": 1.72e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1972,
+   "est": false
+  },
+  {
+   "A": 217,
+   "iso": "",
+   "mass": "217.006322676 ± 0.000007564",
+   "half": "1.95 us ± 0.12",
+   "seconds": 0.00000195,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1970,
+   "est": false
+  },
+  {
+   "A": 218,
+   "iso": "",
+   "mass": "218.007134297 ± 0.000010528",
+   "half": "25.91 us ± 0.14",
+   "seconds": 0.000025909999999999998,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1970,
+   "est": false
+  },
+  {
+   "A": 219,
+   "iso": "",
+   "mass": "219.010084715 ± 0.000007315",
+   "half": "9 ms ± 2",
+   "seconds": 0.009000000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1952,
+   "est": false
+  },
+  {
+   "A": 219,
+   "iso": "m",
+   "mass": "219.010084715 ± 0.000007315",
+   "half": "10 ms ± 3",
+   "seconds": 0.01,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2018,
+   "est": false
+  },
+  {
+   "A": 220,
+   "iso": "",
+   "mass": "220.011027542 ± 0.000008153",
+   "half": "18.1 ms ± 1.2",
+   "seconds": 0.0181,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1949,
+   "est": false
+  },
+  {
+   "A": 221,
+   "iso": "",
+   "mass": "221.013917293 ± 0.00000497",
+   "half": "25 s ± 4",
+   "seconds": 25,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1949,
+   "est": false
+  },
+  {
+   "A": 222,
+   "iso": "",
+   "mass": "222.015373371 ± 0.000004781",
+   "half": "33.6 s ± 0.4",
+   "seconds": 33.6,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1948,
+   "est": false
+  },
+  {
+   "A": 223,
+   "iso": "",
+   "mass": "223.018500648 ± 0.000002243",
+   "half": "11.4352 d ± 0.0010",
+   "seconds": 988001.28,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1905,
+   "est": false
+  },
+  {
+   "A": 224,
+   "iso": "",
+   "mass": "224.020210361 ± 0.000001944",
+   "half": "3.6316 d ± 0.0014",
+   "seconds": 313770.24,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1902,
+   "est": false
+  },
+  {
+   "A": 225,
+   "iso": "",
+   "mass": "225.023610502 ± 0.000002786",
+   "half": "14.82 d ± 0.19",
+   "seconds": 1280448,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1947,
+   "est": false
+  },
+  {
+   "A": 226,
+   "iso": "",
+   "mass": "226.025408186 ± 0.000002068",
+   "half": "1.600 ky ± 0.007",
+   "seconds": 50491081728.00001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "2β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1898,
+   "est": false
+  },
+  {
+   "A": 227,
+   "iso": "",
+   "mass": "227.029176205 ± 0.000002089",
+   "half": "42.2 m ± 0.5",
+   "seconds": 2532,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1953,
+   "est": false
+  },
+  {
+   "A": 228,
+   "iso": "",
+   "mass": "228.031068574 ± 0.000002141",
+   "half": "5.75 y ± 0.03",
+   "seconds": 181452324.96,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1907,
+   "est": false
+  },
+  {
+   "A": 229,
+   "iso": "",
+   "mass": "229.034956703 ± 0.000016576",
+   "half": "4.0 m ± 0.2",
+   "seconds": 240,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1975,
+   "est": false
+  },
+  {
+   "A": 230,
+   "iso": "",
+   "mass": "230.037054776 ± 0.000011053",
+   "half": "93 m ± 2",
+   "seconds": 5580,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1978,
+   "est": false
+  },
+  {
+   "A": 231,
+   "iso": "",
+   "mass": "231.041027085 ± 0.000012206",
+   "half": "104 s ± 1",
+   "seconds": 104,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1983,
+   "est": false
+  },
+  {
+   "A": 231,
+   "iso": "m",
+   "mass": "231.041027085 ± 0.000012206",
+   "half": "~53 us",
+   "seconds": 0.000053,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2001,
+   "est": false
+  },
+  {
+   "A": 232,
+   "iso": "",
+   "mass": "232.043475267 ± 0.000009823",
+   "half": "4.0 m ± 0.3",
+   "seconds": 240,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1983,
+   "est": false
+  },
+  {
+   "A": 233,
+   "iso": "",
+   "mass": "233.047594570 ± 0.000009235",
+   "half": "30 s ± 5",
+   "seconds": 30,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1990,
+   "est": false
+  },
+  {
+   "A": 234,
+   "iso": "",
+   "mass": "234.050382100 ± 0.000009",
+   "half": "30 s ± 10",
+   "seconds": 30,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1990,
+   "est": false
+  },
+  {
+   "A": 235,
+   "iso": "",
+   "mass": "235.054890 ± 0.000322",
+   "half": "5 s",
+   "seconds": 5,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  }
+ ],
+ "stableCount": 0,
+ "texts": {
+  "history": [
+   {
+    "text": "Radium was discovered by Marie Sklodowska Curie, a Polish chemist, and Pierre Curie, a French chemist, in 1898. Marie Curie obtained radium from pitchblende, a material that contains uranium, after noticing that unrefined pitchblende was more radioactive than the uranium that was separated from it. She reasoned that pitchblende must contain at least one other radioactive element. Curie needed to refine several tons of pitchblende in order to obtain tiny amounts of radium and polonium, another radioactive element discovered by Curie. One ton of uranium ore contains only about 0.14 grams of radium. Today, radium can be obtained as a byproduct of refining uranium and is usually sold as radium chloride (RaCl2) or radium bromide (RaBr2) and not as a pure material. Radium's most stable isotope, radium-226, has a half-life of about 1600 years. It decays into radon-222 through alpha decay or into lead-212 by ejecting a carbon-14 nucleus.",
+    "source": "jlab"
+   },
+   {
+    "text": "Radium was discovered in 1898 by Madame Curie in the pitchblende or uraninite of North Bohemia, where it occurs. There is about 1 g of radium in 7 tons of pitchblende. The element was isolated in 1911 by Mme. Curie and Debierne by the electrolysis of a solution of pure radium chloride employing a mercury cathode; on distillation in an atmosphere of hydrogen, this amalgam yielded the pure metal.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "The Curie, a unit used to describe the activity of a radioactive substance, is based on radium-226. It is equal to the number of atoms in a one gram sample of radium-226 that will decay in one second, or 37,000,000,000 decays per second. Radium had been used to make self-luminous paints for watches, aircraft instrument dials and other instrumentation, but has largely been replaced by cobalt-60, a less dangerous radioactive source. A mixture of radium and beryllium will emit neutrons and is used as a neutron source. Radium is used to produce radon, a radioactive gas used to treat some types of cancer. A single gram of radium-226 will produce 0.000l milliliters of radon a day. Radium is about one million times more active than uranium. The lab notebooks used by the Curies are too highly contaminated to be safely handled today.",
+    "source": "jlab"
+   },
+   {
+    "text": "One gram of radium produces about 0.0001 ml (stp) of emanation, or radon gas, per day. This is purged from the radium and sealed in minute tubes, which are used in the treatment of cancer and other diseases. Radium was used in the producing of self-luminous paints, neutron sources, and in medicine for the treatment of disease. Other radioisotopes, such as 60Co, are now being used in place of radium. Some of these sources are much more powerful, and others are safer to use. Radium loses about 1% of its activity in 25 years, being transformed into elements of lower atomic weight. Lead is a final product of disintegration. Stored radium and radium-containing products or minerals should be ventilated to prevent build-up of radon.",
+    "source": "lanl"
+   }
+  ],
+  "sources": [
+   {
+    "text": "Originally, radium was obtained from the rich pitchblende ore found in Joachimsthal, Bohemia. The carnotite sands of Colorado furnish some radium, but richer ores are found in the Republic of Zaire and the Great Lake region of Canada. Radium is present in all uranium minerals, and could be extracted, if desired, from the extensive wastes of uranium processing. Large uranium deposits are located in Ontario, New Mexico, Utah, Australia, and elsewhere.",
+    "source": "lanl"
+   }
+  ],
+  "description": [
+   {
+    "text": "Radium is obtained commercially as bromide and chloride; it is doubtful if any appreciable stock of the isolated element now exists. The pure metal is brilliant white when freshly prepared, but blackens on exposure to air, probably due to formation of the nitride. It exhibits luminescence, as do its slats; it decomposes in water and is somewhat more volatile than barium. It is a member of the alkaline-earth group of metals. Radium imparts a carmine red color to a flame. Radium emits alpha, beta, and gamma rays and when mixed with beryllium produce neutrons. One gram of 226Ra undergoes 3.7 x 1010 disintegrations per second. The curie is defined as that amount of radioactivity which has the same disintegration rate as 1 g of 226Ra. Twenty five isotopes are now known; radium 226, the common isotope, has a half-life of 1600 years.",
+    "source": "lanl"
+   }
+  ],
+  "handling": [
+   {
+    "text": "Inhalation, injection, or body exposure to radium can cause cancer and other body disorders. The maximum permissible border in the total body for 226Ra is 7400 becquerel.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Earth/Planetary Science",
+   "text": "The radioactive isotopes 223Ra (with a half-life of 275 h), 224Ra (with a half-life of 88 h), 226Ra (with a half-life of 1600 years), and 228Ra (with a half-life of 5.75 years) are used as tracers to determine water flow rates. They are ideal environmental tracers because they behave conservatively once released into a water mass (meaning only mixing and decay processes affect their distribution). The activity ratios A(224Ra)/A(223Ra), A(223Ra)/A(226Ra), A(224Ra)/A(228Ra), and A(228Ra)/A(226Ra) have been used in lake studies to monitor and detect water inflow and mixing, to determine sources of inflowing water, and to monitor introduced water masses as they move within a body of water (i.e. a lake),. For example, submarine groundwater discharge is an important pathway that transports dissolved substances from aquifers below a seabed to the coastal ocean. Submarine groundwater discharge can be difficult to quantify because it is both spatially and temporally variable. As a result, its relative importance in coastal ocean chemical budgets is commonly poorly known. Peterson et al. used an hourly time series of measurements of multiple radium isotopes 223Ra, 224Ra, and 226Ra to quantify submarine groundwater discharge. They also used 222Rn (with a half-life of 3.8 days) measurements to independently quantify submarine groundwater discharge.",
+   "source": "iptei"
+  },
+  {
+   "topic": "Geochronology",
+   "text": "226Ra and 228Ra can be used for dating materials up to a few thousand years in age because the half-lives of 226Ra and 228Ra are 1600 years and 5.75 years, respectively, even though the long-lived 226Ra is found in nature as a result of its continuous production by the decay of 238U. For example, long-lived 226Ra has been used to date a limestone cave in central Switzerland, corals in the Indian Ocean, and Pleistocene gravel terraces. The activity ratio A(224Ra)/A(223Ra) is a potential age calculator for old lake water because the low 223Ra and 224Ra activities in old lake water are relatively unaffected by mixing.",
+   "source": "iptei"
+  },
+  {
+   "topic": "Medicine",
+   "text": "226Ra is used in brachytherapy (Fig. IUPAC.88.1), which is a method of localized treatment of various types of cancer. A sealed implant (such as a rod, seed, or needle) containing the radioactive isotope 226Ra is inserted into or near a patient’s tumor to apply a high dose of radiation to the tumor. The sealed implant is inserted by a physician or by an automated device (called a remote afterloader), and it is removed from the patient once the tumor is destroyed,. ",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "9×10^-7 milligrams per kilogram",
+  "ocean": "8.9×10^-11 milligrams per liter",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 6328144,
+   "name": "radium",
+   "formula": "Ra",
+   "charge": 0,
+   "smiles": "[Ra]"
+  }
+ ],
+ "refs": {
+  "nist": {
+   "name": "NIST Physical Measurement Laboratory",
+   "url": "https://physics.nist.gov/cgi-bin/Elements/elInfo.pl?element=88"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele088.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/88.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": null,
+ "ghs": null,
+ "ghsCid": null
 }

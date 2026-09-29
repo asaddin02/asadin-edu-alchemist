@@ -13,5 +13,196 @@
    "url": "https://en.wikipedia.org/wiki/Livermorium"
   }
  },
- "photo": null
+ "photo": null,
+ "weight": {
+  "value": "293.20449(60#)",
+  "kind": "isotope-mass",
+  "A": 293,
+  "estimated": true,
+  "source": "nist"
+ },
+ "natural": [],
+ "naturalSource": null,
+ "nuclides": [
+  {
+   "A": 289,
+   "iso": "",
+   "mass": "289.198023 ± 0.00054",
+   "half": "16 ms",
+   "seconds": 0.016,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 290,
+   "iso": "",
+   "mass": "290.198635 ± 0.000593",
+   "half": "9 ms ± 3",
+   "seconds": 0.009000000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2004,
+   "est": true
+  },
+  {
+   "A": 291,
+   "iso": "",
+   "mass": "291.201014 ± 0.000669",
+   "half": "26 ms ± 12",
+   "seconds": 0.026000000000000002,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2004,
+   "est": true
+  },
+  {
+   "A": 292,
+   "iso": "",
+   "mass": "292.201969 ± 0.000819",
+   "half": "16 ms ± 6",
+   "seconds": 0.016,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2004,
+   "est": true
+  },
+  {
+   "A": 293,
+   "iso": "",
+   "mass": "293.204583 ± 0.000553",
+   "half": "70 ms ± 30",
+   "seconds": 0.07,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2004,
+   "est": true
+  },
+  {
+   "A": 293,
+   "iso": "m",
+   "mass": "293.204583 ± 0.000553",
+   "half": "80 ms ± 60",
+   "seconds": 0.08,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2012,
+   "est": true
+  }
+ ],
+ "stableCount": 0,
+ "texts": {
+  "history": [
+   {
+    "text": "On December 6, 2000, scientists working at the Joint Institute for Nuclear Research in Dubna, Russia, along with scientists from the U.S. Department of Energy's Lawrence Livermore National Laboratory, announced the creation of livermorium. They produced livermorium by bombarding atoms of curium-248 with ions of calcium-48. This produced livermorium-292, an isotope with a half-life of about 0.6 milliseconds (0.0006 seconds), and four free neutrons. Livermorium's most stable isotope, livermorium-293, has a half-life of about 53 milliseconds. It decays into flerovium-289 through alpha decay.",
+    "source": "jlab"
+   },
+   {
+    "text": "Livermorium is a synthetic element with the symbol Lv and an atomic number of 116. It was first reported by Russian scientists from Dubna (Joint Institute for Nuclear Research) in 2000. Its former name was ununhexium and the name Livermorium name was adopted by IUPAC on May 31, 2012.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Since only a few atoms of livermorium have ever been produced, it currently has no uses outside of basic scientific research.",
+    "source": "jlab"
+   }
+  ],
+  "description": [
+   {
+    "text": "Livermorium does not occur naturally in the Earth’s crust. In 2000, scientists from the Joint Institute for Nuclear Research (JINR) in Dubna, Russia (Fig. IUPAC.116.1) worked with scientists from the Lawrence Livermore National Laboratory at the University of California and other collaborators to synthesize element 116. This element was first given the placeholder name ununhexium; in May of 2012 it was granted the name livermorium, with the symbol Lv. Researchers first studied livermorium as a decay product of oganesson and then synthesized livermorium by bombarding atoms of 248Cm with ions of 48Ca. The initial reaction of 248Cm with 48Ca produced the isotope 292Lv. Researchers were also able to produce livermorium by bombarding 245Cm with 48Ca. There are four known isotopes of livermorium [669], [674]. Livermorium has no known isotopic applications aside from scientific research.",
+    "source": "iptei"
+   }
+  ]
+ },
+ "isotopeUses": [],
+ "abundance": {
+  "crust": "Not Applicable",
+  "ocean": "Not Applicable",
+  "source": "jlab"
+ },
+ "physical": "Expected to be a Solid",
+ "forms": [],
+ "refs": {
+  "nist": {
+   "name": "NIST Physical Measurement Laboratory",
+   "url": "https://physics.nist.gov/cgi-bin/Elements/elInfo.pl?element=116"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele116.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/116.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": null,
+ "ghs": null,
+ "ghsCid": null
 }

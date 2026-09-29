@@ -22,6 +22,12 @@ const PAGES = Object.fromEntries(
     'teacher',
     'assignment',
     'about',
+    'search',
+    'peta',
+    'isotope',
+    'ion',
+    'reaction',
+    'material',
   ].map(p => [p, `../pages/${p}.js`])
 );
 /** Imports a page module; a failed request is retried with a fresh URL because browsers cache import failures. */
@@ -90,7 +96,7 @@ export async function render(navigated = false) {
   const loader = Object.hasOwn(PAGES, route.page) ? PAGES[route.page] : null;
   if (!loader) {
     main.innerHTML = notFound();
-    document.title = 'Moleculium';
+    document.title = 'Alchemist';
     document.body.dataset.route = startHash;
     return;
   }
@@ -110,8 +116,8 @@ export async function render(navigated = false) {
     if (mine !== token) return;
     const title = mod.title?.(route);
     document.title = title
-      ? `${title} · Moleculium`
-      : pick(['Moleculium · Atlas molekul dunia', 'Moleculium · World atlas of molecules']);
+      ? `${title} · Alchemist`
+      : pick(['Alchemist · Ensiklopedia kimia interaktif', 'Alchemist · Interactive chemistry encyclopedia']);
     window.scrollTo(0, 0);
     // After navigation, move focus to the page heading so screen-reader users hear where they are,
     // unless the user has already moved focus elsewhere (for example into the open menu).
@@ -144,7 +150,7 @@ const isRoute = () => !location.hash || location.hash.startsWith('#/');
 function notFound() {
   return `<section class="container page-state">
     <h1>${esc(pick(['Halaman tidak ditemukan', 'Page not found']))}</h1>
-    <p>${esc(pick(['Alamat ini tidak ada di Moleculium.', 'This address does not exist in Moleculium.']))}</p>
+    <p>${esc(pick(['Alamat ini tidak ada di Alchemist.', 'This address does not exist in Alchemist.']))}</p>
     <a class="btn btn-primary" href="#/">${esc(pick(['Ke beranda', 'Go home']))}</a>
   </section>`;
 }

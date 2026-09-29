@@ -22,5 +22,710 @@
   "author": "Dnn87",
   "license": "CC BY 3.0",
   "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
- }
+ },
+ "weight": {
+  "value": "30.973 761 998(5)",
+  "kind": "standard",
+  "source": "ciaaw"
+ },
+ "natural": [
+  {
+   "A": 31,
+   "iso": "",
+   "mass": "30.973 761 998(5)",
+   "abundance": "1"
+  }
+ ],
+ "naturalSource": "ciaaw",
+ "nuclides": [
+  {
+   "A": 24,
+   "iso": "",
+   "mass": "24.036522 ± 0.000537",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "p",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β+p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 25,
+   "iso": "",
+   "mass": "25.021675 ± 0.000429",
+   "half": "Not-specified <30ns",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 26,
+   "iso": "",
+   "mass": "26.011780 ± 0.00021",
+   "half": "43.6 ms ± 0.3",
+   "seconds": 0.0436,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 35.1
+    },
+    {
+     "mode": "β+2p",
+     "op": "=",
+     "pct": 1.99
+    }
+   ],
+   "year": 1983,
+   "est": true
+  },
+  {
+   "A": 27,
+   "iso": "",
+   "mass": "26.999292499 ± 0.000009662",
+   "half": "260 ms ± 80",
+   "seconds": 0.26,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "≈",
+     "pct": 0.07
+    }
+   ],
+   "year": 1977,
+   "est": false
+  },
+  {
+   "A": 28,
+   "iso": "",
+   "mass": "27.992326460 ± 0.000001231",
+   "half": "270.3 ms ± 0.5",
+   "seconds": 0.27030000000000004,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 0.0013
+    },
+    {
+     "mode": "β+α",
+     "op": "=",
+     "pct": 0.00086
+    }
+   ],
+   "year": 1953,
+   "est": false
+  },
+  {
+   "A": 29,
+   "iso": "",
+   "mass": "28.981800368 ± 0.000000385",
+   "half": "4.102 s ± 0.004",
+   "seconds": 4.102,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1941,
+   "est": false
+  },
+  {
+   "A": 30,
+   "iso": "",
+   "mass": "29.978313490 ± 0.000000069",
+   "half": "2.5000 m ± 0.0017",
+   "seconds": 150,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1934,
+   "est": false
+  },
+  {
+   "A": 31,
+   "iso": "",
+   "mass": "30.97376199768 ± 0.0000000008",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1920,
+   "est": false
+  },
+  {
+   "A": 32,
+   "iso": "",
+   "mass": "31.973907643 ± 0.000000042",
+   "half": "14.269 d ± 0.007",
+   "seconds": 1232841.6,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1934,
+   "est": false
+  },
+  {
+   "A": 33,
+   "iso": "",
+   "mass": "32.971725692 ± 0.00000117",
+   "half": "25.35 d ± 0.11",
+   "seconds": 2190240,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1951,
+   "est": false
+  },
+  {
+   "A": 34,
+   "iso": "",
+   "mass": "33.973645886 ± 0.00000087",
+   "half": "12.43 s ± 0.10",
+   "seconds": 12.43,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1945,
+   "est": false
+  },
+  {
+   "A": 35,
+   "iso": "",
+   "mass": "34.973314045 ± 0.000002003",
+   "half": "47.3 s ± 0.8",
+   "seconds": 47.3,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1971,
+   "est": false
+  },
+  {
+   "A": 36,
+   "iso": "",
+   "mass": "35.978259610 ± 0.000014078",
+   "half": "5.6 s ± 0.3",
+   "seconds": 5.6,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1971,
+   "est": false
+  },
+  {
+   "A": 37,
+   "iso": "",
+   "mass": "36.979606942 ± 0.000040738",
+   "half": "2.31 s ± 0.13",
+   "seconds": 2.31,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1971,
+   "est": false
+  },
+  {
+   "A": 38,
+   "iso": "",
+   "mass": "37.984303105 ± 0.000077918",
+   "half": "640 ms ± 140",
+   "seconds": 0.64,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 12
+    }
+   ],
+   "year": 1971,
+   "est": false
+  },
+  {
+   "A": 39,
+   "iso": "",
+   "mass": "38.986285865 ± 0.000120929",
+   "half": "282 ms ± 24",
+   "seconds": 0.28200000000000003,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 26
+    }
+   ],
+   "year": 1977,
+   "est": false
+  },
+  {
+   "A": 40,
+   "iso": "",
+   "mass": "39.991262221 ± 0.000089755",
+   "half": "150 ms ± 8",
+   "seconds": 0.15,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 15.8
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1979,
+   "est": false
+  },
+  {
+   "A": 41,
+   "iso": "",
+   "mass": "40.994654000 ± 0.000129",
+   "half": "101 ms ± 5",
+   "seconds": 0.101,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 30
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1979,
+   "est": false
+  },
+  {
+   "A": 42,
+   "iso": "",
+   "mass": "42.001172140 ± 0.000101996",
+   "half": "48.5 ms ± 1.5",
+   "seconds": 0.0485,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 50
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1979,
+   "est": false
+  },
+  {
+   "A": 43,
+   "iso": "",
+   "mass": "43.005411 ± 0.000322",
+   "half": "35.8 ms ± 1.3",
+   "seconds": 0.0358,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1989,
+   "est": true
+  },
+  {
+   "A": 44,
+   "iso": "",
+   "mass": "44.011927 ± 0.000429",
+   "half": "18.5 ms ± 2.5",
+   "seconds": 0.0185,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1989,
+   "est": true
+  },
+  {
+   "A": 45,
+   "iso": "",
+   "mass": "45.017134 ± 0.000537",
+   "half": "10 ms >200ns",
+   "seconds": 0.01,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1990,
+   "est": true
+  },
+  {
+   "A": 46,
+   "iso": "",
+   "mass": "46.024520 ± 0.000537",
+   "half": "9 ms >200ns",
+   "seconds": 0.009000000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1990,
+   "est": true
+  },
+  {
+   "A": 47,
+   "iso": "",
+   "mass": "47.030929 ± 0.000644",
+   "half": "4 ms >400ns",
+   "seconds": 0.004,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2018,
+   "est": true
+  }
+ ],
+ "stableCount": 1,
+ "texts": {
+  "history": [
+   {
+    "text": "The name derives from the Greek phosphoros for \"bringing light\" because it has the property of glowing in the dark. This was also the ancient name for the planet Venus, when it appears before sunrise. Phosphorus was discovered by the German merchant Hennig Brand in 1669.",
+    "source": "ciaaw"
+   },
+   {
+    "text": "In what is perhaps the most disgusting method of discovering an element, phosphorus was first isolated in 1669 by Hennig Brand, a German physician and alchemist, by boiling, filtering and otherwise processing as many as 60 buckets of urine. Thankfully, phosphorus is now primarily obtained from phosphate rock (Ca3(PO4)2).",
+    "source": "jlab"
+   },
+   {
+    "text": "From the Greek phosphoros, light bearing; ancient name for the planet Venus when appearing before sunrise. Brand discovered phosphorus in 1669 by preparing it from urine.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Phosphorus has three main allotropes: white, red and black. White phosphorus is poisonous and can spontaneously ignite when it comes in contact with air. For this reason, white phosphorus must be stored under water and is usually used to produce phosphorus compounds. Red phosphorus is formed by heating white phosphorus to 250°C (482°F) or by exposing white phosphorus to sunlight. Red phosphorus is not poisonous and is not as dangerous as white phosphorus, although frictional heating is enough to change it back to white phosphorus. Red phosphorus is used in safety matches, fireworks, smoke bombs and pesticides. Black phosphorus is also formed by heating white phosphorus, but a mercury catalyst and a seed crystal of black phosphorus are required. Black phosphorus is the least reactive form of phosphorus and has no significant commercial uses. Phosphoric acid (H3PO4) is used in soft drinks and to create many phosphate compounds, such as triple superphosphate fertilizer (Ca(H2PO4)2·H2O). Trisodium phosphate (Na3PO4) is used as a cleaning agent and as a water softener. Calcium phosphate (Ca3(PO4)2) is used to make china and in the production of baking powder. Some phosphorus compounds glow in the dark or emit light in response to absorbing radiation and are used in fluorescent light bulbs and television sets.",
+    "source": "jlab"
+   },
+   {
+    "text": "In recent years, concentrated phosphoric acids, which may contain as much as 70% to 75% P2O5 content, have become of great importance to agriculture and farm production. World-wide demand for fertilizers has caused record phosphate production. Phosphates are used in the production of special glasses, such as those used for sodium lamps. Bone-ash calcium phosphate is used to create fine chinaware and to produce mono-calcium phosphate, used in baking powder. Phosphorus is also important in the production of steels, phosphor bronze, and many other products. Trisodium phosphate is important as a cleaning agent, as a water softener, and for preventing boiler scale and corrosion of pipes and boiler tubes. Phosphorus is also an essential ingredient of all cell protoplasm, nervous tissue, and bones.",
+    "source": "lanl"
+   }
+  ],
+  "sources": [
+   {
+    "text": "Never found free in nature, it is widely distributed in combination with minerals. Phosphate rock, which contains the mineral apatite, an impure tri-calcium phosphate, is an important source of the element. Large deposits are found in Russia, in Morocco, and in Florida, Tennessee, Utah, Idaho, and elsewhere.",
+    "source": "lanl"
+   }
+  ],
+  "description": [
+   {
+    "text": "Phosphorus exists in four or more allotropic forms: white (or yellow), red, and black (or violet). Ordinary phosphorus is a waxy white solid; when pure it is colorless and transparent. White phosphorus has two modifications: alpha and beta with a transition temperature at -3.8°C. It is insoluble in water, but soluble in carbon disulfide. It takes fire spontaneously in air, burning to the pentoxide.",
+    "source": "lanl"
+   }
+  ],
+  "handling": [
+   {
+    "text": "Phosphorus is very poisonous, 50 mg constituting an approximate fatal dose. Exposure to white phosphorus should not exceed 0.1 mg/m3 (8-hour time-weighted average per 40-hour work week). White phosphorus should be kept under water (as it is dangerously reactive in air) and should be handled with forceps, as contact with the skin may cause severe burns. When exposed to sunlight or when heated in its own vapor to 250°C, it is converted to the red variety, which does not phosphoresce in air as does the white variety. This form does not ignite spontaneously and is not as dangerous as white phosphorus. It should, however, be handled with care as it does convert to the white form at some temperatures and it emits highly toxic fumes of the oxides of phosphorus when heated. The red modification is fairly stable, sublimes with a vapor pressure of 1 atm at 17C, and is used in the manufacture of safety matches, pyrotechnics, pesticides, incendiary shells, smoke bombs, tracer bullets, etc.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Biology",
+   "text": "32P (half-life of 14.3 days) is a radioactive isotope of phosphorus that is used to help understand the biological and chemical processes in plants. It is chemically identical to other isotopes of phosphorous and can be substituted in biological and chemical reactions. For example, a phosphate solution containing 32P (which has the identical behavior of non-radioactive 31P) can be inserted into the roots of a plant and its movement can then be tracked throughout the plant with the use of a Geiger counter. This movement detection study helps scientists to better understand how plants use phosphorous to reproduce and grow,. At the molecular level, 32P can substitute for 31P in nucleotides of DNA or RNA (ribonucleic acid, a single stranded molecule that regulates genes). Radioactive probes can be created to help identify the presence, absence, and quantity of genes in a system,.",
+   "source": "iptei"
+  },
+  {
+   "topic": "Earth/Planetary Science",
+   "text": "32P has been used as a tracer to help determine phosphorus nutrient cycling in eutrophied lakes (lakes rich in organic and mineral nutrients commonly leading to the excessive growth of phytoplankton, a self-feeding water organism) (Fig. IUPAC.15.1). In one experiment, phosphoric acid labeled with 32P was added to a lake that had been experimentally eutrophied. 32P was measured in microphytoplankton (plankton visible only with a microscope), phytoplankton, and zooplankton (tiny animals that live suspended in fresh or salt water), and the amount of incorporated 32P was determined. 33P has been used to better understand phosphorus dynamics in the environment at the sediment-surface level. Phosphorus is a necessary nutrient for many biota (the plant and animal life of a particular habitat, region, or geological period). Understanding bioavailability and sorption (bonding) of this nutrient to particles in soil is important for understanding ecosystem health. Organic and inorganic phosphorus substrates isotopically labeled with 33P can be tracked within a sediment system to determine their transport properties and availability to biota. ",
+   "source": "iptei"
+  },
+  {
+   "topic": "Industry",
+   "text": "32P was added to tires in the 1950s by Goodrich Laboratories to help determine the location and depth of tire wear in performance tests.",
+   "source": "iptei"
+  },
+  {
+   "topic": "Medicine",
+   "text": "Beta emissions from the radioactive isotope 32P can be used in drug therapy of cancerous bone masses. By injecting a patient with a 32P pharmaceutical, tumors and other cells can be targeted for cell death, which also helps to alleviate pain,. For example, Polycythemia vera is the condition of having excess red blood cells in the bone marrow: 32P can be used to treat this condition by reducing the number of red blood cells. However, there is no cure for this condition. Using a 32P labeled bio-silicone product, 32P has been used as the radioactive target in brachytherapy of solid tumors in the lung. Depending on the type of 32P-labeled compound (antibody or pharmaceutical drug), when it is ingested or injected into the body, specific body parts (blood, tumors, joints, or bones) can be targeted for visualization and imaged using a gamma camera. This is useful for imaging cancer sites and for treatment monitoring of oncologic patients,,.",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "1.05×10^3 milligrams per kilogram",
+  "ocean": "6×10^-2 milligrams per liter",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 5462309,
+   "name": "phosphorus",
+   "formula": "P",
+   "charge": 0,
+   "smiles": "[P]"
+  },
+  {
+   "cid": 5182128,
+   "name": "phosphorus(3-)",
+   "formula": "P-3",
+   "charge": -3,
+   "smiles": "[P-3]"
+  },
+  {
+   "cid": 9548888,
+   "name": "phosphorus(1-)",
+   "formula": "P-",
+   "charge": -1,
+   "smiles": "[P-]"
+  }
+ ],
+ "refs": {
+  "ciaaw": {
+   "name": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+   "url": "https://www.ciaaw.org/phosphorus.htm"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele015.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/15.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": "white-phosphorus",
+ "ghs": {
+  "signal": "Danger",
+  "pictograms": [
+   {
+    "code": "GHS02",
+    "label": "Flammable"
+   },
+   {
+    "code": "GHS05",
+    "label": "Corrosive"
+   },
+   {
+    "code": "GHS06",
+    "label": "Acute Toxic"
+   },
+   {
+    "code": "GHS09",
+    "label": "Environmental Hazard"
+   }
+  ],
+  "hazards": [
+   "H250: Catches fire spontaneously if exposed to air",
+   "H300: Fatal if swallowed",
+   "H314: Causes severe skin burns and eye damage",
+   "H330: Fatal if inhaled",
+   "H400: Very toxic to aquatic life"
+  ],
+  "reports": null,
+  "notMet": null,
+  "notClassified": false,
+  "source": "Regulation (EC) No 1272/2008 of the European Parliament and of the Council"
+ },
+ "ghsCid": 123286
 }

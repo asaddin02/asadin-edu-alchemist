@@ -1,5 +1,51 @@
 # Changelog
 
+## 3.0.0 — Alchemist (2026-09-29)
+
+Moleculium berganti nama menjadi **Alchemist** dan diperluas dari atlas molekul menjadi ensiklopedia kimia
+interaktif dan platform belajar. Audit cakupan sebelum dan sesudah perubahan: [docs/AUDIT-CHEMISTRY.md](docs/AUDIT-CHEMISTRY.md).
+
+### Konten
+
+- Peta kimia (`#/peta`): rantai Materi → … → Transformasi dan 23 cabang kimia dengan 309 konsep, materi, penjelajah,
+  lab, dan rujukan.
+- 29 topik (sebelumnya 14), semuanya dalam empat lapis SD/SMP/SMA/kuliah; topik baru: partikel, larutan & koloid,
+  kimia inti, ion, gaya antarmolekul, termokimia, termodinamika, kesetimbangan, elektrokimia, gugus fungsi, reaksi
+  organik, kimia anorganik, kimia analitik, spektroskopi, kimia kuantum. 319 soal kuis (sebelumnya 116), rujukan
+  OpenStax pada setiap topik dengan judul bagian resmi.
+- Kamus 309 istilah (sebelumnya 126); setiap istilah masuk peta domain atau tersambung ke istilah lain.
+- Entitas baru: 3.557 nuklida (IAEA AMDC), 60 ion (PubChem), 76 reaksi setara (70 kimia + 6 inti), 46 material dan
+  campuran (termasuk 9 makromolekul hayati dengan struktur RCSB PDB).
+- Data unsur dari PubChem PUG View: berat atom standar IUPAC CIAAW, komposisi isotop alami, sejarah, kegunaan,
+  sumber di alam, kelimpahan, bahaya GHS zat unsur, dan pemakaian isotop, semuanya dengan sumber.
+
+### Fitur
+
+- Pencarian terpadu (`#/search`) untuk semua entitas, dengan pengenalan CID, CAS (cek digit), InChI, InChIKey,
+  SMILES, rumus, dan nuklida, serta pencarian PubChem langsung.
+- Penjelajah isotop dengan peta nuklida, penjelajah ion, pustaka reaksi, katalog material, dan lab baru
+  **Waktu paruh & peluruhan**.
+- Halaman unsur, molekul, dan istilah kini saling menaut ke ion, reaksi, material, materi, dan domain; tautan
+  informasi spektrum PubChem di halaman molekul; filter kategori, blok, dan wujud di tabel periodik.
+- Kuis tantangan baru: nama & rumus ion, jenis reaksi. Modul ajar guru mencantumkan rujukan.
+- Materi dimuat saat dibuka (`meta.js` hasil build) sehingga daftar materi, pencarian, dan beranda tetap ringan.
+
+### Perbaikan ketepatan
+
+- Titik leleh MgO (2825 °C, sesuai PubChem), klaim unsur superberat, klaim tautan spektrum, batas percepatan enzim,
+  suhu nyala oksiasetilena, dan warna CPK paladium (`#006985`).
+- Am sampai Md tidak lagi disebut punya berat atom standar: nilai NIST untuknya adalah massa satu isotop.
+- Fisi uranium-235 menulis tiga neutron sebagai 3 ¹₀n (bukan ³₀n).
+- Rumus bermuatan dalam teks biasa ditulis dengan superskrip (SO₄²⁻, bukan SO₄^2-).
+
+### Produksi
+
+- Server dan precache menyajikan `data/ions/` dan `data/isotopes.json`; proxy mengizinkan pencarian PubChem per
+  InChIKey, SMILES, dan InChI; CSP mengizinkan gambar RCSB PDB.
+- `npm run build` kini juga membuat indeks materi dan judul rujukan; `npm run audit` baru; `data:check` memeriksa
+  topik empat lapis, ion, reaksi (atom, muatan, A dan Z), material, peta kimia, rujukan OpenStax, dan data isotop.
+- Kunci penyimpanan lokal `moleculium:` dipindahkan otomatis ke `alchemist:`.
+
 ## 2.0.0 — Moleculium (2026-09-26)
 
 ChemTaxa dibangun ulang dan berganti nama menjadi **Moleculium**.

@@ -22,5 +22,550 @@
   "author": "User:Pslawinski",
   "license": "CC BY-SA 2.5",
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
- }
+ },
+ "weight": {
+  "value": "20.1797(6)",
+  "kind": "standard",
+  "source": "ciaaw"
+ },
+ "natural": [
+  {
+   "A": 20,
+   "iso": "",
+   "mass": "19.992 440 18(1)",
+   "abundance": "0.9048(3)"
+  },
+  {
+   "A": 21,
+   "iso": "",
+   "mass": "20.993 8467(3)",
+   "abundance": "0.0027(1)"
+  },
+  {
+   "A": 22,
+   "iso": "",
+   "mass": "21.991 3851(1)",
+   "abundance": "0.0925(3)"
+  }
+ ],
+ "naturalSource": "ciaaw",
+ "nuclides": [
+  {
+   "A": 15,
+   "iso": "",
+   "mass": "15.043172977 ± 0.000071588",
+   "half": "770 ys ± 300",
+   "seconds": 7.699999999999999e-22,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "2p",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2014,
+   "est": false
+  },
+  {
+   "A": 16,
+   "iso": "",
+   "mass": "16.025750860 ± 0.000021986",
+   "half": ">5.7 zs",
+   "seconds": 5.7e-21,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "2p",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1977,
+   "est": false
+  },
+  {
+   "A": 17,
+   "iso": "",
+   "mass": "17.017713962 ± 0.00000038",
+   "half": "109.2 ms ± 0.6",
+   "seconds": 0.1092,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 94.4
+    },
+    {
+     "mode": "β+α",
+     "op": "=",
+     "pct": 3.51
+    },
+    {
+     "mode": "β+pα",
+     "op": "=",
+     "pct": 0.014
+    }
+   ],
+   "year": 1963,
+   "est": false
+  },
+  {
+   "A": 18,
+   "iso": "",
+   "mass": "18.005708696 ± 0.00000039",
+   "half": "1664.20 ms ± 0.47",
+   "seconds": 1.6642000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1954,
+   "est": false
+  },
+  {
+   "A": 19,
+   "iso": "",
+   "mass": "19.001880906 ± 0.000000171",
+   "half": "17.2569 s ± 0.0019",
+   "seconds": 17.2569,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1939,
+   "est": false
+  },
+  {
+   "A": 20,
+   "iso": "",
+   "mass": "19.99244017525 ± 0.00000000165",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1913,
+   "est": false
+  },
+  {
+   "A": 21,
+   "iso": "",
+   "mass": "20.993846685 ± 0.000000041",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1928,
+   "est": false
+  },
+  {
+   "A": 22,
+   "iso": "",
+   "mass": "21.991385113 ± 0.000000018",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1913,
+   "est": false
+  },
+  {
+   "A": 23,
+   "iso": "",
+   "mass": "22.994466905 ± 0.000000112",
+   "half": "37.15 s ± 0.03",
+   "seconds": 37.15,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1936,
+   "est": false
+  },
+  {
+   "A": 24,
+   "iso": "",
+   "mass": "23.993610649 ± 0.00000055",
+   "half": "3.38 m ± 0.02",
+   "seconds": 202.79999999999998,
+   "stable": false,
+   "decay": [],
+   "year": 1956,
+   "est": false
+  },
+  {
+   "A": 25,
+   "iso": "",
+   "mass": "24.997814797 ± 0.000031181",
+   "half": "602 ms ± 8",
+   "seconds": 0.602,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1970,
+   "est": false
+  },
+  {
+   "A": 26,
+   "iso": "",
+   "mass": "26.000516496 ± 0.000019784",
+   "half": "197 ms ± 2",
+   "seconds": 0.197,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 0.13
+    }
+   ],
+   "year": 1970,
+   "est": false
+  },
+  {
+   "A": 27,
+   "iso": "",
+   "mass": "27.007569462 ± 0.000097445",
+   "half": "30.9 ms ± 1.1",
+   "seconds": 0.0309,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 2
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1977,
+   "est": false
+  },
+  {
+   "A": 28,
+   "iso": "",
+   "mass": "28.012130767 ± 0.000135339",
+   "half": "18.8 ms ± 0.2",
+   "seconds": 0.0188,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 12
+    },
+    {
+     "mode": "β-2n",
+     "op": "=",
+     "pct": 3.7
+    }
+   ],
+   "year": 1979,
+   "est": false
+  },
+  {
+   "A": 29,
+   "iso": "",
+   "mass": "29.019753000 ± 0.0001605",
+   "half": "14.7 ms ± 0.4",
+   "seconds": 0.0147,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 28
+    },
+    {
+     "mode": "β-2n",
+     "op": "=",
+     "pct": 4
+    }
+   ],
+   "year": 1985,
+   "est": false
+  },
+  {
+   "A": 30,
+   "iso": "",
+   "mass": "30.024992235 ± 0.000271875",
+   "half": "7.22 ms ± 0.18",
+   "seconds": 0.00722,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 13
+    },
+    {
+     "mode": "β-2n",
+     "op": "=",
+     "pct": 8.9
+    }
+   ],
+   "year": 1985,
+   "est": false
+  },
+  {
+   "A": 31,
+   "iso": "",
+   "mass": "31.033474816 ± 0.000285772",
+   "half": "3.4 ms ± 0.8",
+   "seconds": 0.0034,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1996,
+   "est": false
+  },
+  {
+   "A": 32,
+   "iso": "",
+   "mass": "32.039720 ± 0.00054",
+   "half": "3.5 ms ± 0.9",
+   "seconds": 0.0035,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1990,
+   "est": true
+  },
+  {
+   "A": 33,
+   "iso": "",
+   "mass": "33.049523 ± 0.000644",
+   "half": "Not-specified <260ns",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 34,
+   "iso": "",
+   "mass": "34.056728 ± 0.000551",
+   "half": "2 ms >1.5us",
+   "seconds": 0.002,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2002,
+   "est": true
+  }
+ ],
+ "stableCount": 3,
+ "texts": {
+  "history": [
+   {
+    "text": "The name derives from the Greek neos for \"new\". It was discovered from its bright orange spectral lines by the Scottish chemist William Ramsay and the English chemist Morris William Travers in 1898 from a liquefied air sample.",
+    "source": "ciaaw"
+   },
+   {
+    "text": "Neon was discovered by Sir William Ramsay, a Scottish chemist, and Morris M. Travers, an English chemist, shortly after their discovery of the element krypton in 1898. Like krypton, neon was discovered through the study of liquefied air. Although neon is the fourth most abundant element in the universe, only 0.0018% of the earth's atmosphere is neon.",
+    "source": "jlab"
+   },
+   {
+    "text": "From the Greek word neos, new. Discovered by Ramsay and Travers in 1898. Neon is a rare gaseous element present in the atmosphere to the extent of 1 part in 65,000 of air. It is obtained by liquefaction of air and separated from the other gases by fractional distillation.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "The largest use for neon gas is in advertising signs. Neon is also used to make high voltage indicators and is combined with helium to make helium-neon lasers. Liquid neon is used as a cryogenic refrigerant. Neon is highly inert and forms no known compounds, although there is some evidence that it could form a compound with fluorine.",
+    "source": "jlab"
+   },
+   {
+    "text": "Although neon advertising signs account for the bulk of its use, neon also functions in high-voltage indicators, lightning arrestors, wave meter tubes, and TV tubes. Neon and helium are used in making gas lasers. Liquid neon is now commercially available and is finding important application as an economical cryogenic refrigerant.",
+    "source": "lanl"
+   }
+  ],
+  "isotopes": [
+   {
+    "text": "Natural neon is a mixture of three isotopes. Six other unstable isotopes are known.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Earth/Planetary Science",
+   "text": "Neon is subject to stable isotopic fractionation by physical processes, such as exchange between gas, liquid, and solid phases. Small variations in the isotope-amount ratio n(22Ne)/n(20Ne) have been used to examine gas-liquid exchange processes during groundwater recharge (water moving downward from the surface) and discharge,,.",
+   "source": "iptei"
+  },
+  {
+   "topic": "Geochronology",
+   "text": "Some 21Ne and 22Ne form naturally in the Earth’s crust largely by reactions of 18O and 19F in minerals with neutrons and alpha particles emitted from uranium and thorium decay, called nucleogenic neon isotopes,. In addition, neon isotopes can form at the surface of the Earth and in extraterrestrial bodies by cosmic-ray-induced spallation reactions on magnesium, silicon, aluminum, and sodium,. Analyses of all three stable neon isotopes may be used to distinguish these sources from primordial neon. The relative amounts of atmospheric neon and crustal nucleogenic neon isotopes in deep groundwaters and natural gases have been used in studies of solid-water-gas interactions and migration (Fig. IUPAC.10.1). The cosmogenic component is mainly detected in 21Ne and can be used to determine cosmic-ray exposure ages of rock samples, including meteorites exposed during travel through space and boulders exposed by melting of glacial ice (Fig. IUPAC.10.1). ",
+   "source": "iptei"
+  },
+  {
+   "topic": "Industry",
+   "text": "Masers (Microwave Amplification by Stimulated Emission of Radiation) containing 20Ne have been used to study quantum physics. 21Ne may also play a role in maser studies of quantum physics.",
+   "source": "iptei"
+  },
+  {
+   "topic": "a Source of Radioactive Isotope(s)",
+   "text": "22Ne is used to produce the radioisotope 22Na via the reaction 22Ne (p, n) 22Na. 20Ne has been used to produce the radioisotope 18F via the reaction 20Ne (d, 4He) 18F.",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "5×10^-3 milligrams per kilogram",
+  "ocean": "1.2×10^-4 milligrams per liter",
+  "source": "jlab"
+ },
+ "physical": "Gas",
+ "forms": [
+  {
+   "cid": 23935,
+   "name": "neon",
+   "formula": "Ne",
+   "charge": 0,
+   "smiles": "[Ne]"
+  }
+ ],
+ "refs": {
+  "ciaaw": {
+   "name": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+   "url": "https://www.ciaaw.org/neon.htm"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele010.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/10.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": "neon",
+ "ghs": {
+  "signal": "Warning",
+  "pictograms": [
+   {
+    "code": "GHS04",
+    "label": "Compressed Gas"
+   }
+  ],
+  "hazards": [
+   "H280 (62.6%): Contains gas under pressure; may explode if heated",
+   "H281 (37.4%): Contains refrigerated gas; may cause cryogenic burns or injury"
+  ],
+  "reports": 430,
+  "notMet": null,
+  "notClassified": false,
+  "source": "European Chemicals Agency (ECHA)"
+ },
+ "ghsCid": 23935
 }

@@ -8,6 +8,28 @@ export default {
     'Rust, batteries and electroplating: oxidation and reduction, oxidation numbers, voltaic cells, electrolysis and corrosion.',
   ],
   body: {
+    sd: [
+      `Pagar besi yang sering terkena hujan lama-lama berwarna cokelat kemerahan dan rapuh. Itu karat. Besi bereaksi dengan oksigen dari udara dengan bantuan air, membentuk {{m:iron-oxide|oksida besi}}. Perubahan ini disebut [[korosi]].
+
+Apel yang diiris juga berubah cokelat karena bereaksi dengan oksigen. Kayu yang terbakar dan kembang api yang menyala pun bereaksi dengan {{m:oxygen|oksigen}}.
+
+Cara mencegah karat:
+
+- Mengecat pagar besi.
+- Mengoles alat dengan minyak.
+- Menjaga benda besi tetap kering.
+- Melapisi besi dengan logam lain, seperti seng pada atap seng.`,
+      `An iron fence often left in the rain slowly turns reddish-brown and crumbly. That is rust. Iron reacts with oxygen from the air, helped by water, to form {{m:iron-oxide|iron oxide}}. This change is called [[korosi|corrosion]].
+
+A cut apple turns brown too because it reacts with oxygen. Burning wood and glowing fireworks also react with {{m:oxygen|oxygen}}.
+
+Ways to stop rust:
+
+- Painting iron fences.
+- Oiling tools.
+- Keeping iron things dry.
+- Coating iron with another metal, such as zinc on corrugated roofing.`,
+    ],
     smp: [
       `Besi yang dibiarkan di udara lembap menjadi berkarat: besi bereaksi dengan oksigen dan air membentuk {{m:iron-oxide|besi oksida}}. Reaksi dengan oksigen disebut **oksidasi**, kebalikannya (pelepasan oksigen) disebut **reduksi**. Keduanya selalu terjadi bersamaan sehingga disebut [[redoks]].
 
@@ -41,7 +63,9 @@ E°sel = E°katode − E°anode = +0,34 − (−0,76) = +1,10 V
 
 Deret volta (Li K Ba Ca Na Mg Al Mn Zn Cr Fe Ni Sn Pb H Cu Hg Ag Pt Au) menunjukkan logam di kiri lebih mudah teroksidasi. Coba pasangkan logam di {{lab:volta|lab Sel volta}}.
 
-[[elektrolisis|Elektrolisis]] memakai listrik untuk menjalankan reaksi tidak spontan: pemurnian tembaga, penyepuhan, pembuatan {{m:chlorine|klorin}} dan {{m:sodium-hydroxide|NaOH}} dari air garam, serta peleburan {{m:aluminium|aluminium}}. Hukum Faraday: massa = (Ar × I × t)/(n × 96 500).`,
+[[elektrolisis|Elektrolisis]] memakai listrik untuk menjalankan reaksi tidak spontan: pemurnian tembaga, penyepuhan, pembuatan {{m:chlorine|klorin}} dan {{m:sodium-hydroxide|NaOH}} dari air garam, serta peleburan {{m:aluminium|aluminium}}. Hukum Faraday: massa = (Ar × I × t)/(n × 96 500).
+
+Sel, baterai, dan elektrolisis dibahas lengkap di {{learn:elektrokimia|Elektrokimia}}.`,
       `The modern view: **oxidation** is losing electrons (a rise in [[bilangan-oksidasi|oxidation number]]), **reduction** is gaining electrons (a fall). The species reduced is the oxidising agent; the one oxidised is the reducing agent.
 
 Oxidation-number rules: free elements 0; O usually −2 (peroxides −1); H usually +1; group 1 metals +1, group 2 +2; the sum in a neutral compound is 0.
@@ -52,7 +76,9 @@ E°cell = E°cathode − E°anode = +0.34 − (−0.76) = +1.10 V
 
 The activity series (Li K Ba Ca Na Mg Al Mn Zn Cr Fe Ni Sn Pb H Cu Hg Ag Pt Au) shows metals on the left oxidise more easily. Pair metals in the {{lab:volta|Voltaic cell lab}}.
 
-[[elektrolisis|Electrolysis]] uses electricity to drive non-spontaneous reactions: refining copper, electroplating, making {{m:chlorine|chlorine}} and {{m:sodium-hydroxide|NaOH}} from brine, and smelting {{m:aluminium|aluminium}}. Faraday’s law: mass = (Ar × I × t)/(n × 96 500).`,
+[[elektrolisis|Electrolysis]] uses electricity to drive non-spontaneous reactions: refining copper, electroplating, making {{m:chlorine|chlorine}} and {{m:sodium-hydroxide|NaOH}} from brine, and smelting {{m:aluminium|aluminium}}. Faraday’s law: mass = (Ar × I × t)/(n × 96 500).
+
+Cells, batteries and electrolysis are covered in depth in {{learn:elektrokimia|Electrochemistry}}.`,
     ],
     kuliah: [
       `Persamaan Nernst menghubungkan potensial dengan konsentrasi: E = E° − (0,0592/n) log Q pada 25 °C. Dari sini lahir sel konsentrasi, elektrode pH (kaca), dan sensor glukosa. Hubungan ΔG° = −nFE° = −RT ln K menyatukan elektrokimia dengan termodinamika.
@@ -75,11 +101,14 @@ Corrosion is a micro galvanic cell: Fe oxidises at anodic sites while O₂ is re
   molecules: ['iron-oxide', 'copper-sulfate', 'zinc-oxide', 'lithium-cobalt-oxide', 'sulfuric-acid', 'chlorine'],
   labs: ['volta'],
   activity: {
+    sd: ["Letakkan tiga paku di gelas: kering, berisi air, dan berisi air garam. Amati selama seminggu dan urutkan mana yang paling cepat berkarat.", "Put three nails in cups: dry, in water and in salt water. Watch for a week and rank which rusts fastest."],
     smp: ['Letakkan paku di empat tabung: air, air garam, minyak, dan tabung kering berisi kapur tohor. Amati perkaratan selama seminggu.', 'Place nails in four tubes: water, salt water, oil and a dry tube with quicklime. Watch for rust over a week.'],
     sma: ['Buat baterai dari jeruk atau kentang dengan elektrode seng dan tembaga; ukur tegangannya dan bandingkan dengan lab Sel volta.', 'Make a lemon or potato battery with zinc and copper electrodes; measure the voltage and compare with the Voltaic cell lab.'],
     kuliah: ['Hitung E sel Daniell bila [Zn²⁺] = 1,0 M dan [Cu²⁺] = 0,010 M dengan persamaan Nernst.', 'Use the Nernst equation to find the Daniell cell voltage when [Zn²⁺] = 1.0 M and [Cu²⁺] = 0.010 M.'],
   },
   quiz: [
+    { lv: 'sd', q: ["Cara mencegah pagar besi berkarat adalah…", "A way to stop an iron fence rusting is…"], options: [["Menyiramnya setiap hari", "Watering it every day"], ["Mengecatnya", "Painting it"], ["Menaruhnya di tepi laut", "Putting it by the sea"], ["Mengampelasnya", "Sanding it"]], answer: 1, explain: ["Cat menutup besi dari air dan udara.", "Paint keeps water and air away from the iron."] },
+    { lv: 'sd', q: ["Besi berkarat bila terkena…", "Iron rusts when exposed to…"], options: [["Air dan udara", "Water and air"], ["Minyak", "Oil"], ["Cat", "Paint"], ["Gula", "Sugar"]], answer: 0, explain: ["Besi bereaksi dengan oksigen dan air membentuk karat.", "Iron reacts with oxygen and water to form rust."] },
     { lv: 'smp', q: ['Perkaratan besi memerlukan…', 'Iron rusting needs…'], options: [['Oksigen dan air', 'Oxygen and water'], ['Hanya cahaya', 'Only light'], ['Gas nitrogen', 'Nitrogen gas'], ['Suhu sangat dingin', 'Very cold temperatures']], answer: 0, explain: ['Karat terbentuk dari reaksi besi dengan O₂ dan H₂O.', 'Rust forms when iron reacts with O₂ and H₂O.'] },
     { lv: 'smp', q: ['Melapisi besi dengan seng disebut…', 'Coating iron with zinc is called…'], options: [['Galvanisasi', 'Galvanising'], ['Elektrolisis', 'Electrolysis'], ['Distilasi', 'Distillation'], ['Fermentasi', 'Fermentation']], answer: 0, explain: ['Seng lebih mudah teroksidasi sehingga melindungi besi.', 'Zinc oxidises more easily, protecting the iron.'] },
     { lv: 'sma', q: ['Biloks Mn dalam KMnO₄ adalah…', 'The oxidation number of Mn in KMnO₄ is…'], options: [['+2', '+2'], ['+4', '+4'], ['+6', '+6'], ['+7', '+7']], answer: 3, explain: ['K (+1) + Mn + 4(−2) = 0 → Mn = +7.', 'K (+1) + Mn + 4(−2) = 0 → Mn = +7.'] },
@@ -102,6 +131,7 @@ Corrosion is a micro galvanic cell: Fe oxidises at anodic sites while O₂ is re
       ['Studi kasus: nikel Indonesia dan baterai kendaraan listrik.', 'Case study: Indonesian nickel and EV batteries.'],
     ],
     misconceptions: [['"Elektron mengalir melalui larutan." Elektron mengalir di kawat; ion bergerak di larutan dan jembatan garam.', '"Electrons flow through the solution." Electrons flow in the wire; ions move in the solution and salt bridge.']],
-    assessment: ['Kuis Moleculium dan laporan proyek baterai buah.', 'Moleculium quiz and a fruit-battery project report.'],
+    assessment: ['Kuis Alchemist dan laporan proyek baterai buah.', 'Alchemist quiz and a fruit-battery project report.'],
   },
+  refs: ["17-1-review-of-redox-chemistry", "17-2-galvanic-cells", "17-6-corrosion", "17-7-electrolysis"],
 };

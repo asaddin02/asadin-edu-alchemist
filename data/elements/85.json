@@ -22,5 +22,1698 @@
   "author": "NuclearAlex",
   "license": "CC BY 4.0",
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
- }
+ },
+ "weight": {
+  "value": "[210]",
+  "kind": "mass-number",
+  "A": 210,
+  "source": "nist"
+ },
+ "natural": [],
+ "naturalSource": "nist",
+ "nuclides": [
+  {
+   "A": 191,
+   "iso": "",
+   "mass": "191.004148081 ± 0.000017287",
+   "half": "2.1 ms ± 0.8",
+   "seconds": 0.0021000000000000003,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2003,
+   "est": false
+  },
+  {
+   "A": 191,
+   "iso": "m",
+   "mass": "191.004148081 ± 0.000017287",
+   "half": "2.2 ms ± 0.4",
+   "seconds": 0.0022,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2003,
+   "est": false
+  },
+  {
+   "A": 192,
+   "iso": "",
+   "mass": "192.003140912 ± 0.000029922",
+   "half": "11.5 ms ± 0.6",
+   "seconds": 0.0115,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β+SF",
+     "op": "<",
+     "pct": 0.51
+    }
+   ],
+   "year": 2006,
+   "est": false
+  },
+  {
+   "A": 192,
+   "iso": "m",
+   "mass": "192.003140912 ± 0.000029922",
+   "half": "88 ms ± 6",
+   "seconds": 0.088,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β+SF",
+     "op": "<",
+     "pct": 0.51
+    }
+   ],
+   "year": 2006,
+   "est": false
+  },
+  {
+   "A": 193,
+   "iso": "",
+   "mass": "192.999927725 ± 0.000023222",
+   "half": "29 ms ± 5",
+   "seconds": 0.029,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    }
+   ],
+   "year": 2003,
+   "est": false
+  },
+  {
+   "A": 193,
+   "iso": "m",
+   "mass": "192.999927725 ± 0.000023222",
+   "half": "21 ms ± 5",
+   "seconds": 0.021,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    }
+   ],
+   "year": 1995,
+   "est": false
+  },
+  {
+   "A": 193,
+   "iso": "n",
+   "mass": "192.999927725 ± 0.000023222",
+   "half": "28 ms ± 4",
+   "seconds": 0.028,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 76
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 24
+    }
+   ],
+   "year": 2003,
+   "est": false
+  },
+  {
+   "A": 194,
+   "iso": "",
+   "mass": "193.999230816 ± 0.00002523",
+   "half": "286 ms ± 7",
+   "seconds": 0.28600000000000003,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    }
+   ],
+   "year": 2009,
+   "est": false
+  },
+  {
+   "A": 194,
+   "iso": "m",
+   "mass": "193.999230816 ± 0.00002523",
+   "half": "323 ms ± 7",
+   "seconds": 0.323,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    }
+   ],
+   "year": 1984,
+   "est": false
+  },
+  {
+   "A": 195,
+   "iso": "",
+   "mass": "194.996274480 ± 0.000010276",
+   "half": "290 ms ± 20",
+   "seconds": 0.29,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1999,
+   "est": false
+  },
+  {
+   "A": 195,
+   "iso": "m",
+   "mass": "194.996274480 ± 0.000010276",
+   "half": "143 ms ± 3",
+   "seconds": 0.14300000000000002,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 88
+    },
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 12
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1995,
+   "est": false
+  },
+  {
+   "A": 195,
+   "iso": "p",
+   "mass": "194.996274480 ± 0.000010276",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": false
+  },
+  {
+   "A": 196,
+   "iso": "",
+   "mass": "195.995799034 ± 0.000032458",
+   "half": "377 ms ± 4",
+   "seconds": 0.377,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 97.5
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β+SF",
+     "op": "=",
+     "pct": 0.009
+    }
+   ],
+   "year": 1967,
+   "est": false
+  },
+  {
+   "A": 196,
+   "iso": "m",
+   "mass": "195.995799034 ± 0.000032458",
+   "half": "20 ms",
+   "seconds": 0.02,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    }
+   ],
+   "year": 1996,
+   "est": true
+  },
+  {
+   "A": 196,
+   "iso": "n",
+   "mass": "195.995799034 ± 0.000032458",
+   "half": "11 us ± 2",
+   "seconds": 0.000011,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2000,
+   "est": false
+  },
+  {
+   "A": 197,
+   "iso": "",
+   "mass": "196.993177353 ± 0.00000857",
+   "half": "388.2 ms ± 5.6",
+   "seconds": 0.3882,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 96.1
+    },
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 3.9
+    }
+   ],
+   "year": 1967,
+   "est": false
+  },
+  {
+   "A": 197,
+   "iso": "m",
+   "mass": "196.993177353 ± 0.00000857",
+   "half": "2.0 s ± 0.2",
+   "seconds": 2,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "IT",
+     "op": "<",
+     "pct": 0.004
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1985,
+   "est": false
+  },
+  {
+   "A": 197,
+   "iso": "n",
+   "mass": "196.993177353 ± 0.00000857",
+   "half": "1.3 us ± 0.2",
+   "seconds": 0.0000013,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1999,
+   "est": false
+  },
+  {
+   "A": 198,
+   "iso": "",
+   "mass": "197.992797864 ± 0.000005265",
+   "half": "4.47 s ± 0.05",
+   "seconds": 4.47,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 97
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1967,
+   "est": false
+  },
+  {
+   "A": 198,
+   "iso": "m",
+   "mass": "197.992797864 ± 0.000005265",
+   "half": "1.23 s ± 0.05",
+   "seconds": 1.23,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 93
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1967,
+   "est": false
+  },
+  {
+   "A": 199,
+   "iso": "",
+   "mass": "198.990527715 ± 0.00000578",
+   "half": "7.02 s ± 0.12",
+   "seconds": 7.02,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 89
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1967,
+   "est": false
+  },
+  {
+   "A": 199,
+   "iso": "m",
+   "mass": "198.990527715 ± 0.00000578",
+   "half": "273 ms ± 9",
+   "seconds": 0.273,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "≈",
+     "pct": 99
+    },
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 1
+    }
+   ],
+   "year": 2013,
+   "est": false
+  },
+  {
+   "A": 199,
+   "iso": "n",
+   "mass": "198.990527715 ± 0.00000578",
+   "half": "70 ns ± 20",
+   "seconds": 7e-8,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2000,
+   "est": false
+  },
+  {
+   "A": 199,
+   "iso": "p",
+   "mass": "198.990527715 ± 0.00000578",
+   "half": "800 ns ± 50",
+   "seconds": 8.000000000000001e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2010,
+   "est": false
+  },
+  {
+   "A": 200,
+   "iso": "",
+   "mass": "199.990351099 ± 0.000026264",
+   "half": "43.2 s ± 0.9",
+   "seconds": 43.2,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 52
+    },
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 48
+    }
+   ],
+   "year": 1963,
+   "est": false
+  },
+  {
+   "A": 200,
+   "iso": "m",
+   "mass": "199.990351099 ± 0.000026264",
+   "half": "47 s ± 1",
+   "seconds": 47,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 43
+    },
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 57
+    },
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1967,
+   "est": false
+  },
+  {
+   "A": 200,
+   "iso": "n",
+   "mass": "199.990351099 ± 0.000026264",
+   "half": "8.0 s ± 2.1",
+   "seconds": 8,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 10.5
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1967,
+   "est": false
+  },
+  {
+   "A": 201,
+   "iso": "",
+   "mass": "200.988417058 ± 0.000008786",
+   "half": "85.2 s ± 1.6",
+   "seconds": 85.2,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 71
+    },
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 29
+    }
+   ],
+   "year": 1963,
+   "est": false
+  },
+  {
+   "A": 201,
+   "iso": "m",
+   "mass": "200.988417058 ± 0.000008786",
+   "half": "45 ms ± 3",
+   "seconds": 0.045,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2015,
+   "est": false
+  },
+  {
+   "A": 201,
+   "iso": "n",
+   "mass": "200.988417058 ± 0.000008786",
+   "half": "3.39 us ± 0.09",
+   "seconds": 0.00000339,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2015,
+   "est": false
+  },
+  {
+   "A": 202,
+   "iso": "",
+   "mass": "201.988625686 ± 0.000029631",
+   "half": "184 s ± 1",
+   "seconds": 184,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 88
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 12
+    }
+   ],
+   "year": 1961,
+   "est": false
+  },
+  {
+   "A": 202,
+   "iso": "m",
+   "mass": "201.988625686 ± 0.000029631",
+   "half": "182 s ± 2",
+   "seconds": 182,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 91.5
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 8.5
+    },
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1992,
+   "est": false
+  },
+  {
+   "A": 202,
+   "iso": "n",
+   "mass": "201.988625686 ± 0.000029631",
+   "half": "460 ms ± 50",
+   "seconds": 0.46,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 99.904
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 0.096
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1992,
+   "est": false
+  },
+  {
+   "A": 203,
+   "iso": "",
+   "mass": "202.986942904 ± 0.000011404",
+   "half": "7.4 m ± 0.2",
+   "seconds": 444,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 69
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 31
+    }
+   ],
+   "year": 1951,
+   "est": false
+  },
+  {
+   "A": 203,
+   "iso": "m",
+   "mass": "202.986942904 ± 0.000011404",
+   "half": "3.5 ms ± 0.6",
+   "seconds": 0.0035,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2017,
+   "est": false
+  },
+  {
+   "A": 203,
+   "iso": "n",
+   "mass": "202.986942904 ± 0.000011404",
+   "half": "9.77 us ± 0.21",
+   "seconds": 0.00000977,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2018,
+   "est": false
+  },
+  {
+   "A": 204,
+   "iso": "",
+   "mass": "203.987251393 ± 0.000024335",
+   "half": "9.12 m ± 0.11",
+   "seconds": 547.1999999999999,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 96.2
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 3.8
+    }
+   ],
+   "year": 1961,
+   "est": false
+  },
+  {
+   "A": 204,
+   "iso": "m",
+   "mass": "203.987251393 ± 0.000024335",
+   "half": "108 ms ± 10",
+   "seconds": 0.108,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1969,
+   "est": false
+  },
+  {
+   "A": 205,
+   "iso": "",
+   "mass": "204.986060546 ± 0.000012941",
+   "half": "26.9 m ± 0.8",
+   "seconds": 1614,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 90
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 10
+    }
+   ],
+   "year": 1951,
+   "est": false
+  },
+  {
+   "A": 205,
+   "iso": "m",
+   "mass": "204.986060546 ± 0.000012941",
+   "half": "7.76 us ± 0.14",
+   "seconds": 0.00000776,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1982,
+   "est": false
+  },
+  {
+   "A": 206,
+   "iso": "",
+   "mass": "205.986645768 ± 0.000014523",
+   "half": "30.6 m ± 0.8",
+   "seconds": 1836,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 99.1
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 0.9
+    }
+   ],
+   "year": 1961,
+   "est": false
+  },
+  {
+   "A": 206,
+   "iso": "m",
+   "mass": "205.986645768 ± 0.000014523",
+   "half": "813 ns ± 21",
+   "seconds": 8.130000000000001e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1999,
+   "est": false
+  },
+  {
+   "A": 207,
+   "iso": "",
+   "mass": "206.985799715 ± 0.000013318",
+   "half": "1.81 h ± 0.03",
+   "seconds": 6516,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "≈",
+     "pct": 90
+    },
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 10
+    }
+   ],
+   "year": 1951,
+   "est": false
+  },
+  {
+   "A": 207,
+   "iso": "m",
+   "mass": "206.985799715 ± 0.000013318",
+   "half": "108 ns ± 2",
+   "seconds": 1.08e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1981,
+   "est": false
+  },
+  {
+   "A": 208,
+   "iso": "",
+   "mass": "207.986613011 ± 0.000009577",
+   "half": "1.63 h ± 0.03",
+   "seconds": 5868,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 99.45
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 0.55
+    }
+   ],
+   "year": 1950,
+   "est": false
+  },
+  {
+   "A": 208,
+   "iso": "m",
+   "mass": "207.986613011 ± 0.000009577",
+   "half": "1.5 us ± 0.2",
+   "seconds": 0.0000015,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1991,
+   "est": false
+  },
+  {
+   "A": 209,
+   "iso": "",
+   "mass": "208.986168701 ± 0.000005094",
+   "half": "5.42 h ± 0.05",
+   "seconds": 19512,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 96.1
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 3.9
+    }
+   ],
+   "year": 1951,
+   "est": false
+  },
+  {
+   "A": 209,
+   "iso": "m",
+   "mass": "208.986168701 ± 0.000005094",
+   "half": "916 ns ± 10",
+   "seconds": 9.160000000000001e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1975,
+   "est": false
+  },
+  {
+   "A": 210,
+   "iso": "",
+   "mass": "209.987147423 ± 0.000008261",
+   "half": "8.1 h ± 0.4",
+   "seconds": 29160,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 99.825
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 0.175
+    }
+   ],
+   "year": 1949,
+   "est": false
+  },
+  {
+   "A": 210,
+   "iso": "m",
+   "mass": "209.987147423 ± 0.000008261",
+   "half": "482 ns ± 6",
+   "seconds": 4.82e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1970,
+   "est": false
+  },
+  {
+   "A": 210,
+   "iso": "n",
+   "mass": "209.987147423 ± 0.000008261",
+   "half": "5.66 us ± 0.07",
+   "seconds": 0.00000566,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1975,
+   "est": false
+  },
+  {
+   "A": 211,
+   "iso": "",
+   "mass": "210.987496226 ± 0.000002929",
+   "half": "7.214 h ± 0.007",
+   "seconds": 25970.4,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": 58.2
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 41.8
+    }
+   ],
+   "year": 1940,
+   "est": false
+  },
+  {
+   "A": 211,
+   "iso": "m",
+   "mass": "210.987496226 ± 0.000002929",
+   "half": "4.23 us ± 0.07",
+   "seconds": 0.00000423,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1971,
+   "est": false
+  },
+  {
+   "A": 212,
+   "iso": "",
+   "mass": "211.990737301 ± 0.000002559",
+   "half": "314 ms ± 3",
+   "seconds": 0.314,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1954,
+   "est": false
+  },
+  {
+   "A": 212,
+   "iso": "m",
+   "mass": "211.990737301 ± 0.000002559",
+   "half": "119 ms ± 3",
+   "seconds": 0.11900000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1970,
+   "est": false
+  },
+  {
+   "A": 212,
+   "iso": "n",
+   "mass": "211.990737301 ± 0.000002559",
+   "half": "152 us ± 5",
+   "seconds": 0.00015199999999999998,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1998,
+   "est": false
+  },
+  {
+   "A": 213,
+   "iso": "",
+   "mass": "212.992936593 ± 0.000005258",
+   "half": "125 ns ± 6",
+   "seconds": 1.2500000000000002e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1968,
+   "est": false
+  },
+  {
+   "A": 213,
+   "iso": "m",
+   "mass": "212.992936593 ± 0.000005258",
+   "half": "110 ns ± 17",
+   "seconds": 1.1e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1980,
+   "est": false
+  },
+  {
+   "A": 213,
+   "iso": "n",
+   "mass": "212.992936593 ± 0.000005258",
+   "half": "45 us ± 4",
+   "seconds": 0.000044999999999999996,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2003,
+   "est": false
+  },
+  {
+   "A": 214,
+   "iso": "",
+   "mass": "213.996372331 ± 0.000004274",
+   "half": "558 ns ± 10",
+   "seconds": 5.58e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1949,
+   "est": false
+  },
+  {
+   "A": 214,
+   "iso": "m",
+   "mass": "213.996372331 ± 0.000004274",
+   "half": "265 ns ± 30",
+   "seconds": 2.65e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1982,
+   "est": false
+  },
+  {
+   "A": 214,
+   "iso": "n",
+   "mass": "213.996372331 ± 0.000004274",
+   "half": "760 ns ± 15",
+   "seconds": 7.6e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1982,
+   "est": false
+  },
+  {
+   "A": 215,
+   "iso": "",
+   "mass": "214.998651002 ± 0.000007116",
+   "half": "37 us ± 3",
+   "seconds": 0.000037,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1944,
+   "est": false
+  },
+  {
+   "A": 216,
+   "iso": "",
+   "mass": "216.002422643 ± 0.000003837",
+   "half": "300 us ± 30",
+   "seconds": 0.0003,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "ε",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1948,
+   "est": false
+  },
+  {
+   "A": 216,
+   "iso": "m",
+   "mass": "216.002422643 ± 0.000003837",
+   "half": "100 us",
+   "seconds": 0.00009999999999999999,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1971,
+   "est": true
+  },
+  {
+   "A": 217,
+   "iso": "",
+   "mass": "217.004717794 ± 0.000005368",
+   "half": "32.6 ms ± 0.3",
+   "seconds": 0.032600000000000004,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 99.992
+    },
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 0.008
+    }
+   ],
+   "year": 1947,
+   "est": false
+  },
+  {
+   "A": 218,
+   "iso": "",
+   "mass": "218.008695941 ± 0.000012349",
+   "half": "1.28 s ± 0.06",
+   "seconds": 1.28,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1943,
+   "est": false
+  },
+  {
+   "A": 219,
+   "iso": "",
+   "mass": "219.011160587 ± 0.000003474",
+   "half": "56 s ± 3",
+   "seconds": 56,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 93.6
+    },
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 6.4
+    }
+   ],
+   "year": 1953,
+   "est": false
+  },
+  {
+   "A": 220,
+   "iso": "",
+   "mass": "220.015433000 ± 0.000015",
+   "half": "3.71 m ± 0.04",
+   "seconds": 222.6,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 92
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 8
+    }
+   ],
+   "year": 1989,
+   "est": false
+  },
+  {
+   "A": 221,
+   "iso": "",
+   "mass": "221.018017000 ± 0.000015",
+   "half": "2.3 m ± 0.2",
+   "seconds": 138,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1989,
+   "est": false
+  },
+  {
+   "A": 222,
+   "iso": "",
+   "mass": "222.022494000 ± 0.000017",
+   "half": "54 s ± 10",
+   "seconds": 54,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1989,
+   "est": false
+  },
+  {
+   "A": 223,
+   "iso": "",
+   "mass": "223.025151000 ± 0.000015",
+   "half": "50 s ± 7",
+   "seconds": 50,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1989,
+   "est": false
+  },
+  {
+   "A": 224,
+   "iso": "",
+   "mass": "224.029749000 ± 0.000024",
+   "half": "2.5 m ± 1.5",
+   "seconds": 150,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2010,
+   "est": false
+  },
+  {
+   "A": 225,
+   "iso": "",
+   "mass": "225.032528 ± 0.000322",
+   "half": "3 s >300ns",
+   "seconds": 3,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2010,
+   "est": true
+  },
+  {
+   "A": 226,
+   "iso": "",
+   "mass": "226.037209 ± 0.000322",
+   "half": "7 m >300ns",
+   "seconds": 420,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2010,
+   "est": true
+  },
+  {
+   "A": 227,
+   "iso": "",
+   "mass": "227.040183 ± 0.000322",
+   "half": "5 s >300ns",
+   "seconds": 5,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2010,
+   "est": true
+  },
+  {
+   "A": 228,
+   "iso": "",
+   "mass": "228.044960 ± 0.000429",
+   "half": "1 m >300ns",
+   "seconds": 60,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2010,
+   "est": true
+  },
+  {
+   "A": 229,
+   "iso": "",
+   "mass": "229.048191 ± 0.000429",
+   "half": "1 s >300ns",
+   "seconds": 1,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2010,
+   "est": true
+  }
+ ],
+ "stableCount": 0,
+ "texts": {
+  "history": [
+   {
+    "text": "Astatine was produced by Dale R. Carson, K.R. MacKenzie and Emilio Segrè by bombarding an isotope of bismuth, bismuth-209, with alpha particles that had been accelerated in a device called a cyclotron. This created astatine-211 and two free neutrons. This work was conducted at the University of California in 1940. Small amounts of astatine exist in nature as a result of the decay of uranium and thorium, although the total amount of astatine in the earth's crust at any particular time is less than 30 grams. Due to its scarcity, astatine is produced when it is needed. A total of 0.05 micrograms (0.00000005 grams) of astatine have been produced to date. Astatine's most stable isotope, astatine-210, has a half-life of 8.1 hours. It decays into bismuth-206 through alpha decay or into polonium-210 through electron capture.",
+    "source": "jlab"
+   },
+   {
+    "text": "From the Greek astatos meaning unstable. Synthesized in 1940 by D.R. Corson, K.R. MacKenzie, and E. Segre at the University of California by bombarding bismuth with alpha particles. The longest-lived isotopes, with naturally occurring uranium and thorium isotopes, and traces of 217At are equilibrium with 233U and 239Np resulting from integration of thorium and uranium with naturally produced neutrons. The total amount of astatine present in the earth's crust, however, is less than 1 oz.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Due to the small amounts produced and its short half-life, there are currently no uses for astatine outside of basic scientific research.",
+    "source": "jlab"
+   }
+  ],
+  "description": [
+   {
+    "text": "The \"time of flight\" mass spectrometer has been used to confirm that this highly radioactive halogen behaves chemically very much like other halogens, particularly iodine. Astatine is said to be more metallic than iodine, and, like iodine, it probably accumulates in the thyroid gland. Workers at the Brookhaven National Laboratory have recently used reactive scattering in crossed molecular beams to identify and measure elementary reactions involving astatine.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Medicine",
+   "text": "211At (with a half-life of 7.2 h) is known to accumulate in the thyroid and occasionally is the preferred treatment for hyperthyroidism and thyroid cancer because the particles emitted from 211At provide more energy than radiolabeled iodine, the other treatment method (Fig. IUPAC.85.1). However, astatine has shown a tendency to induce tumors, so its use is limited. The 211At-labeled di-carborane (cluster of boron, carbon, and hydrogen atoms) ligand known as the Venus Flytrap Cluster (VFC) has been used as a robust pharmaceutical in radiotherapy treatment. ",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "Not Applicable",
+  "ocean": "Not Applicable",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 5460479,
+   "name": "astatine",
+   "formula": "At",
+   "charge": 0,
+   "smiles": "[At]"
+  }
+ ],
+ "refs": {
+  "nist": {
+   "name": "NIST Physical Measurement Laboratory",
+   "url": "https://physics.nist.gov/cgi-bin/Elements/elInfo.pl?element=85"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele085.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/85.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": null,
+ "ghs": null,
+ "ghsCid": null
 }

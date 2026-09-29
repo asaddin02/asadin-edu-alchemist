@@ -1,6 +1,6 @@
 # Keamanan / Security
 
-Moleculium tidak punya akun, basis data, atau data pribadi di server. Yang disimpan pengguna (simpanan, catatan,
+Alchemist tidak punya akun, basis data, atau data pribadi di server. Yang disimpan pengguna (simpanan, catatan,
 kemajuan, jawaban tugas) hanya ada di `localStorage` perangkatnya.
 
 Lapisan pengamanan:

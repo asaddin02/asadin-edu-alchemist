@@ -1,4 +1,4 @@
-// Moleculium icon set: 24×24 stroke icons drawn for this project (no external requests).
+// Alchemist icon set: 24×24 stroke icons drawn for this project (no external requests).
 const P = {
   atom: '<circle cx="12" cy="12" r="1.8"/><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/>',
   molecule:
@@ -109,6 +109,14 @@ const P = {
   cloud: '<path d="M7 18a4.5 4.5 0 0 1-.6-9A6 6 0 0 1 18 9.5a4 4 0 0 1-.5 8.5z"/>',
   sprout: '<path d="M12 21v-9M12 12c0-4-3-6-7-6 0 4 3 6 7 6zM12 14c0-3.5 2.5-6 7-6 0 4-3 6-7 6z"/>',
   school: '<path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2.5 9 2.5 12 0v-5M22 9v6"/>',
+  plus: '<path d="M12 5v14M5 12h14"/>',
+  split: '<path d="M3 12h7l4-6h7M10 12l4 6h7M18 3l3 3-3 3M18 15l3 3-3 3"/>',
+  map: '<path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15M15 6v15"/>',
+  nucleus:
+    '<circle cx="9.5" cy="10" r="3"/><circle cx="14.5" cy="10" r="3"/><circle cx="12" cy="14.5" r="3"/><path d="M18.5 17.5l3 3M4.5 4.5l-2-2"/>',
+  charge:
+    '<circle cx="8" cy="12" r="5"/><circle cx="18" cy="12" r="3.5"/><path d="M6 12h4M8 10v4M16.5 12h3"/>',
+  swap: '<path d="M4 8h15l-3.5-3.5M20 16H5l3.5 3.5"/>',
 };
 
 /** Inline SVG icon. Decorative by default; pass `label` to make it announced. */

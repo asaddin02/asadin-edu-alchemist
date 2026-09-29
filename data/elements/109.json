@@ -13,5 +13,466 @@
    "url": "https://en.wikipedia.org/wiki/Meitnerium"
   }
  },
- "photo": null
+ "photo": null,
+ "weight": {
+  "value": "276.15159(59#)",
+  "kind": "isotope-mass",
+  "A": 276,
+  "estimated": true,
+  "source": "nist"
+ },
+ "natural": [],
+ "naturalSource": null,
+ "nuclides": [
+  {
+   "A": 265,
+   "iso": "",
+   "mass": "265.135937 ± 0.000471",
+   "half": "2 ms",
+   "seconds": 0.002,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 266,
+   "iso": "",
+   "mass": "266.137062253 ± 0.000103568",
+   "half": "2.0 ms ± 0.5",
+   "seconds": 0.002,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1982,
+   "est": false
+  },
+  {
+   "A": 266,
+   "iso": "m",
+   "mass": "266.137062253 ± 0.000103568",
+   "half": "6 ms ± 3",
+   "seconds": 0.006,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1984,
+   "est": false
+  },
+  {
+   "A": 267,
+   "iso": "",
+   "mass": "267.137189 ± 0.00054",
+   "half": "10 ms",
+   "seconds": 0.01,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 268,
+   "iso": "",
+   "mass": "268.138649 ± 0.00025",
+   "half": "23 ms ± 7",
+   "seconds": 0.023,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1995,
+   "est": true
+  },
+  {
+   "A": 269,
+   "iso": "",
+   "mass": "269.138809 ± 0.000335",
+   "half": "100 ms",
+   "seconds": 0.1,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 270,
+   "iso": "",
+   "mass": "270.140322 ± 0.000205",
+   "half": "800 ms ± 400",
+   "seconds": 0.8,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    }
+   ],
+   "year": 2004,
+   "est": true
+  },
+  {
+   "A": 271,
+   "iso": "",
+   "mass": "271.140741 ± 0.000354",
+   "half": "400 ms",
+   "seconds": 0.4,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 272,
+   "iso": "",
+   "mass": "272.143298 ± 0.000521",
+   "half": "400 ms",
+   "seconds": 0.4,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 273,
+   "iso": "",
+   "mass": "273.144695 ± 0.000455",
+   "half": "800 ms",
+   "seconds": 0.8,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 274,
+   "iso": "",
+   "mass": "274.147343 ± 0.000404",
+   "half": "850 ms ± 540",
+   "seconds": 0.85,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2007,
+   "est": true
+  },
+  {
+   "A": 275,
+   "iso": "",
+   "mass": "275.148972 ± 0.000416",
+   "half": "31 ms ± 17",
+   "seconds": 0.031,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2004,
+   "est": true
+  },
+  {
+   "A": 276,
+   "iso": "",
+   "mass": "276.151705 ± 0.000571",
+   "half": "700 ms ± 80",
+   "seconds": 0.7000000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2004,
+   "est": true
+  },
+  {
+   "A": 276,
+   "iso": "m",
+   "mass": "276.151705 ± 0.000571",
+   "half": "7 s ± 3",
+   "seconds": 7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2012,
+   "est": true
+  },
+  {
+   "A": 277,
+   "iso": "",
+   "mass": "277.153525 ± 0.000711",
+   "half": "9 s ± 6",
+   "seconds": 9,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2013,
+   "est": true
+  },
+  {
+   "A": 278,
+   "iso": "",
+   "mass": "278.156487 ± 0.000621",
+   "half": "6 s ± 3",
+   "seconds": 6,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2010,
+   "est": true
+  },
+  {
+   "A": 279,
+   "iso": "",
+   "mass": "279.158439 ± 0.00072",
+   "half": "20 s",
+   "seconds": 20,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 280,
+   "iso": "",
+   "mass": "280.161579 ± 0.000644",
+   "half": "10 s",
+   "seconds": 10,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 281,
+   "iso": "",
+   "mass": "281.163608 ± 0.000644",
+   "half": "1 s",
+   "seconds": 1,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 282,
+   "iso": "",
+   "mass": "282.166888 ± 0.00048",
+   "half": "100 ms",
+   "seconds": 0.1,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2016,
+   "est": true
+  }
+ ],
+ "stableCount": 0,
+ "texts": {
+  "history": [
+   {
+    "text": "Meitnerium was first produced by Peter Armbruster, Gottfried Münzenber and their team working at the Gesellschaft für Schwerionenforschung in Darmstadt, Germany in 1982. They bombarded atoms of bismuth-209 with ions of iron-58 with a device known as a linear accelerator. This produced atoms of meitnerium-266, an isotope with a half-life of about 3.8 milliseconds (0.0038 seconds), and a free neutron. Meitnerium's most stable isotope, meitnerium-278, has a half-life of about 8 seconds. It decays into bohrium-274 through alpha decay.",
+    "source": "jlab"
+   },
+   {
+    "text": "On August 29, 1982, physicists at the Heavy Ion Research Laboratory, Darmstadt, West Germany made and identified element 109 by bombing a target of 209Bi with accelerated nuclei of 58Fe. If the combined energy of two nuclei is sufficiently high, the repulsive forces between the nuclei can be overcome. In this experiment, a week of target bombardment was required to produce a single fused nucleus. The team confirmed the existence of element 109 by four independent measurements. The newly formed atom recoiled from the target at predicted velocity and was separated from smaller, faster nuclei by a newly developed velocity filter. The time of flight to the detector and the striking energy were measured and found to match predicted values. The nucleus of 266X started to decay 5 ms after striking the detector. A high-energy alpha particle was emitted, producing 262/107X. This in turn emitted an alpha particle, becoming 258/105Db, which in turn captured an electron and became 258/104Rf. This in turn decayed into other nuclides. This experiment demonstrated the feasibility of using fusion techniques as a method of making new, heavy nuclei.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Since only small amounts of meitnerium have ever been produced, it currently has no uses outside of basic scientific research.",
+    "source": "jlab"
+   }
+  ],
+  "description": [
+   {
+    "text": "Meitnerium does not occur naturally in the Earth’s crust. Meitnerium was first synthesized by German scientists at the GSI Center for Heavy Ion Research in Darmstadt, Germany in 1984 using the nuclear reaction 209Bi (58Fe, n) 266MtHs. The element is named for the physicist, Lise Meitner (Fig. IUPAC.109.1), who discovered the element protactinium [653], [655]. Meitnerium is used only for scientific research.",
+    "source": "iptei"
+   },
+   {
+    "text": "Meitnerium is named after Lise Meitner.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [],
+ "abundance": {
+  "crust": "Not Applicable",
+  "ocean": "Not Applicable",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 56951716,
+   "name": "meitnerium",
+   "formula": "Mt",
+   "charge": 0,
+   "smiles": "[Mt]"
+  }
+ ],
+ "refs": {
+  "nist": {
+   "name": "NIST Physical Measurement Laboratory",
+   "url": "https://physics.nist.gov/cgi-bin/Elements/elInfo.pl?element=109"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele109.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/109.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": null,
+ "ghs": null,
+ "ghsCid": null
 }

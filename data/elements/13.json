@@ -22,5 +22,754 @@
   "author": "Unknown authorUnknown author",
   "license": "CC BY 3.0",
   "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
- }
+ },
+ "weight": {
+  "value": "26.981 5384(3)",
+  "kind": "standard",
+  "source": "ciaaw"
+ },
+ "natural": [
+  {
+   "A": 27,
+   "iso": "",
+   "mass": "26.981 5384(3)",
+   "abundance": "1"
+  }
+ ],
+ "naturalSource": "ciaaw",
+ "nuclides": [
+  {
+   "A": 21,
+   "iso": "",
+   "mass": "21.029082 ± 0.000644",
+   "half": "Not-specified <35ns",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 22,
+   "iso": "",
+   "mass": "22.019540 ± 0.00043",
+   "half": "91.1 ms ± 0.5",
+   "seconds": 0.0911,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 55
+    },
+    {
+     "mode": "β+2p",
+     "op": "=",
+     "pct": 1.1
+    },
+    {
+     "mode": "β+α",
+     "op": "=",
+     "pct": 0.038
+    }
+   ],
+   "year": 1982,
+   "est": true
+  },
+  {
+   "A": 23,
+   "iso": "",
+   "mass": "23.007244351 ± 0.00000037",
+   "half": "446 ms ± 6",
+   "seconds": 0.446,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 1.22
+    }
+   ],
+   "year": 1969,
+   "est": false
+  },
+  {
+   "A": 24,
+   "iso": "",
+   "mass": "23.999947598 ± 0.000000244",
+   "half": "2.053 s ± 0.004",
+   "seconds": 2.053,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+α",
+     "op": "=",
+     "pct": 0.035
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 0.0016
+    }
+   ],
+   "year": 1953,
+   "est": false
+  },
+  {
+   "A": 24,
+   "iso": "m",
+   "mass": "23.999947598 ± 0.000000244",
+   "half": "130 ms ± 3",
+   "seconds": 0.13,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 82.5
+    },
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 17.5
+    },
+    {
+     "mode": "β+α",
+     "op": "=",
+     "pct": 0.028
+    }
+   ],
+   "year": 1968,
+   "est": false
+  },
+  {
+   "A": 25,
+   "iso": "",
+   "mass": "24.990428308 ± 0.000000069",
+   "half": "7.1666 s ± 0.0023",
+   "seconds": 7.1666,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1953,
+   "est": false
+  },
+  {
+   "A": 26,
+   "iso": "",
+   "mass": "25.986891876 ± 0.000000071",
+   "half": "717 ky ± 24",
+   "seconds": 22626315999360.004,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1934,
+   "est": false
+  },
+  {
+   "A": 26,
+   "iso": "m",
+   "mass": "25.986891876 ± 0.000000071",
+   "half": "6346.0 ms ± 0.5",
+   "seconds": 6.346,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1934,
+   "est": false
+  },
+  {
+   "A": 27,
+   "iso": "",
+   "mass": "26.981538408 ± 0.00000005",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1922,
+   "est": false
+  },
+  {
+   "A": 28,
+   "iso": "",
+   "mass": "27.981910009 ± 0.000000052",
+   "half": "2.245 m ± 0.005",
+   "seconds": 134.70000000000002,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1934,
+   "est": false
+  },
+  {
+   "A": 29,
+   "iso": "",
+   "mass": "28.980453164 ± 0.00000037",
+   "half": "6.56 m ± 0.06",
+   "seconds": 393.59999999999997,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1939,
+   "est": false
+  },
+  {
+   "A": 30,
+   "iso": "",
+   "mass": "29.982969171 ± 0.000002077",
+   "half": "3.62 s ± 0.06",
+   "seconds": 3.62,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1961,
+   "est": false
+  },
+  {
+   "A": 31,
+   "iso": "",
+   "mass": "30.983949754 ± 0.0000024",
+   "half": "644 ms ± 25",
+   "seconds": 0.644,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "<",
+     "pct": 1.6
+    }
+   ],
+   "year": 1971,
+   "est": false
+  },
+  {
+   "A": 32,
+   "iso": "",
+   "mass": "31.988084338 ± 0.0000077",
+   "half": "32.6 ms ± 0.5",
+   "seconds": 0.032600000000000004,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 0.7
+    }
+   ],
+   "year": 1971,
+   "est": false
+  },
+  {
+   "A": 32,
+   "iso": "m",
+   "mass": "31.988084338 ± 0.0000077",
+   "half": "200 ns ± 20",
+   "seconds": 2.0000000000000002e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1996,
+   "est": false
+  },
+  {
+   "A": 33,
+   "iso": "",
+   "mass": "32.990877685 ± 0.0000075",
+   "half": "41.46 ms ± 0.09",
+   "seconds": 0.041460000000000004,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 8.5
+    }
+   ],
+   "year": 1971,
+   "est": false
+  },
+  {
+   "A": 34,
+   "iso": "",
+   "mass": "33.996781924 ± 0.000002259",
+   "half": "53.73 ms ± 0.13",
+   "seconds": 0.05373,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 26
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1977,
+   "est": false
+  },
+  {
+   "A": 34,
+   "iso": "m",
+   "mass": "33.996781924 ± 0.000002259",
+   "half": "22.1 ms ± 0.2",
+   "seconds": 0.0221,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 11
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2012,
+   "est": false
+  },
+  {
+   "A": 35,
+   "iso": "",
+   "mass": "34.999759816 ± 0.0000079",
+   "half": "38.16 ms ± 0.21",
+   "seconds": 0.03816,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 35.8
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1979,
+   "est": false
+  },
+  {
+   "A": 36,
+   "iso": "",
+   "mass": "36.006388000 ± 0.0001605",
+   "half": "90 ms ± 40",
+   "seconds": 0.09,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "<",
+     "pct": 31
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1979,
+   "est": false
+  },
+  {
+   "A": 37,
+   "iso": "",
+   "mass": "37.010531000 ± 0.0001935",
+   "half": "11.4 ms ± 0.3",
+   "seconds": 0.0114,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 52
+    },
+    {
+     "mode": "β-2n",
+     "op": ">",
+     "pct": 1
+    }
+   ],
+   "year": 1979,
+   "est": false
+  },
+  {
+   "A": 38,
+   "iso": "",
+   "mass": "38.017681 ± 0.000161",
+   "half": "9.0 ms ± 0.7",
+   "seconds": 0.009000000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 84
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1989,
+   "est": true
+  },
+  {
+   "A": 39,
+   "iso": "",
+   "mass": "39.023070 ± 0.000322",
+   "half": "7.6 ms ± 1.6",
+   "seconds": 0.0076,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 97
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1989,
+   "est": true
+  },
+  {
+   "A": 40,
+   "iso": "",
+   "mass": "40.030940 ± 0.000322",
+   "half": "10 ms >260ns",
+   "seconds": 0.01,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1996,
+   "est": true
+  },
+  {
+   "A": 41,
+   "iso": "",
+   "mass": "41.037134 ± 0.000429",
+   "half": "6 ms >260ns",
+   "seconds": 0.006,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1997,
+   "est": true
+  },
+  {
+   "A": 42,
+   "iso": "",
+   "mass": "42.045078 ± 0.000537",
+   "half": "3 ms >170ns",
+   "seconds": 0.003,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2007,
+   "est": true
+  },
+  {
+   "A": 43,
+   "iso": "",
+   "mass": "43.051820 ± 0.000644",
+   "half": "4 ms >170ns",
+   "seconds": 0.004,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2007,
+   "est": true
+  }
+ ],
+ "stableCount": 1,
+ "texts": {
+  "history": [
+   {
+    "text": "The name derives from the Latin, alum and alumen for \"stringent\" because the early Romans called any substance with a stringent taste alum. The element was known in prehistoric times. In 1825, the Danish physicist, Hans Christian Oersted, isolated impure aluminium. The pure metal was first isolated by the German chemist Friedrich Wöhler in 1827.",
+    "source": "ciaaw"
+   },
+   {
+    "text": "Although aluminum is the most abundant metal in the earth's crust, it is never found free in nature. All of the earth's aluminum has combined with other elements to form compounds. Two of the most common compounds are alum, such as potassium aluminum sulfate (KAl(SO4)2·12H2O), and aluminum oxide (Al2O3). About 8.2% of the earth's crust is composed of aluminum. Scientists suspected than an unknown metal existed in alum as early as 1787, but they did not have a way to extract it until 1825. Hans Christian Oersted, a Danish chemist, was the first to produce tiny amounts of aluminum. Two years later, Friedrich Wöhler, a German chemist, developed a different way to obtain aluminum. By 1845, he was able to produce samples large enough to determine some of aluminum's basic properties. Wöhler's method was improved in 1854 by Henri Étienne Sainte-Claire Deville, a French chemist. Deville's process allowed for the commercial production of aluminum. As a result, the price of aluminum dropped from around $1200 per kilogram in 1852 to around $40 per kilogram in 1859. Unfortunately, aluminum remained too expensive to be widely used.",
+    "source": "jlab"
+   },
+   {
+    "text": "From the Latin word alumen, alum. The ancient Greeks and Romans used alum as an astringent and as a mordant in dyeing. In 1761 de Morveau proposed the name alumine for the base in alum, and Lavoisier, in 1787, thought this to be the oxide of a still undiscovered metal. Friedrich Wohler is generally credited with having isolated the metal in 1827, although an impure form was prepared by Oersted two years earlier. In 1807, Davy proposed the name aluminium for the metal, undiscovered at that time, and later agreed to change it to aluminum. Shortly thereafter, the name aluminum was adopted to conform with the \"ium\" ending of most elements. Aluminium was also the accepted spelling in the U.S. until 1925, at which time the American Chemical Society decided to use the name aluminum thereafter in their publications. See the Wikipedia entry on Aluminium for additional discussion on the spelling of this element.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Two important developments in the 1880s greatly increased the availability of aluminum. The first was the invention of a new process for obtaining aluminum from aluminum oxide. Charles Martin Hall, an American chemist, and Paul L. T. Héroult, a French chemist, each invented this process independently in 1886. The second was the invention of a new process that could cheaply obtain aluminum oxide from bauxite. Bauxite is an ore that contains a large amount of aluminum hydroxide (Al2O3·3H2O), along with other compounds. Karl Joseph Bayer, an Austrian chemist, developed this process in 1888. The Hall-Héroult and Bayer processes are still used today to produce nearly all of the world's aluminum. With an easy way to extract aluminum from aluminum oxide and an easy way to extract large amounts of aluminum oxide from bauxite, the era of inexpensive aluminum had begun. In 1888, Hall formed the Pittsburgh Reduction Company, which is now known as the Aluminum Company of America, or Alcoa. When it opened, his company could produce about 25 kilograms of aluminum a day. By 1909, his company was producing about 41,000 kilograms of aluminum a day. As a result of this huge increase of supply, the price of aluminum fell rapidly to about $0.60 per kilogram. Today, aluminum and aluminum alloys are used in a wide variety of products: cans, foils and kitchen utensils, as well as parts of airplanes, rockets and other items that require a strong, light material. Although it doesn't conduct electricity as well as copper, it is used in electrical transmission lines because of its light weight. It can be deposited on the surface of glass to make mirrors, where a thin layer of aluminum oxide quickly forms that acts as a protective coating. Aluminum oxide is also used to make synthetic rubies and sapphires for lasers.",
+    "source": "jlab"
+   },
+   {
+    "text": "It is extensively used for kitchen utensils, outside building decoration, and in thousands of industrial applications where a strong, light, easily constructed material is needed. Although its electrical conductivity is only about 60% that of copper, it is used in electrical transmission lines because of its light weight. Pure aluminum is soft and lacks strength, but alloyed with small amounts of copper, magnesium, silicon, manganese, or other elements impart a variety of useful properties. These alloys are of vital importance in the construction of modern aircraft and rockets. Aluminum, evaporated in a vacuum, forms a highly reflective coating for both visible light and radiant heat. These coatings soon form a thin layer of the protective oxide and do not deteriorate as do silver coatings. They are used to coat telescope mirrors and to make decorative paper, packages, and toys.",
+    "source": "lanl"
+   }
+  ],
+  "sources": [
+   {
+    "text": "The method of obtaining aluminum metal by the electrolysis of alumina dissolved in cryolite was discovered in 1886 by Hall in the U.S. and at about the same time by Heroult in France. Cryolite, a natural ore found in Greenland, is no longer widely used in commercial production, but has been replaced by an artificial mixture of sodium, aluminum, and calcium fluorides. Aluminum can now be produced from clay, but the process is not economically feasible at present. Aluminum is the most abundant metal to be found in the earth's crust (8.1%), but is never found free in nature. In addition to the minerals mentioned above, it is also found in granite and in many other common minerals.",
+    "source": "lanl"
+   }
+  ],
+  "description": [
+   {
+    "text": "Pure aluminum, a silvery-white metal, possesses many desirable characteristics. It is light, it is nonmagnetic and nonsparking, stands second among metals in the scale of malleability, and sixth in ductility.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Biology",
+   "text": "26Al is a radioactive isotope (half-life of 7.1×105 years) that can be detected at the ultra-trace level (attogram range; 10−18 g levels) using accelerator mass spectrometry. 26Al is used as a tracer to study the uptake, distribution, and retention of aluminium in plants, animals, and humans under different physiological conditions,.",
+   "source": "iptei"
+  },
+  {
+   "topic": "Geochronology",
+   "text": "26Al is produced from spallation reactions of protons, produced by cosmic rays, on argon. 26Al has been used for dating geological samples, such as marine sediments, manganese nodules, rocks, and meteorites,. The abundances of 26Al to 10Be have been used to study erosion and transport of soil and sediments on a thousand- to million-year time scale, because production rates of 26Al to 10Be are greatest at the surface and decrease exponentially with depth (Fig. IUPAC.13.1),. Intense cosmic-ray bombardment in space produces 26Al in meteorites and other bodies, such as the Moon. After a meteorite falls to Earth, 26Al production ceases due to atmospheric shielding; the decay of 26Al to 26Mg has been used to determine the terrestrial age of a meteorite (i.e. the time elapsed since the meteorite fell to Earth). ",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "8.23×10^4 milligrams per kilogram",
+  "ocean": "2×10^-3 milligrams per liter",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 5359268,
+   "name": "aluminum",
+   "formula": "Al",
+   "charge": 0,
+   "smiles": "[Al]"
+  },
+  {
+   "cid": 104727,
+   "name": "aluminum(3+)",
+   "formula": "Al+3",
+   "charge": 3,
+   "smiles": "[Al+3]"
+  }
+ ],
+ "refs": {
+  "ciaaw": {
+   "name": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+   "url": "https://www.ciaaw.org/aluminium.htm"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele013.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/13.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": "aluminium",
+ "ghs": {
+  "signal": "Danger",
+  "pictograms": [
+   {
+    "code": "GHS02",
+    "label": "Flammable"
+   }
+  ],
+  "hazards": [
+   "H228 (60.6%): Flammable solid",
+   "H250 (34.2%): Catches fire spontaneously if exposed to air",
+   "H261 (90.8%): In contact with water releases flammable gas"
+  ],
+  "reports": 4079,
+  "notMet": 8.3,
+  "notClassified": false,
+  "source": "European Chemicals Agency (ECHA)"
+ },
+ "ghsCid": 5359268
 }

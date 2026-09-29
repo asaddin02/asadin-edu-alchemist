@@ -1,7 +1,8 @@
 // GHS hazard communication: the nine pictograms (drawn here so they work offline) and Indonesian
 // translations of the hazard statements (H-codes) that PubChem reports in English.
 import { esc } from '../core/dom.js';
-import { pick, lang } from '../core/prefs.js';
+import { S, pick, lang, fmt, num } from '../core/prefs.js';
+import { notice } from './common.js';
 
 export const PICTOGRAMS = {
   GHS01: {
@@ -130,3 +131,51 @@ export function hazardStatement(raw) {
 }
 
 export const SIGNAL = { Danger: ['Bahaya', 'Danger'], Warning: ['Peringatan', 'Warning'] };
+
+const t = S({
+  notClassified: [
+    '{pct}% laporan ke ECHA menyatakan zat ini tidak memenuhi kriteria bahaya GHS.',
+    '{pct}% of reports to ECHA say this substance does not meet GHS hazard criteria.',
+  ],
+  notClassifiedAll: [
+    'Tidak diklasifikasikan berbahaya menurut GHS.',
+    'Not classified as hazardous under GHS.',
+  ],
+  ghsBased: [
+    'Berdasarkan {n} laporan perusahaan ke ECHA C&L (via PubChem).',
+    'Based on {n} company reports to the ECHA C&L Inventory (via PubChem).',
+  ],
+  noGhs: [
+    'PubChem belum memiliki klasifikasi GHS untuk zat ini.',
+    'PubChem has no GHS classification for this substance.',
+  ],
+});
+
+/**
+ * A GHS classification (from parseGHS in services/pugview.js) as pictograms, signal word and hazard statements.
+ * Primary pupils see pictograms only; percentages (share of notifiers) appear from SMA up.
+ */
+export function ghsPanel(ghs, lv) {
+  if (!ghs) return `<p class="muted">${esc(t.noGhs)}</p>`;
+  const mostlySafe = ghs.notClassified || (ghs.notMet != null && ghs.notMet >= 50);
+  return `${
+    mostlySafe
+      ? notice(
+          esc(ghs.notMet != null ? fmt(t.notClassified, { pct: num(ghs.notMet, 1) }) : t.notClassifiedAll)
+        )
+      : ''
+  }
+    ${ghs.pictograms.length ? `<div class="ghs-row">${ghs.pictograms.map(p => pictogram(p.code, lv === 'sd' ? 72 : 64)).join('')}</div>` : ''}
+    ${ghs.signal ? `<p class="signal signal-${ghs.signal.toLowerCase()}">${esc(pick(SIGNAL[ghs.signal] || [ghs.signal, ghs.signal]))}</p>` : ''}
+    ${
+      ghs.hazards.length && lv !== 'sd'
+        ? `<ul class="hazards">${ghs.hazards
+            .map(h => {
+              const st = hazardStatement(h);
+              return `<li><strong>${esc(st.code)}</strong> ${esc(st.text)}${st.pct && lv !== 'smp' ? ` <small class="muted">(${esc(st.pct)})</small>` : ''}</li>`;
+            })
+            .join('')}</ul>`
+        : ''
+    }
+    ${ghs.reports ? `<p class="muted small">${esc(fmt(t.ghsBased, { n: ghs.reports }))}</p>` : ''}`;
+}

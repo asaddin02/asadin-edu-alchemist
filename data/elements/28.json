@@ -22,5 +22,1098 @@
   "author": "Jurii",
   "license": "CC BY 3.0",
   "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
- }
+ },
+ "weight": {
+  "value": "58.6934(4)",
+  "kind": "standard",
+  "source": "ciaaw"
+ },
+ "natural": [
+  {
+   "A": 58,
+   "iso": "",
+   "mass": "57.935 342(3)",
+   "abundance": "0.680 769(190)"
+  },
+  {
+   "A": 60,
+   "iso": "",
+   "mass": "59.930 785(3)",
+   "abundance": "0.262 231(150)"
+  },
+  {
+   "A": 61,
+   "iso": "",
+   "mass": "60.931 055(3)",
+   "abundance": "0.011 399(13)"
+  },
+  {
+   "A": 62,
+   "iso": "",
+   "mass": "61.928 345(3)",
+   "abundance": "0.036 345(40)"
+  },
+  {
+   "A": 64,
+   "iso": "",
+   "mass": "63.927 966(3)",
+   "abundance": "0.009 256(19)"
+  }
+ ],
+ "naturalSource": "ciaaw",
+ "nuclides": [
+  {
+   "A": 48,
+   "iso": "",
+   "mass": "48.019515 ± 0.000455",
+   "half": "2.8 ms ± 0.8",
+   "seconds": 0.0028,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "2p",
+     "op": "=",
+     "pct": 70
+    },
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 30
+    },
+    {
+     "mode": "β+p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2000,
+   "est": true
+  },
+  {
+   "A": 49,
+   "iso": "",
+   "mass": "49.009157 ± 0.000644",
+   "half": "7.5 ms ± 1.0",
+   "seconds": 0.0075,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 83.4
+    }
+   ],
+   "year": 1996,
+   "est": true
+  },
+  {
+   "A": 50,
+   "iso": "",
+   "mass": "49.996286 ± 0.000537",
+   "half": "18.5 ms ± 1.2",
+   "seconds": 0.0185,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 73
+    },
+    {
+     "mode": "β+2p",
+     "op": "=",
+     "pct": 14
+    }
+   ],
+   "year": 1994,
+   "est": true
+  },
+  {
+   "A": 51,
+   "iso": "",
+   "mass": "50.987493 ± 0.000537",
+   "half": "23.8 ms ± 0.2",
+   "seconds": 0.0238,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 87.2
+    },
+    {
+     "mode": "β+2p",
+     "op": "=",
+     "pct": 0.5
+    }
+   ],
+   "year": 1987,
+   "est": true
+  },
+  {
+   "A": 52,
+   "iso": "",
+   "mass": "51.975781000 ± 0.000089",
+   "half": "41.8 ms ± 1.0",
+   "seconds": 0.0418,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 31.1
+    }
+   ],
+   "year": 1987,
+   "est": false
+  },
+  {
+   "A": 53,
+   "iso": "",
+   "mass": "52.968190000 ± 0.000027",
+   "half": "55.2 ms ± 0.7",
+   "seconds": 0.055200000000000006,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 22.7
+    }
+   ],
+   "year": 1976,
+   "est": false
+  },
+  {
+   "A": 54,
+   "iso": "",
+   "mass": "53.957833000 ± 0.000005",
+   "half": "114.1 ms ± 0.3",
+   "seconds": 0.1141,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1977,
+   "est": false
+  },
+  {
+   "A": 54,
+   "iso": "m",
+   "mass": "53.957833000 ± 0.000005",
+   "half": "152 ns ± 4",
+   "seconds": 1.52e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 64
+    },
+    {
+     "mode": "p",
+     "op": "=",
+     "pct": 36
+    }
+   ],
+   "year": 2008,
+   "est": false
+  },
+  {
+   "A": 55,
+   "iso": "",
+   "mass": "54.951329846 ± 0.000000757",
+   "half": "203.9 ms ± 1.3",
+   "seconds": 0.2039,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1972,
+   "est": false
+  },
+  {
+   "A": 56,
+   "iso": "",
+   "mass": "55.942127761 ± 0.000000428",
+   "half": "6.075 d ± 0.010",
+   "seconds": 524880,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1952,
+   "est": false
+  },
+  {
+   "A": 56,
+   "iso": "p",
+   "mass": "55.942127761 ± 0.000000428",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "p",
+     "op": "≈",
+     "pct": 100
+    }
+   ],
+   "year": 2008,
+   "est": false
+  },
+  {
+   "A": 57,
+   "iso": "",
+   "mass": "56.939791394 ± 0.000000608",
+   "half": "35.60 h ± 0.06",
+   "seconds": 128160,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1938,
+   "est": false
+  },
+  {
+   "A": 58,
+   "iso": "",
+   "mass": "57.935341650 ± 0.000000374",
+   "half": "Stable >700Ey",
+   "seconds": null,
+   "stable": true,
+   "decay": [
+    {
+     "mode": "2β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1921,
+   "est": false
+  },
+  {
+   "A": 59,
+   "iso": "",
+   "mass": "58.934345442 ± 0.000000376",
+   "half": "81 ky ± 5",
+   "seconds": 2556111012480.0005,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1951,
+   "est": false
+  },
+  {
+   "A": 60,
+   "iso": "",
+   "mass": "59.930785129 ± 0.000000378",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1921,
+   "est": false
+  },
+  {
+   "A": 61,
+   "iso": "",
+   "mass": "60.931054819 ± 0.000000381",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1934,
+   "est": false
+  },
+  {
+   "A": 62,
+   "iso": "",
+   "mass": "61.928344753 ± 0.000000455",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1934,
+   "est": false
+  },
+  {
+   "A": 63,
+   "iso": "",
+   "mass": "62.929669021 ± 0.000000457",
+   "half": "101.2 y ± 1.5",
+   "seconds": 3193560919.2960005,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1951,
+   "est": false
+  },
+  {
+   "A": 63,
+   "iso": "m",
+   "mass": "62.929669021 ± 0.000000457",
+   "half": "1.67 us ± 0.03",
+   "seconds": 0.0000016699999999999999,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1978,
+   "est": false
+  },
+  {
+   "A": 64,
+   "iso": "",
+   "mass": "63.927966228 ± 0.000000497",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1935,
+   "est": false
+  },
+  {
+   "A": 65,
+   "iso": "",
+   "mass": "64.930084585 ± 0.000000518",
+   "half": "2.5175 h ± 0.0005",
+   "seconds": 9063,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1946,
+   "est": false
+  },
+  {
+   "A": 65,
+   "iso": "m",
+   "mass": "64.930084585 ± 0.000000518",
+   "half": "69 us ± 3",
+   "seconds": 0.000069,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1978,
+   "est": false
+  },
+  {
+   "A": 66,
+   "iso": "",
+   "mass": "65.929139333 ± 0.0000015",
+   "half": "54.6 h ± 0.3",
+   "seconds": 196560,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1948,
+   "est": false
+  },
+  {
+   "A": 67,
+   "iso": "",
+   "mass": "66.931569413 ± 0.0000031",
+   "half": "21 s ± 1",
+   "seconds": 21,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1978,
+   "est": false
+  },
+  {
+   "A": 67,
+   "iso": "m",
+   "mass": "66.931569413 ± 0.0000031",
+   "half": "13.34 us ± 0.19",
+   "seconds": 0.00001334,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1998,
+   "est": false
+  },
+  {
+   "A": 68,
+   "iso": "",
+   "mass": "67.931868787 ± 0.0000032",
+   "half": "29 s ± 2",
+   "seconds": 29,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1977,
+   "est": false
+  },
+  {
+   "A": 68,
+   "iso": "m",
+   "mass": "67.931868787 ± 0.0000032",
+   "half": "270 ns ± 5",
+   "seconds": 2.7e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1984,
+   "est": false
+  },
+  {
+   "A": 68,
+   "iso": "n",
+   "mass": "67.931868787 ± 0.0000032",
+   "half": "850 us ± 30",
+   "seconds": 0.00085,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1995,
+   "est": false
+  },
+  {
+   "A": 69,
+   "iso": "",
+   "mass": "68.935610267 ± 0.000004",
+   "half": "11.4 s ± 0.3",
+   "seconds": 11.4,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1984,
+   "est": false
+  },
+  {
+   "A": 69,
+   "iso": "m",
+   "mass": "68.935610267 ± 0.000004",
+   "half": "3.5 s ± 0.4",
+   "seconds": 3.5,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "IT",
+     "op": "<",
+     "pct": 0.01
+    }
+   ],
+   "year": 1998,
+   "est": false
+  },
+  {
+   "A": 69,
+   "iso": "n",
+   "mass": "68.935610267 ± 0.000004",
+   "half": "439 ns ± 3",
+   "seconds": 4.3900000000000005e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1998,
+   "est": false
+  },
+  {
+   "A": 70,
+   "iso": "",
+   "mass": "69.936431300 ± 0.000002301",
+   "half": "6.0 s ± 0.3",
+   "seconds": 6,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1987,
+   "est": false
+  },
+  {
+   "A": 70,
+   "iso": "m",
+   "mass": "69.936431300 ± 0.000002301",
+   "half": "232 ns ± 1",
+   "seconds": 2.32e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1997,
+   "est": false
+  },
+  {
+   "A": 71,
+   "iso": "",
+   "mass": "70.940518962 ± 0.000002401",
+   "half": "2.56 s ± 0.03",
+   "seconds": 2.56,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1987,
+   "est": false
+  },
+  {
+   "A": 71,
+   "iso": "m",
+   "mass": "70.940518962 ± 0.000002401",
+   "half": "2.3 s ± 0.3",
+   "seconds": 2.3,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2009,
+   "est": false
+  },
+  {
+   "A": 72,
+   "iso": "",
+   "mass": "71.941785924 ± 0.000002401",
+   "half": "1.57 s ± 0.05",
+   "seconds": 1.57,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1987,
+   "est": false
+  },
+  {
+   "A": 73,
+   "iso": "",
+   "mass": "72.946206681 ± 0.000002601",
+   "half": "840 ms ± 30",
+   "seconds": 0.84,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1987,
+   "est": false
+  },
+  {
+   "A": 74,
+   "iso": "",
+   "mass": "73.947718 ± 0.000215",
+   "half": "507.7 ms ± 4.6",
+   "seconds": 0.5077,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1987,
+   "est": true
+  },
+  {
+   "A": 75,
+   "iso": "",
+   "mass": "74.952506 ± 0.000215",
+   "half": "331.6 ms ± 3.2",
+   "seconds": 0.3316,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 10
+    }
+   ],
+   "year": 1992,
+   "est": true
+  },
+  {
+   "A": 76,
+   "iso": "",
+   "mass": "75.954707 ± 0.000322",
+   "half": "234.6 ms ± 2.7",
+   "seconds": 0.2346,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 14
+    }
+   ],
+   "year": 1995,
+   "est": true
+  },
+  {
+   "A": 76,
+   "iso": "m",
+   "mass": "75.954707 ± 0.000322",
+   "half": "547.8 ns ± 3.3",
+   "seconds": 5.478e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2005,
+   "est": true
+  },
+  {
+   "A": 77,
+   "iso": "",
+   "mass": "76.959903 ± 0.000429",
+   "half": "158.9 ms ± 4.2",
+   "seconds": 0.1589,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 26
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1995,
+   "est": true
+  },
+  {
+   "A": 78,
+   "iso": "",
+   "mass": "77.962555 ± 0.000429",
+   "half": "122.2 ms ± 5.1",
+   "seconds": 0.1222,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1995,
+   "est": true
+  },
+  {
+   "A": 79,
+   "iso": "",
+   "mass": "78.969769 ± 0.000537",
+   "half": "44 ms ± 8",
+   "seconds": 0.044,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2010,
+   "est": true
+  },
+  {
+   "A": 80,
+   "iso": "",
+   "mass": "79.975051 ± 0.000644",
+   "half": "30 ms ± 22",
+   "seconds": 0.03,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2014,
+   "est": true
+  },
+  {
+   "A": 81,
+   "iso": "",
+   "mass": "80.982727 ± 0.000751",
+   "half": "30 ms >410ns",
+   "seconds": 0.03,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2017,
+   "est": true
+  },
+  {
+   "A": 82,
+   "iso": "",
+   "mass": "81.988492 ± 0.000859",
+   "half": "16 ms >410ns",
+   "seconds": 0.016,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2017,
+   "est": true
+  }
+ ],
+ "stableCount": 5,
+ "texts": {
+  "history": [
+   {
+    "text": "The name derives from the German Nickel for \"deceptive little spirit\" because miners called mineral niccolite (NiAs) by the name Kupfernickel (false copper) because it resembled copper ores in appearance, but no copper was found in the ore. It was discovered by the Swedish metallurgist Axel-Frederik Cronstedt in 1751.",
+    "source": "ciaaw"
+   },
+   {
+    "text": "Nickel was discovered by the Swedish chemist Axel Fredrik Cronstedt in the mineral niccolite (NiAs) in 1751. Today, most nickel is obtained from the mineral pentlandite (NiS·2FeS). Most of the world's supply of nickel is mined in the Sudbury region of Ontario, Canada. It is believed that this large deposit of nickel ore is a result of an ancient meteor impact.",
+    "source": "jlab"
+   },
+   {
+    "text": "From the German word Nickel (Satan), and from kupfernickel, Old Nick's copper. Cronstedt discovered nickel in 1751 in kupfernickel (niccolite).",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Nickel is a hard, corrosion resistant metal. It can be electroplated onto other metals to form a protective coating. Finely divided nickel is used as a catalyst for the hydrogenation of vegetable oils. Adding nickel to glass gives it a green color. A single kilogram of nickel can be drawn into 300 kilometers of wire. Nickel is also used to manufacture some types of coins and batteries. Nickel is alloyed with other metals to improve their strength and resistance to corrosion. Nickel is alloyed with steel to make armor plate, vaults and machine parts. It is alloyed with copper to make pipes that are used in desalination plants. Very powerful permanent magnets, known as Alnico magnets, can be made from an alloy of aluminum, nickel, cobalt and iron.",
+    "source": "jlab"
+   },
+   {
+    "text": "It is extensively used for making stainless steel and other corrosion-resistant alloys such as Invar(R), Monel(R), Inconel(R), and the Hastelloys(R). Tubing made of copper-nickel alloy is extensively used in making desalination plants for converting sea water into fresh water. Nickel, used extensively to make coins and nickel steel for armor plates and burglar-proof vaults, and is also a component in Nichrome(R), Permalloy(R), and constantan. Nickel gives glass a greenish color. Nickel plating is often used to provide a protective coating for other metals, and finely divided nickel is a catalyst for hydrogenating vegetable oils. It is also used in ceramics, in the manufacture of Alnico magnets, and in the Edison(R) storage battery.",
+    "source": "lanl"
+   }
+  ],
+  "sources": [
+   {
+    "text": "Nickel is found as a constituent in most meteorites and often serves as one of the criteria for distinguishing a meteorite from other minerals. Iron meteorites, or siderites, may contain iron alloyed with from 5 percent to nearly 20 percent nickel. Nickel is obtained commercially from pentlandite and pyrrhotite of the Sudbury region of Ontario, a district that produces about 30 percent of the world's supply of nickel. Other deposits are found in New Caledonia, Australia, Cuba, Indonesia, and elsewhere.",
+    "source": "lanl"
+   }
+  ],
+  "description": [
+   {
+    "text": "Nickel is silvery white and takes on a high polish. It is hard, malleable, ductile, somewhat ferromagnetic, and a fair conductor of heat and electricity. It belongs to the iron-cobalt group of metals and is chiefly valuable for the alloys it forms.",
+    "source": "lanl"
+   }
+  ],
+  "handling": [
+   {
+    "text": "Exposure to nickel metal and soluble compounds (as Ni) should not exceed 0.05 mg/cm3 (8-hour time-weighted average per 40-hour work week). Nickel sulfide fume and dust is recognized as being potentially carcinogenic.",
+    "source": "lanl"
+   }
+  ],
+  "isotopes": [
+   {
+    "text": "The sulfate and the oxides are important compounds. Natural nickel is a mixture of five stable isotopes; nine other unstable isotopes are known.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Earth/Planetary Science",
+   "text": "Because molecules, atoms, and ions of the stable isotopes of nickel possess slightly different physical and chemical properties, they commonly will be fractionated during physical, chemical, and biological processes, giving rise to variations in isotopic abundances and in atomic weights. There are measureable variations in the isotopic abundances of nickel in terrestrial silicate rocks (Fig. IUPAC.28.1). ",
+   "source": "iptei"
+  },
+  {
+   "topic": "Geochronology",
+   "text": "Anomalies in 60Ni abundance caused by decay of now extinct 60Fe have been used to study the early history of our Solar System (see section 4.26.2). 59Ni is a cosmogenic radionuclide with a half-life of 7.6×104 years. Decay of 59Ni has been used to assess the terrestrial age of meteorites and to determine abundances of extraterrestrial dust in ice and sediment.",
+   "source": "iptei"
+  },
+  {
+   "topic": "Industry",
+   "text": "63Ni (with a half-life of 99 years) is produced from stable 62Ni and is a beta-emitting radionuclide that serves as an electron source together with 55Fe in electron-capture detectors. Electron-capture detectors are used as thickness gauges or as detectors for organic analytes in gas chromatography (Fig. IUPAC.28.2). 63Ni is also used to ionize substances in ion mobility spectrometry–the basis of the instrument used in airports to screen passengers for drugs and bombs. 63Ni is also used as a fluorescence-inducing source in elemental analysis by X-ray fluorescence spectroscopy and in miniaturized long-lived nuclear batteries. Until the mid-1980s, nuclear batteries were used in pacemakers, but then they were replaced by long-lasting lithium batteries. ",
+   "source": "iptei"
+  },
+  {
+   "topic": "a Source of Radioactive Isotope(s)",
+   "text": "61Ni is used as a radiation target for production of the radioactive isotope 61Cu (with a half-life of 3.3 h), which emits positrons for positron emission tomography (PET) applications using the 61Ni (p, n) 61Cu reaction. 64Ni is used as a radiation target for production of 64Cu (with a half-life of 12.7 h), which is used in radioimmunotherapy by attaching it to an antibody for delivery of cytotoxic radiation (toxic to living cells) to a target cell via the 64Ni (p, n) 64Cu reaction. 60Ni is used for the production of 57Co (with a half-life of 0.75 year), which is used as a reference source for gamma cameras that are used in nuclear medicinevia the 60Ni (p, 4He) 57Co reaction.",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "8.4×10^1 milligrams per kilogram",
+  "ocean": "5.6×10^-4 milligrams per liter",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 935,
+   "name": "nickel",
+   "formula": "Ni",
+   "charge": 0,
+   "smiles": "[Ni]"
+  },
+  {
+   "cid": 934,
+   "name": "nickel(2+)",
+   "formula": "Ni+2",
+   "charge": 2,
+   "smiles": "[Ni+2]"
+  },
+  {
+   "cid": 115291,
+   "name": "nickel(3+)",
+   "formula": "Ni+3",
+   "charge": 3,
+   "smiles": "[Ni+3]"
+  }
+ ],
+ "refs": {
+  "ciaaw": {
+   "name": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+   "url": "https://www.ciaaw.org/nickel.htm"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele028.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/28.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": "nickel",
+ "ghs": {
+  "signal": "Danger",
+  "pictograms": [
+   {
+    "code": "GHS07",
+    "label": "Irritant"
+   },
+   {
+    "code": "GHS08",
+    "label": "Health Hazard"
+   }
+  ],
+  "hazards": [
+   "H317 (99.9%): May cause an allergic skin reaction",
+   "H334 (10.3%): May cause allergy or asthma symptoms or breathing difficulties if inhaled",
+   "H341 (13.5%): Suspected of causing genetic defects",
+   "H350 (22.5%): May cause cancer",
+   "H351 (72.9%): Suspected of causing cancer",
+   "H360F (18%): May damage fertility",
+   "H372 (99.7%): Causes damage to organs through prolonged or repeated exposure",
+   "H412 (47.2%): Harmful to aquatic life with long lasting effects"
+  ],
+  "reports": 4778,
+  "notMet": 0.1,
+  "notClassified": false,
+  "source": "European Chemicals Agency (ECHA)"
+ },
+ "ghsCid": 935
 }

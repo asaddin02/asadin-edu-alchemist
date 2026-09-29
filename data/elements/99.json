@@ -22,5 +22,824 @@
   "author": "Haire, R. G., US Department of Energy. Touched up by Materialscientist at en.wikipedia.",
   "license": "Public domain",
   "licenseUrl": ""
- }
+ },
+ "weight": {
+  "value": "252.082980(54)",
+  "kind": "isotope-mass",
+  "A": 252,
+  "estimated": false,
+  "source": "nist"
+ },
+ "natural": [],
+ "naturalSource": "nist",
+ "nuclides": [
+  {
+   "A": 239,
+   "iso": "",
+   "mass": "239.068310 ± 0.000322",
+   "half": "1 s",
+   "seconds": 1,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 240,
+   "iso": "",
+   "mass": "240.068949 ± 0.000393",
+   "half": "6.0 s ± 1.7",
+   "seconds": 6,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 70
+    },
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 30
+    },
+    {
+     "mode": "β+SF",
+     "op": "=",
+     "pct": 0.16
+    }
+   ],
+   "year": 2017,
+   "est": true
+  },
+  {
+   "A": 241,
+   "iso": "",
+   "mass": "241.068592 ± 0.000248",
+   "half": "5.1 s ± 0.8",
+   "seconds": 5.1,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1996,
+   "est": true
+  },
+  {
+   "A": 241,
+   "iso": "p",
+   "mass": "241.068592 ± 0.000248",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 242,
+   "iso": "",
+   "mass": "242.069567 ± 0.000276",
+   "half": "17.8 s ± 1.6",
+   "seconds": 17.8,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 57
+    },
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 43
+    },
+    {
+     "mode": "β+SF",
+     "op": "=",
+     "pct": 0.6
+    }
+   ],
+   "year": 1994,
+   "est": true
+  },
+  {
+   "A": 243,
+   "iso": "",
+   "mass": "243.069508 ± 0.000222",
+   "half": "22.1 s ± 1.4",
+   "seconds": 22.1,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 61
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "<",
+     "pct": 1
+    }
+   ],
+   "year": 1973,
+   "est": true
+  },
+  {
+   "A": 243,
+   "iso": "m",
+   "mass": "243.069508 ± 0.000222",
+   "half": ">50 us",
+   "seconds": 0.000049999999999999996,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 244,
+   "iso": "",
+   "mass": "244.070881 ± 0.000195",
+   "half": "37 s ± 4",
+   "seconds": 37,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 95
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 5
+    },
+    {
+     "mode": "β+SF",
+     "op": "=",
+     "pct": 0.011
+    }
+   ],
+   "year": 1973,
+   "est": true
+  },
+  {
+   "A": 245,
+   "iso": "",
+   "mass": "245.071192 ± 0.000178",
+   "half": "1.11 m ± 0.06",
+   "seconds": 66.60000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 51
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 49
+    }
+   ],
+   "year": 1967,
+   "est": true
+  },
+  {
+   "A": 245,
+   "iso": "m",
+   "mass": "245.071192 ± 0.000178",
+   "half": ">50 us",
+   "seconds": 0.000049999999999999996,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1967,
+   "est": true
+  },
+  {
+   "A": 245,
+   "iso": "p",
+   "mass": "245.071192 ± 0.000178",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2005,
+   "est": true
+  },
+  {
+   "A": 245,
+   "iso": "q",
+   "mass": "245.071192 ± 0.000178",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 246,
+   "iso": "",
+   "mass": "246.072806474 ± 0.000096538",
+   "half": "7.5 m ± 0.5",
+   "seconds": 450,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 90.1
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 9.9
+    },
+    {
+     "mode": "β+SF",
+     "op": "≈",
+     "pct": 0.003
+    }
+   ],
+   "year": 1954,
+   "est": false
+  },
+  {
+   "A": 246,
+   "iso": "p",
+   "mass": "246.072806474 ± 0.000096538",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [],
+   "year": null,
+   "est": false
+  },
+  {
+   "A": 246,
+   "iso": "q",
+   "mass": "246.072806474 ± 0.000096538",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [],
+   "year": null,
+   "est": false
+  },
+  {
+   "A": 247,
+   "iso": "",
+   "mass": "247.073621929 ± 0.00002087",
+   "half": "4.55 m ± 0.26",
+   "seconds": 273,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "≈",
+     "pct": 93
+    },
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 7
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1967,
+   "est": false
+  },
+  {
+   "A": 247,
+   "iso": "m",
+   "mass": "247.073621929 ± 0.00002087",
+   "half": ">20 us",
+   "seconds": 0.000019999999999999998,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 248,
+   "iso": "",
+   "mass": "248.075469 ± 0.000056",
+   "half": "24 m ± 3",
+   "seconds": 1440,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 0.25
+    }
+   ],
+   "year": 1956,
+   "est": true
+  },
+  {
+   "A": 249,
+   "iso": "",
+   "mass": "249.076409 ± 0.000032",
+   "half": "102.2 m ± 0.6",
+   "seconds": 6132,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 0.57
+    }
+   ],
+   "year": 1956,
+   "est": true
+  },
+  {
+   "A": 250,
+   "iso": "",
+   "mass": "250.078611 ± 0.000107",
+   "half": "8.6 h ± 0.1",
+   "seconds": 30960,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1956,
+   "est": true
+  },
+  {
+   "A": 250,
+   "iso": "m",
+   "mass": "250.078611 ± 0.000107",
+   "half": "2.22 h ± 0.05",
+   "seconds": 7992.000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1970,
+   "est": true
+  },
+  {
+   "A": 251,
+   "iso": "",
+   "mass": "251.079991431 ± 0.000005676",
+   "half": "33 h ± 1",
+   "seconds": 118800,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": 99.5
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 0.5
+    }
+   ],
+   "year": 1956,
+   "est": false
+  },
+  {
+   "A": 251,
+   "iso": "m",
+   "mass": "251.079991431 ± 0.000005676",
+   "half": ">200 us",
+   "seconds": 0.00019999999999999998,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "ε",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 252,
+   "iso": "",
+   "mass": "252.082979173 ± 0.000053736",
+   "half": "471.7 d ± 1.9",
+   "seconds": 40754880,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 78
+    },
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": 22
+    }
+   ],
+   "year": 1956,
+   "est": false
+  },
+  {
+   "A": 253,
+   "iso": "",
+   "mass": "253.084821241 ± 0.000001341",
+   "half": "20.47 d ± 0.03",
+   "seconds": 1768608,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1954,
+   "est": false
+  },
+  {
+   "A": 253,
+   "iso": "m",
+   "mass": "253.084821241 ± 0.000001341",
+   "half": ">10 us",
+   "seconds": 0.000009999999999999999,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 254,
+   "iso": "",
+   "mass": "254.088024337 ± 0.000003152",
+   "half": "275.7 d ± 0.5",
+   "seconds": 23820480,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "ε",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1954,
+   "est": false
+  },
+  {
+   "A": 254,
+   "iso": "m",
+   "mass": "254.088024337 ± 0.000003152",
+   "half": "39.3 h ± 0.2",
+   "seconds": 141480,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 98
+    },
+    {
+     "mode": "IT",
+     "op": "<",
+     "pct": 3
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 0.32
+    },
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": 0.076
+    },
+    {
+     "mode": "SF",
+     "op": "<",
+     "pct": 0.045
+    }
+   ],
+   "year": 1954,
+   "est": false
+  },
+  {
+   "A": 255,
+   "iso": "",
+   "mass": "255.090273504 ± 0.000011612",
+   "half": "39.8 d ± 1.2",
+   "seconds": 3438719.9999999995,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 92
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 8
+    },
+    {
+     "mode": "SF",
+     "op": "=",
+     "pct": 0.0041
+    }
+   ],
+   "year": 1954,
+   "est": false
+  },
+  {
+   "A": 256,
+   "iso": "",
+   "mass": "256.093597 ± 0.000107",
+   "half": "7.6 h",
+   "seconds": 27360,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β-SF",
+     "op": "=",
+     "pct": 0.002
+    }
+   ],
+   "year": 1976,
+   "est": true
+  },
+  {
+   "A": 256,
+   "iso": "m",
+   "mass": "256.093597 ± 0.000107",
+   "half": "25.4 m ± 1.2",
+   "seconds": 1524,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1981,
+   "est": true
+  },
+  {
+   "A": 257,
+   "iso": "",
+   "mass": "257.095979 ± 0.000441",
+   "half": "7.7 d ± 0.2",
+   "seconds": 665280,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1987,
+   "est": true
+  },
+  {
+   "A": 258,
+   "iso": "",
+   "mass": "258.099520 ± 0.00043",
+   "half": "4 m",
+   "seconds": 240,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  }
+ ],
+ "stableCount": 0,
+ "texts": {
+  "history": [
+   {
+    "text": "Einsteinium was discovered by a team of scientists led by Albert Ghiorso in 1952 while studying the radioactive debris produced by the detonation of the first hydrogen bomb. The isotope they discovered, einsteinium-253, has a half-life of about 20 days and was produced by combining 15 neutrons with uranium-238, which then underwent seven beta decays. Today, einsteinium is produced though a lengthy chain of nuclear reactions that involves bombarding each isotope in the chain with neutrons and then allowing the resulting isotope to undergo beta decay. Einsteinium's most stable isotope, einsteinium-252, has a half-life of about 471.7 days. It decays into berkelium-248 through alpha decay or into californium-252 through electron capture.",
+    "source": "jlab"
+   },
+   {
+    "text": "Einsteinium, the seventh transuranic element of the actinide series to be discovered, was identified by Ghiorso and co-workers at Berkeley in December 1952 in debris from the first large thermonuclear explosion, which took place in the Pacific in November, 1952. The 20-day 253Es isotope was produced. It was named after Albert Einstein. In 1961, enough einsteinium was produced to separate a macroscopic amount of 253Es. This sample weighted about 0.01µg and was measured using a special magnetic-type balance. 253Es so produced was used to produce mendelevium (Element 101) by neutron bombardment. About 3 µg of einsteinium has been produced in the High Flux Isotope Reactor (HFIR) at Oak Ridge National Laboratories by: irradiating kilogram quantities of 239Pu in a reactor for several years to produce 242Pu, fabricating the 242Pu into pellets of plutonium oxide and aluminum powder, loading the pellets into target rods for an initial 1-year irradiation at the Savannah River Plant, and, irradiating the targets for another 4 months in the HFIR. The targets were then removed for chemical separation of the einsteinium from californium daughter products. About 2 milligrams of einsteinium can be present in special HFIR campaigns.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Since only small amounts of einsteinium have ever been produced, it currently has no uses outside of basic scientific research.",
+    "source": "jlab"
+   }
+  ],
+  "description": [
+   {
+    "text": "Einsteinium does not occur naturally in the Earth’s crust. It was first identified in December 1952 by American scientists from the Argonne National Laboratory near Chicago, Illinois, the Los Alamos National Laboratory in Los Alamos, New Mexico, and The University of California Laboratory in Berkeley, California in the debris of thermonuclear weapons. The element was named for Albert Einstein (Fig. IUPAC.99.1). 253Es was the first isotope identified; it has a half-life of 20.47 days. The isotope with the longest half-life is 252Es, with a half-life of 472 days [630], [631]. There are no uses for isotopes of einsteinium outside of basic scientific research for the production of higher transuranic elements and studies of actinide science. Due to the radiation and heat given off by einsteinium isotopes, it is difficult to use them in experiments and studies [631].",
+    "source": "iptei"
+   },
+   {
+    "text": "Tracer studies using 253Es show that einsteinium has chemical properties typical of a heavy trivalent, actinide element. Oxidation states of II and III for einsteinium have been reported and oxidation state IV has been postulated from vapor transport studies but not established unequivocally. Einsteinium is the first divalent metal in the actinide series (two bonding electrons rather than three). The self-irradiation properties of einsteinium make it extremely difficult, for example, to obtain x-ray crystallographic data. The intense gamma and x-rays from einsteinium decay to daughter products over-exposes the x-ray film/detector. This intense self-irradiation can be exploited however to study accelerated aging and radiation damage studies, and for targeted radiation medical treatments. An example of einsteinium chemical studies is the chemical consequences of radioactive decay. With the relatively short half-life of Es-253 (20.47 days) one can study the in-growth of daughter Bk-249 (half-life 330 days) and grand-daughter Cf-249 (half-life 351 years). Evidence suggests that divalent Es might decay into a divalent Bk daughter and subsequently into as of yet unknown divalent Cf. There are no commercial uses for einsteinium however it is the heaviest element for which bulk studies can be performed that allows for fundamental studies of the role of 5-f electrons in actinide systematics. Richard G. Haire (2006) Chapter 12, The Chemistry of the Actinide and Transactinide Elements, Third Edition, L. R. Morss, J. Fuger, and N. M. Edelstein, Eds, Springer Publishers. This element reviewed and Updated by Dr. David Hobart, 2011",
+    "source": "lanl"
+   }
+  ],
+  "isotopes": [
+   {
+    "text": "Sixteen isotopes with three isomers ranging in atomic mass from 241 to 256 are now recognized for einsteinium. 252Es has the longest half-life (472 days) but is only available in minute quantities. The isotopes 253Es and 254Es are the isotopes of choice for physicochemical studies because of their availability and reasonable half-lives. However, usually only a few micrograms of einsteinium isotopes are used in experiments to reduce worker exposure and to minimize the intense self-irradiation effects.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [],
+ "abundance": {
+  "crust": "Not Applicable",
+  "ocean": "Not Applicable",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 23913,
+   "name": "einsteinium",
+   "formula": "Es",
+   "charge": 0,
+   "smiles": "[Es]"
+  }
+ ],
+ "refs": {
+  "nist": {
+   "name": "NIST Physical Measurement Laboratory",
+   "url": "https://physics.nist.gov/cgi-bin/Elements/elInfo.pl?element=99"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele099.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/99.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": null,
+ "ghs": null,
+ "ghsCid": null
 }

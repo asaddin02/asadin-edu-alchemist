@@ -5,8 +5,9 @@ import { routeURL } from '../core/router.js';
 import { printSheet } from '../core/print.js';
 import { levelName } from '../i18n/ui.js';
 import { icon } from '../components/icons.js';
-import { pageHead, tabs, bindTabs, notice } from '../components/common.js';
-import { TOPICS, findTopic, PHASES } from '../data/topics/index.js';
+import { pageHead, tabs, bindTabs, notice, loading, errorState, extLink } from '../components/common.js';
+import { TOPICS, findTopic, loadTopic, PHASES } from '../data/topics/index.js';
+import { reference } from '../data/references.js';
 import { PLACES } from '../data/curriculum.js';
 import { CLASSES } from '../data/classes.js';
 import { MOLECULES, moleculesInClass, moleculesInPlace, normalize } from '../data/curatedMolecules.js';
@@ -67,7 +68,7 @@ const s = S({
       'Proyektor: buka halaman molekul, pilih "Ruang penuh" untuk menunjukkan ukuran atom, lalu putar dengan tombol panah.',
       'Kerja kelompok: setiap kelompok membandingkan dua molekul di halaman Bandingkan lalu mempresentasikan perbedaannya.',
       'Asesmen formatif: gunakan kuis tantangan (soal acak) sebagai tiket keluar kelas.',
-      'Moleculium tidak mengumpulkan data siswa; untuk pengumpulan tugas minta siswa mencetak atau menyimpan PDF.',
+      'Alchemist tidak mengumpulkan data siswa; untuk pengumpulan tugas minta siswa mencetak atau menyimpan PDF.',
     ],
     [
       'Choose the class level in the Mode menu; content, quizzes and data depth adapt.',
@@ -75,7 +76,7 @@ const s = S({
       'Projector: open a molecule, choose "Space-filling" to show atom sizes, then rotate with the arrow keys.',
       'Group work: each group compares two molecules on the Compare page and presents the differences.',
       'Formative assessment: use challenge quizzes (random questions) as an exit ticket.',
-      'Moleculium collects no learner data; ask learners to print or save a PDF to hand in work.',
+      'Alchemist collects no learner data; ask learners to print or save a PDF to hand in work.',
     ],
   ],
 });
@@ -107,13 +108,20 @@ export async function render({ main, params }) {
 
   // ---------- Lesson plan ----------
   const planBox = $('[data-plan]', main);
-  $('#plan-topic', main).addEventListener(
-    'change',
-    e => (planBox.innerHTML = planHTML(findTopic(e.target.value)))
-  );
-  $('[data-print-plan]', main).addEventListener('click', () =>
-    printSheet(planHTML(findTopic($('#plan-topic', main).value), true))
-  );
+  let planToken = 0;
+  const showPlan = async id => {
+    const mine = ++planToken;
+    planBox.innerHTML = loading();
+    const t = await loadTopic(id).catch(() => null);
+    if (mine === planToken) planBox.innerHTML = t ? planHTML(t) : errorState();
+  };
+  showPlan(topicId);
+  $('#plan-topic', main).addEventListener('change', e => showPlan(e.target.value));
+  $('[data-print-plan]', main).addEventListener('click', async () => {
+    const t = await loadTopic($('#plan-topic', main).value).catch(() => null);
+    if (t) printSheet(planHTML(t, true));
+    else toast(pick(['Materi gagal dimuat.', 'The lesson failed to load.']), 'warn');
+  });
 
   // ---------- Assignment builder ----------
   const chosen = new Set();
@@ -177,10 +185,11 @@ export async function render({ main, params }) {
   });
 
   // ---------- Worksheets & flashcards ----------
-  $('[data-print-sheet]', main).addEventListener('click', () => {
-    const t = findTopic($('#sheet-topic', main).value);
+  $('[data-print-sheet]', main).addEventListener('click', async () => {
+    const t = await loadTopic($('#sheet-topic', main).value).catch(() => null);
     const lv = $('#sheet-level', main).value;
-    printSheet(worksheetHTML(t, lv));
+    if (t) printSheet(worksheetHTML(t, lv));
+    else toast(pick(['Materi gagal dimuat.', 'The lesson failed to load.']), 'warn');
   });
   $('[data-print-cards]', main).addEventListener('click', () => {
     const [kind, key] = $('#card-source', main).value.split(':');
@@ -196,14 +205,14 @@ function planPanel(topicId) {
       ).join('')}</select></div>
       <button class="btn btn-primary" type="button" data-print-plan>${icon('print', { size: 16 })} ${esc(s.print)}</button>
     </div>
-    <div class="card prose" data-plan>${planHTML(findTopic(topicId))}</div>`;
+    <div class="card prose" data-plan></div>`;
 }
 
 function planHTML(t, forPrint = false) {
   const n = t.teacher;
   const lv = ['sd', 'smp', 'sma', 'kuliah'].filter(l => t.body[l]);
   return `<article class="plan">
-    ${forPrint ? `<p class="print-brand">Moleculium · Asadin Edu — ${esc(pick(['Modul ajar', 'Lesson plan']))}</p>` : ''}
+    ${forPrint ? `<p class="print-brand">Alchemist · Asadin Edu — ${esc(pick(['Modul ajar', 'Lesson plan']))}</p>` : ''}
     <h2>${esc(pick(t.title))}</h2>
     <p>${esc(pick(t.summary))}</p>
     <p><strong>${esc(pick(['Jenjang', 'Levels']))}:</strong> ${lv.map(l => `${esc(levelName(l))} (${esc(pick(PHASES[l]))})`).join(' · ')}</p>
@@ -218,13 +227,22 @@ function planHTML(t, forPrint = false) {
       .join('')}</ul>
     <h3>${esc(pick(['Miskonsepsi', 'Misconceptions']))}</h3><ul>${n.misconceptions.map(g => `<li>${esc(pick(g))}</li>`).join('')}</ul>
     <h3>${esc(pick(['Asesmen', 'Assessment']))}</h3><p>${esc(pick(n.assessment))}</p>
+    ${
+      t.refs?.length
+        ? `<h3>${esc(pick(['Rujukan untuk guru', 'References for teachers']))}</h3><ul>${t.refs
+            .map(reference)
+            .filter(Boolean)
+            .map(r => `<li>${forPrint ? `${esc(r.label)} — ${esc(r.url)}` : extLink(r.url, r.label)}</li>`)
+            .join('')}</ul>`
+        : ''
+    }
     <h3>${esc(s.answerKey)}</h3><ol>${t.quiz
       .map(
         q =>
           `<li>[${esc(levelName(q.lv))}] ${esc(pick(q.q))} — <strong>${esc(pick(q.options[q.answer]))}</strong></li>`
       )
       .join('')}</ol>
-    <p class="muted small">Moleculium · ${esc(pick(['konten CC BY-SA 4.0', 'content CC BY-SA 4.0']))} · ${esc(location.origin)}</p>
+    <p class="muted small">Alchemist · ${esc(pick(['konten CC BY-SA 4.0', 'content CC BY-SA 4.0']))} · ${esc(location.origin)}</p>
   </article>`;
 }
 
@@ -277,7 +295,7 @@ function worksheetHTML(t, lv) {
     .slice(0, 8);
   const body = t.body[lv] || t.body[Object.keys(t.body)[0]];
   return `<article class="worksheet">
-    <p class="print-brand">Moleculium · ${esc(s.worksheet)}</p>
+    <p class="print-brand">Alchemist · ${esc(s.worksheet)}</p>
     <h2>${esc(pick(t.title))} · ${esc(levelName(lv))}</h2>
     <p class="ws-fields">${esc(s.name)}: ________________ &nbsp; ${esc(s.klass)}: ________ &nbsp; ${esc(s.date)}: ________</p>
     <h3>${esc(pick(['Bacaan singkat', 'Short reading']))}</h3><p>${esc(plainText(pick(body)).split('\n\n')[0])}</p>

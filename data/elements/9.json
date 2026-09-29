@@ -22,5 +22,528 @@
   "author": ".mw-parser-output .plainlist ul{line-height:inherit;list-style:none none;margin:0}.mw-parser-output .plainlist ul li{margin-bottom:0} Liquid_fluorine.jpg: Prof B. G. Mueller derivative work: TCO (talk",
   "license": "CC BY-SA 3.0",
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
- }
+ },
+ "weight": {
+  "value": "18.998 403 162(5)",
+  "kind": "standard",
+  "source": "ciaaw"
+ },
+ "natural": [
+  {
+   "A": 19,
+   "iso": "",
+   "mass": "18.998 403 162(5)",
+   "abundance": "1"
+  }
+ ],
+ "naturalSource": "ciaaw",
+ "nuclides": [
+  {
+   "A": 13,
+   "iso": "",
+   "mass": "13.045121 ± 0.000537",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 14,
+   "iso": "",
+   "mass": "14.034315196 ± 0.000044142",
+   "half": "500 ys ± 60",
+   "seconds": 5e-22,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2010,
+   "est": false
+  },
+  {
+   "A": 15,
+   "iso": "",
+   "mass": "15.017785139 ± 0.000015029",
+   "half": "1.1 zs ± 0.3",
+   "seconds": 1.1e-21,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "p",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1978,
+   "est": false
+  },
+  {
+   "A": 16,
+   "iso": "",
+   "mass": "16.011460278 ± 0.000005758",
+   "half": "21 zs ± 5",
+   "seconds": 2.1e-20,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "p",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1964,
+   "est": false
+  },
+  {
+   "A": 17,
+   "iso": "",
+   "mass": "17.002095237 ± 0.000000266",
+   "half": "64.370 s ± 0.027",
+   "seconds": 64.37,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1934,
+   "est": false
+  },
+  {
+   "A": 18,
+   "iso": "",
+   "mass": "18.000937324 ± 0.000000497",
+   "half": "109.734 m ± 0.008",
+   "seconds": 6584.04,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1937,
+   "est": false
+  },
+  {
+   "A": 19,
+   "iso": "",
+   "mass": "18.99840316207 ± 0.00000000088",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1920,
+   "est": false
+  },
+  {
+   "A": 20,
+   "iso": "",
+   "mass": "19.999981252 ± 0.000000031",
+   "half": "11.0062 s ± 0.0080",
+   "seconds": 11.0062,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1935,
+   "est": false
+  },
+  {
+   "A": 21,
+   "iso": "",
+   "mass": "20.999948893 ± 0.000001932",
+   "half": "4.158 s ± 0.020",
+   "seconds": 4.158,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1955,
+   "est": false
+  },
+  {
+   "A": 22,
+   "iso": "",
+   "mass": "22.002998812 ± 0.00001331",
+   "half": "4.23 s ± 0.04",
+   "seconds": 4.23,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "<",
+     "pct": 11
+    }
+   ],
+   "year": 1965,
+   "est": false
+  },
+  {
+   "A": 23,
+   "iso": "",
+   "mass": "23.003526875 ± 0.00003577",
+   "half": "2.23 s ± 0.14",
+   "seconds": 2.23,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "<",
+     "pct": 14
+    }
+   ],
+   "year": 1970,
+   "est": false
+  },
+  {
+   "A": 24,
+   "iso": "",
+   "mass": "24.008099370 ± 0.000104853",
+   "half": "384 ms ± 16",
+   "seconds": 0.384,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "<",
+     "pct": 5.9
+    }
+   ],
+   "year": 1970,
+   "est": false
+  },
+  {
+   "A": 25,
+   "iso": "",
+   "mass": "25.012167727 ± 0.000103535",
+   "half": "80 ms ± 9",
+   "seconds": 0.08,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 23.1
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1970,
+   "est": false
+  },
+  {
+   "A": 26,
+   "iso": "",
+   "mass": "26.020048065 ± 0.000114898",
+   "half": "8.2 ms ± 0.9",
+   "seconds": 0.008199999999999999,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 13.5
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1979,
+   "est": false
+  },
+  {
+   "A": 27,
+   "iso": "",
+   "mass": "27.026981897 ± 0.000129037",
+   "half": "5.0 ms ± 0.2",
+   "seconds": 0.005,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 77
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1981,
+   "est": false
+  },
+  {
+   "A": 28,
+   "iso": "",
+   "mass": "28.035860448 ± 0.000129198",
+   "half": "46 zs",
+   "seconds": 4.6e-20,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "n",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2012,
+   "est": false
+  },
+  {
+   "A": 29,
+   "iso": "",
+   "mass": "29.043103000 ± 0.000564",
+   "half": "2.5 ms ± 0.3",
+   "seconds": 0.0025,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 60
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1989,
+   "est": false
+  },
+  {
+   "A": 30,
+   "iso": "",
+   "mass": "30.052561 ± 0.000537",
+   "half": "Not-specified <260ns",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 31,
+   "iso": "",
+   "mass": "31.061023 ± 0.000574",
+   "half": "2 ms >260ns",
+   "seconds": 0.002,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1999,
+   "est": true
+  }
+ ],
+ "stableCount": 1,
+ "texts": {
+  "history": [
+   {
+    "text": "The name derives from the Latin fluere for \"flow\" or \"flux\" because fluorite (CaF2) was used as a flux in metallurgy owing to its low melting point. It was discovered in hydrofluoric acid by the Swedish pharmacist and chemist Carl-Wilhelm Scheele in 1771, but it was not isolated until 1886 by the French pharmacist and chemist Henri Moissan.",
+    "source": "ciaaw"
+   },
+   {
+    "text": "Fluorine is the most reactive of all elements and no chemical substance is capable of freeing fluorine from any of its compounds. For this reason, fluorine does not occur free in nature and was extremely difficult for scientists to isolate. The first recorded use of a fluorine compound dates to around 1670 to a set of instructions for etching glass that called for Bohemian emerald (CaF2). Chemists attempted to identify the material that was capable of etching glass and George Gore was able to produce a small amount of fluorine through an electrolytic process in 1869. Unknown to Gore, fluorine gas explosively combines with hydrogen gas. That is exactly what happened in Gore's experiment when the fluorine gas that formed on one electrode combined with the hydrogen gas that formed on the other electrode. Ferdinand Frederic Henri Moissan, a French chemist, was the first to successfully isolate fluorine in 1886. He did this through the electrolysis of potassium fluoride (KF) and hydrofluoric acid (HF). He also completely isolated the fluorine gas from the hydrogen gas and he built his electrolysis device completely from platinum. His work was so impressive that he was awarded the Nobel Prize for chemistry in 1906. Today, fluorine is still produced through the electrolysis of potassium fluoride and hydrofluoric acid as well as through the electrolysis of molten potassium acid fluoride (KHF2).",
+    "source": "jlab"
+   },
+   {
+    "text": "From the Latin and French fluere: flow or flux. In 1529, Georigius Agricola described the use of fluorspar as a flux, and as early as 1670 Schwandhard found that glass was etched when exposed to fluorspar treated with acid. Scheele and many later investigators, including Davy, Gay-Lussac, Lavoisier, and Thenard, experimented with hydrofluoric acid, some experiments ending tragically. The element was finally isolated in 1866 by Moissan after nearly 74 years of continuous effort.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Fluorine is added to city water supplies in the proportion of about one part per million to help prevent tooth decay. Sodium fluoride (NaF), stannous(II) fluoride (SnF2) and sodium monofluorophosphate (Na2PO3F) are all fluorine compounds added to toothpaste, also to help prevent tooth decay. Hydrofluoric acid (HF) is used to etch glass, including most of the glass used in light bulbs. Uranium hexafluoride (UF6) is used to separate isotopes of uranium. Crystals of calcium fluoride (CaF2), also known as fluorite and fluorspar, are used to make lenses to focus infrared light. Fluorine joins with carbon to form a class of compounds known as fluorocarbons. Some of these compounds, such as dichlorodifluoromethane (CF2Cl2), were widely used in air conditioning and refrigeration systems and in aerosol spray cans, but have been phased out due to the damage they were causing to the earth's ozone layer.",
+    "source": "jlab"
+   },
+   {
+    "text": "Fluorine and its compounds are used in producing uranium (from the hexafluoride) and more than 100 commercial fluorochemicals, including many high-temperature plastics. Hydrofluoric acid etches glass of light bulbs. Fluorochlorohydrocarbons are extensively used in air conditioning and refrigeration. The presence of fluorine as a soluble fluoride in drinking water to the extent of 2 ppm may cause mottled enamel in teeth when used by children acquiring permanent teeth; in smaller amounts, however, fluoride helps prevent dental cavities. Elemental fluorine has been studied as a rocket propellant as it has an exceptionally high specific impulse value.",
+    "source": "lanl"
+   }
+  ],
+  "description": [
+   {
+    "text": "Fluorine is the most electronegative and reactive of all elements. It is a pale yellow, corrosive gas, which reacts with most organic and inorganic substances. Finely divided metals, glass, ceramics, carbon, and even water burn in fluorine with a bright flame. Until World War II, there was no commercial production of elemental fluorine. The nuclear bomb project and nuclear energy applications, however, made it necessary to produce large quantities.",
+    "source": "lanl"
+   }
+  ],
+  "handling": [
+   {
+    "text": "Elemental fluorine and the fluoride ion are highly toxic. The free element has a characteristic pungent odor, detectable in concentrations as low as 20 ppb, which is below the safe working level. The recommended maximum allowable concentration for a daily 8-hour time-weighted exposure is 1 ppm. Safe handling techniques enable the transport liquid fluorine by the ton.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Medicine",
+   "text": "18F is a radioactive fluorine isotope that is used in an 18F-FDG compound (18F-labeled, fluoro-deoxy glucose) for imaging the organs, bones, tissues, and brain of the body with a technique called positron emission topography (PET). The 18F-FDG compound is injected and the isotopically labeled glucose is consumed by any cell requiring glucose as a source of energy,. – 18F emits positrons that collect in tissue and interact with regular negative electrons when injected into the body. The positrons and electrons annihilate each other, producing two gamma rays that are emitted in opposite directions. The radiation is detected on a PET camera, which generates a picture of the body part being examined (Fig. IUPAC.9.1). –Because 18F has a short half-life of about 110 min, there is little chance of radiation damage to the patient. ",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "5.85×10^2 milligrams per kilogram",
+  "ocean": "1.3 milligrams per liter",
+  "source": "jlab"
+ },
+ "physical": "Gas",
+ "forms": [
+  {
+   "cid": 28179,
+   "name": "fluoride",
+   "formula": "F-",
+   "charge": -1,
+   "smiles": "[F-]"
+  },
+  {
+   "cid": 5360525,
+   "name": "fluorine",
+   "formula": "F",
+   "charge": 0,
+   "smiles": "[F]"
+  }
+ ],
+ "refs": {
+  "ciaaw": {
+   "name": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+   "url": "https://www.ciaaw.org/fluorine.htm"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele009.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/9.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": "fluorine",
+ "ghs": {
+  "signal": "Danger",
+  "pictograms": [
+   {
+    "code": "GHS03",
+    "label": "Oxidizer"
+   },
+   {
+    "code": "GHS04",
+    "label": "Compressed Gas"
+   },
+   {
+    "code": "GHS05",
+    "label": "Corrosive"
+   },
+   {
+    "code": "GHS06",
+    "label": "Acute Toxic"
+   }
+  ],
+  "hazards": [
+   "H270 (100%): May cause or intensify fire; oxidizer",
+   "H280 (85.5%): Contains gas under pressure; may explode if heated",
+   "H310 (39.9%): Fatal in contact with skin",
+   "H314 (100%): Causes severe skin burns and eye damage",
+   "H318 (34.7%): Causes serious eye damage",
+   "H330 (100%): Fatal if inhaled"
+  ],
+  "reports": 311,
+  "notMet": null,
+  "notClassified": false,
+  "source": "European Chemicals Agency (ECHA)"
+ },
+ "ghsCid": 24524
 }

@@ -22,5 +22,280 @@
   "author": "Alchemist-hp (talk) (www.pse-mendelejew.de)",
   "license": "FAL",
   "licenseUrl": "http://artlibre.org/licence/lal/en"
- }
+ },
+ "weight": {
+  "value": "[1.007 84, 1.008 11]",
+  "kind": "interval",
+  "source": "ciaaw"
+ },
+ "natural": [
+  {
+   "A": 1,
+   "iso": "",
+   "mass": "1.007 825 0322(6)",
+   "abundance": "[0.999 72, 0.999 99]"
+  },
+  {
+   "A": 2,
+   "iso": "",
+   "mass": "2.014 101 7781(8)",
+   "abundance": "[0.000 01, 0.000 28]"
+  }
+ ],
+ "naturalSource": "ciaaw",
+ "nuclides": [
+  {
+   "A": 1,
+   "iso": "",
+   "mass": "1.007825031898 ± 0.000000000014",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1920,
+   "est": false
+  },
+  {
+   "A": 2,
+   "iso": "",
+   "mass": "2.014101777844 ± 0.000000000015",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1932,
+   "est": false
+  },
+  {
+   "A": 3,
+   "iso": "",
+   "mass": "3.01604928132 ± 0.00000000008",
+   "half": "12.32 y ± 0.02",
+   "seconds": 388781329.30560005,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1934,
+   "est": false
+  },
+  {
+   "A": 4,
+   "iso": "",
+   "mass": "4.026431867 ± 0.000107354",
+   "half": "139 ys ± 10",
+   "seconds": 1.3899999999999998e-22,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "n",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1981,
+   "est": false
+  },
+  {
+   "A": 5,
+   "iso": "",
+   "mass": "5.035311492 ± 0.00009602",
+   "half": "86 ys ± 6",
+   "seconds": 8.599999999999999e-23,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "2n",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1987,
+   "est": false
+  },
+  {
+   "A": 6,
+   "iso": "",
+   "mass": "6.044955437 ± 0.000272816",
+   "half": "294 ys ± 67",
+   "seconds": 2.94e-22,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "3n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1984,
+   "est": false
+  },
+  {
+   "A": 7,
+   "iso": "",
+   "mass": "7.052749 ± 0.001078",
+   "half": "652 ys ± 558",
+   "seconds": 6.52e-22,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2003,
+   "est": true
+  }
+ ],
+ "stableCount": 2,
+ "texts": {
+  "history": [
+   {
+    "text": "The name derives from the Greek hydro for \"water\" and genes for \"forming\" because it burned in air to form water. Hydrogen was discovered by the English physicist Henry Cavendish in 1766.",
+    "source": "ciaaw"
+   },
+   {
+    "text": "Scientists had been producing hydrogen for years before it was recognized as an element. Written records indicate that Robert Boyle produced hydrogen gas as early as 1671 while experimenting with iron and acids. Hydrogen was first recognized as a distinct element by Henry Cavendish in 1766. Composed of a single proton and a single electron, hydrogen is the simplest and most abundant element in the universe. It is estimated that 90% of the visible universe is composed of hydrogen. Hydrogen is the raw fuel that most stars 'burn' to produce energy. The same process, known as fusion, is being studied as a possible power source for use on earth. The sun's supply of hydrogen is expected to last another 5 billion years.",
+    "source": "jlab"
+   },
+   {
+    "text": "From the Greek word hydro (water), and genes (forming). Hydrogen was recognized as a distinct substance by Henry Cavendish in 1776. Diagram of a simple hydrogen atom. Hydrogen is the most abundant of all elements in the universe. The heavier elements were originally made from hydrogen atoms or from other elements that were originally made from hydrogen atoms.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Hydrogen is a commercially important element. Large amounts of hydrogen are combined with nitrogen from the air to produce ammonia (NH3) through a process called the Haber process. Hydrogen is also added to fats and oils, such as peanut oil, through a process called hydrogenation. Liquid hydrogen is used in the study of superconductors and, when combined with liquid oxygen, makes an excellent rocket fuel. Hydrogen combines with other elements to form numerous compounds. Some of the common ones are: water (H2O), ammonia (NH3), methane (CH4), table sugar (C12H22O11), hydrogen peroxide (H2O2) and hydrochloric acid (HCl). Hydrogen has three common isotopes. The simplest isotope, called protium, is just ordinary hydrogen. The second, a stable isotope called deuterium, was discovered in 1932. The third isotope, tritium, was discovered in 1934.",
+    "source": "jlab"
+   },
+   {
+    "text": "Great quantities of hydrogen are required commercially for nitrogen fixation using the Haber ammonia process, and for the hydrogenation of fats and oils. It is also used in large quantities in methanol production, in hydrodealkylation, hydrocracking, and hydrodesulfurization. Other uses include rocket fuel, welding, producing hydrochloric acid, reducing metallic ores, and filling balloons. The lifting power of 1 cubic foot of hydrogen gas is about 0.07 lb at °C, 760 mm pressure. The hydrogen fuel cell is a developing technology that will allow great amounts of electrical power to be obtained using a source of hydrogen gas. Consideration is being given to an entire economy based on solar- and nuclear-generated hydrogen. Public acceptance, high capital investment, and the high cost of hydrogen with respect to today's fuels are but a few of the problems facing such an economy. Located in remote regions, power plants would electrolyze seawater; the hydrogen produced would travel to distant cities by pipelines. Pollution-free hydrogen could replace natural gas, gasoline, etc., and could serve as a reducing agent in metallurgy, chemical processing, refining, etc. It could also be used to convert trash into methane and ethylene.",
+    "source": "lanl"
+   }
+  ],
+  "sources": [
+   {
+    "text": "Hydrogen is estimated to make up more than 90% of all the atoms three quarters of the mass of the universe! This element is found in the stars, and plays an important part in powering the universe through both the proton-proton reaction and carbon-nitrogen cycle. Stellar hydrogen fusion processes release massive amounts of energy by combining hydrogens to form helium. Production of hydrogen in the U.S. alone amounts to about 3 billion cubic feet per year. Hydrogen is prepared by decomposition of certain hydrocarbons with heat, reaction of sodium or potassium hydroxide on aluminum electrolysis of water, or displacement from acids by certain metals. Liquid hydrogen is important in cryogenics and in the study of superconductivity, as its melting point is only 20 degrees above absolute zero. Tritium is readily produced in nuclear reactors and is used in the production of the hydrogen bomb. Hydrogen is the primary component of Jupiter and the other gas giant planets. At some depth in the planet's interior the pressure is so great that solid molecular hydrogen is converted to solid metallic hydrogen. In 1973, a group of Russian experimenters may have produced metallic hydrogen at a pressure of 2.8 Mbar. At the transition the density changed from 1.08 to 1.3 g/cm3. Earlier, in 1972, at Livermore, California, a group also reported on a similar experiment in which they observed a pressure-volume point centered at 2 Mbar. Predictions say that metallic hydrogen may be metastable; others have predicted it would be a superconductor at room temperature.",
+    "source": "lanl"
+   }
+  ],
+  "isotopes": [
+   {
+    "text": "The ordinary isotope of hydrogen, H, is known as Protium, the other two isotopes are Deuterium (a proton and a neutron) and Tritium (a protron and two neutrons). Hydrogen is the only element whose isotopes have been given different names. Deuterium and Tritium are both used as fuel in nuclear fusion reactors. One atom of Deuterium is found in about 6000 ordinary hydrogen atoms. Deuterium is used as a moderator to slow down neutrons. Tritium atoms are also present but in much smaller proportions. Tritium is readily produced in nuclear reactors and is used in the production of the hydrogen (fusion) bomb. It is also used as a radioactive agent in making luminous paints, and as a tracer.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Earth/Planetary Science",
+   "text": "Molecules, atoms, and ions of the stable isotopes of hydrogen possess slightly different physical and chemical properties and they are commonly fractionated during physical, chemical, and biological processes, giving rise to variations in isotopic abundances and in atomic weights (Fig. IUPAC.1.1). Hydrogen has the largest relative mass difference among its isotopes and consequently exhibits the largest variation in isotopic composition of any element that does not have radioactive or radiogenic isotopes. Ranges in the stable isotopic composition of naturally occurring hydrogen-bearing materials are shown in Fig. IUPAC.1.1. These variations enable hydrogen isotopes to be used as tracers in environmental studies. A primary use of stable hydrogen isotopes is in isotope hydrology. Although the evolution of the stable hydrogen and oxygen isotopic composition of precipitation begins with the evaporation of water from the oceans, their local and global relationship arises primarily from equilibrium isotopic fractionation of heavier (2H and 18O) and lighter (1H and 16O) isotopes of hydrogen and oxygen during condensation as a tropospheric vapor mass follows a trajectory to higher latitudes and over continents,. As a consequence, the hydrogen isotopic composition of precipitation, rivers, and tap waters varies with elevation, season, and distance from the ocean-continent boundary. Figure 4.1.2 shows the variation in the atomic weight of hydrogen in water from rivers across the United States. These variations in the hydrogen isotopic composition of environmental water are often combined with stable oxygen isotopic compositions and have been used to identify the origin of water samples and to investigate the interaction between groundwater and surface water (e.g. lakes, streams, and rivers).  ",
+   "source": "iptei"
+  },
+  {
+   "topic": "Forensic Science and Anthropology",
+   "text": "Measurements of relative 2H abundances are used to determine the breeding grounds of many species of migrant songbirds. These species of songbirds only grow their feathers before migration, and they grow them on or close to their breeding grounds. Therefore, the isotopic composition of a bird’s feathers correlates to the isotopic composition of the growing season’s precipitation,,. Measurements of relative 2H abundances of human hair samples collected at archeological sites are used to determine the geographic region in which a subject lived based on the hydrogen isotopic composition of the water they drank. This is possible because hair stores a daily record of the hydrogen isotopic composition of intake water, which correlates to local meteoric water,.",
+   "source": "iptei"
+  },
+  {
+   "topic": "Geochronology",
+   "text": "3H (tritium), with a half-life of 12.31 years, decays to 3He. The relative variations in n(3He)/n(3H) ratios can be interpreted in terms of elapsed time for dating purposes. The dates of groundwater recharge (water moving downward from the surface), where large amounts of 3H were received from precipitation following thermonuclear bomb test periods, come from the elapsed time since a water mass became isolated from the atmosphere in the time range from the mid-1950s to the present.",
+   "source": "iptei"
+  },
+  {
+   "topic": "Industry",
+   "text": "3H is used for self-luminous exit signs in aircraft and commercial buildings. It is found in luminous dials, gauges, wristwatches, and luminous paints. 2H, in the form of heavy water, is used in CANDU (CANada Deuterium Uranium) nuclear reactors as a moderator and coolant.",
+   "source": "iptei"
+  },
+  {
+   "topic": "Medicine",
+   "text": "2H is used for the isotopic labeling of drugs and nutrients to trace their uptake and metabolism in the human body,. 2H, in the form of heavy water, is used to study human metabolism. For example, 2H is used in combination with 18O (double labeled water) to measure energy expenditure.",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "1.40×10^3 milligrams per kilogram",
+  "ocean": "1.08×10^5 milligrams per liter",
+  "source": "jlab"
+ },
+ "physical": "Gas",
+ "forms": [
+  {
+   "cid": 1038,
+   "name": "hydron",
+   "formula": "H+",
+   "charge": 1,
+   "smiles": "[H+]"
+  },
+  {
+   "cid": 5362549,
+   "name": "hydrogen",
+   "formula": "H",
+   "charge": 0,
+   "smiles": "[H]"
+  },
+  {
+   "cid": 166653,
+   "name": "hydride",
+   "formula": "H-",
+   "charge": -1,
+   "smiles": "[H-]"
+  }
+ ],
+ "refs": {
+  "ciaaw": {
+   "name": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+   "url": "https://www.ciaaw.org/hydrogen.htm"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele001.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/1.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": "hydrogen",
+ "ghs": {
+  "signal": "Danger",
+  "pictograms": [
+   {
+    "code": "GHS02",
+    "label": "Flammable"
+   },
+   {
+    "code": "GHS04",
+    "label": "Compressed Gas"
+   }
+  ],
+  "hazards": [
+   "H220 (99.8%): Extremely flammable gas",
+   "H280 (75.8%): Contains gas under pressure; may explode if heated",
+   "H281 (13.5%): Contains refrigerated gas; may cause cryogenic burns or injury"
+  ],
+  "reports": 1422,
+  "notMet": 0.1,
+  "notClassified": false,
+  "source": "European Chemicals Agency (ECHA)"
+ },
+ "ghsCid": 783
 }

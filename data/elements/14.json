@@ -22,5 +22,716 @@
   "author": "Enricoros at English Wikipedia",
   "license": "Public domain",
   "licenseUrl": ""
- }
+ },
+ "weight": {
+  "value": "[28.084, 28.086]",
+  "kind": "interval",
+  "source": "ciaaw"
+ },
+ "natural": [
+  {
+   "A": 28,
+   "iso": "",
+   "mass": "27.976 926 535(3)",
+   "abundance": "[0.921 91, 0.923 18]"
+  },
+  {
+   "A": 29,
+   "iso": "",
+   "mass": "28.976 494 665(4)",
+   "abundance": "[0.046 45, 0.046 99]"
+  },
+  {
+   "A": 30,
+   "iso": "",
+   "mass": "29.973 7701(2)",
+   "abundance": "[0.030 37, 0.031 10]"
+  }
+ ],
+ "naturalSource": "ciaaw",
+ "nuclides": [
+  {
+   "A": 22,
+   "iso": "",
+   "mass": "22.036114 ± 0.000537",
+   "half": "28.7 ms ± 1.1",
+   "seconds": 0.0287,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 62
+    },
+    {
+     "mode": "β+2p",
+     "op": "=",
+     "pct": 0.7
+    }
+   ],
+   "year": 1987,
+   "est": true
+  },
+  {
+   "A": 23,
+   "iso": "",
+   "mass": "23.025711 ± 0.000537",
+   "half": "42.3 ms ± 0.4",
+   "seconds": 0.0423,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "≈",
+     "pct": 88
+    },
+    {
+     "mode": "β+2p",
+     "op": "=",
+     "pct": 3.6
+    }
+   ],
+   "year": 1986,
+   "est": true
+  },
+  {
+   "A": 24,
+   "iso": "",
+   "mass": "24.011535430 ± 0.000020904",
+   "half": "143.2 ms ± 2.1",
+   "seconds": 0.1432,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 34.5
+    }
+   ],
+   "year": 1979,
+   "est": false
+  },
+  {
+   "A": 25,
+   "iso": "",
+   "mass": "25.004108798 ± 0.000010735",
+   "half": "220.6 ms ± 1.0",
+   "seconds": 0.2206,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 35
+    }
+   ],
+   "year": 1963,
+   "est": false
+  },
+  {
+   "A": 26,
+   "iso": "",
+   "mass": "25.992333818 ± 0.000000115",
+   "half": "2.2453 s ± 0.0007",
+   "seconds": 2.2453,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1960,
+   "est": false
+  },
+  {
+   "A": 27,
+   "iso": "",
+   "mass": "26.986704687 ± 0.000000115",
+   "half": "4.117 s ± 0.014",
+   "seconds": 4.117,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1939,
+   "est": false
+  },
+  {
+   "A": 28,
+   "iso": "",
+   "mass": "27.97692653442 ± 0.00000000055",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1920,
+   "est": false
+  },
+  {
+   "A": 28,
+   "iso": "r",
+   "mass": "27.97692653442 ± 0.00000000055",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [],
+   "year": null,
+   "est": false
+  },
+  {
+   "A": 29,
+   "iso": "",
+   "mass": "28.97649466434 ± 0.0000000006",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1920,
+   "est": false
+  },
+  {
+   "A": 30,
+   "iso": "",
+   "mass": "29.973770137 ± 0.000000023",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1924,
+   "est": false
+  },
+  {
+   "A": 31,
+   "iso": "",
+   "mass": "30.975363196 ± 0.000000046",
+   "half": "157.16 m ± 0.20",
+   "seconds": 9429.6,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1934,
+   "est": false
+  },
+  {
+   "A": 32,
+   "iso": "",
+   "mass": "31.974151538 ± 0.00000032",
+   "half": "157 y ± 7",
+   "seconds": 4954437394.56,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1953,
+   "est": false
+  },
+  {
+   "A": 33,
+   "iso": "",
+   "mass": "32.977976964 ± 0.00000075",
+   "half": "6.18 s ± 0.18",
+   "seconds": 6.18,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1971,
+   "est": false
+  },
+  {
+   "A": 34,
+   "iso": "",
+   "mass": "33.978538045 ± 0.00000086",
+   "half": "2.77 s ± 0.20",
+   "seconds": 2.77,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1971,
+   "est": false
+  },
+  {
+   "A": 34,
+   "iso": "m",
+   "mass": "33.978538045 ± 0.00000086",
+   "half": "<210 ns",
+   "seconds": 2.1e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1989,
+   "est": false
+  },
+  {
+   "A": 35,
+   "iso": "",
+   "mass": "34.984550111 ± 0.000038494",
+   "half": "780 ms ± 120",
+   "seconds": 0.78,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "<",
+     "pct": 5
+    }
+   ],
+   "year": 1971,
+   "est": false
+  },
+  {
+   "A": 36,
+   "iso": "",
+   "mass": "35.986649271 ± 0.000077077",
+   "half": "503 ms ± 2",
+   "seconds": 0.503,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 12
+    }
+   ],
+   "year": 1971,
+   "est": false
+  },
+  {
+   "A": 37,
+   "iso": "",
+   "mass": "36.992945191 ± 0.000122179",
+   "half": "141.0 ms ± 3.5",
+   "seconds": 0.14100000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 17
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1979,
+   "est": false
+  },
+  {
+   "A": 38,
+   "iso": "",
+   "mass": "37.995523000 ± 0.0001125",
+   "half": "63 ms ± 8",
+   "seconds": 0.063,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 25
+    }
+   ],
+   "year": 1979,
+   "est": false
+  },
+  {
+   "A": 39,
+   "iso": "",
+   "mass": "39.002491000 ± 0.0001455",
+   "half": "41.2 ms ± 4.1",
+   "seconds": 0.0412,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 33
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1979,
+   "est": false
+  },
+  {
+   "A": 40,
+   "iso": "",
+   "mass": "40.006083641 ± 0.000130962",
+   "half": "31.2 ms ± 2.6",
+   "seconds": 0.0312,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 38
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1989,
+   "est": false
+  },
+  {
+   "A": 41,
+   "iso": "",
+   "mass": "41.014171 ± 0.000322",
+   "half": "20.0 ms ± 2.5",
+   "seconds": 0.02,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": ">",
+     "pct": 55
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1989,
+   "est": true
+  },
+  {
+   "A": 42,
+   "iso": "",
+   "mass": "42.018078 ± 0.000322",
+   "half": "12.5 ms ± 3.5",
+   "seconds": 0.0125,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1990,
+   "est": true
+  },
+  {
+   "A": 43,
+   "iso": "",
+   "mass": "43.026119 ± 0.000429",
+   "half": "30 ms >260ns",
+   "seconds": 0.03,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2002,
+   "est": true
+  },
+  {
+   "A": 44,
+   "iso": "",
+   "mass": "44.031466 ± 0.000537",
+   "half": "4 ms >360ns",
+   "seconds": 0.004,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2007,
+   "est": true
+  },
+  {
+   "A": 45,
+   "iso": "",
+   "mass": "45.039818 ± 0.000644",
+   "half": "4 ms",
+   "seconds": 0.004,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  }
+ ],
+ "stableCount": 3,
+ "texts": {
+  "history": [
+   {
+    "text": "The name derives from the Latin silex and silicis for \"flint\". Amorphous silicon was discovered by the Swedish chemist Jöns Jacob Berzelius in 1824. Crystalline silicon was first prepared by the French chemist Henri Sainte-Claire Deville in 1854.",
+    "source": "ciaaw"
+   },
+   {
+    "text": "Silicon was discovered by Jöns Jacob Berzelius, a Swedish chemist, in 1824 by heating chips of potassium in a silica container and then carefully washing away the residual by-products. Silicon is the seventh most abundant element in the universe and the second most abundant element in the earth's crust. Today, silicon is produced by heating sand (SiO2) with carbon to temperatures approaching 2200°C.",
+    "source": "jlab"
+   },
+   {
+    "text": "From the Latin. word silex, silicis, flint. In 1800, Davy thought silica to be a compound and not an element; but in 1811, Gay Lussac and Thenard probably prepared impure amorphous silicon by heating potassium with silicon tetrafluoride. In 1824 Berzelius, generally credited with the discovery, prepared amorphous silicon by the same general method and purified the product by removing the fluosilicates by repeated washings. Deville in 1854 first prepared crystalline silicon, the second allotropic form of the element.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Two allotropes of silicon exist at room temperature: amorphous and crystalline. Amorphous appears as a brown powder while crystalline silicon has a metallic luster and a grayish color. Single crystals of crystalline silicon can be grown with a process known as the Czochralski process. These crystals, when doped with elements such as boron, gallium, germanium, phosphorus or arsenic, are used in the manufacture of solid-state electronic devices, such as transistors, solar cells, rectifiers and microchips. Silicon dioxide (SiO2), silicon's most common compound, is the most abundant compound in the earth's crust. It commonly takes the form of ordinary sand, but also exists as quartz, rock crystal, amethyst, agate, flint, jasper and opal. Silicon dioxide is extensively used in the manufacture of glass and bricks. Silica gel, a colloidal form of silicon dioxide, easily absorbs moisture and is used as a desiccant. Silicon forms other useful compounds. Silicon carbide (SiC) is nearly as hard as diamond and is used as an abrasive. Sodium silicate (Na2SiO3), also known as water glass, is used in the production of soaps, adhesives and as an egg preservative. Silicon tetrachloride (SiCl4) is used to create smoke screens. Silicon is also an important ingredient in silicone, a class of material that is used for such things as lubricants, polishing agents, electrical insulators and medical implants.",
+    "source": "jlab"
+   },
+   {
+    "text": "Silicon is one of man's most useful elements. In the form of sand and clay it is used to make concrete and brick; it is a useful refractory material for high-temperature work, and in the form of silicates it is used in making enamels, pottery, etc. Silica, as sand, is a principal ingredient of glass, one of the most inexpensive of materials with excellent mechanical, optical, thermal, and electrical properties. Glass can be made in a very great variety of shapes, and is used as containers, window glass, insulators, and thousands of other uses. Silicon tetrachloride can be used as iridize glass. Hyperpure silicon can be doped with boron, gallium, phosphorus, or arsenic to produce silicon for use in transistors, solar cells, rectifiers, and other solid-state devices which are used extensively in the electronics and space-age industries. Hydrogenated amorphous silicon has shown promise in producing economical cells for converting solar energy into electricity. Silicon is important to plant and animal life. Diatoms in both fresh and salt water extract Silica from the water to build their cell walls. Silica is present in the ashes of plants and in the human skeleton. Silicon is an important ingredient in steel; silicon carbide is one of the most important abrasives and has been used in lasers to produce coherent light of 4560 A. Silcones are important products of silicon. They may be prepared by hydrolyzing a silicon organic chloride, such as dimethyl silicon chloride. Hydrolysis and condensation of various substituted chlorosilanes can be used to produce a very great number of polymeric products, or silicones, ranging from liquids to hard, glasslike solids with many useful properties.",
+    "source": "lanl"
+   }
+  ],
+  "sources": [
+   {
+    "text": "Silicon is present in the sun and stars and is a principal component of a class of meteorites known as aerolites. It is also a component of tektites, a natural glass of uncertain origin. Silicon makes up 25.7% of the earth's crust, by weight, and is the second most abundant element, being exceeded only by oxygen. Silicon is not found free in nature, but occurs chiefly as the oxide and as silicates. Sand, quartz, rock crystal, amethyst, agate, flint, jasper, and opal are some of the forms in which the oxide appears. Granite, hornblende, asbestos, feldspar, clay, mica, etc. are but a few of the numerous silicate minerals. Silicon is prepared commercially by heating silica and carbon in an electric furnace, using carbon electrodes. Several other methods can be used for preparing the element. Amorphous silicon can be prepared as a brown powder, which can be easily melted or vaporized. The Czochralski process is commonly used to produce single crystals of silicon used for solid-state or semiconductor devices. Hyperpure silicon can be prepared by the thermal decomposition of ultra-pure trichlorosilane in a hydrogen atmosphere, and by a vacuum float zone process.",
+    "source": "lanl"
+   }
+  ],
+  "description": [
+   {
+    "text": "Crystalline silicon has a metallic luster and grayish color. Silicon is a relatively inert element, but it is attacked by halogens and dilute alkali. Most acids, except hydrofluoric, do not affect it. Elemental silicon transmits more than 95% of all wavelengths of infrared, from 1.3 to 6.y micro-m.",
+    "source": "lanl"
+   }
+  ],
+  "handling": [
+   {
+    "text": "Miners, stonecutters, and others engaged in work where siliceous dust is breathed into large quantities often develop a serious lung disease known as silicosis.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Earth/Planetary Science",
+   "text": "Because molecules, atoms, and ions of the stable isotopes of silicon possess slightly different physical and chemical properties, they commonly will be fractionated during physical, chemical, and biological processes, giving rise to variations in isotopic abundances and in atomic weights. There are substantial variations in the isotopic abundances of silicon in natural terrestrial materials (Fig. IUPAC.14.1). These variations are useful in investigating the origin of substances and studying environmental, hydrological, and geological processes,. Diatoms, a major group of algae, need silicon to build up their opaline shells and prefer 28Si while taking up Si(OH)4, which is the biologically available form of silicon in the marine environment. This progressively enriches surface waters with 29Si and 30Si. 32Si-labeled silicic acid of high specific radioactivity is used to measure uptake rates of Si and estimate marine sedimentation of biogenic (created by living organisms) silica (by diatoms and sea shells). By performing uptake kinetic experiments, the 32Si activity can be measured as 32P using counting of Cherenkov radiation (radiation produced by charged particles passing through a medium at a speed greater than that of light through the same medium — after Soviet physicist Pavel A. Cherenkov) with a liquid scintillation analyzer (measuring ionizing radiation using the interaction of radiation on a material and counting the resulting photon emissions). ",
+   "source": "iptei"
+  },
+  {
+   "topic": "Geochronology",
+   "text": "Cosmogenic 32Si has a half-life of about 150 years and is produced by cosmic-ray spallation of argon in the stratosphere and troposphere. 32Si in dust is precipitated in snow, making it possible to date dust in snow and glacial ice (Fig. IUPAC.14.2). Glaciers are archives for global climate history because they contain a variety of proxies (imprints of past environmental conditions used to interpret paleoclimate) for climate forcing and climate response. Cosmogenic 32Si that is stored in glaciers and ice-core samples can be analyzed using accelerator mass spectrometry to date when sections of glaciers formed,. ",
+   "source": "iptei"
+  },
+  {
+   "topic": "Industry",
+   "text": "At Keio University in Japan, the Itoh Research Group has developed a method that utilizes 29Si to store and process information. The Itoh Research Group focused on manipulating the nanostructure of materials at an atomic level, especially with semiconductors such as silicon. Their manipulations and observations demonstrate that differences in the nuclear spin and mass of an isotope affects the ease of further manipulation of the isotope,. Silicon crystals enriched to higher than 99.99 percent purity of 28Si are being used in the Avogadro Project. This project is intended to remeasure the Avogadro constant (NA), which is the proportionality factor between the amount of substance and number of elementary entities.",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "2.82×10^5 milligrams per kilogram",
+  "ocean": "2.2 milligrams per liter",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 5461123,
+   "name": "silicon",
+   "formula": "Si",
+   "charge": 0,
+   "smiles": "[Si]"
+  },
+  {
+   "cid": 4082203,
+   "name": "silicon(4+)",
+   "formula": "Si+4",
+   "charge": 4,
+   "smiles": "[Si+4]"
+  },
+  {
+   "cid": 16019983,
+   "name": "silicon(1+)",
+   "formula": "Si+",
+   "charge": 1,
+   "smiles": "[Si+]"
+  },
+  {
+   "cid": 6336987,
+   "name": "silicon(1-)",
+   "formula": "Si-",
+   "charge": -1,
+   "smiles": "[Si-]"
+  },
+  {
+   "cid": 16207196,
+   "name": "silicon(2+)",
+   "formula": "Si+2",
+   "charge": 2,
+   "smiles": "[Si+2]"
+  },
+  {
+   "cid": 22138154,
+   "name": "silicon(3+)",
+   "formula": "Si+3",
+   "charge": 3,
+   "smiles": "[Si+3]"
+  }
+ ],
+ "refs": {
+  "ciaaw": {
+   "name": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+   "url": "https://www.ciaaw.org/silicon.htm"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele014.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/14.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": "silicon",
+ "ghs": {
+  "signal": null,
+  "pictograms": [],
+  "hazards": [],
+  "reports": 3263,
+  "notMet": 96.3,
+  "notClassified": true,
+  "source": "European Chemicals Agency (ECHA)"
+ },
+ "ghsCid": 5461123
 }

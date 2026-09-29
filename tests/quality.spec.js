@@ -17,6 +17,15 @@ const A11Y_PAGES = [
   'glossary',
   'teacher',
   'about',
+  'search?q=besi',
+  'peta',
+  'peta/inti',
+  'isotope',
+  'isotope/C-14',
+  'ion/sulfat',
+  'reaction/haber-bosch',
+  'material/baja',
+  'lab/paruh',
 ];
 
 test.beforeEach(async ({ page }) => {
@@ -53,6 +62,13 @@ test('no horizontal scrolling on a 320 px phone', async ({ page }) => {
     'lab/volta',
     'teacher',
     'learn/karbon',
+    'search?q=sulfat',
+    'peta',
+    'isotope',
+    'isotope/U-238',
+    'atom/Fe',
+    'reaction/fisi-uranium-235',
+    'lab/paruh',
   ]) {
     await open(page, hash);
     const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
@@ -76,9 +92,12 @@ test('keyboard users can skip to content and rotate the 3D model', async ({ page
 test('pages set a descriptive document title and a single h1', async ({ page }) => {
   await prefs(page);
   for (const [hash, title] of [
-    ['molecule/water', 'Air · Moleculium'],
-    ['atom/Au', 'Emas · Moleculium'],
-    ['learn/zat', 'Zat dan wujudnya · Moleculium'],
+    ['molecule/water', 'Air · Alchemist'],
+    ['atom/Au', 'Emas · Alchemist'],
+    ['learn/zat', 'Zat dan wujudnya · Alchemist'],
+    ['isotope/C-14', 'C-14 · Alchemist'],
+    ['reaction/haber-bosch', 'Proses Haber–Bosch (amonia) · Alchemist'],
+    ['peta/inti', 'Isotop & kimia inti · Alchemist'],
   ]) {
     await open(page, hash);
     await expect(page).toHaveTitle(title);

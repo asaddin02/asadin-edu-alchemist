@@ -22,5 +22,746 @@
   "author": "Wikimedia Commons",
   "license": "Public domain",
   "licenseUrl": ""
- }
+ },
+ "weight": {
+  "value": "238.028 91(3)",
+  "kind": "standard",
+  "source": "ciaaw"
+ },
+ "natural": [
+  {
+   "A": 234,
+   "iso": "",
+   "mass": "234.040 950(8)",
+   "abundance": "0.000 054(5)"
+  },
+  {
+   "A": 235,
+   "iso": "",
+   "mass": "235.043 928(8)",
+   "abundance": "0.007 204(6)"
+  },
+  {
+   "A": 238,
+   "iso": "",
+   "mass": "238.050 79(1)",
+   "abundance": "0.992 742(10)"
+  }
+ ],
+ "naturalSource": "ciaaw",
+ "nuclides": [
+  {
+   "A": 215,
+   "iso": "",
+   "mass": "215.026719774 ± 0.000111794",
+   "half": "1.4 ms ± 0.9",
+   "seconds": 0.0014,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": null
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2015,
+   "est": false
+  },
+  {
+   "A": 216,
+   "iso": "",
+   "mass": "216.024762829 ± 0.000030158",
+   "half": "6.9 ms ± 2.9",
+   "seconds": 0.006900000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2015,
+   "est": false
+  },
+  {
+   "A": 217,
+   "iso": "",
+   "mass": "217.024660 ± 0.000086",
+   "half": "850 us ± 710",
+   "seconds": 0.00085,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2000,
+   "est": true
+  },
+  {
+   "A": 218,
+   "iso": "",
+   "mass": "218.023504877 ± 0.000014722",
+   "half": "354 us ± 91",
+   "seconds": 0.000354,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1992,
+   "est": false
+  },
+  {
+   "A": 219,
+   "iso": "",
+   "mass": "219.025009233 ± 0.000014319",
+   "half": "60 us ± 7",
+   "seconds": 0.000059999999999999995,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1993,
+   "est": false
+  },
+  {
+   "A": 220,
+   "iso": "",
+   "mass": "220.024706 ± 0.000108",
+   "half": "60 ns",
+   "seconds": 6.000000000000001e-8,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 221,
+   "iso": "",
+   "mass": "221.026323297 ± 0.00007744",
+   "half": "660 ns ± 140",
+   "seconds": 6.6e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2015,
+   "est": false
+  },
+  {
+   "A": 222,
+   "iso": "",
+   "mass": "222.026057957 ± 0.000055817",
+   "half": "4.7 us ± 0.7",
+   "seconds": 0.0000047,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1983,
+   "est": false
+  },
+  {
+   "A": 223,
+   "iso": "",
+   "mass": "223.027960754 ± 0.000063396",
+   "half": "65 us ± 12",
+   "seconds": 0.000065,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1991,
+   "est": false
+  },
+  {
+   "A": 224,
+   "iso": "",
+   "mass": "224.027635913 ± 0.000016383",
+   "half": "396 us ± 17",
+   "seconds": 0.000396,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1991,
+   "est": false
+  },
+  {
+   "A": 225,
+   "iso": "",
+   "mass": "225.029385050 ± 0.000010664",
+   "half": "62 ms ± 4",
+   "seconds": 0.062,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1989,
+   "est": false
+  },
+  {
+   "A": 226,
+   "iso": "",
+   "mass": "226.029338669 ± 0.000011884",
+   "half": "269 ms ± 6",
+   "seconds": 0.269,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1973,
+   "est": false
+  },
+  {
+   "A": 227,
+   "iso": "",
+   "mass": "227.031181124 ± 0.000009136",
+   "half": "1.1 m ± 0.1",
+   "seconds": 66,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1952,
+   "est": false
+  },
+  {
+   "A": 228,
+   "iso": "",
+   "mass": "228.031368959 ± 0.000014465",
+   "half": "9.1 m ± 0.2",
+   "seconds": 546,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 97.5
+    },
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": 2.5
+    }
+   ],
+   "year": 1949,
+   "est": false
+  },
+  {
+   "A": 229,
+   "iso": "",
+   "mass": "229.033505976 ± 0.000006374",
+   "half": "57.8 m ± 0.5",
+   "seconds": 3468,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "≈",
+     "pct": 80
+    },
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 20
+    }
+   ],
+   "year": 1949,
+   "est": false
+  },
+  {
+   "A": 230,
+   "iso": "",
+   "mass": "230.033940114 ± 0.000004841",
+   "half": "20.23 d ± 0.02",
+   "seconds": 1747872,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1948,
+   "est": false
+  },
+  {
+   "A": 231,
+   "iso": "",
+   "mass": "231.036292180 ± 0.000002866",
+   "half": "4.2 d ± 0.1",
+   "seconds": 362880,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "ε",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 0.004
+    }
+   ],
+   "year": 1949,
+   "est": false
+  },
+  {
+   "A": 232,
+   "iso": "",
+   "mass": "232.037154765 ± 0.000001941",
+   "half": "68.9 y ± 0.4",
+   "seconds": 2174272206.912,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1949,
+   "est": false
+  },
+  {
+   "A": 233,
+   "iso": "",
+   "mass": "233.039634294 ± 0.00000242",
+   "half": "159.19 ky ± 0.15",
+   "seconds": 5023547062675.2,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1947,
+   "est": false
+  },
+  {
+   "A": 234,
+   "iso": "",
+   "mass": "234.040950296 ± 0.000001212",
+   "half": "245.5 ky ± 0.6",
+   "seconds": 7747225352640.001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1912,
+   "est": false
+  },
+  {
+   "A": 235,
+   "iso": "",
+   "mass": "235.043928117 ± 0.000001198",
+   "half": "704 My ± 1",
+   "seconds": 22216075960320000,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1935,
+   "est": false
+  },
+  {
+   "A": 236,
+   "iso": "",
+   "mass": "236.045566130 ± 0.000001193",
+   "half": "23.42 My ± 0.04",
+   "seconds": 739063208793600,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1951,
+   "est": false
+  },
+  {
+   "A": 237,
+   "iso": "",
+   "mass": "237.048728309 ± 0.00000129",
+   "half": "6.752 d ± 0.002",
+   "seconds": 583372.7999999999,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1940,
+   "est": false
+  },
+  {
+   "A": 238,
+   "iso": "",
+   "mass": "238.050786936 ± 0.000001601",
+   "half": "4.463 Gy ± 0.003",
+   "seconds": 140838561095040000,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1896,
+   "est": false
+  },
+  {
+   "A": 239,
+   "iso": "",
+   "mass": "239.054291989 ± 0.000001612",
+   "half": "23.45 m ± 0.02",
+   "seconds": 1407,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1937,
+   "est": false
+  },
+  {
+   "A": 240,
+   "iso": "",
+   "mass": "240.056592411 ± 0.00000274",
+   "half": "14.1 h ± 0.1",
+   "seconds": 50760,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1953,
+   "est": false
+  },
+  {
+   "A": 241,
+   "iso": "",
+   "mass": "241.060330 ± 0.00021",
+   "half": "4 m",
+   "seconds": 240,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 242,
+   "iso": "",
+   "mass": "242.062931 ± 0.000215",
+   "half": "16.8 m ± 0.5",
+   "seconds": 1008,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1979,
+   "est": true
+  },
+  {
+   "A": 243,
+   "iso": "",
+   "mass": "243.067075 ± 0.000322",
+   "half": "16 m",
+   "seconds": 960,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  }
+ ],
+ "stableCount": 0,
+ "texts": {
+  "history": [
+   {
+    "text": "The name derives from the planet Uranus, which in Roman mythology was \"Father Heaven\". The German chemist Martin-Heinrich Klaproth discovered the element in 1789, following William Hershel's discovery of the planet in 1781. The metallic uranium was first isolated by the French chemist Eugène-Melchior Peligot in 1841.",
+    "source": "ciaaw"
+   },
+   {
+    "text": "Uranium was discovered by Martin Heinrich Klaproth, a German chemist, in the mineral pitchblende (primarily a mix of uranium oxides) in 1789. Although Klaproth, as well as the rest of the scientific community, believed that the substance he extracted from pitchblende was pure uranium, it was actually uranium dioxide (UO2). After noticing that 'pure' uranium reacted oddly with uranium tetrachloride (UCl4), Eugène-Melchoir Péligot, a French chemist isolated pure uranium by heating uranium dioxide with potassium in a platinum crucible. Radioactivity was first discovered in 1896 when Antoine Henri Becquerel, a French physicist, detected it from a sample of uranium. Today, uranium is obtained from uranium ores such as pitchblende, uraninite (UO2), carnotite (K2(UO2)2VO4·1-3H2O) and autunite (Ca(UO2)2(PO4)2·10H2O) as well as from phosphate rock (Ca3(PO4)2), lignite (brown coal) and monazite sand ((Ce, La, Th, Nd, Y)PO4). Since there is little demand for uranium metal, uranium is usually sold in the form of sodium diuranate (Na2U2O7·6H2O), also known as yellow cake, or triuranium octoxide (U3O8).",
+    "source": "jlab"
+   },
+   {
+    "text": "The use of uranium in its natural oxide form dates back to 79 A.D. when it was used as a yellow coloring agent in ceramic glazes. Yellow glass with 1% uranium oxide was found in an ancient Roman villa near Naples, Italy. In the late Middle Ages, pitchblende was extracted from the silver mines and was used as a coloring agent in the glassmaking industry. The identification of uranium as an element is generally credited to Martin H. Klaproth. While experimenting with pitchblende in 1789, he concluded that it contained a new element, which he named after the newly discovered planet Uranus (named after the Greek god of the sky or heaven). What Klaproth actually identified was not the pure element but uranium oxide. The pure metal was first isolated in 1841 by Eugène-Melchior Péligot, who reduced anhydrous uranium tetrachloride with potassium metal. In 1896 Antoine H. Becquerel discovered that uranium exhibited invisible light or rays; it was radioactivity. In 1934 research by Enrico Fermi and others eventually led to the use of uranium fission in the first nuclear weapon used in war and later in the peaceful use of uranium as fuel in nuclear power production. An ensuing arms race during the Cold War between the United States and the Soviet Union produced tens of thousands of nuclear weapons that used uranium metal and uranium-derived plutonium-239. The security of those weapons and their fissile material following the breakup of the Soviet Union in 1991 is an ongoing concern. In 1972 French physicist Francis Perrin discovered ancient and no longer active prehistoric natural nuclear fission reactors in uranium ore deposits at the Oklo mine in Gabon, West Africa, collectively known as the Oklo Fossil Reactors. The ore deposit is 1.7 billion years old; at that time, uranium-235 constituted about 3% of the total uranium on Earth (0.72% today). This is high enough to permit a sustained nuclear fission chain reaction to occur, provided other supporting geologic conditions exist.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Since it is naturally radioactive, uranium, usually in the form of uranium dioxide (UO2), is most commonly used in the nuclear power industry to generate electricity. Naturally occurring uranium consists of three isotopes: uranium-234, uranium-235 and uranium-238. Although all three isotopes are radioactive, only uranium-235 is a fissionable material that can be used for nuclear power. When a fissionable material is struck by a neutron, its nucleus can release energy by splitting into smaller fragments. If some of the fragments are other neutrons, they can strike other atoms and cause them to split as well. A fissionable material, such as uranium-235, is a material capable of producing enough free neutrons to sustain a nuclear chain reaction. Only 0.7204% of naturally occurring uranium is uranium-235. This is too low a concentration to sustain a nuclear chain reaction without the help of a material known as a moderator. A moderator is a material that can slow down a neutron without absorbing it. Slow neutrons are more likely to react with uranium-235 and reactors using natural uranium can be made using graphite or heavy water as a moderator. Methods also exist for concentrating uranium-235. Once the levels of uranium-235 have been increased to about 3%, normal water can be used as a moderator. Uranium-238, uranium's most common isotope, can be converted into plutonium-239, a fissionable material that can also be used as a fuel in nuclear reactors. To produce plutonium-239, atoms of uranium-238 are exposed to neutrons. Uranium-239 forms when uranium-238 absorbs a neutron. Uranium-239 has a half-life of about 23 minutes and decays into neptunium-239 through beta decay. Neptunium-239 has a half-life of about 2.4 days and decays into plutonium-239, also through beta decay. Although it does not occur naturally, uranium-233 is also a fissionable material that can be used as a fuel in nuclear reactors. To produce uranium-233, atoms of thorium-232 are exposed to neutrons. Thorium-233 forms when thorium-232 absorbs a neutron. Thorium-233 has a half-life of about 22 minutes and decays into protactinium-233 through beta decay. Protactinium-233 has a half-life of about 27 days and decays into uranium-233, also through beta decay. If completely fissioned, one pound (0.45 kilograms) of uranium-233 will provide the same amount of energy as burning 1,500 tons (1,350,000 kilograms) of coal. Uranium is a dense metal that has uses outside of the nuclear power industry. It is used as a target for X-ray production, as ammunition for some types of military weaponry, as a shield against radiation, as a counterweight for aircraft control surfaces and in the gyroscopes of inertial guidance systems. Uranium compounds have been used for centuries to color glass. A 2,000 year old sample of yellow glass found near Naples, Italy contains uranium oxide. Uranium trioxide (UO3) is an orange powder and has been used in the manufacture of Fiestaware plates. Other uranium compounds have also been used to make vaseline glass and glazes. The uranium within these items is radioactive and should be treated with care. Uranium's most stable isotope, uranium-238, has a half-life of about 4,468,000,000 years. It decays into thorium-234 through alpha decay or decays through spontaneous fission.",
+    "source": "jlab"
+   },
+   {
+    "text": "Uranium was used in as coloring agents in ceramic glazes and glass in ancient Rome and in the Middle Ages producing orange-red to lemon yellow hues. More recently it was used as an orange glaze in contemporary Fiestaware© dishware but was later discontinued for health reasons. Many contemporary uses of uranium exploit its unique nuclear properties. Uranium-235 has the distinction of being the only naturally occurring fissileisotope. This means it can be split into two or three fragments (fission products) by thermal neutrons. Uranium-238 is fissionable by fast neutrons, and is fertile, meaning it can be transmuted to fissile plutonium-239 in a nuclear reactor. Another fissile isotope, uranium-233, can be produced from natural thorium and is also important in nuclear technology. While uranium-238 has a small probability for spontaneous fission or even induced fission with fast neutrons, uranium-235 and to a lesser degree uranium-233 have a much higher fission cross-section for slow neutrons. In sufficient concentration, these isotopes maintain a sustained nuclear chain reaction. This generates the heat in nuclear power reactors, and produces the fissile material for nuclear weapons. This nuclear conversion can be brought about in breeder reactors where it is possible to produce more new fissionable material than the fissionable material used in maintaining the chain reaction. Depleted uranium (238U) (depleted of uranium-235) is used in balistic armor penetration and as armor plating. Uranium-238 is not fissile, but is a fertile isotope, because after neutron activation it can produce plutonium-239, another fissile isotope. Indeed, the238U nucleus can absorb one neutron to produce the radioactive isotope uranium-239. 239U decays by beta emission to neptunium-239, also a beta-emitter, that decays in its turn, within a few days into plutonium-239. 239Pu was used as fissile material in the first atomic bomb detonated in the \"Trinity test\" on 15 July 1945 in New Mexico. Uranium-235 is of even greater importance because it is the key to utilizing uranium. 235U, while occurring in natural uranium to the extent of only 0.71%, is so fissionable with slow neutrons that a self-sustaining fission chain reaction can be made in a reactor constructed from natural uranium and a suitable moderator, such as heavy water or graphite, alone. Uranium-235 can be concentrated by gaseous diffusion and other physical processes, if desired, and used directly as a nuclear fuel, instead of natural uranium, or used as an explosive. Natural uranium, slightly enriched with 235U by a small percentage, is used to fuel nuclear power reactors to generate electricity. Natural thorium can be irradiated with neutrons to produce the important isotope 233U as follows: 232Th(n, gamma) >233Th(beta) >233Pa(beta) >233U. While thorium itself is not fissionable, 233U is, and in this way may be used as a nuclear fuel. One pound of completely fissioned uranium has the fuel value of over 1500 tons of coal. The uses of nuclear fuels to generate electrical power, to make isotopes for peaceful purposes, and to make explosives are well known. Uranium in the U.S.A. is controlled by the U.S. Nuclear Regulatory Commission. New uses are being found for depleted uranium, i.e., uranium with the percentage of 235U lowered to about 0.2%. Uranium is used in inertial guidance devices, in gyro compasses, as counterweights for aircraft control surfaces, as ballast for missile reentry vehicles, and as a shielding material. Uranium metal is used for X-ray targets for production of high-energy X-rays; the nitrate was once used as a photographic toner, and the acetate was once used in analytical chemistry. Crystals of uranium nitrate are triboluminescent. Uranium salts have also been used for producing yellow \"Vaseline\" glass and glazes.",
+    "source": "lanl"
+   }
+  ],
+  "sources": [
+   {
+    "text": "Uranium is the heaviest naturally-occurring element available in large quantities. The heavier “transuranic” elements are either man-made or they exist only as trace quantities in uranium ore deposits as activation products. Uranium occurs naturally in low concentrations of a few parts per million in soil, rock and water, and is commercially extracted from uranium-bearing minerals. Uranium, not as rare as once thought, is now considered to be more plentiful than mercury, antimony, silver, or cadmium, and is about as abundant as molybdenum or arsenic. It occurs in numerous natural minerals such as pitchblende, uraninite, carnotite, autunite, uranophane, and tobernite. It is also found in phosphate rocks, lignite, monazite sands, and is recovered commercially from these sources. The United States Department of Energy purchases uranium in the form of acceptable U3O8 concentrates. This incentive program has greatly increased the known uranium reserves.",
+    "source": "lanl"
+   }
+  ],
+  "description": [
+   {
+    "text": "Pure uranium is a silvery white, weakly radioactive metal, which is harder than most elements. It is malleable, ductile, slightly paramagnetic, strongly electropositive and is a poor electrical conductor. Uranium metal has very high density, being approximately 70% denser than lead, but slightly less dense than gold. Uranium metal exhibits in three crystallographic modifications: alpha > (688°C) > beta > (776°C) > gamma. Uranium is pyrophoric when finely divided. It is a little softer than steel and is attacked by cold water in a finely divided state.In air, uranium metal becomes coated with a layer of oxide. Acids dissolve the metal, forming the +3 oxidation state which oxidizes rapidly by water and air to form higher oxidation states. Uranium metal is unaffected by alkalis. Uranium metal can be prepared by reducing uranium halides with alkali or alkaline earth metals or by reducing uranium oxides by calcium, aluminum, or carbon at high temperatures. The metal can also be produced by electrolysis of KUF5 or UF4, dissolved in a molten salt mixture of CaCl2 and NaCl. High-purity uranium can be prepared by the thermal decomposition of uranium halides on a hot filament. Uranium metal reacts with almost all nonmetallic elements and their compounds, with reactivity increasing with temperature. Hydrochloric and nitric acids dissolve uranium, but non-oxidizing acids other than hydrochloric acid attack the element very slowly. When finely divided, it can react with cold water. In air, uranium metal oxidizes and becomes coated with a dark layer of uranium oxide. Uranium forms a variety of alloys and compounds with the most important oxidation states being uranium(IV) and uranium(VI), and their two corresponding oxides are, respectively, uranium dioxide, UO2 and uranium trioxide, UO3. Besides the oxides, other Important uranium compounds include fluorides, chlorides, bromides, iodides, carbonates, hydrides, carbides, nitrides, phosphates, etc. At room temperatures, uranium hexafluoride, UF6, has a high vapor pressure, making it useful in the gaseous diffusion process used to separate the rare U-235 from the common U-238 isotope. Uranium hydrides, nitrides and carbides are relatively inertsemimetallic compounds that are minimally soluble in acids and have been used as stable fuel pellets in nuclear power reactor technology. Uranium exists in aqueous solutions in the +3, +4, +5, and +6 oxidation states. Oxidation state +6 as the UO22+ ion (yellow in color) is the most stable state in solution. Uranium in the +5 state as the UO2+ ion is colorless, quite unstable and disproportionates (reacts with itself) to form the +6 and +4 states. The +4 state (green) is reasonably stable in solution, but the +3 state (dark green or dark red depending on the illumination source - daylight vs fluorescent light) is unstable and easily oxidizes to +4. The +4 state in near-neutral pH solutions readily hydrolyzes to form black oxy-hydroxide precipitates.",
+    "source": "lanl"
+   }
+  ],
+  "isotopes": [
+   {
+    "text": "Uranium is weakly radioactive because all naturally occurring (or primordial) isotopes of uranium (238U, 235U and 234U) are unstable, with half-lives varying between 159,200 years and 4.5 billion years. There are 27 known isotopes of uranium ranging in atomic weights 217–219, 222–240 and 242, with half-lives of from billions of years to a few nanoseconds. Naturally occurring uranium consists of three major isotopes: 238U (99.28% abundance), 235U (0.71%), and 234U (0.0054%). (The US DOE has adopted the value of 0.711 as being their official percentage of 235U in natural uranium.) All three isotopes are radioactive, with small probabilities of undergoing spontaneous fission but preferentially decaying by alpha emission. The half-life of uranium-238 is about 4.47 billion years and that of uranium-235 is 704 million years, making them useful in dating the age of the Earth. It also suggests that half of the uranium that existed from the formation of the Earth has decayed to other radioactive elements and eventually to stable elements. Much of the internal heat of the earth is thought to be attributable to the decay of uranium and thorium radio-isotopes. Uranium-238 is an α-particle emitter (occasionally, it undergoes spontaneous fission), decaying through the \"Uranium Series\" of nuclear decay, which has 18 members, all of which eventually decay into lead-206, by a variety of different decay paths. The decay series of 235U, which is called the actinium series has 15 members, all of which eventually decay into lead-207. The constant rates of decay in these decay series make the comparison of the ratios of parent to daughter elements useful in radiometric dating. Uranium-234 is a member of the \"Uranium Series\", and it decays to lead-206 through a series of relatively short-lived isotopes. Uranium-233 is made from thorium-232 by neutron bombardment, usually in a nuclear reactor, and 233U is also fissile. Its decay series ends with thallium-205.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Earth/Planetary Science",
+   "text": "234U (with a half-life of 2.432×105 years) is a daughter product of 238U (with a half-life of 4.47×1010 years) and makes up only 0.0054 percent of the total uranium today. During the decay of the parent radionuclide 238U nucleus (first to 234Th (with a half-life of 24 days) by alpha decay, then to 234Pa (with a half-life of 6.7 h) by beta-minus, and finally to 234U by beta-minus), the energy released will damage the chemical and physical bonds holding the 234U product nuclei in a mineral. As a result, 234U may be leached more easily from water or rock samples than 238U and the isotope-amount ratio n(234U)/n(238U) will vary depending on the extent of water-rock interaction.",
+   "source": "iptei"
+  },
+  {
+   "topic": "Geochronology",
+   "text": "The three natural radioactive decay chains beginning with 238U, 235U, and 232Th each have comparable half-lives that are much longer than the radioactive isotopes that follow until the production of stable isotopes of 206Pb, 207Pb, and 208Pb, respectively. When undisturbed, the activities of daughter isotopes in each decay chain are equal to their parents and one can measure the accumulation of the stable isotopes of lead to date the time that has elapsed since a mineral became a closed system (a system that does not exchange matter with its surroundings). Rocks formed hundreds of millions to billions of years ago can be dated using this technique. If a mineral is disturbed at some point during the decay and isotopes in the decay chain are preferentially removed from the system, the equilibria in a decay sequence will be disturbed. For example, one can measure the excess of 230Th (with a half-life of 7.56×104 years) relative to the 234U parent radionuclide to date carbonates (speleothems or corals) that are less than 5×105 years old.",
+   "source": "iptei"
+  },
+  {
+   "topic": "Industry",
+   "text": "Nuclei of 235U are split when bombarded by thermal neutrons. The process is known as nuclear fission and can release tremendous amounts of energy per uranium nucleus. The nucleus that splits will release additional neutrons that, if slowed down sufficiently, can cause subsequent fission events. When properly controlled, 235U fission can be used to generate heat to drive steam turbines, which in turn produces electricity (Fig. IUPAC.92.1). If the fission process is not controlled, then a rapid and explosive release of energy will occur, similar to that of nuclear weapons. Uranium depleted in 235U by fission in nuclear reactors (and hence greatly enriched in 238U compared to “natural” uranium) is used in the manufacture of DUCRETE concrete (Fig. IUPAC.92.2). The incorporation of the large 238U nuclei makes this material an effective absorber of neutrons and gamma rays, and DUCRETE concrete is used to reduce fluxes of neutrons and high-energy photons. The alpha particles produced by the decay of 238U are effectively absorbed by the concrete and do not pose a health risk. DUCRETE is being proposed as a suitable material for the storage of radioactive waste,.  ",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "2.7 milligrams per kilogram",
+  "ocean": "3.2×10^-3 milligrams per liter",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 23989,
+   "name": "uranium",
+   "formula": "U",
+   "charge": 0,
+   "smiles": "[U]"
+  },
+  {
+   "cid": 51003827,
+   "name": "uranium(4+)",
+   "formula": "U+4",
+   "charge": 4,
+   "smiles": "[U+4]"
+  },
+  {
+   "cid": 5460754,
+   "name": "uranium(2+)",
+   "formula": "U+2",
+   "charge": 2,
+   "smiles": "[U+2]"
+  },
+  {
+   "cid": 51003828,
+   "name": "uranium(3+)",
+   "formula": "U+3",
+   "charge": 3,
+   "smiles": "[U+3]"
+  }
+ ],
+ "refs": {
+  "ciaaw": {
+   "name": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+   "url": "https://www.ciaaw.org/uranium.htm"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele092.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/92.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": null,
+ "ghs": {
+  "signal": "Danger",
+  "pictograms": [
+   {
+    "code": "GHS06",
+    "label": "Acute Toxic"
+   },
+   {
+    "code": "GHS08",
+    "label": "Health Hazard"
+   },
+   {
+    "code": "GHS09",
+    "label": "Environmental Hazard"
+   }
+  ],
+  "hazards": [
+   "H300 (100%): Fatal if swallowed",
+   "H330 (100%): Fatal if inhaled",
+   "H373 (100%): May causes damage to organs through prolonged or repeated exposure",
+   "H411 (20.6%): Toxic to aquatic life with long lasting effects",
+   "H413 (79.4%): May cause long lasting harmful effects to aquatic life"
+  ],
+  "reports": 63,
+  "notMet": null,
+  "notClassified": false,
+  "source": "European Chemicals Agency (ECHA)"
+ },
+ "ghsCid": 23989
 }

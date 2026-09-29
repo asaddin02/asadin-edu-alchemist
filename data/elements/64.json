@@ -22,5 +22,1236 @@
   "author": "Wikimedia Commons",
   "license": "CC BY-SA 3.0",
   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
- }
+ },
+ "weight": {
+  "value": "157.249(2)",
+  "kind": "standard",
+  "source": "ciaaw"
+ },
+ "natural": [
+  {
+   "A": 152,
+   "iso": "",
+   "mass": "151.919 799(8)",
+   "abundance": "0.002 04(2)"
+  },
+  {
+   "A": 154,
+   "iso": "",
+   "mass": "153.920 873(8)",
+   "abundance": "0.021 87(9)"
+  },
+  {
+   "A": 155,
+   "iso": "",
+   "mass": "154.922 630(8)",
+   "abundance": "0.148 28(60)"
+  },
+  {
+   "A": 156,
+   "iso": "",
+   "mass": "155.922 131(8)",
+   "abundance": "0.204 93(22)"
+  },
+  {
+   "A": 157,
+   "iso": "",
+   "mass": "156.923 968(8)",
+   "abundance": "0.156 57(17)"
+  },
+  {
+   "A": 158,
+   "iso": "",
+   "mass": "157.924 112(8)",
+   "abundance": "0.248 20(20)"
+  },
+  {
+   "A": 160,
+   "iso": "",
+   "mass": "159.927 062(9)",
+   "abundance": "0.218 11(28)"
+  }
+ ],
+ "naturalSource": "ciaaw",
+ "nuclides": [
+  {
+   "A": 133,
+   "iso": "",
+   "mass": "132.961288 ± 0.000537",
+   "half": "10 ms",
+   "seconds": 0.01,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β+p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 134,
+   "iso": "",
+   "mass": "133.955416 ± 0.000429",
+   "half": "400 ms",
+   "seconds": 0.4,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β+p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 135,
+   "iso": "",
+   "mass": "134.952496 ± 0.000429",
+   "half": "1.1 s ± 0.2",
+   "seconds": 1.1,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "≈",
+     "pct": 2
+    }
+   ],
+   "year": 1996,
+   "est": true
+  },
+  {
+   "A": 136,
+   "iso": "",
+   "mass": "135.947300 ± 0.00032",
+   "half": "1 s >200ns",
+   "seconds": 1,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β+p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2000,
+   "est": true
+  },
+  {
+   "A": 137,
+   "iso": "",
+   "mass": "136.945020 ± 0.00032",
+   "half": "2.2 s ± 0.2",
+   "seconds": 2.2,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": null
+    }
+   ],
+   "year": 1999,
+   "est": true
+  },
+  {
+   "A": 138,
+   "iso": "",
+   "mass": "137.940247 ± 0.000215",
+   "half": "4.7 s ± 0.9",
+   "seconds": 4.7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1985,
+   "est": true
+  },
+  {
+   "A": 138,
+   "iso": "m",
+   "mass": "137.940247 ± 0.000215",
+   "half": "6.2 us ± 0.2",
+   "seconds": 0.0000062,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1997,
+   "est": true
+  },
+  {
+   "A": 139,
+   "iso": "",
+   "mass": "138.938130 ± 0.00021",
+   "half": "5.7 s ± 0.3",
+   "seconds": 5.7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": null
+    }
+   ],
+   "year": 1983,
+   "est": true
+  },
+  {
+   "A": 139,
+   "iso": "m",
+   "mass": "138.938130 ± 0.00021",
+   "half": "4.8 s ± 0.9",
+   "seconds": 4.8,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": null
+    }
+   ],
+   "year": 1983,
+   "est": true
+  },
+  {
+   "A": 140,
+   "iso": "",
+   "mass": "139.933674000 ± 0.00003",
+   "half": "15.8 s ± 0.4",
+   "seconds": 15.8,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "e+",
+     "op": "=",
+     "pct": 67
+    },
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": 33
+    }
+   ],
+   "year": 1985,
+   "est": false
+  },
+  {
+   "A": 141,
+   "iso": "",
+   "mass": "140.932126000 ± 0.000021213",
+   "half": "14 s ± 4",
+   "seconds": 14,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 0.03
+    }
+   ],
+   "year": 1986,
+   "est": false
+  },
+  {
+   "A": 141,
+   "iso": "m",
+   "mass": "140.932126000 ± 0.000021213",
+   "half": "24.5 s ± 0.5",
+   "seconds": 24.5,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 89
+    },
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 11
+    }
+   ],
+   "year": 1986,
+   "est": false
+  },
+  {
+   "A": 142,
+   "iso": "",
+   "mass": "141.928116000 ± 0.00003",
+   "half": "70.2 s ± 0.6",
+   "seconds": 70.2,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": 52
+    },
+    {
+     "mode": "e+",
+     "op": "=",
+     "pct": 48
+    }
+   ],
+   "year": 1986,
+   "est": false
+  },
+  {
+   "A": 143,
+   "iso": "",
+   "mass": "142.926750678 ± 0.000215032",
+   "half": "39 s ± 2",
+   "seconds": 39,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": null
+    },
+    {
+     "mode": "β+α",
+     "op": "=",
+     "pct": null
+    }
+   ],
+   "year": 1975,
+   "est": false
+  },
+  {
+   "A": 143,
+   "iso": "m",
+   "mass": "142.926750678 ± 0.000215032",
+   "half": "110.0 s ± 1.4",
+   "seconds": 110,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": null
+    },
+    {
+     "mode": "β+α",
+     "op": "=",
+     "pct": null
+    }
+   ],
+   "year": 1973,
+   "est": false
+  },
+  {
+   "A": 144,
+   "iso": "",
+   "mass": "143.922963000 ± 0.00003",
+   "half": "4.47 m ± 0.06",
+   "seconds": 268.2,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1968,
+   "est": false
+  },
+  {
+   "A": 144,
+   "iso": "m",
+   "mass": "143.922963000 ± 0.00003",
+   "half": "145 ns ± 30",
+   "seconds": 1.4500000000000001e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1978,
+   "est": false
+  },
+  {
+   "A": 145,
+   "iso": "",
+   "mass": "144.921710051 ± 0.000021165",
+   "half": "23.0 m ± 0.4",
+   "seconds": 1380,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1959,
+   "est": false
+  },
+  {
+   "A": 145,
+   "iso": "m",
+   "mass": "144.921710051 ± 0.000021165",
+   "half": "85 s ± 3",
+   "seconds": 85,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 94.3
+    },
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 5.7
+    }
+   ],
+   "year": 1969,
+   "est": false
+  },
+  {
+   "A": 146,
+   "iso": "",
+   "mass": "145.918318513 ± 0.000004376",
+   "half": "48.27 d ± 0.09",
+   "seconds": 4170528.0000000005,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1957,
+   "est": false
+  },
+  {
+   "A": 147,
+   "iso": "",
+   "mass": "146.919101014 ± 0.000002025",
+   "half": "38.06 h ± 0.12",
+   "seconds": 137016,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1957,
+   "est": false
+  },
+  {
+   "A": 147,
+   "iso": "m",
+   "mass": "146.919101014 ± 0.000002025",
+   "half": "510 ns ± 20",
+   "seconds": 5.1e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1982,
+   "est": false
+  },
+  {
+   "A": 148,
+   "iso": "",
+   "mass": "147.918121414 ± 0.000001566",
+   "half": "71.3 y ± 1.0",
+   "seconds": 2250008829.504,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "2β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1953,
+   "est": false
+  },
+  {
+   "A": 149,
+   "iso": "",
+   "mass": "148.919347666 ± 0.000003553",
+   "half": "9.28 d ± 0.10",
+   "seconds": 801792,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1951,
+   "est": false
+  },
+  {
+   "A": 150,
+   "iso": "",
+   "mass": "149.918663949 ± 0.0000065",
+   "half": "1.79 My ± 0.08",
+   "seconds": 56486897683200,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "2β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1953,
+   "est": false
+  },
+  {
+   "A": 151,
+   "iso": "",
+   "mass": "150.920354922 ± 0.000003212",
+   "half": "123.9 d ± 1.0",
+   "seconds": 10704960,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1950,
+   "est": false
+  },
+  {
+   "A": 152,
+   "iso": "",
+   "mass": "151.919798414 ± 0.000001081",
+   "half": "108 Ty ± 8",
+   "seconds": 3.40814801664e+21,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "2β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1938,
+   "est": false
+  },
+  {
+   "A": 153,
+   "iso": "",
+   "mass": "152.921756945 ± 0.000001075",
+   "half": "240.6 d ± 0.7",
+   "seconds": 20787840,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1947,
+   "est": false
+  },
+  {
+   "A": 153,
+   "iso": "m",
+   "mass": "152.921756945 ± 0.000001075",
+   "half": "3.5 us ± 0.4",
+   "seconds": 0.0000035,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1979,
+   "est": false
+  },
+  {
+   "A": 153,
+   "iso": "n",
+   "mass": "152.921756945 ± 0.000001075",
+   "half": "76.0 us ± 1.4",
+   "seconds": 0.00007599999999999999,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1967,
+   "est": false
+  },
+  {
+   "A": 154,
+   "iso": "",
+   "mass": "153.920872974 ± 0.000001066",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1938,
+   "est": false
+  },
+  {
+   "A": 155,
+   "iso": "",
+   "mass": "154.922629356 ± 0.000001055",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1933,
+   "est": false
+  },
+  {
+   "A": 155,
+   "iso": "m",
+   "mass": "154.922629356 ± 0.000001055",
+   "half": "31.97 ms ± 0.27",
+   "seconds": 0.03197,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1967,
+   "est": false
+  },
+  {
+   "A": 156,
+   "iso": "",
+   "mass": "155.922130120 ± 0.000001054",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1933,
+   "est": false
+  },
+  {
+   "A": 156,
+   "iso": "m",
+   "mass": "155.922130120 ± 0.000001054",
+   "half": "1.3 us ± 0.1",
+   "seconds": 0.0000013,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1969,
+   "est": false
+  },
+  {
+   "A": 157,
+   "iso": "",
+   "mass": "156.923967424 ± 0.000001048",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1933,
+   "est": false
+  },
+  {
+   "A": 157,
+   "iso": "m",
+   "mass": "156.923967424 ± 0.000001048",
+   "half": "460 ns ± 40",
+   "seconds": 4.6000000000000004e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1964,
+   "est": false
+  },
+  {
+   "A": 157,
+   "iso": "n",
+   "mass": "156.923967424 ± 0.000001048",
+   "half": "18.5 us ± 2.3",
+   "seconds": 0.0000185,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1961,
+   "est": false
+  },
+  {
+   "A": 158,
+   "iso": "",
+   "mass": "157.924111200 ± 0.000001048",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1933,
+   "est": false
+  },
+  {
+   "A": 159,
+   "iso": "",
+   "mass": "158.926395822 ± 0.000001051",
+   "half": "18.479 h ± 0.004",
+   "seconds": 66524.4,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1949,
+   "est": false
+  },
+  {
+   "A": 160,
+   "iso": "",
+   "mass": "159.927061202 ± 0.000001206",
+   "half": "Stable >31Ey",
+   "seconds": null,
+   "stable": true,
+   "decay": [
+    {
+     "mode": "2β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1933,
+   "est": false
+  },
+  {
+   "A": 161,
+   "iso": "",
+   "mass": "160.929676267 ± 0.000001614",
+   "half": "3.646 m ± 0.003",
+   "seconds": 218.76,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1949,
+   "est": false
+  },
+  {
+   "A": 162,
+   "iso": "",
+   "mass": "161.930991812 ± 0.000004254",
+   "half": "8.4 m ± 0.2",
+   "seconds": 504,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1967,
+   "est": false
+  },
+  {
+   "A": 163,
+   "iso": "",
+   "mass": "162.934096640 ± 0.000000855",
+   "half": "68 s ± 3",
+   "seconds": 68,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1982,
+   "est": false
+  },
+  {
+   "A": 163,
+   "iso": "m",
+   "mass": "162.934096640 ± 0.000000855",
+   "half": "23.5 s ± 1.0",
+   "seconds": 23.5,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": null
+    },
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2014,
+   "est": false
+  },
+  {
+   "A": 164,
+   "iso": "",
+   "mass": "163.935916193 ± 0.000001073",
+   "half": "45 s ± 3",
+   "seconds": 45,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1988,
+   "est": false
+  },
+  {
+   "A": 164,
+   "iso": "m",
+   "mass": "163.935916193 ± 0.000001073",
+   "half": "589 ns ± 18",
+   "seconds": 5.89e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2017,
+   "est": false
+  },
+  {
+   "A": 165,
+   "iso": "",
+   "mass": "164.939317080 ± 0.0000014",
+   "half": "11.6 s ± 1.0",
+   "seconds": 11.6,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1998,
+   "est": false
+  },
+  {
+   "A": 166,
+   "iso": "",
+   "mass": "165.941630413 ± 0.0000017",
+   "half": "5.1 s ± 0.8",
+   "seconds": 5.1,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2005,
+   "est": false
+  },
+  {
+   "A": 166,
+   "iso": "m",
+   "mass": "165.941630413 ± 0.0000017",
+   "half": "950 ns ± 60",
+   "seconds": 9.5e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2014,
+   "est": false
+  },
+  {
+   "A": 167,
+   "iso": "",
+   "mass": "166.945490012 ± 0.000005596",
+   "half": "4.2 s ± 0.3",
+   "seconds": 4.2,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2012,
+   "est": false
+  },
+  {
+   "A": 168,
+   "iso": "",
+   "mass": "167.948309 ± 0.000322",
+   "half": "3.03 s ± 0.16",
+   "seconds": 3.03,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1985,
+   "est": true
+  },
+  {
+   "A": 169,
+   "iso": "",
+   "mass": "168.952882 ± 0.000429",
+   "half": "750 ms ± 210",
+   "seconds": 0.75,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2012,
+   "est": true
+  },
+  {
+   "A": 170,
+   "iso": "",
+   "mass": "169.956146 ± 0.000537",
+   "half": "420 ms ± 130",
+   "seconds": 0.42,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2012,
+   "est": true
+  },
+  {
+   "A": 171,
+   "iso": "",
+   "mass": "170.961127 ± 0.000537",
+   "half": "300 ms >550ns",
+   "seconds": 0.3,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2018,
+   "est": true
+  },
+  {
+   "A": 172,
+   "iso": "",
+   "mass": "171.964605 ± 0.000322",
+   "half": "160 ms >550ns",
+   "seconds": 0.16,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2018,
+   "est": true
+  }
+ ],
+ "stableCount": 5,
+ "texts": {
+  "history": [
+   {
+    "text": "The name derives from the mineral gadolinite, in which it was found, and that had been named for the Finnish rare earth chemist Johan Gadolin. Gadolinium was discovered by the Swiss chemist Jean-Charles Galissard de Marignac in 1886, who produced a white oxide in a samarskite mineral. In 1886, the French chemist Paul-Emile Lecoq de Boisbaudran gave the name gadolinium.",
+    "source": "ciaaw"
+   },
+   {
+    "text": "Spectroscopic evidence for the existence of gadolinium was first observed by the Swiss chemist Jean Charles Galissard de Marignac in the minerals didymia and gadolinite ((Ce, La, Nd, Y)2FeBe2Si2O10) in 1880. Today, gadolinium is primarily obtained from the minerals monazite ((Ce, La, Th, Nd, Y)PO4) and bastnasite ((Ce,La,Y)CO3F).",
+    "source": "jlab"
+   },
+   {
+    "text": "From gadolinite, a mineral named for Gadolin, a Finnish chemist. The rare earth metal is obtained from the mineral gadolinite. Gadolinia, the oxide of gadolinium, was separated by Marignac in 1880 and Lecoq de Boisbaudran independently isolated it from Mosander's yttria in 1886.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Gadolinium has the greatest ability to capture thermal neutrons of all known elements and can be used as control rods for nuclear reactors. Unfortunately, the two isotopes best suited for neutron capture, gadolinium-155 and gadolinium-157, are present in gadolinium in small amounts. As a result, gadolinium control rods quickly lose their effectiveness. Gadolinium can be combined with yttrium to form garnets that have applications in microwave technology. Gadolinium can be alloyed with iron, chromium and other metals to improve their workability and their resistance to high temperatures and oxidation. Gadolinium compounds are used to make phosphors for color televisions.",
+    "source": "jlab"
+   },
+   {
+    "text": "Gadolinium yttrium garnets are used in microwave applications and gadolinium compounds are used as phosphors in color television sets. The metal has unusual superconductive properties. As little as 1 percent gadolinium improves the workability and resistance of iron, chromium, and related alloys to high temperatures and oxidation. Gadolinium ethyl sulfate has extremely low noise characteristics and may find use in duplicating the performance of amplifiers, such as the maser. The metal is ferromagnetic. Gadolinium is unique for its high magnetic movement and for its special Curie temperature (above which ferromagnetism vanishes) lying just at room temperature, meaning it could be used as a magnetic component that can sense hot and cold.",
+    "source": "lanl"
+   }
+  ],
+  "sources": [
+   {
+    "text": "Gadolinium is found in several other minerals, including monazite and bastnasite, both of which are commercially important. With the development of ion-exchange and solvent extraction techniques, the availability and prices of gadolinium and the other rare-earth metals have greatly improved. The metal can be prepared by the reduction of the anhydrous fluoride with metallic calcium.",
+    "source": "lanl"
+   }
+  ],
+  "description": [
+   {
+    "text": "As with other related rare-earth metals, gadolinium is silvery white, has a metallic luster, and is malleable and ductile. At room temperature, gadolinium crystallizes in the hexagonal, close-packed alpha form. Upon heating to 1235°C, alpha gadolinium transforms into the beta form, which has a body-centered cubic structure. The metal is relatively stable in dry air, but tarnishes in moist air and forms a loosely adhering oxide film which falls off and exposes more surface to oxidation. The metal reacts slowly with water and is soluble in dilute acid. Gadolinium has the highest thermal neutron capture cross-section of any known element (49,000 barns).",
+    "source": "lanl"
+   }
+  ],
+  "isotopes": [
+   {
+    "text": "Natural gadolinium is a mixture of seven isotopes, but 17 isotopes of gadolinium are now recognized. Although two of these, 155Gd and 157Gd, have excellent capture characteristics, they are only present naturally in low concentrations. As a result, gadolinium has a very fast burnout rate and has limited use as a nuclear control rod material.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Earth/Planetary Science",
+   "text": "The lunar surface is continuously exposed to cosmic radiation, and the interaction between planetary material and cosmic rays produces secondary neutrons. The neutron flux can be investigated using the large neutron capture cross sections of 149Sm, 155Gd, and 157Gd. For example, 157Gd will absorb neutrons and be converted to 158Gd. On a cross plot of n(158Gd)/n(160Gd) isotope-amount ratio and n(157Gd)/n(160Gd) isotope-amount ratio (Fig. IUPAC.64.1), values will move from the lower right corner to the upper left corner of the cross plot with increasing time or increasing flux. ",
+   "source": "iptei"
+  },
+  {
+   "topic": "Medicine",
+   "text": "The addition of 157Gd to Neutron Capture Therapy (NCT) has been shown to be more effective at targeting tumors than the previous method of using only 10B for the treatment (Fig. IUPAC.64.2). 153Gd (with a half-life of 0.66 years) is used in the production of photon line sources (an optical source that emits one or more spectrally narrow lines as opposed to a continuous spectrum) to manufacture 153Gd line sources. 153Gd is also used as a photon source of the dual-photon absorptiometry (DPA) technique that is used to measure bone mineral content (BMC). Studies for this technique have been conducted in horses and humans,. ",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "6.2 milligrams per kilogram",
+  "ocean": "7×10^-7 milligrams per liter",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 23982,
+   "name": "gadolinium",
+   "formula": "Gd",
+   "charge": 0,
+   "smiles": "[Gd]"
+  },
+  {
+   "cid": 168050,
+   "name": "gadolinium(3+)",
+   "formula": "Gd+3",
+   "charge": 3,
+   "smiles": "[Gd+3]"
+  },
+  {
+   "cid": 11966234,
+   "name": "gadolinium(2+)",
+   "formula": "Gd+2",
+   "charge": 2,
+   "smiles": "[Gd+2]"
+  }
+ ],
+ "refs": {
+  "ciaaw": {
+   "name": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+   "url": "https://www.ciaaw.org/gadolinium.htm"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele064.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/64.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": null,
+ "ghs": {
+  "signal": "Danger",
+  "pictograms": [
+   {
+    "code": "GHS02",
+    "label": "Flammable"
+   }
+  ],
+  "hazards": [
+   "H228 (15.9%): Flammable solid",
+   "H261 (66.7%): In contact with water releases flammable gas"
+  ],
+  "reports": 63,
+  "notMet": 17.5,
+  "notClassified": false,
+  "source": "European Chemicals Agency (ECHA)"
+ },
+ "ghsCid": 23982
 }

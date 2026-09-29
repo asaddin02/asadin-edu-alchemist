@@ -22,5 +22,970 @@
   "author": "Alchemist-hp (talk) (www.pse-mendelejew.de)",
   "license": "FAL",
   "licenseUrl": "http://artlibre.org/licence/lal/en"
- }
+ },
+ "weight": {
+  "value": "54.938 043(2)",
+  "kind": "standard",
+  "source": "ciaaw"
+ },
+ "natural": [
+  {
+   "A": 55,
+   "iso": "",
+   "mass": "54.938 043(2)",
+   "abundance": "1"
+  }
+ ],
+ "naturalSource": "ciaaw",
+ "nuclides": [
+  {
+   "A": 43,
+   "iso": "",
+   "mass": "43.018647 ± 0.000429",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 44,
+   "iso": "",
+   "mass": "44.008009 ± 0.000322",
+   "half": "Not-specified <105ns",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 45,
+   "iso": "",
+   "mass": "44.994654 ± 0.000322",
+   "half": "Not-specified <70ns",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 46,
+   "iso": "",
+   "mass": "45.986669000 ± 0.000093",
+   "half": "36.2 ms ± 0.4",
+   "seconds": 0.0362,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 57
+    },
+    {
+     "mode": "β+2p",
+     "op": "≈",
+     "pct": 18
+    },
+    {
+     "mode": "β+α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1987,
+   "est": false
+  },
+  {
+   "A": 46,
+   "iso": "m",
+   "mass": "45.986669000 ± 0.000093",
+   "half": "1 ms",
+   "seconds": 0.001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 47,
+   "iso": "",
+   "mass": "46.975774000 ± 0.000034",
+   "half": "88.0 ms ± 1.3",
+   "seconds": 0.088,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "<",
+     "pct": 1.7
+    }
+   ],
+   "year": 1987,
+   "est": false
+  },
+  {
+   "A": 48,
+   "iso": "",
+   "mass": "47.968548760 ± 0.000007191",
+   "half": "158.1 ms ± 2.2",
+   "seconds": 0.1581,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 0.28
+    }
+   ],
+   "year": 1987,
+   "est": false
+  },
+  {
+   "A": 49,
+   "iso": "",
+   "mass": "48.959613350 ± 0.000002377",
+   "half": "382 ms ± 7",
+   "seconds": 0.382,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1970,
+   "est": false
+  },
+  {
+   "A": 50,
+   "iso": "",
+   "mass": "49.954238157 ± 0.000000123",
+   "half": "283.21 ms ± 0.07",
+   "seconds": 0.28320999999999996,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1952,
+   "est": false
+  },
+  {
+   "A": 50,
+   "iso": "m",
+   "mass": "49.954238157 ± 0.000000123",
+   "half": "1.75 m ± 0.03",
+   "seconds": 105,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1962,
+   "est": false
+  },
+  {
+   "A": 51,
+   "iso": "",
+   "mass": "50.948208770 ± 0.000000326",
+   "half": "45.81 m ± 0.21",
+   "seconds": 2748.6000000000004,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1938,
+   "est": false
+  },
+  {
+   "A": 52,
+   "iso": "",
+   "mass": "51.945559090 ± 0.000000138",
+   "half": "5.591 d ± 0.003",
+   "seconds": 483062.4,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1938,
+   "est": false
+  },
+  {
+   "A": 52,
+   "iso": "m",
+   "mass": "51.945559090 ± 0.000000138",
+   "half": "21.1 m ± 0.2",
+   "seconds": 1266,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 98.22
+    },
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 1.78
+    }
+   ],
+   "year": 1937,
+   "est": false
+  },
+  {
+   "A": 53,
+   "iso": "",
+   "mass": "52.941287497 ± 0.000000371",
+   "half": "3.7 My ± 0.4",
+   "seconds": 116760626496000,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1955,
+   "est": false
+  },
+  {
+   "A": 54,
+   "iso": "",
+   "mass": "53.940355772 ± 0.00000108",
+   "half": "312.081 d ± 0.032",
+   "seconds": 26963798.400000002,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1938,
+   "est": false
+  },
+  {
+   "A": 55,
+   "iso": "",
+   "mass": "54.938043040 ± 0.000000279",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1923,
+   "est": false
+  },
+  {
+   "A": 56,
+   "iso": "",
+   "mass": "55.938902816 ± 0.000000314",
+   "half": "2.5789 h ± 0.0001",
+   "seconds": 9284.039999999999,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1934,
+   "est": false
+  },
+  {
+   "A": 57,
+   "iso": "",
+   "mass": "56.938285944 ± 0.000001615",
+   "half": "85.4 s ± 1.8",
+   "seconds": 85.4,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1954,
+   "est": false
+  },
+  {
+   "A": 58,
+   "iso": "",
+   "mass": "57.940066643 ± 0.0000029",
+   "half": "3.0 s ± 0.1",
+   "seconds": 3,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1961,
+   "est": false
+  },
+  {
+   "A": 58,
+   "iso": "m",
+   "mass": "57.940066643 ± 0.0000029",
+   "half": "65.4 s ± 0.5",
+   "seconds": 65.4,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1961,
+   "est": false
+  },
+  {
+   "A": 59,
+   "iso": "",
+   "mass": "58.940391111 ± 0.0000025",
+   "half": "4.59 s ± 0.05",
+   "seconds": 4.59,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1976,
+   "est": false
+  },
+  {
+   "A": 60,
+   "iso": "",
+   "mass": "59.943136574 ± 0.0000025",
+   "half": "280 ms ± 20",
+   "seconds": 0.28,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1978,
+   "est": false
+  },
+  {
+   "A": 60,
+   "iso": "m",
+   "mass": "59.943136574 ± 0.0000025",
+   "half": "1.77 s ± 0.02",
+   "seconds": 1.77,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 88.5
+    },
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 11.5
+    }
+   ],
+   "year": 1978,
+   "est": false
+  },
+  {
+   "A": 61,
+   "iso": "",
+   "mass": "60.944452541 ± 0.0000025",
+   "half": "709 ms ± 8",
+   "seconds": 0.709,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1980,
+   "est": false
+  },
+  {
+   "A": 62,
+   "iso": "",
+   "mass": "61.947907384 ± 0.000007023",
+   "half": "92 ms ± 13",
+   "seconds": 0.092,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1983,
+   "est": false
+  },
+  {
+   "A": 62,
+   "iso": "m",
+   "mass": "61.947907384 ± 0.000007023",
+   "half": "671 ms ± 5",
+   "seconds": 0.671,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1983,
+   "est": false
+  },
+  {
+   "A": 63,
+   "iso": "",
+   "mass": "62.949664672 ± 0.000004",
+   "half": "275 ms ± 4",
+   "seconds": 0.275,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": null
+    }
+   ],
+   "year": 1985,
+   "est": false
+  },
+  {
+   "A": 64,
+   "iso": "",
+   "mass": "63.953849369 ± 0.0000038",
+   "half": "88.8 ms ± 2.4",
+   "seconds": 0.0888,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 2.7
+    }
+   ],
+   "year": 1985,
+   "est": false
+  },
+  {
+   "A": 64,
+   "iso": "m",
+   "mass": "63.953849369 ± 0.0000038",
+   "half": "439 us ± 31",
+   "seconds": 0.000439,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1998,
+   "est": false
+  },
+  {
+   "A": 65,
+   "iso": "",
+   "mass": "64.956019749 ± 0.000004",
+   "half": "91.9 ms ± 0.7",
+   "seconds": 0.09190000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 7.9
+    }
+   ],
+   "year": 1985,
+   "est": false
+  },
+  {
+   "A": 66,
+   "iso": "",
+   "mass": "65.960546833 ± 0.000012",
+   "half": "63.8 ms ± 0.9",
+   "seconds": 0.0638,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 7.4
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1992,
+   "est": false
+  },
+  {
+   "A": 66,
+   "iso": "m",
+   "mass": "65.960546833 ± 0.000012",
+   "half": "780 us ± 40",
+   "seconds": 0.00078,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2005,
+   "est": false
+  },
+  {
+   "A": 67,
+   "iso": "",
+   "mass": "66.963950 ± 0.000215",
+   "half": "46.7 ms ± 2.3",
+   "seconds": 0.046700000000000005,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 10
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1997,
+   "est": true
+  },
+  {
+   "A": 68,
+   "iso": "",
+   "mass": "67.968953 ± 0.000322",
+   "half": "33.7 ms ± 1.5",
+   "seconds": 0.0337,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 18
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1995,
+   "est": true
+  },
+  {
+   "A": 69,
+   "iso": "",
+   "mass": "68.972775 ± 0.000429",
+   "half": "22.1 ms ± 1.6",
+   "seconds": 0.0221,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 40
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1995,
+   "est": true
+  },
+  {
+   "A": 70,
+   "iso": "",
+   "mass": "69.978046 ± 0.000537",
+   "half": "19.9 ms ± 1.7",
+   "seconds": 0.019899999999999998,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2009,
+   "est": true
+  },
+  {
+   "A": 71,
+   "iso": "",
+   "mass": "70.982158 ± 0.000537",
+   "half": "16 ms >400ns",
+   "seconds": 0.016,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2010,
+   "est": true
+  },
+  {
+   "A": 72,
+   "iso": "",
+   "mass": "71.988009 ± 0.000644",
+   "half": "12 ms >620ns",
+   "seconds": 0.012,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2013,
+   "est": true
+  },
+  {
+   "A": 73,
+   "iso": "",
+   "mass": "72.992807 ± 0.000644",
+   "half": "12 ms >410ns",
+   "seconds": 0.012,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2017,
+   "est": true
+  }
+ ],
+ "stableCount": 1,
+ "texts": {
+  "history": [
+   {
+    "text": "The name derives from the Latin magnes for \"magnet\" since pyrolusite (MnO2) has magnetic properties. It was discovered by the Swedish pharmacist and chemist Carl-Wilhelm Scheele in 1774. In the same year, the Swedish chemist Johan Gottlieb Gahn first isolated the metal.",
+    "source": "ciaaw"
+   },
+   {
+    "text": "Proposed to be an element by Carl Wilhelm Scheele in 1774, manganese was discovered by Johan Gottlieb Gahn, a Swedish chemist, by heating the mineral pyrolusite (MnO2) in the presence of charcoal later that year. Today, most manganese is still obtained from pyrolusite, although it is usually burned in a furnace with powdered aluminum or is treated with sulfuric acid (H2SO4) to form manganese sulfate (MnSO4), which is then electrolyzed.",
+    "source": "jlab"
+   },
+   {
+    "text": "From the Latin word magnes, magnet, from magnetic properties of pyrolusite. Recognized by Carl Wilhelm Scheele, Torbern Olof Bergman, and others as an element and isolated by Gahn in 1774 by reduction of the dioxide with carbon.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Nearly 90% of all of the manganese produced each year is used in the production of steel. Manganese is added to molten steel to remove oxygen and sulfur and is alloyed with steel to make it easier to form and work with and to increase steel's strength and resistance to impact. Railroad tracks, for example, are made with steel that contains as much as 1.2% manganese. Manganese is also used to give glass an amethyst color and is responsible for the color of amethyst gemstones. Manganese dioxide (MnO2), the most common compound of manganese, makes up about 0.14% of the Earth's crust. It is used in dry cell batteries to prevent the formation of hydrogen, to remove the green color in glass that is caused by the presence of iron contaminants, and as a drying agent in black paints.",
+    "source": "jlab"
+   },
+   {
+    "text": "The dioxide (pyrolusite) is used as a depolarizer in dry cells and is used to \"decolorize\" glass that is colored green by impurities of iron. Manganese by itself colors glass an amethyst color and is responsible for the color of true amethyst. The dioxide is also used in the preparation of oxygen and chlorine and in drying black paints. The permanganate is a powerful oxidizing agent and is used in quantitative analysis and in medicine. Manganese is widely distributed throughout the animal kingdom. It is an important trace element and may be essential for utilization of vitamin B1.",
+    "source": "lanl"
+   }
+  ],
+  "sources": [
+   {
+    "text": "Manganese minerals are widely distributed, with oxides, silicates, and carbonates being the most common. Large quantities of manganese nodules are found on the ocean floor and may become a source of manganese. These nodules contain about 24% manganese, together with many other elements in lesser abundance. Most manganese today is obtained from ores found in Russia, Brazil, Australia, South Africa, Gabon, and India. Pyrolusite and rhodochrosite are among the most common manganese minerals. The metal is obtained by reduction of the oxide with sodium, magnesium, aluminum, or by electrolysis.",
+    "source": "lanl"
+   }
+  ],
+  "description": [
+   {
+    "text": "It is gray-white, resembling iron, but is harder and very brittle. The metal is reactive chemically and decomposes slowly in cold water. Manganese is used to form many important alloys. Manganese improves rolling and forging qualities in steel, along with adding strength, stiffness, wear resistance, hardness. With aluminum and antimony, and especially with small amounts of copper, it forms highly ferromagnetic alloys. Manganese metal is ferromagnetic only after special treatment. The pure metal exists in four allotropic forms. The alpha form is stable at ordinary temperature; gamma manganese, which changes to alpha at ordinary temperatures, is said to be flexible, soft, easily cut, and capable of being bent.",
+    "source": "lanl"
+   }
+  ],
+  "handling": [
+   {
+    "text": "Exposure to manganese dusts, fume, and compounds should not exceed the ceiling value of 5 mg/m3 for even short periods because of the element's toxicity level.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Earth/Planetary Science",
+   "text": "Radioactive 54Mn (half-life of 312 days) has been used as a tracer to study migration of heavy metals in effluents (flowing out) from mining waste,.",
+   "source": "iptei"
+  },
+  {
+   "topic": "Geochronology",
+   "text": "The radioactive isotope 53Mn is formed by the interaction of protons, produced by cosmic rays, on iron in rocks. The accumulation of 53Mn, having a half-life of 3.7×106 years, at the Earth’s surface enables determination of exposure ages of landforms to cosmic rays and quantification of erosion rates. For example, Schaefer et al. measured 13 samples from nine dolerite (igneous rock containing plagioclase, pyroxene, and olivine) surfaces in the Dry Valleys, Antarctica. They found that the terrestrial 53Mn concentrations correlate well with cosmic-ray-produced 3He and 21Ne concentrations in the same samples (Fig. IUPAC.25.1), which suggests that 53Mn is produced continuously in place and retained over millions of years without loss. Their results suggest that 53Mn concentrations in rocks can be used to monitor Earth-surface processes on time scales exceeding 10×106 years. ",
+   "source": "iptei"
+  },
+  {
+   "topic": "Medicine",
+   "text": "51Mn, 52Mn and 52mMn (with half-lives of 46 min, 5.6 days, and 21 min, respectively) are radioactive isotopes that emit positrons that are used in positron emission tomography (PET) imaging,. The m in the superscript of 52mMn indicates a metastable state of the isotope.",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "9.50×10^2 milligrams per kilogram",
+  "ocean": "2×10^-4 milligrams per liter",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 23930,
+   "name": "manganese",
+   "formula": "Mn",
+   "charge": 0,
+   "smiles": "[Mn]"
+  },
+  {
+   "cid": 27854,
+   "name": "manganese(2+)",
+   "formula": "Mn+2",
+   "charge": 2,
+   "smiles": "[Mn+2]"
+  },
+  {
+   "cid": 105130,
+   "name": "manganese(3+)",
+   "formula": "Mn+3",
+   "charge": 3,
+   "smiles": "[Mn+3]"
+  }
+ ],
+ "refs": {
+  "ciaaw": {
+   "name": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+   "url": "https://www.ciaaw.org/manganese.htm"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele025.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/25.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": null,
+ "ghs": {
+  "signal": "Danger",
+  "pictograms": [
+   {
+    "code": "GHS02",
+    "label": "Flammable"
+   },
+   {
+    "code": "GHS07",
+    "label": "Irritant"
+   },
+   {
+    "code": "GHS09",
+    "label": "Environmental Hazard"
+   }
+  ],
+  "hazards": [
+   "H228 (11.6%): Flammable solid",
+   "H319 (14.8%): Causes serious eye irritation",
+   "H411 (10.9%): Toxic to aquatic life with long lasting effects",
+   "H412 (10.8%): Harmful to aquatic life with long lasting effects"
+  ],
+  "reports": 3101,
+  "notMet": 46.1,
+  "notClassified": false,
+  "source": "European Chemicals Agency (ECHA)"
+ },
+ "ghsCid": 23930
 }

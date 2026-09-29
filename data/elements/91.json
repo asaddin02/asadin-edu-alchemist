@@ -22,5 +22,832 @@
   "author": "ENERGY.GOV",
   "license": "Public domain",
   "licenseUrl": ""
- }
+ },
+ "weight": {
+  "value": "231.035 88(1)",
+  "kind": "standard",
+  "source": "ciaaw"
+ },
+ "natural": [
+  {
+   "A": 231,
+   "iso": "",
+   "mass": "231.035 88(1)",
+   "abundance": "1"
+  }
+ ],
+ "naturalSource": "ciaaw",
+ "nuclides": [
+  {
+   "A": 211,
+   "iso": "",
+   "mass": "211.023674036 ± 0.000074581",
+   "half": "6 ms ± 3",
+   "seconds": 0.006,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2006,
+   "est": false
+  },
+  {
+   "A": 212,
+   "iso": "",
+   "mass": "212.023184819 ± 0.000094047",
+   "half": "5.8 ms ± 1.9",
+   "seconds": 0.0058,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1997,
+   "est": false
+  },
+  {
+   "A": 213,
+   "iso": "",
+   "mass": "213.021099644 ± 0.000061374",
+   "half": "7.4 ms ± 2.4",
+   "seconds": 0.0074,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1995,
+   "est": false
+  },
+  {
+   "A": 214,
+   "iso": "",
+   "mass": "214.020891055 ± 0.00008718",
+   "half": "17 ms ± 3",
+   "seconds": 0.017,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    }
+   ],
+   "year": 1995,
+   "est": false
+  },
+  {
+   "A": 215,
+   "iso": "",
+   "mass": "215.019113955 ± 0.000088513",
+   "half": "14 ms ± 2",
+   "seconds": 0.014,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1979,
+   "est": false
+  },
+  {
+   "A": 216,
+   "iso": "",
+   "mass": "216.019134633 ± 0.000026459",
+   "half": "105 ms ± 12",
+   "seconds": 0.105,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1972,
+   "est": false
+  },
+  {
+   "A": 217,
+   "iso": "",
+   "mass": "217.018309024 ± 0.000013417",
+   "half": "3.8 ms ± 0.2",
+   "seconds": 0.0038,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1968,
+   "est": false
+  },
+  {
+   "A": 217,
+   "iso": "m",
+   "mass": "217.018309024 ± 0.000013417",
+   "half": "1.08 ms ± 0.03",
+   "seconds": 0.00108,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 73
+    },
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1979,
+   "est": false
+  },
+  {
+   "A": 218,
+   "iso": "",
+   "mass": "218.020021133 ± 0.000019158",
+   "half": "108 us ± 5",
+   "seconds": 0.000108,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1979,
+   "est": false
+  },
+  {
+   "A": 218,
+   "iso": "m",
+   "mass": "218.020021133 ± 0.000019158",
+   "half": "150 us ± 50",
+   "seconds": 0.00015,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1979,
+   "est": false
+  },
+  {
+   "A": 219,
+   "iso": "",
+   "mass": "219.019949909 ± 0.000074831",
+   "half": "56 ns ± 9",
+   "seconds": 5.6000000000000005e-8,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2005,
+   "est": false
+  },
+  {
+   "A": 220,
+   "iso": "",
+   "mass": "220.021769753 ± 0.000015732",
+   "half": "0.85 us ± 0.06",
+   "seconds": 8.499999999999999e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2005,
+   "est": false
+  },
+  {
+   "A": 220,
+   "iso": "m",
+   "mass": "220.021769753 ± 0.000015732",
+   "half": "410 ns ± 180",
+   "seconds": 4.1000000000000004e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2018,
+   "est": false
+  },
+  {
+   "A": 220,
+   "iso": "n",
+   "mass": "220.021769753 ± 0.000015732",
+   "half": "260 ns ± 210",
+   "seconds": 2.6e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2018,
+   "est": false
+  },
+  {
+   "A": 221,
+   "iso": "",
+   "mass": "221.021873393 ± 0.000063746",
+   "half": "5.9 us ± 1.7",
+   "seconds": 0.0000059,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1983,
+   "est": false
+  },
+  {
+   "A": 222,
+   "iso": "",
+   "mass": "222.023687064 ± 0.000092975",
+   "half": "3.8 ms ± 0.2",
+   "seconds": 0.0038,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1970,
+   "est": false
+  },
+  {
+   "A": 223,
+   "iso": "",
+   "mass": "223.023980414 ± 0.000081193",
+   "half": "5.3 ms ± 0.3",
+   "seconds": 0.0053,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1970,
+   "est": false
+  },
+  {
+   "A": 224,
+   "iso": "",
+   "mass": "224.025617286 ± 0.000008145",
+   "half": "844 ms ± 19",
+   "seconds": 0.844,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1958,
+   "est": false
+  },
+  {
+   "A": 225,
+   "iso": "",
+   "mass": "225.026147927 ± 0.000087887",
+   "half": "1.71 s ± 0.10",
+   "seconds": 1.71,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1958,
+   "est": false
+  },
+  {
+   "A": 226,
+   "iso": "",
+   "mass": "226.027948217 ± 0.000012037",
+   "half": "1.8 m ± 0.2",
+   "seconds": 108,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 74
+    },
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 26
+    }
+   ],
+   "year": 1949,
+   "est": false
+  },
+  {
+   "A": 227,
+   "iso": "",
+   "mass": "227.028803586 ± 0.000007797",
+   "half": "38.3 m ± 0.3",
+   "seconds": 2298,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 85
+    },
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": 15
+    }
+   ],
+   "year": 1948,
+   "est": false
+  },
+  {
+   "A": 228,
+   "iso": "",
+   "mass": "228.031050758 ± 0.000004659",
+   "half": "22 h ± 1",
+   "seconds": 79200,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 98.15
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 1.85
+    }
+   ],
+   "year": 1948,
+   "est": false
+  },
+  {
+   "A": 229,
+   "iso": "",
+   "mass": "229.032095585 ± 0.000003521",
+   "half": "1.55 d ± 0.04",
+   "seconds": 133920,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": 99.51
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 0.49
+    }
+   ],
+   "year": 1949,
+   "est": false
+  },
+  {
+   "A": 229,
+   "iso": "m",
+   "mass": "229.032095585 ± 0.000003521",
+   "half": "420 ns ± 30",
+   "seconds": 4.2e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1982,
+   "est": false
+  },
+  {
+   "A": 230,
+   "iso": "",
+   "mass": "230.034539717 ± 0.000003261",
+   "half": "17.4 d ± 0.5",
+   "seconds": 1503359.9999999998,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 92.2
+    },
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 7.8
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 0.0032
+    }
+   ],
+   "year": 1948,
+   "est": false
+  },
+  {
+   "A": 231,
+   "iso": "",
+   "mass": "231.035882500 ± 0.000001901",
+   "half": "32.65 ky ± 0.20",
+   "seconds": 1030333636512.0001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1918,
+   "est": false
+  },
+  {
+   "A": 232,
+   "iso": "",
+   "mass": "232.038590205 ± 0.000008206",
+   "half": "1.32 d ± 0.02",
+   "seconds": 114048,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "ε",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1949,
+   "est": false
+  },
+  {
+   "A": 233,
+   "iso": "",
+   "mass": "233.040246535 ± 0.000001433",
+   "half": "26.975 d ± 0.013",
+   "seconds": 2330640,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1938,
+   "est": false
+  },
+  {
+   "A": 234,
+   "iso": "",
+   "mass": "234.043305555 ± 0.000004395",
+   "half": "6.70 h ± 0.05",
+   "seconds": 24120,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1913,
+   "est": false
+  },
+  {
+   "A": 234,
+   "iso": "m",
+   "mass": "234.043305555 ± 0.000004395",
+   "half": "1.159 m ± 0.011",
+   "seconds": 69.54,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 0.16
+    }
+   ],
+   "year": 1951,
+   "est": false
+  },
+  {
+   "A": 235,
+   "iso": "",
+   "mass": "235.045399000 ± 0.000015",
+   "half": "24.4 m ± 0.2",
+   "seconds": 1464,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1950,
+   "est": false
+  },
+  {
+   "A": 236,
+   "iso": "",
+   "mass": "236.048668000 ± 0.000015",
+   "half": "9.1 m ± 0.1",
+   "seconds": 546,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1963,
+   "est": false
+  },
+  {
+   "A": 237,
+   "iso": "",
+   "mass": "237.051023000 ± 0.000014",
+   "half": "8.7 m ± 0.2",
+   "seconds": 522,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1954,
+   "est": false
+  },
+  {
+   "A": 238,
+   "iso": "",
+   "mass": "238.054637000 ± 0.000017",
+   "half": "2.28 m ± 0.09",
+   "seconds": 136.79999999999998,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1968,
+   "est": false
+  },
+  {
+   "A": 239,
+   "iso": "",
+   "mass": "239.057260 ± 0.00021",
+   "half": "1.8 h ± 0.5",
+   "seconds": 6480,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1995,
+   "est": true
+  },
+  {
+   "A": 240,
+   "iso": "",
+   "mass": "240.061203 ± 0.000215",
+   "half": "20 s",
+   "seconds": 20,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 241,
+   "iso": "",
+   "mass": "241.064134 ± 0.000322",
+   "half": "28 m",
+   "seconds": 1680,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  }
+ ],
+ "stableCount": 0,
+ "texts": {
+  "history": [
+   {
+    "text": "The name derives from the Greek protos (first) for preceding the element actinium, because its most common isotope (231Pa) decays to 227Ac by loss of an alpha particle. In 1913 the German chemists K. Fajans and O. H. Gohring identified the first isotope of protactinium, 234Pa, and proposed the name brevium because of that isotope's short half-life of 6.7 h. 231Pa, with a longer half-life of 3.25(1)×104 a, was identified in 1918 by the German chemist O. Hahn and the Austrian physicist L. Meitner; and, independently in Britain, by F. Soddy and J. A. Cranston.",
+    "source": "ciaaw"
+   },
+   {
+    "text": "Protactinium was first identified by Kasimir Fajans and O.H. Göhring in 1913 while studying uranium's decay chain. The particular isotope they found, protactinium-234m, has a half-life of about 1.17 minutes. They named the element brevium, meaning brief, and then continued with their studies. Protactinium's existence was confirmed in 1918 when another isotope, protactinium-231, was independently discovered and studied by two groups of scientists, Otto Hahn and Lise Meitner of Germany and Frederick Soddy and John Cranston of Great Britain. Protactinium was first isolated by Aristid V. Grosse in 1934. Protactinium is a rare, poisonous and expensive element that is present in uranium ores in very small amounts. In 1961, the Great Britain Atomic Energy Authority was able to produce 125 grams of 99.9% pure protactinium, although they had to process about 55,000 kilograms of ore and spend about $500,000 to get it. Protactinium's most stable isotope, protactinium-231, has a half-life of about 32,760 years. It decays into actinium-227 through alpha decay.",
+    "source": "jlab"
+   },
+   {
+    "text": "The name \"protactinium\" comes from adding the Greek protos meaning first, before the word \"actinium.\" In 1871, Dmitri Mendeleevpredicted the existence of an element between thorium and uranium. In 1900, William Crookes isolated protactinium from uraniu. It was an intensely radioactive material, however, he could not characterize it as a new chemical element and thus named it uranium-X. In 1913 the first isotope of element 91, 234Pa, was discovered by K. Fajans and O.H. Gohring. It was a very short-lived member of the naturally occurring 238U decay series and as such they named it \"brevium.\" In 1917/18, two groups of scientists, Otto Hahn and Lise Meitner of Germany and Frederick Soddy and John Cranston of Great Britain, independently discovered another isotope of protactinium, 231Pa having much longer half-life of about 32,000 years. The name was changed to proto-actinium as being more consistent with the longer-lived characteristics of the most abundant isotope. In 1927, Grosse prepared 2 mg of a white powder, which was shown to be Pa2O5. In 1934 he isolated the element from 0.1 g of pure Pa2O5 by two methods, one of which was by converting the oxide to an iodide and \"cracking\" it in a high vacuum by an electrically heated filament by the reaction: 2PaI5 > 2Pa + 5I2. In 1949, the name protoactinium was shortened by the IUPAC who officially named it protactinium and confirmed Hahn and Meitner as co-discoverers. The new name meant \"parent of actinium\" and reflected the fact that actinium is a decay product of the radioactive decay of protactinium.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Due to its scarcity, high radioactivity and toxicity, there are currently no uses for protactinium outside of basic scientific research.",
+    "source": "jlab"
+   },
+   {
+    "text": "Because of its scarcity, high radioactivity and high toxicity, there are currently no practical uses for protactinium other than that of basic scientific research, and for this purpose, protactinium is generally extracted from spent nuclear fuel.",
+    "source": "lanl"
+   }
+  ],
+  "sources": [
+   {
+    "text": "Protactinium is one of the rarest and most expensive naturally occurring elements. The average concentrations of protactinium in the Earth's crust is typically on the order of a few parts per trillion, but may reach up to a few parts per million in some uraninite ore deposits. The element occurs in pitchblende to the extent of about 1 part 231Pa to 10 million parts of ore. Ores from Zaire have about 3 ppm. In 1959 and 1961, it was announced that the Great Britain Atomic Energy Authority extracted by a 12-stage process 125 g of 99.9% protactinium, the world's only stock of the metal for many years following. The extraction was made from 60 tons of waste material at a cost of about $500,000.",
+    "source": "lanl"
+   }
+  ],
+  "description": [
+   {
+    "text": "Protactinium metal is a dense, silvery-gray material with a bright metallic luster which it retains for some time in air but it does readily react with oxygen, water vapor and inorganic acids to form various compounds. In solid compounds protactinium is most stable in the oxidation state +5, but it also exists in the +4, +3 and +2 oxidation states. In solution the +5 state rapidly hydrolyzes by combining with hydroxide ions to form soluble or insoluble hydroxy-oxide solids which have a tendency to stick to the surfaces of vessels in which it is contained. A number of protactinium compounds are known, some of which are colored. The element is superconductive below 1.4K.",
+    "source": "lanl"
+   }
+  ],
+  "isotopes": [
+   {
+    "text": "Twenty-nine radioisotopes of protactinium have been discovered. Nearly all naturally occurring protactinium is 231Pa with a half-life of 32,700 years. It is an alpha emitter and is formed by the decay of uranium-235, whereas the beta radiating protactinium-234 with a half-life of 6.74 hours is produced as a result of uranium-238 decay. Nearly all uranium-238 (99.8%) decays first to the 234mPa isomer and then to 234Pa. Smaller trace amounts of the short-lived nuclear isomer protactinium-234m occur in the decay chain of uranium-238. Protactinium-233 results from the decay of thorium-233 as part of the chain of events used to produce uranium-233 by neutron irradiation of thorium-232.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Earth/Planetary Science",
+   "text": "231Pa (with a half-life of 3.25×104 years) and 230Th (with a half-life of 7.56×104 years) are produced in seawater by radioactive decay of 235U and 234U. The amount ratio of radioactive production of 231Pa and 230Th, n(231Pa)/n(230Th), is 0.093. 230Th is removed from seawater in settling particulates more efficiently than 231Pa, while 231Pa tends to be transported farther in ocean currents. Therefore, the amount ratio n(231Pa)/n(230Th) in settling particulates tends to be less than the production ratio of 0.093 unless the water mass is stationary and allows both products to settle out. Thus, sedimentary records of excess n(231Pa)/n(230Th) amount ratios can provide information for changes in the relative magnitude of major ocean circulation (Fig. IUPAC.91.1),. ",
+   "source": "iptei"
+  },
+  {
+   "topic": "Geochronology",
+   "text": "231Pa is a natural radiogenic isotope produced by alpha decay of 235U to 231Th, followed by beta emission to form 231Pa. Although its behavior in the environment as a transient member of the U-series decay chain may be complex, measurements and modeling of 231Pa in relation to the isotopes of uranium and thorium have been used in a variety of geochronologic applications on time scales of 103 to 105 years,. Studies include movement of water masses and particles in the oceans, rates of magma melting and movement beneath volcanoes, and ages of carbonate mineral deposits, including corals, in relation to climate change.",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "1.4×10^-6 milligrams per kilogram",
+  "ocean": "5×10^-11 milligrams per liter",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 23945,
+   "name": "protactinium",
+   "formula": "Pa",
+   "charge": 0,
+   "smiles": "[Pa]"
+  }
+ ],
+ "refs": {
+  "ciaaw": {
+   "name": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+   "url": "https://www.ciaaw.org/protactinium.htm"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele091.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/91.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": null,
+ "ghs": null,
+ "ghsCid": null
 }

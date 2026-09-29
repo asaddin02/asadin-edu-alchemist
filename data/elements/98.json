@@ -22,5 +22,630 @@
   "author": "United States Department of Energy (see File:Einsteinium.jpg)",
   "license": "Public domain",
   "licenseUrl": ""
- }
+ },
+ "weight": {
+  "value": "249.0748539(23)",
+  "kind": "isotope-mass",
+  "A": 249,
+  "estimated": false,
+  "source": "nist"
+ },
+ "natural": [],
+ "naturalSource": "nist",
+ "nuclides": [
+  {
+   "A": 237,
+   "iso": "",
+   "mass": "237.062199272 ± 0.000104506",
+   "half": "0.8 s ± 0.2",
+   "seconds": 0.8,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 70
+    },
+    {
+     "mode": "SF",
+     "op": "=",
+     "pct": 30
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1995,
+   "est": false
+  },
+  {
+   "A": 238,
+   "iso": "",
+   "mass": "238.061490 ± 0.00032",
+   "half": "21.1 ms ± 1.3",
+   "seconds": 0.0211,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": "=",
+     "pct": 97.5
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 2.5
+    }
+   ],
+   "year": 1995,
+   "est": true
+  },
+  {
+   "A": 239,
+   "iso": "",
+   "mass": "239.062482 ± 0.000129",
+   "half": "28 s ± 2",
+   "seconds": 28,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 65
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1981,
+   "est": true
+  },
+  {
+   "A": 240,
+   "iso": "",
+   "mass": "240.062253447 ± 0.00001936",
+   "half": "40.3 s ± 0.9",
+   "seconds": 40.3,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 98.5
+    },
+    {
+     "mode": "SF",
+     "op": "=",
+     "pct": 1.5
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1970,
+   "est": false
+  },
+  {
+   "A": 241,
+   "iso": "",
+   "mass": "241.063690 ± 0.00018",
+   "half": "2.35 m ± 0.18",
+   "seconds": 141,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 15
+    }
+   ],
+   "year": 1970,
+   "est": true
+  },
+  {
+   "A": 241,
+   "iso": "p",
+   "mass": "241.063690 ± 0.00018",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 242,
+   "iso": "",
+   "mass": "242.063754544 ± 0.00001384",
+   "half": "3.49 m ± 0.15",
+   "seconds": 209.4,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 61
+    },
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 39
+    },
+    {
+     "mode": "SF",
+     "op": "<",
+     "pct": 0.014
+    }
+   ],
+   "year": 1967,
+   "est": false
+  },
+  {
+   "A": 243,
+   "iso": "",
+   "mass": "243.065475 ± 0.000194",
+   "half": "10.8 m ± 0.3",
+   "seconds": 648,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "≈",
+     "pct": 86
+    },
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 14
+    }
+   ],
+   "year": 1967,
+   "est": true
+  },
+  {
+   "A": 244,
+   "iso": "",
+   "mass": "244.065999447 ± 0.000002809",
+   "half": "19.5 m ± 0.5",
+   "seconds": 1170,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 75
+    },
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": 25
+    }
+   ],
+   "year": 1956,
+   "est": false
+  },
+  {
+   "A": 245,
+   "iso": "",
+   "mass": "245.068046755 ± 0.000002606",
+   "half": "45.0 m ± 1.5",
+   "seconds": 2700,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 64.7
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 35.3
+    }
+   ],
+   "year": 1956,
+   "est": false
+  },
+  {
+   "A": 245,
+   "iso": "p",
+   "mass": "245.068046755 ± 0.000002606",
+   "half": ">100 ns",
+   "seconds": 1.0000000000000001e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2004,
+   "est": true
+  },
+  {
+   "A": 246,
+   "iso": "",
+   "mass": "246.068803685 ± 0.000001625",
+   "half": "35.7 h ± 0.5",
+   "seconds": 128520.00000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "ε",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1951,
+   "est": false
+  },
+  {
+   "A": 247,
+   "iso": "",
+   "mass": "247.070971348 ± 0.00001538",
+   "half": "3.11 h ± 0.03",
+   "seconds": 11196,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": 99.965
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 0.035
+    }
+   ],
+   "year": 1954,
+   "est": false
+  },
+  {
+   "A": 248,
+   "iso": "",
+   "mass": "248.072182905 ± 0.000005497",
+   "half": "333.5 d ± 2.8",
+   "seconds": 28814400,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "SF",
+     "op": "=",
+     "pct": 0.0029
+    }
+   ],
+   "year": 1954,
+   "est": false
+  },
+  {
+   "A": 249,
+   "iso": "",
+   "mass": "249.074850428 ± 0.000001269",
+   "half": "351 y ± 2",
+   "seconds": 11076481054.08,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1954,
+   "est": false
+  },
+  {
+   "A": 249,
+   "iso": "m",
+   "mass": "249.074850428 ± 0.000001269",
+   "half": "45 us ± 5",
+   "seconds": 0.000044999999999999996,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1967,
+   "est": false
+  },
+  {
+   "A": 250,
+   "iso": "",
+   "mass": "250.076404494 ± 0.00000165",
+   "half": "13.08 y ± 0.09",
+   "seconds": 412764593.12640005,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 99.923
+    },
+    {
+     "mode": "SF",
+     "op": "=",
+     "pct": 0.077
+    }
+   ],
+   "year": 1954,
+   "est": false
+  },
+  {
+   "A": 251,
+   "iso": "",
+   "mass": "251.079587171 ± 0.000004187",
+   "half": "898 y ± 44",
+   "seconds": 28338119619.84,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1954,
+   "est": false
+  },
+  {
+   "A": 251,
+   "iso": "m",
+   "mass": "251.079587171 ± 0.000004187",
+   "half": "1.3 us ± 0.1",
+   "seconds": 0.0000013,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1971,
+   "est": false
+  },
+  {
+   "A": 252,
+   "iso": "",
+   "mass": "252.081626507 ± 0.000002531",
+   "half": "2.645 y ± 0.008",
+   "seconds": 83468069.4816,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 96.8972
+    },
+    {
+     "mode": "SF",
+     "op": "=",
+     "pct": 3.1028
+    }
+   ],
+   "year": 1954,
+   "est": false
+  },
+  {
+   "A": 253,
+   "iso": "",
+   "mass": "253.085133723 ± 0.00000457",
+   "half": "17.81 d ± 0.08",
+   "seconds": 1538784,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 99.69
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 0.31
+    }
+   ],
+   "year": 1954,
+   "est": false
+  },
+  {
+   "A": 254,
+   "iso": "",
+   "mass": "254.087323575 ± 0.000012304",
+   "half": "60.5 d ± 0.2",
+   "seconds": 5227200,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": "=",
+     "pct": 99.69
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 0.31
+    },
+    {
+     "mode": "2β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1955,
+   "est": false
+  },
+  {
+   "A": 255,
+   "iso": "",
+   "mass": "255.091046 ± 0.000215",
+   "half": "85 m ± 18",
+   "seconds": 5100,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1981,
+   "est": true
+  },
+  {
+   "A": 256,
+   "iso": "",
+   "mass": "256.093442 ± 0.000338",
+   "half": "12.3 m ± 1.2",
+   "seconds": 738,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "2β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1980,
+   "est": true
+  }
+ ],
+ "stableCount": 0,
+ "texts": {
+  "history": [
+   {
+    "text": "Californium was first produced by Stanley G. Thompson, Glenn T. Seaborg, Kenneth Street, Jr. and Albert Ghiorso working at the University of California, Berkeley, in 1950. They bombarded atoms of curium-242 with helium ions using a device known as a cyclotron. This produced atoms of californium-245, an isotope with a half-life of about 45 minutes, and a free neutron.",
+    "source": "jlab"
+   },
+   {
+    "text": "Californium, the sixth transuranium element to be discovered, was produced by Thompson, Street, Ghioirso, and Seaborg in 1950 by bombarding microgram quantities of 242Cm with 35 MeV helium ions in the Berkeley 60-inch cyclotronproducing 244Cf. Since the lanthanide homologue of californium (dysprosium) has a stable trivalent state in aqueous solution it was anticipated that californium would exhibit a stable trivalent state as well. This accurate prediction allowed for the successful chromatographic separation of californium from other actinides and for its unequivocal identification.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Californium-252, an isotope with a half-life of about 2.6 years, is a very strong neutron source. One microgram (0.000001 grams) of californium-252 produces 170,000,000 neutrons per minute. It is being used as a neutron source to identify gold and silver ores through a technique known as neutron activation. It is also being used in devices known as neutron moisture gauges that are used to find water and oil bearing layers in oil wells. A few compounds of californium have been produced and studied. They include: californium oxide (CfO3), californium trichloride (CfCl3) and californium oxychloride (CfOCl). Californium's most stable isotope, californium-251, has a half-life of about 898 years. It decays into curium-247 through alpha decay or decays through spontaneous fission.",
+    "source": "jlab"
+   }
+  ],
+  "description": [
+   {
+    "text": "Californium does not occur naturally in the Earth’s crust. It was first synthesized in 1950 by Glenn T. Seaborg and his team at the University of California using the reaction 242Cm (4He, n) 245Cf. The element was named for the state where it was first synthesized.",
+    "source": "iptei"
+   },
+   {
+    "text": "Californium is the second half of the actinide series where its f electrons are further removed or shielded from the valence electrons that those of the lighter actinides. Thus californium resembles the behavior of the lanthanide elements exhibiting divalent, trivalent, and tetravalent oxidation states in solid-state compounds. In solution, the trivalent state is the most stable however the divalent, tetravalent and a possible pentavalent state have been reported. The existence of Cf(V) is questionable. Californium metal is fairly reactive. On standing in air or moisture, small pieces or foils of Cf metal quickly form an oxide but not in a violent reaction. Two methods have been successful for preparation of Cf metal: reduction of californium trifluoride with lithium metal at elevated temperature and using thorium or lanthanum metal to reduce californium oxide (R. G. Haire, 1982). The largest amount of metal prepared at one time was about 10 milligrams. The metal was eventually determined to be trivalent with a room-temperature double hexagonal close-packed structure. A face centered cubic structure has also been observed for californium metal at high temperature. Some alloys and numerous solid-state compounds have been prepared with californium in spite of the fact that only small amounts of the element are available at any one time. Californium compounds include oxides, halides, oxyhalides, pnictides, chacogenides hydrides, tellurides, oxysulfate and oxysulfide to name a few. Some organo-californium coumpounds have also been prepared. Because californium is a very efficient source of neutrons, many new uses are expected for it. It has already found use in neutron moisture gauges and in well-logging (the determination of water and oil-bearing layers). It is also being used as a portable neutron source for discovery of metals such as gold or silver by on-the-spot activation analysis. 252Cf is now being offered for sale by the Oak Ridge National Laboratory at a cost of $10/mg. As of May, 1975, more than 63 mg have been produced and sold. It has been suggested that californium may be produced in certain stellar explosions, called supernovae, for the radioactive decay of 254Cf (55-day half-life) agrees with the characteristics of the light curves of such explosions observed through telescopes. This suggestion, however, is questioned. Further reading: Richard G. Haire (2006) Chapter 11, \"The Chemistry of the Actinide and Transactinide Element,\" Third Edition, L. R. Morss, J. Fuger, and N. M. Edelstein, Eds, Springer Publishers. This element reviewed and Updated by Dr. David Hobart, 2011",
+    "source": "lanl"
+   }
+  ],
+  "isotopes": [
+   {
+    "text": "Twenty isotopes ranging in atomic mass from 237 to 256 have been reported for californium however the existence of the isotopes with mass of 237 and 238 has not yet been confirmed. The isotope 249Cf results from the beta decay of 249Bk while the heavier isotopes are produced by intense neutron irradiation by nuclear reactors or in thermonuclear explosions. The existence of the isotopes 249Cf, 250Cf, 251Cf, and 252Cf makes it feasible to isolate californium in weighable amounts so that its physicochemical properties can be investigated with macroscopic quantities. The first well-defined structure of a californium compound was the oxychloride by Cunningham and Wallmann a decade after discovery of the element. Microgram quantities of californium have been produced in the High Flux Isotope Reactor (HFIR) at Oak Ridge National Laboratory (ORNL) in Tennessee and in Dimitrovgrad high-flux reactors in Russia. Californium-252 is a very strong neutron emitter. One microgram releases 170 million neutrons per minute, which presents biological hazards. Cf-252 also decays by energetic alpha emission (half-life 2.65 years, 6.1 MeV). Proper safeguards should be used when handling californium isotopes.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Industry",
+   "text": "252Cf is a very active source of neutrons (2.3×106 neutrons per second per microgram) with a half-life of 2.65 years. The energy spectrum of the neutrons is very similar to that of a fission reactor and small amounts of 252Cf provide an ideal portable source for low neutron flux applications,,. 252Cf is used for PGNAA (prompt gamma neutron activation analysis, a method for detecting many chemical elements in samples simultaneously) in the analysis of coal, cement, minerals, weapon components, and chemical munitions. This method provides a quick and non-destructive elemental analysis of a sample. For example, 252Cf, as the neutron source for PGNAA, is used to detect the presence of antitank mines. Neutron activation analysis (NAA) uses 252Cf as a portable neutron source to bombard a small sample from the area of interest with neutrons and analyze the radioactive emissions from that bombardment to help identify silver or gold ore. 252Cf has been used in neutron moisture gauges to locate water. 252Cf is used in borehole geophysical logging for subsurface PGNAA investigation of waste (Fig. IUPAC.98.1). Formation fluid identification uses 252Cf as a chemical neutron source for elastic/inelastic neutron backscattering and/or neutron activation methods in well-logging to determine water- and oil-bearing layers and other downhole properties of the well bore. ",
+   "source": "iptei"
+  },
+  {
+   "topic": "Medicine",
+   "text": "252Cf is sometimes used in boron neutron capture therapy (BNCT) as a source of neutrons that can be delivered close to the region of a tumor,,. Brachytherapy can use 252Cf to treat many types of cancer,,.",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "Not Applicable",
+  "ocean": "Not Applicable",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 23997,
+   "name": "californium",
+   "formula": "Cf",
+   "charge": 0,
+   "smiles": "[Cf]"
+  }
+ ],
+ "refs": {
+  "nist": {
+   "name": "NIST Physical Measurement Laboratory",
+   "url": "https://physics.nist.gov/cgi-bin/Elements/elInfo.pl?element=98"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele098.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/98.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": null,
+ "ghs": null,
+ "ghsCid": null
 }

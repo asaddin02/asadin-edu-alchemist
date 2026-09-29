@@ -63,20 +63,20 @@ Triglycerides form by esterifying glycerol with three fatty acids; [[saponifikas
 DNA is a polymer of nucleotides (deoxyribose, phosphate, base). A–T (2 hydrogen bonds) and G–C (3 hydrogen bonds) pairs form the double helix.`,
     ],
     kuliah: [
-      `Biokimia menghubungkan struktur molekul dengan metabolisme. Glikolisis mengubah glukosa menjadi 2 piruvat (+2 ATP, +2 NADH); siklus asam sitrat dan fosforilasi oksidatif menghasilkan total sekitar 30–32 ATP per glukosa. Koenzim seperti {{m:nad|NAD⁺}} (dari vitamin B3) dan FAD (dari {{m:riboflavin|riboflavin}}) membawa elektron.
+      `Biokimia menghubungkan struktur molekul dengan metabolisme. Zat antara dan hasil metabolisme disebut [[metabolit]], misalnya piruvat, laktat, dan asetil-KoA. Glikolisis mengubah glukosa menjadi 2 piruvat (+2 ATP, +2 NADH); siklus asam sitrat dan fosforilasi oksidatif menghasilkan total sekitar 30–32 ATP per glukosa. Koenzim seperti {{m:nad|NAD⁺}} (dari vitamin B3) dan FAD (dari {{m:riboflavin|riboflavin}}) membawa elektron.
 
-Enzim mempercepat reaksi hingga jutaan kali melalui stabilisasi keadaan transisi; kerjanya diatur oleh inhibisi, alosterik, dan modifikasi kovalen. Hormon lipid ({{m:cortisol|kortisol}}) bekerja pada reseptor inti, sedangkan hormon peptida dan amina ({{m:adrenaline|adrenalin}}) memakai reseptor membran dan pembawa pesan kedua.
+Enzim mempercepat reaksi umumnya jutaan kali atau lebih (pada kasus ekstrem lebih dari 10¹⁷ kali) melalui stabilisasi keadaan transisi; kerjanya diatur oleh inhibisi, alosterik, dan modifikasi kovalen. Hormon lipid ({{m:cortisol|kortisol}}) bekerja pada reseptor inti, sedangkan hormon peptida dan amina ({{m:adrenaline|adrenalin}}) memakai reseptor membran dan pembawa pesan kedua.
 
 Dogma sentral (DNA → RNA → protein) diwujudkan oleh replikasi semikonservatif, transkripsi, dan translasi dengan kode genetik triplet. Teknik modern seperti PCR, sekuensing, CRISPR, dan kristalografi atau krio-EM protein berakar pada kimia molekul-molekul ini.
 
-Struktur 3D biomolekul kecil di Moleculium berasal dari PubChem; untuk protein utuh gunakan Protein Data Bank (PDB).`,
-      `Biochemistry links molecular structure to metabolism. Glycolysis turns glucose into 2 pyruvate (+2 ATP, +2 NADH); the citric acid cycle and oxidative phosphorylation give about 30–32 ATP per glucose in total. Coenzymes such as {{m:nad|NAD⁺}} (from vitamin B3) and FAD (from {{m:riboflavin|riboflavin}}) carry electrons.
+Struktur 3D biomolekul kecil di Alchemist berasal dari PubChem; untuk protein utuh gunakan Protein Data Bank (PDB).`,
+      `Biochemistry links molecular structure to metabolism. The intermediates and products of metabolism are [[metabolit|metabolites]], such as pyruvate, lactate and acetyl-CoA. Glycolysis turns glucose into 2 pyruvate (+2 ATP, +2 NADH); the citric acid cycle and oxidative phosphorylation give about 30–32 ATP per glucose in total. Coenzymes such as {{m:nad|NAD⁺}} (from vitamin B3) and FAD (from {{m:riboflavin|riboflavin}}) carry electrons.
 
-Enzymes accelerate reactions up to millions of times by stabilising transition states, regulated by inhibition, allostery and covalent modification. Lipid hormones ({{m:cortisol|cortisol}}) act on nuclear receptors, while peptide and amine hormones ({{m:adrenaline|adrenaline}}) use membrane receptors and second messengers.
+Enzymes speed reactions up typically a million-fold or more (in extreme cases more than 10¹⁷-fold) by stabilising transition states, regulated by inhibition, allostery and covalent modification. Lipid hormones ({{m:cortisol|cortisol}}) act on nuclear receptors, while peptide and amine hormones ({{m:adrenaline|adrenaline}}) use membrane receptors and second messengers.
 
 The central dogma (DNA → RNA → protein) runs through semi-conservative replication, transcription and translation with a triplet code. PCR, sequencing, CRISPR and protein crystallography or cryo-EM all rest on the chemistry of these molecules.
 
-Small-biomolecule 3D structures in Moleculium come from PubChem; for whole proteins use the Protein Data Bank (PDB).`,
+Small-biomolecule 3D structures in Alchemist come from PubChem; for whole proteins use the Protein Data Bank (PDB).`,
     ],
   },
   points: [
@@ -94,6 +94,7 @@ Small-biomolecule 3D structures in Moleculium come from PubChem; for whole prote
     kuliah: ['Hitung rendemen ATP teoretis per molekul asam palmitat melalui β-oksidasi dan bandingkan dengan glukosa per gram.', 'Compute the theoretical ATP yield per palmitic acid via β-oxidation and compare with glucose per gram.'],
   },
   quiz: [
+    { lv: 'kuliah', q: ["Glikolisis mengubah satu molekul glukosa menjadi…", "Glycolysis turns one glucose molecule into…"], options: [["2 piruvat", "2 pyruvate"], ["6 CO₂", "6 CO₂"], ["2 etanol", "2 ethanol"], ["1 laktosa", "1 lactose"]], answer: 0, explain: ["Glikolisis menghasilkan 2 piruvat, 2 ATP netto, dan 2 NADH.", "Glycolysis gives 2 pyruvate, a net 2 ATP and 2 NADH."] },
     { lv: 'sd', q: ['Makanan yang kaya karbohidrat adalah…', 'A food rich in carbohydrate is…'], options: [['Nasi', 'Rice'], ['Telur', 'Egg'], ['Ikan', 'Fish'], ['Air', 'Water']], answer: 0, explain: ['Nasi mengandung banyak pati, sumber tenaga.', 'Rice is full of starch, an energy source.'] },
     { lv: 'sd', q: ['Zat gizi pembangun tubuh adalah…', 'The body-building nutrient is…'], options: [['Karbohidrat', 'Carbohydrate'], ['Protein', 'Protein'], ['Gula', 'Sugar'], ['Garam', 'Salt']], answer: 1, explain: ['Protein dipakai membangun dan memperbaiki sel tubuh.', 'Protein builds and repairs body cells.'] },
     { lv: 'smp', q: ['Pati akan berubah menjadi biru kehitaman jika ditetesi…', 'Starch turns blue-black with…'], options: [['Iodin', 'Iodine'], ['Biuret', 'Biuret'], ['Benedict', 'Benedict’s'], ['Cuka', 'Vinegar']], answer: 0, explain: ['Iodin masuk ke gulungan amilosa membentuk kompleks biru kehitaman.', 'Iodine slips into amylose coils forming a blue-black complex.'] },
@@ -112,10 +113,11 @@ Small-biomolecule 3D structures in Moleculium come from PubChem; for whole prote
     duration: ['4 × 45 menit', '4 × 45 min'],
     steps: [
       ['Uji makanan dari bekal siswa.', 'Food tests on learners’ packed lunches.'],
-      ['Tur model 3D glukosa, glisina, dan adenina di Moleculium.', 'Tour 3D models of glucose, glycine and adenine in Moleculium.'],
+      ['Tur model 3D glukosa, glisina, dan adenina di Alchemist.', 'Tour 3D models of glucose, glycine and adenine in Alchemist.'],
       ['Ekstraksi DNA buah.', 'Fruit DNA extraction.'],
     ],
     misconceptions: [['"Lemak selalu buruk." Lemak diperlukan untuk membran sel, hormon, dan penyerapan vitamin A, D, E, K.', '"Fat is always bad." Fats are needed for membranes, hormones and absorbing vitamins A, D, E, K.']],
-    assessment: ['Kuis Moleculium dan laporan uji makanan.', 'Moleculium quiz and a food-test report.'],
+    assessment: ['Kuis Alchemist dan laporan uji makanan.', 'Alchemist quiz and a food-test report.'],
   },
+  refs: ["bio:3-1-synthesis-of-biological-macromolecules", "bio:3-2-carbohydrates", "bio:3-3-lipids", "bio:3-4-proteins", "bio:3-5-nucleic-acids", "oc:26-10-enzymes-and-coenzymes"],
 };

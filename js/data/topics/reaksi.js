@@ -60,7 +60,9 @@ CH₄(g) + 2O₂(g) → CO₂(g) + 2H₂O(l) ΔH = −890 kJ
 3. **Entalpi pembentukan standar**: ΔH° = ΣΔHf°(produk) − ΣΔHf°(reaktan).
 4. **Energi ikatan**: ΔH ≈ Σ energi ikatan diputus − Σ energi ikatan dibentuk.
 
-Pembakaran menjadi sumber energi utama dunia, tetapi menghasilkan {{m:carbon-dioxide|CO₂}}. Nilai kalor bahan bakar (kJ/g) membantu membandingkan: {{m:hydrogen|hidrogen}} ≈ 142, {{m:methane|metana}} ≈ 55, {{m:ethanol|etanol}} ≈ 30.`,
+Pembakaran menjadi sumber energi utama dunia, tetapi menghasilkan {{m:carbon-dioxide|CO₂}}. Nilai kalor bahan bakar (kJ/g) membantu membandingkan: {{m:hydrogen|hidrogen}} ≈ 142, {{m:methane|metana}} ≈ 55, {{m:ethanol|etanol}} ≈ 30.
+
+Termokimia diuraikan di {{learn:termokimia|Termokimia}}; contoh setara setiap jenis reaksi ada di {{page:reaction|pustaka reaksi}}.`,
       `The [[entalpi|enthalpy change]] (ΔH) is the heat of reaction at constant pressure: ΔH < 0 exothermic, ΔH > 0 endothermic. Thermochemical equations include ΔH, for example:
 
 CH₄(g) + 2O₂(g) → CO₂(g) + 2H₂O(l) ΔH = −890 kJ
@@ -72,7 +74,9 @@ CH₄(g) + 2O₂(g) → CO₂(g) + 2H₂O(l) ΔH = −890 kJ
 3. **Standard enthalpies of formation**: ΔH° = ΣΔHf°(products) − ΣΔHf°(reactants).
 4. **Bond energies**: ΔH ≈ Σ bonds broken − Σ bonds formed.
 
-Combustion is the world’s main energy source but produces {{m:carbon-dioxide|CO₂}}. Fuel values (kJ/g) help compare: {{m:hydrogen|hydrogen}} ≈ 142, {{m:methane|methane}} ≈ 55, {{m:ethanol|ethanol}} ≈ 30.`,
+Combustion is the world’s main energy source but produces {{m:carbon-dioxide|CO₂}}. Fuel values (kJ/g) help compare: {{m:hydrogen|hydrogen}} ≈ 142, {{m:methane|methane}} ≈ 55, {{m:ethanol|ethanol}} ≈ 30.
+
+Thermochemistry is developed in {{learn:termokimia|Thermochemistry}}; balanced examples of every reaction type are in the {{page:reaction|reaction library}}.`,
     ],
     kuliah: [
       `Kespontanan reaksi ditentukan energi bebas Gibbs: ΔG = ΔH − TΔS. Reaksi spontan bila ΔG < 0. Reaksi endoterm dapat spontan bila entropi naik cukup besar (pelarutan NH₄NO₃, penguapan air), dan reaksi eksoterm dapat tidak spontan pada suhu tinggi bila entropinya turun.
@@ -101,6 +105,7 @@ Heat capacities and Kirchhoff’s law (dΔH/dT = ΔCp) give ΔH at other tempera
     kuliah: ['Hitung ΔG° pembakaran glukosa pada 25 °C dari data ΔHf° dan S° lalu tafsirkan efisiensi respirasi seluler.', 'Compute ΔG° for glucose combustion at 25 °C from ΔHf° and S° data and interpret the efficiency of cellular respiration.'],
   },
   quiz: [
+    { lv: 'kuliah', q: ["Reaksi dengan ΔG° sangat negatif memiliki tetapan kesetimbangan…", "A reaction with a very negative ΔG° has an equilibrium constant…"], options: [["K ≫ 1", "K ≫ 1"], ["K ≪ 1", "K ≪ 1"], ["K = 1", "K = 1"], ["K negatif", "Negative K"]], answer: 0, explain: ["ΔG° = −RT ln K; ΔG° negatif besar berarti ln K besar positif.", "ΔG° = −RT ln K; a large negative ΔG° means a large positive ln K."] },
     { lv: 'sd', q: ['Manakah yang merupakan reaksi kimia?', 'Which is a chemical reaction?'], options: [['Es mencair', 'Ice melting'], ['Kertas digunting', 'Cutting paper'], ['Kayu terbakar', 'Wood burning'], ['Garam larut dalam air', 'Salt dissolving']], answer: 2, explain: ['Pembakaran menghasilkan zat baru (abu, CO₂, uap air).', 'Burning makes new substances (ash, CO₂, water vapour).'] },
     { lv: 'sd', q: ['Gelembung yang muncul saat soda kue dicampur cuka adalah gas…', 'The bubbles when baking soda meets vinegar are…'], options: [['Oksigen', 'Oxygen'], ['Karbon dioksida', 'Carbon dioxide'], ['Hidrogen', 'Hydrogen'], ['Nitrogen', 'Nitrogen']], answer: 1, explain: ['Reaksi asam dengan karbonat menghasilkan gas CO₂.', 'An acid reacting with a carbonate releases CO₂.'] },
     { lv: 'smp', q: ['Reaksi yang melepaskan panas ke lingkungan disebut…', 'A reaction that releases heat is…'], options: [['Endoterm', 'Endothermic'], ['Eksoterm', 'Exothermic'], ['Netral', 'Neutral'], ['Penguraian', 'Decomposition']], answer: 1, explain: ['Eksoterm: kalor keluar dari sistem sehingga lingkungan menjadi panas.', 'Exothermic: heat leaves the system and warms the surroundings.'] },
@@ -123,6 +128,7 @@ Heat capacities and Kirchhoff’s law (dΔH/dT = ΔCp) give ΔH at other tempera
       ['Praktikum kalorimeter sederhana.', 'Simple calorimetry practical.'],
     ],
     misconceptions: [['"Pembakaran menghancurkan materi." Materi berubah menjadi gas dan abu; massa kekal.', '"Burning destroys matter." It becomes gases and ash; mass is conserved.']],
-    assessment: ['Kuis Moleculium dan laporan kalorimetri.', 'Moleculium quiz and a calorimetry report.'],
+    assessment: ['Kuis Alchemist dan laporan kalorimetri.', 'Alchemist quiz and a calorimetry report.'],
   },
+  refs: ["4-2-classifying-chemical-reactions", "5-3-enthalpy", "16-4-free-energy"],
 };

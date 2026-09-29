@@ -6,23 +6,29 @@ import { levelName } from '../i18n/ui.js';
 import { icon } from '../components/icons.js';
 import { pageHead, loading, emptyState, notice } from '../components/common.js';
 import { moleculeCard, liveCard, nameResult } from '../components/cards.js';
-import { MOLECULES, LEVEL_ORDER, searchCatalog, normalize } from '../data/curatedMolecules.js';
+import {
+  MOLECULES,
+  LEVEL_ORDER,
+  searchCatalog,
+  normalize,
+  getMoleculeByCid,
+} from '../data/curatedMolecules.js';
 import { CLASSES } from '../data/classes.js';
 import { PLACES } from '../data/curriculum.js';
 import { getElement } from '../data/periodicTable.js';
 import { moleculeIndex, formulas } from '../services/data.js';
-import { autocomplete, cidByName, cidsByFormula, summaries } from '../services/pubchem.js';
-import { searchByLabel } from '../services/wiki.js';
-import { parseFormula } from '../services/formula.js';
+import { summaries } from '../services/pubchem.js';
+import { liveLookup } from '../services/lookup.js';
+import { kindLabel } from '../services/identify.js';
 
 const s = S({
   title: ['Jelajah molekul', 'Explore molecules'],
   lead: [
-    'Cari di katalog Moleculium dan di lebih dari 100 juta senyawa PubChem. Ketik nama (Indonesia atau Inggris), rumus kimia, atau nomor CID.',
-    'Search the Moleculium catalogue and over 100 million PubChem compounds. Type a name (Indonesian or English), a formula or a CID number.',
+    'Cari di katalog Alchemist dan di lebih dari 100 juta senyawa PubChem. Ketik nama (Indonesia atau Inggris), nama IUPAC, rumus kimia, nomor CAS, CID, SMILES, InChI, atau InChIKey.',
+    'Search the Alchemist catalogue and over 100 million PubChem compounds. Type a name (Indonesian or English), IUPAC name, formula, CAS number, CID, SMILES, InChI or InChIKey.',
   ],
   q: ['Kata kunci', 'Search term'],
-  placeholder: ['Contoh: cuka, glukosa, C2H5OH, 2244', 'e.g. vinegar, glucose, C2H5OH, 2244'],
+  placeholder: ['Contoh: cuka, C2H5OH, 64-17-5, CCO', 'e.g. vinegar, C2H5OH, 64-17-5, CCO'],
   family: ['Golongan', 'Class'],
   all: ['Semua', 'All'],
   level: ['Jenjang', 'Level'],
@@ -31,7 +37,7 @@ const s = S({
   byName: ['Nama', 'Name'],
   byMass: ['Massa molar', 'Molar mass'],
   byLevel: ['Jenjang', 'Level'],
-  catalog: ['Katalog Moleculium', 'Moleculium catalogue'],
+  catalog: ['Katalog Alchemist', 'Alchemist catalogue'],
   count: ['{n} molekul', '{n} molecules'],
   more: ['Tampilkan lebih banyak', 'Show more'],
   live: ['Hasil langsung dari PubChem', 'Live results from PubChem'],
@@ -47,6 +53,8 @@ const s = S({
     'PubChem could not be reached. Check your connection.',
   ],
   elementHit: ['Unsur {name} ({s})', 'Element {name} ({s})'],
+  recognised: ['Dikenali sebagai {kind}', 'Recognised as {kind}'],
+  inCatalog: ['Ada di katalog Alchemist', 'In the Alchemist catalogue'],
   reset: ['Hapus filter', 'Clear filters'],
 });
 
@@ -162,38 +170,22 @@ export async function render({ main, params, isCurrent }) {
       return;
     }
     box.innerHTML = `<div class="section-head"><h2>${icon('globe', { size: 20 })} ${esc(s.live)}</h2></div>${loading()}`;
-    const known = new Set(MOLECULES.map(m => m.cid));
     try {
-      let cids = [];
-      let names = [];
-      const labels = new Map();
-      const counts = parseFormula(q);
-      const looksFormula = /^[A-Z][A-Za-z0-9()[\]·.]*$/.test(q) && !counts.error && /\d|[A-Z].*[A-Z]/.test(q);
-      if (/^\d{1,10}$/.test(q)) cids = [Number(q)];
-      else if (looksFormula) cids = await cidsByFormula(q.replace(/[·.]/g, ''), 16);
-      else {
-        const [byLabelId, byLabelEn, auto, exact] = await Promise.all([
-          searchByLabel(q, 'id').catch(() => []),
-          searchByLabel(q, 'en').catch(() => []),
-          autocomplete(q, 8).catch(() => []),
-          cidByName(q).catch(() => null),
-        ]);
-        for (const hit of [...byLabelId, ...byLabelEn]) {
-          if (!labels.has(hit.cid)) labels.set(hit.cid, hit.label);
-        }
-        cids = [...(exact ? [exact] : []), ...labels.keys()];
-        names = auto;
-      }
+      const { kind, cids, labels, names } = await liveLookup(q);
       if (mine !== liveToken || !isCurrent()) return;
-      const fresh = [...new Set(cids)].filter(c => !known.has(c)).slice(0, 16);
+      // Identifier searches (CAS, SMILES, InChIKey…) can land on catalogue molecules the name search missed.
+      const listed = new Set(filtered().map(m => m.id));
+      const catalog = cids.map(getMoleculeByCid).filter(m => m && !listed.has(m.id));
+      const fresh = cids.filter(c => !getMoleculeByCid(c)).slice(0, 16);
       const rows = await summaries(fresh);
       if (mine !== liveToken || !isCurrent()) return;
       const nameList = names.filter(n => !rows.some(r => r.title.toLowerCase() === n.toLowerCase()));
       box.innerHTML = `<div class="section-head"><h2>${icon('globe', { size: 20 })} ${esc(s.live)}</h2></div>
-        <p class="muted">${esc(s.liveLead)}</p>
+        ${catalog.length ? `<h3 class="h-small">${icon('check', { size: 16 })} ${esc(s.inCatalog)}</h3><div class="grid grid-cards">${catalog.map(m => moleculeCard(m, idx.get(m.id))).join('')}</div>` : ''}
+        <p class="muted">${esc(s.liveLead)}${kind !== 'name' ? ` <span class="chip">${esc(fmt(s.recognised, { kind: kindLabel(kind) }))}</span>` : ''}</p>
         ${rows.length ? `<div class="grid grid-cards">${rows.map(r => liveCard({ ...r, label: labels.get(r.cid) })).join('')}</div>` : ''}
         ${nameList.length ? `<h3 class="h-small">${esc(s.suggestions)}</h3><ul class="suggest-list">${nameList.map(nameResult).join('')}</ul>` : ''}
-        ${!rows.length && !nameList.length ? `<p>${esc(s.noneLive)}</p>` : ''}`;
+        ${!catalog.length && !rows.length && !nameList.length ? `<p>${esc(s.noneLive)}</p>` : ''}`;
     } catch {
       if (mine === liveToken) box.innerHTML = notice(esc(s.liveError), 'warn');
     }

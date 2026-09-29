@@ -2,13 +2,15 @@
 import { $, esc, shuffle } from '../core/dom.js';
 import { S, pick, fmt, getPrefs, rank } from '../core/prefs.js';
 import { icon } from '../components/icons.js';
-import { pageHead, breadcrumbs } from '../components/common.js';
+import { pageHead, breadcrumbs, loading, errorState } from '../components/common.js';
 import { mountQuiz } from '../components/quiz.js';
-import { TOPICS, findTopic, quizFor, bodyLevel } from '../data/topics/index.js';
+import { TOPICS, findTopic, loadTopic, loadTopics, quizFor, bodyLevel } from '../data/topics/index.js';
 import { MOLECULES, atLevel } from '../data/curatedMolecules.js';
 import { ELEMENTS, CATEGORIES } from '../data/periodicTable.js';
 import { getClass } from '../data/classes.js';
 import { PLACES } from '../data/curriculum.js';
+import { IONS } from '../data/ions.js';
+import { LIBRARY, REACTION_TYPES } from '../data/reactionLibrary.js';
 import { moleculeIndex, depiction } from '../services/data.js';
 import { depictSVG } from '../components/depict.js';
 import { formulaUnicode } from '../services/formula.js';
@@ -17,8 +19,8 @@ import { quizResults, earnedBadges, BADGES, progressStats } from '../core/userda
 const s = S({
   title: ['Kuis', 'Quizzes'],
   lead: [
-    'Kuis materi mengikuti jenjangmu. Kuis tantangan dibuat acak dari data Moleculium setiap kali dimainkan, jadi selalu ada soal baru.',
-    'Lesson quizzes follow your level. Challenge quizzes are generated at random from Moleculium data every time, so there are always new questions.',
+    'Kuis materi mengikuti jenjangmu. Kuis tantangan dibuat acak dari data Alchemist setiap kali dimainkan, jadi selalu ada soal baru.',
+    'Lesson quizzes follow your level. Challenge quizzes are generated at random from Alchemist data every time, so there are always new questions.',
   ],
   challenges: ['Kuis tantangan', 'Challenge quizzes'],
   lessons: ['Kuis per materi', 'Lesson quizzes'],
@@ -58,6 +60,16 @@ const s = S({
   places: ['Kimia di sekitarku', 'Chemistry around me'],
   placesLead: ['Di mana kita biasa menemukan zat ini?', 'Where do we usually find this substance?'],
   placeQ: ['Di mana {name} paling mungkin kamu temukan?', 'Where are you most likely to find {name}?'],
+  ionsLead: [
+    'Cocokkan nama ion dengan rumus dan muatannya.',
+    'Match ion names to their formulas and charges.',
+  ],
+  ionQ: ['Apa rumus ion {name}?', 'What is the formula of the {name} ion?'],
+  reactionsLead: [
+    'Sintesis, penguraian, pembakaran, redoks, atau netralisasi? Tentukan jenis reaksinya.',
+    'Synthesis, decomposition, combustion, redox or neutralisation? Name the reaction type.',
+  ],
+  reactionQ: ['Reaksi “{name}” termasuk jenis…', 'The reaction “{name}” is…'],
   mixed: ['Campuran semua materi', 'Mixed lessons'],
   mixedLead: [
     'Sepuluh soal acak dari seluruh materi jenjangmu.',
@@ -107,6 +119,18 @@ const GEN = {
     lead: 'placesLead',
     build: buildPlaces,
   },
+  ions: {
+    icon: 'charge',
+    title: ['Nama & rumus ion', 'Ion names & formulas'],
+    lead: 'ionsLead',
+    build: buildIons,
+  },
+  reactions: {
+    icon: 'swap',
+    title: ['Jenis reaksi', 'Reaction types'],
+    lead: 'reactionsLead',
+    build: buildReactions,
+  },
   mixed: {
     icon: 'sparkles',
     title: ['Campuran semua materi', 'Mixed lessons'],
@@ -115,13 +139,23 @@ const GEN = {
   },
 };
 
-export async function render({ id, main }) {
+export async function render({ id, main, isCurrent }) {
   if (!id) return renderList(main);
-  const gen = GEN[id];
-  const topic = !gen && findTopic(id.replace(/^topic-/, ''));
-  if (!gen && !topic) {
+  const gen = Object.hasOwn(GEN, id) ? GEN[id] : null;
+  const topicId = id.replace(/^topic-/, '');
+  if (!gen && !findTopic(topicId)) {
     main.innerHTML = `<section class="container page-state"><h1>${esc(s.notFound)}</h1><a class="btn" href="#/quiz">${esc(s.title)}</a></section>`;
     return;
+  }
+  let topic = null;
+  if (!gen) {
+    main.innerHTML = `<div class="container">${loading()}</div>`;
+    topic = await loadTopic(topicId).catch(() => null);
+    if (!isCurrent()) return;
+    if (!topic) {
+      main.innerHTML = `<div class="container">${errorState()}</div>`;
+      return;
+    }
   }
   const level = getPrefs().level;
   const name = gen ? pick(gen.title) : pick(topic.title);
@@ -134,6 +168,7 @@ export async function render({ id, main }) {
     <div class="card quiz-card" data-quiz></div>
   </div>`;
   const questions = gen ? await gen.build(level) : quizFor(topic, bodyLevel(topic, level));
+  if (!isCurrent()) return;
   mountQuiz($('[data-quiz]', main), { id: gen ? `gen-${id}` : `topic-${topic.id}`, title: name, questions });
 }
 
@@ -293,8 +328,49 @@ async function buildPlaces(level) {
   });
 }
 
+/** Items at or below the level; the smallest pool is topped up from the next level so there are enough options. */
+function upTo(list, level, min = 8) {
+  const lv = level === 'guru' ? 'kuliah' : level;
+  const pool = list.filter(x => rank(x.lv) <= rank(lv));
+  return pool.length >= min ? pool : list.filter(x => rank(x.lv) <= rank(lv) + 1);
+}
+
+async function buildIons(level) {
+  const pool = upTo(IONS, level);
+  return pickN(pool, 8).map(i => {
+    const wrong = pickN(
+      pool.filter(x => x.f !== i.f),
+      3
+    );
+    return {
+      q: [fmt(s.ionQ, { name: i.name[0] }), fmt(s.ionQ, { name: i.name[1] })],
+      options: [i.f, ...wrong.map(x => x.f)],
+      answer: 0,
+      explain: i.about,
+    };
+  });
+}
+
+async function buildReactions(level) {
+  const pool = upTo(LIBRARY, level);
+  const types = Object.keys(REACTION_TYPES).filter(t => t !== 'nuklir');
+  return pickN(pool, 8).map(r => {
+    const wrong = pickN(
+      types.filter(t => !r.types.includes(t)),
+      3
+    );
+    return {
+      q: [fmt(s.reactionQ, { name: r.name[0] }), fmt(s.reactionQ, { name: r.name[1] })],
+      options: [r.types[0], ...wrong].map(t => REACTION_TYPES[t].name),
+      answer: 0,
+      explain: REACTION_TYPES[r.types[0]].def,
+    };
+  });
+}
+
 async function buildMixed(level) {
   const lv = level === 'guru' ? 'kuliah' : level;
-  const all = TOPICS.flatMap(t => t.quiz.filter(q => rank(q.lv) <= rank(lv) && rank(q.lv) >= rank(lv) - 1));
+  const topics = await loadTopics(TOPICS.filter(t => t.levels.includes(lv)));
+  const all = topics.flatMap(t => t.quiz.filter(q => rank(q.lv) <= rank(lv) && rank(q.lv) >= rank(lv) - 1));
   return pickN(all, 10);
 }

@@ -1,16 +1,25 @@
-// Lessons: the topic list for each level and a topic page with text, activities, quiz and teacher notes.
+// Lessons: the topic list for each level (the recommended path first, then lessons also written for that level)
+// and a topic page with its four layers of text, activities, quiz, teacher notes, the concepts, reactions, ions
+// and materials it covers, and textbook references. Lesson text loads on demand (loadTopic).
 import { $, $$, esc } from '../core/dom.js';
 import { S, pick, fmt, getPrefs, isTeacher } from '../core/prefs.js';
 import { replaceQuery } from '../core/router.js';
 import { levelName } from '../i18n/ui.js';
 import { icon } from '../components/icons.js';
-import { pageHead, breadcrumbs, levelBadge } from '../components/common.js';
+import { pageHead, breadcrumbs, levelBadge, loading, errorState, extLink } from '../components/common.js';
 import { moleculeCard } from '../components/cards.js';
 import { richText, plainText } from '../components/richtext.js';
 import { mountQuiz } from '../components/quiz.js';
-import { TOPICS, findTopic, bodyLevel, quizFor, PHASES } from '../data/topics/index.js';
+import { TOPICS, findTopic, loadTopic, bodyLevel, quizFor, PHASES, LAYERS } from '../data/topics/index.js';
 import { PATHS, findLab } from '../data/curriculum.js';
 import { getMolecule } from '../data/curatedMolecules.js';
+import { getElement } from '../data/periodicTable.js';
+import { findTerm } from '../data/glossary.js';
+import { getIon } from '../data/ions.js';
+import { ALL_REACTIONS, getReaction } from '../data/reactionLibrary.js';
+import { getMaterial } from '../data/materials.js';
+import { DOMAINS } from '../data/ontology.js';
+import { reference } from '../data/references.js';
 import { moleculeIndex } from '../services/data.js';
 import { speak, stopSpeaking, canSpeak } from '../services/speech.js';
 import { lessonsRead, markLesson, quizResults } from '../core/userdata.js';
@@ -18,8 +27,28 @@ import { lessonsRead, markLesson, quizResults } from '../core/userdata.js';
 const s = S({
   title: ['Materi belajar', 'Lessons'],
   lead: [
-    'Empat belas topik kimia mengikuti Kurikulum Merdeka, masing-masing ditulis untuk SD, SMP, SMA, dan kuliah. Setiap topik punya kegiatan, kuis, dan catatan guru.',
-    'Fourteen chemistry topics following Indonesia’s Kurikulum Merdeka, each written for primary, junior high, senior high and university, with activities, quizzes and teacher notes.',
+    '{n} topik kimia mengikuti Kurikulum Merdeka dan kimia perguruan tinggi. Setiap topik ditulis dalam empat lapis kedalaman (Sederhana untuk SD, Standar untuk SMP, Lanjutan untuk SMA, Mendalam untuk kuliah), lengkap dengan kegiatan, kuis, catatan guru, dan rujukan buku teks terbuka.',
+    '{n} chemistry topics following Indonesia’s Kurikulum Merdeka and university chemistry. Each is written in four layers of depth (Simple for primary, Standard for junior high, Advanced for senior high, Deep dive for university), with activities, quizzes, teacher notes and open-textbook references.',
+  ],
+  path: ['Jalur belajar {level}', 'Learning path: {level}'],
+  pathLead: ['Urutan yang disarankan untuk jenjang ini.', 'The suggested order for this level.'],
+  others: ['Materi lain yang juga bisa dibaca', 'More lessons you can read'],
+  othersLead: [
+    'Topik ini biasanya dipelajari di jenjang lain, tetapi tersedia juga versi untuk jenjangmu.',
+    'These topics are usually met at another level, but a version for your level is available too.',
+  ],
+  layer: ['Lapis {layer}', '{layer} layer'],
+  concepts: ['Konsep kunci dalam materi ini', 'Key concepts in this lesson'],
+  explore: ['Jelajahi lebih jauh', 'Explore further'],
+  reactions: ['Reaksi', 'Reactions'],
+  ions: ['Ion', 'Ions'],
+  elements: ['Unsur', 'Elements'],
+  materials: ['Material & campuran', 'Materials & mixtures'],
+  domains: ['Bagian dari peta ilmu kimia', 'Part of the chemistry map'],
+  refs: ['Rujukan', 'References'],
+  refsNote: [
+    'Buku teks terbuka OpenStax (CC BY 4.0), bahasa Inggris.',
+    'OpenStax open textbooks (CC BY 4.0).',
   ],
   levelFor: ['Tampilkan untuk jenjang', 'Show for level'],
   read: ['Sudah dibaca', 'Read'],
@@ -48,14 +77,22 @@ const s = S({
 
 export const title = route => (route.id ? pick(findTopic(route.id)?.title || ['Materi', 'Lesson']) : s.title);
 
-export async function render({ id, main, params, cleanup }) {
+export async function render({ id, main, params, cleanup, isCurrent }) {
   if (!id) return renderList(main, params);
-  const t = findTopic(id);
-  if (!t) {
+  if (!findTopic(id)) {
     main.innerHTML = `<section class="container page-state"><h1>${esc(s.notFound)}</h1><a class="btn" href="#/learn">${esc(s.title)}</a></section>`;
     return;
   }
-  const idx = await moleculeIndex();
+  main.innerHTML = `<div class="container">${loading()}</div>`;
+  let t;
+  let idx;
+  try {
+    [t, idx] = await Promise.all([loadTopic(id), moleculeIndex()]);
+  } catch {
+    if (isCurrent()) main.innerHTML = `<div class="container">${errorState()}</div>`;
+    return;
+  }
+  if (!isCurrent()) return;
   let lv = params.get('lv') && t.body[params.get('lv')] ? params.get('lv') : bodyLevel(t, getPrefs().level);
   const order = TOPICS.map(x => x.id);
   const prev = findTopic(order[order.indexOf(t.id) - 1]);
@@ -74,7 +111,7 @@ export async function render({ id, main, params, cleanup }) {
       <p class="lead">${esc(pick(t.summary))}</p>
       <div class="lesson-tools">
         <div class="seg" role="group" aria-label="${esc(s.version)}">
-          ${levels.map(l => `<button type="button" class="seg-btn" data-lv="${l}" aria-pressed="${l === lv}">${esc(levelName(l))}</button>`).join('')}
+          ${levels.map(l => `<button type="button" class="seg-btn" data-lv="${l}" aria-pressed="${l === lv}" title="${esc(fmt(s.layer, { layer: pick(LAYERS[l]) }))}">${esc(levelName(l))}<small class="seg-sub">${esc(pick(LAYERS[l]))}</small></button>`).join('')}
         </div>
         ${canSpeak() ? `<button class="btn" type="button" data-speak aria-pressed="false">${icon('speaker', { size: 18 })}<span>${esc(pick(['Dengarkan', 'Listen']))}</span></button>` : ''}
         <button class="btn" type="button" data-print>${icon('print', { size: 18 })}<span>${esc(pick(['Cetak', 'Print']))}</span></button>
@@ -108,8 +145,10 @@ export async function render({ id, main, params, cleanup }) {
             .join('')}</div></section>`
         : ''
     }
+    ${relatedHTML(t)}
     <section class="card quiz-card" aria-labelledby="quiz-title"><h2 id="quiz-title">${icon('quiz', { size: 20 })} ${esc(s.quiz)}</h2><div data-quiz></div></section>
     ${isTeacher() ? teacherNotes(t) : ''}
+    ${refsHTML(t)}
     <nav class="pager" aria-label="${esc(pick(['Materi lain', 'Other lessons']))}">
       ${prev ? `<a class="btn" href="#/learn/${prev.id}">← ${esc(pick(prev.title))}</a>` : '<span></span>'}
       ${next ? `<a class="btn" href="#/learn/${next.id}">${esc(pick(next.title))} →</a>` : ''}
@@ -155,6 +194,77 @@ export async function render({ id, main, params, cleanup }) {
   cleanup(stopSpeaking);
 }
 
+const chips = (list, href, label) =>
+  list.length
+    ? `<p class="chip-grid">${list.map(x => `<a class="chip" href="${href(x)}">${label(x)}</a>`).join(' ')}</p>`
+    : '';
+
+/** Concepts, elements, ions, reactions and materials the lesson covers, and the knowledge-map domains it belongs to. */
+function relatedHTML(t) {
+  const L = t.links || {};
+  const terms = (L.g || []).map(findTerm).filter(Boolean);
+  const elements = (L.e || []).map(getElement).filter(Boolean);
+  const ions = (L.i || []).map(getIon).filter(Boolean);
+  const reactions = [
+    ...new Set([...(L.r || []), ...ALL_REACTIONS.filter(r => r.topic === t.id).map(r => r.id)]),
+  ]
+    .map(getReaction)
+    .filter(Boolean);
+  const materials = (L.mat || []).map(getMaterial).filter(Boolean);
+  const domains = DOMAINS.filter(d => d.topics.includes(t.id));
+  const explore = [
+    elements.length
+      ? `<h3 class="h-small">${esc(s.elements)}</h3>${chips(
+          elements,
+          e => `#/atom/${e.s}`,
+          e => `${esc(e.s)} · ${esc(pick([e.id, e.en]))}`
+        )}`
+      : '',
+    ions.length
+      ? `<h3 class="h-small">${esc(s.ions)}</h3>${chips(
+          ions,
+          i => `#/ion/${i.id}`,
+          i => `${esc(i.f)} · ${esc(pick(i.name))}`
+        )}`
+      : '',
+    reactions.length
+      ? `<h3 class="h-small">${esc(s.reactions)}</h3>${chips(
+          reactions,
+          r => `#/reaction/${r.id}`,
+          r => esc(pick(r.name))
+        )}`
+      : '',
+    materials.length
+      ? `<h3 class="h-small">${esc(s.materials)}</h3>${chips(
+          materials,
+          m => `#/material/${m.id}`,
+          m => esc(pick(m.name))
+        )}`
+      : '',
+  ].join('');
+  return `${
+    terms.length
+      ? `<section aria-labelledby="concepts-title"><h2 id="concepts-title">${icon('bulb', { size: 20 })} ${esc(s.concepts)}</h2>${chips(
+          terms,
+          g => `#/glossary/${g.key}`,
+          g => esc(pick(g.term))
+        )}</section>`
+      : ''
+  }${explore ? `<section class="card" aria-labelledby="explore-title"><h2 id="explore-title">${icon('search', { size: 20 })} ${esc(s.explore)}</h2>${explore}</section>` : ''}${
+    domains.length
+      ? `<p class="muted">${esc(s.domains)}: ${domains.map(d => `<a href="#/peta/${d.id}">${esc(pick(d.name))}</a>`).join(', ')}</p>`
+      : ''
+  }`;
+}
+
+function refsHTML(t) {
+  const refs = (t.refs || []).map(reference).filter(Boolean);
+  if (!refs.length) return '';
+  return `<section class="refs" aria-labelledby="refs-title"><h2 class="h-small" id="refs-title">${esc(s.refs)}</h2>
+    <ul class="ref-list">${refs.map(r => `<li>${extLink(r.url, r.label)}</li>`).join('')}</ul>
+    <p class="muted small">${esc(s.refsNote)}</p></section>`;
+}
+
 function activity(t, lv) {
   const a = t.activity?.[lv] || Object.values(t.activity || {})[0];
   return a
@@ -179,38 +289,45 @@ function teacherNotes(t) {
   </section>`;
 }
 
+function topicCard(t, i, lv, read, quiz) {
+  const q = quiz[`topic-${t.id}`];
+  return `<a class="card topic-card" href="#/learn/${t.id}?lv=${lv}">
+    ${i != null ? `<span class="topic-num">${i + 1}</span>` : ''}
+    <span class="topic-icon">${icon(t.icon, { size: 24 })}</span>
+    <span class="card-title">${esc(pick(t.title))}</span>
+    <span class="card-text">${esc(pick(t.summary))}</span>
+    <span class="topic-meta">${t.levels.map(levelBadge).join(' ')}</span>
+    <span class="topic-meta">${read[t.id] ? `${icon('check', { size: 14 })} ${esc(s.read)}` : ''}${q ? ` · ${esc(fmt(s.best, q))}` : ''}</span>
+    <span class="card-next">${esc(pick(read[t.id] ? ['Baca kembali', 'Read again'] : ['Mulai belajar', 'Start learning']))} ${icon('arrowRight', { size: 16 })}</span>
+  </a>`;
+}
+
 function renderList(main, params) {
   const pref = getPrefs().level === 'guru' ? 'sma' : getPrefs().level;
   let lv = ['sd', 'smp', 'sma', 'kuliah'].includes(params.get('lv')) ? params.get('lv') : pref;
   const read = lessonsRead();
   const quiz = quizResults();
   const draw = () => {
-    const order = PATHS[lv] || PATHS.smp;
-    const list = [...order.map(findTopic), ...TOPICS.filter(t => !order.includes(t.id))].filter(
-      t => t && t.body[lv]
-    );
-    main.querySelector('[data-topics]').innerHTML = list
-      .map((t, i) => {
-        const q = quiz[`topic-${t.id}`];
-        return `<a class="card topic-card" href="#/learn/${t.id}?lv=${lv}">
-          <span class="topic-num">${i + 1}</span>
-          <span class="topic-icon">${icon(t.icon, { size: 24 })}</span>
-          <span class="card-title">${esc(pick(t.title))}</span>
-          <span class="card-text">${esc(pick(t.summary))}</span>
-          <span class="topic-meta">${t.levels.map(levelBadge).join(' ')}</span>
-          <span class="topic-meta">${read[t.id] ? `${icon('check', { size: 14 })} ${esc(s.read)}` : ''}${q ? ` · ${esc(fmt(s.best, q))}` : ''}</span>
-          <span class="card-next">${esc(pick(read[t.id] ? ['Baca kembali', 'Read again'] : ['Mulai belajar', 'Start learning']))} ${icon('arrowRight', { size: 16 })}</span>
-        </a>`;
-      })
-      .join('');
+    const path = (PATHS[lv] || PATHS.smp).map(findTopic).filter(t => t?.layers.includes(lv));
+    const others = TOPICS.filter(t => !path.includes(t) && t.layers.includes(lv));
+    main.querySelector('[data-topics]').innerHTML = `
+      <section aria-labelledby="path-title"><h2 id="path-title">${esc(fmt(s.path, { level: levelName(lv) }))}</h2>
+        <p class="muted">${esc(s.pathLead)} · ${esc(fmt(s.layer, { layer: pick(LAYERS[lv]) }))}</p>
+        <div class="grid grid-3">${path.map((t, i) => topicCard(t, i, lv, read, quiz)).join('')}</div></section>
+      ${
+        others.length
+          ? `<section aria-labelledby="others-title"><h2 id="others-title">${esc(s.others)}</h2><p class="muted">${esc(s.othersLead)}</p>
+        <div class="grid grid-3">${others.map(t => topicCard(t, null, lv, read, quiz)).join('')}</div></section>`
+          : ''
+      }`;
   };
   main.innerHTML = `<div class="container">
-    ${pageHead({ title: esc(s.title), lead: esc(s.lead) })}
+    ${pageHead({ title: esc(s.title), lead: esc(fmt(s.lead, { n: TOPICS.length })) })}
     <div class="seg" role="group" aria-label="${esc(s.levelFor)}">
       ${['sd', 'smp', 'sma', 'kuliah'].map(l => `<button type="button" class="seg-btn" data-lv="${l}" aria-pressed="${l === lv}">${esc(levelName(l))}</button>`).join('')}
     </div>
     <p class="muted small" data-phase>${esc(pick(PHASES[lv]))}</p>
-    <div class="grid grid-3" data-topics></div>
+    <div data-topics></div>
   </div>`;
   main.querySelector('.seg').addEventListener('click', e => {
     const b = e.target.closest('[data-lv]');

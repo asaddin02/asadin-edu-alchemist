@@ -22,5 +22,801 @@
   "author": "Eschenmoser + Kollegen",
   "license": "Public domain",
   "licenseUrl": ""
- }
+ },
+ "weight": {
+  "value": "243.0613893(22)",
+  "kind": "isotope-mass",
+  "A": 243,
+  "estimated": false,
+  "source": "nist"
+ },
+ "natural": [],
+ "naturalSource": "nist",
+ "nuclides": [
+  {
+   "A": 231,
+   "iso": "",
+   "mass": "231.050746 ± 0.000322",
+   "half": "20 s",
+   "seconds": 20,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 232,
+   "iso": "",
+   "mass": "232.049740 ± 0.000216",
+   "half": "10 s",
+   "seconds": 10,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 233,
+   "iso": "",
+   "mass": "233.050771485 ± 0.000087059",
+   "half": "27 s ± 10",
+   "seconds": 27,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 20
+    },
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 80
+    }
+   ],
+   "year": 2001,
+   "est": false
+  },
+  {
+   "A": 234,
+   "iso": "",
+   "mass": "234.050158568 ± 0.000018333",
+   "half": "52 s ± 9",
+   "seconds": 52,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "≈",
+     "pct": 71
+    },
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 27
+    },
+    {
+     "mode": "SF",
+     "op": "≈",
+     "pct": 2
+    }
+   ],
+   "year": 2001,
+   "est": false
+  },
+  {
+   "A": 235,
+   "iso": "",
+   "mass": "235.051545 ± 0.00011",
+   "half": "7 m ± 3",
+   "seconds": 420,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 4
+    }
+   ],
+   "year": 1981,
+   "est": true
+  },
+  {
+   "A": 236,
+   "iso": "",
+   "mass": "236.051372112 ± 0.000018931",
+   "half": "6.8 m ± 0.8",
+   "seconds": 408,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 82
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 18
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2010,
+   "est": false
+  },
+  {
+   "A": 237,
+   "iso": "",
+   "mass": "237.052868988 ± 0.00007987",
+   "half": ">10 m",
+   "seconds": 600,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": null
+    }
+   ],
+   "year": 2002,
+   "est": true
+  },
+  {
+   "A": 237,
+   "iso": "p",
+   "mass": "237.052868988 ± 0.00007987",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [],
+   "year": null,
+   "est": false
+  },
+  {
+   "A": 238,
+   "iso": "",
+   "mass": "238.053081606 ± 0.000013133",
+   "half": "2.2 h ± 0.4",
+   "seconds": 7920.000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "ε",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 3.84
+    },
+    {
+     "mode": "SF",
+     "op": "=",
+     "pct": 0.048
+    }
+   ],
+   "year": 1994,
+   "est": false
+  },
+  {
+   "A": 239,
+   "iso": "",
+   "mass": "239.054908519 ± 0.000161107",
+   "half": "2.5 h ± 0.4",
+   "seconds": 9000,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "≈",
+     "pct": 100
+    }
+   ],
+   "year": 1952,
+   "est": false
+  },
+  {
+   "A": 239,
+   "iso": "p",
+   "mass": "239.054908519 ± 0.000161107",
+   "half": ">100 ns",
+   "seconds": 1.0000000000000001e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 240,
+   "iso": "",
+   "mass": "240.055528233 ± 0.000002045",
+   "half": "30.4 d ± 3.7",
+   "seconds": 2626560,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "ε",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1949,
+   "est": false
+  },
+  {
+   "A": 241,
+   "iso": "",
+   "mass": "241.057651218 ± 0.000001725",
+   "half": "32.8 d ± 0.2",
+   "seconds": 2833919.9999999995,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": 99
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 1
+    }
+   ],
+   "year": 1952,
+   "est": false
+  },
+  {
+   "A": 242,
+   "iso": "",
+   "mass": "242.058834187 ± 0.000001224",
+   "half": "162.8 d ± 0.2",
+   "seconds": 14065920.000000002,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "2β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1949,
+   "est": false
+  },
+  {
+   "A": 242,
+   "iso": "m",
+   "mass": "242.058834187 ± 0.000001224",
+   "half": "180 ns ± 70",
+   "seconds": 1.8000000000000002e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1971,
+   "est": false
+  },
+  {
+   "A": 243,
+   "iso": "",
+   "mass": "243.061387329 ± 0.000001605",
+   "half": "29.1 y ± 0.1",
+   "seconds": 918306548.9280001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": 0.29
+    }
+   ],
+   "year": 1950,
+   "est": false
+  },
+  {
+   "A": 243,
+   "iso": "m",
+   "mass": "243.061387329 ± 0.000001605",
+   "half": "1.08 us ± 0.03",
+   "seconds": 0.00000108,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1971,
+   "est": false
+  },
+  {
+   "A": 243,
+   "iso": "p",
+   "mass": "243.061387329 ± 0.000001605",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1984,
+   "est": false
+  },
+  {
+   "A": 244,
+   "iso": "",
+   "mass": "244.062750622 ± 0.000001187",
+   "half": "18.11 y ± 0.03",
+   "seconds": 571495931.3088,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1950,
+   "est": false
+  },
+  {
+   "A": 244,
+   "iso": "m",
+   "mass": "244.062750622 ± 0.000001187",
+   "half": "34 ms ± 2",
+   "seconds": 0.034,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1963,
+   "est": false
+  },
+  {
+   "A": 244,
+   "iso": "n",
+   "mass": "244.062750622 ± 0.000001187",
+   "half": ">500 ns",
+   "seconds": 5.000000000000001e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1969,
+   "est": false
+  },
+  {
+   "A": 245,
+   "iso": "",
+   "mass": "245.065491047 ± 0.000001233",
+   "half": "8.25 ky ± 0.07",
+   "seconds": 260344640160.00003,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1954,
+   "est": false
+  },
+  {
+   "A": 245,
+   "iso": "m",
+   "mass": "245.065491047 ± 0.000001233",
+   "half": "290 ns ± 20",
+   "seconds": 2.9000000000000003e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1975,
+   "est": false
+  },
+  {
+   "A": 246,
+   "iso": "",
+   "mass": "246.067222016 ± 0.000001637",
+   "half": "4.706 ky ± 0.040",
+   "seconds": 148506894132.48004,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 99.97385
+    },
+    {
+     "mode": "SF",
+     "op": "=",
+     "pct": 0.02615
+    }
+   ],
+   "year": 1954,
+   "est": false
+  },
+  {
+   "A": 246,
+   "iso": "m",
+   "mass": "246.067222016 ± 0.000001637",
+   "half": "1.12 s ± 0.24",
+   "seconds": 1.12,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2012,
+   "est": false
+  },
+  {
+   "A": 247,
+   "iso": "",
+   "mass": "247.070352678 ± 0.000004076",
+   "half": "15.6 My ± 0.5",
+   "seconds": 492288046848000,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1954,
+   "est": false
+  },
+  {
+   "A": 247,
+   "iso": "m",
+   "mass": "247.070352678 ± 0.000004076",
+   "half": "26.3 us ± 0.3",
+   "seconds": 0.0000263,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1968,
+   "est": false
+  },
+  {
+   "A": 247,
+   "iso": "n",
+   "mass": "247.070352678 ± 0.000004076",
+   "half": "100.6 ns ± 0.6",
+   "seconds": 1.006e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2003,
+   "est": false
+  },
+  {
+   "A": 248,
+   "iso": "",
+   "mass": "248.072349086 ± 0.000002531",
+   "half": "348 ky ± 6",
+   "seconds": 10981810275840.002,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 91.61
+    },
+    {
+     "mode": "SF",
+     "op": "=",
+     "pct": 8.39
+    },
+    {
+     "mode": "2β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1956,
+   "est": false
+  },
+  {
+   "A": 248,
+   "iso": "m",
+   "mass": "248.072349086 ± 0.000002531",
+   "half": "146 us ± 18",
+   "seconds": 0.000146,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2012,
+   "est": false
+  },
+  {
+   "A": 249,
+   "iso": "",
+   "mass": "249.075953992 ± 0.000002545",
+   "half": "64.15 m ± 0.03",
+   "seconds": 3849.0000000000005,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1956,
+   "est": false
+  },
+  {
+   "A": 249,
+   "iso": "m",
+   "mass": "249.075953992 ± 0.000002545",
+   "half": "23 us",
+   "seconds": 0.000023,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1966,
+   "est": false
+  },
+  {
+   "A": 250,
+   "iso": "",
+   "mass": "250.078357541 ± 0.000011029",
+   "half": "8300 y",
+   "seconds": 261922486464.00003,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": "≈",
+     "pct": 74
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1966,
+   "est": true
+  },
+  {
+   "A": 251,
+   "iso": "",
+   "mass": "251.082284988 ± 0.000024367",
+   "half": "16.8 m ± 0.2",
+   "seconds": 1008,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1978,
+   "est": false
+  },
+  {
+   "A": 252,
+   "iso": "",
+   "mass": "252.084870 ± 0.00032",
+   "half": "1 m",
+   "seconds": 60,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  }
+ ],
+ "stableCount": 0,
+ "texts": {
+  "history": [
+   {
+    "text": "Curium was first produced by Glenn T. Seaborg, Ralph A. James and Albert Ghiorso, working at the University of California, Berkeley, in 1944. They bombarded atoms of plutonium-239, an isotope of plutonium, with alpha particles that had been accelerated in a device called a cyclotron. This produced atoms of curium-242 and one free neutron. Curium-242 has a half-life of about 163 days and decays into plutonium-238 through alpha decay or decays through spontaneous fission. Curium's most stable isotope, curium-247, has a half-life of about 15,600,000 years. It decays into plutonium-243 through alpha decay.",
+    "source": "jlab"
+   },
+   {
+    "text": "Although curium follows americium in the periodic system, it was actually the third transuranium element to be discovered. It was identified by Seaborg, James, and Ghiorso in 1944 at the wartime metallurgical laboratory at the University of Chicago as a result of helium-ion bombardment of 239Pu in the Berkeley, California, 60-inch cyclotron. Visible amounts (30 µg) of 242Cm, in the form of the hydroxide, were first isolated by Werner and Perlman of the University of California in 1947. In 1950, Crane, Wallmann, and Cunningham found that the magnetic susceptibility of microgram samples of CmF3 was of the same magnitude as that of GdF3. This provided direct experimental evidence for assigning an electronic configuration to Cm+3. In 1951, the same workers prepared curium in its elemental form for the first time. Fourteen isotopes of curium are now known ranging in mass from 237 to 251. The most stable, 247Cm, with a half-life of 16 million years, is so short compared to the earth's age that any primordial curium must have disappeared long ago from the natural scene.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Since only milligram amounts of curium have ever been produced, there are currently no commercial applications for it, although it might be used in radioisotope thermoelectric generators in the future. Curium is primarily used for basic scientific research. Scientists have produced several curium compounds. They include: curium dioxide (CmO2), curium trioxide (Cm2O3), curium bromide (CmBr3), curium chloride (CmCl3), curium chloride (CmCl3), curium tetrafluoride (CmF4) and curium iodide (CmI3). As with the element, the compounds currently have no commercial applications and are primarily used for basic scientific research.",
+    "source": "jlab"
+   }
+  ],
+  "description": [
+   {
+    "text": "Curium does not occur naturally in the Earth’s crust. It was first synthesized in 1944 by Glenn T. Seaborg and his team at the University of California in Berkeley using the reaction 239Pu (4He, n) 242Cm. The element was named after Pierre and Marie Curie, who discovered radium and polonium.",
+    "source": "iptei"
+   },
+   {
+    "text": "Minute amounts of curium probably exist in natural deposits of uranium, as a result of a sequence of neutron captures and beta decays sustained by the very low flux of neutrons naturally present in uranium ores. The presence of natural curium, however, has never been detected. 242Cm and 244Cm are available in multigram quantities. 248Cm has been produced only in milligram amounts. Curium is similar in some regards to gadolinium, its rare earth homolog, but it has a more complex crystal structure. Curium metal is lustrous, malleable, silver in color, chemically reactive, and is more electropositive than aluminum. Curium metal exist in two crystal forms, a double hexagonal close packed (dhcp) and a high temperature face-centered cubic close packed (fcc) structure. Metallic curium dissolves rapidly in dilute acid to form Cm(III) solutions. Curium metal surfaces rapidly oxidize in air to form a thin film possibly starting out as CmO, Oxidation then progressing to Cm2O3, and eventually to form stable CmO2. Note however that the formation of divalent compounds of curium such as CmO have never been observed in bulk form. Most compounds and solutions of trivalent curium are quite stable and are faintly yellow or yellow-green in color. The stability of the trivalent state for curium is attributed to the half-filled 5f7 electron shell configuration. Curium in the tetravalent state is meta-stable in concentrated fluoride solutions but very stable in the solid state, primarily as the oxides and fluorides. Because curium isotopes are available in macro quantities a number of curium compounds have been prepared and characterized with the majority in the trivalent state. 242Cm generates about three watts of thermal energy per gram. This compares to one-half watt per gram of 238Pu. Both 242Cm and 244Cm have been used as power sources for space and medical uses. 244Cm is now offered for sale at $100/mg. Curium absorbed into the body accumulates in the bones, and is therefore very toxic as its radiation destroys the red-cell forming mechanism. The maximum permissible total body burden of 244Cm (soluble) in a human being is 0.3 microcurie. This element reviewed and Updated by Dr. David Hobart, 2011",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Industry",
+   "text": "244Cm and 242Cm (with half-lives of 18.1 years and 163 days, respectively) are strong alpha emitters (see alpha decay). The alpha emission from these isotopes creates a considerable quantity of heat that makes them useful as alpha particle sources, as well as heat generators in RTGs (radioisotopic thermoelectric generators). During a number of space missions based in America and Europe, 244Cm was the source used for the alpha particle X-ray spectrometer that was on board vehicles such as the Mars Exploration Rover and the Rosetta/Philae,. 244Cm has a large neutron capture to neutron fission cross-section ratio and has been used in a nuclear reactor to produce higher mass radio-isotopes of curium (Fig. IUPAC.96.1),. ",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "Not Applicable",
+  "ocean": "Not Applicable",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 23979,
+   "name": "curium",
+   "formula": "Cm",
+   "charge": 0,
+   "smiles": "[Cm]"
+  }
+ ],
+ "refs": {
+  "nist": {
+   "name": "NIST Physical Measurement Laboratory",
+   "url": "https://physics.nist.gov/cgi-bin/Elements/elInfo.pl?element=96"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele096.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/96.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": null,
+ "ghs": null,
+ "ghsCid": null
 }

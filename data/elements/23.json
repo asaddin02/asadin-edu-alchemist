@@ -22,5 +22,759 @@
   "author": "The original uploader was Tomihahndorf at German Wikipedia.",
   "license": "CC BY-SA 3.0",
   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
- }
+ },
+ "weight": {
+  "value": "50.9415(1)",
+  "kind": "standard",
+  "source": "ciaaw"
+ },
+ "natural": [
+  {
+   "A": 50,
+   "iso": "",
+   "mass": "49.947 156(3)",
+   "abundance": "0.002 50(10)"
+  },
+  {
+   "A": 51,
+   "iso": "",
+   "mass": "50.943 957(3)",
+   "abundance": "0.997 50(10)"
+  }
+ ],
+ "naturalSource": "ciaaw",
+ "nuclides": [
+  {
+   "A": 39,
+   "iso": "",
+   "mass": "39.024230 ± 0.000429",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 40,
+   "iso": "",
+   "mass": "40.013387 ± 0.000322",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 41,
+   "iso": "",
+   "mass": "41.000333 ± 0.000215",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 42,
+   "iso": "",
+   "mass": "41.991820 ± 0.00021",
+   "half": "Not-specified <55ns",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 43,
+   "iso": "",
+   "mass": "42.980766000 ± 0.000046",
+   "half": "79.3 ms ± 2.4",
+   "seconds": 0.0793,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "<",
+     "pct": 2.5
+    }
+   ],
+   "year": 1987,
+   "est": false
+  },
+  {
+   "A": 44,
+   "iso": "",
+   "mass": "43.974440977 ± 0.000007799",
+   "half": "111 ms ± 7",
+   "seconds": 0.111,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+α",
+     "op": "=",
+     "pct": null
+    },
+    {
+     "mode": "β+p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1971,
+   "est": false
+  },
+  {
+   "A": 45,
+   "iso": "",
+   "mass": "44.965768498 ± 0.000000926",
+   "half": "547 ms ± 6",
+   "seconds": 0.547,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1975,
+   "est": false
+  },
+  {
+   "A": 46,
+   "iso": "",
+   "mass": "45.960197389 ± 0.000000143",
+   "half": "422.62 ms ± 0.05",
+   "seconds": 0.42262,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1952,
+   "est": false
+  },
+  {
+   "A": 47,
+   "iso": "",
+   "mass": "46.954903558 ± 0.000000118",
+   "half": "32.6 m ± 0.3",
+   "seconds": 1956,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1942,
+   "est": false
+  },
+  {
+   "A": 48,
+   "iso": "",
+   "mass": "47.952250900 ± 0.000001043",
+   "half": "15.9735 d ± 0.0025",
+   "seconds": 1380110.4,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1937,
+   "est": false
+  },
+  {
+   "A": 49,
+   "iso": "",
+   "mass": "48.948510509 ± 0.000000884",
+   "half": "330 d ± 15",
+   "seconds": 28512000,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1940,
+   "est": false
+  },
+  {
+   "A": 50,
+   "iso": "",
+   "mass": "49.947156681 ± 0.000000099",
+   "half": "271 Py ± 13",
+   "seconds": 8.55192696768e+24,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1949,
+   "est": false
+  },
+  {
+   "A": 51,
+   "iso": "",
+   "mass": "50.943957664 ± 0.000000104",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1924,
+   "est": false
+  },
+  {
+   "A": 52,
+   "iso": "",
+   "mass": "51.944773636 ± 0.00000017",
+   "half": "3.743 m ± 0.005",
+   "seconds": 224.57999999999998,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1934,
+   "est": false
+  },
+  {
+   "A": 53,
+   "iso": "",
+   "mass": "52.944334940 ± 0.000003331",
+   "half": "1.543 m ± 0.014",
+   "seconds": 92.58,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1960,
+   "est": false
+  },
+  {
+   "A": 54,
+   "iso": "",
+   "mass": "53.946432009 ± 0.000012001",
+   "half": "49.8 s ± 0.5",
+   "seconds": 49.8,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1970,
+   "est": false
+  },
+  {
+   "A": 55,
+   "iso": "",
+   "mass": "54.947262000 ± 0.000029",
+   "half": "6.54 s ± 0.15",
+   "seconds": 6.54,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1977,
+   "est": false
+  },
+  {
+   "A": 56,
+   "iso": "",
+   "mass": "55.950420082 ± 0.000188819",
+   "half": "216 ms ± 4",
+   "seconds": 0.216,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1980,
+   "est": false
+  },
+  {
+   "A": 57,
+   "iso": "",
+   "mass": "56.952297000 ± 0.000091",
+   "half": "350 ms ± 10",
+   "seconds": 0.35000000000000003,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1980,
+   "est": false
+  },
+  {
+   "A": 58,
+   "iso": "",
+   "mass": "57.956595985 ± 0.000102862",
+   "half": "191 ms ± 10",
+   "seconds": 0.191,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1980,
+   "est": false
+  },
+  {
+   "A": 59,
+   "iso": "",
+   "mass": "58.959623343 ± 0.000147505",
+   "half": "95 ms ± 6",
+   "seconds": 0.095,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": ">",
+     "pct": 3
+    }
+   ],
+   "year": 1985,
+   "est": false
+  },
+  {
+   "A": 60,
+   "iso": "",
+   "mass": "59.964479215 ± 0.000195327",
+   "half": "122 ms ± 18",
+   "seconds": 0.122,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1985,
+   "est": false
+  },
+  {
+   "A": 61,
+   "iso": "",
+   "mass": "60.967603529 ± 0.000252196",
+   "half": "48.2 ms ± 0.6",
+   "seconds": 0.04820000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 14.5
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1992,
+   "est": false
+  },
+  {
+   "A": 62,
+   "iso": "",
+   "mass": "61.972932556 ± 0.000283723",
+   "half": "33.6 ms ± 2.3",
+   "seconds": 0.033600000000000005,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1997,
+   "est": false
+  },
+  {
+   "A": 63,
+   "iso": "",
+   "mass": "62.976661000 ± 0.000365",
+   "half": "19.6 ms ± 0.9",
+   "seconds": 0.019600000000000003,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": ">",
+     "pct": 35
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1997,
+   "est": false
+  },
+  {
+   "A": 64,
+   "iso": "",
+   "mass": "63.982480 ± 0.000429",
+   "half": "15 ms ± 2",
+   "seconds": 0.015,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1997,
+   "est": true
+  },
+  {
+   "A": 65,
+   "iso": "",
+   "mass": "64.986999 ± 0.000537",
+   "half": "14 ms >620ns",
+   "seconds": 0.014,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2009,
+   "est": true
+  },
+  {
+   "A": 66,
+   "iso": "",
+   "mass": "65.993237 ± 0.000537",
+   "half": "10 ms >620ns",
+   "seconds": 0.01,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2009,
+   "est": true
+  },
+  {
+   "A": 67,
+   "iso": "",
+   "mass": "66.998128 ± 0.000644",
+   "half": "8 ms >620ns",
+   "seconds": 0.008,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2013,
+   "est": true
+  }
+ ],
+ "stableCount": 1,
+ "texts": {
+  "history": [
+   {
+    "text": "The name derives from the Scandinavian goddess of love and beauty, Freyja Vanadis, because of its many beautiful multi-coloured compounds. Vanadium was discovered by the Swedish physician and chemist Nils-Gabriel Sefström in 1830. Vanadium had originally been discovered by the Spanish mineralogist Andres Manuel del Rio y Fernandez in 1801, who named it erythronium, after the plant of that name whose flowers have many beautiful colours. Del Rio later decided that it was really chromium in his lead sample. Vanadium metal was first isolated by the English chemist Henry Enfield Roscoe in 1869.",
+    "source": "ciaaw"
+   },
+   {
+    "text": "Vanadium was discovered by Andrés Manuel del Rio, a Spanish chemist, in 1801. Rio sent samples of vanadium ore and a letter describing his methods to the Institute de France in Paris, France, for analysis and confirmation. Unfortunately for Rio, his letter was lost in a shipwreck and the Institute only received his samples, which contained a brief note describing how much this new element, which Rio had named erythronium, resembled chromium. Rio withdrew his claim when he received a letter from Paris disputing his discovery. Vanadium was rediscovered by Nils Gabriel Sefstrôm, a Swedish chemist, in 1830 while analyzing samples of iron from a mine in Sweden. Vanadium was isolated by Sir Henry Enfield Roscoe, an English chemist, in 1867 by combining vanadium trichloride (VCl3) with hydrogen gas (H2). Today, vanadium is primarily obtained from the minerals vanadinite (Pb5(VO)3Cl) and carnotite (K2(UO2)2VO4·1-3H2O) by heating crushed ore in the presence of carbon and chlorine to produce vanadium trichloride. The vanadium trichloride is then heated with magnesium in an argon atmosphere.",
+    "source": "jlab"
+   },
+   {
+    "text": "Named after Scandinavian goddess, Vanadis. Vanadium was first discovered by del Rio in 1801. Unfortunately, a French chemist incorrectly declared that del Rio's new element was only impure chromium. Del Rio thought himself to be mistaken and accepted the French chemists' statement. The element was rediscovered in 1830 by Sefstrom, who named the element in honor of the Scandinavian goddess, Vanadis, because of its beautiful multicolored compounds. It was isolated in nearly pure form by Roscoe, who in 1867 reduced the chloride with hydrogen. Vanadium of 99.3 to 99.8% purity was not produced until 1922.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Vanadium is corrosion resistant and is sometimes used to make special tubes and pipes for the chemical industry. Vanadium also does not easily absorb neutrons and has some applications in the nuclear power industry. A thin layer of vanadium is used to bond titanium to steel. Nearly 80% of the vanadium produced is used to make ferrovanadium or as an additive to steel. Ferrovanadium is a strong, shock resistant and corrosion resistant alloy of iron containing between 1% and 6% vanadium. Ferrovanadium and vanadium-steel alloys are used to make such things as axles, crankshafts and gears for cars, parts of jet engines, springs and cutting tools. Vanadium pentoxide (V2O5) is perhaps vanadium's most useful compound. It is used as a mordant, a material which permanently fixes dyes to fabrics. Vanadium pentoxide is also used as a catalyst in certain chemical reactions and in the manufacture of ceramics. Vanadium pentoxide can also be mixed with gallium to form superconductive magnets.",
+    "source": "jlab"
+   },
+   {
+    "text": "Vanadium is used in producing rust resistant and high speed tool steels. It is an important carbide stabilizer in making steels. About 80% of the vanadium now produced is used as ferrovanadium or as a steel additive. Vanadium foil is used as a bonding agent in cladding titanium to steel. Vanadium pentoxide is used in ceramics and as a catalyst. It is also used to produce a superconductive magnet with a field of 175,000 gauss.",
+    "source": "lanl"
+   }
+  ],
+  "sources": [
+   {
+    "text": "Vanadium is found in about 65 different minerals among which are carnotite, roscoelite, vanadinite, and patronite, important sources of the metal. Vanadium is also found in phosphate rock and certain iron ores, and is present in some crude oils in the form of organic complexes. It is also found in small percentages in meteorites. Commercial production from petroleum ash holds promise as an important source of the element. High-purity ductile vanadium can be obtained by reduction of vanadium trichloride with magnesium or with magnesium-sodium mixtures. Much of the vanadium metal being produced is now made by calcium reduction of V2O5 in a pressure vessel, an adaption of a process developed by McKechnie and Seybair.",
+    "source": "lanl"
+   }
+  ],
+  "description": [
+   {
+    "text": "Pure vanadium is a bright white metal, and is soft and ductile. It has good corrosion resistance to alkalis, sulfuric and hydrochloric acid, and salt water, but the metal oxidizes readily above 660°C. The metal has good structural strength and a low fission neutron cross section, making it useful in nuclear applications.",
+    "source": "lanl"
+   }
+  ],
+  "handling": [
+   {
+    "text": "Vanadium and its compounds are toxic and should be handled with care. The maximum allowable concentration of V2O5 dust in air is about 0.05 (8-hour time-weighted average - 40-hour week).",
+    "source": "lanl"
+   }
+  ],
+  "isotopes": [
+   {
+    "text": "Natural vanadium is a mixture of two isotopes, 50V (0.24%) and 51V (99.76%). 50V is slightly radioactive, having a half-life of> 3.9 x 1017 years. Nine other unstable isotopes are recognized.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Earth/Planetary Science",
+   "text": "The isotopic abundances of 50V and 51V have been used as an indicator of planetary core formation processes (Fig. IUPAC.23.1). Vanadium is greatly depleted in the Earth’s mantle compared with that in chondritic meteorites (chondrites). It is assumed that the deficit of vanadium in the Earth’s crust is accounted for by its partitioning into the core. The ratios of 50V and 51V have been used as a test of the X-wind model, which accounts for a portion of the extinct radioactive nuclides present in the early Solar System by radiation from the young Sun. 51V is depleted in meteorites compared to Earth. ",
+   "source": "iptei"
+  },
+  {
+   "topic": "Industry",
+   "text": "51V is used in solid state Nuclear Magnetic Resonance (NMR) to provide information to material scientists about surface species of vanadium oxide catalysts (substances that increase the rate of chemical reactions without themselves undergoing any permanent chemical change), their interaction with the supporting material, and their reactions during catalytic processes.",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "1.20×10^2 milligrams per kilogram",
+  "ocean": "2.5×10^-3 milligrams per liter",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 23990,
+   "name": "vanadium",
+   "formula": "V",
+   "charge": 0,
+   "smiles": "[V]"
+  },
+  {
+   "cid": 107675,
+   "name": "vanadium(4+)",
+   "formula": "V+4",
+   "charge": 4,
+   "smiles": "[V+4]"
+  },
+  {
+   "cid": 5460753,
+   "name": "vanadium(2+)",
+   "formula": "V+2",
+   "charge": 2,
+   "smiles": "[V+2]"
+  }
+ ],
+ "refs": {
+  "ciaaw": {
+   "name": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+   "url": "https://www.ciaaw.org/vanadium.htm"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele023.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/23.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": null,
+ "ghs": {
+  "signal": null,
+  "pictograms": [],
+  "hazards": [],
+  "reports": 452,
+  "notMet": 95.4,
+  "notClassified": true,
+  "source": "European Chemicals Agency (ECHA)"
+ },
+ "ghsCid": 23990
 }

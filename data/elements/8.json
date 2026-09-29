@@ -22,5 +22,493 @@
   "author": "U.S. Air Force/Staff Sgt. Jim Araos",
   "license": "Public domain",
   "licenseUrl": ""
- }
+ },
+ "weight": {
+  "value": "[15.999 03, 15.999 77]",
+  "kind": "interval",
+  "source": "ciaaw"
+ },
+ "natural": [
+  {
+   "A": 16,
+   "iso": "",
+   "mass": "15.994 914 619(1)",
+   "abundance": "[0.997 38, 0.997 76]"
+  },
+  {
+   "A": 17,
+   "iso": "",
+   "mass": "16.999 131 757(5)",
+   "abundance": "[0.000 367, 0.000 400]"
+  },
+  {
+   "A": 18,
+   "iso": "",
+   "mass": "17.999 159 613(5)",
+   "abundance": "[0.001 87, 0.002 22]"
+  }
+ ],
+ "naturalSource": "ciaaw",
+ "nuclides": [
+  {
+   "A": 11,
+   "iso": "",
+   "mass": "11.051249828 ± 0.000064453",
+   "half": "198 ys ± 12",
+   "seconds": 1.9799999999999998e-22,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "2p",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2019,
+   "est": false
+  },
+  {
+   "A": 12,
+   "iso": "",
+   "mass": "12.034367726 ± 0.000012882",
+   "half": "8.9 zs ± 3.3",
+   "seconds": 8.899999999999999e-21,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "2p",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1978,
+   "est": false
+  },
+  {
+   "A": 13,
+   "iso": "",
+   "mass": "13.024815435 ± 0.000010226",
+   "half": "8.58 ms ± 0.05",
+   "seconds": 0.00858,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 10.9
+    }
+   ],
+   "year": 1963,
+   "est": false
+  },
+  {
+   "A": 14,
+   "iso": "",
+   "mass": "14.008596706 ± 0.000000027",
+   "half": "70.621 s ± 0.011",
+   "seconds": 70.621,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1949,
+   "est": false
+  },
+  {
+   "A": 15,
+   "iso": "",
+   "mass": "15.003065636 ± 0.000000526",
+   "half": "122.266 s ± 0.043",
+   "seconds": 122.266,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1934,
+   "est": false
+  },
+  {
+   "A": 16,
+   "iso": "",
+   "mass": "15.99491461926 ± 0.00000000032",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1919,
+   "est": false
+  },
+  {
+   "A": 17,
+   "iso": "",
+   "mass": "16.99913175595 ± 0.00000000069",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1925,
+   "est": false
+  },
+  {
+   "A": 18,
+   "iso": "",
+   "mass": "17.99915961214 ± 0.00000000069",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1929,
+   "est": false
+  },
+  {
+   "A": 19,
+   "iso": "",
+   "mass": "19.003577969 ± 0.00000283",
+   "half": "26.470 s ± 0.006",
+   "seconds": 26.47,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1936,
+   "est": false
+  },
+  {
+   "A": 20,
+   "iso": "",
+   "mass": "20.004075357 ± 0.00000095",
+   "half": "13.51 s ± 0.05",
+   "seconds": 13.51,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1959,
+   "est": false
+  },
+  {
+   "A": 21,
+   "iso": "",
+   "mass": "21.008654948 ± 0.000012882",
+   "half": "3.42 s ± 0.10",
+   "seconds": 3.42,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1968,
+   "est": false
+  },
+  {
+   "A": 22,
+   "iso": "",
+   "mass": "22.009965744 ± 0.000061107",
+   "half": "2.25 s ± 0.09",
+   "seconds": 2.25,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "<",
+     "pct": 22
+    }
+   ],
+   "year": 1969,
+   "est": false
+  },
+  {
+   "A": 23,
+   "iso": "",
+   "mass": "23.015696686 ± 0.000130663",
+   "half": "97 ms ± 8",
+   "seconds": 0.097,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 7
+    }
+   ],
+   "year": 1970,
+   "est": false
+  },
+  {
+   "A": 24,
+   "iso": "",
+   "mass": "24.019861000 ± 0.000177",
+   "half": "77.4 ms ± 4.5",
+   "seconds": 0.07740000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 43
+    }
+   ],
+   "year": 1970,
+   "est": false
+  },
+  {
+   "A": 25,
+   "iso": "",
+   "mass": "25.029338919 ± 0.000177225",
+   "half": "5.18 zs ± 0.35",
+   "seconds": 5.179999999999999e-21,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "n",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2008,
+   "est": false
+  },
+  {
+   "A": 26,
+   "iso": "",
+   "mass": "26.037210155 ± 0.000177081",
+   "half": "4.2 ps ± 3.3",
+   "seconds": 4.2e-12,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "2n",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2012,
+   "est": false
+  },
+  {
+   "A": 27,
+   "iso": "",
+   "mass": "27.047955 ± 0.000537",
+   "half": "Not-specified <260ns",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 28,
+   "iso": "",
+   "mass": "28.055910 ± 0.00075",
+   "half": "Not-specified <100ns",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "2n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 0
+    }
+   ],
+   "year": null,
+   "est": true
+  }
+ ],
+ "stableCount": 3,
+ "texts": {
+  "history": [
+   {
+    "text": "The name derives from the Greek oxys for \"acid\" and genes for \"forming\" because the French chemist Antoine-Laurent Lavoisier once thought that oxygen was integral to all acids. Oxygen was discovered independently by the Swedish pharmacist and chemist Carl-Wilhelm Scheele in 1771, and the English clergyman and chemist Joseph Priestley in 1774. Scheele's Chemical Treatise on Air and Fire was delayed in publication until 1777, so Priestley is credited with the discovery because he published first.",
+    "source": "ciaaw"
+   },
+   {
+    "text": "Oxygen had been produced by several chemists prior to its discovery in 1774, but they failed to recognize it as a distinct element. Joseph Priestley and Carl Wilhelm Scheele both independently discovered oxygen, but Priestly is usually given credit for the discovery. They were both able to produce oxygen by heating mercuric oxide (HgO). Priestley called the gas produced in his experiments 'dephlogisticated air' and Scheele called his 'fire air'. The name oxygen was created by Antoine Lavoisier who incorrectly believed that oxygen was necessary to form all acids. Oxygen is the third most abundant element in the universe and makes up nearly 21% of the earth's atmosphere. Oxygen accounts for nearly half of the mass of the earth's crust, two thirds of the mass of the human body and nine tenths of the mass of water. Large amounts of oxygen can be extracted from liquefied air through a process known as fractional distillation. Oxygen can also be produced through the electrolysis of water or by heating potassium chlorate (KClO3).",
+    "source": "jlab"
+   },
+   {
+    "text": "From the Greek word oxys, acid, and genes, forming. The behavior of oxygen and nitrogen as components of air led to the advancement of the phlogiston theory of combustion, which captured the minds of chemists for a century. Joseph Priestley is generally credited with its discovery, although Scheele also discovered it independently. Its atomic weight was used as a standard of comparison for each of the other elements until 1961 when the International Union of Pure and Applied Chemistry adopted carbon 12 as the new basis.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Oxygen is a highly reactive element and is capable of combining with most other elements. It is required by most living organisms and for most forms of combustion. Impurities in molten pig iron are burned away with streams of high pressure oxygen to produce steel. Oxygen can also be combined with acetylene (C2H2) to produce an extremely hot flame used for welding. Liquid oxygen, when combined with liquid hydrogen, makes an excellent rocket fuel. Ozone (O3) forms a thin, protective layer around the earth that shields the surface from the sun's ultraviolet radiation. Oxygen is also a component of hundreds of thousands of organic compounds.",
+    "source": "jlab"
+   },
+   {
+    "text": "Plants and animals rely on oxygen for respiration. Hospitals frequently prescribe oxygen for patients with respiratory ailments.",
+    "source": "lanl"
+   }
+  ],
+  "sources": [
+   {
+    "text": "Oxygen is the third most abundant element found in the sun, and it plays a part in the carbon-nitrogen cycle, the process once thought to give the sun and stars their energy. Oxygen under excited conditions is responsible for the bright red and yellow-green colors of the Aurora Borealis. A gaseous element, oxygen forms 21% of the atmosphere by volume and is obtained by liquefaction and fractional distillation. The atmosphere of Mars contains about 0.15% oxygen. The element and its compounds make up 49.2%, by weight, of the earth's crust. About two thirds of the human body and nine tenths of water is oxygen. In the laboratory it can be prepared by the electrolysis of water or by heating potassium chlorate with manganese dioxide as a catalyst.",
+    "source": "lanl"
+   }
+  ],
+  "description": [
+   {
+    "text": "The gas is colorless, odorless, and tasteless. The liquid and solid forms are a pale blue color and are strongly paramagnetic.",
+    "source": "lanl"
+   }
+  ],
+  "isotopes": [
+   {
+    "text": "Oxygen has nine isotopes. Natural oxygen is a mixture of three isotopes. Natural occurring oxygen-18 is stable and available commercially, as is water (H2O with 15% 18O). Commercial oxygen consumption in the U.S. is estimated at 20 million short tons per year and the demand is expected to increase substantially. Oxygen enrichment of steel blast furnaces accounts for the greatest use of the gas. Large quantities are also used in making synthesis gas for ammonia and methanol, ethylene oxide, and for oxy-acetylene welding. Air separation plants produce about 99% of the gas, while electrolysis plants produce about 1%.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Earth/Planetary Science",
+   "text": "Molecules, atoms, and ions of the stable isotopes of oxygen possess slightly different physical and chemical properties, and they commonly will be fractionated during physical, chemical, and biological processes, giving rise to variations in isotopic abundances and in atomic weights. There are substantial variations in the isotopic abundances of oxygen in natural terrestrial materials (Fig. IUPAC.8.1). These variations are useful in investigating the origin of substances and studying environmental, hydrological, and geological processes. A primary use of stable oxygen isotopes is in isotope hydrology. Although the evolution of the stable hydrogen and oxygen isotopic composition of precipitation begins with the evaporation of water from the oceans, their local and global relationship arises primarily from equilibrium isotopic fractionation of heavier (2H and 18O) and lighter isotopes (1H and 16O) of hydrogen and oxygen during condensation as a tropospheric vapor mass follows a trajectory to higher latitudes and over continents,. As a consequence, the isotopic composition and atomic weight of oxygen in precipitation, rivers, and tap waters varies with elevation, season, and distance from the ocean-continent boundary. Figure 4.8.2 shows the variation in stable oxygen isotopic composition of water from rivers across the United States. These variations in oxygen isotopic composition of environmental water are often combined with hydrogen isotopic compositions and have been used to identify the origin of water and to investigate the interaction between groundwater and surface water (e.g. lakes, streams, and rivers).  ",
+   "source": "iptei"
+  },
+  {
+   "topic": "Forensic Science and Anthropology",
+   "text": "Measurements of relative 18O abundances have been used to determine the breeding grounds of many species of migrant songbirds. These species of songbirds only grow their feathers before migration, and they grow them on or close to their breeding grounds. Therefore, the isotopic composition of a bird’s feathers correlates to the isotopic signature of the growing season’s precipitation,. Measurements of relative 18O abundances of human hair or nail samples collected at archeological sites have been used to determine the geographic region in which a subject lived based on the oxygen isotopic composition of the water they drank (Fig. IUPAC.8.3). This is possible because hair stores a daily record of oxygen isotopic composition of intake water, which correlates to local meteoric water. ",
+   "source": "iptei"
+  },
+  {
+   "topic": "Medicine",
+   "text": "16O is used to produce radioactive 13N via the 16O (p, 4He) 13N reaction for imaging in positron emission tomography (PET) and to study blood flow through the heart (myocardial perfusion),. 17O has been used as a tracer to study cerebral oxygen utilization. Variations in stable oxygen and hydrogen isotopes are used in energy expenditure studies in animals and humans. The subject is administered a dose of doubly labeled water (water enriched in both 2H and 18O). Measurements of the elimination rates of 2H and 18O in the subject over time through regular sampling of body water (by sampling saliva, urine, or blood) provide information on energy expenditure because the hydrogen isotopic composition of body water is affected primarily by water loss (mainly urination), but the oxygen isotopic composition is affected by both respiration and water loss.",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "4.61×10^5 milligrams per kilogram",
+  "ocean": "8.57×10^5 milligrams per liter",
+  "source": "jlab"
+ },
+ "physical": "Gas",
+ "forms": [
+  {
+   "cid": 159832,
+   "name": "oxygen",
+   "formula": "O",
+   "charge": 0,
+   "smiles": "[O]"
+  },
+  {
+   "cid": 190217,
+   "name": "oxygen(2-)",
+   "formula": "O-2",
+   "charge": -2,
+   "smiles": "[O-2]"
+  },
+  {
+   "cid": 5460641,
+   "name": "oxygen(1-)",
+   "formula": "O-",
+   "charge": -1,
+   "smiles": "[O-]"
+  }
+ ],
+ "refs": {
+  "ciaaw": {
+   "name": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+   "url": "https://www.ciaaw.org/oxygen.htm"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele008.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/8.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": "oxygen",
+ "ghs": {
+  "signal": "Danger",
+  "pictograms": [
+   {
+    "code": "GHS03",
+    "label": "Oxidizer"
+   },
+   {
+    "code": "GHS04",
+    "label": "Compressed Gas"
+   }
+  ],
+  "hazards": [
+   "H270 (99%): May cause or intensify fire; oxidizer",
+   "H280 (33.7%): Contains gas under pressure; may explode if heated",
+   "H281 (16.2%): Contains refrigerated gas; may cause cryogenic burns or injury"
+  ],
+  "reports": 1351,
+  "notMet": 1,
+  "notClassified": false,
+  "source": "European Chemicals Agency (ECHA)"
+ },
+ "ghsCid": 977
 }

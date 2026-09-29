@@ -22,5 +22,1016 @@
   "author": "Alchemist-hp (talk) (www.pse-mendelejew.de)",
   "license": "FAL",
   "licenseUrl": "http://artlibre.org/licence/lal/en"
- }
+ },
+ "weight": {
+  "value": "55.845(2)",
+  "kind": "standard",
+  "source": "ciaaw"
+ },
+ "natural": [
+  {
+   "A": 54,
+   "iso": "",
+   "mass": "53.939 608(3)",
+   "abundance": "0.058 45(105)"
+  },
+  {
+   "A": 56,
+   "iso": "",
+   "mass": "55.934 936(2)",
+   "abundance": "0.917 54(106)"
+  },
+  {
+   "A": 57,
+   "iso": "",
+   "mass": "56.935 392(2)",
+   "abundance": "0.021 19(29)"
+  },
+  {
+   "A": 58,
+   "iso": "",
+   "mass": "57.933 274(3)",
+   "abundance": "0.002 82(12)"
+  }
+ ],
+ "naturalSource": "ciaaw",
+ "nuclides": [
+  {
+   "A": 45,
+   "iso": "",
+   "mass": "45.015467 ± 0.000304",
+   "half": "2.5 ms ± 0.2",
+   "seconds": 0.0025,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "2p",
+     "op": "=",
+     "pct": 70
+    },
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 30
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 18.9
+    },
+    {
+     "mode": "β+2p",
+     "op": "=",
+     "pct": 7.8
+    }
+   ],
+   "year": 1996,
+   "est": true
+  },
+  {
+   "A": 46,
+   "iso": "",
+   "mass": "46.001299 ± 0.000322",
+   "half": "13.0 ms ± 2.0",
+   "seconds": 0.013000000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 78.7
+    },
+    {
+     "mode": "β+2p",
+     "op": "=",
+     "pct": null
+    }
+   ],
+   "year": 1992,
+   "est": true
+  },
+  {
+   "A": 47,
+   "iso": "",
+   "mass": "46.992346 ± 0.000537",
+   "half": "21.9 ms ± 0.2",
+   "seconds": 0.0219,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 88.4
+    }
+   ],
+   "year": 1992,
+   "est": true
+  },
+  {
+   "A": 47,
+   "iso": "m",
+   "mass": "46.992346 ± 0.000537",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 48,
+   "iso": "",
+   "mass": "47.980667000 ± 0.000099",
+   "half": "45.3 ms ± 0.6",
+   "seconds": 0.0453,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 15.3
+    }
+   ],
+   "year": 1987,
+   "est": false
+  },
+  {
+   "A": 49,
+   "iso": "",
+   "mass": "48.973429000 ± 0.000026",
+   "half": "64.7 ms ± 0.3",
+   "seconds": 0.06470000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 56.7
+    }
+   ],
+   "year": 1970,
+   "est": false
+  },
+  {
+   "A": 50,
+   "iso": "",
+   "mass": "49.962988000 ± 0.000009",
+   "half": "152.0 ms ± 0.6",
+   "seconds": 0.152,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "≈",
+     "pct": 0
+    }
+   ],
+   "year": 1977,
+   "est": false
+  },
+  {
+   "A": 51,
+   "iso": "",
+   "mass": "50.956855137 ± 0.000001501",
+   "half": "305.4 ms ± 2.3",
+   "seconds": 0.3054,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1972,
+   "est": false
+  },
+  {
+   "A": 52,
+   "iso": "",
+   "mass": "51.948113364 ± 0.000000192",
+   "half": "8.275 h ± 0.008",
+   "seconds": 29790,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1948,
+   "est": false
+  },
+  {
+   "A": 52,
+   "iso": "m",
+   "mass": "51.948113364 ± 0.000000192",
+   "half": "45.9 s ± 0.6",
+   "seconds": 45.9,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 99.979
+    },
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 0.021
+    }
+   ],
+   "year": 1979,
+   "est": false
+  },
+  {
+   "A": 53,
+   "iso": "",
+   "mass": "52.945305629 ± 0.000001792",
+   "half": "8.51 m ± 0.02",
+   "seconds": 510.59999999999997,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1938,
+   "est": false
+  },
+  {
+   "A": 53,
+   "iso": "m",
+   "mass": "52.945305629 ± 0.000001792",
+   "half": "2.54 m ± 0.02",
+   "seconds": 152.4,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1967,
+   "est": false
+  },
+  {
+   "A": 54,
+   "iso": "",
+   "mass": "53.939608189 ± 0.000000368",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [
+    {
+     "mode": "2β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1923,
+   "est": false
+  },
+  {
+   "A": 54,
+   "iso": "m",
+   "mass": "53.939608189 ± 0.000000368",
+   "half": "364 ns ± 7",
+   "seconds": 3.6400000000000003e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1983,
+   "est": false
+  },
+  {
+   "A": 55,
+   "iso": "",
+   "mass": "54.938291158 ± 0.00000033",
+   "half": "2.7562 y ± 0.0004",
+   "seconds": 86977199.66169602,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1939,
+   "est": false
+  },
+  {
+   "A": 56,
+   "iso": "",
+   "mass": "55.934935537 ± 0.000000287",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1923,
+   "est": false
+  },
+  {
+   "A": 57,
+   "iso": "",
+   "mass": "56.935391950 ± 0.000000287",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1935,
+   "est": false
+  },
+  {
+   "A": 58,
+   "iso": "",
+   "mass": "57.933273575 ± 0.000000339",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1935,
+   "est": false
+  },
+  {
+   "A": 59,
+   "iso": "",
+   "mass": "58.934873492 ± 0.000000354",
+   "half": "44.500 d ± 0.012",
+   "seconds": 3844800,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1938,
+   "est": false
+  },
+  {
+   "A": 60,
+   "iso": "",
+   "mass": "59.934070249 ± 0.000003656",
+   "half": "2.62 My ± 0.04",
+   "seconds": 82679146329600,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1957,
+   "est": false
+  },
+  {
+   "A": 61,
+   "iso": "",
+   "mass": "60.936746241 ± 0.0000028",
+   "half": "5.98 m ± 0.06",
+   "seconds": 358.8,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1957,
+   "est": false
+  },
+  {
+   "A": 61,
+   "iso": "m",
+   "mass": "60.936746241 ± 0.0000028",
+   "half": "238 ns ± 5",
+   "seconds": 2.3800000000000001e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1998,
+   "est": false
+  },
+  {
+   "A": 62,
+   "iso": "",
+   "mass": "61.936791809 ± 0.000003",
+   "half": "68 s ± 2",
+   "seconds": 68,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1975,
+   "est": false
+  },
+  {
+   "A": 63,
+   "iso": "",
+   "mass": "62.940272698 ± 0.000004618",
+   "half": "6.1 s ± 0.6",
+   "seconds": 6.1,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1980,
+   "est": false
+  },
+  {
+   "A": 64,
+   "iso": "",
+   "mass": "63.940987761 ± 0.000005386",
+   "half": "2.0 s ± 0.2",
+   "seconds": 2,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1980,
+   "est": false
+  },
+  {
+   "A": 65,
+   "iso": "",
+   "mass": "64.945015323 ± 0.000005487",
+   "half": "805 ms ± 10",
+   "seconds": 0.805,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1980,
+   "est": false
+  },
+  {
+   "A": 65,
+   "iso": "m",
+   "mass": "64.945015323 ± 0.000005487",
+   "half": "1.12 s ± 0.15",
+   "seconds": 1.12,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2008,
+   "est": false
+  },
+  {
+   "A": 65,
+   "iso": "n",
+   "mass": "64.945015323 ± 0.000005487",
+   "half": "418 ns ± 12",
+   "seconds": 4.18e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1998,
+   "est": false
+  },
+  {
+   "A": 66,
+   "iso": "",
+   "mass": "65.946249958 ± 0.0000044",
+   "half": "467 ms ± 29",
+   "seconds": 0.467,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1985,
+   "est": false
+  },
+  {
+   "A": 67,
+   "iso": "",
+   "mass": "66.950930000 ± 0.0000041",
+   "half": "394 ms ± 9",
+   "seconds": 0.394,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1985,
+   "est": false
+  },
+  {
+   "A": 67,
+   "iso": "m",
+   "mass": "66.950930000 ± 0.0000041",
+   "half": "64 us ± 17",
+   "seconds": 0.000064,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1998,
+   "est": false
+  },
+  {
+   "A": 67,
+   "iso": "n",
+   "mass": "66.950930000 ± 0.0000041",
+   "half": "75 us ± 21",
+   "seconds": 0.000075,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2008,
+   "est": false
+  },
+  {
+   "A": 68,
+   "iso": "",
+   "mass": "67.952875 ± 0.000207",
+   "half": "188 ms ± 4",
+   "seconds": 0.188,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": ">",
+     "pct": 0
+    }
+   ],
+   "year": 1985,
+   "est": true
+  },
+  {
+   "A": 69,
+   "iso": "",
+   "mass": "68.957918 ± 0.000215",
+   "half": "162 ms ± 7",
+   "seconds": 0.162,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1992,
+   "est": true
+  },
+  {
+   "A": 70,
+   "iso": "",
+   "mass": "69.960397 ± 0.000322",
+   "half": "61.4 ms ± 0.7",
+   "seconds": 0.0614,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1997,
+   "est": true
+  },
+  {
+   "A": 71,
+   "iso": "",
+   "mass": "70.965722 ± 0.000429",
+   "half": "34.3 ms ± 2.6",
+   "seconds": 0.0343,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1997,
+   "est": true
+  },
+  {
+   "A": 72,
+   "iso": "",
+   "mass": "71.968599 ± 0.000537",
+   "half": "17.0 ms ± 1.0",
+   "seconds": 0.017,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1997,
+   "est": true
+  },
+  {
+   "A": 73,
+   "iso": "",
+   "mass": "72.974246 ± 0.000537",
+   "half": "12.9 ms ± 1.6",
+   "seconds": 0.0129,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2010,
+   "est": true
+  },
+  {
+   "A": 74,
+   "iso": "",
+   "mass": "73.977821 ± 0.000537",
+   "half": "5 ms ± 5",
+   "seconds": 0.005,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2010,
+   "est": true
+  },
+  {
+   "A": 75,
+   "iso": "",
+   "mass": "74.984219 ± 0.000644",
+   "half": "9 ms >620ns",
+   "seconds": 0.009000000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2013,
+   "est": true
+  },
+  {
+   "A": 76,
+   "iso": "",
+   "mass": "75.988631 ± 0.000644",
+   "half": "3 ms >410ns",
+   "seconds": 0.003,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2017,
+   "est": true
+  }
+ ],
+ "stableCount": 4,
+ "texts": {
+  "history": [
+   {
+    "text": "The name derives from the Anglo-Saxon iron of unknown origin. The element has been known from prehistoric times. The symbol Fe is derived from the Latin ferrum for \"firmness\". It is of interest to note that 56Fe requires more energy to be formed than any other nuclide. It is, therefore, the ultimate endproduct of stellar nuclear fusion.",
+    "source": "ciaaw"
+   },
+   {
+    "text": "Archaeological evidence suggests that people have been using iron for at least 5000 years. Iron is the cheapest and one of the most abundant of all metals, comprising nearly 5.6% of the earth's crust and nearly all of the earth's core. Iron is primarily obtained from the minerals hematite (Fe2O3) and magnetite (Fe3O4). The minerals taconite, limonite (FeO(OH)·nH2O) and siderite (FeCO3) are other important sources.",
+    "source": "jlab"
+   },
+   {
+    "text": "Latin ferrum. Iron was used prehistorically: Iron is mentioned numerous times in the Old Testament of the Bible. A remarkable iron pillar, dating to about A.D. 400, remains standing today in Delhi, India. This solid shaft of wrought iron is about 7 1/4 m high by 40 cm in diameter. Corrosion to the pillar has been minimal although it has been exposed to the weather since its creation.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Huge amounts of iron are used to make steel, an alloy of iron and carbon. Steel typically contains between 0.3% and 1.5% carbon, depending on the desired characteristics. The addition of other elements can give steel other useful properties. Small amounts of chromium improves durability and prevents rust (stainless steel); nickel increases durability and resistance to heat and acids; manganese increases strength and resistance to wear; molybdenum increases strength and resistance to heat; tungsten retains hardness at high temperatures; and vanadium increases strength and springiness. Steel is used to make paper clips, skyscrapers and everything in between. In addition to helping build the world around us, iron helps keep plants and animals alive. Iron plays a role in the creation of chlorophyll in plants and is an essential part of hemoglobin, the substance that carries oxygen within red blood cells. Iron sulfate (FeSO4) is used to treat the blood disease anemia.",
+    "source": "jlab"
+   },
+   {
+    "text": "Iron is a vital constituent of plant and animal life and works as an oxygen carrier in hemoglobin. Taconite is becoming increasingly important as a commercial ore. The pure metal is not often encountered in commerce, but is usually alloyed with carbon or other metals.",
+    "source": "lanl"
+   }
+  ],
+  "sources": [
+   {
+    "text": "Iron is a relatively abundant element in the universe. It is found in the sun and many types of stars in considerable quantity. Its nuclei are very stable. Iron is a principal component of a meteorite class known as siderites and is a minor constituent of the other two meteorite classes. The core of the earth 2150 miles in radius is thought to be largely composed of iron with about 10 percent occluded hydrogen. The metal is the fourth most abundant element, by weight that makes up the crust of the earth. The most common ore is hematite, which is frequently seen as black sands along beaches and banks of streams.",
+    "source": "lanl"
+   }
+  ],
+  "description": [
+   {
+    "text": "The pure metal is very reactive chemically and rapidly corrodes, especially in moist air or at elevated temperatures. It has four allotropic forms or ferrites, known as alpha, beta, gamma, and omega, with transition points at 700, 928, and 1530C. The alpha form is magnetic, but when transformed into the beta form, the magnetism disappears although the lattice remains unchanged. The relations of these forms are peculiar. Pig iron is an alloy containing about 3 percent carbon with varying amounts of sulfur, silicon, manganese, and phosphorus. Iron is hard, brittle, fairly fusible, and is used to produce other alloys, including steel. Wrought iron contains only a few tenths of a percent of carbon, is tough, malleable, less fusible, and usually has a \"fibrous\" structure. Carbon steel is an alloy of iron with small amounts of Mn, S, P, and Si. Alloy steels are carbon steels with other additives such as nickel, chromium, vanadium, etc. Iron is a cheap, abundant, useful, and important metal.",
+    "source": "lanl"
+   }
+  ],
+  "isotopes": [
+   {
+    "text": "Common iron is a mixture of four isotopes. Ten other isotopes are known to exist.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Biology",
+   "text": "Natural iron enriched in its least abundant stable isotopes, 57Fe and 58Fe, are used as a tracer in human studies to assess absorption, excretion, distribution, and utilization of iron in basic and applied research,,,,,. The two radioisotopes, 55Fe and 59Fe, have sufficiently long half-lives of 2.75 years and 44.5 days, respectively, to be used as tracers, but potential health and environmental hazards limit their use to diagnostic applications in patient care (i.e. disorders of blood and of iron metabolism),,.",
+   "source": "iptei"
+  },
+  {
+   "topic": "Earth/Planetary Science",
+   "text": "60Fe is an extinct radionuclide with a half-life of 2.6×106 years that has fully decayed to 60Ni since formation of the Solar System. The distribution of the product (radiogenic) 60Ni in extraterrestrial material, such as meteorites, has been used to gain insight into the early history of the Solar System. Because molecules, atoms, and ions of the stable isotopes of iron possess slightly different physical and chemical properties, they commonly will be fractionated during physical, chemical, and biological processes, giving rise to variations in isotopic abundances and in atomic weights. There are measureable variations in the isotopic abundances of iron in natural terrestrial materials (Fig. IUPAC.26.1). Small variations in stable iron isotopic compositions caused by physical and chemical isotopic fractionation processes have been used to study mass transfer processes in nature and chemical equilibria,,. ",
+   "source": "iptei"
+  },
+  {
+   "topic": "Industry",
+   "text": "55Fe is a beta emitting nuclide that serves as an electron source together with 63Ni (with a half-life of 99 years) in electron-capture detectors. Electron-capture detectors are used as thickness gauges or as detectors for organic analytes in gas chromatography.",
+   "source": "iptei"
+  },
+  {
+   "topic": "Medicine",
+   "text": "52Fe, with a half-life of 8.3 h, emits positrons and is used in positron emission tomography (PET) studies. It can be produced in a cyclotron from stable 50Cr by alpha particle capture,,.",
+   "source": "iptei"
+  },
+  {
+   "topic": "a Source of Radioactive Isotope(s)",
+   "text": "Stable 56Fe is used for production of radioactive 55Co (with a half-life of about 18 h), as an emitter of positrons for PET applications using the reaction 56Fe (p, 2n) 55Co,.",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "5.63×10^4 milligrams per kilogram",
+  "ocean": "2×10^-3 milligrams per liter",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 23925,
+   "name": "iron",
+   "formula": "Fe",
+   "charge": 0,
+   "smiles": "[Fe]"
+  },
+  {
+   "cid": 27284,
+   "name": "iron(2+)",
+   "formula": "Fe+2",
+   "charge": 2,
+   "smiles": "[Fe+2]"
+  },
+  {
+   "cid": 29936,
+   "name": "iron(3+)",
+   "formula": "Fe+3",
+   "charge": 3,
+   "smiles": "[Fe+3]"
+  },
+  {
+   "cid": 11963629,
+   "name": "iron(4+)",
+   "formula": "Fe+4",
+   "charge": 4,
+   "smiles": "[Fe+4]"
+  },
+  {
+   "cid": 11963693,
+   "name": "iron(6+)",
+   "formula": "Fe+6",
+   "charge": 6,
+   "smiles": "[Fe+6]"
+  },
+  {
+   "cid": 11963738,
+   "name": "iron(5+)",
+   "formula": "Fe+5",
+   "charge": 5,
+   "smiles": "[Fe+5]"
+  }
+ ],
+ "refs": {
+  "ciaaw": {
+   "name": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+   "url": "https://www.ciaaw.org/iron.htm"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele026.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/26.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": "iron",
+ "ghs": {
+  "signal": "Danger",
+  "pictograms": [
+   {
+    "code": "GHS02",
+    "label": "Flammable"
+   }
+  ],
+  "hazards": [
+   "H228 (15.5%): Flammable solid",
+   "H251 (21.2%): Self-heating; may catch fire"
+  ],
+  "reports": 6013,
+  "notMet": 74.1,
+  "notClassified": false,
+  "source": "European Chemicals Agency (ECHA)"
+ },
+ "ghsCid": 23925
 }

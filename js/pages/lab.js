@@ -1,6 +1,6 @@
 // Virtual laboratory: the list of labs and a host page that loads each lab module (js/labs/<id>.js).
 import { esc } from '../core/dom.js';
-import { S, pick, getPrefs } from '../core/prefs.js';
+import { S, pick, fmt, getPrefs } from '../core/prefs.js';
 import { levelName } from '../i18n/ui.js';
 import { icon } from '../components/icons.js';
 import { pageHead, breadcrumbs, loading, errorState } from '../components/common.js';
@@ -11,8 +11,8 @@ import { markLab } from '../core/userdata.js';
 const s = S({
   title: ['Laboratorium virtual', 'Virtual laboratory'],
   lead: [
-    'Tiga belas simulasi interaktif untuk mencoba konsep kimia dengan aman: dari partikel zat sampai sel volta. Semua berjalan di browser, bahkan tanpa internet.',
-    'Thirteen interactive simulations to try chemistry safely, from particles to voltaic cells. Everything runs in the browser, even offline.',
+    '{n} simulasi interaktif untuk mencoba konsep kimia dengan aman: dari partikel zat dan waktu paruh sampai sel volta. Semua berjalan di browser, bahkan tanpa internet.',
+    '{n} interactive simulations to try chemistry safely, from particles and half-lives to voltaic cells. Everything runs in the browser, even offline.',
   ],
   forYou: ['Disarankan untuk jenjangmu', 'Suggested for your level'],
   others: ['Lab lainnya', 'Other labs'],
@@ -34,6 +34,7 @@ const MODULES = {
   gas: () => import('../labs/gas.js'),
   laju: () => import('../labs/laju.js'),
   volta: () => import('../labs/volta.js'),
+  paruh: () => import('../labs/paruh.js'),
 };
 
 export const title = route => (route.id ? pick(findLab(route.id)?.title || ['Lab', 'Lab']) : s.title);
@@ -48,7 +49,7 @@ export async function render({ id, main, params, cleanup, isCurrent }) {
     const mine = LABS.filter(l => l.levels.includes(lv));
     const rest = LABS.filter(l => !l.levels.includes(lv));
     main.innerHTML = `<div class="container">
-      ${pageHead({ title: esc(s.title), lead: esc(s.lead) })}
+      ${pageHead({ title: esc(s.title), lead: esc(fmt(s.lead, { n: LABS.length })) })}
       <section><h2>${esc(s.forYou)}</h2><div class="grid grid-3">${mine.map(card).join('')}</div></section>
       ${rest.length ? `<section><h2>${esc(s.others)}</h2><div class="grid grid-3">${rest.map(card).join('')}</div></section>` : ''}
     </div>`;

@@ -22,5 +22,838 @@
   "author": "Alchemist-hp (talk) (www.pse-mendelejew.de)",
   "license": "FAL",
   "licenseUrl": "http://artlibre.org/licence/lal/en"
- }
+ },
+ "weight": {
+  "value": "51.9961(6)",
+  "kind": "standard",
+  "source": "ciaaw"
+ },
+ "natural": [
+  {
+   "A": 50,
+   "iso": "",
+   "mass": "49.946 041(3)",
+   "abundance": "0.043 45(13)"
+  },
+  {
+   "A": 52,
+   "iso": "",
+   "mass": "51.940 505(3)",
+   "abundance": "0.837 89(18)"
+  },
+  {
+   "A": 53,
+   "iso": "",
+   "mass": "52.940 647(3)",
+   "abundance": "0.095 01(17)"
+  },
+  {
+   "A": 54,
+   "iso": "",
+   "mass": "53.938 878(3)",
+   "abundance": "0.023 65(7)"
+  }
+ ],
+ "naturalSource": "ciaaw",
+ "nuclides": [
+  {
+   "A": 41,
+   "iso": "",
+   "mass": "41.021911 ± 0.000429",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 42,
+   "iso": "",
+   "mass": "42.007579 ± 0.000322",
+   "half": "13.3 ms ± 1.0",
+   "seconds": 0.013300000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 94.4
+    },
+    {
+     "mode": "2p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1996,
+   "est": true
+  },
+  {
+   "A": 43,
+   "iso": "",
+   "mass": "42.997885 ± 0.000215",
+   "half": "21.1 ms ± 0.3",
+   "seconds": 0.0211,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 79.3
+    },
+    {
+     "mode": "β+2p",
+     "op": "=",
+     "pct": 11.6
+    },
+    {
+     "mode": "β+α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1992,
+   "est": true
+  },
+  {
+   "A": 44,
+   "iso": "",
+   "mass": "43.985591000 ± 0.000055",
+   "half": "42.8 ms ± 0.6",
+   "seconds": 0.0428,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 12
+    }
+   ],
+   "year": 1987,
+   "est": false
+  },
+  {
+   "A": 45,
+   "iso": "",
+   "mass": "44.979050000 ± 0.000038",
+   "half": "60.9 ms ± 0.4",
+   "seconds": 0.0609,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 34.4
+    }
+   ],
+   "year": 1974,
+   "est": false
+  },
+  {
+   "A": 45,
+   "iso": "m",
+   "mass": "44.979050000 ± 0.000038",
+   "half": ">80 us",
+   "seconds": 0.00007999999999999999,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2011,
+   "est": false
+  },
+  {
+   "A": 46,
+   "iso": "",
+   "mass": "45.968360969 ± 0.000012295",
+   "half": "224.3 ms ± 1.3",
+   "seconds": 0.22430000000000003,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1972,
+   "est": false
+  },
+  {
+   "A": 47,
+   "iso": "",
+   "mass": "46.962894995 ± 0.000005578",
+   "half": "461.6 ms ± 1.5",
+   "seconds": 0.4616,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1972,
+   "est": false
+  },
+  {
+   "A": 48,
+   "iso": "",
+   "mass": "47.954029431 ± 0.000007848",
+   "half": "21.56 h ± 0.03",
+   "seconds": 77616,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1952,
+   "est": false
+  },
+  {
+   "A": 49,
+   "iso": "",
+   "mass": "48.951333720 ± 0.000002363",
+   "half": "42.3 m ± 0.1",
+   "seconds": 2538,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1942,
+   "est": false
+  },
+  {
+   "A": 50,
+   "iso": "",
+   "mass": "49.946042209 ± 0.0000001",
+   "half": "Stable >1.3Ey",
+   "seconds": null,
+   "stable": true,
+   "decay": [
+    {
+     "mode": "2β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1930,
+   "est": false
+  },
+  {
+   "A": 51,
+   "iso": "",
+   "mass": "50.944765388 ± 0.000000178",
+   "half": "27.7015 d ± 0.0011",
+   "seconds": 2393409.6,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1940,
+   "est": false
+  },
+  {
+   "A": 52,
+   "iso": "",
+   "mass": "51.940504714 ± 0.00000012",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1923,
+   "est": false
+  },
+  {
+   "A": 53,
+   "iso": "",
+   "mass": "52.940646304 ± 0.000000124",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1930,
+   "est": false
+  },
+  {
+   "A": 54,
+   "iso": "",
+   "mass": "53.938877359 ± 0.000000142",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1930,
+   "est": false
+  },
+  {
+   "A": 55,
+   "iso": "",
+   "mass": "54.940836637 ± 0.000000245",
+   "half": "3.497 m ± 0.003",
+   "seconds": 209.82,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1952,
+   "est": false
+  },
+  {
+   "A": 56,
+   "iso": "",
+   "mass": "55.940648977 ± 0.00000062",
+   "half": "5.94 m ± 0.10",
+   "seconds": 356.40000000000003,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1960,
+   "est": false
+  },
+  {
+   "A": 57,
+   "iso": "",
+   "mass": "56.943612112 ± 0.000002",
+   "half": "21.1 s ± 1.0",
+   "seconds": 21.1,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1978,
+   "est": false
+  },
+  {
+   "A": 58,
+   "iso": "",
+   "mass": "57.944184501 ± 0.0000032",
+   "half": "7.0 s ± 0.3",
+   "seconds": 7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1980,
+   "est": false
+  },
+  {
+   "A": 59,
+   "iso": "",
+   "mass": "58.948345426 ± 0.00000072",
+   "half": "1050 ms ± 90",
+   "seconds": 1.05,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1980,
+   "est": false
+  },
+  {
+   "A": 59,
+   "iso": "m",
+   "mass": "58.948345426 ± 0.00000072",
+   "half": "96 us ± 20",
+   "seconds": 0.000096,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1998,
+   "est": false
+  },
+  {
+   "A": 60,
+   "iso": "",
+   "mass": "59.949641656 ± 0.0000012",
+   "half": "490 ms ± 10",
+   "seconds": 0.49,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1980,
+   "est": false
+  },
+  {
+   "A": 61,
+   "iso": "",
+   "mass": "60.954378130 ± 0.000002",
+   "half": "243 ms ± 9",
+   "seconds": 0.243,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1985,
+   "est": false
+  },
+  {
+   "A": 62,
+   "iso": "",
+   "mass": "61.956142920 ± 0.0000037",
+   "half": "206 ms ± 12",
+   "seconds": 0.20600000000000002,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1985,
+   "est": false
+  },
+  {
+   "A": 63,
+   "iso": "",
+   "mass": "62.961161000 ± 0.000078",
+   "half": "129 ms ± 2",
+   "seconds": 0.129,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1992,
+   "est": false
+  },
+  {
+   "A": 64,
+   "iso": "",
+   "mass": "63.963886000 ± 0.000322",
+   "half": "43 ms ± 1",
+   "seconds": 0.043000000000000003,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1992,
+   "est": false
+  },
+  {
+   "A": 65,
+   "iso": "",
+   "mass": "64.969608 ± 0.000215",
+   "half": "27.5 ms ± 2.1",
+   "seconds": 0.0275,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1997,
+   "est": true
+  },
+  {
+   "A": 66,
+   "iso": "",
+   "mass": "65.973011 ± 0.000322",
+   "half": "23.8 ms ± 1.8",
+   "seconds": 0.0238,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1997,
+   "est": true
+  },
+  {
+   "A": 67,
+   "iso": "",
+   "mass": "66.979313 ± 0.000429",
+   "half": "11 ms >300ns",
+   "seconds": 0.011,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1997,
+   "est": true
+  },
+  {
+   "A": 68,
+   "iso": "",
+   "mass": "67.983156 ± 0.000537",
+   "half": "10 ms >620ns",
+   "seconds": 0.01,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2009,
+   "est": true
+  },
+  {
+   "A": 69,
+   "iso": "",
+   "mass": "68.989662 ± 0.000537",
+   "half": "6 ms >620ns",
+   "seconds": 0.006,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2013,
+   "est": true
+  },
+  {
+   "A": 70,
+   "iso": "",
+   "mass": "69.993945 ± 0.000644",
+   "half": "6 ms >620ns",
+   "seconds": 0.006,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2013,
+   "est": true
+  }
+ ],
+ "stableCount": 3,
+ "texts": {
+  "history": [
+   {
+    "text": "The name derives from the Greek chroma for \"colour\", from the many coloured compounds of chromium. It was discovered in 1797 by the French chemist and pharmacist Nicolas-Louis Vauquelin, who also isolated chromium in 1798.",
+    "source": "ciaaw"
+   },
+   {
+    "text": "Chromium was discovered by Louis-Nicholas Vauquelin while experimenting with a material known as Siberian red lead, also known as the mineral crocoite (PbCrO4), in 1797. He produced chromium oxide (CrO3) by mixing crocoite with hydrochloric acid (HCl). Although he believed a method for isolating chromium didn't yet exist, Vauquelin was pleasantly surprised in 1798 to discover that he was able to obtain metallic chromium by simply heating chromium oxide in a charcoal oven. Today, chromium is primarily obtained by heating the mineral chromite (FeCr2O4) in the presence of aluminum or silicon.",
+    "source": "jlab"
+   },
+   {
+    "text": "From the Greek word chroma, color. Chromium is a steel-gray, lustrous, hard metal that takes a high polish. Discovered in 1797 by the Frenchman Louis Nicolas Vauquelin.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Chromium is a blue-white metal that is hard, brittle and very corrosion resistant. Chromium can be polished to form a very shiny surface and is often plated to other metals to form a protective and attractive covering. Chromium is added to steel to harden it and to form stainless steel, a steel alloy that contains at least 10% chromium. Other chromium-steel alloys are used to make armor plate, safes, ball bearings and cutting tools. Chromium forms many colorful compounds that have industrial uses. Lead chromate (PbCrO4), also known as chrome yellow, has been used as a yellow pigment in paints. Chromic oxide (Cr2O3), also known as chrome green, is the ninth most abundant compound in the earth's crust and is a widely used green pigment. Rubies and emeralds also owe their colors to chromium compounds. Potassium dichromate (K2Cr2O7) is used in the tanning of leather while other chromium compounds are used as mordants, materials which permanently fix dyes to fabrics. Chromium compounds are also used to anodize aluminum, a process which coats aluminum with a thick, protective layer of oxide. Chromite, chromium's primary ore, is used to make molds for the firing of bricks because of its high melting point, moderate thermal expansion and stable crystal structure.",
+    "source": "jlab"
+   },
+   {
+    "text": "Chromium is used to harden steel, manufacture stainless steel, and form many useful alloys. It is mostly used in plating to produce a hard, beautiful surface and to prevent corrosion. Chromium gives glass an emerald green color and is widely used as a catalyst. The refractory industry uses chromite for forming bricks and shapes, as it has a high melting point, moderate thermal expansion, and stability of crystalline structure.",
+    "source": "lanl"
+   }
+  ],
+  "sources": [
+   {
+    "text": "The principal ore is chromite, which is found in Zimbabwe, Russia, New Zealand, Turkey, Iran, Albania, Finland, Democratic Republic of Madagascar, and the Phillippines. The metal is usually produced by reducing the oxide with aluminum.",
+    "source": "lanl"
+   }
+  ],
+  "description": [
+   {
+    "text": "Chromium is used extensively in automobile trim as chromium metal because of its shiny finish and corrosion resistance.",
+    "source": "lanl"
+   }
+  ],
+  "handling": [
+   {
+    "text": "Chromium compounds are toxic and should be handled with proper safeguards.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Earth/Planetary Science",
+   "text": "Molecules, atoms, and ions of the stable isotopes of chromium possess slightly different physical and chemical properties, and they commonly will be fractionated during physical, chemical, and biological processes, giving rise to variations in isotopic abundances and in atomic weights. There are measureable variations in the isotopic abundances of chromium in natural terrestrial materials (Fig. IUPAC.24.1). SiC grains are formed in very high-temperature events that occurred before the formation of the Solar System. The chemical and isotopic composition of certain elements in these grains, such as chromium, provides insights into the origin of the Solar System. The 54Cr nucleus is only produced by supernovae. Excess amounts of this isotope in the SiC grains (relative to terrestrial isotopic composition) in primitive meteorites suggest a heterogeneous distribution of 54Cr in the early Solar System and different sources of material to our Solar System. The early solar nebula was divided into two components. One contained chromium depleted in the lighter isotopes and the other contained heavier chromium isotopes. Isotopic studies indicate these components formed a homogeneous mixture in the early Earth, but they separated during partitioning of the Earth’s core (Fig. IUPAC.24.1),. Mobility and toxicity of chromium metal depend largely on the oxidation state of the element. Isotopes of chromium are fractionated by reduction-oxidation (redox) chemical reactions. The isotopic composition has been used to trace the origin of the element in the environment and provide information on reduction-oxidation chemical processes. ",
+   "source": "iptei"
+  },
+  {
+   "topic": "Medicine",
+   "text": "Stable isotopes of chromium are used to investigate the metabolism of chromium (III), which is an essential nutrient. Chromium stable isotopes (53Cr and 54Cr) have been administered to patients and the relative metabolic activity of each isotope is measured to study insulin function in patients suffering from diabetes (a disease in which the body is unable to produce any or enough insulin, and/or is not able to properly use the insulin that it does produce, resulting in elevated levels of glucose in the blood). 51Cr and 53Cr have been used to label red blood cells to determine blood volume and life-time of red blood cells in the body.",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "1.02×10^2 milligrams per kilogram",
+  "ocean": "3×10^-4 milligrams per liter",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 23976,
+   "name": "chromium",
+   "formula": "Cr",
+   "charge": 0,
+   "smiles": "[Cr]"
+  },
+  {
+   "cid": 27668,
+   "name": "chromium(3+)",
+   "formula": "Cr+3",
+   "charge": 3,
+   "smiles": "[Cr+3]"
+  },
+  {
+   "cid": 29131,
+   "name": "chromium(6+)",
+   "formula": "Cr+6",
+   "charge": 6,
+   "smiles": "[Cr+6]"
+  },
+  {
+   "cid": 62762,
+   "name": "chromium(2+)",
+   "formula": "Cr+2",
+   "charge": 2,
+   "smiles": "[Cr+2]"
+  },
+  {
+   "cid": 104921,
+   "name": "chromium(5+)",
+   "formula": "Cr+5",
+   "charge": 5,
+   "smiles": "[Cr+5]"
+  },
+  {
+   "cid": 177650,
+   "name": "chromium(4+)",
+   "formula": "Cr+4",
+   "charge": 4,
+   "smiles": "[Cr+4]"
+  }
+ ],
+ "refs": {
+  "ciaaw": {
+   "name": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+   "url": "https://www.ciaaw.org/chromium.htm"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele024.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/24.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": null,
+ "ghs": {
+  "signal": "Danger",
+  "pictograms": [
+   {
+    "code": "GHS07",
+    "label": "Irritant"
+   },
+   {
+    "code": "GHS08",
+    "label": "Health Hazard"
+   }
+  ],
+  "hazards": [
+   "H317 (20.7%): May cause an allergic skin reaction",
+   "H319 (19.1%): Causes serious eye irritation",
+   "H334 (20.3%): May cause allergy or asthma symptoms or breathing difficulties if inhaled"
+  ],
+  "reports": 2404,
+  "notMet": 50,
+  "notClassified": false,
+  "source": "European Chemicals Agency (ECHA)"
+ },
+ "ghsCid": 23976
 }

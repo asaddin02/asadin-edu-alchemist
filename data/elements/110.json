@@ -13,5 +13,525 @@
    "url": "https://en.wikipedia.org/wiki/Darmstadtium"
   }
  },
- "photo": null
+ "photo": null,
+ "weight": {
+  "value": "281.16451(59#)",
+  "kind": "isotope-mass",
+  "A": 281,
+  "estimated": true,
+  "source": "nist"
+ },
+ "natural": [],
+ "naturalSource": null,
+ "nuclides": [
+  {
+   "A": 267,
+   "iso": "",
+   "mass": "267.143726 ± 0.000219",
+   "half": "10 us ± 8",
+   "seconds": 0.000009999999999999999,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1995,
+   "est": true
+  },
+  {
+   "A": 268,
+   "iso": "",
+   "mass": "268.143477 ± 0.000324",
+   "half": "100 us",
+   "seconds": 0.00009999999999999999,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 269,
+   "iso": "",
+   "mass": "269.144750965 ± 0.000033712",
+   "half": "230 us ± 110",
+   "seconds": 0.00022999999999999998,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1995,
+   "est": false
+  },
+  {
+   "A": 270,
+   "iso": "",
+   "mass": "270.144586620 ± 0.000042163",
+   "half": "205 us ± 48",
+   "seconds": 0.000205,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2001,
+   "est": false
+  },
+  {
+   "A": 270,
+   "iso": "m",
+   "mass": "270.144586620 ± 0.000042163",
+   "half": "4.3 ms ± 1.2",
+   "seconds": 0.0043,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 70
+    },
+    {
+     "mode": "IT",
+     "op": "≈",
+     "pct": 30
+    }
+   ],
+   "year": 2001,
+   "est": false
+  },
+  {
+   "A": 271,
+   "iso": "",
+   "mass": "271.145951 ± 0.000104",
+   "half": "144 ms ± 53",
+   "seconds": 0.14400000000000002,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": "=",
+     "pct": 75
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 25
+    }
+   ],
+   "year": 1998,
+   "est": true
+  },
+  {
+   "A": 271,
+   "iso": "m",
+   "mass": "271.145951 ± 0.000104",
+   "half": "1.7 ms ± 0.4",
+   "seconds": 0.0017,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1995,
+   "est": true
+  },
+  {
+   "A": 272,
+   "iso": "",
+   "mass": "272.146091 ± 0.000456",
+   "half": "200 ms",
+   "seconds": 0.2,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 273,
+   "iso": "",
+   "mass": "273.148455 ± 0.000152",
+   "half": "240 us ± 100",
+   "seconds": 0.00023999999999999998,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    }
+   ],
+   "year": 1996,
+   "est": true
+  },
+  {
+   "A": 273,
+   "iso": "m",
+   "mass": "273.148455 ± 0.000152",
+   "half": "120 ms",
+   "seconds": 0.12,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1996,
+   "est": true
+  },
+  {
+   "A": 274,
+   "iso": "",
+   "mass": "274.149434 ± 0.000418",
+   "half": "10 ms",
+   "seconds": 0.01,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 275,
+   "iso": "",
+   "mass": "275.152085 ± 0.000366",
+   "half": "10 ms",
+   "seconds": 0.01,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 276,
+   "iso": "",
+   "mass": "276.153022 ± 0.000588",
+   "half": "16 ms",
+   "seconds": 0.016,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 277,
+   "iso": "",
+   "mass": "277.155763 ± 0.000421",
+   "half": "6 ms ± 3",
+   "seconds": 0.006,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2010,
+   "est": true
+  },
+  {
+   "A": 278,
+   "iso": "",
+   "mass": "278.157007 ± 0.000548",
+   "half": "270 ms",
+   "seconds": 0.27,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 279,
+   "iso": "",
+   "mass": "279.159984 ± 0.000649",
+   "half": "210 ms ± 40",
+   "seconds": 0.21,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": "=",
+     "pct": 88
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 12
+    }
+   ],
+   "year": 2004,
+   "est": true
+  },
+  {
+   "A": 280,
+   "iso": "",
+   "mass": "280.161375 ± 0.000803",
+   "half": "25 ms ± 20",
+   "seconds": 0.025,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1999,
+   "est": true
+  },
+  {
+   "A": 281,
+   "iso": "",
+   "mass": "281.164545 ± 0.000529",
+   "half": "14 s ± 3",
+   "seconds": 14,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": "=",
+     "pct": 90
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 10
+    }
+   ],
+   "year": 2004,
+   "est": true
+  },
+  {
+   "A": 281,
+   "iso": "m",
+   "mass": "281.164545 ± 0.000529",
+   "half": "0.9 s ± 0.7",
+   "seconds": 0.9,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2012,
+   "est": true
+  },
+  {
+   "A": 282,
+   "iso": "",
+   "mass": "282.166174 ± 0.000322",
+   "half": "4.2 m ± 3.3",
+   "seconds": 252,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2016,
+   "est": true
+  },
+  {
+   "A": 283,
+   "iso": "",
+   "mass": "283.169437 ± 0.000537",
+   "half": "1 m",
+   "seconds": 60,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 284,
+   "iso": "",
+   "mass": "284.171187 ± 0.000537",
+   "half": "1 m",
+   "seconds": 60,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  }
+ ],
+ "stableCount": 0,
+ "texts": {
+  "history": [
+   {
+    "text": "Darmstadtium was first produced by Peter Armbruster, Gottfried Münzenber and their team working at the Gesellschaft für Schwerionenforschung in Darmstadt, Germany on November 9th, 1994. They bombarded atoms of lead with ions of nickel with a device known as a linear accelerator. This produced one atom of darmstadtium-269, an isotope with a half-life of about 0.17 milliseconds (0.00017 seconds), after at least a billion billion (1,000,000,000,000,000,000) nickel ions were fired at the lead target over the course of a week. Darmstadtium's most stable isotope, darmstadtium-281, has a half-life of about 20 seconds. About 15% of the time, it decays into hassium-277 through alpha decay. The remaining 85% of the time, it decays through spontaneous fission.",
+    "source": "jlab"
+   },
+   {
+    "text": "November 9, 1994 at 4:39 pm, the first atom with atomic number 110 was detected at the Gesellschaft fur Schwerionenforschung (GSI) in Darmstadt, in Germany. Element 110 was produced by fusing a nickel and lead atom together. This was achieved by accelerating the nickel atoms to a high energy in the heavy ion accelerator.\"This rare reaction occurs only at a very specific velocity of the nickel projectile. Over a period of many days, many billion billion nickel atoms must be shot at a lead target in order to produce and identify a single atom of element 110. The atoms produced in the nickel-lead collisions are selected by a velocity filter and then captured in a detector system which measures their decay. The energy of the emitted helium nuclei serves to identify the atom\" (Press Release). This element was only found to have a lifetime of less than 1/1000th of a second. It is expected that soon a heavier version of element 110 that might be more stable, and that lives slightly longer will be developed. The name darmstatdium was confirmed by IUPAC in August 2003.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Since only a few atoms of darmstadtium have ever been produced, it currently has no uses outside of basic scientific research.",
+    "source": "jlab"
+   }
+  ],
+  "description": [
+   {
+    "text": "Darmstadtium does not occur naturally in the Earth’s crust. Darmstadtium was first synthesized by an international team of scientists from the GSI in Darmstadt, Germany, the Joint Institute for Nuclear Research (JINR) in Dubna, Russia, the Comenius University in Bratislava, Slovakia and the University of Jyväskylä, Finland at the GSI Helmholtz Center for Heavy Ion Research in Darmstadt (Fig. IUPAC.110.1), Germany in 1994 using the nuclear reaction 208Pb (62Ni, n) 269Ds. The element was named darmstadtium after the place where the first synthesis was made [656], [657], [658], [659]. Darmstadtium has no known isotopic applications aside from scientific research.",
+    "source": "iptei"
+   },
+   {
+    "text": "Darmstadtium is named after the city Darmstadt, Germany.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [],
+ "abundance": {
+  "crust": "Not Applicable",
+  "ocean": "Not Applicable",
+  "source": "jlab"
+ },
+ "physical": "Expected to be a Solid",
+ "forms": [
+  {
+   "cid": 135476787,
+   "name": "",
+   "formula": "Ds",
+   "charge": 0,
+   "smiles": "*"
+  }
+ ],
+ "refs": {
+  "nist": {
+   "name": "NIST Physical Measurement Laboratory",
+   "url": "https://physics.nist.gov/cgi-bin/Elements/elInfo.pl?element=110"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele110.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/110.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": null,
+ "ghs": null,
+ "ghsCid": null
 }

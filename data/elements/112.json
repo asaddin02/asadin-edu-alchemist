@@ -13,5 +13,366 @@
    "url": "https://en.wikipedia.org/wiki/Copernicium"
   }
  },
- "photo": null
+ "photo": null,
+ "weight": {
+  "value": "285.17712(60#)",
+  "kind": "isotope-mass",
+  "A": 285,
+  "estimated": true,
+  "source": "nist"
+ },
+ "natural": [],
+ "naturalSource": null,
+ "nuclides": [
+  {
+   "A": 276,
+   "iso": "",
+   "mass": "276.161418 ± 0.000537",
+   "half": "100 us",
+   "seconds": 0.00009999999999999999,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 277,
+   "iso": "",
+   "mass": "277.163535 ± 0.000165",
+   "half": "790 us ± 330",
+   "seconds": 0.00079,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1996,
+   "est": true
+  },
+  {
+   "A": 278,
+   "iso": "",
+   "mass": "278.164083 ± 0.00047",
+   "half": "2 ms",
+   "seconds": 0.002,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 279,
+   "iso": "",
+   "mass": "279.166422 ± 0.000424",
+   "half": "60 us",
+   "seconds": 0.000059999999999999995,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 280,
+   "iso": "",
+   "mass": "280.167102 ± 0.000626",
+   "half": "5 ms",
+   "seconds": 0.005,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 281,
+   "iso": "",
+   "mass": "281.169563 ± 0.000427",
+   "half": "180 ms ± 80",
+   "seconds": 0.18,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2010,
+   "est": true
+  },
+  {
+   "A": 282,
+   "iso": "",
+   "mass": "282.170507 ± 0.000588",
+   "half": "1.1 ms ± 0.3",
+   "seconds": 0.0011,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2004,
+   "est": true
+  },
+  {
+   "A": 283,
+   "iso": "",
+   "mass": "283.173202 ± 0.00066",
+   "half": "4.7 s ± 0.8",
+   "seconds": 4.7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 81
+    },
+    {
+     "mode": "SF",
+     "op": "=",
+     "pct": 19
+    }
+   ],
+   "year": 2004,
+   "est": true
+  },
+  {
+   "A": 284,
+   "iso": "",
+   "mass": "284.174360 ± 0.000819",
+   "half": "102 ms ± 17",
+   "seconds": 0.10200000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2004,
+   "est": true
+  },
+  {
+   "A": 285,
+   "iso": "",
+   "mass": "285.177227 ± 0.000544",
+   "half": "30 s ± 8",
+   "seconds": 30,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2004,
+   "est": true
+  },
+  {
+   "A": 285,
+   "iso": "m",
+   "mass": "285.177227 ± 0.000544",
+   "half": "15 s ± 12",
+   "seconds": 15,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2012,
+   "est": true
+  },
+  {
+   "A": 286,
+   "iso": "",
+   "mass": "286.178691 ± 0.000751",
+   "half": "30 s ± 30",
+   "seconds": 30,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2016,
+   "est": true
+  },
+  {
+   "A": 287,
+   "iso": "",
+   "mass": "287.181826 ± 0.000751",
+   "half": "30 s",
+   "seconds": 30,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 288,
+   "iso": "",
+   "mass": "288.183501 ± 0.000751",
+   "half": "10 s",
+   "seconds": 10,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  }
+ ],
+ "stableCount": 0,
+ "texts": {
+  "history": [
+   {
+    "text": "Copernicium was first produced by Peter Armbruster, Gottfried Münzenber and their team working at the Gesellschaft für Schwerionenforschung in Darmstadt, Germany on February 9, 1996. They bombarded atoms of lead with ions of zinc with a device known as a linear accelerator. This produced atoms of copernicium-277, an isotope with a half-life of about 0.24 milliseconds (0.00024 seconds). Copernicium's most stable isotope, copernicium-285, has a half-life of about 30 seconds. It decays into darmstadtium-281 through alpha decay.",
+    "source": "jlab"
+   },
+   {
+    "text": "On February 9, 1996, element 277Cn was created at the Gesellschaft fur Schwerionenforschung in Darmstadt, Germany by using the reaction 208Pb + 70Zn. Unlike element 110, Copernicium has properties more similar to radon than mercury, but due to its short half-life, it is difficult to study. As of 2011, Copernicum's most stable isotope has an atomic weight of 285.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Since only a few atoms of copernicium have ever been produced, it currently has no uses outside of basic scientific research. Originally, the symbol Cp was recommended for Copernicium. That symbol was rejected because Cp had previously been used for the element lutetium which, prior to 1949, had cassiopeium as an alternative allowed name. Please see this file for additional details.",
+    "source": "jlab"
+   }
+  ],
+  "description": [
+   {
+    "text": "Copernicium does not occur naturally in the Earth’s crust. Copernicium was synthesized by scientists at the GSI Helmholtz Center for Heavy Ion Research in Darmstadt, Germany in 1996 (Fig. IUPAC.112.1). Sigurd Hofmann and an international team of scientists used the nuclear reaction 208Pb (70Zn, n) 277Cn. The observed alpha decays led to the known nuclide, 269Sg. The name, copernicium, was given to element 112 to honor astronomer Nicholas Copernicus, who is known for his heliocentric theory of how the planets orbit the Sun [663], [664]. Copernicium has no known isotopic applications aside from scientific research.",
+    "source": "iptei"
+   },
+   {
+    "text": "Copernicium is named after the astronomer Nicolaus Copernicus.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [],
+ "abundance": {
+  "crust": "Not Applicable",
+  "ocean": "Not Applicable",
+  "source": "jlab"
+ },
+ "physical": "Expected to be a Solid",
+ "forms": [],
+ "refs": {
+  "nist": {
+   "name": "NIST Physical Measurement Laboratory",
+   "url": "https://physics.nist.gov/cgi-bin/Elements/elInfo.pl?element=112"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele112.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/112.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": null,
+ "ghs": null,
+ "ghsCid": null
 }

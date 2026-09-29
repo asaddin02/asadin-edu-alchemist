@@ -36,6 +36,36 @@ export const moleculeRecord = id => json(`data/molecules/${encodeURIComponent(id
 export const elementRecord = z => json(`data/elements/${Number(z)}.json`);
 export const classMembers = () => json('data/classes.json').catch(() => ({}));
 
+let ionMap = null;
+/** Map ion id → { cid, formula, charge, mw, iupac } (PubChem, checked against js/data/ions.js). */
+export async function ionIndex() {
+  if (ionMap) return ionMap;
+  const list = await json('data/ions/index.json').catch(() => []);
+  ionMap = new Map(list.map(r => [r.id, r]));
+  return ionMap;
+}
+export const ionRecord = id => json(`data/ions/${encodeURIComponent(id)}.json`);
+
+let isotopes = null;
+/**
+ * Every known nuclide's ground state (IAEA AMDC via PubChem): [{ z, A, half, seconds, stable, decay, abundance }].
+ * `seconds` is null when the half-life is not known; `abundance` is the IUPAC CIAAW natural abundance text.
+ */
+export async function isotopeIndex() {
+  if (isotopes) return isotopes;
+  const data = await json('data/isotopes.json');
+  isotopes = data.rows.map(([z, A, half, seconds, decay, abundance]) => ({
+    z,
+    A,
+    half,
+    seconds: seconds === -1 ? null : seconds,
+    stable: seconds === -1,
+    decay,
+    abundance,
+  }));
+  return isotopes;
+}
+
 /** Formulas by id, for searching the catalogue by formula. */
 export async function formulas() {
   const idx = await moleculeIndex();
@@ -44,12 +74,15 @@ export async function formulas() {
 
 /** Every data file, for "save for offline". */
 export async function allDataFiles() {
-  const idx = await moleculeIndex();
+  const [idx, ions] = await Promise.all([moleculeIndex(), ionIndex()]);
   return [
     'data/molecules/index.json',
     'data/molecules/depict.json',
     'data/classes.json',
+    'data/ions/index.json',
+    'data/isotopes.json',
     ...[...idx.keys()].map(id => `data/molecules/${id}.json`),
+    ...[...ions.keys()].map(id => `data/ions/${id}.json`),
     ...Array.from({ length: 118 }, (_, i) => `data/elements/${i + 1}.json`),
   ];
 }

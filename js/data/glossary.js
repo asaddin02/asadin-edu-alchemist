@@ -1,6 +1,11 @@
 // Bilingual chemistry glossary. Each entry: key (lookup id), cat, term [id, en], simple (for SD/SMP),
 // sci (scientific definition for SMA/university), see (related keys), m (example molecule ids).
-// Lesson text links here with [[key]] or [[key|label]].
+// Lesson text links here with [[key]] or [[key|label]]. The terms added for the full knowledge map
+// (js/data/ontology.js) live in glossary-more*.js and are appended below.
+import { MORE } from './glossary-more.js';
+import { MORE2 } from './glossary-more2.js';
+import { MORE3 } from './glossary-more3.js';
+
 export const GLOSSARY_CATS = {
   materi: ['Materi & zat', 'Matter & substances'],
   atom: ['Atom & unsur', 'Atoms & elements'],
@@ -10,11 +15,14 @@ export const GLOSSARY_CATS = {
   energi: ['Energi, laju & kesetimbangan', 'Energy, rates & equilibrium'],
   organik: ['Kimia organik & biomolekul', 'Organic & biochemistry'],
   material: ['Material & lingkungan', 'Materials & environment'],
+  anorganik: ['Kimia anorganik', 'Inorganic chemistry'],
+  nuklir: ['Inti & radioaktivitas', 'Nuclei & radioactivity'],
+  analitik: ['Analisis & spektroskopi', 'Analysis & spectroscopy'],
 };
 
 const T = (key, cat, term, simple, sci, extra = {}) => ({ key, cat, term, simple, sci, ...extra });
 
-export const GLOSSARY = [
+const BASE = [
   // ---------- Matter ----------
   T('materi', 'materi', ['Materi', 'Matter'], ['Segala sesuatu yang punya massa dan menempati ruang.', 'Anything that has mass and takes up space.'], ['Segala sesuatu yang memiliki massa dan volume, tersusun atas partikel seperti atom, ion, dan molekul.', 'Anything with mass and volume, made of particles such as atoms, ions and molecules.']),
   T('zat-tunggal', 'materi', ['Zat tunggal (zat murni)', 'Pure substance'], ['Zat yang isinya hanya satu jenis, misalnya air murni atau emas murni.', 'A substance made of only one kind of thing, like pure water or pure gold.'], ['Materi dengan komposisi tetap dan sifat yang sama di seluruh bagiannya; dapat berupa unsur atau senyawa.', 'Matter with a fixed composition and uniform properties; either an element or a compound.'], { see: ['unsur', 'senyawa', 'campuran'] }),
@@ -157,6 +165,8 @@ export const GLOSSARY = [
   T('smiles', 'material', ['SMILES', 'SMILES'], ['Cara menulis struktur molekul dengan huruf dan simbol.', 'A way to write a molecule’s structure with letters and symbols.'], ['Simplified Molecular Input Line Entry System: notasi baris untuk struktur, misalnya etanol CCO dan benzena c1ccccc1.', 'Simplified Molecular Input Line Entry System: a line notation, e.g. ethanol CCO and benzene c1ccccc1.']),
   T('pubchem', 'material', ['PubChem', 'PubChem'], ['Perpustakaan data kimia terbuka milik pemerintah Amerika Serikat.', 'A free public chemistry library run by the US government.'], ['Basis data kimia terbuka dari National Library of Medicine (NIH) berisi lebih dari 100 juta senyawa, dengan data struktur, sifat, bahaya, dan literatur.', 'The open chemistry database of the US National Library of Medicine (NIH), with over 100 million compounds and their structures, properties, hazards and literature.']),
 ];
+
+export const GLOSSARY = [...BASE, ...MORE, ...MORE2, ...MORE3];
 
 const byKey = new Map(GLOSSARY.map(g => [g.key, g]));
 const norm = s =>

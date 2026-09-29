@@ -8,6 +8,22 @@ export default {
     'Why do atoms join? Ionic, covalent and metallic bonds, Lewis structures and polarity.',
   ],
   body: {
+    sd: [
+      `Atom-atom tidak suka sendirian. Mereka "bergandengan tangan" membentuk zat. Gandengan ini disebut [[ikatan-kimia|ikatan kimia]]. Ada tiga cara bergandengan:
+
+- **Berbagi**: atom-atom saling berbagi elektron, seperti dua anak memegang satu bola bersama. Begitulah atom hidrogen dan oksigen membentuk {{m:water|air}}.
+- **Tarik-menarik muatan**: satu atom memberikan elektron kepada atom lain sehingga keduanya bermuatan dan saling tarik, seperti magnet. Begitulah {{m:sodium-chloride|garam dapur}} terbentuk.
+- **Lautan elektron**: atom-atom [[logam]] berbagi elektron beramai-ramai. Elektron yang bebas bergerak inilah yang membuat logam dapat menghantarkan listrik.
+
+Coba buat model molekul dari plastisin (atom) dan tusuk gigi (ikatan).`,
+      `Atoms do not like being alone. They "hold hands" to build substances. These handholds are [[ikatan-kimia|chemical bonds]]. There are three ways to hold hands:
+
+- **Sharing**: atoms share electrons, like two children holding one ball together. That is how hydrogen and oxygen atoms make {{m:water|water}}.
+- **Pulling on charges**: one atom gives an electron to another, so both become charged and attract like magnets. That is how {{m:sodium-chloride|table salt}} forms.
+- **A sea of electrons**: [[logam|metal]] atoms share their electrons all together. These free-moving electrons let metals conduct electricity.
+
+Try building molecule models from play dough (atoms) and toothpicks (bonds).`,
+    ],
     smp: [
       `Atom bergabung agar lebih stabil, biasanya dengan mencapai 8 elektron di kulit terluar seperti gas mulia ([[aturan-oktet]]). Ada tiga cara utama:
 
@@ -41,12 +57,12 @@ A [[ikatan-kovalen-koordinasi|coordinate bond]] forms when one atom supplies bot
 There are octet exceptions: incomplete octets ({{m:boron-trifluoride|BF₃}}), odd electrons ({{m:nitric-oxide|NO}}) and expanded octets ({{m:phosphorus-pentachloride|PCl₅}}, {{m:sulfur-hexafluoride|SF₆}}).`,
     ],
     kuliah: [
-      `Energi kisi ionik dapat dihitung dengan siklus Born–Haber (entalpi atomisasi, energi ionisasi, afinitas elektron) atau diperkirakan dengan persamaan Kapustinskii: sebanding dengan hasil kali muatan dan berbanding terbalik dengan jarak antarion. Itulah sebabnya {{m:magnesium-oxide|MgO}} (2+/2−) melebur pada 2852 °C, jauh di atas NaCl (801 °C).
+      `Energi kisi ionik dapat dihitung dengan siklus Born–Haber (entalpi atomisasi, energi ionisasi, afinitas elektron) atau diperkirakan dengan persamaan Kapustinskii: sebanding dengan hasil kali muatan dan berbanding terbalik dengan jarak antarion. Itulah sebabnya {{m:magnesium-oxide|MgO}} (2+/2−) melebur pada sekitar 2825 °C (data PubChem), jauh di atas NaCl (801 °C).
 
 Teori ikatan valensi (VB) menggambarkan ikatan kovalen sebagai tumpang tindih orbital atom dengan spin berpasangan, dilengkapi [[hibridisasi]] dan resonansi (benzena, ion karbonat). Teori orbital molekul (MO) mengombinasikan orbital atom menjadi orbital ikatan dan antiikatan untuk seluruh molekul. Orde ikatan = ½(elektron ikatan − elektron antiikatan): N₂ = 3, O₂ = 2. Teori MO juga menjelaskan mengapa {{m:oxygen|O₂}} paramagnetik (dua elektron tak berpasangan di π*).
 
 Pada padatan, orbital yang tak terhitung jumlahnya membentuk pita energi. Logam memiliki pita yang terisi sebagian; isolator dan [[semikonduktor]] dibedakan oleh lebar celah pita. Ikatan dalam senyawa kompleks dijelaskan dengan teori medan kristal dan medan ligan.`,
-      `Ionic lattice energies come from the Born–Haber cycle (atomisation, ionisation energy, electron affinity) or the Kapustinskii equation: proportional to the product of charges and inversely to ion separation. That is why {{m:magnesium-oxide|MgO}} (2+/2−) melts at 2852 °C, far above NaCl (801 °C).
+      `Ionic lattice energies come from the Born–Haber cycle (atomisation, ionisation energy, electron affinity) or the Kapustinskii equation: proportional to the product of charges and inversely to ion separation. That is why {{m:magnesium-oxide|MgO}} (2+/2−) melts at about 2825 °C (PubChem data), far above NaCl (801 °C).
 
 Valence bond (VB) theory treats covalent bonds as overlap of atomic orbitals with paired spins, extended by [[hibridisasi|hybridisation]] and resonance (benzene, carbonate). Molecular orbital (MO) theory combines atomic orbitals into bonding and antibonding orbitals over the whole molecule. Bond order = ½(bonding − antibonding electrons): N₂ = 3, O₂ = 2. MO theory explains why {{m:oxygen|O₂}} is paramagnetic (two unpaired π* electrons).
 
@@ -62,11 +78,14 @@ In solids, countless orbitals merge into energy bands. Metals have partly filled
   molecules: ['sodium-chloride', 'water', 'methane', 'nitrogen', 'carbon-dioxide', 'magnesium-oxide', 'copper'],
   labs: ['vsepr', 'kristal', 'rakit'],
   activity: {
+    sd: ["Buat model molekul air, oksigen, dan metana dari plastisin dan tusuk gigi, lalu hitung berapa ikatan pada masing-masing atom.", "Build water, oxygen and methane models from play dough and toothpicks, then count the bonds on each atom."],
     smp: ['Uji daya hantar listrik larutan garam, gula, dan air suling dengan rangkaian baterai dan lampu LED. Hubungkan hasilnya dengan jenis ikatan.', 'Test the conductivity of salt water, sugar water and distilled water with a battery and LED. Link the results to bond type.'],
-    sma: ['Gambar struktur Lewis 8 molekul dari halaman Moleculium, lalu cocokkan dengan model 3D-nya.', 'Draw Lewis structures for 8 molecules from Moleculium and compare them with their 3D models.'],
+    sma: ['Gambar struktur Lewis 8 molekul dari halaman Alchemist, lalu cocokkan dengan model 3D-nya.', 'Draw Lewis structures for 8 molecules from Alchemist and compare them with their 3D models.'],
     kuliah: ['Susun diagram MO untuk N₂, O₂, dan F₂; hitung orde ikatan dan bandingkan dengan panjang ikatan data eksperimen.', 'Build MO diagrams for N₂, O₂ and F₂; compute bond orders and compare with experimental bond lengths.'],
   },
   quiz: [
+    { lv: 'sd', q: ["Garam dapur terbentuk karena atom-atomnya…", "Table salt forms because its atoms…"], options: [["Bermuatan dan saling tarik", "Become charged and attract"], ["Tidak berikatan", "Do not bond"], ["Berbagi lautan elektron", "Share a sea of electrons"], ["Meleleh", "Melt"]], answer: 0, explain: ["Natrium memberi elektron kepada klorin; ion Na⁺ dan Cl⁻ saling tarik.", "Sodium gives an electron to chlorine; Na⁺ and Cl⁻ ions attract."] },
+    { lv: 'sd', q: ["Logam dapat menghantarkan listrik karena…", "Metals conduct electricity because…"], options: [["Elektronnya bebas bergerak", "Their electrons move freely"], ["Logam berwarna", "Metals are coloured"], ["Logam berat", "Metals are heavy"], ["Logam dingin", "Metals are cold"]], answer: 0, explain: ["Lautan elektron bebas dapat mengalir membawa arus.", "The sea of free electrons can flow and carry current."] },
     { lv: 'smp', q: ['Ikatan pada NaCl adalah ikatan…', 'The bond in NaCl is…'], options: [['Kovalen', 'Covalent'], ['Ion', 'Ionic'], ['Logam', 'Metallic'], ['Hidrogen', 'Hydrogen']], answer: 1, explain: ['Na (logam) memberikan elektron ke Cl (nonlogam) membentuk ion Na⁺ dan Cl⁻.', 'Na (metal) gives an electron to Cl (nonmetal), forming Na⁺ and Cl⁻.'] },
     { lv: 'smp', q: ['Molekul N₂ memiliki ikatan…', 'N₂ has a…'], options: [['Tunggal', 'Single bond'], ['Rangkap dua', 'Double bond'], ['Rangkap tiga', 'Triple bond'], ['Ion', 'Ionic bond']], answer: 2, explain: ['Setiap N berbagi tiga pasang elektron sehingga mencapai oktet.', 'Each N shares three electron pairs to complete its octet.'] },
     { lv: 'smp', q: ['Mengapa logam dapat menghantarkan listrik?', 'Why do metals conduct electricity?'], options: [['Karena keras', 'Because they are hard'], ['Karena memiliki elektron yang bebas bergerak', 'Because they have free-moving electrons'], ['Karena mengilap', 'Because they are shiny'], ['Karena berat', 'Because they are heavy']], answer: 1, explain: ['Lautan elektron terdelokalisasi dapat mengalir saat diberi tegangan.', 'The delocalised electron sea flows when a voltage is applied.'] },
@@ -88,13 +107,14 @@ In solids, countless orbitals merge into energy bands. Metals have partly filled
     steps: [
       ['Demonstrasi daya hantar listrik larutan.', 'Demonstrate the conductivity of solutions.'],
       ['Model kisi NaCl dan tembaga di lab Kristal & material.', 'Explore NaCl and copper lattices in the Crystals lab.'],
-      ['Latihan struktur Lewis berpasangan; cek dengan model 3D Moleculium.', 'Pair practice on Lewis structures; check against Moleculium 3D models.'],
+      ['Latihan struktur Lewis berpasangan; cek dengan model 3D Alchemist.', 'Pair practice on Lewis structures; check against Alchemist 3D models.'],
       ['Kuis dan refleksi.', 'Quiz and reflection.'],
     ],
     misconceptions: [
       ['"NaCl terdiri atas molekul NaCl." Kristal NaCl adalah kisi ion; rumusnya perbandingan.', '"NaCl is made of NaCl molecules." It is an ionic lattice; the formula is a ratio.'],
       ['"Ikatan pecah melepaskan energi." Memutus ikatan selalu memerlukan energi.', '"Breaking bonds releases energy." Breaking bonds always needs energy.'],
     ],
-    assessment: ['Kuis Moleculium dan lembar struktur Lewis.', 'Moleculium quiz and a Lewis-structure worksheet.'],
+    assessment: ['Kuis Alchemist dan lembar struktur Lewis.', 'Alchemist quiz and a Lewis-structure worksheet.'],
   },
+  refs: ["7-1-ionic-bonding", "7-2-covalent-bonding", "7-3-lewis-symbols-and-structures", "7-4-formal-charges-and-resonance", "7-5-strengths-of-ionic-and-covalent-bonds", "8-4-molecular-orbital-theory"],
 };

@@ -22,5 +22,843 @@
   "author": "Oak Ridge National Laboratory, US Department of Energy",
   "license": "Public domain",
   "licenseUrl": ""
- }
+ },
+ "weight": {
+  "value": "247.0703073(59)",
+  "kind": "isotope-mass",
+  "A": 247,
+  "estimated": false,
+  "source": "nist"
+ },
+ "natural": [],
+ "naturalSource": "nist",
+ "nuclides": [
+  {
+   "A": 233,
+   "iso": "",
+   "mass": "233.056652 ± 0.00025",
+   "half": "40 s ± 30",
+   "seconds": 40,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 82
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2015,
+   "est": true
+  },
+  {
+   "A": 234,
+   "iso": "",
+   "mass": "234.057322 ± 0.000164",
+   "half": "20 s ± 5",
+   "seconds": 20,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": ">",
+     "pct": 80
+    },
+    {
+     "mode": "β+",
+     "op": "<",
+     "pct": 20
+    }
+   ],
+   "year": 2003,
+   "est": true
+  },
+  {
+   "A": 235,
+   "iso": "",
+   "mass": "235.056651 ± 0.00043",
+   "half": "1 m",
+   "seconds": 60,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 236,
+   "iso": "",
+   "mass": "236.057479 ± 0.000387",
+   "half": "26 s ± 10",
+   "seconds": 26,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β+SF",
+     "op": "=",
+     "pct": 0.04
+    }
+   ],
+   "year": 2017,
+   "est": true
+  },
+  {
+   "A": 237,
+   "iso": "",
+   "mass": "237.057123 ± 0.000247",
+   "half": "2 m",
+   "seconds": 120,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 238,
+   "iso": "",
+   "mass": "238.058204 ± 0.000275",
+   "half": "2.40 m ± 0.08",
+   "seconds": 144,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β+SF",
+     "op": "=",
+     "pct": 0.048
+    }
+   ],
+   "year": 1994,
+   "est": true
+  },
+  {
+   "A": 239,
+   "iso": "",
+   "mass": "239.058239 ± 0.000222",
+   "half": "100 s",
+   "seconds": 100,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "<",
+     "pct": 0.01
+    },
+    {
+     "mode": "SF",
+     "op": "<",
+     "pct": 0.01
+    }
+   ],
+   "year": 1989,
+   "est": true
+  },
+  {
+   "A": 239,
+   "iso": "p",
+   "mass": "239.058239 ± 0.000222",
+   "half": ">30 us",
+   "seconds": 0.000029999999999999997,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1989,
+   "est": true
+  },
+  {
+   "A": 240,
+   "iso": "",
+   "mass": "240.059758 ± 0.000161",
+   "half": "4.8 m ± 0.8",
+   "seconds": 288,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β+SF",
+     "op": "=",
+     "pct": 0.002
+    }
+   ],
+   "year": 1980,
+   "est": true
+  },
+  {
+   "A": 240,
+   "iso": "p",
+   "mass": "240.059758 ± 0.000161",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 241,
+   "iso": "",
+   "mass": "241.060098 ± 0.000178",
+   "half": "4.6 m ± 0.4",
+   "seconds": 276,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": null
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2003,
+   "est": true
+  },
+  {
+   "A": 241,
+   "iso": "p",
+   "mass": "241.060098 ± 0.000178",
+   "half": ">25 us",
+   "seconds": 0.000024999999999999998,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 242,
+   "iso": "",
+   "mass": "242.061999 ± 0.000144",
+   "half": "7.0 m ± 1.3",
+   "seconds": 420,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1972,
+   "est": true
+  },
+  {
+   "A": 242,
+   "iso": "m",
+   "mass": "242.061999 ± 0.000144",
+   "half": "600 ns ± 100",
+   "seconds": 6.000000000000001e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1972,
+   "est": true
+  },
+  {
+   "A": 242,
+   "iso": "p",
+   "mass": "242.061999 ± 0.000144",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 243,
+   "iso": "",
+   "mass": "243.063005905 ± 0.000004856",
+   "half": "4.6 h ± 0.2",
+   "seconds": 16560,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 0.15
+    }
+   ],
+   "year": 1950,
+   "est": false
+  },
+  {
+   "A": 243,
+   "iso": "p",
+   "mass": "243.063005905 ± 0.000004856",
+   "half": ">30 us",
+   "seconds": 0.000029999999999999997,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 244,
+   "iso": "",
+   "mass": "244.065178969 ± 0.000015457",
+   "half": "5.02 h ± 0.03",
+   "seconds": 18072,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 0.006
+    }
+   ],
+   "year": 1972,
+   "est": false
+  },
+  {
+   "A": 244,
+   "iso": "m",
+   "mass": "244.065178969 ± 0.000015457",
+   "half": "820 ns ± 60",
+   "seconds": 8.200000000000001e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1972,
+   "est": false
+  },
+  {
+   "A": 244,
+   "iso": "p",
+   "mass": "244.065178969 ± 0.000015457",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [],
+   "year": null,
+   "est": false
+  },
+  {
+   "A": 245,
+   "iso": "",
+   "mass": "245.066359814 ± 0.000001923",
+   "half": "4.95 d ± 0.03",
+   "seconds": 427680,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": 99.88
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 0.12
+    }
+   ],
+   "year": 1951,
+   "est": false
+  },
+  {
+   "A": 245,
+   "iso": "p",
+   "mass": "245.066359814 ± 0.000001923",
+   "half": ">20 us",
+   "seconds": 0.000019999999999999998,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "ε",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 246,
+   "iso": "",
+   "mass": "246.068671300 ± 0.000064433",
+   "half": "1.80 d ± 0.02",
+   "seconds": 155520,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1954,
+   "est": false
+  },
+  {
+   "A": 247,
+   "iso": "",
+   "mass": "247.070305889 ± 0.00000557",
+   "half": "1.38 ky ± 0.25",
+   "seconds": 43548557990.4,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1965,
+   "est": false
+  },
+  {
+   "A": 248,
+   "iso": "",
+   "mass": "248.073141689 ± 0.000053739",
+   "half": ">9 y",
+   "seconds": 284012334.72,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "ε",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1956,
+   "est": false
+  },
+  {
+   "A": 248,
+   "iso": "m",
+   "mass": "248.073141689 ± 0.000053739",
+   "half": "23.7 h ± 0.2",
+   "seconds": 85320,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 70
+    },
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": 30
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1956,
+   "est": false
+  },
+  {
+   "A": 248,
+   "iso": "p",
+   "mass": "248.073141689 ± 0.000053739",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [],
+   "year": null,
+   "est": false
+  },
+  {
+   "A": 249,
+   "iso": "",
+   "mass": "249.074983118 ± 0.000001339",
+   "half": "327.2 d ± 0.3",
+   "seconds": 28270080,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 0.00145
+    }
+   ],
+   "year": 1954,
+   "est": false
+  },
+  {
+   "A": 249,
+   "iso": "m",
+   "mass": "249.074983118 ± 0.000001339",
+   "half": "300 us",
+   "seconds": 0.0003,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1960,
+   "est": false
+  },
+  {
+   "A": 250,
+   "iso": "",
+   "mass": "250.078317195 ± 0.00000311",
+   "half": "3.212 h ± 0.005",
+   "seconds": 11563.2,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1954,
+   "est": false
+  },
+  {
+   "A": 250,
+   "iso": "m",
+   "mass": "250.078317195 ± 0.00000311",
+   "half": "29 us ± 1",
+   "seconds": 0.000029,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1966,
+   "est": false
+  },
+  {
+   "A": 250,
+   "iso": "n",
+   "mass": "250.078317195 ± 0.00000311",
+   "half": "213 us ± 8",
+   "seconds": 0.000213,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1972,
+   "est": false
+  },
+  {
+   "A": 250,
+   "iso": "p",
+   "mass": "250.078317195 ± 0.00000311",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": null,
+   "est": false
+  },
+  {
+   "A": 251,
+   "iso": "",
+   "mass": "251.080760555 ± 0.000011523",
+   "half": "55.6 m ± 1.1",
+   "seconds": 3336,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1967,
+   "est": false
+  },
+  {
+   "A": 251,
+   "iso": "m",
+   "mass": "251.080760555 ± 0.000011523",
+   "half": "58 us ± 4",
+   "seconds": 0.000058,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1966,
+   "est": false
+  },
+  {
+   "A": 252,
+   "iso": "",
+   "mass": "252.084310 ± 0.000215",
+   "half": "1.8 m ± 0.5",
+   "seconds": 108,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": null
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1988,
+   "est": true
+  },
+  {
+   "A": 253,
+   "iso": "",
+   "mass": "253.086880 ± 0.000385",
+   "half": "60 m",
+   "seconds": 3600,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1991,
+   "est": true
+  },
+  {
+   "A": 254,
+   "iso": "",
+   "mass": "254.090600 ± 0.00032",
+   "half": "1 m",
+   "seconds": 60,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  }
+ ],
+ "stableCount": 0,
+ "texts": {
+  "history": [
+   {
+    "text": "Berkelium was first produced by Stanley G. Thompson, Glenn T. Seaborg, Kenneth Street, Jr. and Albert Ghiorso working at the University of California, Berkeley, in December, 1949. They bombarded an isotope of americium, americium-241, with alpha particles with a device called a cyclotron. This created berkelium-243 and two free neutrons. Berkelium's most stable isotope, berkelium-247, has a half-life of about 1,380 years. It decays into americium-243 through alpha decay. The first visible amounts of a berkelium compound, berkelium chloride (BkCl3) was produced in 1962 and weighed about 3 billionths of a gram (0.000000003 grams). Berkelium oxychloride (BkOCl), berkelium fluoride (BkF3), berkelium dioxide (BkO2) and berkelium trioxide (BkO3) have been identified and studied with a method known as X-ray diffraction. Since only small amounts of berkelium have ever been produced, there are no known uses for berkelium and its compounds outside of basic scientific research.",
+    "source": "jlab"
+   },
+   {
+    "text": "Berkelium, the eighth member of the actinide transition series, was first produced in 1949 by Thompson, Ghiorso, and Seaborg via accelerator bombardment of 241Am with high energy alpha particles. This generated a new electron-capture activity eluting on a chromatography column just ahead of curium. This activity was assigned to an isotope of element 97 with mass number 243. It was named berkelium after Berkeley, California, the city of its discovery. Initial investigation of its chemical properties were limited to tracer experiments (ion exchange and co-precipitation) but these were sufficient to establish the stability of Bk(III) and the accessibility of Bk(IV) ions in aqueous solution and provide an estimate of the electrochemical potential of the Bk(IV)/Bk(III) couple. A complete study of an element is not possible by tracer methods alone, so a campaign was initiated in 1952 for long-term irradiation of about 8 grams of 239Pu in a nuclear reactor in Arco, Idaho to provide macro amounts of berkelium. In 1958 about 0.6 micrograms of 249Bk with a half-life of 330 days was recovered, separated, and purified by Cunningham et al. who determined the absorption spectrum in aqueous solution and measured the magnetic susceptibility of Bk(III). The first structural determination of a berkelium compound was in 1962. Four X-ray diffraction lines were obtained from 4 nanograms of berkelium-249 dioxide and indexed as face centered cubic. The first bulk (> 1 microgram) samples of berkelium metal were prepared in 1969 by reduction of BkF3 with lithium metal vapor at 1300 K by Haire and Peterson et al. Bk metal issilvery in appearance, easily soluble in dilute mineral acids, and rapidly oxidized by air or oxygen at elevated temperatures to form the oxide. The metal exhibits two crystal forms: double hexagonal closest packed (dhcp) and face centered cubic (fcc). Numerous alloys and compounds of berkelium have been prepared and studied including hydrides, oxides, halides, chalcogenides, pnictides, oxalates, oxychlorides, organometallic, and coordination compounds to name a few. Berkelium oxidation states Bk(0), Bk(III), and Bk(IV) are known in bulk and some evidence has been offered for the existence of Bk(II) but there is only speculation on the possible existence of Bk(V) ions. Fourteen isotopes of berkelium are now known and have been synthesized from mass number 238 to 251. As with other actinide elements, berkelium tends to accumulate in the skeletal system. Because of its rarity, berkelium presently has no commercial use, however, with its relatively long half-life and availability in microgram quantities, Bk-249 is used extensively as a target to synthesize heavier elements by charged particle bombardment. Berkelium is the first member of the second half of the actinide series and as such, studies of the physicochemical properties of this element enables more accurate extrapolations to the behavior of the heavier elements for which studies are severely limited by scarcity of material, very short half-lives, and intense radioactivity. Further reading: D. E. Hobart and J. R. Peterson (2006) \"Berkelium,\" Chapter 10 in The Chemistry of the Actinide and Transactinide Elements, Third Edition, L. R. Morss, J. Fuger, and N. M. Edelstein, Eds, Springer Publishers. This element reviewed and Updated by David Hobart, Los Alamos National Laboratory 2011",
+    "source": "lanl"
+   }
+  ],
+  "description": [
+   {
+    "text": "Berkelium does not occur naturally in the Earth’s crust. It was first synthesized in December 1949 by Stanley G. Thompson, Glenn T. Seaborg, and Albert Ghiorso at the University of California in Berkeley using the nuclear reaction 241Am (4He, 2n) 243Bk in the Berkeley 60-inch cyclotron. The element was named for the town in California where it was first synthesized. The first isotope of berkelium produced from this experiment had a mass number of 243 and a half-life of 4.5 h. 247Bk has a half-life of 1.4×103 years, which makes it one of the least radioactive isotopes of berkelium. 249Bk has a half-life of 320 days, which makes it possible to isolate and study on a macroscopic scale, although studies have found that the radiation given off from berkelium creates health hazards. For example, lengthy exposure to the radiation from berkelium has been shown to cause an accumulation of berkelium in the skeletal system of rats. The radiation is also unfavorable to the formation of red blood cells [620], [621], [622], [623], [624]. Berkelium has no known isotopic applications aside from scientific research, in which it served as a target for the production of tennessine (Fig. IUPAC.97.1).",
+    "source": "iptei"
+   }
+  ]
+ },
+ "isotopeUses": [],
+ "abundance": {
+  "crust": "Not Applicable",
+  "ocean": "Not Applicable",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 23971,
+   "name": "berkelium",
+   "formula": "Bk",
+   "charge": 0,
+   "smiles": "[Bk]"
+  }
+ ],
+ "refs": {
+  "nist": {
+   "name": "NIST Physical Measurement Laboratory",
+   "url": "https://physics.nist.gov/cgi-bin/Elements/elInfo.pl?element=97"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele097.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/97.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": null,
+ "ghs": null,
+ "ghsCid": null
 }

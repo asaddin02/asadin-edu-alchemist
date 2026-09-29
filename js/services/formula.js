@@ -157,9 +157,19 @@ export function formulaHTML(formula) {
   return charge ? `${html}<sup>${charge}</sup>` : html;
 }
 
-/** Plain text with unicode subscripts, for places where HTML is not allowed (titles, speech). */
-export const formulaUnicode = formula =>
-  tidy(formula).replace(/([A-Za-z)\]])(\d+)/g, (_, a, d) => a + [...d].map(x => SUB[x]).join(''));
+const SUPER = Object.fromEntries(Object.entries(SUP).map(([k, v]) => [v, k]));
+/** Plain text with unicode subscripts and superscript charges, for places where HTML is not allowed (titles, speech). */
+export function formulaUnicode(formula) {
+  const text = tidy(formula);
+  const m = text.match(/\^(\d*[+-])$/) || text.match(/()([+-])$/);
+  const charge = m && text.length > m[0].length ? m[1] || m[2] : '';
+  const body = charge ? text.slice(0, -m[0].length) : text;
+  return (
+    body
+      .replace(/([A-Za-z)\]])(\d+)/g, (_, a, d) => a + [...d].map(x => SUB[x]).join(''))
+      .replace(/\./g, '·') + [...charge].map(x => SUPER[x]).join('')
+  );
+}
 
 // ---------- Equation balancing ----------
 const gcd = (a, b) => {

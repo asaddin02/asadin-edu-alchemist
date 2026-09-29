@@ -13,7 +13,14 @@ import {
   parseEquation,
   atomTally,
   formulaHTML,
+  formulaUnicode,
 } from '../js/services/formula.js';
+import { identify, validCAS } from '../js/services/identify.js';
+import { parseNuclide, nuclideLabel, daughter, halfLifeBand, durationText } from '../js/services/nuclide.js';
+import { parseHalfLife, parseDecay } from '../js/services/elementview.js';
+import { reference } from '../js/data/references.js';
+import { LIBRARY, NUCLEAR } from '../js/data/reactionLibrary.js';
+import { IONS } from '../js/data/ions.js';
 import {
   parseSDF,
   parseGHS,
@@ -256,6 +263,97 @@ test('third-party URLs are limited to http(s)', () => {
   assert.equal(safeURL(null), '');
 });
 
+test('search input is recognised as CID, CAS, InChIKey, InChI, SMILES, formula, nuclide or name', () => {
+  const kind = q => identify(q).kind;
+  assert.equal(kind('962'), 'cid');
+  assert.equal(kind('64-17-5'), 'cas');
+  assert.equal(identify('64-17-5').valid, true);
+  assert.equal(validCAS('7732-18-5'), true);
+  assert.equal(validCAS('7732-18-6'), false);
+  assert.equal(kind('LFQSCWFLJHTTHZ-UHFFFAOYSA-N'), 'inchikey');
+  assert.equal(kind('InChI=1S/H2O/h1H2'), 'inchi');
+  assert.equal(kind('CC(=O)O'), 'smiles');
+  assert.equal(kind('c1ccccc1'), 'smiles');
+  assert.equal(kind('C6H12O6'), 'formula');
+  assert.equal(kind('CuSO4.5H2O'), 'formula');
+  assert.equal(kind('CCl4'), 'formula');
+  assert.equal(kind('C-14'), 'nuclide');
+  assert.equal(kind('uranium-235'), 'nuclide');
+  assert.equal(kind('H2'), 'formula');
+  assert.equal(kind('natrium'), 'name');
+  assert.equal(kind('asam sulfat'), 'name');
+  const ccO = identify('CCO');
+  assert.equal(ccO.kind, 'smiles');
+  assert.equal(ccO.alsoFormula, true);
+});
+
+test('nuclides: notation, decay products, half-life bands and durations', () => {
+  const c14 = parseNuclide('C-14');
+  assert.equal(c14.element.s, 'C');
+  assert.equal(c14.A, 14);
+  for (const text of ['14C', 'karbon-14', 'carbon 14', '¹⁴C']) assert.equal(parseNuclide(text)?.A, 14, text);
+  assert.equal(parseNuclide('C-3'), null, 'A below Z is not a nuclide');
+  assert.equal(nuclideLabel(235, 'U'), '²³⁵U');
+  assert.deepEqual([daughter(6, 14, 'β-').element.s, daughter(6, 14, 'β-').A], ['N', 14]);
+  assert.deepEqual([daughter(92, 238, 'α').element.s, daughter(92, 238, 'α').A], ['Th', 234]);
+  assert.equal(daughter(19, 40, 'ε').element.s, 'Ar');
+  assert.equal(daughter(92, 235, 'SF'), null);
+  assert.equal(halfLifeBand(null, true), 'stable');
+  assert.equal(halfLifeBand(0.01, false), 'sub-second');
+  assert.equal(halfLifeBand(3600, false), 'day');
+  assert.equal(halfLifeBand(1.8e11, false), 'long');
+  assert.equal(durationText(0), '0');
+  assert.match(durationText(330177.6), /^3[.,]82 /);
+  assert.match(durationText(1.408e17), /^4[.,]46 /);
+});
+
+test('element records: half-lives and decay modes as the IAEA AMDC writes them', () => {
+  const h = parseHalfLife('5.70 ky ± 0.03');
+  close(h.seconds / (365.2422 * 86400), 5700, 1);
+  assert.equal(parseHalfLife('Stable').stable, true);
+  assert.equal(parseHalfLife('Not-specified').seconds, null);
+  assert.equal(parseHalfLife('<110 ns').limit, '<');
+  assert.deepEqual(parseDecay('β-=100%'), [{ mode: 'β-', op: '=', pct: 100 }]);
+  assert.deepEqual(
+    parseDecay('α ≈ 100%; SF ?').map(d => d.mode),
+    ['α', 'SF']
+  );
+  assert.deepEqual(parseDecay('IS=98.93%'), [], 'isotopic abundance is not a decay mode');
+});
+
+test('unicode formulas, textbook references and the reaction library', () => {
+  assert.equal(formulaUnicode('SO4 2-'), 'SO₄²⁻');
+  assert.equal(formulaUnicode('NH4+'), 'NH₄⁺');
+  assert.equal(formulaUnicode('CuSO4·5H2O'), 'CuSO₄·5H₂O');
+  const ref = reference('13-3-shifting-equilibria-le-chateliers-principle');
+  assert.equal(
+    ref.url,
+    'https://openstax.org/books/chemistry-2e/pages/13-3-shifting-equilibria-le-chateliers-principle'
+  );
+  assert.match(ref.label, /13\.3 Shifting Equilibria: Le Châtelier’s Principle/);
+  assert.equal(reference('oc:11-2-the-sn2-reaction').book, 'organic-chemistry');
+  assert.equal(reference('xx:1-1-nothing'), null);
+  const coef = c => (c === 'n' ? 1 : typeof c === 'string' ? Number(c.replace('n', '')) || 1 : c);
+  for (const r of LIBRARY) {
+    const sum = side => {
+      const out = { charge: 0 };
+      for (const [c, f] of side) {
+        const p = parseFormula(f);
+        for (const [el, n] of Object.entries(p.counts)) out[el] = (out[el] || 0) + n * coef(c);
+        out.charge += (p.charge || 0) * coef(c);
+      }
+      return out;
+    };
+    assert.deepEqual(sum(r.r), sum(r.p), r.id);
+  }
+  for (const r of NUCLEAR)
+    for (const k of [0, 1]) {
+      const total = side => side.reduce((a, x) => a + x[k] * (x[3] || 1), 0);
+      assert.equal(total(r.r), total(r.p), `${r.id} ${k ? 'Z' : 'A'}`);
+    }
+  for (const i of IONS) assert.equal(Math.sign(parseFormula(i.f).charge), i.kind === 'cation' ? 1 : -1, i.id);
+});
+
 test('proxy policy only forwards read-only PubChem endpoints', () => {
   assert.deepEqual(route('pubchem/rest/pug/compound/cid/962/property/MolecularFormula/JSON'), {
     provider: 'pubchem',
@@ -271,6 +369,18 @@ test('proxy policy only forwards read-only PubChem endpoints', () => {
   assert.equal(route('pubchem/rest/pug/compound/name/..%2F..%2Fetc/cids/JSON').error, 403);
   assert.equal(route('pubchem/../../etc/passwd').error, 403);
   assert.equal(route('other/thing').error, 404);
+  // Identifier lookups for the unified search: InChIKey in the path, SMILES and InChI as query parameters.
+  assert.equal(
+    route('pubchem/rest/pug/compound/inchikey/LFQSCWFLJHTTHZ-UHFFFAOYSA-N/cids/JSON').error,
+    undefined
+  );
+  assert.equal(route('pubchem/rest/pug/compound/inchikey/not-a-key/cids/JSON').error, 403);
+  assert.equal(route('pubchem/rest/pug/compound/smiles/cids/JSON', '?smiles=CCO').search, '?smiles=CCO');
+  assert.equal(
+    route('pubchem/rest/pug/compound/inchi/cids/JSON', '?inchi=InChI%3D1S%2FH2O%2Fh1H2').error,
+    undefined
+  );
+  assert.equal(route('pubchem/rest/pug/compound/smiles/cids/JSON', '?smiles=CCO&evil=1').error, 403);
 });
 
 /** Starts the production server on a random local port and waits until it answers. */
@@ -308,6 +418,10 @@ test('production server: allow-listed files, bad URLs and the health endpoint', 
     assert.equal(await status('/'), 200, 'server keeps running after a malformed URL');
     assert.equal(await status('/js/app.js'), 200);
     assert.equal(await status('/data/molecules/water.json'), 200);
+    assert.equal(await status('/data/elements/26.json'), 200);
+    assert.equal(await status('/data/ions/index.json'), 200);
+    assert.equal(await status('/data/ions/sulfat.json'), 200);
+    assert.equal(await status('/data/isotopes.json'), 200);
     assert.equal(await status('/', { method: 'POST' }), 405);
     const health = await (await fetch(`${base}/api/health`)).json();
     assert.equal(health.ok, true);

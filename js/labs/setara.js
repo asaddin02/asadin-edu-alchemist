@@ -58,7 +58,8 @@ const gcdAll = list =>
     return a;
   });
 
-export function mount(host) {
+/** `params.eq` (e.g. from a reaction page) pre-fills and balances the "your own equation" box. */
+export function mount(host, { params } = {}) {
   let level = 'easy';
   let i = 0;
   const list = () => REACTIONS.filter(r => r.lv === level);
@@ -152,4 +153,9 @@ export function mount(host) {
     out.innerHTML = `<p class="equation result">${parsed.reactants.map((f, k) => term(f, k)).join(' + ')} → ${parsed.products.map((f, k) => term(f, k + parsed.reactants.length)).join(' + ')}</p>`;
   });
   drawEq();
+  const given = params?.get('eq');
+  if (given) {
+    host.querySelector('#own-eq').value = given.slice(0, 200);
+    host.querySelector('[data-own]').requestSubmit();
+  }
 }

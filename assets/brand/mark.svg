@@ -1,28 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
-  <title>Moleculium</title>
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#14b8a6"/>
-      <stop offset="1" stop-color="#0f5f73"/>
-    </linearGradient>
-    <radialGradient id="ball" cx="0.35" cy="0.3" r="0.8">
-      <stop offset="0" stop-color="#ffffff"/>
-      <stop offset="1" stop-color="#d9f7f1"/>
-    </radialGradient>
-    <radialGradient id="accent" cx="0.35" cy="0.3" r="0.8">
-      <stop offset="0" stop-color="#ffe7a8"/>
-      <stop offset="1" stop-color="#f59e0b"/>
-    </radialGradient>
-  </defs>
-  <rect width="128" height="128" rx="30" fill="url(#bg)"/>
-  <ellipse cx="64" cy="66" rx="48" ry="18" fill="none" stroke="#ffffff" stroke-opacity="0.35" stroke-width="3" transform="rotate(-24 64 66)"/>
-  <g stroke="#ffffff" stroke-width="7" stroke-linecap="round">
-    <line x1="64" y1="66" x2="34" y2="40"/>
-    <line x1="64" y1="66" x2="96" y2="44"/>
-    <line x1="64" y1="66" x2="62" y2="102"/>
-  </g>
-  <circle cx="64" cy="66" r="17" fill="url(#accent)"/>
-  <circle cx="34" cy="40" r="12" fill="url(#ball)"/>
-  <circle cx="96" cy="44" r="11" fill="url(#ball)"/>
-  <circle cx="62" cy="102" r="10" fill="url(#ball)"/>
+  <title>Alchemist — labu kimia berbentuk A</title>
+  <rect width="128" height="128" rx="30" fill="#2563eb"/>
+  <path d="M51 28h26M56 28v23L33 94q-3 6 5 6h52q8 0 5-6L72 51V28" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M47 78h34l9 17H38Z" fill="#ffda66"/>
+  <circle cx="62" cy="68" r="5" fill="#ffda66"/>
+  <circle cx="94" cy="32" r="7" fill="#ffda66"/>
 </svg>

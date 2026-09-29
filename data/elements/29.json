@@ -22,5 +22,998 @@
   "author": "Didier Descouens",
   "license": "CC BY-SA 4.0",
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
- }
+ },
+ "weight": {
+  "value": "63.546(3)",
+  "kind": "standard",
+  "source": "ciaaw"
+ },
+ "natural": [
+  {
+   "A": 63,
+   "iso": "",
+   "mass": "62.929 597(3)",
+   "abundance": "0.6915(15)"
+  },
+  {
+   "A": 65,
+   "iso": "",
+   "mass": "64.927 790(5)",
+   "abundance": "0.3085(15)"
+  }
+ ],
+ "naturalSource": "ciaaw",
+ "nuclides": [
+  {
+   "A": 52,
+   "iso": "",
+   "mass": "51.997982 ± 0.000644",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 53,
+   "iso": "",
+   "mass": "52.985894 ± 0.000537",
+   "half": "Not-specified <130ns",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 54,
+   "iso": "",
+   "mass": "53.977198 ± 0.000429",
+   "half": "Not-specified <75ns",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 55,
+   "iso": "",
+   "mass": "54.966038000 ± 0.000167",
+   "half": "55.9 ms ± 1.5",
+   "seconds": 0.0559,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": null
+    }
+   ],
+   "year": 1987,
+   "est": false
+  },
+  {
+   "A": 56,
+   "iso": "",
+   "mass": "55.958529278 ± 0.000006864",
+   "half": "80.8 ms ± 0.6",
+   "seconds": 0.0808,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 0.4
+    }
+   ],
+   "year": 1987,
+   "est": false
+  },
+  {
+   "A": 57,
+   "iso": "",
+   "mass": "56.949211686 ± 0.000000537",
+   "half": "196.4 ms ± 0.7",
+   "seconds": 0.19640000000000002,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1976,
+   "est": false
+  },
+  {
+   "A": 58,
+   "iso": "",
+   "mass": "57.944532283 ± 0.000000604",
+   "half": "3.204 s ± 0.007",
+   "seconds": 3.204,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1952,
+   "est": false
+  },
+  {
+   "A": 59,
+   "iso": "",
+   "mass": "58.939496713 ± 0.000000566",
+   "half": "81.5 s ± 0.5",
+   "seconds": 81.5,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1947,
+   "est": false
+  },
+  {
+   "A": 60,
+   "iso": "",
+   "mass": "59.937363787 ± 0.000001731",
+   "half": "23.7 m ± 0.4",
+   "seconds": 1422,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1947,
+   "est": false
+  },
+  {
+   "A": 61,
+   "iso": "",
+   "mass": "60.933457375 ± 0.00000102",
+   "half": "3.343 h ± 0.016",
+   "seconds": 12034.8,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1937,
+   "est": false
+  },
+  {
+   "A": 62,
+   "iso": "",
+   "mass": "61.932594803 ± 0.000000683",
+   "half": "9.672 m ± 0.008",
+   "seconds": 580.32,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1936,
+   "est": false
+  },
+  {
+   "A": 63,
+   "iso": "",
+   "mass": "62.929597119 ± 0.000000457",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1923,
+   "est": false
+  },
+  {
+   "A": 64,
+   "iso": "",
+   "mass": "63.929764001 ± 0.000000458",
+   "half": "12.7004 h ± 0.0013",
+   "seconds": 45721.44,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 61.52
+    },
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 38.48
+    }
+   ],
+   "year": 1936,
+   "est": false
+  },
+  {
+   "A": 65,
+   "iso": "",
+   "mass": "64.927789476 ± 0.00000069",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1923,
+   "est": false
+  },
+  {
+   "A": 66,
+   "iso": "",
+   "mass": "65.928868804 ± 0.000000696",
+   "half": "5.120 m ± 0.014",
+   "seconds": 307.2,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1937,
+   "est": false
+  },
+  {
+   "A": 66,
+   "iso": "m",
+   "mass": "65.928868804 ± 0.000000696",
+   "half": "600 ns ± 17",
+   "seconds": 6.000000000000001e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1972,
+   "est": false
+  },
+  {
+   "A": 67,
+   "iso": "",
+   "mass": "66.927729490 ± 0.000000957",
+   "half": "61.83 h ± 0.12",
+   "seconds": 222588,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1948,
+   "est": false
+  },
+  {
+   "A": 68,
+   "iso": "",
+   "mass": "67.929610887 ± 0.0000017",
+   "half": "30.9 s ± 0.6",
+   "seconds": 30.9,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1953,
+   "est": false
+  },
+  {
+   "A": 68,
+   "iso": "m",
+   "mass": "67.929610887 ± 0.0000017",
+   "half": "3.75 m ± 0.05",
+   "seconds": 225,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 86
+    },
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 14
+    }
+   ],
+   "year": 1969,
+   "est": false
+  },
+  {
+   "A": 69,
+   "iso": "",
+   "mass": "68.929429267 ± 0.0000015",
+   "half": "2.85 m ± 0.15",
+   "seconds": 171,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1966,
+   "est": false
+  },
+  {
+   "A": 69,
+   "iso": "m",
+   "mass": "68.929429267 ± 0.0000015",
+   "half": "357 ns ± 2",
+   "seconds": 3.5700000000000003e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1997,
+   "est": false
+  },
+  {
+   "A": 70,
+   "iso": "",
+   "mass": "69.932392078 ± 0.000001161",
+   "half": "44.5 s ± 0.2",
+   "seconds": 44.5,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1971,
+   "est": false
+  },
+  {
+   "A": 70,
+   "iso": "m",
+   "mass": "69.932392078 ± 0.000001161",
+   "half": "33 s ± 2",
+   "seconds": 33,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 52
+    },
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 48
+    }
+   ],
+   "year": 2002,
+   "est": false
+  },
+  {
+   "A": 70,
+   "iso": "n",
+   "mass": "69.932392078 ± 0.000001161",
+   "half": "6.6 s ± 0.2",
+   "seconds": 6.6,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 93.2
+    },
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 6.8
+    }
+   ],
+   "year": 1971,
+   "est": false
+  },
+  {
+   "A": 71,
+   "iso": "",
+   "mass": "70.932676831 ± 0.0000016",
+   "half": "19.4 s ± 1.4",
+   "seconds": 19.4,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1983,
+   "est": false
+  },
+  {
+   "A": 71,
+   "iso": "m",
+   "mass": "70.932676831 ± 0.0000016",
+   "half": "271 ns ± 13",
+   "seconds": 2.7100000000000003e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1998,
+   "est": false
+  },
+  {
+   "A": 72,
+   "iso": "",
+   "mass": "71.935820306 ± 0.0000015",
+   "half": "6.63 s ± 0.03",
+   "seconds": 6.63,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1983,
+   "est": false
+  },
+  {
+   "A": 72,
+   "iso": "m",
+   "mass": "71.935820306 ± 0.0000015",
+   "half": "1.76 us ± 0.03",
+   "seconds": 0.0000017599999999999999,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1998,
+   "est": false
+  },
+  {
+   "A": 73,
+   "iso": "",
+   "mass": "72.936674376 ± 0.000002084",
+   "half": "4.20 s ± 0.12",
+   "seconds": 4.2,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 0.029
+    }
+   ],
+   "year": 1983,
+   "est": false
+  },
+  {
+   "A": 74,
+   "iso": "",
+   "mass": "73.939874860 ± 0.0000066",
+   "half": "1.606 s ± 0.009",
+   "seconds": 1.606,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 0.075
+    }
+   ],
+   "year": 1987,
+   "est": false
+  },
+  {
+   "A": 75,
+   "iso": "",
+   "mass": "74.941523817 ± 0.00000077",
+   "half": "1.224 s ± 0.003",
+   "seconds": 1.224,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 2.7
+    }
+   ],
+   "year": 1985,
+   "est": false
+  },
+  {
+   "A": 75,
+   "iso": "m",
+   "mass": "74.941523817 ± 0.00000077",
+   "half": "310 ns ± 8",
+   "seconds": 3.1e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2010,
+   "est": false
+  },
+  {
+   "A": 75,
+   "iso": "n",
+   "mass": "74.941523817 ± 0.00000077",
+   "half": "149 ns ± 5",
+   "seconds": 1.49e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2010,
+   "est": false
+  },
+  {
+   "A": 76,
+   "iso": "",
+   "mass": "75.945268974 ± 0.00000098",
+   "half": "637.7 ms ± 5.5",
+   "seconds": 0.6377,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 7.2
+    }
+   ],
+   "year": 1987,
+   "est": false
+  },
+  {
+   "A": 76,
+   "iso": "m",
+   "mass": "75.945268974 ± 0.00000098",
+   "half": "1.27 s ± 0.30",
+   "seconds": 1.27,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1990,
+   "est": false
+  },
+  {
+   "A": 77,
+   "iso": "",
+   "mass": "76.947543599 ± 0.0000013",
+   "half": "470.3 ms ± 1.7",
+   "seconds": 0.4703,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 30.1
+    }
+   ],
+   "year": 1987,
+   "est": false
+  },
+  {
+   "A": 78,
+   "iso": "",
+   "mass": "77.951916524 ± 0.000014312",
+   "half": "330.7 ms ± 2.0",
+   "seconds": 0.3307,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 50.6
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1991,
+   "est": false
+  },
+  {
+   "A": 79,
+   "iso": "",
+   "mass": "78.954473100 ± 0.0001127",
+   "half": "241.3 ms ± 2.1",
+   "seconds": 0.24130000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 66
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1991,
+   "est": false
+  },
+  {
+   "A": 80,
+   "iso": "",
+   "mass": "79.960623 ± 0.000322",
+   "half": "113.3 ms ± 6.4",
+   "seconds": 0.1133,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 58
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1995,
+   "est": true
+  },
+  {
+   "A": 81,
+   "iso": "",
+   "mass": "80.965743 ± 0.000322",
+   "half": "73.2 ms ± 6.8",
+   "seconds": 0.0732,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 81
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2010,
+   "est": true
+  },
+  {
+   "A": 82,
+   "iso": "",
+   "mass": "81.972378 ± 0.000429",
+   "half": "34 ms ± 7",
+   "seconds": 0.034,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2010,
+   "est": true
+  },
+  {
+   "A": 83,
+   "iso": "",
+   "mass": "82.978110 ± 0.000537",
+   "half": "21 ms >410ns",
+   "seconds": 0.021,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2017,
+   "est": true
+  },
+  {
+   "A": 84,
+   "iso": "",
+   "mass": "83.985271 ± 0.000537",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  }
+ ],
+ "stableCount": 2,
+ "texts": {
+  "history": [
+   {
+    "text": "The name derives from the Latin cuprum for Cyprus, the island where the Romans first obtained copper. The symbol Cu also comes from the Latin cuprum. The element has been known since prehistoric times.",
+    "source": "ciaaw"
+   },
+   {
+    "text": "Archaeological evidence suggests that people have been using copper for at least 11,000 years. Relatively easy to mine and refine, people discovered methods for extracting copper from its ores at least 7,000 years ago. The Roman Empire obtained most of its copper from the island of Cyprus, which is where copper's name originated. Today, copper is primarily obtained from the ores cuprite (CuO2), tenorite (CuO), malachite (CuO3·Cu(OH)2), chalcocite (Cu2S), covellite (CuS) and bornite (Cu6FeS4). Large deposits of copper ore are located in the United States, Chile, Zambia, Zaire, Peru and Canada.",
+    "source": "jlab"
+   },
+   {
+    "text": "From the Latin word cuprum, from the island of Cyprus. It is believed that copper has been mined for 5,000 years.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Used in large amounts by the electrical industry in the form of wire, copper is second only to silver in electrical conductance. Since it resists corrosion from the air, moisture and seawater, copper has been widely used in coins. Although once made nearly entirely from copper, American pennies are now made from zinc that has been coated with copper. Copper is also used to make water pipes and jewelry, as well as other items. Pure copper is usually too soft for most uses. People first learned about 5,000 years ago that copper can be strengthened if it is mixed with other metals. The two most familiar alloys of copper are bronze and brass. Bronze, the first alloy created by people, is a mix of copper that contains as much as 25% tin. Early people used bronze to make tools, weaponry, containers and ornamental items. Brass, a mix of copper that contains between 5% and 45% zinc, was first used about 2,500 years ago. The Romans were the first to make extensive use of brass, using it to make such things as coins, kettles and ornamental objects. Today, brass is also used in some musical instruments, screws and other hardware that must resist corrosion. Hydrated copper sulfate (CuSO4·H2O), also known as blue vitriol, is the best known copper compound. It is used as an agricultural poison, as an algicide in water purification and as a blue pigment for inks. Cuperic chloride (CuCl2), another copper compound, is used to fix dyes to fabrics. Cuprous chloride (CuCl) is a poisonous white powder that is chiefly used to absorb carbon dioxide (CO2). Copper cyanide (CuCN) is commonly used in electroplating.",
+    "source": "jlab"
+   },
+   {
+    "text": "The electrical industry is one of the greatest users of copper. Iron's alloys brass and bronze are very important: all American coins are copper alloys and gun metals also contain copper. Copper has wide use as an agricultural poison and as an algaecide in water purification. Copper compounds, such as Fehling's solution, are widely used in analytical chemistry tests for sugar.",
+    "source": "lanl"
+   }
+  ],
+  "sources": [
+   {
+    "text": "Copper occasionally occurs natively, and is found in many minerals such as cuprite, malachite, azurite, chalcopyrite, and bornite. Large copper ore deposits are found in the U.S., Chile, Zambia, Zaire, Peru, and Canada. The most important copper ores are the sulfides, the oxides, and carbonates. From these, copper is obtained by smelting, leaching, and by electrolysis.",
+    "source": "lanl"
+   }
+  ],
+  "description": [
+   {
+    "text": "Copper is reddish and takes on a bright metallic luster. It is malleable, ductile, and a good conductor of heat and electricity (second only to silver in electrical conductivity).",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Earth/Planetary Science",
+   "text": "Molecules, atoms, and ions of the stable isotopes of copper possess slightly different physical and chemical properties, and they commonly will be fractionated during physical, chemical, and biological processes, giving rise to variations in isotopic abundances and in atomic weights. There are measureable variations in the isotopic abundances of copper in natural terrestrial materials (Fig. IUPAC.29.1). 63Cu and 65Cu have been used to study copper isotope science of supergene (formed by descending solutions) copper minerals for potential use as an indicator of the paleohydraulic (ancient hydraulic) gradient, and for potential to provide a vector toward unrecognized copper source regions. Copper isotope ratios of iron oxides and supergene copper sulfides in surface samples or fossil leached caps of ore deposits are being used in prospecting to rank prospects and focus on drilling areas that have the greatest potential for mature enrichment profiles. ",
+   "source": "iptei"
+  },
+  {
+   "topic": "Forensic Science and Anthropology",
+   "text": "The copper isotope-amount ratio n(65Cu)/n(63Cu) along with the silver isotope-amount ratio n(109Ag)/n(107Ag) and lead isotope-amount ratios n(206Pb)/n(204Pb), n(207Pb)/n(204Pb), and n(208Pb)/n(204Pb) have been used to determine the origin of European coins and the flow of goods in the historical world market. Metals from Peru and Mexico and those from European mining sites have distinct isotopic signatures that enable the origin of the metal to be determined based on the isotopic compositions of silver, copper, and lead in the coins. Silver from mines in Mexico and Peru in the 16 th century was used to mint coins but did not influence the European coin market until the 18 th century.",
+   "source": "iptei"
+  },
+  {
+   "topic": "Medicine",
+   "text": "The radiopharmaceutical 62Cu-PTSM, which contains radioactive 62Cu (with a half-life of 9.7 min), is used as a tracer in positron emission tomography (PET) to quantify myocardial perfusion (heart blood-flow measurements),. The radioisotope 64Cu (with a half-life of 12.7 h) is used for PET imaging and radiotherapy to diagnose, understand, and monitor disease (Fig. IUPAC.29.2),. The stable isotope 65Cu has been used as a tracer to study copper absorption, utilization, and excretion in humans,. ",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "6.0×10^1 milligrams per kilogram",
+  "ocean": "2.5×10^-4 milligrams per liter",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 23978,
+   "name": "copper",
+   "formula": "Cu",
+   "charge": 0,
+   "smiles": "[Cu]"
+  },
+  {
+   "cid": 27099,
+   "name": "copper(2+)",
+   "formula": "Cu+2",
+   "charge": 2,
+   "smiles": "[Cu+2]"
+  },
+  {
+   "cid": 104815,
+   "name": "copper(1+)",
+   "formula": "Cu+",
+   "charge": 1,
+   "smiles": "[Cu+]"
+  }
+ ],
+ "refs": {
+  "ciaaw": {
+   "name": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+   "url": "https://www.ciaaw.org/copper.htm"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele029.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/29.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": "copper",
+ "ghs": {
+  "signal": "Warning",
+  "pictograms": [
+   {
+    "code": "GHS07",
+    "label": "Irritant"
+   },
+   {
+    "code": "GHS09",
+    "label": "Environmental Hazard"
+   }
+  ],
+  "hazards": [
+   "H302 (21.7%): Harmful if swallowed",
+   "H400 (43.1%): Very toxic to aquatic life",
+   "H410 (18.8%): Very toxic to aquatic life with long lasting effects",
+   "H411 (22.5%): Toxic to aquatic life with long lasting effects"
+  ],
+  "reports": 3463,
+  "notMet": 52.5,
+  "notClassified": false,
+  "source": "European Chemicals Agency (ECHA)"
+ },
+ "ghsCid": 23978
 }

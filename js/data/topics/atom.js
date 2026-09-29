@@ -30,7 +30,9 @@ Atoms can join to form [[molekul|molecules]]. One {{m:water|water}} molecule is 
 
 [[isotop|Isotop]] adalah atom unsur sama dengan jumlah neutron berbeda, misalnya karbon-12 dan karbon-14 (dipakai untuk menentukan umur fosil).
 
-Elektron mengisi kulit K (maks. 2), L (maks. 8), M, dan seterusnya. Elektron di kulit terluar disebut [[elektron-valensi]] dan menentukan cara atom bereaksi. Contoh: natrium (Z = 11) → 2 · 8 · 1.`,
+Elektron mengisi kulit K (maks. 2), L (maks. 8), M, dan seterusnya. Elektron di kulit terluar disebut [[elektron-valensi]] dan menentukan cara atom bereaksi. Contoh: natrium (Z = 11) → 2 · 8 · 1.
+
+Kuark penyusun proton dan neutron dibahas di {{learn:partikel|Partikel penyusun materi}}, sedangkan isotop radioaktif di {{learn:nuklir|kimia inti}}.`,
       `Atoms are made of three subatomic particles:
 
 - [[proton|Protons]] (charge +1) and [[neutron|neutrons]] (neutral) sit in a tiny nucleus that holds almost all the mass.
@@ -40,7 +42,9 @@ The [[nomor-atom|atomic number]] (Z) is the number of protons and defines the el
 
 [[isotop|Isotopes]] are atoms of the same element with different neutron numbers, such as carbon-12 and carbon-14 (used to date fossils).
 
-Electrons fill shells K (max 2), L (max 8), M and so on. The outermost ones are [[elektron-valensi|valence electrons]] and control how an atom reacts. Example: sodium (Z = 11) → 2 · 8 · 1.`,
+Electrons fill shells K (max 2), L (max 8), M and so on. The outermost ones are [[elektron-valensi|valence electrons]] and control how an atom reacts. Example: sodium (Z = 11) → 2 · 8 · 1.
+
+The quarks inside protons and neutrons are in {{learn:partikel|The particles of matter}}; radioactive isotopes in {{learn:nuklir|nuclear chemistry}}.`,
     ],
     sma: [
       `Model atom berkembang seiring bukti percobaan:
@@ -73,14 +77,18 @@ Pada atom berelektron banyak, elektron saling menutupi (efek perisai) sehingga m
 
 Tren periodik (jari-jari, energi ionisasi, afinitas elektron, keelektronegatifan) dapat dijelaskan dari Z_eff dan bilangan kuantum utama. Untuk unsur berat, efek relativistik mengontraksi orbital s: inilah alasan emas berwarna kuning dan raksa cair pada suhu kamar.
 
-Spektroskopi fotoelektron (PES) memberi bukti langsung energi tiap subkulit, sedangkan spektrum emisi atom dipakai dalam AAS dan ICP untuk analisis logam jejak.`,
+Spektroskopi fotoelektron (PES) memberi bukti langsung energi tiap subkulit, sedangkan spektrum emisi atom dipakai dalam AAS dan ICP untuk analisis logam jejak.
+
+Dasar kuantumnya diuraikan di {{learn:kuantum|Kimia kuantum & kimia fisik}}.`,
       `Solving the Schrödinger equation for hydrogen gives wavefunctions ψₙₗₘ = Rₙₗ(r)·Yₗᵐ(θ,φ). The radial part sets the number of radial nodes (n − l − 1); the angular part (spherical harmonics) sets the shape: spherical s, dumbbell p with one nodal plane, d with two nodal planes.
 
 In many-electron atoms electrons shield each other, giving an effective nuclear charge Z_eff = Z − S (Slater’s rules). s orbitals penetrate more than p and d, so within a shell s < p < d in energy. That is why 4s fills before 3d, yet transition-metal ions lose 4s electrons first (Fe²⁺ = [Ar] 3d⁶).
 
 Periodic trends (radius, ionisation energy, electron affinity, electronegativity) follow from Z_eff and the principal quantum number. In heavy elements relativistic effects contract s orbitals — the reason gold is yellow and mercury is liquid at room temperature.
 
-Photoelectron spectroscopy (PES) directly measures subshell energies, while atomic emission spectra underpin AAS and ICP analysis of trace metals.`,
+Photoelectron spectroscopy (PES) directly measures subshell energies, while atomic emission spectra underpin AAS and ICP analysis of trace metals.
+
+The quantum foundations are developed in {{learn:kuantum|Quantum & physical chemistry}}.`,
     ],
   },
   points: [
@@ -93,7 +101,7 @@ Photoelectron spectroscopy (PES) directly measures subshell energies, while atom
   labs: ['orbital', 'nyala'],
   activity: {
     sd: ['Buat model atom dari plastisin: bola besar di tengah (inti) dan bola kecil (elektron) pada lingkaran kawat.', 'Build an atom model from play dough: a big ball in the middle (nucleus) and small balls (electrons) on wire rings.'],
-    smp: ['Pilih 5 unsur di tabel periodik Moleculium, tentukan jumlah proton, neutron, elektron, dan susunan elektron per kulitnya.', 'Pick 5 elements in the Moleculium periodic table and find their protons, neutrons, electrons and electrons per shell.'],
+    smp: ['Pilih 5 unsur di tabel periodik Alchemist, tentukan jumlah proton, neutron, elektron, dan susunan elektron per kulitnya.', 'Pick 5 elements in the Alchemist periodic table and find their protons, neutrons, electrons and electrons per shell.'],
     sma: ['Gunakan lab Konfigurasi elektron untuk 10 unsur periode 4. Catat unsur yang menjadi pengecualian dan jelaskan alasannya.', 'Use the Electron configuration lab for 10 period-4 elements. Note the exceptions and explain them.'],
     kuliah: ['Hitung Z_eff elektron 2p pada C, N, O, F dengan aturan Slater, lalu hubungkan dengan tren energi ionisasi pertama dari data PubChem.', 'Compute Z_eff for 2p electrons in C, N, O, F with Slater’s rules and relate it to first ionisation energies from PubChem.'],
   },
@@ -120,13 +128,14 @@ Photoelectron spectroscopy (PES) directly measures subshell energies, while atom
     steps: [
       ['Pemantik: "Seberapa kecil sesuatu dapat dibagi?" Diskusi dengan sebutir garam.', 'Hook: "How small can you divide something?" Discuss with a grain of salt.'],
       ['Garis waktu model atom (kerja kelompok, tiap kelompok satu ilmuwan).', 'Atomic-model timeline (groups each present one scientist).'],
-      ['Latihan terbimbing di lab Konfigurasi elektron Moleculium.', 'Guided practice in the Moleculium Electron configuration lab.'],
+      ['Latihan terbimbing di lab Konfigurasi elektron Alchemist.', 'Guided practice in the Alchemist Electron configuration lab.'],
       ['Uji nyala virtual: hubungkan warna nyala dengan loncatan elektron.', 'Virtual flame test: link flame colours to electron jumps.'],
     ],
     misconceptions: [
       ['"Elektron beredar seperti planet di orbit tetap." Model kuantum menggambarkan orbital sebagai peluang.', '"Electrons orbit like planets." The quantum model describes orbitals as probabilities.'],
       ['"Atom bisa dilihat dengan mikroskop biasa." Atom terlalu kecil; hanya mikroskop khusus (STM) yang dapat "memetakannya".', '"Atoms are visible under an ordinary microscope." Only special instruments (STM) can map them.'],
     ],
-    assessment: ['Kuis Moleculium dan poster garis waktu model atom.', 'Moleculium quiz and an atomic-model timeline poster.'],
+    assessment: ['Kuis Alchemist dan poster garis waktu model atom.', 'Alchemist quiz and an atomic-model timeline poster.'],
   },
+  refs: ["2-2-evolution-of-atomic-theory", "2-3-atomic-structure-and-symbolism", "6-2-the-bohr-model", "6-3-development-of-quantum-theory", "6-4-electronic-structure-of-atoms-electron-configurations"],
 };

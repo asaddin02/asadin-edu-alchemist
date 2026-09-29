@@ -1,6 +1,6 @@
 // Periodic table of all 118 elements (PubChem data), coloured by category or by a property heat map.
 import { $, $$, esc } from '../core/dom.js';
-import { S, pick, num } from '../core/prefs.js';
+import { S, pick, num, fmt } from '../core/prefs.js';
 import { replaceQuery } from '../core/router.js';
 import { pageHead } from '../components/common.js';
 import { ELEMENTS, CATEGORIES } from '../data/periodicTable.js';
@@ -29,6 +29,9 @@ const s = S({
   ancient: ['sejak zaman kuno', 'known since antiquity'],
   listView: ['Tampilkan sebagai daftar', 'Show as a list'],
   filter: ['Cari unsur', 'Find element'],
+  all: ['Semua', 'All'],
+  shown: ['{n} dari 118 unsur ditampilkan', '{n} of 118 elements shown'],
+  clear: ['Hapus filter', 'Clear filters'],
   lanth: ['Lantanida', 'Lanthanides'],
   act: ['Aktinida', 'Actinides'],
   low: ['rendah', 'low'],
@@ -56,9 +59,17 @@ function heat(t) {
   return `rgb(${c.join(',')})`;
 }
 
+const STATES = ['solid', 'liquid', 'gas'];
+
 export function render({ main, params }) {
   let mode = params.get('by') || 'category';
   if (![...HEAT, 'category', 'state', 'block'].includes(mode)) mode = 'category';
+  const filters = {
+    q: params.get('q') || '',
+    cat: Object.hasOwn(CATEGORIES, params.get('cat') || '') ? params.get('cat') : '',
+    blk: ['s', 'p', 'd', 'f'].includes(params.get('blk')) ? params.get('blk') : '',
+    st: STATES.includes(params.get('st')) ? params.get('st') : '',
+  };
 
   const tile = e =>
     `<a class="el-tile" href="#/atom/${e.s}" data-z="${e.z}" style="grid-column:${e.x};grid-row:${e.y}" aria-label="${esc(
@@ -75,8 +86,16 @@ export function render({ main, params }) {
           <option value="block">${esc(s.block)}</option>
           ${HEAT.map(k => `<option value="${k}">${esc(s[k])}</option>`).join('')}
         </select></div>
-      <div class="field"><label for="pt-find">${esc(s.filter)}</label><input id="pt-find" type="search" placeholder="Fe, emas, oxygen…" autocomplete="off" /></div>
+      <div class="field"><label for="pt-find">${esc(s.filter)}</label><input id="pt-find" type="search" value="${esc(filters.q)}" placeholder="Fe, emas, oxygen…" autocomplete="off" /></div>
+      <div class="field"><label for="pt-cat">${esc(s.category)}</label><select id="pt-cat"><option value="">${esc(s.all)}</option>${Object.entries(
+        CATEGORIES
+      )
+        .map(([k, c]) => `<option value="${k}">${esc(pick(c.name))}</option>`)
+        .join('')}</select></div>
+      <div class="field"><label for="pt-blk">${esc(s.block)}</label><select id="pt-blk"><option value="">${esc(s.all)}</option>${['s', 'p', 'd', 'f'].map(b => `<option value="${b}">${esc(pick(['Blok', 'Block']))} ${b}</option>`).join('')}</select></div>
+      <div class="field"><label for="pt-st">${esc(s.state)}</label><select id="pt-st"><option value="">${esc(s.all)}</option>${STATES.map(k => `<option value="${k}">${esc(s[k])}</option>`).join('')}</select></div>
     </div>
+    <p class="muted small" data-shown aria-live="polite"></p>
     <div class="pt-scroll" tabindex="0" aria-label="${esc(s.title)}">
       <div class="ptable" data-ptable>
         ${ELEMENTS.map(tile).join('')}
@@ -162,21 +181,55 @@ export function render({ main, params }) {
 
   select.addEventListener('change', () => {
     mode = select.value;
-    replaceQuery({ by: mode === 'category' ? '' : mode });
+    replaceQuery({ by: mode === 'category' ? '' : mode, ...filters });
     paint();
   });
-  $('#pt-find', main).addEventListener('input', e => {
-    const q = e.target.value.trim().toLowerCase();
+  function filter() {
+    const q = filters.q.trim().toLowerCase();
+    let shown = 0;
     for (const t of tiles) {
       const el = ELEMENTS[t.dataset.z - 1];
       const hit =
-        !q ||
-        el.s.toLowerCase() === q ||
-        el.id.toLowerCase().includes(q) ||
-        el.en.toLowerCase().includes(q) ||
-        String(el.z) === q;
+        (!q ||
+          el.s.toLowerCase() === q ||
+          el.id.toLowerCase().includes(q) ||
+          el.en.toLowerCase().includes(q) ||
+          String(el.z) === q) &&
+        (!filters.cat || el.cat === filters.cat) &&
+        (!filters.blk || el.block === filters.blk) &&
+        (!filters.st || el.state === filters.st);
       t.classList.toggle('is-dim', !hit);
+      if (hit) {
+        t.removeAttribute('tabindex');
+        shown++;
+      } else t.setAttribute('tabindex', '-1');
     }
+    const any = filters.q || filters.cat || filters.blk || filters.st;
+    $('[data-shown]', main).innerHTML = any
+      ? `${esc(fmt(s.shown, { n: shown }))} · <button class="btn-link" type="button" data-clear>${esc(s.clear)}</button>`
+      : '';
+  }
+  const setFilter = (key, value) => {
+    filters[key] = value;
+    replaceQuery({ by: mode === 'category' ? '' : mode, ...filters });
+    filter();
+  };
+  $('#pt-find', main).addEventListener('input', e => setFilter('q', e.target.value));
+  for (const [id, key] of [
+    ['#pt-cat', 'cat'],
+    ['#pt-blk', 'blk'],
+    ['#pt-st', 'st'],
+  ]) {
+    $(id, main).value = filters[key];
+    $(id, main).addEventListener('change', e => setFilter(key, e.target.value));
+  }
+  $('[data-shown]', main).addEventListener('click', e => {
+    if (!e.target.closest('[data-clear]')) return;
+    for (const k of Object.keys(filters)) filters[k] = '';
+    for (const id of ['#pt-find', '#pt-cat', '#pt-blk', '#pt-st']) $(id, main).value = '';
+    replaceQuery({ by: mode === 'category' ? '' : mode });
+    filter();
   });
   paint();
+  filter();
 }

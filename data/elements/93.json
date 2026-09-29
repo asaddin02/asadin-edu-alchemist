@@ -22,5 +22,776 @@
   "author": "Los Alamos National Laboratory,",
   "license": "Public domain",
   "licenseUrl": ""
- }
+ },
+ "weight": {
+  "value": "[237]",
+  "kind": "mass-number",
+  "A": 237,
+  "source": "nist"
+ },
+ "natural": [],
+ "naturalSource": "nist",
+ "nuclides": [
+  {
+   "A": 219,
+   "iso": "",
+   "mass": "219.031601865 ± 0.000098732",
+   "half": "570 us ± 450",
+   "seconds": 0.00057,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2015,
+   "est": false
+  },
+  {
+   "A": 220,
+   "iso": "",
+   "mass": "220.032716280 ± 0.000032977",
+   "half": "29 ns ± 11",
+   "seconds": 2.9e-8,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2019,
+   "est": false
+  },
+  {
+   "A": 221,
+   "iso": "",
+   "mass": "221.032110 ± 0.000215",
+   "half": "30 ns",
+   "seconds": 3.0000000000000004e-8,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 222,
+   "iso": "",
+   "mass": "222.033574706 ± 0.000040849",
+   "half": "480 ns ± 190",
+   "seconds": 4.800000000000001e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2020,
+   "est": false
+  },
+  {
+   "A": 223,
+   "iso": "",
+   "mass": "223.032913340 ± 0.000088956",
+   "half": "2.5 us ± 0.8",
+   "seconds": 0.0000024999999999999998,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2017,
+   "est": false
+  },
+  {
+   "A": 224,
+   "iso": "",
+   "mass": "224.034388030 ± 0.000031052",
+   "half": "48 us ± 19",
+   "seconds": 0.000048,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2018,
+   "est": false
+  },
+  {
+   "A": 225,
+   "iso": "",
+   "mass": "225.033943422 ± 0.000098355",
+   "half": "6.5 ms ± 3.5",
+   "seconds": 0.006500000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1994,
+   "est": false
+  },
+  {
+   "A": 226,
+   "iso": "",
+   "mass": "226.035230364 ± 0.000109568",
+   "half": "35 ms ± 10",
+   "seconds": 0.035,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1990,
+   "est": false
+  },
+  {
+   "A": 227,
+   "iso": "",
+   "mass": "227.034975012 ± 0.000082651",
+   "half": "510 ms ± 60",
+   "seconds": 0.51,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1990,
+   "est": false
+  },
+  {
+   "A": 228,
+   "iso": "",
+   "mass": "228.036313 ± 0.000108",
+   "half": "61.4 s ± 1.4",
+   "seconds": 61.4,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": 59
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 41
+    },
+    {
+     "mode": "β+SF",
+     "op": "=",
+     "pct": 0.012
+    }
+   ],
+   "year": 1994,
+   "est": true
+  },
+  {
+   "A": 229,
+   "iso": "",
+   "mass": "229.036287269 ± 0.000108618",
+   "half": "4.00 m ± 0.18",
+   "seconds": 240,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 68
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1968,
+   "est": false
+  },
+  {
+   "A": 229,
+   "iso": "p",
+   "mass": "229.036287269 ± 0.000108618",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [],
+   "year": null,
+   "est": false
+  },
+  {
+   "A": 230,
+   "iso": "",
+   "mass": "230.037828060 ± 0.000059051",
+   "half": "4.6 m ± 0.3",
+   "seconds": 276,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "<",
+     "pct": 97
+    },
+    {
+     "mode": "α",
+     "op": ">",
+     "pct": 3
+    }
+   ],
+   "year": 1968,
+   "est": false
+  },
+  {
+   "A": 231,
+   "iso": "",
+   "mass": "231.038243598 ± 0.000054916",
+   "half": "48.8 m ± 0.2",
+   "seconds": 2928,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 98
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 2
+    }
+   ],
+   "year": 1950,
+   "est": false
+  },
+  {
+   "A": 232,
+   "iso": "",
+   "mass": "232.040107 ± 0.000107",
+   "half": "14.7 m ± 0.3",
+   "seconds": 882,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1950,
+   "est": true
+  },
+  {
+   "A": 233,
+   "iso": "",
+   "mass": "233.040739421 ± 0.000054729",
+   "half": "36.2 m ± 0.1",
+   "seconds": 2172,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 0.0007
+    }
+   ],
+   "year": 1950,
+   "est": false
+  },
+  {
+   "A": 233,
+   "iso": "p",
+   "mass": "233.040739421 ± 0.000054729",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [],
+   "year": null,
+   "est": false
+  },
+  {
+   "A": 234,
+   "iso": "",
+   "mass": "234.042893245 ± 0.000009014",
+   "half": "4.4 d ± 0.1",
+   "seconds": 380160.00000000006,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1949,
+   "est": false
+  },
+  {
+   "A": 235,
+   "iso": "",
+   "mass": "235.044061518 ± 0.00000149",
+   "half": "396.1 d ± 1.2",
+   "seconds": 34223040,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": 99.9974
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 0.0026
+    }
+   ],
+   "year": 1949,
+   "est": false
+  },
+  {
+   "A": 236,
+   "iso": "",
+   "mass": "236.046568296 ± 0.000054129",
+   "half": "153 ky ± 5",
+   "seconds": 4828209690240.001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": 86.3
+    },
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 13.5
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 0.16
+    }
+   ],
+   "year": 1949,
+   "est": false
+  },
+  {
+   "A": 236,
+   "iso": "m",
+   "mass": "236.046568296 ± 0.000054129",
+   "half": "22.5 h ± 0.4",
+   "seconds": 81000,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": 50
+    },
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 50
+    }
+   ],
+   "year": 1949,
+   "est": false
+  },
+  {
+   "A": 236,
+   "iso": "p",
+   "mass": "236.046568296 ± 0.000054129",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [],
+   "year": null,
+   "est": false
+  },
+  {
+   "A": 237,
+   "iso": "",
+   "mass": "237.048171640 ± 0.000001201",
+   "half": "2.144 My ± 0.007",
+   "seconds": 67658049515520.01,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1948,
+   "est": false
+  },
+  {
+   "A": 237,
+   "iso": "m",
+   "mass": "237.048171640 ± 0.000001201",
+   "half": "710 ns ± 40",
+   "seconds": 7.100000000000001e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1990,
+   "est": false
+  },
+  {
+   "A": 238,
+   "iso": "",
+   "mass": "238.050944603 ± 0.00000122",
+   "half": "2.099 d ± 0.002",
+   "seconds": 181353.6,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1949,
+   "est": false
+  },
+  {
+   "A": 238,
+   "iso": "m",
+   "mass": "238.050944603 ± 0.00000122",
+   "half": "112 ns ± 39",
+   "seconds": 1.1200000000000001e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1970,
+   "est": false
+  },
+  {
+   "A": 239,
+   "iso": "",
+   "mass": "239.052937538 ± 0.000001406",
+   "half": "2.356 d ± 0.003",
+   "seconds": 203558.4,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1940,
+   "est": false
+  },
+  {
+   "A": 240,
+   "iso": "",
+   "mass": "240.056163778 ± 0.000018284",
+   "half": "61.9 m ± 0.2",
+   "seconds": 3714,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1953,
+   "est": false
+  },
+  {
+   "A": 240,
+   "iso": "m",
+   "mass": "240.056163778 ± 0.000018284",
+   "half": "7.22 m ± 0.02",
+   "seconds": 433.2,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 99.88
+    },
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 0.12
+    }
+   ],
+   "year": 1948,
+   "est": false
+  },
+  {
+   "A": 241,
+   "iso": "",
+   "mass": "241.058309671 ± 0.00010736",
+   "half": "13.9 m ± 0.2",
+   "seconds": 834,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1959,
+   "est": false
+  },
+  {
+   "A": 242,
+   "iso": "",
+   "mass": "242.061639548 ± 0.000214712",
+   "half": "2.2 m ± 0.2",
+   "seconds": 132,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1979,
+   "est": false
+  },
+  {
+   "A": 242,
+   "iso": "m",
+   "mass": "242.061639548 ± 0.000214712",
+   "half": "5.5 m ± 0.1",
+   "seconds": 330,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1981,
+   "est": false
+  },
+  {
+   "A": 243,
+   "iso": "",
+   "mass": "243.064204 ± 0.000034",
+   "half": "1.85 m ± 0.15",
+   "seconds": 111,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1979,
+   "est": true
+  },
+  {
+   "A": 243,
+   "iso": "p",
+   "mass": "243.064204 ± 0.000034",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 244,
+   "iso": "",
+   "mass": "244.067891 ± 0.000107",
+   "half": "2.29 m ± 0.16",
+   "seconds": 137.4,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1987,
+   "est": true
+  },
+  {
+   "A": 245,
+   "iso": "",
+   "mass": "245.070693 ± 0.000215",
+   "half": "6 m",
+   "seconds": 360,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  }
+ ],
+ "stableCount": 0,
+ "texts": {
+  "history": [
+   {
+    "text": "Neptunium was first produced by Edwin M. McMillian and Philip H. Abelson, working at the University of California, Berkeley, in 1940. They produced neptunium-239, an isotope of neptunium with a half-life of about 2.4 days, by bombarding uranium with slow moving neutrons.",
+    "source": "jlab"
+   },
+   {
+    "text": "Named for the planet Neptune (named after the Roman god of the sea), the next planet out from the Sun after Uranus. There were many early false reports of the discovery of neptunium. The most significant was by Enrico Fermi who believed that bombarding uranium with neutrons followed by beta decay would lead to the formation of element 93. In 1934, he bombarded uranium atoms with neutrons and reported that he had produced elements 93 and 94. As it turned out, Fermi had actually fissioned or split uranium atoms into many fragment radioisotopes. The explanation and announcement of the discovery of fission was later published by Hahn and Strassman, although it was their co-worker Lisa Meitner who had correctly interpreted the results of the experiments. In 1940, with excitement about fission reaching the University of California at Berkeley, Professor Edwin McMillan and graduate student Philip Abelson bombarded uranium with cyclotron-produced moderated (slow) neutrons, resulting not in “fission” but \"fusion\" of the reactants forming the new element 93, which they named \"neptunium\": 23892U + 10n → 23992U → 23993Np + β- Neptunium-239 was the first transuranium element produced synthetically and the first actinide series transuranium element discovered. This isotope has a beta-decay half-life of 2.3565 days, which forms daughter product plutonium-239 with a half-life of 24,000 years.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Neptunium's most stable isotope, neptunium-237, has a half-life of about 2,144,000 years. It decays into protactinium-233 through alpha decay. Neptunium-237, which is produced in gram quantities as a by-product of the production of plutonium in nuclear reactors, is used in neutron detectors. Once considered to be completely artificial, extremely small amounts of neptunium are produced naturally in uranium ores through the interaction of atoms of uranium in the ore with neutrons produced by the decay of other atoms of uranium in the ore.",
+    "source": "jlab"
+   }
+  ],
+  "description": [
+   {
+    "text": "Neptunium metal buttons (photo courtesy Lawrence Berkeley National Laboratory)",
+    "source": "lanl"
+   }
+  ],
+  "isotopes": [
+   {
+    "text": "There are 25 known radioactive isotopes of neptunium ranging in atomic weights from 225 to 244 with 5 of those as metastable isotopes. The most stable are Np-237 with a half-life of 2.14 million years; Np-236 with a half-life of 154,000 years; and Np-235 with a half-life of 396 days. All of the remaining isotopes have half-lives less than 4.5 days, with most less than 50 minutes. The primary decay mode for isotopes lighter than 237Np is by electron capture with a great deal of alpha emission. The products are mostly isotopes of uranium. The primary decay mode for Np-237 is by alpha-decay forming protactinium. The primary decay mode for the isotopes heavier than Np-237 is by beta-decay, forming plutonium. Neptunium-237, after decaying to protactinium then to uranium, eventually decays to form bismuth-209 and thallium-205. Unlike most other common heavy nuclei which decay to make isotopes of lead this decay chain is known as the neptunium series. Neptunium metal is produced by reaction of NpF3 with liquid or gaseous barium or lithium at around 1200°C and is often extracted from spent nuclear fuel rods in kilogram quantities. Neptunium metal is silver in appearance, chemically reactive and is found in at least three allotropes: α-neptunium, (room temperature) orthorhombic, density 20.45 g/cm3 ß-neptunium (above 280 °C), tetragonal, density (313 °C) 19.36 g/cm3 γ-neptunium (above 577 °C), cubic, density (600 °C) 18 g/cm3 Neptunium has the largest liquid range of any element, 3363 K, between the metal melting point and boiling point. It is the most dense of all the actinides and the fifth most dense of all naturally occurring elements. Recently a neptunium-based superconductor alloy was discovered with formula NpPd5Al2. The occurrence of superconductivity in neptunium compounds is surprising because they often exhibit strong magnetism, which usually destroys superconductivity. Neptunium forms a variety of compounds, including the tri- and tetra-halides such as NpF3, NpF4, NpCl4, NpBr3, and NpI3. Neptunium oxides such as Np3O8 and NpO2 as are also found in the uranium-oxygen system. Neptunium hexafluoride, NpF6, is volatile like uranium hexafluoride. In solution, neptunium exhibits five oxidation states, III, IV, V, VI, and VII with the V state being the most stable. The solution ions of III and IV are the simple ions, Np3+ and Np4+. Similar to its uranium counterpart, as the charge on the neptunium ions increases, it is distributed over a larger oxy-cation. Thus Np(V) exist in solution as NpO2+, Np(VI) exits as NpO22, and Np(VII) is an oxy-cation with a structure probably including hydroxide ions since it is only stable in strongly basic solutions. These latter oxygenated species are in contrast to the rare earths which exhibit only simple ions of the (II), (III), and (IV) oxidation states in aqueous solution. In solution, Np(III) is easily oxidized in air to form Np(IV). Np(VII), stable in basic solutions quickly reduces to Np(VI) if the pH is made more acidic. In acid solutions, Np+3 is dark blue-purple; Np+4 is grass green; NpO2+ is emerald green; NpO2++ is light burgundy and Np(VII) is dark green in strongly basic solutions .",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Industry",
+   "text": "237Np (with a half-life of 2.14×106 years) is fissionable, meaning that neptunium can be bombarded with neutrons and, as a result, create more neutrons that are free to interact with nearby material and can be used in fast neutron reactors or in nuclear weapons (Fig. IUPAC.93.1),,. 237Np is used in neutron detection instruments. ",
+   "source": "iptei"
+  },
+  {
+   "topic": "a Source of Radioactive Isotope(s)",
+   "text": "237Np is used in the production of 238Pu (with a half-life of 87.7 years), which is an emitter of alpha particles used in thermoelectric generators and radioisotope-heater units. When 237Np captures a neutron, it becomes 238Np, with a half-life of 2.117 days, which decays to 238Pu.",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "Not Applicable",
+  "ocean": "Not Applicable",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 23933,
+   "name": "neptunium",
+   "formula": "Np",
+   "charge": 0,
+   "smiles": "[Np]"
+  }
+ ],
+ "refs": {
+  "nist": {
+   "name": "NIST Physical Measurement Laboratory",
+   "url": "https://physics.nist.gov/cgi-bin/Elements/elInfo.pl?element=93"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele093.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/93.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": null,
+ "ghs": null,
+ "ghsCid": null
 }

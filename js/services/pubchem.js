@@ -68,6 +68,24 @@ export async function cidByName(name) {
   return data?.IdentifierList?.CID?.[0] || null;
 }
 
+/** PubChem answers an unknown but valid structure with CID 0; drop it. */
+const cidList = data => (data?.IdentifierList?.CID || []).filter(c => c > 0);
+
+export async function cidsByInchikey(key) {
+  return cidList(await soft(request(`rest/pug/compound/inchikey/${encodeURIComponent(key)}/cids/JSON`)));
+}
+
+/** SMILES and InChI travel as query parameters because they contain "/" and "#". */
+export async function cidsBySmiles(smiles) {
+  return cidList(
+    await soft(request(`rest/pug/compound/smiles/cids/JSON?smiles=${encodeURIComponent(smiles)}`))
+  );
+}
+
+export async function cidsByInchi(inchi) {
+  return cidList(await soft(request(`rest/pug/compound/inchi/cids/JSON?inchi=${encodeURIComponent(inchi)}`)));
+}
+
 /** Compounds with exactly this molecular formula (isomers). */
 export async function cidsByFormula(formula, max = 20) {
   const data = await soft(

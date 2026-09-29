@@ -8,6 +8,18 @@ export default {
     'What makes carbon special, alkanes–alkenes–alkynes, petroleum, IUPAC naming, functional groups and isomers.',
   ],
   body: {
+    sd: [
+      `Karbon ada di banyak tempat: isi pensil ({{m:graphite|grafit}}), {{m:diamond|intan}}, arang, dan tubuh kita sendiri.
+
+Atom karbon sangat pandai bergandengan. Satu atom karbon dapat bergandengan dengan empat atom lain, termasuk sesama karbon. Karena itu karbon bisa membentuk rantai panjang, cabang, dan cincin, seperti rangkaian manik-manik.
+
+Itulah sebabnya ada jutaan zat yang mengandung karbon, yang disebut [[senyawa-organik|senyawa organik]]: gula, minyak goreng, plastik, bensin, dan {{m:propane|gas elpiji}} di dapur.`,
+      `Carbon is found in many places: pencil lead ({{m:graphite|graphite}}), {{m:diamond|diamond}}, charcoal and our own bodies.
+
+Carbon atoms are very good at holding hands. One carbon atom can join four other atoms, including other carbons. So carbon can form long chains, branches and rings, like strings of beads.
+
+That is why there are millions of carbon-containing substances, called [[senyawa-organik|organic compounds]]: sugar, cooking oil, plastics, petrol and the {{m:propane|LPG}} in the kitchen.`,
+    ],
     smp: [
       `Karbon punya 4 elektron valensi sehingga dapat membentuk 4 ikatan kovalen, termasuk dengan sesama karbon. Karbon dapat membentuk rantai panjang, cabang, dan cincin. Karena itu dikenal puluhan juta [[senyawa-organik]].
 
@@ -32,7 +44,9 @@ Crude oil is separated by **fractional distillation** by boiling point: gases, p
 
 [[gugus-fungsi|Gugus fungsi]] menentukan sifat: alkohol –OH ({{m:ethanol|etanol}}), eter –O– ({{m:diethyl-ether|dietil eter}}), aldehida –CHO ({{m:formaldehyde|formaldehida}}), keton –CO– ({{m:acetone|aseton}}), asam karboksilat –COOH ({{m:acetic-acid|asam asetat}}), ester –COO– ({{m:ethyl-acetate|etil asetat}}), amina –NH₂, dan amida –CONH₂ ({{m:urea|urea}}).
 
-[[isomer|Isomer]]: rumus molekul sama, struktur berbeda. C₂H₆O dapat berupa etanol (cair) atau {{m:dimethyl-ether|dimetil eter}} (gas). Jelajahi isomer apa pun dengan {{lab:rakit|lab Perakit molekul}} yang mencari langsung di PubChem.`,
+[[isomer|Isomer]]: rumus molekul sama, struktur berbeda. C₂H₆O dapat berupa etanol (cair) atau {{m:dimethyl-ether|dimetil eter}} (gas). Jelajahi isomer apa pun dengan {{lab:rakit|lab Perakit molekul}} yang mencari langsung di PubChem.
+
+Semua gugus fungsi dibahas di {{learn:gugus-fungsi|Gugus fungsi & tata nama organik}}, reaksinya di {{learn:reaksi-organik|Reaksi organik}}.`,
       `Hydrocarbons are grouped by bond type:
 
 - [[jenuh|Alkanes]] (CₙH₂ₙ₊₂), single bonds: methane, ethane, propane… Boiling points rise with chain length.
@@ -44,7 +58,9 @@ Crude oil is separated by **fractional distillation** by boiling point: gases, p
 
 [[gugus-fungsi|Functional groups]] decide behaviour: alcohols –OH ({{m:ethanol|ethanol}}), ethers –O– ({{m:diethyl-ether|diethyl ether}}), aldehydes –CHO ({{m:formaldehyde|formaldehyde}}), ketones –CO– ({{m:acetone|acetone}}), carboxylic acids –COOH ({{m:acetic-acid|acetic acid}}), esters –COO– ({{m:ethyl-acetate|ethyl acetate}}), amines –NH₂ and amides –CONH₂ ({{m:urea|urea}}).
 
-[[isomer|Isomers]] share a formula but differ in structure. C₂H₆O is either ethanol (liquid) or {{m:dimethyl-ether|dimethyl ether}} (gas). Explore isomers of any formula with the {{lab:rakit|Molecule builder lab}}, which searches PubChem live.`,
+[[isomer|Isomers]] share a formula but differ in structure. C₂H₆O is either ethanol (liquid) or {{m:dimethyl-ether|dimethyl ether}} (gas). Explore isomers of any formula with the {{lab:rakit|Molecule builder lab}}, which searches PubChem live.
+
+Every functional group is covered in {{learn:gugus-fungsi|Functional groups & organic naming}}, and their reactions in {{learn:reaksi-organik|Organic reactions}}.`,
     ],
     kuliah: [
       `Reaktivitas organik dijelaskan oleh efek elektronik (induktif, resonansi, hiperkonjugasi) dan sterik. Mekanisme utama:
@@ -56,7 +72,7 @@ Crude oil is separated by **fractional distillation** by boiling point: gases, p
 
 Stereokimia: pusat kiral diberi konfigurasi R/S (aturan Cahn–Ingold–Prelog); ikatan rangkap diberi E/Z. Enantiomer memiliki sifat fisika sama tetapi dapat berbeda efek biologis; talidomida adalah contoh tragis.
 
-Identifikasi struktur modern memakai spektroskopi: IR (gugus fungsi, C=O ≈ 1700 cm⁻¹, O–H lebar ≈ 3300 cm⁻¹), NMR ¹H dan ¹³C (lingkungan atom), dan spektrometri massa (massa molekul). Banyak spektrum referensi dapat ditelusuri dari tautan PubChem di halaman molekul.`,
+Identifikasi struktur modern memakai spektroskopi: IR (gugus fungsi, C=O ≈ 1700 cm⁻¹, O–H lebar ≈ 3300 cm⁻¹), NMR ¹H dan ¹³C (lingkungan atom), dan spektrometri massa (massa molekul). Spektrum rujukan dapat ditelusuri dari tautan PubChem di setiap halaman molekul; lihat {{learn:spektroskopi|Spektroskopi}}.`,
       `Organic reactivity follows electronic effects (induction, resonance, hyperconjugation) and sterics. Key mechanisms:
 
 - Nucleophilic substitution SN1 (carbocation, racemisation) and SN2 (backside attack, Walden inversion).
@@ -66,7 +82,7 @@ Identifikasi struktur modern memakai spektroskopi: IR (gugus fungsi, C=O ≈ 170
 
 Stereochemistry: chiral centres get R/S configurations (Cahn–Ingold–Prelog rules); double bonds get E/Z. Enantiomers share physical properties but can act differently in the body — thalidomide is a tragic example.
 
-Structures are identified by spectroscopy: IR (functional groups, C=O ≈ 1700 cm⁻¹, broad O–H ≈ 3300 cm⁻¹), ¹H and ¹³C NMR (atomic environments) and mass spectrometry (molecular mass). Reference spectra are linked from PubChem on each molecule page.`,
+Structures are identified by spectroscopy: IR (functional groups, C=O ≈ 1700 cm⁻¹, broad O–H ≈ 3300 cm⁻¹), ¹H and ¹³C NMR (atomic environments) and mass spectrometry (molecular mass). Reference spectra can be found through the PubChem link on each molecule page; see {{learn:spektroskopi|Spectroscopy}}.`,
     ],
   },
   points: [
@@ -78,11 +94,15 @@ Structures are identified by spectroscopy: IR (functional groups, C=O ≈ 1700 c
   molecules: ['methane', 'ethylene', 'acetylene', 'benzene', 'ethanol', 'acetone', 'acetic-acid', 'ethyl-acetate', 'isooctane'],
   labs: ['rakit', 'vsepr'],
   activity: {
-    smp: ['Kunjungi halaman LPG, bensin (isooktana), dan solar (heksadekana) di Moleculium, bandingkan titik didih dari data PubChem, lalu kaitkan dengan panjang rantai.', 'Visit the LPG, petrol (isooctane) and diesel (hexadecane) pages, compare PubChem boiling points and relate them to chain length.'],
+    sd: ["Rangkai manik-manik atau klip kertas menjadi rantai lurus, bercabang, dan cincin. Setiap manik adalah atom karbon; berapa banyak bentuk yang bisa kamu buat?", "Link beads or paper clips into straight chains, branches and rings. Each bead is a carbon atom: how many shapes can you make?"],
+    smp: ['Kunjungi halaman LPG, bensin (isooktana), dan solar (heksadekana) di Alchemist, bandingkan titik didih dari data PubChem, lalu kaitkan dengan panjang rantai.', 'Visit the LPG, petrol (isooctane) and diesel (hexadecane) pages, compare PubChem boiling points and relate them to chain length.'],
     sma: ['Gunakan lab Perakit molekul untuk C₄H₁₀, C₅H₁₂, dan C₂H₆O. Gambar semua isomer yang ditemukan dan beri nama IUPAC.', 'Use the Molecule builder for C₄H₁₀, C₅H₁₂ and C₂H₆O. Draw every isomer found and give IUPAC names.'],
     kuliah: ['Buat ester aroma buah (etil asetat, isoamil asetat) di laboratorium dengan katalis asam; bahas mekanisme esterifikasi Fischer.', 'Make fruity esters (ethyl acetate, isoamyl acetate) with acid catalysis and discuss the Fischer esterification mechanism.'],
   },
   quiz: [
+    { lv: 'sd', q: ["Karbon dapat membentuk jutaan senyawa karena…", "Carbon forms millions of compounds because…"], options: [["Karbon berwarna hitam", "Carbon is black"], ["Atom karbon dapat bergandengan membentuk rantai dan cincin", "Carbon atoms can link into chains and rings"], ["Karbon adalah logam", "Carbon is a metal"], ["Karbon sangat berat", "Carbon is very heavy"]], answer: 1, explain: ["Karbon membentuk empat ikatan, termasuk dengan sesama karbon.", "Carbon forms four bonds, including to other carbons."] },
+    { lv: 'sd', q: ["Isi pensil terbuat dari…", "Pencil \"lead\" is made of…"], options: [["Timbal", "Lead metal"], ["Grafit (karbon)", "Graphite (carbon)"], ["Besi", "Iron"], ["Plastik", "Plastic"]], answer: 1, explain: ["Isi pensil adalah grafit, salah satu bentuk karbon.", "Pencil lead is graphite, a form of carbon."] },
+    { lv: 'kuliah', q: ["Sepasang enantiomer memiliki…", "A pair of enantiomers have…"], options: [["Titik leleh berbeda", "Different melting points"], ["Sifat fisika sama kecuali arah putaran cahaya terpolarisasi", "The same physical properties except the direction they rotate polarised light"], ["Rumus molekul berbeda", "Different molecular formulas"], ["Gugus fungsi berbeda", "Different functional groups"]], answer: 1, explain: ["Enantiomer adalah bayangan cermin; berbeda terhadap cahaya terpolarisasi dan lingkungan kiral (misalnya enzim).", "Enantiomers are mirror images; they differ only towards polarised light and chiral surroundings (such as enzymes)."] },
     { lv: 'smp', q: ['Komponen utama gas LPG adalah…', 'LPG mainly contains…'], options: [['Metana dan etana', 'Methane and ethane'], ['Propana dan butana', 'Propane and butane'], ['Oktana', 'Octane'], ['Hidrogen', 'Hydrogen']], answer: 1, explain: ['LPG (liquefied petroleum gas) adalah campuran propana dan butana cair.', 'LPG is liquefied propane and butane.'] },
     { lv: 'smp', q: ['Minyak bumi dipisahkan dengan…', 'Crude oil is separated by…'], options: [['Penyaringan', 'Filtration'], ['Distilasi bertingkat', 'Fractional distillation'], ['Kromatografi kertas', 'Paper chromatography'], ['Magnet', 'Magnets']], answer: 1, explain: ['Fraksi dipisahkan berdasarkan perbedaan titik didih.', 'Fractions separate by boiling point.'] },
     { lv: 'sma', q: ['Rumus umum alkena adalah…', 'The general formula of alkenes is…'], options: [['CₙH₂ₙ₊₂', 'CₙH₂ₙ₊₂'], ['CₙH₂ₙ', 'CₙH₂ₙ'], ['CₙH₂ₙ₋₂', 'CₙH₂ₙ₋₂'], ['CₙHₙ', 'CₙHₙ']], answer: 1, explain: ['Satu ikatan rangkap dua mengurangi dua atom H dari alkana.', 'One double bond removes two H from the alkane.'] },
@@ -102,10 +122,11 @@ Structures are identified by spectroscopy: IR (functional groups, C=O ≈ 1700 c
     duration: ['6 × 45 menit', '6 × 45 min'],
     steps: [
       ['Model molimod atau plastisin untuk alkana C₁–C₅.', 'Model kits or play dough for C₁–C₅ alkanes.'],
-      ['Tur gugus fungsi di halaman Golongan Moleculium.', 'Functional-group tour in Moleculium’s Classes pages.'],
+      ['Tur gugus fungsi di halaman Golongan Alchemist.', 'Functional-group tour in Alchemist’s Classes pages.'],
       ['Tantangan isomer dengan lab Perakit molekul (data live PubChem).', 'Isomer challenge with the Molecule builder (live PubChem data).'],
     ],
     misconceptions: [['"Organik berarti alami atau sehat." Dalam kimia, organik berarti senyawa karbon, termasuk plastik dan racun.', '"Organic means natural or healthy." In chemistry it means carbon compounds, including plastics and poisons.']],
-    assessment: ['Kuis Moleculium dan poster keluarga gugus fungsi dengan contoh sehari-hari.', 'Moleculium quiz and a functional-group family poster with everyday examples.'],
+    assessment: ['Kuis Alchemist dan poster keluarga gugus fungsi dengan contoh sehari-hari.', 'Alchemist quiz and a functional-group family poster with everyday examples.'],
   },
+  refs: ["20-1-hydrocarbons", "oc:3-1-functional-groups", "oc:3-4-naming-alkanes", "oc:5-2-the-reason-for-handedness-in-molecules-chirality"],
 };

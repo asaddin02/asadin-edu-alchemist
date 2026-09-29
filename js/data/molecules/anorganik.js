@@ -454,8 +454,8 @@ export default [
     lattice: { type: 'rocksalt', el: ['Mg', 'O'] },
     name: ['Magnesium oksida', 'Magnesium oxide'],
     about: [
-      'Padatan ionik putih dengan kisi seperti garam dapur. Ion Mg²⁺ dan O²⁻ bermuatan ganda sehingga titik lelehnya sangat tinggi (2852 °C).',
-      'A white ionic solid with the same lattice as table salt. Doubly charged Mg²⁺ and O²⁻ ions give a very high melting point (2852 °C).',
+      'Padatan ionik putih dengan kisi seperti garam dapur. Ion Mg²⁺ dan O²⁻ bermuatan ganda sehingga titik lelehnya sangat tinggi (sekitar 2825 °C).',
+      'A white ionic solid with the same lattice as table salt. Doubly charged Mg²⁺ and O²⁻ ions give a very high melting point (about 2825 °C).',
     ],
     uses: ['Batu tahan api tungku, antasida, dan suplemen magnesium.', 'Furnace bricks, antacids and magnesium supplements.'],
     fun: ['Pita magnesium yang dibakar memancarkan cahaya putih menyilaukan dan meninggalkan abu putih MgO.', 'Burning magnesium ribbon gives a dazzling white light and leaves white MgO ash.'],

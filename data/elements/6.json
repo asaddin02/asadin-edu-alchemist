@@ -22,5 +22,464 @@
   "author": "http://resourcescommittee.house.gov/subcommittees/emr/usgsweb/photogallery/images/Coal,%20anthracite_jpg",
   "license": "Public domain",
   "licenseUrl": ""
- }
+ },
+ "weight": {
+  "value": "[12.0096, 12.0116]",
+  "kind": "interval",
+  "source": "ciaaw"
+ },
+ "natural": [
+  {
+   "A": 12,
+   "iso": "",
+   "mass": "12(exact)",
+   "abundance": "[0.9884, 0.9904]"
+  },
+  {
+   "A": 13,
+   "iso": "",
+   "mass": "13.003 354 835(2)",
+   "abundance": "[0.0096, 0.0116]"
+  }
+ ],
+ "naturalSource": "ciaaw",
+ "nuclides": [
+  {
+   "A": 8,
+   "iso": "",
+   "mass": "8.037643039 ± 0.000019584",
+   "half": "3.5 zs ± 1.4",
+   "seconds": 3.4999999999999996e-21,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "2p",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1974,
+   "est": false
+  },
+  {
+   "A": 9,
+   "iso": "",
+   "mass": "9.031037202 ± 0.000002293",
+   "half": "126.5 ms ± 0.9",
+   "seconds": 0.1265,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 7.5
+    },
+    {
+     "mode": "β+α",
+     "op": "=",
+     "pct": 38.4
+    }
+   ],
+   "year": 1964,
+   "est": false
+  },
+  {
+   "A": 10,
+   "iso": "",
+   "mass": "10.016853217 ± 0.000000075",
+   "half": "19.3011 s ± 0.0015",
+   "seconds": 19.3011,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1949,
+   "est": false
+  },
+  {
+   "A": 11,
+   "iso": "",
+   "mass": "11.011432597 ± 0.000000064",
+   "half": "20.3402 m ± 0.0053",
+   "seconds": 1220.412,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1934,
+   "est": false
+  },
+  {
+   "A": 12,
+   "iso": "",
+   "mass": "12.0000000 ± 0.",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1919,
+   "est": false
+  },
+  {
+   "A": 13,
+   "iso": "",
+   "mass": "13.00335483534 ± 0.00000000025",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1929,
+   "est": false
+  },
+  {
+   "A": 14,
+   "iso": "",
+   "mass": "14.00324198862 ± 0.00000000403",
+   "half": "5.70 ky ± 0.03",
+   "seconds": 179874478656.00003,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1936,
+   "est": false
+  },
+  {
+   "A": 15,
+   "iso": "",
+   "mass": "15.010599256 ± 0.000000858",
+   "half": "2.449 s ± 0.005",
+   "seconds": 2.449,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1950,
+   "est": false
+  },
+  {
+   "A": 16,
+   "iso": "",
+   "mass": "16.014701255 ± 0.00000384",
+   "half": "750 ms ± 6",
+   "seconds": 0.75,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 99
+    }
+   ],
+   "year": 1961,
+   "est": false
+  },
+  {
+   "A": 17,
+   "iso": "",
+   "mass": "17.022578650 ± 0.000018641",
+   "half": "193 ms ± 6",
+   "seconds": 0.193,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 28.4
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1968,
+   "est": false
+  },
+  {
+   "A": 18,
+   "iso": "",
+   "mass": "18.026751930 ± 0.000032206",
+   "half": "92 ms ± 2",
+   "seconds": 0.092,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 31.5
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1969,
+   "est": false
+  },
+  {
+   "A": 19,
+   "iso": "",
+   "mass": "19.034797594 ± 0.000105625",
+   "half": "46.2 ms ± 2.3",
+   "seconds": 0.046200000000000005,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 47
+    },
+    {
+     "mode": "β-2n",
+     "op": "=",
+     "pct": 7
+    }
+   ],
+   "year": 1974,
+   "est": false
+  },
+  {
+   "A": 20,
+   "iso": "",
+   "mass": "20.040261732 ± 0.000247585",
+   "half": "16 ms ± 3",
+   "seconds": 0.016,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 70
+    },
+    {
+     "mode": "β-2n",
+     "op": "<",
+     "pct": 18.6
+    }
+   ],
+   "year": 1981,
+   "est": false
+  },
+  {
+   "A": 21,
+   "iso": "",
+   "mass": "21.049000 ± 0.00064",
+   "half": "Not-specified <30ns",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 22,
+   "iso": "",
+   "mass": "22.057553990 ± 0.000248515",
+   "half": "6.2 ms ± 1.3",
+   "seconds": 0.006200000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 61
+    },
+    {
+     "mode": "β-2n",
+     "op": "<",
+     "pct": 37
+    }
+   ],
+   "year": 1986,
+   "est": false
+  },
+  {
+   "A": 23,
+   "iso": "",
+   "mass": "23.068890 ± 0.00107",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  }
+ ],
+ "stableCount": 2,
+ "texts": {
+  "history": [
+   {
+    "text": "The name derives from the Latin carbo for \"charcoal\". It was known in prehistoric times in the form of charcoal and soot. In 1797, the English chemist Smithson Tennant proved that diamond is pure carbon.",
+    "source": "ciaaw"
+   },
+   {
+    "text": "Carbon, the sixth most abundant element in the universe, has been known since ancient times. Carbon is most commonly obtained from coal deposits, although it usually must be processed into a form suitable for commercial use. Three naturally occurring allotropes of carbon are known to exist: amorphous, graphite and diamond.",
+    "source": "jlab"
+   },
+   {
+    "text": "From the Latin word carbo: charcoal. Carbon, an element of prehistoric discovery, is very widely distributed in nature. It is found in abundance in the sun, stars, comets, and atmospheres of most planets. Carbon in the form of microscopic diamonds is found in some meteorites. Natural diamonds are found in kimberlite of ancient volcanic \"pipes,\" found in South Africa, Arkansas, and elsewhere. Diamonds are now also being recovered from the ocean floor off the Cape of Good Hope. About 30% of all industrial diamonds used in the U.S. are now made synthetically. The energy of the sun and stars can be attributed at least in part to the well-known carbon-nitrogen cycle.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Amorphous carbon is formed when a material containing carbon is burned without enough oxygen for it to burn completely. This black soot, also known as lampblack, gas black, channel black or carbon black, is used to make inks, paints and rubber products. It can also be pressed into shapes and is used to form the cores of most dry cell batteries, among other things. Graphite, one of the softest materials known, is a form of carbon that is primarily used as a lubricant. Although it does occur naturally, most commercial graphite is produced by treating petroleum coke, a black tar residue remaining after the refinement of crude oil, in an oxygen-free oven. Naturally occurring graphite occurs in two forms, alpha and beta. These two forms have identical physical properties but different crystal structures. All artificially produced graphite is of the alpha type. In addition to its use as a lubricant, graphite, in a form known as coke, is used in large amounts in the production of steel. Coke is made by heating soft coal in an oven without allowing oxygen to mix with it. Although commonly called lead, the black material used in pencils is actually graphite. Diamond, the third naturally occurring form of carbon, is one of the hardest substances known. Although naturally occurring diamond is typically used for jewelry, most commercial quality diamonds are artificially produced. These small diamonds are made by squeezing graphite under high temperatures and pressures for several days or weeks and are primarily used to make things like diamond tipped saw blades. Although they posses very different physical properties, graphite and diamond differ only in their crystal structure. A fourth allotrope of carbon, known as white carbon, was produced in 1969. It is a transparent material that can split a single beam of light into two beams, a property known as birefringence. Very little is known about this form of carbon. Large molecules consisting only of carbon, known as buckminsterfullerenes, or buckyballs, have recently been discovered and are currently the subject of much scientific interest. A single buckyball consists of 60 or 70 carbon atoms (C60 or C70) linked together in a structure that looks like a soccer ball. They can trap other atoms within their framework, appear to be capable of withstanding great pressures and have magnetic and superconductive properties. Carbon-14, a radioactive isotope of carbon with a half-life of 5,730 years, is used to find the age of formerly living things through a process known as radiocarbon dating. The theory behind carbon dating is fairly simple. Scientists know that a small amount of naturally occurring carbon is carbon-14. Although carbon-14 decays into nitrogen-14 through beta decay, the amount of carbon-14 in the environment remains constant because new carbon-14 is always being created in the upper atmosphere by cosmic rays. Living things tend to ingest materials that contain carbon, so the percentage of carbon-14 within living things is the same as the percentage of carbon-14 in the environment. Once an organism dies, it no longer ingests much of anything. The carbon-14 within that organism is no longer replaced and the percentage of carbon-14 begins to decrease as it decays. By measuring the percentage of carbon-14 in the remains of an organism, and by assuming that the natural abundance of carbon-14 has remained constant over time, scientists can estimate when that organism died. For example, if the concentration of carbon-14 in the remains of an organism is half of the natural concentration of carbon-14, a scientist would estimate that the organism died about 5,730 years ago, the half-life of carbon-14. There are nearly ten million known carbon compounds and an entire branch of chemistry, known as organic chemistry, is devoted to their study. Many carbon compounds are essential for life as we know it. Some of the most common carbon compounds are: carbon dioxide (CO2), carbon monoxide (CO), carbon disulfide (CS2), chloroform (CHCl3), carbon tetrachloride (CCl4), methane (CH4), ethylene (C2H4), acetylene (C2H2), benzene (C6H6), ethyl alcohol (C2H5OH) and acetic acid (CH3COOH).",
+    "source": "jlab"
+   }
+  ],
+  "isotopes": [
+   {
+    "text": "Carbon has seven isotopes. In 1961 the International Union of Pure and Applied Chemistry adopted the isotope carbon-12 as the basis for atomic weights. Carbon-14, an isotope with a half-life of 5715 years, has been widely used to date such materials as wood, archaeological specimens, etc.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Biology",
+   "text": "Because of above-ground nuclear bomb testing, the neutrons released reacted with CO2 to increase atmospheric 14C via the 14N (n, p) 14C reaction, and 14C started rising in about 1955 (Fig. IUPAC.6.1) and reached a peak in the mid-1960s. With the curtailment of above-ground nuclear testing in the 1960s, the atmospheric 14C concentration has since been decreasing exponentially (Fig. IUPAC.6.1). This variation in 14C concentration is used to establish when cells in biology were born and how quickly they are renewed. This technique is commonly called carbon-14 bomb pulse biology and it has provided information on the age of cells and their regeneration. Figure 4.6.2 shows the average age of selected cells in a 30-year-old human.  ",
+   "source": "iptei"
+  },
+  {
+   "topic": "Earth/Planetary Science",
+   "text": "Because molecules, atoms, and ions of the stable isotopes of carbon possess slightly different physical and chemical properties, they commonly will be fractionated during physical, chemical, and biological processes, giving rise to variations in isotopic abundances and in atomic weights. Carbon in natural terrestrial materials shows a substantial variation in isotopic abundance (Fig. IUPAC.6.3), providing many different ways of distinguishing sources of materials and processes affecting them. Variations in the isotope-amount ratio n(13C)/n(12C) in tree rings and in CO2 trapped in ice cores have been used to study causes of variations in atmospheric CO2 levels. Variations in the isotope-amount ratio n(13C)/n(12C) and in the 14C concentration of surface ocean waters have been used to trace the incorporation and movement of atmospheric CO2 in the ocean. ",
+   "source": "iptei"
+  },
+  {
+   "topic": "Forensic Science and Anthropology",
+   "text": "Variations in the isotope-amount ratio n(13C)/n(12C) of biological products can be observed using isotope-ratio mass spectrometry (IRMS) to detect adulteration (the addition of inferior ingredients) in honey and other food products. The isotope-amount ratio n(13C)/n(12C) can fluctuate between carbon sources, for example C3 plants (found in temperate climates and which use atmospheric carbon dioxide to make a 3-carbon molecule during photosynthesis — examples include rice, potatoes, tomatoes, and sugar beets), C4 plants (found in hot climates and which use atmospheric carbon dioxide to make a 4-carbon molecule during photosynthesis — examples include corn and sugar cane), animal carbon, atmospheric CO2, etc. This commonly makes it possible to detect whether these different carbon sources have been mixed by using isotope or mass balance to distinguish, for example, between beet sugar and cane sugar. Complications in source identification can arise with plants that open stomata at night to collect carbon dioxide to use a third mechanism to fix atmospheric carbon dioxide (CAM or crassulacean acid metabolism). The isotope-amount ratio n(13C)/n(12C) of CAM plants overlaps that of C3 or C4 plants — examples include pineapples and jade plants. The following adulterations are commonly detected using stable carbon isotope IRMS: –Variations in the isotope-amount ratio n(13C)/n(12C) of honey are used to detect the addition (and potential adulteration) of high fructose corn syrup, corn, or sugar cane. –Variations in the isotope-amount ratio n(13C)/n(12C) of fruit juice have been used to detect the addition of a sugar. –Variations in the isotope-amount ratio n(13C)/n(12C) of natural vanilla extract have been used to detect the addition of artificial vanillin or p-hydroxybenzaldehyde. –Variations in the isotope-amount ratio n(13C)/n(12C) of beer are used to detect C4 carbon, which would indicate that a beer company may have added ingredients that are not traditionally used in brewing beer. Therefore, this ratio is used to detect the misrepresentation of a product as being pure,. Stable carbon IRMS has been used to determine if the botanical origin of an alcoholic spirit has been mislabeled and if chaptalization (the process of adding sugar to increase the alcoholic content) of wine has occurred,. 14C scintillation counting has been used to determine the age of wine and alcoholic spirits,. Variations in the isotope-amount ratio n(13C)/n(12C) of urine has been used to determine if steroids in urine are natural or of synthetic origin. These measurements enable anti-doping laboratories to perfect their methods for detecting steroid doping in athletes,,. Variations in the isotope-amount ratio n(13C)/n(12C) of marijuana can provide information to determine if the plants were grown “inside” a building or greenhouse or were “open grown” (Fig. IUPAC.6.4). Plant carbon isotopic compositions are controlled by atmospheric CO2 and the supply and demand of CO2 in photosynthesis (the process used by plants to convert light energy from the sun into chemical energy). “Open grown” plants are grown in an area that is well ventilated and receives natural CO2. In contrast, plants grown “inside” receive supplemented CO2 and the photosynthesis process is more confined. Additionally, CO2 from a tank of compressed gas used to augment atmospheric CO2 to increase the growth of marijuana plants is commonly highly depleted in 13C as a refinery by-product. These differences change the carbon isotope ratios of the plants and the ratios vary enough to enable the determination of the growing and cultivation process of marijuana,. ",
+   "source": "iptei"
+  },
+  {
+   "topic": "Geochronology",
+   "text": "Radioactive 14C is the basis for the radiocarbon dating method to determine the ages of carbon-bearing materials. 14C is formed naturally in the atmosphere by cosmic-ray interactions and was also released by above-ground, nuclear weapons testing (Fig. IUPAC.6.1). Atmospheric 14C is incorporated into plants, animals, soils, groundwater, and ocean water, and it decays with a half-life of ~5700 years. This makes it useful for dating objects, such as archaeological remains and water masses in oceans and aquifers, on time scales ranging from hundreds of years to tens of thousands of years. Plants and animals living since the 1950s can be identified by bomb-peak 14C in their cells.",
+   "source": "iptei"
+  },
+  {
+   "topic": "Medicine",
+   "text": "14C is used to create isotopically labeled drugs to study their uptake and metabolism in humans,,. 13C is used in breath tests to detect Helicobacter pylori bacteria (bacteria in the stomach linked to ulcers), which can cause cancers.",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "2.00×10^2 milligrams per kilogram",
+  "ocean": "2.8×10^1 milligrams per liter",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 5462310,
+   "name": "carbon",
+   "formula": "C",
+   "charge": 0,
+   "smiles": "[C]"
+  }
+ ],
+ "refs": {
+  "ciaaw": {
+   "name": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+   "url": "https://www.ciaaw.org/carbon.htm"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele006.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/6.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": "diamond",
+ "ghs": {
+  "signal": "Warning",
+  "pictograms": [
+   {
+    "code": "GHS07",
+    "label": "Irritant"
+   }
+  ],
+  "hazards": [
+   "H319 (55.1%): Causes serious eye irritation",
+   "H335 (51.1%): May cause respiratory irritation"
+  ],
+  "reports": 2727,
+  "notMet": 40.2,
+  "notClassified": false,
+  "source": "European Chemicals Agency (ECHA)"
+ },
+ "ghsCid": 5462310
 }

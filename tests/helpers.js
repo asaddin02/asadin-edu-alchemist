@@ -33,6 +33,8 @@ function pubchem(url) {
   if (p.includes('/fastformula/') || p.includes('/fastsubstructure/'))
     return { json: { IdentifierList: { CID: [LIVE.cid] } } };
   if (/\/compound\/name\/[^/]+\/cids/.test(p)) return { json: { IdentifierList: { CID: [LIVE.cid] } } };
+  if (/\/compound\/(smiles|inchi|inchikey)\/.*cids/.test(p))
+    return { json: { IdentifierList: { CID: [LIVE.cid] } } };
   if (p.includes('/record/SDF'))
     return p.includes(String(LIVE.cid))
       ? { body: LIVE.sdf, contentType: 'chemical/x-mdl-sdfile' }
@@ -111,7 +113,7 @@ export async function stubNetwork(page) {
 /** Sets learner preferences before the app loads. */
 export async function prefs(page, { level = 'smp', lang = 'id', theme = 'light' } = {}) {
   await page.addInitScript(
-    p => localStorage.setItem('moleculium:prefs', JSON.stringify({ ...p, chosen: true })),
+    p => localStorage.setItem('alchemist:prefs', JSON.stringify({ ...p, chosen: true })),
     {
       level,
       lang,

@@ -223,6 +223,8 @@ await mapLimit(list, 3, async (m, i) => {
     formula: props.formula,
     mw: props.mw,
     iupac: props.iupac || null,
+    cas: record.cas || null,
+    inchikey: props.inchikey || null,
     s: structure?.kind || (m.lattice ? 'lattice' : null),
     photo: photo?.kind === 'photo' ? photo.thumb : null,
     ghs: record.ghs?.pictograms?.map(p => p.code) || [],

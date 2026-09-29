@@ -7,11 +7,16 @@ import { icon } from '../components/icons.js';
 import { breadcrumbs, loading, notice, levelBadge, extLink, errorState } from '../components/common.js';
 import { bookmarkButton, moleculeCard } from '../components/cards.js';
 import { Viewer3D, atomColor } from '../components/moleculeViewer3D.js';
-import { pictogram, hazardStatement, SIGNAL } from '../components/ghs.js';
+import { ghsPanel } from '../components/ghs.js';
 import { getMolecule, getMoleculeByCid, MOLECULES } from '../data/curatedMolecules.js';
 import { getClass, classPath } from '../data/classes.js';
 import { getElement, CATEGORIES } from '../data/periodicTable.js';
-import { GEOMETRIES } from '../data/geometry.js';
+import { ionsWith, ionsFromAcid } from '../data/ions.js';
+import { reactionsWith } from '../data/reactionLibrary.js';
+import { materialsWith } from '../data/materials.js';
+import { topicsLinking } from '../data/topics/index.js';
+import { GEOMETRIES, POLARITY, POLARITY_REF } from '../data/geometry.js';
+import { reference } from '../data/references.js';
 import { moleculeRecord, moleculeIndex, depiction } from '../services/data.js';
 import { depictSVG } from '../components/depict.js';
 import { compound, cidByName, imageURL, recordURL } from '../services/pubchem.js';
@@ -84,28 +89,23 @@ const s = S({
     'Original values from PubChem-curated sources (in English).',
   ],
   sectionSafety: ['Keamanan (GHS)', 'Safety (GHS)'],
-  notClassified: [
-    '{pct}% laporan ke ECHA menyatakan zat ini tidak memenuhi kriteria bahaya GHS.',
-    '{pct}% of reports to ECHA say this substance does not meet GHS hazard criteria.',
-  ],
-  notClassifiedAll: [
-    'Tidak diklasifikasikan berbahaya menurut GHS.',
-    'Not classified as hazardous under GHS.',
-  ],
-  ghsBased: [
-    'Berdasarkan {n} laporan perusahaan ke ECHA C&L (via PubChem).',
-    'Based on {n} company reports to the ECHA C&L Inventory (via PubChem).',
-  ],
-  noGhs: [
-    'PubChem belum memiliki klasifikasi GHS untuk zat ini.',
-    'PubChem has no GHS classification for this substance.',
-  ],
   safetyTip: [
     'Bahan kimia di laboratorium hanya digunakan dengan pengawasan guru dan alat pelindung.',
     'Use lab chemicals only with a teacher’s supervision and protective equipment.',
   ],
   pubchemUses: ['Kegunaan menurut PubChem', 'Uses according to PubChem'],
   sectionId: ['Nama & identitas kimia', 'Names & chemical identity'],
+  sectionLinks: ['Terhubung dengan', 'Connected to'],
+  linkElements: ['Unsur penyusun', 'Elements it contains'],
+  linkIons: ['Ion', 'Ions'],
+  linkReactions: ['Reaksi', 'Reactions'],
+  linkMaterials: ['Material & campuran', 'Materials & mixtures'],
+  linkLessons: ['Materi yang membahasnya', 'Lessons that cover it'],
+  spectra: ['Spektrum (IR, NMR, MS)', 'Spectra (IR, NMR, MS)'],
+  spectraLink: [
+    'Informasi spektrum di PubChem, bila tersedia',
+    'Spectral information in PubChem, where available',
+  ],
   synonyms: ['Nama lain', 'Other names'],
   descriptions: ['Deskripsi ilmiah', 'Scientific description'],
   related: ['Molekul segolongan', 'Related molecules'],
@@ -148,6 +148,28 @@ const s = S({
     'Shape (VSEPR): {name}, {axe}, angle {angle}, central-atom hybridisation {hyb}.',
   ],
   groups: ['Golongan/gugus: {list}.', 'Classes/groups: {list}.'],
+  polarity: {
+    same: [
+      'Kepolaran: nonpolar, karena semua atomnya unsur yang sama sehingga tidak ada ikatan yang polar.',
+      'Polarity: nonpolar, because every atom is the same element, so no bond is polar.',
+    ],
+    symmetric: [
+      'Kepolaran: nonpolar. Walaupun ikatannya polar, bentuknya simetris sehingga momen dipol ikatan saling meniadakan.',
+      'Polarity: nonpolar. Even if its bonds are polar, the shape is symmetric, so the bond dipoles cancel.',
+    ],
+    diatomic: [
+      'Kepolaran: polar, karena kedua atomnya berbeda keelektronegatifan sehingga ikatannya polar.',
+      'Polarity: polar, because its two atoms differ in electronegativity, so the bond is polar.',
+    ],
+    shape: [
+      'Kepolaran: polar. Momen dipol ikatannya tidak saling meniadakan karena bentuk molekul atau atom-atom yang terikat tidak simetris.',
+      'Polarity: polar. Its bond dipoles do not cancel because the shape or the bonded atoms are not symmetric.',
+    ],
+    ozone: [
+      'Kepolaran: sedikit polar walaupun semua atomnya oksigen: bentuknya bengkok dan atom pusatnya bermuatan formal berbeda dari atom ujung.',
+      'Polarity: slightly polar although all its atoms are oxygen: the shape is bent and the central atom carries a different formal charge from the end atoms.',
+    ],
+  },
   xlogp: ['XLogP {v}: {hint}', 'XLogP {v}: {hint}'],
   lipophilic: ['cenderung larut dalam lemak (lipofilik).', 'tends to dissolve in fats (lipophilic).'],
   hydrophilic: ['cenderung larut dalam air (hidrofilik).', 'tends to dissolve in water (hydrophilic).'],
@@ -335,6 +357,7 @@ export async function render({ id, main, cleanup, isCurrent }) {
         atLeast('smp') ? ['sec-props', s.sectionProps] : null,
         ['sec-safety', s.sectionSafety],
         atLeast('sma') ? ['sec-id', s.sectionId] : null,
+        ['sec-links', s.sectionLinks],
         ['sec-notes', s.notes],
       ]
         .filter(Boolean)
@@ -367,6 +390,8 @@ export async function render({ id, main, cleanup, isCurrent }) {
     <section id="sec-safety" class="mol-section">${safetySection(rec?.ghs, lv)}${usesSection(rec, lv)}</section>
 
     ${atLeast('sma') ? `<section id="sec-id" class="mol-section">${identitySection(props, rec, cid, lv)}</section>` : ''}
+
+    <section id="sec-links" class="mol-section">${linksSection(m, parsed)}</section>
 
     ${m ? relatedSection(m, idx) : ''}
 
@@ -452,7 +477,7 @@ export async function render({ id, main, cleanup, isCurrent }) {
     const url = location.href;
     try {
       if (navigator.share)
-        await navigator.share({ title: `${name} · Moleculium`, text: formulaUnicode(formula), url });
+        await navigator.share({ title: `${name} · Alchemist`, text: formulaUnicode(formula), url });
       else {
         await navigator.clipboard.writeText(url);
         toast(ui.copied);
@@ -586,6 +611,17 @@ function explain({ m, name, formula, parsed, comp, props, cls, lv }) {
         ` <a href="#/lab/vsepr?shape=${m.geo}">${esc(pick(['Coba di lab VSEPR', 'Try it in the VSEPR lab']))}</a>`
     );
   }
+  const polarity = m ? POLARITY[m.id] : null;
+  if (polarity && lv !== 'sd') {
+    const ref = reference(POLARITY_REF);
+    out.push(
+      `${esc(pick(s.polarity[polarity]))} <a class="term" href="#/glossary/molekul-polar">${esc(pick(['Apa itu molekul polar?', 'What is a polar molecule?']))}</a>${
+        lv === 'sma' || lv === 'kuliah'
+          ? ` <small class="muted">(${extLink(ref.url, ref.label)})</small>`
+          : ''
+      }`
+    );
+  }
   if ((lv === 'sma' || lv === 'kuliah') && cls.length)
     out.push(esc(fmt(s.groups, { list: cls.map(c => pick(c.name)).join(', ') })));
   if ((lv === 'sma' || lv === 'kuliah') && props.xlogp != null)
@@ -689,32 +725,7 @@ function propsSection(props, rec, lv) {
 }
 
 function safetySection(ghs, lv) {
-  let body;
-  if (!ghs) body = `<p class="muted">${esc(s.noGhs)}</p>`;
-  else {
-    const mostlySafe = ghs.notClassified || (ghs.notMet != null && ghs.notMet >= 50);
-    body = `${
-      mostlySafe
-        ? notice(
-            esc(ghs.notMet != null ? fmt(s.notClassified, { pct: num(ghs.notMet, 1) }) : s.notClassifiedAll)
-          )
-        : ''
-    }
-    ${ghs.pictograms.length ? `<div class="ghs-row">${ghs.pictograms.map(p => pictogram(p.code, lv === 'sd' ? 72 : 64)).join('')}</div>` : ''}
-    ${ghs.signal ? `<p class="signal signal-${ghs.signal.toLowerCase()}">${esc(pick(SIGNAL[ghs.signal] || [ghs.signal, ghs.signal]))}</p>` : ''}
-    ${
-      ghs.hazards.length && lv !== 'sd'
-        ? `<ul class="hazards">${ghs.hazards
-            .map(h => {
-              const st = hazardStatement(h);
-              return `<li><strong>${esc(st.code)}</strong> ${esc(st.text)}${st.pct && lv !== 'smp' ? ` <small class="muted">(${esc(st.pct)})</small>` : ''}</li>`;
-            })
-            .join('')}</ul>`
-        : ''
-    }
-    ${ghs.reports ? `<p class="muted small">${esc(fmt(s.ghsBased, { n: ghs.reports }))}</p>` : ''}`;
-  }
-  return `<h2>${esc(s.sectionSafety)}</h2>${body}<p class="muted small">${icon('shield', { size: 14 })} ${esc(s.safetyTip)} ${esc(ui.eduNote)}</p>`;
+  return `<h2>${esc(s.sectionSafety)}</h2>${ghsPanel(ghs, lv)}<p class="muted small">${icon('shield', { size: 14 })} ${esc(s.safetyTip)} ${esc(ui.eduNote)}</p>`;
 }
 
 function usesSection(rec, lv) {
@@ -733,6 +744,7 @@ function identitySection(props, rec, cid, lv) {
     props.smiles ? ['SMILES', `<code>${esc(props.smiles)}</code>`] : null,
     lv === 'kuliah' && props.inchi ? ['InChI', `<code class="wrap">${esc(props.inchi)}</code>`] : null,
     props.inchikey ? ['InChIKey', `<code>${esc(props.inchikey)}</code>`] : null,
+    [s.spectra, extLink(`${recordURL(cid)}#section=Spectral-Information`, s.spectraLink)],
     rec?.wikidata
       ? ['Wikidata', extLink(`https://www.wikidata.org/wiki/${rec.wikidata}`, rec.wikidata)]
       : null,
@@ -746,6 +758,57 @@ function identitySection(props, rec, cid, lv) {
         ${desc.length ? `<h3>${esc(s.descriptions)}</h3>${desc.map(d => `<blockquote lang="en"><p>${esc(d.text)}</p><footer>${d.url ? extLink(d.url, d.source) : esc(d.source)}</footer></blockquote>`).join('')}` : ''}
       </div>
     </div>`;
+}
+
+/** Everything in Alchemist this compound is part of: its elements, ions, reactions, materials and lessons. */
+function linksSection(m, parsed) {
+  const chips = (list, href, label) =>
+    `<p class="chip-grid">${list.map(x => `<a class="chip" href="${href(x)}">${label(x)}</a>`).join(' ')}</p>`;
+  const els = Object.keys(parsed.counts || {})
+    .map(getElement)
+    .filter(Boolean);
+  const ions = m ? [...new Set([...ionsWith(m.id), ...ionsFromAcid(m.id)])] : [];
+  const reactions = m ? reactionsWith(`m:${m.id}`) : [];
+  const materials = m ? materialsWith(`m:${m.id}`) : [];
+  const lessons = m ? topicsLinking('m', m.id) : [];
+  const blocks = [
+    els.length
+      ? `<h3 class="h-small">${esc(s.linkElements)}</h3>${chips(
+          els,
+          e => `#/atom/${e.s}`,
+          e => `${esc(e.s)} · ${esc(pick([e.id, e.en]))}`
+        )}`
+      : '',
+    ions.length
+      ? `<h3 class="h-small">${esc(s.linkIons)}</h3>${chips(
+          ions,
+          i => `#/ion/${i.id}`,
+          i => `${esc(i.f)} · ${esc(pick(i.name))}`
+        )}`
+      : '',
+    reactions.length
+      ? `<h3 class="h-small">${esc(s.linkReactions)}</h3>${chips(
+          reactions,
+          r => `#/reaction/${r.id}`,
+          r => esc(pick(r.name))
+        )}`
+      : '',
+    materials.length
+      ? `<h3 class="h-small">${esc(s.linkMaterials)}</h3>${chips(
+          materials,
+          x => `#/material/${x.id}`,
+          x => esc(pick(x.name))
+        )}`
+      : '',
+    lessons.length
+      ? `<h3 class="h-small">${esc(s.linkLessons)}</h3>${chips(
+          lessons,
+          t => `#/learn/${t.id}`,
+          t => `${icon(t.icon, { size: 14 })} ${esc(pick(t.title))}`
+        )}`
+      : '',
+  ].join('');
+  return `<h2>${esc(s.sectionLinks)}</h2>${blocks || `<p class="muted">${esc(pick(['Belum ada tautan lain di Alchemist.', 'No other links in Alchemist yet.']))}</p>`}`;
 }
 
 function relatedSection(m, idx) {

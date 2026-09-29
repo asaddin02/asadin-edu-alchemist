@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Moleculium production server: static files (allow-listed paths only) + a caching proxy for PubChem.
+// Alchemist production server: static files (allow-listed paths only) + a caching proxy for PubChem.
 // No dependencies. Node 20+.
 //
 // Why a proxy? A whole classroom usually shares one public IP address, and PubChem allows about
@@ -62,7 +62,8 @@ const PUBLIC_PATHS = [
   /^\/assets\/[\w./-]+\.(svg|png|jpg|jpeg|ico)$/,
   /^\/assets\/fonts\/[\w-]+\.(ttf|woff2)$/,
   /^\/assets\/fonts\/OFL\.txt$/,
-  /^\/data\/(molecules|elements)\/[\w.-]+\.json$/,
+  /^\/data\/(molecules|elements|ions)\/[\w.-]+\.json$/,
+  /^\/data\/isotopes\.json$/,
   /^\/data\/classes\.json$/,
 ];
 
@@ -298,7 +299,7 @@ server.on('clientError', (error, socket) => {
   if (socket.writable) socket.end('HTTP/1.1 400 Bad Request\r\nConnection: close\r\n\r\n');
 });
 server.listen(PORT, HOST, () =>
-  console.log(`Moleculium ${VERSION} on http://${HOST === '0.0.0.0' ? 'localhost' : HOST}:${PORT}`)
+  console.log(`Alchemist ${VERSION} on http://${HOST === '0.0.0.0' ? 'localhost' : HOST}:${PORT}`)
 );
 for (const signal of ['SIGTERM', 'SIGINT']) {
   process.on(signal, () => {

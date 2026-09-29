@@ -22,5 +22,1262 @@
   "author": "Alchemist-hp (talk) (www.pse-mendelejew.de)",
   "license": "FAL",
   "licenseUrl": "http://artlibre.org/licence/lal/en"
- }
+ },
+ "weight": {
+  "value": "101.07(2)",
+  "kind": "standard",
+  "source": "ciaaw"
+ },
+ "natural": [
+  {
+   "A": 96,
+   "iso": "",
+   "mass": "95.907 589(1)",
+   "abundance": "0.0554(14)"
+  },
+  {
+   "A": 98,
+   "iso": "",
+   "mass": "97.905 29(5)",
+   "abundance": "0.0187(3)"
+  },
+  {
+   "A": 99,
+   "iso": "",
+   "mass": "98.905 930(3)",
+   "abundance": "0.1276(14)"
+  },
+  {
+   "A": 100,
+   "iso": "",
+   "mass": "99.904 211(3)",
+   "abundance": "0.1260(7)"
+  },
+  {
+   "A": 101,
+   "iso": "",
+   "mass": "100.905 573(3)",
+   "abundance": "0.1706(2)"
+  },
+  {
+   "A": 102,
+   "iso": "",
+   "mass": "101.904 340(3)",
+   "abundance": "0.3155(14)"
+  },
+  {
+   "A": 104,
+   "iso": "",
+   "mass": "103.905 43(2)",
+   "abundance": "0.1862(27)"
+  }
+ ],
+ "naturalSource": "ciaaw",
+ "nuclides": [
+  {
+   "A": 85,
+   "iso": "",
+   "mass": "84.967117 ± 0.000537",
+   "half": "1 ms >400ns",
+   "seconds": 0.001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β+p",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2013,
+   "est": true
+  },
+  {
+   "A": 86,
+   "iso": "",
+   "mass": "85.957305 ± 0.000429",
+   "half": "50 ms >400ns",
+   "seconds": 0.05,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β+p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2013,
+   "est": true
+  },
+  {
+   "A": 87,
+   "iso": "",
+   "mass": "86.950907 ± 0.000429",
+   "half": "50 ms >1.5us",
+   "seconds": 0.05,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β+p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1995,
+   "est": true
+  },
+  {
+   "A": 88,
+   "iso": "",
+   "mass": "87.941664 ± 0.000322",
+   "half": "1.5 s ± 0.3",
+   "seconds": 1.5,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "<",
+     "pct": 3.6
+    }
+   ],
+   "year": 1994,
+   "est": true
+  },
+  {
+   "A": 89,
+   "iso": "",
+   "mass": "88.937337849 ± 0.000026",
+   "half": "1.32 s ± 0.03",
+   "seconds": 1.32,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 3.1
+    }
+   ],
+   "year": 1992,
+   "est": false
+  },
+  {
+   "A": 90,
+   "iso": "",
+   "mass": "89.930344378 ± 0.000004004",
+   "half": "11.7 s ± 0.9",
+   "seconds": 11.7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1991,
+   "est": false
+  },
+  {
+   "A": 91,
+   "iso": "",
+   "mass": "90.926741530 ± 0.000002384",
+   "half": "8.0 s ± 0.4",
+   "seconds": 8,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1983,
+   "est": false
+  },
+  {
+   "A": 91,
+   "iso": "m",
+   "mass": "90.926741530 ± 0.000002384",
+   "half": "7.6 s ± 0.8",
+   "seconds": 7.6,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": null
+    },
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1983,
+   "est": false
+  },
+  {
+   "A": 92,
+   "iso": "",
+   "mass": "91.920234373 ± 0.000002917",
+   "half": "3.65 m ± 0.05",
+   "seconds": 219,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1971,
+   "est": false
+  },
+  {
+   "A": 92,
+   "iso": "m",
+   "mass": "91.920234373 ± 0.000002917",
+   "half": "100 ns ± 8",
+   "seconds": 1.0000000000000001e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1980,
+   "est": false
+  },
+  {
+   "A": 93,
+   "iso": "",
+   "mass": "92.917104442 ± 0.000002216",
+   "half": "59.7 s ± 0.6",
+   "seconds": 59.7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1972,
+   "est": false
+  },
+  {
+   "A": 93,
+   "iso": "m",
+   "mass": "92.917104442 ± 0.000002216",
+   "half": "10.8 s ± 0.3",
+   "seconds": 10.8,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 78
+    },
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 22
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 0.027
+    }
+   ],
+   "year": 1983,
+   "est": false
+  },
+  {
+   "A": 93,
+   "iso": "n",
+   "mass": "92.917104442 ± 0.000002216",
+   "half": "2.30 us ± 0.07",
+   "seconds": 0.0000022999999999999996,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1983,
+   "est": false
+  },
+  {
+   "A": 94,
+   "iso": "",
+   "mass": "93.911342860 ± 0.000003374",
+   "half": "51.8 m ± 0.6",
+   "seconds": 3108,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1952,
+   "est": false
+  },
+  {
+   "A": 94,
+   "iso": "m",
+   "mass": "93.911342860 ± 0.000003374",
+   "half": "67.5 us ± 2.8",
+   "seconds": 0.0000675,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1971,
+   "est": false
+  },
+  {
+   "A": 95,
+   "iso": "",
+   "mass": "94.910404415 ± 0.0000102",
+   "half": "1.607 h ± 0.004",
+   "seconds": 5785.2,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1948,
+   "est": false
+  },
+  {
+   "A": 96,
+   "iso": "",
+   "mass": "95.907588910 ± 0.000000182",
+   "half": "Stable >80Ey",
+   "seconds": null,
+   "stable": true,
+   "decay": [
+    {
+     "mode": "2β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1931,
+   "est": false
+  },
+  {
+   "A": 97,
+   "iso": "",
+   "mass": "96.907545776 ± 0.000002965",
+   "half": "2.8370 d ± 0.0014",
+   "seconds": 245116.80000000002,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1946,
+   "est": false
+  },
+  {
+   "A": 98,
+   "iso": "",
+   "mass": "97.905286709 ± 0.000006937",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1944,
+   "est": false
+  },
+  {
+   "A": 99,
+   "iso": "",
+   "mass": "98.905930284 ± 0.000000368",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1931,
+   "est": false
+  },
+  {
+   "A": 100,
+   "iso": "",
+   "mass": "99.904210460 ± 0.000000367",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1931,
+   "est": false
+  },
+  {
+   "A": 101,
+   "iso": "",
+   "mass": "100.905573086 ± 0.000000443",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1931,
+   "est": false
+  },
+  {
+   "A": 101,
+   "iso": "m",
+   "mass": "100.905573086 ± 0.000000443",
+   "half": "17.5 us ± 0.4",
+   "seconds": 0.0000175,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1974,
+   "est": false
+  },
+  {
+   "A": 102,
+   "iso": "",
+   "mass": "101.904340312 ± 0.000000446",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1931,
+   "est": false
+  },
+  {
+   "A": 103,
+   "iso": "",
+   "mass": "102.906314846 ± 0.000000473",
+   "half": "39.245 d ± 0.008",
+   "seconds": 3390768,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1945,
+   "est": false
+  },
+  {
+   "A": 103,
+   "iso": "m",
+   "mass": "102.906314846 ± 0.000000473",
+   "half": "1.69 ms ± 0.07",
+   "seconds": 0.0016899999999999999,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1964,
+   "est": false
+  },
+  {
+   "A": 104,
+   "iso": "",
+   "mass": "103.905425312 ± 0.000002682",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [
+    {
+     "mode": "2β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1931,
+   "est": false
+  },
+  {
+   "A": 105,
+   "iso": "",
+   "mass": "104.907745478 ± 0.000002683",
+   "half": "4.439 h ± 0.011",
+   "seconds": 15980.4,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1945,
+   "est": false
+  },
+  {
+   "A": 105,
+   "iso": "m",
+   "mass": "104.907745478 ± 0.000002683",
+   "half": "340 ns ± 15",
+   "seconds": 3.4000000000000003e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1974,
+   "est": false
+  },
+  {
+   "A": 106,
+   "iso": "",
+   "mass": "105.907328181 ± 0.000005787",
+   "half": "371.8 d ± 1.8",
+   "seconds": 32123520,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1948,
+   "est": false
+  },
+  {
+   "A": 107,
+   "iso": "",
+   "mass": "106.909969837 ± 0.00000931",
+   "half": "3.75 m ± 0.05",
+   "seconds": 225,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1951,
+   "est": false
+  },
+  {
+   "A": 108,
+   "iso": "",
+   "mass": "107.910185793 ± 0.000009318",
+   "half": "4.55 m ± 0.05",
+   "seconds": 273,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1955,
+   "est": false
+  },
+  {
+   "A": 109,
+   "iso": "",
+   "mass": "108.913323707 ± 0.000009612",
+   "half": "34.4 s ± 0.2",
+   "seconds": 34.4,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1967,
+   "est": false
+  },
+  {
+   "A": 109,
+   "iso": "m",
+   "mass": "108.913323707 ± 0.000009612",
+   "half": "680 ns ± 30",
+   "seconds": 6.800000000000001e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1976,
+   "est": false
+  },
+  {
+   "A": 110,
+   "iso": "",
+   "mass": "109.914038501 ± 0.00000958",
+   "half": "12.04 s ± 0.17",
+   "seconds": 12.04,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1970,
+   "est": false
+  },
+  {
+   "A": 111,
+   "iso": "",
+   "mass": "110.917567566 ± 0.000010394",
+   "half": "2.12 s ± 0.07",
+   "seconds": 2.12,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1971,
+   "est": false
+  },
+  {
+   "A": 112,
+   "iso": "",
+   "mass": "111.918806922 ± 0.000010305",
+   "half": "1.75 s ± 0.07",
+   "seconds": 1.75,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1970,
+   "est": false
+  },
+  {
+   "A": 113,
+   "iso": "",
+   "mass": "112.922846729 ± 0.000041097",
+   "half": "800 ms ± 50",
+   "seconds": 0.8,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1988,
+   "est": false
+  },
+  {
+   "A": 113,
+   "iso": "m",
+   "mass": "112.922846729 ± 0.000041097",
+   "half": "510 ms ± 30",
+   "seconds": 0.51,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": null
+    },
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": null
+    }
+   ],
+   "year": 1998,
+   "est": false
+  },
+  {
+   "A": 114,
+   "iso": "",
+   "mass": "113.924614430 ± 0.000003817",
+   "half": "540 ms ± 30",
+   "seconds": 0.54,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1991,
+   "est": false
+  },
+  {
+   "A": 115,
+   "iso": "",
+   "mass": "114.929033049 ± 0.000027016",
+   "half": "318 ms ± 19",
+   "seconds": 0.318,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1992,
+   "est": false
+  },
+  {
+   "A": 115,
+   "iso": "m",
+   "mass": "114.929033049 ± 0.000027016",
+   "half": "76 ms ± 6",
+   "seconds": 0.076,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": null
+    },
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": null
+    }
+   ],
+   "year": 2010,
+   "est": false
+  },
+  {
+   "A": 116,
+   "iso": "",
+   "mass": "115.931219191 ± 0.000004",
+   "half": "204 ms ± 6",
+   "seconds": 0.20400000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1994,
+   "est": false
+  },
+  {
+   "A": 117,
+   "iso": "",
+   "mass": "116.936135000 ± 0.000465",
+   "half": "151 ms ± 3",
+   "seconds": 0.151,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1994,
+   "est": false
+  },
+  {
+   "A": 117,
+   "iso": "m",
+   "mass": "116.936135000 ± 0.000465",
+   "half": "2.49 us ± 0.06",
+   "seconds": 0.0000024900000000000003,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2012,
+   "est": false
+  },
+  {
+   "A": 118,
+   "iso": "",
+   "mass": "117.938808 ± 0.000215",
+   "half": "99 ms ± 3",
+   "seconds": 0.099,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1994,
+   "est": true
+  },
+  {
+   "A": 119,
+   "iso": "",
+   "mass": "118.944090 ± 0.000322",
+   "half": "69.5 ms ± 2.0",
+   "seconds": 0.0695,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1997,
+   "est": true
+  },
+  {
+   "A": 119,
+   "iso": "m",
+   "mass": "118.944090 ± 0.000322",
+   "half": "384 ns ± 22",
+   "seconds": 3.8400000000000005e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2012,
+   "est": true
+  },
+  {
+   "A": 120,
+   "iso": "",
+   "mass": "119.946623 ± 0.000429",
+   "half": "45 ms ± 2",
+   "seconds": 0.045,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2010,
+   "est": true
+  },
+  {
+   "A": 121,
+   "iso": "",
+   "mass": "120.952098 ± 0.000429",
+   "half": "29 ms ± 2",
+   "seconds": 0.029,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2010,
+   "est": true
+  },
+  {
+   "A": 122,
+   "iso": "",
+   "mass": "121.955147 ± 0.000537",
+   "half": "25 ms ± 1",
+   "seconds": 0.025,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2010,
+   "est": true
+  },
+  {
+   "A": 123,
+   "iso": "",
+   "mass": "122.960762 ± 0.000537",
+   "half": "19 ms ± 2",
+   "seconds": 0.019,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2010,
+   "est": true
+  },
+  {
+   "A": 124,
+   "iso": "",
+   "mass": "123.963940 ± 0.000644",
+   "half": "15 ms ± 3",
+   "seconds": 0.015,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2010,
+   "est": true
+  },
+  {
+   "A": 125,
+   "iso": "",
+   "mass": "124.969544 ± 0.000322",
+   "half": "12 ms >550ns",
+   "seconds": 0.012,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2018,
+   "est": true
+  }
+ ],
+ "stableCount": 7,
+ "texts": {
+  "history": [
+   {
+    "text": "The name derives from the Latin ruthenia for the old name of Russia. It was discovered in a crude platinum ore by the Russian chemist Gottfried Wilhelm Osann in 1828. Osann thought that he had found three new metals in the sample, pluranium, ruthenium, and polinium. In 1844, Russian chemist Karl Karlovich Klaus was able to show that Osann's mistake was due to the impurity of the sample, and Klaus was able to isolate the ruthenium metal.",
+    "source": "ciaaw"
+   },
+   {
+    "text": "Ruthenium was discovered by Karl Karlovich Klaus, a Russian chemist, in 1844 while analyzing the residue of a sample of platinum ore obtained from the Ural mountains. Apparently, Jedrzej Sniadecki, a Polish chemist, had produced ruthenium in 1807 but he withdrew his claim of discovery after other scientists failed to replicate his results. Ruthenium tends to occur along with deposits of platinum and is primarily obtained as a byproduct of mining and refining platinum. Ruthenium is also obtained as a byproduct of the nickel mining operation in the Sudbury region of Ontario, Canada.",
+    "source": "jlab"
+   },
+   {
+    "text": "From the Latin word Ruthenia, Russia. In 1827, Berzelius and Osann examined the residues left after dissolving crude platinum from the Ural mountains in aqua regia. While Berzelius found no unusual metals, Osann thought he found three new metals, one of which he named ruthenium. In 1844 Klaus, generally recognized as the discoverer, showed that Osann's ruthenium oxide was very impure and that it contained a new metal. Klaus obtained 6 g of ruthenium from the portion of crude platinum that is insoluble in aqua regia.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Ruthenium is primarily used as an alloying agent. Adding 0.1% ruthenium to titanium makes titanium 100 times more resistant to corrosion. Small amounts of ruthenium are added to platinum and palladium to strengthen them. These alloys are used in jewelry and in electrical contacts that must resist wear.",
+    "source": "jlab"
+   }
+  ],
+  "sources": [
+   {
+    "text": "A member of the platinum group, ruthenium occurs native with other members of the group in ores found in the Ural mountains and in North and South America. It is also found along with other platinum metals in small but commercial quantities in pentlandite in the Sudbury, Ontario nickel-mining region, and in the pyroxinite deposits of South Africa.",
+    "source": "lanl"
+   }
+  ],
+  "description": [
+   {
+    "text": "Ruthenium is a hard, white metal and has four crystal modifications. It does not tarnish at room temperatures, but oxidizes explosively. It is attacked by halogens, hydroxides, etc. Ruthenium can be plated by electrodeposition or by thermal decomposition methods. The metal is one of the most effective hardeners for platinum and palladium, and is alloyed with these metals to make electrical contacts for severe wear resistance. A ruthenium-molybdenum alloy is said to be superconductive at 10.6 K. The corrosion resistance of titanium is improved a hundredfold by addition of 0.1% ruthenium. It is a versatile catalyst. Hydrogen sulfide can be split catalytically by light using an aqueous suspension of CdS particles loaded with ruthenium dioxide. It is thought this may have application to removal of H2S from oil refining and other industrial processes. Compounds in at least eight oxidation states have been found, but of these, the +2, +3, and +4 states are the most common. Ruthenium tetroxide, like osmium tetroxide, is highly toxic. In addition, it may explode. Ruthenium compounds show a marked resemblance to those of cadmium.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Earth/Planetary Science",
+   "text": "100Ru is the product of a rare (and hence very long-lived) nuclear decay process from the double beta decay of 100Mo. A careful measurement of the half-life for this decay, which is 7.1×1018 years, can be used to place an upper limit on the mass of the electron neutrino, which is a neutral and weakly interacting subatomic particle first postulated by Wolfgang Pauli in 1930. Ruthenium and molybdenum share many similarities. They both have seven isotopes (96, 98, 99, 100, 101, 102, and 104 for ruthenium and 92, 94, 95, 96, 97, 98, and 100 for molybdenum), and their isotopes are formed by the same nucleosynthesisp-processes, r-processes, and s-processes, namely, p, r, s and r, s only, s and r, s and r, and r, respectively. The molybdenum and ruthenium isotopic composition of most meteorites lie along a mixing line (Fig. IUPAC.44.1). The ruthenium and molybdenum of silicates in the Earth also lie on this line, which supports the hypothesis that the Earth accreted homogeneously. That is, the feeding zone of the Earth did not change substantially over time as both the bulk of the Earth and the late veneer accreted from material having the same ruthenium-molybdenum isotopic reservoir. ",
+   "source": "iptei"
+  },
+  {
+   "topic": "Medicine",
+   "text": "106Ru plaque brachytherapy has been used for eye preservation and tumor control of uveal (the middle layer of the wall of the eye) melanoma. The half-life of 106Ru is 373 days.",
+   "source": "iptei"
+  },
+  {
+   "topic": "a Source of Radioactive Isotope(s)",
+   "text": "96Ru is used to produce radioisotopes 94Ru (with a half-life of 52 min) and 95Ru (with half-life of about 1.64 h) via the reactions 96Ru (n, 3n) 94Ru and 96Ru (n, 2n) 95Ru, respectively (Fig. IUPAC.44.2),. 104Ru is used to produce the radioisotope 105Rh (with a half-life of about 35 h) via the reaction 104Ru (p, γ) 105Rh. 105Rh has been used in the treatment of bone pain. ",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "1×10^-3 milligrams per kilogram",
+  "ocean": "7×10^-7 milligrams per liter",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 23950,
+   "name": "ruthenium",
+   "formula": "Ru",
+   "charge": 0,
+   "smiles": "[Ru]"
+  },
+  {
+   "cid": 168052,
+   "name": "ruthenium(3+)",
+   "formula": "Ru+3",
+   "charge": 3,
+   "smiles": "[Ru+3]"
+  },
+  {
+   "cid": 3792939,
+   "name": "ruthenium(2+)",
+   "formula": "Ru+2",
+   "charge": 2,
+   "smiles": "[Ru+2]"
+  },
+  {
+   "cid": 4052590,
+   "name": "ruthenium(1+)",
+   "formula": "Ru+",
+   "charge": 1,
+   "smiles": "[Ru+]"
+  },
+  {
+   "cid": 5461100,
+   "name": "ruthenium(4+)",
+   "formula": "Ru+4",
+   "charge": 4,
+   "smiles": "[Ru+4]"
+  },
+  {
+   "cid": 10313088,
+   "name": "ruthenium(6+)",
+   "formula": "Ru+6",
+   "charge": 6,
+   "smiles": "[Ru+6]"
+  },
+  {
+   "cid": 20078733,
+   "name": "ruthenium(8+)",
+   "formula": "Ru+8",
+   "charge": 8,
+   "smiles": "[Ru+8]"
+  },
+  {
+   "cid": 154082879,
+   "name": "ruthenium(5+)",
+   "formula": "Ru+5",
+   "charge": 5,
+   "smiles": "[Ru+5]"
+  }
+ ],
+ "refs": {
+  "ciaaw": {
+   "name": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+   "url": "https://www.ciaaw.org/ruthenium.htm"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele044.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/44.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": null,
+ "ghs": {
+  "signal": "Danger",
+  "pictograms": [
+   {
+    "code": "GHS02",
+    "label": "Flammable"
+   }
+  ],
+  "hazards": [
+   "H228 (49.9%): Flammable solid",
+   "H413 (22.9%): May cause long lasting harmful effects to aquatic life"
+  ],
+  "reports": 455,
+  "notMet": 26.4,
+  "notClassified": false,
+  "source": "European Chemicals Agency (ECHA)"
+ },
+ "ghsCid": 23950
 }

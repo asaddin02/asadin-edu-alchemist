@@ -22,5 +22,1185 @@
   "author": "Alchemist-hp (talk) (www.pse-mendelejew.de)",
   "license": "FAL",
   "licenseUrl": "http://artlibre.org/licence/lal/en"
- }
+ },
+ "weight": {
+  "value": "95.95(1)",
+  "kind": "standard",
+  "source": "ciaaw"
+ },
+ "natural": [
+  {
+   "A": 92,
+   "iso": "",
+   "mass": "91.906 807(1)",
+   "abundance": "0.146 49(106)"
+  },
+  {
+   "A": 94,
+   "iso": "",
+   "mass": "93.905 084(1)",
+   "abundance": "0.091 87(33)"
+  },
+  {
+   "A": 95,
+   "iso": "",
+   "mass": "94.905 8374(8)",
+   "abundance": "0.158 73(30)"
+  },
+  {
+   "A": 96,
+   "iso": "",
+   "mass": "95.904 6748(8)",
+   "abundance": "0.166 73(8)"
+  },
+  {
+   "A": 97,
+   "iso": "",
+   "mass": "96.906 017(1)",
+   "abundance": "0.095 82(15)"
+  },
+  {
+   "A": 98,
+   "iso": "",
+   "mass": "97.905 404(1)",
+   "abundance": "0.242 92(80)"
+  },
+  {
+   "A": 100,
+   "iso": "",
+   "mass": "99.907 468(2)",
+   "abundance": "0.097 44(65)"
+  }
+ ],
+ "naturalSource": "ciaaw",
+ "nuclides": [
+  {
+   "A": 81,
+   "iso": "",
+   "mass": "80.966226 ± 0.000537",
+   "half": "1 ms >400ns",
+   "seconds": 0.001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β+p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2013,
+   "est": true
+  },
+  {
+   "A": 82,
+   "iso": "",
+   "mass": "81.956661 ± 0.000429",
+   "half": "30 ms >400ns",
+   "seconds": 0.03,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β+p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2013,
+   "est": true
+  },
+  {
+   "A": 83,
+   "iso": "",
+   "mass": "82.950252 ± 0.00043",
+   "half": "23 ms ± 19",
+   "seconds": 0.023,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1999,
+   "est": true
+  },
+  {
+   "A": 84,
+   "iso": "",
+   "mass": "83.941846 ± 0.00032",
+   "half": "2.3 s ± 0.3",
+   "seconds": 2.3,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1991,
+   "est": true
+  },
+  {
+   "A": 85,
+   "iso": "",
+   "mass": "84.938260736 ± 0.000017",
+   "half": "3.2 s ± 0.2",
+   "seconds": 3.2,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 0.14
+    }
+   ],
+   "year": 1992,
+   "est": false
+  },
+  {
+   "A": 86,
+   "iso": "",
+   "mass": "85.931174092 ± 0.000003147",
+   "half": "19.1 s ± 0.3",
+   "seconds": 19.1,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1991,
+   "est": false
+  },
+  {
+   "A": 87,
+   "iso": "",
+   "mass": "86.928196198 ± 0.000003067",
+   "half": "14.1 s ± 0.3",
+   "seconds": 14.1,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 15
+    }
+   ],
+   "year": 1977,
+   "est": false
+  },
+  {
+   "A": 88,
+   "iso": "",
+   "mass": "87.921967779 ± 0.0000041",
+   "half": "8.0 m ± 0.2",
+   "seconds": 480,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1971,
+   "est": false
+  },
+  {
+   "A": 89,
+   "iso": "",
+   "mass": "88.919468149 ± 0.0000042",
+   "half": "2.11 m ± 0.10",
+   "seconds": 126.6,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1980,
+   "est": false
+  },
+  {
+   "A": 89,
+   "iso": "m",
+   "mass": "88.919468149 ± 0.0000042",
+   "half": "190 ms ± 15",
+   "seconds": 0.19,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1980,
+   "est": false
+  },
+  {
+   "A": 90,
+   "iso": "",
+   "mass": "89.913931270 ± 0.000003717",
+   "half": "5.56 h ± 0.09",
+   "seconds": 20016,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1953,
+   "est": false
+  },
+  {
+   "A": 90,
+   "iso": "m",
+   "mass": "89.913931270 ± 0.000003717",
+   "half": "1.14 us ± 0.05",
+   "seconds": 0.0000011399999999999999,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1971,
+   "est": false
+  },
+  {
+   "A": 91,
+   "iso": "",
+   "mass": "90.911745190 ± 0.000006696",
+   "half": "15.49 m ± 0.01",
+   "seconds": 929.4,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1948,
+   "est": false
+  },
+  {
+   "A": 91,
+   "iso": "m",
+   "mass": "90.911745190 ± 0.000006696",
+   "half": "64.6 s ± 0.6",
+   "seconds": 64.6,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 50
+    },
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 50
+    }
+   ],
+   "year": 1953,
+   "est": false
+  },
+  {
+   "A": 92,
+   "iso": "",
+   "mass": "91.906807153 ± 0.000000168",
+   "half": "Stable >190Ey",
+   "seconds": null,
+   "stable": true,
+   "decay": [
+    {
+     "mode": "2β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1930,
+   "est": false
+  },
+  {
+   "A": 92,
+   "iso": "m",
+   "mass": "91.906807153 ± 0.000000168",
+   "half": "190 ns ± 3",
+   "seconds": 1.9e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1964,
+   "est": false
+  },
+  {
+   "A": 93,
+   "iso": "",
+   "mass": "92.906808772 ± 0.000000193",
+   "half": "4.0 ky ± 0.8",
+   "seconds": 126227704320.00002,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "ε",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1946,
+   "est": false
+  },
+  {
+   "A": 93,
+   "iso": "m",
+   "mass": "92.906808772 ± 0.000000193",
+   "half": "6.85 h ± 0.07",
+   "seconds": 24660,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 99.88
+    },
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 0.12
+    }
+   ],
+   "year": 1950,
+   "est": false
+  },
+  {
+   "A": 93,
+   "iso": "n",
+   "mass": "92.906808772 ± 0.000000193",
+   "half": "1.8 us ± 1.0",
+   "seconds": 0.0000018,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2005,
+   "est": false
+  },
+  {
+   "A": 94,
+   "iso": "",
+   "mass": "93.905083586 ± 0.000000151",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1930,
+   "est": false
+  },
+  {
+   "A": 95,
+   "iso": "",
+   "mass": "94.905837436 ± 0.000000132",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1930,
+   "est": false
+  },
+  {
+   "A": 96,
+   "iso": "",
+   "mass": "95.904674770 ± 0.000000128",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1930,
+   "est": false
+  },
+  {
+   "A": 97,
+   "iso": "",
+   "mass": "96.906016903 ± 0.000000176",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1930,
+   "est": false
+  },
+  {
+   "A": 98,
+   "iso": "",
+   "mass": "97.905403609 ± 0.000000186",
+   "half": "Stable >100Ty",
+   "seconds": null,
+   "stable": true,
+   "decay": [
+    {
+     "mode": "2β-",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1930,
+   "est": false
+  },
+  {
+   "A": 99,
+   "iso": "",
+   "mass": "98.907707299 ± 0.000000245",
+   "half": "65.932 h ± 0.005",
+   "seconds": 237355.2,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1948,
+   "est": false
+  },
+  {
+   "A": 99,
+   "iso": "m",
+   "mass": "98.907707299 ± 0.000000245",
+   "half": "15.5 us ± 0.2",
+   "seconds": 0.0000155,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1958,
+   "est": false
+  },
+  {
+   "A": 99,
+   "iso": "n",
+   "mass": "98.907707299 ± 0.000000245",
+   "half": "760 ns ± 60",
+   "seconds": 7.6e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1975,
+   "est": false
+  },
+  {
+   "A": 100,
+   "iso": "",
+   "mass": "99.907467982 ± 0.000000322",
+   "half": "7.07 Ey ± 0.14",
+   "seconds": 2.231074673856e+26,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "2β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1930,
+   "est": false
+  },
+  {
+   "A": 101,
+   "iso": "",
+   "mass": "100.910337648 ± 0.000000331",
+   "half": "14.61 m ± 0.03",
+   "seconds": 876.5999999999999,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1941,
+   "est": false
+  },
+  {
+   "A": 101,
+   "iso": "m",
+   "mass": "100.910337648 ± 0.000000331",
+   "half": "226 ns ± 7",
+   "seconds": 2.26e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1977,
+   "est": false
+  },
+  {
+   "A": 101,
+   "iso": "n",
+   "mass": "100.910337648 ± 0.000000331",
+   "half": "133 ns ± 70",
+   "seconds": 1.33e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1977,
+   "est": false
+  },
+  {
+   "A": 102,
+   "iso": "",
+   "mass": "101.910293725 ± 0.000008916",
+   "half": "11.3 m ± 0.2",
+   "seconds": 678,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1954,
+   "est": false
+  },
+  {
+   "A": 103,
+   "iso": "",
+   "mass": "102.913091954 ± 0.0000099",
+   "half": "67.5 s ± 1.5",
+   "seconds": 67.5,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1963,
+   "est": false
+  },
+  {
+   "A": 104,
+   "iso": "",
+   "mass": "103.913747443 ± 0.000009566",
+   "half": "60 s ± 2",
+   "seconds": 60,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1962,
+   "est": false
+  },
+  {
+   "A": 105,
+   "iso": "",
+   "mass": "104.916981989 ± 0.000009721",
+   "half": "36.3 s ± 0.8",
+   "seconds": 36.3,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1962,
+   "est": false
+  },
+  {
+   "A": 106,
+   "iso": "",
+   "mass": "105.918273231 ± 0.000009801",
+   "half": "8.73 s ± 0.12",
+   "seconds": 8.73,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1969,
+   "est": false
+  },
+  {
+   "A": 107,
+   "iso": "",
+   "mass": "106.922119770 ± 0.000009901",
+   "half": "3.5 s ± 0.5",
+   "seconds": 3.5,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1972,
+   "est": false
+  },
+  {
+   "A": 107,
+   "iso": "m",
+   "mass": "106.922119770 ± 0.000009901",
+   "half": "445 ns ± 21",
+   "seconds": 4.4500000000000003e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1976,
+   "est": false
+  },
+  {
+   "A": 108,
+   "iso": "",
+   "mass": "107.924047508 ± 0.000009901",
+   "half": "1.105 s ± 0.010",
+   "seconds": 1.105,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "<",
+     "pct": 0.5
+    }
+   ],
+   "year": 1972,
+   "est": false
+  },
+  {
+   "A": 109,
+   "iso": "",
+   "mass": "108.928438318 ± 0.000012",
+   "half": "700 ms ± 14",
+   "seconds": 0.7000000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 1.3
+    }
+   ],
+   "year": 1992,
+   "est": false
+  },
+  {
+   "A": 109,
+   "iso": "m",
+   "mass": "108.928438318 ± 0.000012",
+   "half": "210 ns ± 60",
+   "seconds": 2.1e-7,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2012,
+   "est": false
+  },
+  {
+   "A": 110,
+   "iso": "",
+   "mass": "109.930717956 ± 0.000026",
+   "half": "292 ms ± 7",
+   "seconds": 0.292,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 2
+    }
+   ],
+   "year": 1992,
+   "est": false
+  },
+  {
+   "A": 111,
+   "iso": "",
+   "mass": "110.935651966 ± 0.000013503",
+   "half": "193.6 ms ± 4.4",
+   "seconds": 0.1936,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "<",
+     "pct": 12
+    }
+   ],
+   "year": 1994,
+   "est": false
+  },
+  {
+   "A": 111,
+   "iso": "m",
+   "mass": "110.935651966 ± 0.000013503",
+   "half": "~200 ms",
+   "seconds": 0.2,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2011,
+   "est": false
+  },
+  {
+   "A": 112,
+   "iso": "",
+   "mass": "111.938293 ± 0.000215",
+   "half": "125 ms ± 5",
+   "seconds": 0.125,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1994,
+   "est": true
+  },
+  {
+   "A": 113,
+   "iso": "",
+   "mass": "112.943478 ± 0.000322",
+   "half": "80 ms ± 2",
+   "seconds": 0.08,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1994,
+   "est": true
+  },
+  {
+   "A": 114,
+   "iso": "",
+   "mass": "113.946666 ± 0.000322",
+   "half": "58 ms ± 2",
+   "seconds": 0.058,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1997,
+   "est": true
+  },
+  {
+   "A": 115,
+   "iso": "",
+   "mass": "114.952174 ± 0.000429",
+   "half": "45.5 ms ± 2.0",
+   "seconds": 0.0455,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2010,
+   "est": true
+  },
+  {
+   "A": 116,
+   "iso": "",
+   "mass": "115.955759 ± 0.000537",
+   "half": "32 ms ± 4",
+   "seconds": 0.032,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2010,
+   "est": true
+  },
+  {
+   "A": 117,
+   "iso": "",
+   "mass": "116.961686 ± 0.000537",
+   "half": "22 ms ± 5",
+   "seconds": 0.022,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2010,
+   "est": true
+  },
+  {
+   "A": 118,
+   "iso": "",
+   "mass": "117.965249 ± 0.000537",
+   "half": "21 ms ± 6",
+   "seconds": 0.021,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2015,
+   "est": true
+  },
+  {
+   "A": 119,
+   "iso": "",
+   "mass": "118.971465 ± 0.000322",
+   "half": "12 ms >550ns",
+   "seconds": 0.012,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2018,
+   "est": true
+  }
+ ],
+ "stableCount": 6,
+ "texts": {
+  "history": [
+   {
+    "text": "The name derives from the Greek molybdos for \"lead\". The ancients used the term \"lead\" for any black mineral that leaves a mark on paper. Molybdenum was discovered by the Swedish pharmacist and chemist Carl Wilhelm Scheele in 1778. It was first isolated by the Swedish chemist Peter-Jacob Hjelm in 1781.",
+    "source": "ciaaw"
+   },
+   {
+    "text": "Molybdenum was discovered by Carl Welhelm Scheele, a Swedish chemist, in 1778 in a mineral known as molybdenite (MoS2) which had been confused as a lead compound. Molybdenum was isolated by Peter Jacob Hjelm in 1781. Today, most molybdenum is obtained from molybdenite, wulfenite (PbMoO4) and powellite (CaMoO4). These ores typically occur in conjunction with ores of tin and tungsten. Molybdenum is also obtained as a byproduct of mining and processing tungsten and copper.",
+    "source": "jlab"
+   },
+   {
+    "text": "From the Greek word molybdo, lead. Before Scheele recognized molybdenite as a distinct ore of a new element in 1778, it was confused with graphite and lead ore. The metal was prepared in impure form in 1782 by Hjelm. Molybdenum does not occur natively, but is obtained principally from molybdenite. Wulfenite, and Powellite are also minor commercial ores.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Molybdenum has a high melting point and is used to make the electrodes of electrically heated glass furnaces. Some electrical filaments are also made from molybdenum. The metal is used to make some missile and aircraft parts and is used in the nuclear power industry. Molybdenum is also used as a catalyst in the refining of petroleum. Molybdenum is primarily used as an alloying agent in steel. When added to steel in concentrations between 0.25% and 8%, molybdenum forms ultra-high strength steels that can withstand pressures up to 300,000 pounds per square inch. Molybdenum also improves the strength of steel at high temperatures. When alloyed with nickel, molybdenum forms heat and corrosion resistant materials used in the chemical industry. Molybdenum disulfide (MoS2), one of molybdenum's compounds, is used as a high temperature lubricant. Molybdenum trioxide (MoO3), another molybdenum compound, is used to adhere enamels to metals. Other molybdenum compounds include: molybdic acid (H2MoO4), molybdenum hexafluoride (MoF6) and molybdenum phosphide (MoP2).",
+    "source": "jlab"
+   },
+   {
+    "text": "It is used in certain nickel-based alloys, such as the \"Hastelloys(R)\" which are heat-resistant and corrosion-resistant to chemical solutions. Molybdenum oxidizes at elevated temperatures. The metal has found recent application as electrodes for electrically heated glass furnaces and forehearths. The metal is also used in nuclear energy applications and for missile and aircraft parts. Molybdenum is valuable as a catalyst in the refining of petroleum. It has found applications as a filament material in electronic and electrical applications. Molybdenum is an essential trace element in plant nutrition; some lands are barren for lack of this element in the soil. Molybdenum sulfide is useful as a lubricant, especially at high temperatures where oils would decompose. Almost all ultra-high strength steels with minimum yield points up to 300,000 psi (lb/in.2) contain molybdenum in amounts from 0.25 to 8%. Biologically, molybdenum as a trace element is necessary for nitrogen fixation and other metabolic processes.",
+    "source": "lanl"
+   }
+  ],
+  "sources": [
+   {
+    "text": "Molybdenum is also recovered as a by-product of copper and tungsten mining operations. The metal is prepared from the powder made by the hydrogen reduction of purified molybdic trioxide or ammonium molybdate.",
+    "source": "lanl"
+   }
+  ],
+  "description": [
+   {
+    "text": "The metal is silvery white, very hard, but is softer and more ductile than tungsten. It has a high elastic modulus, and only tungsten and tantalum, of the more readily available metals, have higher melting points. It is a valuable alloying agent, as it contributes to the hardenability and toughness of quenched and tempered steels. It also improves the strength of steel at high temperatures.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Earth/Planetary Science",
+   "text": "Molybdenites display a variation in isotopic composition (Fig. IUPAC.42.1). The isotopic composition of molybdenum in ocean sediments depends on oxygen levels in the ocean. When oxygen levels are high, the lighter isotopes of molybdenum are scavenged by iron and manganese oxides into sediments. However, when oxygen levels are low, the mechanism for molybdenum removal becomes more efficient and more of the heavier isotopes of molybdenum are found in iron and manganese oxides. Thus, the molybdenum isotopic composition of these sediments can be used as a proxy for oxygen levels in the paleo oceans (history of the oceans in the geological past) to gain insights into mechanisms that may have been responsible for mass-extinction events in the Earth’s history. ",
+   "source": "iptei"
+  },
+  {
+   "topic": "Industry",
+   "text": "Depleted 95Mo has been used in the High Flux Isotope Reactor (HFIR) at the Oak Ridge National Laboratory (Tennessee, USA). The use of U-10Mo fuel elements (90 percent uranium, 10 percent molybdenum) would allow the conversion from high-enrichment uranium (HEU) fuel, 92 percent, to low-enrichment uranium (LEU) fuel, below 20 percent, for nuclear non-proliferation purposes.",
+   "source": "iptei"
+  },
+  {
+   "topic": "a Source of Radioactive Isotope(s)",
+   "text": "95Mo is used to produce medical radioisotope 97Ru via the 95Mo (4He, 2n) 97Ru reaction. The isotope 99Mo is commercially produced by the fission of 235U and is the parent radionuclide of 99mTc, which is the most widely used radiopharmaceutical in the world. The much longer half-life of 99Mo (about 66 h) enables the radionuclide to be transported more easily than the short-lived (6 h half-life) 99mTc. The n(99Mo)/n(99mTc) amount-ratio generator was originally developed at Brookhaven National Laboratory (Fig. IUPAC.42.2) in the early 1960s and is now a patented system. ",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "1.2 milligrams per kilogram",
+  "ocean": "1×10^-2 milligrams per liter",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 23932,
+   "name": "molybdenum",
+   "formula": "Mo",
+   "charge": 0,
+   "smiles": "[Mo]"
+  },
+  {
+   "cid": 185498,
+   "name": "molybdenum(2+)",
+   "formula": "Mo+2",
+   "charge": 2,
+   "smiles": "[Mo+2]"
+  },
+  {
+   "cid": 5460463,
+   "name": "molybdenum(4+)",
+   "formula": "Mo+4",
+   "charge": 4,
+   "smiles": "[Mo+4]"
+  },
+  {
+   "cid": 10125049,
+   "name": "molybdenum(3+)",
+   "formula": "Mo+3",
+   "charge": 3,
+   "smiles": "[Mo+3]"
+  }
+ ],
+ "refs": {
+  "ciaaw": {
+   "name": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+   "url": "https://www.ciaaw.org/molybdenum.htm"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele042.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/42.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": null,
+ "ghs": {
+  "signal": "Danger",
+  "pictograms": [
+   {
+    "code": "GHS02",
+    "label": "Flammable"
+   },
+   {
+    "code": "GHS08",
+    "label": "Health Hazard"
+   }
+  ],
+  "hazards": [
+   "H225 (11.6%): Highly Flammable liquid and vapor",
+   "H228 (30%): Flammable solid",
+   "H361 (29.5%): Suspected of damaging fertility or the unborn child"
+  ],
+  "reports": 1523,
+  "notMet": 57.4,
+  "notClassified": false,
+  "source": "European Chemicals Agency (ECHA)"
+ },
+ "ghsCid": 23932
 }

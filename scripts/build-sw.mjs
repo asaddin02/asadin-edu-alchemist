@@ -7,8 +7,8 @@ import { join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = fileURLToPath(new URL('..', import.meta.url));
-// The app shell plus the small catalogue index. Molecule and element records are cached on first use
-// (or all at once from About → "Save for offline").
+// The app shell plus the small indexes (catalogue, ions, every nuclide for the isotope explorer and the half-life
+// lab). Molecule, element and ion records are cached on first use (or all at once from About → "Save for offline").
 const include = [
   'index.html',
   'manifest.webmanifest',
@@ -24,6 +24,8 @@ const include = [
   'data/molecules/index.json',
   'data/molecules/depict.json',
   'data/classes.json',
+  'data/ions/index.json',
+  'data/isotopes.json',
 ];
 
 async function walk(path) {

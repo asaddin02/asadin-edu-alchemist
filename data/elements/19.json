@@ -22,5 +22,774 @@
   "author": "BXXXD",
   "license": "CC BY-SA 3.0",
   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
- }
+ },
+ "weight": {
+  "value": "39.0983(1)",
+  "kind": "standard",
+  "source": "ciaaw"
+ },
+ "natural": [
+  {
+   "A": 39,
+   "iso": "",
+   "mass": "38.963 706 49(3)",
+   "abundance": "0.932 581(44)"
+  },
+  {
+   "A": 40,
+   "iso": "",
+   "mass": "39.963 9982(4)",
+   "abundance": "0.000 117(1)"
+  },
+  {
+   "A": 41,
+   "iso": "",
+   "mass": "40.961 825 26(3)",
+   "abundance": "0.067 302(44)"
+  }
+ ],
+ "naturalSource": "ciaaw",
+ "nuclides": [
+  {
+   "A": 31,
+   "iso": "",
+   "mass": "31.036780 ± 0.000322",
+   "half": ">10 ps",
+   "seconds": 1e-11,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "3p",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2019,
+   "est": true
+  },
+  {
+   "A": 32,
+   "iso": "",
+   "mass": "32.023607 ± 0.000429",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 33,
+   "iso": "",
+   "mass": "33.008095 ± 0.000215",
+   "half": "Not-specified <25ns",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 34,
+   "iso": "",
+   "mass": "33.998690 ± 0.00021",
+   "half": "Not-specified <40ns",
+   "seconds": null,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "p",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 35,
+   "iso": "",
+   "mass": "34.988005406 ± 0.00000055",
+   "half": "175.2 ms ± 1.9",
+   "seconds": 0.1752,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 0.37
+    }
+   ],
+   "year": 1976,
+   "est": false
+  },
+  {
+   "A": 36,
+   "iso": "",
+   "mass": "35.981301887 ± 0.000000349",
+   "half": "341 ms ± 3",
+   "seconds": 0.341,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β+p",
+     "op": "=",
+     "pct": 0.048
+    },
+    {
+     "mode": "β+α",
+     "op": "=",
+     "pct": 0.0034
+    }
+   ],
+   "year": 1967,
+   "est": false
+  },
+  {
+   "A": 37,
+   "iso": "",
+   "mass": "36.973375890 ± 0.0000001",
+   "half": "1.23651 s ± 0.0009",
+   "seconds": 1.23651,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1958,
+   "est": false
+  },
+  {
+   "A": 38,
+   "iso": "",
+   "mass": "37.969081114 ± 0.000000209",
+   "half": "7.651 m ± 0.019",
+   "seconds": 459.06,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1937,
+   "est": false
+  },
+  {
+   "A": 39,
+   "iso": "",
+   "mass": "38.96370648482 ± 0.00000000489",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1921,
+   "est": false
+  },
+  {
+   "A": 40,
+   "iso": "",
+   "mass": "39.963998165 ± 0.00000006",
+   "half": "1.248 Gy ± 0.003",
+   "seconds": 39383043747840000,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 89.28
+    },
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 10.72
+    }
+   ],
+   "year": 1935,
+   "est": false
+  },
+  {
+   "A": 41,
+   "iso": "",
+   "mass": "40.96182525611 ± 0.00000000403",
+   "half": "Stable",
+   "seconds": null,
+   "stable": true,
+   "decay": [],
+   "year": 1921,
+   "est": false
+  },
+  {
+   "A": 42,
+   "iso": "",
+   "mass": "41.962402305 ± 0.000000113",
+   "half": "12.355 h ± 0.007",
+   "seconds": 44478,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1935,
+   "est": false
+  },
+  {
+   "A": 43,
+   "iso": "",
+   "mass": "42.960734701 ± 0.00000044",
+   "half": "22.3 h ± 0.1",
+   "seconds": 80280,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1949,
+   "est": false
+  },
+  {
+   "A": 44,
+   "iso": "",
+   "mass": "43.961586984 ± 0.00000045",
+   "half": "22.13 m ± 0.19",
+   "seconds": 1327.8,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1954,
+   "est": false
+  },
+  {
+   "A": 45,
+   "iso": "",
+   "mass": "44.960691491 ± 0.00000056",
+   "half": "17.8 m ± 0.6",
+   "seconds": 1068,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1964,
+   "est": false
+  },
+  {
+   "A": 46,
+   "iso": "",
+   "mass": "45.961981584 ± 0.00000078",
+   "half": "96.30 s ± 0.08",
+   "seconds": 96.3,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1965,
+   "est": false
+  },
+  {
+   "A": 47,
+   "iso": "",
+   "mass": "46.961661612 ± 0.0000015",
+   "half": "17.38 s ± 0.03",
+   "seconds": 17.38,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 1964,
+   "est": false
+  },
+  {
+   "A": 48,
+   "iso": "",
+   "mass": "47.965341184 ± 0.00000083",
+   "half": "6.83 s ± 0.14",
+   "seconds": 6.83,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 1.14
+    }
+   ],
+   "year": 1972,
+   "est": false
+  },
+  {
+   "A": 49,
+   "iso": "",
+   "mass": "48.968210753 ± 0.00000086",
+   "half": "1.26 s ± 0.05",
+   "seconds": 1.26,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 86
+    }
+   ],
+   "year": 1972,
+   "est": false
+  },
+  {
+   "A": 50,
+   "iso": "",
+   "mass": "49.972380015 ± 0.0000083",
+   "half": "472 ms ± 4",
+   "seconds": 0.47200000000000003,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 28.6
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1972,
+   "est": false
+  },
+  {
+   "A": 51,
+   "iso": "",
+   "mass": "50.975828664 ± 0.000014",
+   "half": "365 ms ± 5",
+   "seconds": 0.365,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 65
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1983,
+   "est": false
+  },
+  {
+   "A": 52,
+   "iso": "",
+   "mass": "51.981602000 ± 0.000036",
+   "half": "110 ms ± 4",
+   "seconds": 0.11,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "=",
+     "pct": 72.2
+    },
+    {
+     "mode": "β-2n",
+     "op": "=",
+     "pct": 2.3
+    }
+   ],
+   "year": 1983,
+   "est": false
+  },
+  {
+   "A": 53,
+   "iso": "",
+   "mass": "52.986800000 ± 0.00012",
+   "half": "30 ms ± 5",
+   "seconds": 0.03,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "≈",
+     "pct": 64
+    },
+    {
+     "mode": "β-2n",
+     "op": "≈",
+     "pct": 10
+    }
+   ],
+   "year": 1983,
+   "est": false
+  },
+  {
+   "A": 54,
+   "iso": "",
+   "mass": "53.994471 ± 0.000429",
+   "half": "10 ms ± 5",
+   "seconds": 0.01,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "=",
+     "pct": 100
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1983,
+   "est": true
+  },
+  {
+   "A": 55,
+   "iso": "",
+   "mass": "55.000505 ± 0.000537",
+   "half": "10 ms >620ns",
+   "seconds": 0.01,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2009,
+   "est": true
+  },
+  {
+   "A": 56,
+   "iso": "",
+   "mass": "56.008567 ± 0.000644",
+   "half": "5 ms >620ns",
+   "seconds": 0.005,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2009,
+   "est": true
+  },
+  {
+   "A": 57,
+   "iso": "",
+   "mass": "57.015169 ± 0.000644",
+   "half": "2 ms >400ns",
+   "seconds": 0.002,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2018,
+   "est": true
+  },
+  {
+   "A": 58,
+   "iso": "",
+   "mass": "58.023543 ± 0.000751",
+   "half": "2 ms >400ns",
+   "seconds": 0.002,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2019,
+   "est": true
+  },
+  {
+   "A": 59,
+   "iso": "",
+   "mass": "59.030864 ± 0.000859",
+   "half": "1 ms >400ns",
+   "seconds": 0.001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "β-",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-n",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β-2n",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2018,
+   "est": true
+  }
+ ],
+ "stableCount": 2,
+ "texts": {
+  "history": [
+   {
+    "text": "The name derives from the English \"potash\" or \"pot ashes\" because it is found in caustic potash (KOH). The symbol K derives from the Latin kalium via the Arabic qali for alkali. It was first isolated by the British chemist Humphry Davy in 1807 from electrolysis of potash (KOH).",
+    "source": "ciaaw"
+   },
+   {
+    "text": "Although potassium is the eighth most abundant element on earth and comprises about 2.1% of the earth's crust, it is a very reactive element and is never found free in nature. Metallic potassium was first isolated by Sir Humphry Davy in 1807 through the electrolysis of molten caustic potash (KOH). A few months after discovering potassium, Davy used the same method to isolate sodium. Potassium can be obtained from the minerals sylvite (KCl), carnallite (KCl·MgCl2·6H2O), langbeinite (K2Mg2(SO4)3) and polyhalite (K2Ca2Mg(SO4)4·2H2O). These minerals are often found in ancient lake and sea beds. Caustic potash, another important source of potassium, is primarily mined in Germany, New Mexico, California and Utah. Pure potassium is a soft, waxy metal that can be easily cut with a knife. It reacts with oxygen to form potassium superoxide (KO2) and with water to form potassium hydroxide (KOH), hydrogen gas and heat. Enough heat is produced to ignite the hydrogen gas. To prevent it from reacting with the oxygen and water in the air, samples of metallic potassium are usually stored submerged in mineral oil.",
+    "source": "jlab"
+   },
+   {
+    "text": "From the English word, potash - pot ashes; Latin kalium, Arab qali, alkali. Discovered in 1807 by Davy, who obtained it from caustic potash (KOH); this was the first metal isolated by electrolysis.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Potassium forms an alloy with sodium (NaK) that is used as a heat transfer medium in some types of nuclear reactors. Potassium forms many important compounds. Potassium chloride (KCl) is the most common potassium compound. It is used in fertilizers, as a salt substitute and to produce other chemicals. Potassium hydroxide (KOH) is used to make soaps, detergents and drain cleaners. Potassium carbonate (KHCO3), also known as pearl ash, is used to make some types of glass and soaps and is obtained commercially as a byproduct of the production of ammonia. Potassium superoxide (KO2) can create oxygen from water vapor (H2O) and carbon dioxide (CO2) through the following reaction: 2KO2 + H2O + 2CO2 => 2KHCO3 + O2. It is used in respiratory equipment and is produced by burning potassium metal in dry air. Potassium nitrate (KNO3), also known as saltpeter or nitre, is used in fertilizers, match heads and pyrotechnics.",
+    "source": "jlab"
+   },
+   {
+    "text": "The greatest demand for potash has been in its use for fertilizers. Potassium is an essential constituent for plant growth and is found in most soils. An alloy of sodium and potassium (NaK) is used as a heat-transfer medium. Many potassium salts are of utmost importance, including the hydroxide, nitrate, carbonate, chloride, chlorate, bromide, iodide, cyanide, sulfate, chromate, and dichromate.",
+    "source": "lanl"
+   }
+  ],
+  "sources": [
+   {
+    "text": "The metal is the seventh most abundant and makes up about 2.4% by weight of the earth's crust. Most potassium minerals are insoluble and the metal is obtained from them only with great difficulty. Certain minerals, however, such as sylvite, carnallite, langbeinite, and polyhalite are found in ancient lake and sea beds and form rather extensive deposits from which potassium and its salts can readily be obtained. Potash is mined in Germany, New Mexico, California, Utah, and elsewhere. Large deposits of potash, found at a depth of some 3000 ft in Saskatchewan, promise to be important in coming years. Potassium is also found in the ocean, but is present only in relatively small amounts, compared to sodium.",
+    "source": "lanl"
+   }
+  ],
+  "description": [
+   {
+    "text": "It is one of the most reactive and electropositive of metals. Except for lithium, it is the lightest known metal. It is soft, easily cut with a knife, and is silvery in appearance immediately after a fresh surface is exposed. It rapidly oxidizes in air and must be preserved in a mineral oil such as kerosene. As with other metals of the alkali group, it decomposes in water with the evolution of hydrogen. It catches fire spontaneously on water. Potassium and its salts impart a violet color to flames.",
+    "source": "lanl"
+   }
+  ],
+  "isotopes": [
+   {
+    "text": "Seventeen isotopes of potassium are known. Ordinary potassium is composed of three isotopes, one of which is 40°K (0.0118%), a radioactive isotope with a half-life of 1.28 x 109 years.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [
+  {
+   "topic": "Biology",
+   "text": "The mole fraction of 40K, n(40K)/n(K), is used to study the effects of potassium in soil on the growth of plants. Plants need potassium to promote growth and reproduction, and potassium also helps plants resist drought and diseases. The mole fraction of 40K is being studied at different depths in several soil types to determine how soil properties affect the fractionation of 40K.",
+   "source": "iptei"
+  },
+  {
+   "topic": "Geochronology",
+   "text": "The amount ratio n(40K)/n(40Ar) is used in potassium-argon dating by geologists, archaeologists, and paleoanthropologists to determine the age of rocks. This dating method is based on the radioactive decay of 40K, having a half-life of 1.248×109 years, to 40Ar. When lava crystalizes, 40Ar can no longer escape and begins increasing in concentration in a rock (Fig. IUPAC.19.1),. ",
+   "source": "iptei"
+  },
+  {
+   "topic": "Medicine",
+   "text": "38K, which has a half-life of 7.6 min and is produced by a nuclear reaction involving 38Ar and 40Ar as targets, is a widely used blood-flow tracer. Because 38Ar is more expensive, 40Ar, which also offers many additional advantages as a target, is more commonly used to produce 38K for medical purposes,,.",
+   "source": "iptei"
+  }
+ ],
+ "abundance": {
+  "crust": "2.09×10^4 milligrams per kilogram",
+  "ocean": "3.99×10^2 milligrams per liter",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 813,
+   "name": "potassium(1+)",
+   "formula": "K+",
+   "charge": 1,
+   "smiles": "[K+]"
+  },
+  {
+   "cid": 5462222,
+   "name": "potassium",
+   "formula": "K",
+   "charge": 0,
+   "smiles": "[K]"
+  }
+ ],
+ "refs": {
+  "ciaaw": {
+   "name": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+   "url": "https://www.ciaaw.org/potassium.htm"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele019.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/19.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": null,
+ "ghs": {
+  "signal": "Danger",
+  "pictograms": [
+   {
+    "code": "GHS02",
+    "label": "Flammable"
+   },
+   {
+    "code": "GHS05",
+    "label": "Corrosive"
+   }
+  ],
+  "hazards": [
+   "H260 (100%): In contact with water releases flammable gases which may ignite spontaneously",
+   "H314 (100%): Causes severe skin burns and eye damage",
+   "H318 (14.4%): Causes serious eye damage"
+  ],
+  "reports": 271,
+  "notMet": null,
+  "notClassified": false,
+  "source": "European Chemicals Agency (ECHA)"
+ },
+ "ghsCid": 5462222
 }

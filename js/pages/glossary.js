@@ -1,9 +1,13 @@
-// Glossary: bilingual terms with a simple and a scientific definition, examples and related terms.
+// Glossary: bilingual terms with a simple and a scientific definition, examples and related terms. A term's own
+// page also lists the branches of chemistry (knowledge-map domains) and the lessons that use it.
 import { $, $$, esc, debounce } from '../core/dom.js';
 import { S, pick, atLeast } from '../core/prefs.js';
 import { replaceQuery } from '../core/router.js';
+import { icon } from '../components/icons.js';
 import { pageHead, breadcrumbs, emptyState } from '../components/common.js';
 import { GLOSSARY, GLOSSARY_CATS, findTerm } from '../data/glossary.js';
+import { domainsOfConcept } from '../data/ontology.js';
+import { topicsLinking } from '../data/topics/index.js';
 import { getMolecule, normalize } from '../data/curatedMolecules.js';
 
 const s = S({
@@ -21,6 +25,9 @@ const s = S({
   see: ['Lihat juga', 'See also'],
   none: ['Istilah tidak ditemukan.', 'No matching terms.'],
   back: ['Semua istilah', 'All terms'],
+  domains: ['Cabang kimia', 'Branches of chemistry'],
+  lessons: ['Materi yang memakai istilah ini', 'Lessons that use this term'],
+  mentioned: ['Disebut juga di istilah', 'Also mentioned by'],
 });
 
 export const title = route => (route.id ? pick(findTerm(route.id)?.term || ['Istilah', 'Term']) : s.title);
@@ -46,6 +53,38 @@ const termHTML = (g, open = false) => {
   </article>`;
 };
 
+/** Where a term lives in Alchemist: knowledge-map domains, lessons and terms that point to it. */
+function usesHTML(g) {
+  const domains = domainsOfConcept(g.key);
+  const lessons = topicsLinking('g', g.key);
+  const back = GLOSSARY.filter(t => t.key !== g.key && t.see?.includes(g.key));
+  return `${
+    domains.length
+      ? `<section><h2 class="h-small">${icon('map', { size: 18 })} ${esc(s.domains)}</h2><p class="chip-grid">${domains
+          .map(
+            d =>
+              `<a class="chip" href="#/peta/${d.id}">${icon(d.icon, { size: 14 })} ${esc(pick(d.name))}</a>`
+          )
+          .join(' ')}</p></section>`
+      : ''
+  }${
+    lessons.length
+      ? `<section><h2 class="h-small">${icon('book', { size: 18 })} ${esc(s.lessons)}</h2><p class="chip-grid">${lessons
+          .map(
+            t =>
+              `<a class="chip" href="#/learn/${t.id}">${icon(t.icon, { size: 14 })} ${esc(pick(t.title))}</a>`
+          )
+          .join(' ')}</p></section>`
+      : ''
+  }${
+    back.length
+      ? `<section><h2 class="h-small">${esc(s.mentioned)}</h2><p class="chip-grid">${back
+          .map(t => `<a class="chip" href="#/glossary/${t.key}">${esc(pick(t.term))}</a>`)
+          .join(' ')}</p></section>`
+      : ''
+  }`;
+}
+
 export function render({ id, main, params }) {
   if (id) {
     const g = findTerm(id);
@@ -54,7 +93,7 @@ export function render({ id, main, params }) {
         [s.title, '#/glossary'],
         [g ? pick(g.term) : id, ''],
       ])}
-      ${g ? `<h1>${esc(pick(g.term))}</h1>${termHTML(g, true)}` : emptyState(s.none)}
+      ${g ? `<h1>${esc(pick(g.term))}</h1>${termHTML(g, true)}${usesHTML(g)}` : emptyState(s.none)}
       <p><a class="btn" href="#/glossary">${esc(s.back)}</a></p>
     </div>`;
     return;

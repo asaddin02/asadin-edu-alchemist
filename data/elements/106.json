@@ -13,5 +13,553 @@
    "url": "https://en.wikipedia.org/wiki/Seaborgium"
   }
  },
- "photo": null
+ "photo": null,
+ "weight": {
+  "value": "271.13393(63#)",
+  "kind": "isotope-mass",
+  "A": 271,
+  "estimated": true,
+  "source": "nist"
+ },
+ "natural": [],
+ "naturalSource": "nist",
+ "nuclides": [
+  {
+   "A": 258,
+   "iso": "",
+   "mass": "258.113040 ± 0.000443",
+   "half": "2.7 ms ± 0.5",
+   "seconds": 0.0027,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1997,
+   "est": true
+  },
+  {
+   "A": 259,
+   "iso": "",
+   "mass": "259.114353 ± 0.000194",
+   "half": "402 ms ± 56",
+   "seconds": 0.402,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1985,
+   "est": true
+  },
+  {
+   "A": 259,
+   "iso": "m",
+   "mass": "259.114353 ± 0.000194",
+   "half": "226 ms ± 27",
+   "seconds": 0.226,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 97
+    },
+    {
+     "mode": "SF",
+     "op": "≈",
+     "pct": 3
+    },
+    {
+     "mode": "β+",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2015,
+   "est": true
+  },
+  {
+   "A": 260,
+   "iso": "",
+   "mass": "260.114383435 ± 0.000022045",
+   "half": "4.95 ms ± 0.33",
+   "seconds": 0.00495,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": "=",
+     "pct": 71
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 29
+    }
+   ],
+   "year": 1984,
+   "est": false
+  },
+  {
+   "A": 261,
+   "iso": "",
+   "mass": "261.115948135 ± 0.000019853",
+   "half": "183 ms ± 5",
+   "seconds": 0.183,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 98.1
+    },
+    {
+     "mode": "β+",
+     "op": "=",
+     "pct": 1.3
+    },
+    {
+     "mode": "SF",
+     "op": "=",
+     "pct": 0.6
+    }
+   ],
+   "year": 1984,
+   "est": false
+  },
+  {
+   "A": 261,
+   "iso": "m",
+   "mass": "261.115948135 ± 0.000019853",
+   "half": "9.3 us ± 1.8",
+   "seconds": 0.0000093,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "IT",
+     "op": "=",
+     "pct": 100
+    }
+   ],
+   "year": 2010,
+   "est": false
+  },
+  {
+   "A": 262,
+   "iso": "",
+   "mass": "262.116338978 ± 0.000023797",
+   "half": "10.3 ms ± 1.7",
+   "seconds": 0.0103,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": "=",
+     "pct": 94
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2001,
+   "est": false
+  },
+  {
+   "A": 262,
+   "iso": "p",
+   "mass": "262.116338978 ± 0.000023797",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [],
+   "year": null,
+   "est": false
+  },
+  {
+   "A": 263,
+   "iso": "",
+   "mass": "263.118299 ± 0.000101",
+   "half": "940 ms ± 140",
+   "seconds": 0.9400000000000001,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 87
+    },
+    {
+     "mode": "SF",
+     "op": "=",
+     "pct": 13
+    }
+   ],
+   "year": 1974,
+   "est": true
+  },
+  {
+   "A": 263,
+   "iso": "m",
+   "mass": "263.118299 ± 0.000101",
+   "half": "420 ms ± 100",
+   "seconds": 0.42,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "IT",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1995,
+   "est": true
+  },
+  {
+   "A": 263,
+   "iso": "p",
+   "mass": "263.118299 ± 0.000101",
+   "half": "Not-specified",
+   "seconds": null,
+   "stable": false,
+   "decay": [],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 264,
+   "iso": "",
+   "mass": "264.118930 ± 0.000304",
+   "half": "78 ms ± 25",
+   "seconds": 0.078,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": ">",
+     "pct": 80
+    },
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2006,
+   "est": true
+  },
+  {
+   "A": 265,
+   "iso": "",
+   "mass": "265.121089 ± 0.000149",
+   "half": "9.2 s ± 1.6",
+   "seconds": 9.2,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": ">",
+     "pct": 50
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1994,
+   "est": true
+  },
+  {
+   "A": 265,
+   "iso": "m",
+   "mass": "265.121089 ± 0.000149",
+   "half": "16.4 s ± 2.4",
+   "seconds": 16.4,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": ">",
+     "pct": 50
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 1994,
+   "est": true
+  },
+  {
+   "A": 266,
+   "iso": "",
+   "mass": "266.121973 ± 0.000263",
+   "half": "390 ms ± 110",
+   "seconds": 0.39,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": ">",
+     "pct": 90
+    }
+   ],
+   "year": 2006,
+   "est": true
+  },
+  {
+   "A": 267,
+   "iso": "",
+   "mass": "267.124323 ± 0.000281",
+   "half": "1.8 m ± 0.7",
+   "seconds": 108,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": "=",
+     "pct": 83
+    },
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 17
+    }
+   ],
+   "year": 2008,
+   "est": true
+  },
+  {
+   "A": 268,
+   "iso": "",
+   "mass": "268.125389 ± 0.000504",
+   "half": "2 m",
+   "seconds": 120,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 269,
+   "iso": "",
+   "mass": "269.128495 ± 0.000395",
+   "half": "5 m ± 2",
+   "seconds": 300,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "≈",
+     "pct": 100
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": 2010,
+   "est": true
+  },
+  {
+   "A": 270,
+   "iso": "",
+   "mass": "270.130362 ± 0.000492",
+   "half": "3 m",
+   "seconds": 180,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 271,
+   "iso": "",
+   "mass": "271.133782 ± 0.000634",
+   "half": "2.2 m ± 1.1",
+   "seconds": 132,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "=",
+     "pct": 42
+    },
+    {
+     "mode": "SF",
+     "op": "=",
+     "pct": 58
+    }
+   ],
+   "year": 2004,
+   "est": true
+  },
+  {
+   "A": 272,
+   "iso": "",
+   "mass": "272.135825 ± 0.000743",
+   "half": "4 m",
+   "seconds": 240,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "α",
+     "op": "?",
+     "pct": null
+    },
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  },
+  {
+   "A": 273,
+   "iso": "",
+   "mass": "273.139475 ± 0.000429",
+   "half": "5 m",
+   "seconds": 300,
+   "stable": false,
+   "decay": [
+    {
+     "mode": "SF",
+     "op": "?",
+     "pct": null
+    }
+   ],
+   "year": null,
+   "est": true
+  }
+ ],
+ "stableCount": 0,
+ "texts": {
+  "history": [
+   {
+    "text": "Seaborgium was first produced by a team of scientists led by Albert Ghiorso working at the Lawrence Berkeley Laboratory in Berkeley, California, in 1974. They created seaborgium by bombarding atoms of californium-249 with ions of oxygen-18 using a machine called the Super-Heavy Ion Linear Accelerator. The collision produced atoms of seaborgium-263 and four free neutrons. Seaborgium-263 is an isotope of seaborgium with a half-life of about 1 second. Three months before the Berkeley group announced their discovery, a team of scientists working at the Joint Institute for Nuclear Research in Dubna, Russia, claimed to have produced seaborgium. Their method involved bombarding atoms of lead-207 and lead-208 with ions of chromium-54 with a device called a cyclotron. They believed that they had produced atoms of seaborgium-259. The Berkeley group's work was confirmed in 1993 and they were credited with the discovery. Seaborgium's most stable isotope, seaborgium-271, has a half-life of about 2.4 minutes. It decays into rutherfordium-267 through alpha decay or decays through spontaneous fission..",
+    "source": "jlab"
+   },
+   {
+    "text": "IIn June 1974, members of the Joint Institute for Nuclear Research in Dubna, U.S.S.R., reported their discovery of Element 106, which they reported to have synthesized. Glenn Seaborg was part of this group, and the element was named in his honor. In September 1974, workers of the Lawrence Berkeley and Livermore Laboratories also claimed creation Element 106 \"without any scientific doubt.\" The LBL and LLL Group used the Super HILAC to accelerate 18O ions onto a 249Cf target. Element 106 was created by the reaction 249Cf(18O, 4N)263X, which decayed by alpha emission to rutherfordium, and then by alpha emission to nobelium, which in turn further decayed by alpha between daughter and granddaughter. The element so identified had alpha energies of 9.06 and 9.25 MeV with a half-life of 0.9 +/- 0.2 s. At Dubna, 280-MeV ions of 54Cr from the 310-cm cyclotron were used to strike targets of 206Pb, 207Pb, and 208Pb, in separate runs. Foils exposed to a rotating target disc were used to detect spontaneous fission activities. The foils were etched and examined microscopically to detect the number of fission tracks and the half-life of the fission activity. Other experiments were made to aid in confirmation of the discovery.",
+    "source": "lanl"
+   }
+  ],
+  "uses": [
+   {
+    "text": "Since only a few atoms of seaborgium have ever been made, there are currently no uses for seaborgium outside of basic scientific research.",
+    "source": "jlab"
+   }
+  ],
+  "description": [
+   {
+    "text": "Seaborgium does not occur naturally in the Earth’s crust. In 1974, seaborgium was first synthesized by Albert Ghiorso and his team at the University of California in Berkeley using the nuclear reaction 249Cf (18O, 4n) 263Sg. The element is named for Glenn T. Seaborg (Fig. IUPAC.106.1), who synthesized a number of trans-uranium elements [634], [648]. Seaborgium has no commercial applications. However, 265Sg was one of the decay products used to confirm the synthesis of copernicium in a particle accelerator experiment.",
+    "source": "iptei"
+   },
+   {
+    "text": "Seaborgium is named after Glenn Seaborg.",
+    "source": "lanl"
+   }
+  ]
+ },
+ "isotopeUses": [],
+ "abundance": {
+  "crust": "Not Applicable",
+  "ocean": "Not Applicable",
+  "source": "jlab"
+ },
+ "physical": "Solid",
+ "forms": [
+  {
+   "cid": 56951717,
+   "name": "seaborgium",
+   "formula": "Sg",
+   "charge": 0,
+   "smiles": "[Sg]"
+  }
+ ],
+ "refs": {
+  "nist": {
+   "name": "NIST Physical Measurement Laboratory",
+   "url": "https://physics.nist.gov/cgi-bin/Elements/elInfo.pl?element=106"
+  },
+  "amdc": {
+   "name": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+   "url": "https://www-nds.iaea.org/amdc/"
+  },
+  "jlab": {
+   "name": "Jefferson Lab, U.S. Department of Energy",
+   "url": "https://education.jlab.org/itselemental/ele106.html"
+  },
+  "lanl": {
+   "name": "Los Alamos National Laboratory, U.S. Department of Energy",
+   "url": "https://periodic.lanl.gov/106.shtml"
+  },
+  "iptei": {
+   "name": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+   "url": "https://doi.org/10.1515/pac-2015-0703"
+  }
+ },
+ "substance": null,
+ "ghs": null,
+ "ghsCid": null
 }
