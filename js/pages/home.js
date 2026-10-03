@@ -258,7 +258,7 @@ export async function render({ main }) {
       <div><h2>${icon('teacher', { size: 22 })} ${esc(s.teacherTitle)}</h2><p>${esc(s.teacherLead)}</p></div>
       <a class="btn btn-primary" href="#/teacher">${esc(s.teacherGo)}</a>
     </section>
-  </div>`;
+  <section class="support-banner"><div><h2>${pick(['Suka belajar di Alchemist?', 'Enjoy learning with Alchemist?'])}</h2><p>${pick(['Bantu ruang belajar ini terus tumbuh. Dukungan sukarela, belajar tetap gratis.', 'Help this learning space grow. Support is optional; learning stays free.'])}</p></div><a class="btn" href="#/dukung">${pick(['Dukung Alchemist', 'Support Alchemist'])} →</a></section></div>`;
 
   main.querySelector('.mode-grid').addEventListener('click', e => {
     const b = e.target.closest('[data-level]');

@@ -23,6 +23,7 @@ export const ui = S({
   material: ['Material & campuran', 'Materials & mixtures'],
   saved: ['Tersimpan', 'Saved'],
   teacher: ['Ruang guru', 'Teacher room'],
+  dukung: ['Dukung Alchemist', 'Support Alchemist'],
   about: ['Tentang & sumber', 'About & sources'],
   more: ['Lainnya', 'More'],
   menu: ['Menu', 'Menu'],

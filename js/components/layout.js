@@ -29,6 +29,7 @@ const NAV = Object.fromEntries(
     ['glossary', 'glossary', 'book'],
     ['teacher', 'teacher', 'teacher'],
     ['about', 'about', 'info'],
+    ['dukung', 'dukung', 'heart'],
   ].map(entry => [entry[0], entry])
 );
 const SIDEBAR = [
@@ -42,7 +43,7 @@ const SIDEBAR = [
   ],
   [
     ['PERLENGKAPANMU', 'YOUR TOOLKIT'],
-    ['saved', 'compare', 'glossary'],
+    ['saved', 'compare', 'glossary', 'dukung'],
   ],
 ];
 const DRAWER = Object.keys(NAV);
@@ -189,6 +190,7 @@ export function renderFooter() {
       <div>
         <h2 class="footer-title">Alchemist</h2>
         <ul class="footer-links">
+          <li><a href="#/dukung">${esc(ui.dukung)}</a></li>
           <li><a href="#/about">${esc(ui.about)}</a></li>
           <li><a href="#/teacher">${esc(ui.teacher)}</a></li>
           <li><a href="#/glossary">${esc(ui.glossary)}</a></li>

@@ -22,6 +22,7 @@ const PAGES = Object.fromEntries(
     'teacher',
     'assignment',
     'about',
+    'dukung',
     'search',
     'peta',
     'isotope',

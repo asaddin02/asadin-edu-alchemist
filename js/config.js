@@ -1,5 +1,8 @@
 // Deployment settings. Everything else is configured through the server environment (see README).
 export const CONFIG = {
+  donateLocalURL: 'https://saweria.co/asadin02',
+  donateInternationalURL: 'https://ko-fi.com/asadin02',
+  feedbackURL: 'https://github.com/asaddin02/asadin-edu-alchemist/issues',
   // Source code link shown in "About" (update after renaming the GitHub repository).
   repository: 'https://github.com/asaddin02/asadin-edu-alchemist',
   // Official, free, key-less data sources.
