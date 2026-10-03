@@ -30,7 +30,7 @@ test('phone shortcuts stay at the bottom while the complete menu remains availab
   await expect(page.locator('main')).toHaveAttribute('data-page', 'saved');
   await expect(dock.locator('[data-nav="saved"]')).toHaveAttribute('aria-current', 'page');
   await page.locator('[data-toggle="drawer"]').click();
-  await expect(page.locator('#drawer a')).toHaveCount(20);
+  await expect(page.locator('#drawer a')).toHaveCount(21);
 });
 
 test('home learning path resumes after a completed lesson and persists after reload', async ({ page }) => {

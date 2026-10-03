@@ -104,7 +104,7 @@ test('mobile menu opens, lists every section and closes with Escape', async ({ p
   const button = page.locator('[data-toggle="drawer"]');
   await button.click();
   await expect(page.locator('#drawer')).toBeVisible();
-  await expect(page.locator('#drawer a')).toHaveCount(20);
+  await expect(page.locator('#drawer a')).toHaveCount(21);
   await page.keyboard.press('Escape');
   await expect(page.locator('#drawer')).toBeHidden();
   await expect(button).toBeFocused();
