@@ -1,6 +1,6 @@
 # Publishes Alchemist to Cloudflare Pages: static files, synced reference data and the edge PubChem proxy.
 # Setup (once): repository variable CLOUDFLARE_PAGES_PROJECT, secrets CLOUDFLARE_API_TOKEN and
-# CLOUDFLARE_ACCOUNT_ID, optional variable SITE_URL. Until the variable exists this workflow is skipped.
+# CLOUDFLARE_ACCOUNT_ID, optional variables SITE_URL and GOOGLE_SITE_VERIFICATION. Until the variable exists this workflow is skipped.
 name: Deploy
 
 on:
@@ -47,6 +47,8 @@ jobs:
         run: npm run build:site
         env:
           SITE_URL: ${{ vars.SITE_URL || format('https://{0}.pages.dev', vars.CLOUDFLARE_PAGES_PROJECT) }}
+          # Optional: the content of Google Search Console's verification meta tag.
+          GOOGLE_SITE_VERIFICATION: ${{ vars.GOOGLE_SITE_VERIFICATION }}
       # The Cloudflare credentials are only given to the two steps that need them.
       - name: Create the Pages project on the first deploy
         env:
